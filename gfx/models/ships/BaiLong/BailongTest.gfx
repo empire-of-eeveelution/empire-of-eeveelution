@@ -1,0 +1,26 @@
+objectTypes = {
+	pdxmesh = {
+		name = "BailongTest_mesh"
+		file = "gfx/models/ships/BaiLong/BailongTest.mesh"
+		scale = 0.2
+		animation = { id = "idle"			type = "BailongTest_idle1" }
+
+		meshsettings = {
+			name = "mesh0002Shape"
+			index = 0
+			texture_diffuse = "reshirambodynl_diffuse.dds"
+			texture_normal = "reshirambodynl_normal.dds"
+			texture_specular = "reshirambodynl_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "mesh0002Shape"
+			index = 1
+			texture_diffuse = "ReshiramEyeNl.dds"
+			texture_normal = "reshirameyenl_normal.dds"
+			texture_specular = "reshirameyenl_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

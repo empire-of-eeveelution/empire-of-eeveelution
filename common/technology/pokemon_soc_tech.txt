@@ -1,0 +1,616 @@
+
+tech_mega_evolution = {
+	cost = 10000
+	area = society
+	category = { biology }
+	tier = 5
+	prerequisites = {  }
+	weight = 0
+	icon = tech_mega_evolution
+
+	modifier = {
+		description = tech_mega_evolution_modifier_desc
+		description_parameters = {
+			POINTS = 4
+		}
+		POKEMON_species_trait_points_add = 4
+		modify_species_cost_mult = -0.25
+	}
+
+	potential = {
+		has_ascension_perk = ap_mega_evolution_EOE
+		OR = {
+			owner_main_species = { has_trait = trait_EOE_Inheritors }
+			has_origin = origin_lotus_hezi_start
+		}
+
+	}
+
+	weight_modifier = {
+	    modifier = {
+			factor = 0
+			NOT = { 
+				any_owned_pop = {
+				pop_has_trait = trait_directed_evolution
+			}
+			}
+			}
+		
+	}
+
+	ai_weight = {
+		factor = 0
+		
+	}
+}
+
+
+
+
+tech_Gender_Balance = {
+    cost = 500
+	area = society
+	category = { biology }
+	tier = 1
+	weight = 100
+	icon = tech_Gender_Balance
+
+	modifier = {
+		pop_growth_speed = 0.20
+		planet_crime_mult = -0.05
+		planet_amenities_mult = 0.05
+	}
+
+	potential = {
+		any_owned_pop = {
+			pop_has_trait = trait_directed_evolution
+		}
+	}
+
+	weight_modifier = {
+	    modifier = {
+			factor = 0
+			NOT = { 
+				any_owned_pop = {
+				pop_has_trait = trait_directed_evolution
+			}
+			}
+			}
+		
+	}
+
+	ai_weight = {
+		factor = 0 
+	
+	}
+}
+
+
+
+# tech_afterglow_of_the_old_days = {
+# 	cost = 10000
+# 	area = society
+# 	category = { biology }
+# 	tier = 5
+# 	weight = 0
+# 	icon = tech_afterglow_of_the_old_days
+
+# 	modifier = {
+# 		ascension_perks_add = 1
+# 		planet_jobs_society_research_produces_mult = 0.1
+# 	}
+
+# 	potential = {
+# 		any_owned_pop = {
+# 			pop_has_trait = trait_directed_evolution
+# 		}
+# 	}
+
+
+# 	ai_weight = {
+# 		factor = 0
+		
+# 	}
+# }
+
+tech_EOE_Mew_weapon = {
+	cost = 16000
+	area = society
+	tier = 4
+	category = { biology }
+	weight = 0 
+	prerequisites = { }
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				owner = {
+					owner_main_species = {
+						is_species_class = Eeveelutions
+					}
+				}
+			}
+		}
+	}
+	
+
+	gateway = ship
+
+	# prereqfor_desc = {
+	# 	ship = {
+	# 		title = "TECH_UNLOCK_MEW_CONSTRUCTION_TITLE"
+	# 		desc = "TECH_UNLOCK_MEW_CONSTRUCTION_DESC"
+	# 	}
+	# }
+	
+	potential = {
+		owner_main_species = {
+			is_species_class = Eeveelutions
+		}
+		has_ascension_perk = ap_mega_evolution_EOE
+		OR = {
+			any_owned_pop = { has_trait = trait_EOE_Inheritors }
+			any_owned_pop = { has_trait = trait_transfur_eevee }
+			has_origin = origin_lotus_hezi_start
+		}
+		is_ai = no
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+tech_EOE_Mew_armor = {
+	cost = 16000
+	area = society
+	tier = 4
+	category = { biology }
+	weight = 60
+	prerequisites = { "tech_EOE_Mew_weapon" }
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				owner = {
+					owner_main_species = {
+						is_species_class = Eeveelutions
+					}
+				}
+			}
+		}
+	}
+	
+
+	gateway = ship
+
+	# prereqfor_desc = {
+	# 	ship = {
+	# 		title = "TECH_UNLOCK_MEW_ARMOR_CONSTRUCTION_TITLE"
+	# 		desc = "TECH_UNLOCK_MEW_CONSTRUCTION_DESC"
+	# 	}
+	# }
+
+	modifier = {
+		country_command_limit_add = 20
+	}
+	
+	potential = {
+		owner_main_species = {
+			is_species_class = Eeveelutions
+		}
+		has_ascension_perk = ap_mega_evolution_EOE
+		OR = {
+			any_owned_pop = { has_trait = trait_EOE_Inheritors }
+			any_owned_pop = { has_trait = trait_transfur_eevee }
+			has_origin = origin_lotus_hezi_start
+		}
+		is_ai = no
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+tech_EOE_Mew = {
+	cost = 24000
+	area = society
+	tier = 4
+	category = { biology }
+	is_rare = yes
+	weight = 50
+	prerequisites = { "tech_EOE_Mew_armor" }
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				owner = {
+					owner_main_species = {
+						is_species_class = Eeveelutions
+					}
+				}
+			}
+		}
+	}
+	
+
+	gateway = ship
+
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_MEW_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_MEW_CONSTRUCTION_DESC"
+		}
+	}
+
+	modifier = {
+		country_command_limit_add = 20
+	}
+	
+	potential = {
+		owner_main_species = {
+			is_species_class = Eeveelutions
+		}
+		has_ascension_perk = ap_mega_evolution_EOE
+		OR = {
+			any_owned_pop = { has_trait = trait_EOE_Inheritors }
+			any_owned_pop = { has_trait = trait_transfur_eevee }
+			has_origin = origin_lotus_hezi_start
+		}
+		is_ai = no
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+tech_EOE_Latias_weapon = {
+	cost = 32000
+	area = society
+	tier = 5
+	category = { biology }
+	weight = 60
+	prerequisites = { "tech_EOE_Mew" }
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				owner = {
+					owner_main_species = {
+						is_species_class = Eeveelutions
+					}
+				}
+			}
+		}
+	}
+	
+
+	gateway = ship
+
+	# prereqfor_desc = {
+	# 	ship = {
+	# 		title = "TECH_UNLOCK_MEW_CONSTRUCTION_TITLE"
+	# 		desc = "TECH_UNLOCK_MEW_CONSTRUCTION_DESC"
+	# 	}
+	# }
+	
+	potential = {
+		owner_main_species = {
+			is_species_class = Eeveelutions
+		}
+		has_ascension_perk = ap_mega_evolution_EOE
+		OR = {
+			any_owned_pop = { has_trait = trait_EOE_Inheritors }
+			any_owned_pop = { has_trait = trait_transfur_eevee }
+			has_origin = origin_lotus_hezi_start
+		}
+		is_ai = no
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+tech_EOE_Latias_armor = {
+	cost = 32000
+	area = society
+	tier = 5
+	category = { biology }
+	weight = 60
+	prerequisites = { "tech_EOE_Latias_weapon" }
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				owner = {
+					owner_main_species = {
+						is_species_class = Eeveelutions
+					}
+				}
+			}
+		}
+	}
+	
+
+	gateway = ship
+
+	# prereqfor_desc = {
+	# 	ship = {
+	# 		title = "TECH_UNLOCK_MEW_ARMOR_CONSTRUCTION_TITLE"
+	# 		desc = "TECH_UNLOCK_MEW_CONSTRUCTION_DESC"
+	# 	}
+	# }
+
+	modifier = {
+		country_command_limit_add = 20
+	}
+	
+	potential = {
+		owner_main_species = {
+			is_species_class = Eeveelutions
+		}
+		has_ascension_perk = ap_mega_evolution_EOE
+		OR = {
+			any_owned_pop = { has_trait = trait_EOE_Inheritors }
+			any_owned_pop = { has_trait = trait_transfur_eevee }
+			has_origin = origin_lotus_hezi_start
+		}
+		is_ai = no
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+tech_EOE_Latias = {
+	cost = 48000
+	area = society
+	tier = 5
+	category = { biology }
+	is_rare = yes
+	weight = 50
+	prerequisites = { "tech_EOE_Latias_armor" }
+
+	gateway = ship
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				owner = {
+					owner_main_species = {
+						is_species_class = Eeveelutions
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = leader_trait_EOE_Plant_master
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_LATIAS_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_LATIAS_CONSTRUCTION_DESC"
+		}
+	}
+
+	modifier = {
+		country_command_limit_add = 20
+	}
+	potential = {
+		owner_main_species = {
+			is_species_class = Eeveelutions
+		}
+		has_ascension_perk = ap_mega_evolution_EOE
+		OR = {
+			any_owned_pop = { has_trait = trait_EOE_Inheritors }
+			any_owned_pop = { has_trait = trait_transfur_eevee }
+			has_origin = origin_lotus_hezi_start
+		}
+		is_ai = no
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+tech_EOE_Reshiram_weapon = {
+	cost = 32000
+	area = society
+	tier = 5
+	category = { biology }
+	weight = 60
+	prerequisites = { "tech_EOE_Latias" }
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				owner = {
+					owner_main_species = {
+						is_species_class = Eeveelutions
+					}
+				}
+			}
+		}
+	}
+	
+
+	gateway = ship
+
+	# prereqfor_desc = {
+	# 	ship = {
+	# 		title = "TECH_UNLOCK_MEW_CONSTRUCTION_TITLE"
+	# 		desc = "TECH_UNLOCK_MEW_CONSTRUCTION_DESC"
+	# 	}
+	# }
+	
+	potential = {
+		owner_main_species = {
+			is_species_class = Eeveelutions
+		}
+		has_ascension_perk = ap_mega_evolution_EOE
+		OR = {
+			any_owned_pop = { has_trait = trait_EOE_Inheritors }
+			any_owned_pop = { has_trait = trait_transfur_eevee }
+			has_origin = origin_lotus_hezi_start
+		}
+		is_ai = no
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+tech_EOE_Reshiram_armor = {
+	cost = 32000
+	area = society
+	tier = 5
+	category = { biology }
+	weight = 60
+	prerequisites = { "tech_EOE_Reshiram_weapon" }
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				owner = {
+					owner_main_species = {
+						is_species_class = Eeveelutions
+					}
+				}
+			}
+		}
+	}
+	
+
+	gateway = ship
+
+	# prereqfor_desc = {
+	# 	ship = {
+	# 		title = "TECH_UNLOCK_MEW_ARMOR_CONSTRUCTION_TITLE"
+	# 		desc = "TECH_UNLOCK_MEW_CONSTRUCTION_DESC"
+	# 	}
+	# }
+
+	modifier = {
+		country_command_limit_add = 20
+	}
+	
+	potential = {
+		owner_main_species = {
+			is_species_class = Eeveelutions
+		}
+		has_ascension_perk = ap_mega_evolution_EOE
+		OR = {
+			any_owned_pop = { has_trait = trait_EOE_Inheritors }
+			any_owned_pop = { has_trait = trait_transfur_eevee }
+			has_origin = origin_lotus_hezi_start
+		}
+		is_ai = no
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+tech_EOE_Reshiram = {
+	cost = 48000
+	area = society
+	tier = 5
+	category = { biology }
+	is_rare = yes
+	weight = 50
+	prerequisites = { "tech_EOE_Reshiram_armor" }
+
+	 gateway = ship
+	 weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				owner = {
+					owner_main_species = {
+						is_species_class = Eeveelutions
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = leader_trait_EOE_Plant_master
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_RESHIRAM_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_RESHIRAM_CONSTRUCTION_DESC"
+		}
+	}
+
+	modifier = {
+		country_command_limit_add = 50
+	}
+
+	potential = {
+		owner_main_species = {
+			is_species_class = Eeveelutions
+		}
+		has_ascension_perk = ap_mega_evolution_EOE
+		OR = {
+			any_owned_pop = { has_trait = trait_EOE_Inheritors }
+			any_owned_pop = { has_trait = trait_transfur_eevee }
+			has_origin = origin_lotus_hezi_start
+		}
+		is_ai = no
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# tech_EOE_okra_ship = {
+# 	cost = 48000
+# 	area = society
+# 	tier = 5
+# 	category = { biology }
+# 	is_rare = yes
+# 	weight = 0
+# 	prerequisites = {  }
+
+# 	 gateway = ship
+
+# 	prereqfor_desc = {
+# 		ship = {
+# 			title = "TECH_UNLOCK_OKRASHIP_CONSTRUCTION_TITLE"
+# 			desc = "TECH_UNLOCK_OKRASHIP_CONSTRUCTION_DESC"
+# 		}
+# 	}
+
+
+
+# 	potential = {
+# 		owner_main_species = {
+# 			is_species_class = Eeveelutions
+# 		}
+# 		OR = {
+# 			any_owned_pop = { has_trait = trait_EOE_Inheritors }
+# 			any_owned_pop = { has_trait = trait_transfur_eevee }
+# 			has_origin = origin_lotus_hezi_start
+# 		}
+# 		is_ai = no
+# 	}
+# 	ai_weight = {
+# 		weight = 0
+# 	}
+# }
+
+

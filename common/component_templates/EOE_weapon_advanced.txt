@@ -1,0 +1,813 @@
+weapon_component_template = {
+	key = "EOE_tempest_1"
+	size = large
+	entity = "turret_energy_torpedo_entity"
+	type = instant
+	
+	icon = "GFX_EOE_tempest_1"
+	icon_frame = 1
+	power = -125
+	prerequisites = { "tech_EOE_energy_torpedoes_1" }
+	component_set = "EOE_tempest_1"
+	projectile_gfx = "neutron_torpedoes"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = EOE_tempest_2 
+	damage = {
+		min = 468
+		max = 1040
+	}
+	windup = {
+		min = 1
+		max = 19
+	}
+	total_fire_time = 150
+	range = 150
+	accuracy = 0.9
+	tracking = 0.1
+	hull_damage = 1.5
+	shield_damage = 1
+	armor_damage = 1.25
+	shield_penetration = 1
+	armor_penetration = 0
+	resources = {
+		category = pokemon_ships
+		cost = {
+			alloys = 142.5 
+			exotic_gases = 2.1125
+		}		
+		upkeep = {
+			energy = 1.425
+			alloys = 0.285
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+weapon_component_template = {
+	key = "EOE_tempest_2"
+	size = large
+	entity = "turret_energy_torpedo_entity"
+	type = instant
+	
+	icon = "GFX_EOE_tempest_2"
+	icon_frame = 1
+	power = -99
+	prerequisites = { "tech_EOE_energy_torpedoes_2" }
+	component_set = "EOE_tempest_2"
+	projectile_gfx = "neutron_torpedoes"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	#upgrades_to = {}
+	damage = {
+		min = 702
+		max = 1560
+	}
+	windup = {
+		min = 1
+		max = 19
+	}
+	total_fire_time = 150
+	range = 150
+	accuracy = 0.9
+	tracking = 0.1
+	hull_damage = 1.5
+	shield_damage = 1
+	armor_damage = 1.25
+	shield_penetration = 1
+	armor_penetration = 0
+	resources = {
+		category = pokemon_ships
+		cost = {
+			alloys = 142.5 
+			sr_dark_matter = 2.1125
+		}		
+		upkeep = {
+			energy = 1.425
+			alloys = 0.285
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+weapon_component_template = {
+	key = "EOE_bullet_seed"
+	size = small
+
+	type = instant
+	
+	icon = "GFX_EOE_bullet_seed"
+	icon_frame = 1
+	power = -20
+	prerequisites = { "tech_EOE_bullet_seed" }
+	component_set = "EOE_bullet_seed"
+	projectile_gfx = "mass_driver_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 2
+	#upgrades_to = EOE_tempest_2 
+	damage = {
+		min = 3
+		max = 7.5
+	}
+	windup = {
+		min = 1
+		max = 3
+	}
+	total_fire_time = 4
+	range = 67
+	accuracy = 0.9
+	tracking = 0
+	hull_damage = 1
+	shield_damage = 0.75
+	armor_damage = 1.75
+	shield_penetration = 0
+	armor_penetration = 0
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = @s7_EOE_cost 
+			
+		}		
+		upkeep = {
+			energy = @s7_EOE_upkeep_energy
+			food = @s7_EOE_upkeep_food
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+weapon_component_template = {
+	key = "EOE_razor_leaf"
+	size = medium
+
+	type = instant
+	
+	icon = "GFX_EOE_razor_leaf"
+	icon_frame = 1
+	power = -38
+	prerequisites = { "tech_EOE_razor_leaf" }
+	component_set = "EOE_razor_leaf"
+	projectile_gfx = "mass_driver_m"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_hull }
+	ai_tag_weight = 2
+	#upgrades_to = EOE_tempest_2 
+	damage = {
+		min = 17
+		max = 27.5
+	}
+	windup = {
+		min = 2
+		max = 6
+	}
+	total_fire_time = 8
+	range = 88
+	accuracy = 0.9
+	tracking = 0.3
+	hull_damage = 1.5
+	shield_damage = 0.75
+	armor_damage = 0.75
+	shield_penetration = 1
+	armor_penetration = 0
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = @m7_EOE_cost 
+			
+		}		
+		upkeep = {
+			energy = @m7_EOE_upkeep_energy
+			food = @m7_EOE_upkeep_food
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+weapon_component_template = {
+	key = "EOE_double_edge"
+	size = large
+
+	type = instant
+	
+	icon = "GFX_EOE_double_edge"
+	icon_frame = 1
+	power = -70
+	prerequisites = { "tech_EOE_double_edge" }
+	component_set = "EOE_double_edge"
+	projectile_gfx = "mass_driver_l"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 2
+	#upgrades_to = EOE_tempest_2 
+	damage = {
+		min = 102
+		max = 310
+	}
+	windup = {
+		min = 22
+		max = 44
+	}
+	total_fire_time = 20
+	range = 110
+	accuracy = 0.95
+	tracking = 0
+	hull_damage = 1
+	shield_damage = 0.75
+	armor_damage = 1.75
+	shield_penetration = 0
+	armor_penetration = 0
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = @l7_EOE_cost 
+			
+		}		
+		upkeep = {
+			energy = @l7_EOE_upkeep_energy
+			food = @l7_EOE_upkeep_food
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+weapon_component_template = {
+	key = "EOE_flare_blitz"
+	size = extra_large
+
+	type = instant
+	
+	icon = "GFX_EOE_flare_blitz"
+	icon_frame = 1
+	power = -300
+	prerequisites = { "tech_EOE_flare_blitz" }
+	component_set = "EOE_flare_blitz"
+	projectile_gfx = "particle_lance"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 2
+	#upgrades_to = EOE_tempest_2 
+	damage = {
+		min = 1678
+		max = 2800
+	}
+	windup = {
+		min = 77
+		max = 139
+	}
+	total_fire_time = 40
+	range = 133
+	accuracy = 0.95
+	tracking = 0
+	hull_damage = 1.5
+	shield_damage = 0.75
+	armor_damage = 2
+	shield_penetration = 0
+	armor_penetration = 0
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = @xl7_EOE_cost 
+			exotic_gases = @xl7_EOE_sr_cost
+		}		
+		upkeep = {
+			energy = @xl7_EOE_upkeep_energy
+			food = @xl7_EOE_upkeep_food
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+weapon_component_template = {
+	key = "EOE_thunder_bolt"
+	size = small
+
+	type = instant
+	
+	icon = "GFX_EOE_thunder_bolt"
+	icon_frame = 1
+	power = -20
+	prerequisites = { "tech_EOE_thunder_bolt" }
+	component_set = "EOE_thunder_bolt"
+	projectile_gfx = "arc_emitter"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_hull }
+	ai_tag_weight = 2
+	#upgrades_to = EOE_tempest_2 
+	damage = {
+		min = 8
+		max = 23
+	}
+	windup = {
+		min = 2
+		max = 13
+	}
+	total_fire_time = 20
+	range = 50
+	accuracy = 1
+	tracking = 0
+	hull_damage = 1
+	shield_damage = 1
+	armor_damage = 1
+	shield_penetration = 1
+	armor_penetration = 1
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = @s7_EOE_cost 
+			
+		}		
+		upkeep = {
+			energy = @s7_EOE_upkeep_energy
+			food = @s7_EOE_upkeep_food
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+weapon_component_template = {
+	key = "EOE_aurora_beam"
+	size = medium
+
+	type = instant
+	
+	icon = "GFX_EOE_aurora_beam"
+	icon_frame = 1
+	power = -38
+	prerequisites = { "tech_EOE_aurora_beam" }
+	component_set = "EOE_aurora_beam"
+	projectile_gfx = "blue_laser_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }
+	ai_tag_weight = 2
+	#upgrades_to = EOE_tempest_2 
+	damage = {
+		min = 58
+		max = 97
+	}
+	windup = {
+		min = 5
+		max = 12
+	}
+	total_fire_time = 10
+	range = 50
+	accuracy = 1
+	tracking = 0.1
+	hull_damage = 1
+	shield_damage = 1.5
+	armor_damage = 0.75
+	shield_penetration = 0
+	armor_penetration = 0
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = @m7_EOE_cost 
+			
+		}		
+		upkeep = {
+			energy = @m7_EOE_upkeep_energy
+			food = @m7_EOE_upkeep_food
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+weapon_component_template = {
+	key = "EOE_swift"
+	size = large
+
+	type = instant
+	
+	icon = "GFX_EOE_swift"
+	icon_frame = 1
+	power = -70
+	prerequisites = { "tech_EOE_swift" }
+	component_set = "EOE_swift"
+	projectile_gfx = "arc_emitter"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_hull }
+	ai_tag_weight = 2
+	#upgrades_to = EOE_tempest_2 
+	damage = {
+		min = 243
+		max = 320
+	}
+	windup = {
+		min = 15
+		max = 27
+	}
+	total_fire_time = 45
+	range = 120
+	accuracy = 1
+	tracking = 0.8
+	hull_damage = 1
+	shield_damage = 1
+	armor_damage = 0.75
+	shield_penetration = 1
+	armor_penetration = 0
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = @l7_EOE_cost 
+			
+		}		
+		upkeep = {
+			energy = @l7_EOE_upkeep_energy
+			food = @l7_EOE_upkeep_food
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+weapon_component_template = {
+	key = "EOE_fairy_star"
+	size = extra_large
+
+	type = instant
+	
+	icon = "GFX_EOE_fairy_star"
+	icon_frame = 1
+	power = -300
+	prerequisites = { "tech_EOE_fairy_star" }
+	component_set = "EOE_fairy_star"
+	projectile_gfx = "particle_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }
+	ai_tag_weight = 2
+	#upgrades_to = EOE_tempest_2 
+	damage = {
+		min = 576
+		max = 1145
+	}
+	windup = {
+		min = 15
+		max = 27
+	}
+	total_fire_time = 45
+	range = 175
+	accuracy = 1
+	tracking = 0.5
+	hull_damage = 1.5
+	shield_damage = 1.5
+	armor_damage = 0.75
+	shield_penetration = 0
+	armor_penetration = 0
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = @xl7_EOE_cost 
+			exotic_gases = @xl7_EOE_sr_cost
+		}		
+		upkeep = {
+			energy = @xl7_EOE_upkeep_energy
+			food = @xl7_EOE_upkeep_food
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+# weapon_component_template = {
+# 	key = "EOE_blue_flare"
+# 	size = titanic
+
+# 	type = instant
+	
+# 	icon = "GFX_ship_part_global_pacifier"
+# 	icon_frame = 1
+# 	power = -650
+# 	prerequisites = { "tech_EOE_blue_flare" }
+# 	component_set = "EOE_blue_flare"
+# 	projectile_gfx = "tachyon_lance"
+# 	tags = { weapon_type_energy }
+# 	ai_tags = { weapon_role_anti_shield }
+# 	ai_tag_weight = 2
+# 	#upgrades_to = EOE_tempest_2 
+# 	damage = {
+# 		min = 10000
+# 		max = 14000
+# 	}
+# 	windup = {
+# 		min = 1
+# 		max = 599
+# 	}
+# 	total_fire_time = 100
+# 	range = 275
+# 	accuracy = 0.9
+# 	tracking = 0.1
+# 	hull_damage = 1.5
+# 	shield_damage = 1.25
+# 	armor_damage = 1
+# 	shield_penetration = 0
+# 	armor_penetration = 0
+# 	resources = {
+# 		category = pokemon_ships
+# 		cost = {
+# 			food = @titanic7_EOE_cost 
+# 			exotic_gases = @titanic7_EOE_sr_cost
+# 		}		
+# 		upkeep = {
+# 			energy = @titanic7_EOE_upkeep_energy
+# 			food = @titanic7_EOE_upkeep_food
+# 		}
+# 	}
+
+# 	ai_weight = {
+# 		weight = 2
+# 	}
+# }
+weapon_component_template = {
+	key = "EOE_radioactive_acid_s"
+	size = small
+
+	type = instant
+	
+	icon = "GFX_EOE_radioactive_acid"
+	icon_frame = 1
+	power = -40
+	prerequisites = { "tech_EOE_radioactive_acid" }
+	component_set = "EOE_radioactive_acid"
+	projectile_gfx = "xray_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 2
+	#upgrades_to = EOE_tempest_2 
+	damage = {
+		min = 9
+		max = 26
+	}
+	windup = {
+		min = 3
+		max = 8
+		}
+	total_fire_time = 10
+	range = 50
+	accuracy = 0.95
+	tracking = 0
+	hull_damage = 2
+	shield_damage = 1
+	armor_damage = 1.5
+	shield_penetration = 0
+	armor_penetration = 0
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = @s9_EOE_cost 
+			sr_zro = @s9_EOE_sr_cost
+		}		
+		upkeep = {
+			energy = @s9_EOE_upkeep_energy
+			food = @s9_EOE_upkeep_food
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+weapon_component_template = {
+	key = "EOE_radioactive_acid_m"
+	size = medium
+
+	type = instant
+	
+	icon = "GFX_EOE_radioactive_acid"
+	icon_frame = 1
+	power = -76
+	prerequisites = { "tech_EOE_radioactive_acid" }
+	component_set = "EOE_radioactive_acid"
+	projectile_gfx = "xray_laser_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 2
+	#upgrades_to = EOE_tempest_2 
+	damage = {
+		min = 97
+		max = 330
+	}
+	windup = {
+		min = 17
+		max = 40
+	}
+	total_fire_time = 60
+	range = 90
+	accuracy = 0.95
+	tracking = 0
+	hull_damage = 2
+	shield_damage = 1
+	armor_damage = 1.5
+	shield_penetration = 0
+	armor_penetration = 0
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = @m9_EOE_cost 
+			sr_zro = @m9_EOE_sr_cost 
+		}		
+		upkeep = {
+			energy = @m9_EOE_upkeep_energy
+			food = @m9_EOE_upkeep_food
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+weapon_component_template = {
+	key = "EOE_nuclear_star"
+	size = large
+
+	type = instant
+	
+	icon = "GFX_EOE_nuclear_star"
+	icon_frame = 1
+	power = -152
+	prerequisites = { "tech_EOE_nuclear_star" }
+	component_set = "EOE_nuclear_star"
+	projectile_gfx = "xray_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }
+	ai_tag_weight = 2
+	#upgrades_to = EOE_tempest_2 
+	damage = {
+		min = 201
+		max = 530
+	}
+	windup = {
+		min = 15
+		max = 27
+	}
+	total_fire_time = 45
+	range = 150
+	accuracy = 0.95
+	tracking = 0.85
+	hull_damage = 1
+	shield_damage = 1
+	armor_damage = 1.25
+	shield_penetration = 1
+	armor_penetration = 0
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = @l9_EOE_cost 
+			sr_zro = @l9_EOE_sr_cost
+		}		
+		upkeep = {
+			energy = @l9_EOE_upkeep_energy
+			food = @l9_EOE_upkeep_food
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+weapon_component_template = {
+	key = "EOE_fairy_beam"
+	size = extra_large
+
+	type = instant
+	
+	icon = "GFX_EOE_fairy_beam"
+	icon_frame = 1
+	power = -650
+	prerequisites = { "tech_EOE_fairy_beam" }
+	component_set = "EOE_fairy_beam"
+	projectile_gfx = "particle_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }
+	ai_tag_weight = 2
+	#upgrades_to = EOE_tempest_2 
+	damage = {
+		min = 7496
+		max = 10000
+	}
+	windup = {
+		min = 212
+		max = 623
+	}
+	total_fire_time = 102
+	range = 200
+	accuracy = 0.9
+	tracking = 0
+	hull_damage = 1
+	shield_damage = 1.75
+	armor_damage = 0.75
+	shield_penetration = 0
+	armor_penetration = 0
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = @xl9_EOE_cost 
+			sr_zro = @xl9_EOE_sr_cost
+		}		
+		upkeep = {
+			energy = @xl9_EOE_upkeep_energy
+			food = @xl9_EOE_upkeep_food
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+weapon_component_template = {
+	key = "EOE_nuclear_beam"
+	size = titanic
+
+	type = instant
+	
+	icon = "GFX_EOE_nuclear_beam"
+	icon_frame = 1
+	power = -1350
+	prerequisites = { "tech_EOE_nuclear_beam" }
+	component_set = "EOE_nuclear_beam"
+	projectile_gfx = "tachyon_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }
+	ai_tag_weight = 2
+	#upgrades_to = EOE_tempest_2 
+	damage = {
+		min = 23567
+		max = 45699
+	}
+	windup = {
+		min = 212
+		max = 623
+	}
+	total_fire_time = 102
+	range = 250
+	accuracy = 0.95
+	tracking = 0
+	hull_damage = 1
+	shield_damage = 1.25
+	armor_damage = 1.25
+	shield_penetration = 0
+	armor_penetration = 0
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = @titanic9_EOE_cost 
+			sr_zro = @titanic9_EOE_sr_cost
+		}		
+		upkeep = {
+			energy = @titanic9_EOE_upkeep_energy
+			food = @titanic9_EOE_upkeep_food
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "EOE_calm_mind"
+	size = small
+	icon = "GFX_EOE_calm_mind"
+	icon_frame = 1
+	prerequisites = { "tech_EOE_calm_mind" }
+	component_set = "EOE_calm_mind"
+	ship_modifier = {
+		ship_shield_mult = 0.25
+		weapon_type_energy_weapon_damage_mult = 0.15
+	}
+	
+}
+utility_component_template = {
+	key = "EOE_evolite"
+	size = small
+	icon = "GFX_EOE_evolite"
+	icon_frame = 1
+	prerequisites = { "tech_EOE_evolite" }
+	component_set = "EOE_evolite"
+	ship_modifier = {
+		ship_shield_mult = 0.5
+		ship_armor_mult = 0.5
+	}
+	
+}

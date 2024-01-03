@@ -1,0 +1,3171 @@
+namespace = eevent
+
+#################################
+#
+# Eeveelution Events
+# 6，7，6100，6105
+#
+#################################
+
+
+###开局事件，主线剧情触发器###
+country_event ={
+	id = eevent.6
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = { NOT = { has_country_flag = eoe_finish_starting } }
+	immediate = {
+		
+		random_country = {
+			limit = {
+				OR = {
+					owner_main_species = { has_trait = trait_EOE_Inheritors }
+					has_origin = origin_lotus_hezi_start
+								}
+				is_ai = no
+			}
+			country_event = {
+				 id = EOE_branch.1 days = 2 #克子事件
+			}
+		}
+		every_country = {
+			if = {
+				limit = {
+					any_owned_pop = {
+						has_trait = trait_EOE_Inheritors
+					}
+					is_ai = yes
+				}
+				add_modifier = {
+					modifier = EOE_hezi_dont_love_you days = -1
+				}
+			}
+			
+		 ####################
+
+			else_if= {
+				limit = { 
+					owner_main_species = {has_trait = trait_EOE_Inheritors}
+						  is_ai = no
+						}
+				set_country_flag = eoe_country
+				set_country_flag = maybe_has_hezi
+				country_event = { id = eevent.7 days = 1800  random = 180 }  #缸中之脑
+				#country_event = { id = eevent.140 days = 12000 random = 720 }  #创始者遗迹
+				#country_event = { id = leadereevent.58 }
+				EOE_spawn_protoss_shroud_planet = yes
+				EOE_spawn_protoss_shroud_planet = yes #刷虚境球
+				EOE_spawn_protoss_shroud_planet = yes
+				EOE_spawn_protoss_shroud_planet = yes
+				EOE_spawn_protoss_shroud_planet = yes				
+				country_event = { id = eevent.38 } 
+				country_event = { id = eevent.6999 }
+				#country_event = { id = leadereevent.1 days = 60 }
+				capital_scope = {  
+					solar_system = {
+						set_star_flag = EOE_capital_system
+					}
+					save_event_target_as = EOE_capital
+				 }
+				save_global_event_target_as = EOE_player_country
+				species = {
+					save_event_target_as = EOE_player_species
+				}
+			}
+			else_if= {
+				limit = {
+					has_civic = civic_external_synapse
+					owner_main_species = { has_trait = trait_EOE_Inheritors }
+					is_ai = no
+			 }
+				set_country_flag = eoe_country
+				set_country_flag = maybe_has_hezi
+				country_event = { id = eevent.7 days = 1800  random = 180 }  #缸中之脑
+				#country_event = { id = eevent.140 days = 12000 random = 720 }  #创始者遗迹
+				#country_event = { id = eevent.6998 }#伊布死寂球开局
+				country_event = { id = eevent.6999 } 
+				#country_event = { id = leadereevent.58 }
+				#country_event = { id = leadereevent.1 days = 60 }
+				capital_scope = {  
+					solar_system = {
+						set_star_flag = EOE_capital_system
+					}
+					save_event_target_as = EOE_capital
+				 }
+				save_global_event_target_as = EOE_player_country
+				species = {
+					save_event_target_as = EOE_player_species
+				}
+
+			}
+			#为了把伊布ai提前同化，挪到了这里
+			#################
+			else_if= {             #给ai伊布初始特质和防暴毙+生物学buff，如果是玩家自己捏的就不给（针对随机生成的eeveelutions国家，其实如果只是要头像的话为什么不去用那个能拿成就的版本呢）
+				limit = { 
+					 owner_main_species ={ is_species_class = Eeveelutions }
+					 is_ai = yes
+					 NOR = {
+					   has_civic = civic_eeveelutions_assimilator
+					   has_civic = civic_external_synapse
+					   has_civic = civic_scientific_faith
+					  any_owned_pop = {
+						has_trait = trait_EOE_Inheritors
+					  }
+					   has_origin = origin_protoss_shattered_ring
+					 }
+					 any_owned_pop = {
+						 NOR = {
+						   has_trait = trait_extremely_cute
+						   has_trait = trait_directed_evolution
+						   has_trait = trait_natural_psionic_warrior
+						   has_trait = trait_pokeball_adaptability
+					 }
+				 }
+			}
+		   every_owned_pop = {
+				modify_species = {
+					species = this
+					add_trait = trait_extremely_cute
+				   add_trait = trait_directed_evolution
+				   add_trait = trait_natural_psionic_warrior
+				   add_trait = trait_pokeball_adaptability
+				}
+				if = {
+					limit = { 
+						any_country = {
+							has_country_flag = eoe_country
+						}
+					}
+					modify_species = {
+						species = last_created_species
+						base = event_target:EOE_player_species
+					}
+				}
+				last_created_species = {
+					save_event_target_as = EOE_ai_eevee_species
+				}
+			   owner = {
+				   change_dominant_species = {
+					   species = event_target:EOE_ai_eevee_species
+				   }
+			   }
+			}
+		
+		country_event = {
+			id = EOEai.1     #防暴毙BUFF，离玩家12跳以内就不给，方便早战抢老婆（
+		}
+		
+		}
+		
+			set_country_flag = eoe_finish_starting
+		}
+	}
+}
+############################################################################################
+#7，6100，6105保护伞公司缸中之脑
+country_event = {
+	id = eevent.7
+	title = "eevent.7.name"
+	desc = {
+		trigger = { has_ethic = ethic_gestalt_consciousness }
+		text = "eevent.7.1.desc"	
+	}
+	desc = {
+		trigger = { NOT = { has_ethic = ethic_gestalt_consciousness }  }
+		text = "eevent.7.desc"	
+	}
+	picture = GFX_evt_EOE_protossRelic
+	show_sound = event_power_down
+	location = event_target:eeveelab
+
+	is_triggered_only = yes
+	
+	immediate = {
+		random_planet_within_border = {
+			limit = {
+				OR = {
+					is_planet_class = pc_barren
+					is_planet_class = pc_barren_cold
+					is_planet_class = pc_frozen 
+					is_planet_class = pc_toxic     
+					is_planet_class = pc_molten      ################# 调整了顺序，把熔融星球放在了后面，原来是第一个   2022年5月1日19:12:57
+					is_planet_class = pc_gas_giant
+					is_planet_class = pc_asteroid
+				}
+				NOT = { exists = archaeological_site }
+				NOT = { has_planet_flag = suppress_archaeological_sites }
+			}
+			save_event_target_as = eeveelab
+		}
+	}
+
+	option = {
+		name = eevent.7.a
+		event_target:eeveelab = {
+			create_archaeological_site = site_eeveelab
+		}
+	}
+}
+
+fleet_event = {
+	id = eevent.6100
+	title = "eevent.6100.name"
+	desc = "eevent.6100.desc"
+	picture = GFX_evt_EOE_Umbrella1
+	show_sound = event_door_opening
+	
+	archaeology = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = FASCINATING
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = eevent.6105
+	title = "eevent.6105.name"
+	desc = "eevent.6105.desc"
+	picture = GFX_evt_EOE_Umbrella2
+	show_sound = event_laboratory_sound
+	
+	archaeology = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = INTRIGUING
+		small_artifact_reward = yes
+	}
+}
+
+
+
+
+#################################
+#
+#虚空之遗 剧情事件链
+#140，10-12，16，17，13-15，142，143，165，20-24，3-5，22222, 168，6131，6132
+# 
+#
+#################################
+
+
+country_event = {
+	id = eevent.140
+	title = "eevent.140.name"
+	desc = "eevent.140.desc"
+	picture = GFX_evt_EOE_ProtossBase1
+	show_sound = event_power_down
+	location = event_target:EOEprotoss
+
+	is_triggered_only = yes
+	
+	immediate = {
+		random_planet_within_border = {
+			limit = {
+				OR = {
+					is_planet_class = pc_molten
+					is_planet_class = pc_barren
+					is_planet_class = pc_barren_cold
+					is_planet_class = pc_frozen 
+				}
+				NOT = { exists = archaeological_site }
+				NOT = { has_planet_flag = suppress_archaeological_sites }
+			}
+			save_event_target_as = EOEprotoss
+		}
+	}
+
+	option = {
+		name = eevent.140.a
+		event_target:EOEprotoss = {
+			create_archaeological_site = EOE_ProtossBase
+		}
+		owner = {
+			begin_event_chain = {
+				event_chain = "old_creators_chain"
+				target = root.owner
+			}
+	}
+}
+}
+
+
+fleet_event = {
+	id = eevent.10
+	title = "eevent.10.name"
+	desc = "eevent.10.desc"
+	picture = GFX_evt_EOE_Have_an_ice
+	show_sound = event_door_opening
+	
+	archaeology = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = eevent.10.a
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = eevent.11
+	title = "eevent.11.name"
+	desc = "eevent.11.desc"
+	picture = GFX_evt_EOE_ProtossBase1
+	show_sound = event_door_opening
+	
+	archaeology = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = eevent.10.a
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = eevent.12
+	title = "eevent.12.name"
+	desc = "eevent.12.desc"
+	picture = GFX_evt_EOE_ProtossBase1
+	show_sound = event_door_opening
+	
+	archaeology = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = eevent.12.a
+		large_artifact_reward = yes
+		enable_special_project = {
+				name = "EOE_wait"
+				location = from
+				owner = root
+			}
+
+		}
+	
+		option = {
+		name = eevent.12.b
+		large_artifact_reward = yes
+		hidden_effect = {
+			owner = {
+				country_event = { id = eevent.17 }
+			}
+		}
+	}
+
+}
+
+ship_event = {
+	id = eevent.16
+	title = "eevent.16.name"
+	desc = {
+		trigger = { owner = { has_ethic = ethic_gestalt_consciousness } }
+		text = "eevent.16.1.desc"	
+	}
+	desc = {
+		trigger = { owner = { NOT = { has_ethic = ethic_gestalt_consciousness } } }
+		text = "eevent.16.desc"	
+	}
+	picture = GFX_evt_EOE_Comforted
+	show_sound = event_mystic_reveal
+	location = FROMFROM
+	
+	is_triggered_only = yes
+
+		option = {
+		name = eevent.16.a
+		trigger = { owner = {NOT = { has_ethic = ethic_gestalt_consciousness } } }
+		leader = {
+			add_trait = leader_trait_carefree
+		}
+		owner = {
+				country_event = { id = eevent.13 }
+			}
+		}
+		option = {
+			name = eevent.16.b
+			trigger = { owner = { has_ethic = ethic_gestalt_consciousness } }
+			
+			owner = {
+				add_modifier = { modifier = advanced_petting_method days = -1 }
+					country_event = { id = eevent.13 }
+				}
+		}
+
+	}
+	
+country_event = {
+	id = eevent.17
+	title = "eevent.17.name"
+	desc = "eevent.17.desc"
+	picture = GFX_evt_EOE_Angry_Glaceon
+	show_sound = event_power_down
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = eevent.17.a
+		owner = {
+				country_event = { id = eevent.13 }
+			}
+		}
+	}
+
+
+
+#对话
+country_event = {
+	id = eevent.13
+	title = "eevent.13.name"
+	diplomatic_title = BLANK_STRING
+	desc = "eevent.13.desc"
+	show_sound = event_administrative_work
+	location = from.from
+
+	diplomatic = yes
+
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = EOE_protoss_room
+	}
+	
+	immediate = {
+		if = {
+			limit = {   
+				closest_system = {
+					limit = {
+						NOR = {
+							is_owned_by = event_target:fallen_empire
+							has_star_flag = hostile_system
+							is_same_value = root.solar_system
+							is_pirate_system = yes
+						}
+						has_access_fleet = root.owner
+					}
+					min_steps = 4
+					max_steps = 100
+				}
+			  }
+			  closest_system = {
+				limit = {
+					NOR = {
+						is_owned_by = event_target:fallen_empire
+						has_star_flag = hostile_system
+						is_same_value = root.solar_system
+						is_pirate_system = yes
+					}
+					has_access_fleet = root.owner
+				}
+				min_steps = 4
+				max_steps = 100
+				set_star_flag = old_creators_system_1@root.owner
+			}
+			  
+
+		}
+
+		else = {
+			closest_system = {
+				min_steps = 2
+				max_steps = 100
+				set_star_flag = old_creators_system_1@root.owner
+			}
+			
+		}
+
+		}
+	
+		option = {
+		name = "eevent.13.a"
+		response_text = eevent.13.a.response
+		is_dialog_only = yes
+	}
+
+	option = {
+		name = "eevent.13.b"
+		response_text = eevent.13.b.response
+		is_dialog_only = yes
+	}
+
+	option = {
+		name = "eevent.13.c"
+		response_text = eevent.13.c.response
+		is_dialog_only = yes
+	}
+
+
+	option = {
+		name = "eevent.13.d"
+		hidden_effect = { 
+			country_event = { id = eevent.14 }
+		}
+	}
+	
+	option = {
+		name = "eevent.13.e"
+		hidden_effect = { 
+			country_event = { id = eevent.15 }
+		}
+	}
+	option = {
+		trigger = {
+			any_system = { has_star_flag = old_creators_system_1@root.owner }
+		}
+		name = "eevent.13.f"
+		hidden_effect = {
+			random_system = {
+				limit = { has_star_flag = old_creators_system_1@root.owner }
+				save_event_target_as = old_creators_system_1
+			}
+			create_point_of_interest = {
+				id = old_creators_shrine_poi.1
+				name = "old_creators_shrine_poi_1"
+				desc = "old_creators_shrine_poi_1_desc"
+				event_chain = "old_creators_chain"
+				location = event_target:old_creators_system_1
+			}
+		}
+		
+	}
+
+}
+
+country_event = {
+	id = eevent.14
+	title = "eevent.14.name"
+	diplomatic_title = BLANK_STRING
+	desc = "eevent.14.desc"
+	show_sound = event_administrative_work
+	location = from.from.from
+
+	diplomatic = yes
+
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = EOE_protoss_room
+		}
+
+
+	option = {
+		name = eevent.14.a
+		response_text = eevent.14.a.response
+		is_dialog_only = yes
+	}
+
+	option = {
+		name = eevent.14.b
+		hidden_effect = {
+			country_event = { id = eevent.13 }
+		}
+	}
+}
+
+country_event = {
+	id = eevent.15
+	title = "eevent.15.name"
+	diplomatic_title = BLANK_STRING
+	desc = "eevent.15.desc"
+	show_sound = event_administrative_work
+	location = from.from.from
+
+	diplomatic = yes
+
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = EOE_protoss_room
+	}
+
+
+	option = {
+		name = eevent.15.a
+		response_text = eevent.15.a.response
+		is_dialog_only = yes
+	}
+
+	option = {
+		name = eevent.15.b
+		hidden_effect = {
+			country_event = { id = eevent.13 }
+		}
+	}
+}
+
+
+
+
+fleet_event = {
+	id = eevent.142
+	title = "eevent.142.name"
+	desc = "eevent.142.desc"
+	picture = GFX_evt_EOE_event1
+	show_sound = event_mystic_reveal
+	location = event_target:EOEship
+	trackable = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		owner = { 
+		NOT = { has_country_flag = old_creators_benefactress }
+		}
+		FROM = {
+			has_star_flag = old_creators_system_1@root.owner 
+		
+		}
+	}
+
+	immediate = {
+		FROM = { remove_star_flag = old_creators_system_1@root.owner }
+		owner = { remove_point_of_interest = old_creators_shrine_poi.1 }
+		create_ambient_object = {
+			type = "derelict_ship_object"  
+			location = solar_system
+		}
+		last_created_ambient_object = {
+			save_event_target_as = EOEship
+			enable_special_project = {
+				name = "OLD_creators_1"
+				location = this
+				owner = root
+			}
+		}
+		owner = { set_country_flag = old_creators_benefactress }
+	}
+
+	option = {
+		name = "eevent.142.a"
+	}
+}
+
+# OLD creators - THE UNDAUNTED DISCOVERED, NEEDS ENGINEERING
+fleet_event = {
+	id = eevent.143
+	title = "eevent.143.name"
+	desc = "eevent.143.desc"
+	picture = GFX_evt_EOE_event2
+	show_sound = event_mystic_reveal
+	location = event_target:EOEship
+	trackable = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = { 
+		has_country_flag = old_creators_benefactress 
+		NOT = { has_country_flag = old_creators_undaunted }
+		}
+		FROM = { 
+			has_star_flag = old_creators_system_2@root.owner
+		}
+		
+		}
+	
+
+	immediate = {
+		FROM = { remove_star_flag = old_creators_system_2@root.owner }
+		owner = { remove_point_of_interest = old_creators_shrine_poi.2 }
+		create_ambient_object = {
+			type = "abandoned_ship_object"  
+			location = solar_system
+		}
+		last_created_ambient_object = {
+			save_event_target_as = EOEship
+			enable_special_project = {
+				name = "OLD_creators_2"
+				location = this
+				owner = root
+			}
+		}
+		owner = { set_country_flag = old_creators_undaunted }
+	}
+
+	option = {
+		name = "eevent.143.a"
+	}
+}
+
+
+# OLD creators - THE BENEFACTRESS RESEARCHED
+ship_event = {
+	id = eevent.165
+	title = "eevent.165.name"
+	desc = "eevent.165.desc"
+	picture = GFX_evt_EOE_event1
+	show_sound = event_mystic_reveal
+	location = fromfrom
+	
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {   
+				closest_system = {
+					limit = {
+						NOR = {
+							is_owned_by = event_target:fallen_empire
+							has_star_flag = hostile_system
+							is_same_value = root.solar_system
+							is_pirate_system = yes
+						}
+						has_access_fleet = root.owner
+					}
+					min_steps = 4
+					max_steps = 100
+				}
+			  }
+			  closest_system = {
+				limit = {
+					NOR = {
+						is_owned_by = event_target:fallen_empire
+						has_star_flag = hostile_system
+						is_same_value = root.solar_system
+						is_pirate_system = yes
+					}
+					has_access_fleet = root.owner
+				}
+				min_steps = 4
+				max_steps = 100
+				set_star_flag = old_creators_system_2@root.owner
+			}
+			  
+
+		}
+
+		else = {
+			closest_system = {
+				min_steps = 2
+				max_steps = 100
+				set_star_flag = old_creators_system_2@root.owner
+			}
+			
+		}
+
+		
+		# hidden_effect = {
+		# 			closest_system = {
+		# 	limit = {
+		# 		NOR = {
+		# 			is_owned_by = event_target:fallen_empire
+		# 			has_star_flag = hostile_system
+		# 			is_same_value = root.solar_system
+		# 			is_pirate_system = yes
+					
+		# 		}
+		# 		has_access_fleet = root.owner
+		# 	}
+		# 	min_steps = 4
+		# 	max_steps = 100
+		# 	set_star_flag = old_creators_system_2@root.owner
+		# }
+
+		# }
+	}
+
+	option = {
+		name = "eevent.165.a"
+			owner = {
+			add_research_option = tech_crystal_armor_2
+			add_tech_progress = { tech = tech_crystal_armor_2 progress = 0.20 }
+             }
+		hidden_effect = {
+			fromfrom = { destroy_ambient_object = this }
+			random_system = {
+				limit = { has_star_flag = old_creators_system_2@root.owner }
+				save_event_target_as = old_creators_system_2
+			}
+			owner = {
+				remove_point_of_interest = old_creators_shrine_poi.1
+			}
+			create_point_of_interest = {
+				id = old_creators_shrine_poi.2
+				name = "old_creators_shrine_poi_2"
+				desc = "old_creators_shrine_poi_2_desc"
+				event_chain = "old_creators_chain"
+				location = event_target:old_creators_system_2
+			}
+		
+
+		}
+	}
+}
+
+##########
+
+# OLD creators - THE UNDAUNTED RESEARCHED
+ship_event = {
+	id = eevent.166
+	title = "eevent.166.name"
+	desc = "eevent.166.desc"
+	picture = GFX_evt_EOE_event2
+	show_sound = event_mystic_reveal
+	location = fromfrom
+	
+	is_triggered_only = yes
+
+	immediate = {
+	owner = {
+	random_planet_within_border = {
+			limit = {
+				OR = {
+					is_planet_class = pc_molten
+					is_planet_class = pc_barren
+					is_planet_class = pc_barren_cold
+					is_planet_class = pc_frozen 
+				}
+				NOT = { exists = archaeological_site }
+				NOT = { has_planet_flag = suppress_archaeological_sites }
+			}
+			save_event_target_as = EOEprotossRelic
+			set_planet_flag = Protoss_guhui
+		}
+		}
+	}
+
+	option = {
+	
+	
+		name = "eevent.166.a"
+		
+			event_target:EOEprotossRelic = {
+			create_archaeological_site = EOE_ProtossRelic
+		}
+
+		hidden_effect = {
+			fromfrom = { destroy_ambient_object = this }
+		}
+	}
+}
+
+
+fleet_event = {
+	id = eevent.20
+	title = "eevent.20.name"
+	desc = "eevent.20.desc"
+	picture = GFX_evt_EOE_ARK
+	show_sound = event_door_opening
+	
+	archaeology = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = eevent.20.a
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = eevent.21
+	title = "eevent.21.name"
+	desc = "eevent.21.desc"
+	picture = GFX_evt_EOE_ARK
+	show_sound = event_door_opening
+	
+	archaeology = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = eevent.20.a
+		small_artifact_reward = yes
+		owner = {
+		add_resource = { 
+				sr_zro = 5
+			}
+			}
+	}
+}
+fleet_event = {
+	id = eevent.22
+	title = "eevent.22.name"
+	desc = "eevent.22.desc"
+	picture = GFX_evt_EOE_event3
+	show_sound = event_door_opening
+	
+	archaeology = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = eevent.20.a
+		large_artifact_reward = yes
+		owner = {
+		add_resource = { 
+				sr_zro = 2000
+			}
+			}
+	}
+}
+fleet_event = {
+	id = eevent.23
+	title = "eevent.23.name"
+	desc = "eevent.23.desc"
+	picture = GFX_evt_EOE_event4
+	show_sound = event_door_opening
+	
+	archaeology = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = eevent.20.a
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = eevent.24
+	title = "eevent.24.name"
+	desc = "eevent.24.desc"
+	picture = GFX_evt_EOE_protossRelic
+	show_sound = event_door_opening
+	
+	archaeology = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = eevent.24.a
+		large_artifact_reward = yes
+		owner = {
+		country_event = { id = eevent.22222}
+		}
+	}
+}
+
+
+country_event = {
+	id = eevent.22222
+	title = "eevent.22222.name"
+	desc = "eevent.22222.desc"
+	picture = GFX_evt_EOE_event5
+	
+	is_triggered_only = yes
+	option = {
+		 name = eevent.22222.a
+		 hidden_effect =  { country_event = {  id = eevent.168 }  }
+		}
+}
+#############
+# OLD creators - CHAIN COMPLETE
+country_event = {
+	id = eevent.168
+	title = "eevent.168.name"
+	desc = "eevent.168.desc"
+	picture = GFX_evt_EOE_event5
+	show_sound = event_mystic_reveal
+	
+	is_triggered_only = yes
+	
+	
+	
+	immediate = {
+		set_country_flag = completed_old_creators
+		set_country_flag = EOE_psychic_tech
+		
+		# every_country = {
+		# 	if= {
+		# 		limit = { has_authority = auth_EOE_oligarchic }
+		# 		country_event = { id = eevent.30 days = 5400 random = 360 }
+		# 		# country_event = { id = EOEjifei3.1 days = 14 random = 3 }   #1440 360
+
+		# 	}
+		# 	if= {
+		# 		limit = { has_authority = auth_EOE_imperial }
+		# 		country_event = { id = eevent.30 days = 5400 random = 360 }
+		# 		#country_event = { id = EOEjifei3.1 days = 14 random = 3 }
+		# 	}
+		# 	if= {
+		# 		limit = { has_civic = civic_external_synapse }
+		# 		country_event = { id = eevent.30 days = 5400 random = 360 }
+		# 		#country_event = { id = EOEjifei3.1 days = 14 random = 3 }
+		# 	}
+		# 	set_country_flag = eoe_finish_starting
+		# }
+	}
+	option = {
+		name = "eevent.168.b"
+		trigger = {  has_ethic = ethic_gestalt_consciousness  }
+
+		custom_tooltip = eevent.168.c.tootip
+		
+		add_resource = { 
+			unity = 5000 
+		        influence = 200 
+		}
+		owner = { 
+		
+		add_research_option = tech_psionic_barrier_EOE
+					
+			add_modifier = {
+                		modifier = From_generation_to_generation
+                		days = -1
+           		 }
+				 
+			country_event = { id = eevent.6131 }
+		}
+		random_planet_within_border = {
+			limit = { has_planet_flag = Protoss_guhui }
+			add_deposit = d_zro_deposit_5
+			add_deposit = d_zro_deposit_5
+		}
+						 
+		end_event_chain = "old_creators_chain"
+		
+		
+		
+	
+	}
+
+	option = {
+		name = "eevent.168.c"
+		trigger = { NOT = { has_ethic = ethic_gestalt_consciousness }  }
+
+		custom_tooltip = eevent.168.c.tootip
+		
+		add_resource = { 
+			unity = 5000 
+		    influence = 200 
+		}
+		owner = { 
+		
+		add_research_option = tech_psionic_barrier
+					
+			add_modifier = {
+                		modifier = From_generation_to_generation
+                		days = -1
+           		 }
+				 
+			country_event = { id = eevent.6131 }
+		}
+		random_planet_within_border = {
+			limit = { has_planet_flag = Protoss_guhui }
+			add_deposit = d_zro_deposit_5
+			add_deposit = d_zro_deposit_5
+		}
+		
+						 
+		end_event_chain = "old_creators_chain"
+		
+		
+		
+	
+	}
+
+}
+
+country_event = {
+	id = eevent.6131
+	title = TRANSMISSION
+	desc = "eevent.6131.desc"
+	show_sound = advisor_notification_incoming_transmission
+	
+	diplomatic = yes
+	
+	is_triggered_only = yes
+	
+	picture_event_data = {
+		room = EOE_protoss_room
+	}
+	
+	option = {
+		name = eevent.6131.a
+		
+      owner = { add_relic = r_EOE_warp_gate }
+	}
+}
+
+
+
+
+
+###召舰队###
+country_event = {
+	id = eevent.6132
+	title = TRANSMISSION
+	desc = "eevent.6132.desc"
+
+	
+	diplomatic = yes
+	
+	is_triggered_only = yes
+	
+	picture_event_data = {
+		room = EOE_Fleet_Ready_room
+	}
+	immediate = {
+		if = {
+			limit = {
+				NOT = { is_variable_set = EOE_protoss_shipbuild }
+			}
+			set_variable = {
+				which = EOE_protoss_shipbuild
+				value = 1
+			}
+		}
+	}
+	
+	option = {
+		name = eevent.6132.a
+		hidden_effect = {
+			capital_scope = {
+				create_fleet = {
+					name = "Reinforcements"
+					effect = {
+						
+						while = {
+							count = root.EOE_protoss_shipbuild
+					create_ship = {
+					name = "NAME_Avatar"
+					design = "NAME_Avatar"
+					graphical_culture = fallen_empire_02
+					effect = {	 add_modifier = { modifier = EOE_pokeball_catched	}		 }
+				}
+
+						}
+						while = {
+							count = root.value:EOE_protoss_shipbuild_three
+					create_ship = {
+					name = "NAME_Zealot"
+					design = "NAME_Zealot"
+					graphical_culture = fallen_empire_01
+					effect = {	 add_modifier = { modifier = EOE_pokeball_catched	}		 }
+				}
+
+						}
+						set_location = {
+							target = prev
+							distance = 45
+							angle = random
+						}
+						set_owner = root
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					check_variable = {
+						which = EOE_protoss_shipbuild
+						value <= 4
+					}
+				}
+				change_variable = {
+					which = EOE_protoss_shipbuild
+					value = 1
+				}
+			}
+		}
+	}
+}
+###给科技###
+
+country_event = {
+	id = eevent.3
+	title = "eevent.3.name"
+	desc = "eevent.3.desc"
+	picture = GFX_evt_metropolis
+	show_sound = event_mystic_reveal
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = { 
+	 has_country_flag = EOE_psychic_tech 
+	OR = {
+		has_technology = tech_combat_computers_3
+		has_technology = tech_combat_computers_autonomous
+		}
+		}
+	option = {
+		name = "eevent.3.a"
+		trigger = {
+			NOT = { has_ethic = ethic_gestalt_consciousness }
+		}
+			add_research_option = tech_precognition_interface
+		
+		}
+		option = {
+			name = "eevent.3.a"
+			trigger = {
+				has_ethic = ethic_gestalt_consciousness
+			}
+			add_research_option = tech_precognition_interface_EOE
+			}
+     }
+	
+country_event = {
+	id = eevent.4
+	title = "eevent.4.name"
+	desc = "eevent.4.desc"
+	picture = GFX_evt_metropolis
+	show_sound = event_mystic_reveal
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {  
+		has_country_flag = EOE_psychic_tech 
+		has_technology = tech_jump_drive_1
+	}
+
+	option = {
+		name = "eevent.4.a"
+		trigger = {
+			NOT = { has_ethic = ethic_gestalt_consciousness }
+		}
+			add_research_option = tech_psi_jump_drive_1
+	}
+	option = {
+		name = "eevent.4.a"
+		trigger = {
+			 has_ethic = ethic_gestalt_consciousness 
+		}
+			add_research_option = tech_psi_jump_drive_1_EOE
+	}
+}
+	
+
+country_event = {
+	id = eevent.5
+	title = "eevent.5.name"
+	desc = "eevent.5.desc"
+	picture = GFX_evt_metropolis
+	show_sound = event_mystic_reveal
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {  
+		has_country_flag = EOE_psychic_tech 
+		has_technology = tech_shields_5
+	}
+
+	option = {
+		name = "eevent.5.a"
+		trigger = {
+			NOT = { has_ethic = ethic_gestalt_consciousness }
+		}
+			add_research_option = tech_psionic_shield 
+	} 
+	option = {
+		name = "eevent.5.a"
+		trigger = {
+			 has_ethic = ethic_gestalt_consciousness 
+		}
+			add_research_option = tech_psionic_shield_EOE
+	} 
+}
+
+country_event = {
+	id = eevent.345
+	title = "eevent.345.name"
+	desc = "eevent.345.desc"
+	picture = GFX_evt_metropolis
+	show_sound = event_mystic_reveal
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {  
+		has_country_flag = EOE_zhongzizhuangjia
+		has_technology = tech_ship_armor_4
+	}
+
+	option = {
+		name = "eevent.345.a"
+			add_research_option = tech_ship_armor_5
+			add_tech_progress = { tech = tech_ship_armor_5 progress = 0.5 }
+	} 
+}
+	
+
+
+
+###小豪坟 30-34
+
+country_event = {
+	id = eevent.30
+	title = "eevent.30.name"
+	desc = "eevent.30.desc"
+	picture = GFX_evt_EOE_Dimension_Ark_1
+	show_sound = event_power_down
+	location = event_target:EOE_Dimension_Ark
+
+	is_triggered_only = yes
+	
+	immediate = {
+		random_planet_within_border = {
+			limit = {
+				OR = {
+					is_planet_class = pc_continental
+					is_planet_class = pc_tropical
+					is_planet_class = pc_ocean
+					is_planet_class = pc_arctic
+					is_planet_class = pc_arid
+					is_planet_class = pc_tundra
+					is_planet_class = pc_alpine
+					is_planet_class = pc_savannah
+					is_planet_class = pc_desert
+					is_planet_class = pc_gaia
+					is_planet_class = pc_relic
+					
+				}
+				NOT = { exists = archaeological_site }
+				NOT = { has_planet_flag = suppress_archaeological_sites }
+			}
+			save_event_target_as = EOE_Dimension_Ark
+		}
+	}
+
+	option = {
+		name = eevent.140.a
+		event_target:EOE_Dimension_Ark = {
+			create_archaeological_site = EOE_Dimension_Ark
+		}
+	}
+}
+
+fleet_event = {
+	id = eevent.31
+	title = "eevent.31.name"
+	desc = "eevent.31.desc"
+	picture = GFX_evt_EOE_Dimension_Ark_2
+	show_sound = event_door_opening
+	
+	archaeology = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = eevent.20.a
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = eevent.32
+	title = "eevent.32.name"
+	desc = "eevent.32.desc"
+	picture = GFX_evt_EOE_Dimension_Ark_3
+	show_sound = event_door_opening
+	
+	archaeology = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = eevent.20.a
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = eevent.33
+	title = "eevent.33.name"
+	desc = "eevent.33.desc"
+	picture = GFX_evt_EOE_Dimension_Ark_4
+	show_sound = event_door_opening
+	
+	archaeology = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = eevent.33.a
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = eevent.34
+	title = "eevent.34.name"
+	desc = "eevent.34.desc"
+	picture = GFX_evt_EOE_Dimension_Ark_5
+	show_sound = event_door_opening
+	
+	archaeology = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = eevent.34.a
+		small_artifact_reward = yes
+		owner = {
+			add_research_option = EOE_mental_storm
+		}
+	}
+}
+
+# the pokeball 巨像武器，35-36
+planet_event = {
+	id = eevent.35
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = { # remove hive mind?
+		from.owner = { country_event = { id = eevent.36 } }
+
+		if = {
+			limit = {
+				OR = {
+					is_active_resolution = "resolution_rulesofwar_independent_tribunals"
+					is_active_resolution = "resolution_rulesofwar_last_resort_doctrine"
+					is_active_resolution = "resolution_rulesofwar_demobilization_initiative"
+				}
+			}
+			from.owner = {
+				set_timed_country_flag = { flag = resolution_breached_fired_assimilator days = 3600 }
+			}
+		}
+
+		if = {
+			limit = {
+				exists = owner
+				owner = {
+					NOT = { is_same_value = from.owner }
+					OR = {
+						is_country_type = default
+						is_country_type = fallen_empire
+						is_country_type = awakened_fallen_empire
+					}
+				}
+			}
+			# Generate threat
+			add_threat = { who = from.owner amount = 3 }
+			# modifier for allies + those upset by robots
+			every_country = {
+				limit = {
+					NOR = {
+						is_same_value = from.owner
+						is_same_value = root.owner
+						AND = {
+							has_federation = yes
+							is_in_federation_with = from.owner
+						}
+					}
+					OR = {
+						has_communications = from.owner
+						has_communications = root.owner
+					}
+					OR = {
+						AND = {
+							has_federation = yes
+							is_in_federation_with = root.owner
+						}
+						has_ai_personality = awakened_fallen_empire_spiritualist
+						AND = {
+							is_country_type = default
+							OR = {
+								is_egalitarian = yes
+								is_spiritualist = yes
+							}
+						}
+					}
+				}
+				add_opinion_modifier = {
+					modifier = opinion_assimilated_a_world
+					who = from.owner
+				}
+			}
+			# modifiers for victim
+			owner = {
+				add_opinion_modifier = {
+					modifier = opinion_assimilated_my_world
+					who = from.owner
+				}
+				if = {
+					limit = { NOT = { has_ethic = ethic_gestalt_consciousness } }
+					add_modifier = {
+						modifier = colossus_victim
+						days = 10800 # 30 years
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				exists = owner
+				owner = { is_country_type = primitive }
+			}
+			# modifier for allies + those upset by genocide
+			every_country = {
+				limit = {
+					NOR = { is_same_value = from.owner }
+					OR = {
+						has_communications = from.owner
+						has_communications = root.owner
+					}
+					is_country_type = default
+					NOR = {
+						is_xenophobe = yes
+						is_homicidal = yes
+						is_xenophile = yes
+					}
+				}
+				add_opinion_modifier = {
+					modifier = opinion_assimilated_a_primitive_world
+					who = from.owner
+				}
+			}
+			every_country = {
+				limit = {
+					NOR = { is_same_value = from.owner }
+					OR = {
+						has_communications = from.owner
+						has_communications = root.owner
+					}
+					OR = {
+						has_ai_personality = awakened_fallen_empire_xenophile
+						AND = {
+							is_country_type = default
+							is_xenophile = yes
+						}
+					}
+				}
+				add_opinion_modifier = {
+					modifier = opinion_assimilated_a_primitive_world_phile
+					who = from.owner
+				}
+			}
+		}
+		# Add war exhaustion to planet owner
+		owner = {
+			if = {
+				limit = { #isn't the case when the crisis bombards planets, for instance
+					is_at_war_with = from.fleet.owner
+				}
+				add_static_war_exhaustion = {
+					attacker = from.fleet.owner
+					location = root
+					value_for_planet_destruction = 1.0
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = owner
+				owner = { is_same_value = from.owner }
+			}
+			# already owned
+		}
+		else = {
+			set_owner = from.owner
+		}
+		#every_owned_pop = {
+		#	limit = {
+		#		is_valid_pop_for_PLANET_KILLER_NANOBOTS = yes
+		#	}
+		#	modify_species = {
+		#		species = this
+		#		add_trait = trait_cybernetic
+		#		add_traits_at_start_of_list = yes
+		#		change_scoped_species = yes
+		#	}
+		#}
+		every_owned_pop = {
+			limit = {
+				OR = {
+					has_trait = trait_hive_mind
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+				}
+			}
+			kill_pop = yes
+		}
+		every_owned_pop = {
+			limit = {
+				has_modifier = pop_recently_conquered
+			}
+			remove_modifier = pop_recently_conquered
+		}
+		#every_owned_pop = {
+		#	set_citizenship_type = {
+		#		type = citizenship_full_machine
+		#		cooldown = yes
+		#	}
+		#}
+		# Special graphics for Habitats and Ring Worlds
+		if = {
+			limit = {
+				is_planet_class = pc_habitat
+			}
+			spawn_habitat_nanobot_effect = yes
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_ringworld_habitable
+			}
+			spawn_ringworld_nanobot_effect = yes
+		}
+		if = {
+			limit = {
+				OR = {
+					is_planet_class = pc_habitat
+					is_planet_class = pc_ringworld_habitable
+				}
+			}
+			# nothing
+		}
+		else = {
+			switch = {
+				trigger = is_planet_class
+				pc_desert = { change_pc = pc_desert }
+				pc_arid = { change_pc = pc_arid }
+				pc_savannah = { change_pc = pc_savannah }
+				pc_ocean = { change_pc = pc_ocean }
+				pc_continental = { change_pc = pc_continental }
+				pc_tropical = { change_pc = pc_tropical }
+				pc_tundra = { change_pc = pc_tundra }
+				pc_arctic = { change_pc = pc_arctic }
+				pc_alpine = { change_pc = pc_alpine }
+			}
+		}
+		delete_fleet = from
+	}
+}
+country_event = {
+	id = eevent.36
+	title = eevent.36.name
+	desc = eevent.36.desc
+	picture = GFX_evt_shrouded_planet
+	show_sound = event_mystic_reveal
+	location = from
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = fired_nanobots }
+		FROM = {
+			NOR = {
+				is_planet_class = pc_habitat
+				is_planet_class = pc_ringworld_habitable
+			}
+		}
+	}
+
+	immediate = {
+		set_country_flag = fired_nanobots
+	}
+
+	option = {
+		name = eevent.36.a
+	}
+}
+
+#杂项 37~38
+
+# country_event = { #伊布也要当银河皇帝
+# 	id = eevent.37
+# 	hide_window = yes
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		has_country_flag = eoe_country
+# 		is_galactic_emperor = yes
+# 		has_authority = auth_imperial
+# 	}
+# 	immediate = {
+# 		change_government = {
+# 			authority = auth_EOE_imperial
+# 			cooldown = no
+# 			remove_invalid_civics = yes
+# 		}
+# 	}
+# }
+
+
+country_event = { #环开开局布置
+	id = eevent.38
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_origin = origin_protoss_shattered_ring	
+	}
+	immediate = {
+		set_country_flag = starting_event #防止刷出奇怪的原版开局事件，虽然也不会有亚光速探测器、邪教徒和科学家失踪事件了
+		add_resource = {
+			food = 200
+		}
+		if = {
+			limit = { 
+				NOT = { has_valid_civic = civic_EOE_steel_type_trainer }
+			}
+			capital_scope.solar_system = {
+				random_system_planet = {
+					limit = {
+						is_planet_class = pc_habitat
+					}
+					remove_planet = yes
+				}
+				random_system_planet = {
+					limit = {
+						has_planet_flag = EOE_may_have_more_deposit
+					}
+					remove_deposit = d_minerals_2
+					add_deposit = d_minerals_10
+				}
+			} 	
+		}
+		else_if = {
+			limit = {has_valid_civic = civic_EOE_steel_type_trainer }
+			capital_scope.solar_system = {
+				spawn_megastructure = {
+					type = "major_orbital"
+					planet = event_target:EOE_the_interloper
+					coords_from = event_target:EOE_the_interloper
+					owner = root
+					graphical_culture = root
+				}
+			}
+
+		}
+		every_owned_planet = {
+			limit = {
+				has_planet_flag = EOE_start_ring
+			}
+			set_owner = root
+			clear_blockers = yes
+			remove_all_districts = yes
+			while = {
+				count = 31
+				hidden_effect = {
+					create_pop = { 	species = owner_main_species }
+				}
+			}
+			add_building = building_capital
+			add_building = building_research_lab_1
+			add_building = building_bureaucratic_1
+			add_building =  building_commercial_zone
+			add_district = district_rw_farming
+			add_district = district_rw_city
+			add_district = district_rw_industrial
+			add_deposit = d_EOE_arcane_generator
+			add_deposit = d_EOE_ringworld_Ancient_ruins_1
+			add_deposit = d_EOE_ringworld_Ancient_ruins_2
+			add_deposit = d_EOE_ringworld_Broken_tunnel_2
+			add_deposit = d_EOE_ringworld_Broken_tunnel_3
+			add_deposit = d_EOE_ringworld_Broken_tunnel_1
+			# add_district = district_mining_uncapped
+			# add_district = district_mining_uncapped
+			# add_district = district_mining_uncapped
+			# add_district = district_farming_uncapped
+			# add_district = district_farming_uncapped
+			# add_district = district_srw_commercial
+			# add_district = district_srw_commercial
+			# add_district = district_srw_commercial
+			# add_district = district_city
+			# add_district = district_city
+			# add_district = district_city
+			# add_building = building_commercial_zone
+			# add_deposit = d_decrepit_dwellings
+			# add_deposit = d_segment_rubble_1
+			# add_deposit = d_segment_rubble_2
+			# add_deposit = d_segment_rubble_3
+			# add_deposit = d_segment_rubble_4
+			# add_deposit = d_EOE_ringworld_Broken_tunnel_1 
+			# add_deposit = d_EOE_ringworld_Broken_tunnel_2 
+			# add_deposit = d_EOE_ringworld_Broken_tunnel_3 
+			add_deposit = d_EOE_ringworld_ancient_tech_district
+			 add_deposit = d_EOE_ringworld_Refuge_City
+			
+
+		}
+		#country_event = {
+		#	id = eevent.2
+		#}
+	}
+	
+}
+
+#白龙巨像39~43
+
+planet_event = {
+	id = eevent.39
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		if = {
+			limit = {
+				AND = {
+					habitable_planet = no
+					NOT = { is_planet_class = pc_gas_giant }
+				}
+			} 
+			from.owner = { country_event = { id = eevent.41 } }  #非宜居非气态
+		}
+		else_if = {
+			limit = {
+				habitable_planet = yes
+			}
+			from.owner = { country_event = { id = eevent.40 } }  #宜居
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_gas_giant
+			}
+			from.owner = { country_event = { id = eevent.43 } }  #气态
+		}
+
+		#Dismantle observation post
+		if = {
+			limit = {
+				has_observation_outpost = yes
+			}
+			observation_outpost_owner = {
+				country_event = { id = eevent.42 days = 1 }
+			}
+		}
+
+		# Contingency Machine World
+		if = {
+			limit = {
+				is_planet_class = pc_ai
+				NOT = { has_planet_flag = machine_lair }
+			}
+			set_planet_flag = destroyed_by_colossus
+			set_planet_flag = planet_cracked
+			planet_event = { id = crisis.2040 }
+		}
+
+		# Contingency Final Machine World
+		if = {
+			limit = {
+				is_planet_class = pc_ai
+				has_planet_flag = machine_lair
+			}
+			set_planet_flag = destroyed_by_colossus
+			set_planet_flag = planet_cracked
+			from.owner = { save_event_target_as = final_machine_world_destroyer }
+			stop_crisis_sound = yes
+			planet_event = { id = crisis.2046 }
+		}
+
+		# Swarm Situation Log counter
+		if = {
+			limit = {
+				exists = owner
+				owner = { is_country_type = swarm }
+			}
+			every_country = {
+				limit = { has_event_chain = "prethoryn_scourge_chain" }
+				add_event_chain_counter = {
+					event_chain = "prethoryn_scourge_chain"
+					counter = "infested_worlds"
+					amount = -1
+				}
+				add_event_chain_counter = {
+					event_chain = "prethoryn_scourge_chain"
+					counter = "infested_worlds_cleansed"
+					amount = 1
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				OR = {
+					is_active_resolution = "resolution_rulesofwar_reverence_for_life"
+					is_active_resolution = "resolution_rulesofwar_independent_tribunals"
+					is_active_resolution = "resolution_rulesofwar_last_resort_doctrine"
+					is_active_resolution = "resolution_rulesofwar_demobilization_initiative"
+				}
+			}
+			from.owner = {
+				set_timed_country_flag = { flag = resolution_breached_fired_cracker days = 3600 }
+			}
+		}
+
+		# Exterminatus Achievement
+		if = {
+			limit = { is_capital = yes }
+			from.owner = { set_country_flag = exterminatus }
+		}
+		if = {
+			limit = {
+				exists = owner
+				owner = {
+					NOT = { is_same_value = from.owner }
+					OR = {
+						is_country_type = default
+						is_country_type = fallen_empire
+						is_country_type = awakened_fallen_empire
+					}
+				}
+			}
+			# Generate threat
+			if = {
+				limit = {
+					is_colony = yes
+				}
+				add_threat = { who = from.owner amount = 3 }
+				# modifier for allies + those upset by genocide
+				every_country = {
+					limit = {
+						NOR = {
+							is_same_value = from.owner
+							is_same_value = root.owner
+							AND = {
+								has_federation = yes
+								is_in_federation_with = from.owner
+							}
+						}
+						OR = {
+							has_communications = from.owner
+							has_communications = root.owner
+						}
+						OR = {
+							AND = {
+								has_federation = yes
+								is_in_federation_with = root.owner
+							}
+							has_ai_personality = awakened_fallen_empire_xenophile
+							AND = {
+								is_country_type = default
+								OR = {
+									is_egalitarian = yes
+									is_xenophile = yes
+								}
+							}
+						}
+					}
+					if = {
+						limit = { 
+							root = { is_colony = no }
+								root.owner = { 
+									NOR = {
+									has_civic = civic_fanatic_purifiers
+									has_civic = civic_machine_terminator
+									has_civic = civic_hive_devouring_swarm
+								} 
+							}
+					
+					}
+						add_opinion_modifier = {
+							modifier = opinion_burned_an_uninhabited_world
+							who = from.owner
+						}
+					}
+					else_if = {
+						limit = { 
+							root = { is_colony = yes }
+								root.owner = { 
+									NOR = {
+									has_civic = civic_fanatic_purifiers
+									has_civic = civic_machine_terminator
+									has_civic = civic_hive_devouring_swarm
+								} 
+							}
+					
+					}
+						add_opinion_modifier = {
+							modifier = opinion_burned_a_world
+							who = from.owner
+						}
+					}
+				}
+			}
+			else = {
+				add_threat = { who = from.owner amount = 1 }
+			}
+			# modifiers for victim
+			owner = {
+				if = {
+					limit = { root = { is_colony = no } }
+					add_opinion_modifier = {
+						modifier = opinion_burned_my_uninhabited_world
+						who = from.owner
+					}
+				}
+				else = {
+					add_opinion_modifier = {
+						modifier = opinion_burned_my_world
+						who = from.owner
+					}
+				}
+				if = {
+					limit = { NOT = { has_ethic = ethic_gestalt_consciousness } }
+					add_modifier = {
+						modifier = colossus_victim
+						days = 10800 # 30 years
+					}
+				}
+			}
+			if = {
+				limit = {
+					exists = owner
+					owner = { is_country_type = primitive }
+				}
+				# modifier for allies + those upset by genocide
+				every_country = {
+					limit = {
+						NOT = { is_same_value = from.owner }
+						OR = {
+							has_communications = from.owner
+							has_communications = root.owner
+						}
+						OR = {
+							has_ai_personality = awakened_fallen_empire_xenophile
+							AND = {
+								is_country_type = default
+								NOR = {
+									is_xenophobe = yes
+									is_homicidal = yes
+									is_xenophile = yes
+								}
+							}
+						}
+					}
+					add_opinion_modifier = {
+						modifier = opinion_burned_a_primitive_world
+						who = from.owner
+					}
+				}
+
+				every_country = {
+					limit = {
+						NOT = { is_same_value = from.owner }
+						OR = {
+							has_communications = from.owner
+							has_communications = root.owner
+						}
+						OR = {
+							has_ai_personality = awakened_fallen_empire_xenophile
+							AND = {
+								is_country_type = default
+								is_xenophile = yes
+							}
+						}
+					}
+					add_opinion_modifier = {
+						modifier = opinion_burned_a_primitive_world_phile
+						who = from.owner
+					}
+				}
+			}
+		}
+		# Add war exhaustion to planet owner
+		if = {
+			limit = {
+				exists = owner
+			}
+			owner = {
+				if = {
+					limit = { #isn't the case when the crisis bombards planets, for instance
+						is_at_war_with = from.fleet.owner
+					}
+					add_static_war_exhaustion = {
+						attacker = from.fleet.owner
+						location = root
+						value_for_planet_destruction = 1.0
+					}
+				}
+			}
+		}
+		every_owned_pop = {
+			kill_pop = yes
+		}
+		remove_all_buildings = yes
+		# destroy habitats and ringworlds
+		if = {
+			limit = {
+				is_planet_class = pc_habitat
+			}
+			spawn_habitat_cracker_effect = yes
+			remove_planet = yes
+		}
+		else_if = {
+			limit = {
+				OR = { 
+				is_planet_class = pc_ringworld_habitable
+				is_planet_class = pc_shattered_ring_habitable
+				}
+			}
+			spawn_ringworld_cracker_effect = yes
+			change_pc = pc_ringworld_habitable_damaged
+		}
+		else_if = {
+			limit = { habitable_planet = yes }
+			change_pc = pc_nuked
+		}
+		else_if = {
+			limit = { 
+				AND = {
+					habitable_planet = no
+					NOT = { is_planet_class = pc_gas_giant }
+				}
+			}
+			change_pc = pc_molten
+			clear_deposits = yes
+			random_list = {
+				1 = {
+					add_deposit = d_energy_4
+					add_deposit = d_energy_4
+				}
+				1 = {
+					add_deposit = d_energy_4
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+					is_planet_class = pc_gas_giant 
+			}
+			change_pc = pc_t_star
+			clear_deposits = yes
+			set_planet_size = 10
+			random_list = {
+				1 = {
+					add_deposit = d_energy_4
+					add_deposit = d_energy_4
+					add_deposit = d_energy_4
+				}
+				1 = {
+					add_deposit = d_energy_4
+					add_deposit = d_energy_4
+				}
+			}
+		}
+	}
+}
+
+country_event = { #烧毁宜居星
+	id = eevent.40
+	title = eevent.40.name
+	desc = eevent.40.desc
+	picture = GFX_evt_EOE_The_Vermillion_Problem
+	show_sound = amb_molten_world_a
+	location = from
+
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = fired_burner_habitable }
+		FROM = {
+			habitable_planet = yes
+		}
+	}
+
+	immediate = {
+		set_country_flag = fired_burner_habitable
+	}
+
+	option = {
+		name = OK
+		trigger = {
+			NOR = {
+				has_valid_civic = civic_fanatic_purifiers
+				has_valid_civic = civic_machine_terminator
+			}
+		}
+	}
+
+	option = {
+		name = planet_destruction.101.a.purifexter
+		trigger = {
+			OR = {
+				has_valid_civic = civic_fanatic_purifiers
+				has_valid_civic = civic_machine_terminator
+			}
+		}
+		add_monthly_resource_mult = {
+			resource = unity
+			value = 60
+			min = 600
+			max = 3000
+		}
+	}
+}
+
+country_event = { #烧毁非宜居星
+	id = eevent.41
+	title = eevent.41.name
+	desc = eevent.41.desc
+	picture = GFX_evt_EOE_The_Vermillion_Problem
+	show_sound = amb_molten_world_a
+	location = from
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = fired_burner }
+	}
+
+	immediate = {
+		set_country_flag = fired_burner
+	}
+
+	option = {
+		name = OK
+		trigger = {
+			NOR = {
+				has_valid_civic = civic_fanatic_purifiers
+				has_valid_civic = civic_machine_terminator
+			}
+		}
+	}
+
+}
+
+country_event = { 
+	id = eevent.42
+	title = planet_destruction.1000.name
+	desc = {
+		trigger = {
+			is_same_value = fromfrom.owner
+		}
+		text = planet_destruction.1000.desc.self
+	}
+	desc = {
+		trigger = {
+			NOT = { is_same_value = fromfrom.owner }
+			from = {
+				OR = {
+					is_planet_class = pc_shattered
+					is_planet_class = pc_shattered_2
+				}
+			}
+		}
+		text = planet_destruction.1000.desc.shatter
+	}
+	desc = {
+		trigger = {
+			NOT = { is_same_value = fromfrom.owner }
+			from = {
+				OR = {
+					is_planet_class = pc_shielded
+					is_planet_class = pc_ringworld_shielded
+					is_planet_class = pc_habitat_shielded
+				}
+			}
+		}
+		text = planet_destruction.1000.desc.shield
+	}
+	desc = {
+		trigger = {
+			NOT = { is_same_value = fromfrom.owner }
+			from = {
+				NOR = {
+					is_planet_class = pc_shattered
+					is_planet_class = pc_shattered_2
+					is_planet_class = pc_shielded
+					is_planet_class = pc_ringworld_shielded
+					is_planet_class = pc_habitat_shielded
+				}
+			}
+		}
+		text = planet_destruction.1000.desc.neutron
+	}
+	picture = {
+		trigger = {
+			from = {
+				is_planet_class = pc_shielded
+			}
+		}
+		picture = GFX_evt_shielded_planet
+	}
+	picture = {
+		trigger = {
+			from = {
+				NOR = {
+					is_planet_class = pc_shielded
+					is_planet_class = pc_ringworld_shielded
+					is_planet_class = pc_habitat_shielded
+				}
+			}
+		}
+		picture = GFX_evt_molten
+	}
+	trigger = {
+		from = {
+			has_observation_outpost = yes
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = planet_destruction.1000.A
+		trigger = {
+			OR = {
+				NOR = {
+					is_homicidal = yes
+					has_ethic = ethic_xenophobe
+					has_ethic = ethic_fanatic_xenophobe
+				}
+				NOT = {
+					from = {
+						OR = {
+							is_planet_class = pc_shattered
+							is_planet_class = pc_shattered_2
+						}
+					}
+				}
+			}
+		}
+		from = {
+			observation_outpost = {
+				dismantle = yes
+			}
+		}
+	}
+	option = {
+		name = planet_destruction.1000.B
+		trigger = {
+			OR = {
+				is_homicidal = yes
+				has_ethic = ethic_xenophobe
+				has_ethic = ethic_fanatic_xenophobe
+			}
+			from = {
+				OR = {
+					is_planet_class = pc_shattered
+					is_planet_class = pc_shattered_2
+				}
+			}
+		}
+		from = {
+			observation_outpost = {
+				dismantle = yes
+			}
+		}
+		add_monthly_resource_mult = {
+			resource = unity
+			value = 2
+		}
+	}
+}
+
+country_event = { #烧毁气态星
+	id = eevent.43
+	title = eevent.43.name
+	desc = eevent.43.desc
+	picture = GFX_evt_EOE_The_Vermillion_Problem
+	show_sound = amb_molten_world_a
+	location = from
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = fired_burner_gas }
+	}
+
+	immediate = {
+		set_country_flag = fired_burner_gas
+	}
+
+	option = {
+		name = OK
+		trigger = {
+			NOR = {
+				has_valid_civic = civic_fanatic_purifiers
+				has_valid_civic = civic_machine_terminator
+			}
+		}
+	}
+
+}
+
+####################墨月の虫穴 6998
+country_event = { #死寂+遗落开
+	id = eevent.6998
+	is_triggered_only = yes
+	hide_window = yes
+	fire_only_once = yes
+	trigger = {
+		owner_main_species = {
+			has_trait = trait_EOE_Inheritors
+		}
+		has_origin = origin_post_apocalyptic
+		has_civic = civic_external_synapse
+	}
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				is_planet_class = pc_nuked
+			}
+			set_planet_size = 25
+			add_deposit = d_collapsed_spire
+			add_deposit = d_flooded_reactor_pits
+			add_deposit = d_crumbling_mining_tunnels
+			add_deposit = d_ruined_arcology
+			add_deposit = d_ruined_arcology
+		}
+	}
+}
+#############################
+#发现野生原始伊布  id=6999~7002
+country_event = { #刷异常
+	id = eevent.6999
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		capital_scope = {
+			NOT = {
+				has_planet_flag = EOE_pokemon_start_planet
+			}
+		}
+	}
+	immediate = {
+		closest_system = {
+			limit = {
+				NOR = {
+					has_star_flag = hostile_system
+					is_same_value = root.solar_system
+					is_pirate_system = yes
+					any_system_planet = { is_colony = yes }
+					has_owner = yes
+				}
+				OR = {
+					has_planet_class = pc_continental
+					has_planet_class = pc_tropical
+					has_planet_class = pc_ocean
+					has_planet_class = pc_arctic
+					has_planet_class = pc_arid
+					has_planet_class = pc_tundra
+					has_planet_class = pc_alpine
+					has_planet_class = pc_savannah
+					has_planet_class = pc_desert
+					has_planet_class = pc_gaia
+					has_planet_class = pc_relic
+				}
+				has_access_fleet = root.owner
+			}
+			set_star_flag = EOE_Unrepairable_ring_flag
+			min_steps = 8
+			max_steps = 30
+			random_system_planet = {
+				limit = {
+					OR = {
+						is_planet_class = pc_continental
+						is_planet_class = pc_tropical
+						is_planet_class = pc_ocean
+						is_planet_class = pc_arctic
+						is_planet_class = pc_arid
+						is_planet_class = pc_tundra
+						is_planet_class = pc_alpine
+						is_planet_class = pc_savannah
+						is_planet_class = pc_desert
+						is_planet_class = pc_gaia
+						is_planet_class = pc_relic
+					}
+				}
+				change_pc = pc_gaia
+				#set_planet_flag = EOE_finishing_transform_2
+				#EOE_change_deposit = yes
+				set_planet_size = 25
+				add_anomaly = {
+					category = wild_eeveelution_cat
+				}
+				save_global_event_target_as = wild_eeveelution_planet
+				save_event_target_as = ruined_orbital_ring_planet_EOE
+					
+							
+			}
+			# spawn_megastructure = {
+			# 	type = "orbital_ring_ruined"
+			# 	planet = event_target:ruined_orbital_ring_planet_EOE
+			# 	 init_effect = {
+			# 		 save_global_event_target_as = EOE_unrepairable_ring
+					 	####################################################生成尘埃云
+					create_ambient_object = {
+						type = "medium_debris_01_object"
+						location = this
+					}
+					last_created_ambient_object = {
+						set_location = {
+							target = event_target:ruined_orbital_ring_planet_EOE
+							distance = 8
+							angle = 90
+						}
+					}
+					create_ambient_object = {
+						type = "medium_debris_02_object"
+						location = this
+					}
+					last_created_ambient_object = {
+						set_location = {
+							target = event_target:ruined_orbital_ring_planet_EOE
+							distance = 3
+							angle = 270
+						}
+					}
+			# 	}
+			# }
+			################################################刷舰队
+			random_country = {
+				limit = { 
+					is_ai = yes
+					NOT = {
+						owner_main_species = { is_species_class = Eeveelutions }
+					}
+			
+			
+			}
+				save_event_target_as = EOE_daddy_hostile
+			}
+			
+			create_country = {
+				name = "NAME_EOE_Old_daddy"
+				type = drone
+				flag = {
+					icon = {
+						category = "zoological"
+						file = "flag_zoological_1.dds"
+					}
+					background= {
+						category = "backgrounds"
+						file = "00_solid.dds"
+					}
+					colors={
+						"black"
+						"black"
+						"null"
+						"null"
+					}
+				}
+				
+				effect = {
+
+					save_event_target_as = EOE_Old_daddy_country
+				
+						set_faction_hostility = {
+							set_hostile = no
+							set_neutral = yes
+							target = prevprev
+						}
+						set_faction_hostility = {
+							set_hostile = yes
+							set_neutral = no
+							target = event_target:EOE_daddy_hostile
+						}
+					
+					
+				}
+			}
+			
+
+			create_fleet = {
+				name = "NAME_EOE_Old_daddy"
+				effect = {
+					set_owner = event_target:EOE_Old_daddy_country
+					while = {
+						count = 20
+						create_ship = {
+							name = "NAME_Avatar"
+							design = "NAME_Avatar"
+							graphical_culture = fallen_empire_02
+						}
+					}
+					while = {
+						count = 40
+						create_ship = {
+							name = "NAME_Zealot"
+							design = "NAME_Zealot"
+							graphical_culture = fallen_empire_02
+						}
+					}
+					set_location = event_target:ruined_orbital_ring_planet_EOE
+					#set_fleet_stance = aggressive
+					# set_aggro_range_measure_from = return_point
+					# set_aggro_range = 0
+					save_global_event_target_as = EOE_Old_daddy_fleet
+				}
+			}
+			################################################
+		
+			
+		}
+		
+	}
+	
+}
+
+
+ship_event = {
+	id = eevent.7000
+	title = eevent.7000.name
+	desc = {
+		trigger = {  owner = { NOT = { has_ethic = ethic_gestalt_consciousness }     }    }
+		text = eevent.7000.desc
+	} 
+	desc = {
+		trigger = {  owner = { has_ethic = ethic_gestalt_consciousness  }    }
+		text = eevent.7000.1.desc
+	}
+	picture = GFX_evt_EOE_wild_eeveelution_hunt
+	show_sound = event_dangerous_animals
+	is_triggered_only = yes
+	# immediate = {
+	# 	from.planet = {
+	# 		add_deposit = d_EOE_protoss_relic
+			
+	# 	}
+	
+	# }
+	
+	option = {
+		name = eevent.7000.a
+		custom_tooltip = eevent.7000.a.tootip
+		enable_special_project = {
+			name = "Catch_Eeveelutions"
+			location = from
+			owner = root
+		}
+	}
+	option = {
+		name = eevent.7000.b
+		trigger = {  owner = { NOT = { has_ethic = ethic_gestalt_consciousness }     }    }
+		hidden_effect = {
+			owner = {
+			country_event = { id = eevent.7100 days = 720 }
+		}
+	}
+		from.planet = {
+			add_deposit = d_EOE_wild_eeveelution_habitat
+			add_deposit = d_EOE_wild_eeveelution_habitat
+		}
+	}
+
+}
+
+country_event = {
+	id = eevent.7001
+	title = eevent.7001.name
+	desc = {
+		trigger = {  owner = { NOT = { has_ethic = ethic_gestalt_consciousness }     }    }
+		text = eevent.7001.desc
+	} 
+	desc = {
+		trigger = {  owner = { has_ethic = ethic_gestalt_consciousness  }    }
+		text = eevent.7001.1.desc
+	} 
+	
+
+	picture = GFX_evt_EOE_Orbital_Drop
+	show_sound = event_ship_bridge
+	is_triggered_only = yes
+	
+	option = {
+		name = eevent.7001.a
+		trigger = {  owner = { NOT = { has_ethic = ethic_gestalt_consciousness }     }    }
+		enable_special_project = {
+			name = "Improve_Eeveelutions"
+			owner = root
+		}
+	}
+	option = {
+		name = eevent.7001.b
+		trigger = {  owner = {  has_ethic = ethic_gestalt_consciousness     }    }
+		country_event = {
+			id = eevent.7002
+		}
+	}
+
+}
+
+country_event = {
+	id = eevent.7002
+	title = eevent.7002.name
+	desc = {
+		trigger = {  owner = { NOT = { has_ethic = ethic_gestalt_consciousness }     }    }
+		text = eevent.7002.desc
+	} 
+	desc = {
+		trigger = {  owner = { has_ethic = ethic_gestalt_consciousness  }    }
+		text = eevent.7002.1.desc
+	} 
+	picture = GFX_evt_EOE_Canned_Espeon
+	show_sound = event_celebration
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = eevent.7002.a
+		trigger = {  owner = { has_ethic = ethic_gestalt_consciousness  }    }
+		owner = {
+		capital_scope = {
+			create_pop = { 	species = owner_main_species } #1
+			create_pop = { 	species = owner_main_species } #2
+			create_pop = {	species = owner_main_species } #3
+			create_pop = {	species = owner_main_species } #4
+			create_pop = {	species = owner_main_species } #5
+			create_pop = {	species = owner_main_species } #6
+			}
+			hidden_effect = {
+				country_event = { id = eevent.7100 days = 720 }
+			}
+		}
+	}
+	option = {
+		name = eevent.7002.b
+		trigger = {  owner = { NOT = { has_ethic = ethic_gestalt_consciousness }     }    }
+		owner = {
+		capital_scope = {
+			create_pop = { 	species = owner_main_species } #1
+			create_pop = { 	species = owner_main_species } #2
+			create_pop = {	species = owner_main_species } #3
+			create_pop = {	species = owner_main_species } #4
+			create_pop = {	species = owner_main_species } #5
+			create_pop = {	species = owner_main_species } #6
+			}
+			hidden_effect = {
+				country_event = { id = eevent.7100 days = 720 }
+			}
+		}
+		
+	}
+
+}
+
+####后续事件从7100开始,7101,7102
+
+
+
+country_event = {
+	id = eevent.7100
+	title = eevent.7100.name
+	desc = {
+		text = eevent.7100.desc
+	} 
+
+	
+ 
+	picture = GFX_evt_EOE_JingJiChang
+	show_sound = event_ship_bridge
+	is_triggered_only = yes
+	
+	option = {
+		name = eevent.7100.a
+		trigger = {  owner = { NOT = { has_ethic = ethic_gestalt_consciousness }     }    }
+		event_target:wild_eeveelution_planet = {
+			add_deposit = d_EOE_protoss_relic
+			add_deposit = d_EOE_wild_eevee_protoss_city_ruin
+		}
+		enable_special_project = {
+			name = "Repair_pokemon_park"
+			owner = root
+		}
+	}
+	option = {
+		name = eevent.7100.b
+		trigger = {  owner = {  has_ethic = ethic_gestalt_consciousness     }    }
+		event_target:wild_eeveelution_planet = {
+			add_deposit = d_EOE_protoss_relic
+			add_deposit = d_EOE_wild_eevee_protoss_city_ruin
+		}
+		country_event = {
+			id = eevent.7102
+		}
+	}
+
+}
+
+# #7101给格式塔意识+维护值
+# country_event = {   #######给加决斗者岗位的地块
+# 	id = eevent.7101
+# 	title = eevent.7101.name
+# 	desc = {
+# 		text = eevent.7101.desc
+# 	} 
+# 	picture = GFX_evt_EOE_JingJiChang
+# 	show_sound = event_ship_bridge
+# 	is_triggered_only = yes
+	
+# 	option = {
+# 		name = eevent.7100.a
+# 		owner = {
+# 			add_resource = {
+# 				unity = 1000
+# 			}
+# 			add_tech_progress = { tech = tech_ship_armor_5 progress = 0.5 }
+# 		}
+# 		event_target:wild_eeveelution_planet = {
+# 			add_deposit = d_EOE_Pokemon_Jingjichang_swarm
+			
+# 		}
+		
+# 	}
+	
+
+# }
+
+country_event = {   #######给加决斗者岗位的地块
+	id = eevent.7102
+	title = eevent.7102.name
+	desc = {
+		trigger = {  owner = { NOT = { has_ethic = ethic_gestalt_consciousness }     }    }
+		text = eevent.7102.desc
+	} 
+	desc = {
+		trigger = {  owner = { has_ethic = ethic_gestalt_consciousness  }    }
+		text = eevent.7102.1.desc
+	}  
+	picture = GFX_evt_EOE_JingJiChang
+	show_sound = event_ship_bridge
+	is_triggered_only = yes
+	
+	option = {
+		name = eevent.7102.a
+		custom_tooltip = eevent.7102.a.tootip
+		owner = {
+			add_resource = {
+				unity = 1000
+			}
+			set_country_flag = EOE_zhongzizhuangjia
+		}
+		event_target:wild_eeveelution_planet = {
+			add_deposit = d_EOE_Pokemon_Jingjichang
+		}
+		
+	}
+	
+
+}
+
+
+
+
+
+
+
+
+
+###########################################################################################我怎么把虚境球的事件写到这儿来了xwx
+# country_event  = {
+# 	id = eevent.7005
+# 	title = "eevent.7005.name"
+# 	desc = "eevent.7005.desc" #对虚境球的研究解锁了巨像武器
+# 	picture = GFX_evt_EOE_Protoss_buliding
+# 	is_triggered_only = yes
+	
+
+# 	option = {
+# 		name = eevent.7005.a
+# 		add_research_option = EOE_mental_omega
+# 	}
+# }
+
+####################################################################################给基因点
+# country_event = {
+# 	id = eevent.1000
+# 	hide_window = yes
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	trigger = {  
+# 		has_ascension_perk = ap_engineered_evolution
+# 	}
+
+# 	immediate = {
+# 		give_technology = {
+# 			tech = EOE_ap_engineered_evolution
+# 		}
+# 	} 
+# }
+# country_event = {
+# 	id = eevent.1001
+# 	hide_window = yes
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	trigger = {  
+# 		has_ascension_perk = ap_evolutionary_mastery
+# 	}
+
+# 	immediate = {
+# 		give_technology = {
+# 		tech = EOE_ap_evolutionary_mastery
+# 	}
+		
+# 	} 
+# }
+
+country_event = {
+	id = eevent.1002
+	hide_window = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {  
+		has_technology = tech_gene_tailoring
+	}
+
+	immediate = {
+		give_technology = {
+		tech = EOE_tech_gene_tailoring
+		message = no
+	}
+		
+	} 
+}
+
+country_event = {
+	id = eevent.1003
+	hide_window = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {  
+		has_technology = tech_gene_expressions
+	}
+
+	immediate = {
+		give_technology = {
+		tech = EOE_tech_gene_expressions
+		message = no
+	}
+		
+	} 
+}
+
+country_event = {
+	id = eevent.1004
+	hide_window = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {  
+		has_tradition = tr_genetics_creation
+	}
+
+	immediate = {
+		give_technology = {
+		tech = EOE_tech_tr_genetics_creation
+		message = no
+	}
+		
+	} 
+}
+
+country_event = {
+	id = eevent.1005
+	hide_window = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {  
+		has_tradition = tr_genetics_adopt
+	}
+
+	immediate = {
+		give_technology = {
+		tech = EOE_tech_tr_genetics_adopt
+		message = no
+	}
+		
+	} 
+}
+
+country_event = {
+	id = eevent.1006
+	hide_window = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {  
+		has_tradition = tr_genetics_finish
+	}
+
+	immediate = {
+		give_technology = {
+		tech = EOE_tech_tr_genetics_finish
+		message = no
+	}
+		
+	} 
+}
+
+country_event = {
+	id = eevent.1007
+	hide_window = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {  
+		has_tradition = tr_genetics_enhanced_expression
+	}
+
+	immediate = {
+		give_technology = {
+		tech = EOE_tech_tr_genetics_enhanced_expression
+		message = no
+	}
+		
+	} 
+}
+
+
+
+#同化，44
+country_event = {
+	id = eevent.44
+	hide_window = yes
+	trigger = {
+		has_valid_civic = civic_eeveelutions_assimilator
+		any_owned_pop = {
+			has_citizenship_type = {
+				type = EOE_citizenship_assimilation
+				country = prev
+			}
+		}
+	}
+	is_triggered_only = yes
+	immediate = {
+		while = {
+			count = 2
+			every_owned_planet = {
+				random_owned_pop = {
+					limit = {
+						has_citizenship_type = {
+							type = EOE_citizenship_assimilation
+							country = root.owner
+						}
+					}
+					if = { # eeveeassimilator
+						limit = {
+							root = {
+								OR = {
+								 has_civic = civic_eeveelutions_assimilator
+								}
+							}
+						}
+						species = {
+							save_event_target_as = EOE_assimee_species
+						}
+						modify_species = {
+							species = root
+							ideal_planet_class = event_target:EOE_assimee_species
+						}
+						last_created_species = {
+							save_event_target_as = EOE_assimilated_species
+						}
+						kill_pop = yes
+						prev = {
+							create_pop = {
+								species = event_target:EOE_assimilated_species
+								ethos = root
+							}
+						}
+						root = {
+							if = {
+								limit = { has_ascension_perk = ap_become_the_crisis }
+								complete_crisis_objective = crisobj_purge_pops
+							}
+							generate_cyborg_treats = yes #蠢驴你塞效果的地方真阴间东一个西一个哼啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+						}
+					}
+				}
+			}
+		}
+	}
+}

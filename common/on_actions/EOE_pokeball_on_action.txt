@@ -1,0 +1,11 @@
+# on_ship_destroyed_perp = {
+# 	events = {
+# 		pokeball.1
+# 	}
+# }
+
+on_ship_destroyed_victim = {
+	events = {
+		pokeball.2
+	}
+	}

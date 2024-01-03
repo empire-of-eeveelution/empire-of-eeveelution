@@ -1,0 +1,53 @@
+namespace = hezieevent
+country_event = {
+	id = hezieevent.1
+	title = "hezieevent.1.name"	#聊点什么
+	desc = "hezieevent.1.desc" #嗯……那你想聊些什么呢。
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "enclave_curator_window"
+	picture_event_data = {
+		room = enclave_curator_room
+		portrait = EOEHezi_test
+	}
+	immediate = {
+		remove_country_flag = EOE_databank_diplomacy_engaged
+	}
+	option = { #喜欢吃的东西
+		name = hezieevent.1.a
+
+	}
+	option = { #喜欢玩的游戏
+		name = hezieevent.1.b
+
+	}
+	option = { #聊聊你的家庭
+		name = hezieevent.1.c
+
+	}
+	option = { #能不能给我讲课
+		name = hezieevent.1.d
+
+	}
+	option = { #能不能给我摸摸（高好感选项）
+		name = hezieevent.1.e
+
+	}
+	option = { #其实你在一个虚拟的世界里（高好感选项）
+		name = hezieevent.1.f
+
+	}
+	option = { #
+		name = hezieevent.1.g
+	}
+	option = { # Back
+		name = leadereevent.31.d
+		custom_gui = "enclave_curator_option"
+		hidden_effect = {
+			country_event = { id = leadereevent.27 }
+		}
+	}
+	option = { # exit
+		name = leadereevent.29.b
+	}
+}

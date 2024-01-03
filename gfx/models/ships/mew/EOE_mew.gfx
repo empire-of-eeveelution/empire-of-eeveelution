@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "EOE_mew_mesh"
+		file = "gfx/models/ships/mew/EOE_mew.mesh"
+		scale = 1.0
+		animation = { id = "idle"			type = "EOE_mew_idle1" }
+
+
+		meshsettings = {
+			name = "Mew:TopN_Shape"
+			index = 0
+			texture_diffuse = "EOE_mew.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

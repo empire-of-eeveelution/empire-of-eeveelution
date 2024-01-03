@@ -1,0 +1,10881 @@
+namespace = EOE_ghost
+#用于捉鬼的随机事件。用于灵飞的话需要修改
+
+
+#随机发配中心
+ship_event = {
+	
+	id = EOE_ghost.1
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		reroll_random = yes
+		owner = {
+			if = {
+				limit = { 
+					root = {
+						is_hezi_in_shroud = yes
+					}
+				}
+				set_country_flag = EOE_hezi_in_shroud
+			}
+			else = {
+				remove_country_flag = EOE_hezi_in_shroud
+			}
+			random_list = {
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_3
+					}
+					set_country_flag = EOE_ghost_3
+				}
+				1 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_4
+					}
+					set_country_flag = EOE_ghost_4
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_6
+					}
+					set_country_flag = EOE_ghost_6
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_7
+					}
+					modifier = {
+						factor = 0
+						NOT = {
+							owner_main_species = {
+								has_trait = trait_extremely_cute
+							}
+						}
+					}
+					set_country_flag = EOE_ghost_7
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_8
+					}
+					set_country_flag = EOE_ghost_8
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_9
+					}
+					set_country_flag = EOE_ghost_9
+				}
+				2 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_10
+					}
+					set_country_flag = EOE_ghost_10
+				}
+				2 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_11
+					}
+					set_country_flag = EOE_ghost_11
+				}
+				2 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_12
+					}
+					set_country_flag = EOE_ghost_12
+				}
+				2 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_13
+					}
+					modifier = {
+						factor = 0
+						OR = {
+							AND = {
+								is_hezi_in_shroud = no
+								is_okra_in_shroud = yes
+							}
+							AND = {
+								is_hezi_in_shroud = yes
+								is_okra_in_shroud = no
+							}
+						}
+					}
+					set_country_flag = EOE_ghost_13
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_15
+					}
+					set_country_flag = EOE_ghost_15
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_16
+					}
+					modifier = {
+						factor = 0
+						OR = {
+							has_country_flag = gray_governor_active
+							has_country_flag = gray_warship_active
+							has_country_flag = gray_army_active
+							has_country_flag = gray_reforming
+							has_country_flag = gray_diplomacy_engaged 
+						}
+					}
+					set_country_flag = EOE_ghost_16
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_17
+					}
+					set_country_flag = EOE_ghost_17
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_18
+					}
+					set_country_flag = EOE_ghost_18
+				}
+				4 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_19
+					}
+					modifier = {
+						factor = 0
+						NOT = {
+							owner_main_species = {
+								has_trait = trait_extremely_cute
+							}
+						}
+					}
+					set_country_flag = EOE_ghost_19
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_22
+					}
+					set_country_flag = EOE_ghost_22
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_23
+					}
+					set_country_flag = EOE_ghost_23
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_29
+					}
+					set_country_flag = EOE_ghost_29
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_30
+					}
+					set_country_flag = EOE_ghost_30
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_31
+					}
+					set_country_flag = EOE_ghost_31
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_32
+					}
+					modifier = {
+						factor = 0
+						OR = {
+							has_global_flag = EOE_no_machine_fallen_empire
+							has_global_flag = ai_invasion_happened
+						}
+					}
+					set_country_flag = EOE_ghost_32
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_33
+					}
+					set_country_flag = EOE_ghost_33
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_35
+					}
+					set_country_flag = EOE_ghost_35
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_88
+					}
+					set_country_flag = EOE_ghost_88
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_89
+					}
+					set_country_flag = EOE_ghost_89
+				}
+				10 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_90
+					}
+					set_country_flag = EOE_ghost_90
+				}
+			}
+		}
+		ship_event = {
+			id = EOE_ghost.2
+		}
+	}
+}
+#随机发配中心
+ship_event = {
+	
+	id = EOE_ghost.2
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_3
+				}
+			}
+			owner = {
+				remove_country_flag = EOE_ghost_3
+			}
+			ship_event = {
+				id = EOE_ghost.3
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_4
+					NOT = {
+						has_country_flag = EOE_ghost_4_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_4_finished
+			}
+			ship_event = {
+				id = EOE_ghost.4
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_6
+					NOT = {
+						has_country_flag = EOE_ghost_6_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_6_finished
+			}
+			ship_event = {
+				id = EOE_ghost.6
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_7
+					NOT = {
+						has_country_flag = EOE_ghost_7_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_7_finished
+			}
+			ship_event = {
+				id = EOE_ghost.7
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_8
+					NOT = {
+						has_country_flag = EOE_ghost_8_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_8_finished
+			}
+			ship_event = {
+				id = EOE_ghost.8
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_9
+				}
+			}
+			owner = {
+				remove_country_flag = EOE_ghost_9
+			}
+			ship_event = {
+				id = EOE_ghost.9
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_10
+					NOT = {
+						has_country_flag = EOE_ghost_10_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_10_finished
+			}
+			ship_event = {
+				id = EOE_ghost.10
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_11
+					NOT = {
+						has_country_flag = EOE_ghost_11_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_11_finished
+			}
+			ship_event = {
+				id = EOE_ghost.11
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_12
+					NOT = {
+						has_country_flag = EOE_ghost_12_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_12_finished
+			}
+			ship_event = {
+				id = EOE_ghost.12
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_13
+					NOT = {
+						has_country_flag = EOE_ghost_13_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_13_finished
+			}
+			ship_event = {
+				id = EOE_ghost.13
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_15
+					NOT = {
+						has_country_flag = EOE_ghost_15_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_15_finished
+			}
+			ship_event = {
+				id = EOE_ghost.15
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_16
+					NOT = {
+						has_country_flag = EOE_ghost_16_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_16_finished
+			}
+			ship_event = {
+				id = EOE_ghost.16
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_17
+					NOT = {
+						has_country_flag = EOE_ghost_17_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_17_finished
+			}
+			ship_event = {
+				id = EOE_ghost.17
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_18
+					NOT = {
+						has_country_flag = EOE_ghost_18_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_18_finished
+			}
+			ship_event = {
+				id = EOE_ghost.18
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_19
+					NOT = {
+						has_country_flag = EOE_ghost_19_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_19_finished
+			}
+			ship_event = {
+				id = EOE_ghost.19
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_22
+					NOT = {
+						has_country_flag = EOE_ghost_22_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_22_finished
+			}
+			ship_event = {
+				id = EOE_ghost.22
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_23
+					NOT = {
+						has_country_flag = EOE_ghost_23_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_23_finished
+			}
+			ship_event = {
+				id = EOE_ghost.23
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_29
+					NOT = {
+						has_country_flag = EOE_ghost_29_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_29_finished
+			}
+			ship_event = {
+				id = EOE_ghost.29
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_30
+					NOT = {
+						has_country_flag = EOE_ghost_30_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_30_finished
+			}
+			ship_event = {
+				id = EOE_ghost.30
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_31
+					NOT = {
+						has_country_flag = EOE_ghost_31_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_31_finished
+			}
+			ship_event = {
+				id = EOE_ghost.31
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_32
+					NOT = {
+						has_country_flag = EOE_ghost_32_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_32_finished
+			}
+			random_country = {
+				limit = {
+					OR = {
+						has_country_flag = fallen_machine_empire_awaken_2
+						has_country_flag = fallen_machine_empire_awaken_1
+					}
+				}
+				save_event_target_as = EOE_fallen_machine_empire
+			}
+			ship_event = {
+				id = EOE_ghost.32
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_33
+					NOT = {
+						has_country_flag = EOE_ghost_33_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_33_finished
+			}
+			ship_event = {
+				id = EOE_ghost.33
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_35
+					NOT = {
+						has_country_flag = EOE_ghost_35_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_35_finished
+			}
+			ship_event = {
+				id = EOE_ghost.35
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_88
+					NOT = {
+						has_country_flag = EOE_ghost_88_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_88_finished
+			}
+			ship_event = {
+				id = EOE_ghost.88
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_89
+					NOT = {
+						has_country_flag = EOE_ghost_89_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_89_finished
+			}
+			ship_event = {
+				id = EOE_ghost.89
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ghost_90
+					NOT = {
+						has_country_flag = EOE_ghost_90_finished
+					}
+				}
+			}
+			owner = {
+				set_country_flag = EOE_ghost_90_finished
+			}
+			ship_event = {
+				id = EOE_ghost.90
+			}
+		}
+	}
+}
+#抓鬼陆军，秋荷一起上的时候抓到的更强
+ship_event = {
+	
+	id = EOE_ghost.3
+	is_triggered_only = yes
+	title = EOE_ghost.3.name
+	desc = {
+		trigger = {
+			is_hezi_in_shroud = yes
+			is_okra_in_shroud = yes
+		}
+		text = EOE_ghost.3.desc.a
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				is_hezi_in_shroud = yes
+				is_okra_in_shroud = yes
+			}
+		}
+		text = EOE_ghost.3.desc.b
+	}
+	picture = GFX_evt_EOE_the_ghost
+	show_sound = event_mystic_reveal_02
+	option = {
+		name = EOE_ghost.3.a
+		custom_tooltip = EOE_ghost.3.a.tooltip
+		hidden_effect = {
+			if = {
+				limit = {
+					is_hezi_in_shroud = yes
+					is_okra_in_shroud = yes
+				}
+				owner = {
+					random_owned_planet = {
+						limit = { has_planet_flag = EOE_ghost_planet_1 }
+						create_army = {
+							name = "NAME_Avatar"
+							owner = root.owner
+							type = "EOE_shroud_army_2"
+						}
+					}
+				}
+				
+			}
+			else = {
+				owner = {
+					random_owned_planet = {
+						create_army = {
+							name = "NAME_Avatar"
+							owner = root.owner
+							type = "EOE_shroud_army"
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#4,5为见到圆神
+ship_event = {
+	
+	id = EOE_ghost.4
+	is_triggered_only = yes
+	title = EOE_ghost.4.name
+	desc = EOE_ghost.4.desc
+	picture = GFX_evt_shrouded_planet
+	show_sound = event_scanner_02
+	option = {
+		name = OK
+		ship_event = {
+			id = EOE_ghost.5
+		}
+	}
+	# after = {
+	# 	ship_event = {
+	# 		id = EOE_ghost.5
+	# 	}
+	# }
+}
+
+ship_event = {
+	id = EOE_ghost.5
+	is_triggered_only = yes
+	title = EOE_ghost.5.name
+	desc = EOE_ghost.5.desc
+	picture = GFX_evt_EOE_dangerous_shrouded_planet
+	show_sound = event_mystic_reveal_light
+	option = {
+		#公布发现
+		name = EOE_ghost.5.a
+		owner = {
+			add_modifier = {
+				modifier = EOE_fear_of_god
+				days = 3600
+			}
+			if = {
+				limit = {
+					owner = {
+						OR = {
+							has_ethic = ethic_spiritualist
+							has_ethic = ethic_fanatic_spiritualist
+						}
+					}
+				}
+				owner = {
+					add_resource = {
+						unity = -10000
+					}
+				}
+			}
+			else = {
+				owner = {
+					add_resource = {
+						unity = @tier5unityreward
+					}
+				}
+			}
+		}
+	}
+	option = {
+		#封锁消息
+		name = EOE_ghost.5.b
+	}
+}
+#欢迎1-灵体宴会
+ship_event = {
+	
+	id = EOE_ghost.6
+	is_triggered_only = yes
+	title = EOE_ghost.6.name
+	desc = EOE_ghost.6.desc
+	picture = GFX_evt_EOE_galactic_market
+	show_sound = event_primitive_civilization
+	immediate = {
+		if = {
+			limit = { is_hezi_in_shroud = yes }
+			owner = {
+				set_country_flag = EOE_ghost_6_hz
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.3.a
+		owner = {
+			add_modifier = {
+				modifier = EOE_shroud_food
+				days = -1
+			}
+			add_random_research_option = {
+				add_progress = 1
+			}
+			add_random_research_option = {
+				add_progress = 1
+			}
+		}
+	}
+}
+#欢迎2-可爱特质
+ship_event = {
+	
+	id = EOE_ghost.7
+	is_triggered_only = yes
+	title = EOE_ghost.7.name
+	desc = EOE_ghost.7.desc
+	picture = GFX_evt_EOE_galactic_empire
+	show_sound = event_mystic_reveal
+	immediate = {
+		if = {
+			limit = { is_hezi_in_shroud = yes }
+			owner = {
+				set_country_flag = EOE_ghost_7_hz
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.3.a
+		owner = {
+			modify_species = {
+				species = owner_main_species
+				remove_trait = trait_extremely_cute
+				add_trait = trait_EOE_ultra_cute
+				effect = {
+					save_event_target_as = EOE_eevee_new_species
+				}
+			}
+			change_dominant_species = {
+				species = event_target:EOE_eevee_new_species
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.7.b
+	}
+}
+#欢迎3-虚境理想城
+ship_event = {
+	
+	id = EOE_ghost.8
+	is_triggered_only = yes
+	title = EOE_ghost.8.name
+	desc = EOE_ghost.8.desc
+	picture = GFX_evt_city_planet
+	show_sound = event_cityscape_02
+	immediate = {
+		if = {
+			limit = { is_hezi_in_shroud = yes }
+			owner = {
+				set_country_flag = EOE_ghost_8_hz
+			}
+		}
+	}
+	option = {
+		name = OK
+		root.leader = {
+			add_experience = 20000
+		}
+		owner = {
+			add_resource = {
+				society_research = 500000
+				physics_research = 500000
+				engineering_research = 500000
+			}
+			every_owned_leader = {
+				limit = {
+					is_councilor_type = councilor_research
+				}
+				add_experience = 20000
+			}
+		}
+	}
+}
+#欢迎4-人口增长
+ship_event = {
+	
+	id = EOE_ghost.9
+	is_triggered_only = yes
+	title = EOE_ghost.9.name
+	desc = EOE_ghost.9.desc
+	picture = GFX_evt_city_planet
+	show_sound = event_cityscape_02
+	immediate = {
+		if = {
+			limit = { is_hezi_in_shroud = yes }
+			owner = {
+				set_country_flag = EOE_ghost_9_hz
+			}
+		}
+	}
+	option = {
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 2000
+				}
+				resource_stockpile_compare = {
+					resource = food
+					value >= 2000
+				}
+			}
+		}
+		name = EOE_ghost.9.a
+		owner = {
+			add_resource = {
+				energy = -2000
+				food = -2000
+			}
+			hidden_effect = {
+				capital_scope = {
+					random_list = {
+						1 = {
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+						}
+						1 = {
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+						}
+						1 = {
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+						}
+						1 = {
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+						}
+					}
+				}
+			}
+			
+		}
+	}
+	option = {
+		name = EOE_ghost.9.b
+	}
+}
+#生命织缕
+ship_event = {
+	
+	id = EOE_ghost.10
+	is_triggered_only = yes
+	title = EOE_ghost.10.name
+	desc = EOE_ghost.10.desc
+	picture = GFX_evt_EOE_gaia_planet
+	show_sound = event_mystic_reveal
+	immediate = {
+		if = {
+			limit = { is_hezi_in_shroud = yes }
+			owner = {
+				set_country_flag = EOE_ghost_10_hz
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.3.a
+		owner = {
+			add_modifier = {
+				modifier = EOE_composer_of_strands
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.10.a
+	}
+}
+#世界吃货
+ship_event = {
+	
+	id = EOE_ghost.11
+	is_triggered_only = yes
+	title = EOE_ghost.11.name
+	desc = EOE_ghost.11.desc
+	picture = GFX_evt_EOE_black_hole
+	show_sound = event_wind_ruins_01
+	immediate = {
+		if = {
+			limit = { is_hezi_in_shroud = yes }
+			owner = {
+				set_country_flag = EOE_ghost_11_hz
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.3.a
+		owner = {
+			add_modifier = {
+				modifier = EOE_eater_of_worlds
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.10.a
+	}
+}
+#虚空低语
+ship_event = {
+	
+	id = EOE_ghost.12
+	is_triggered_only = yes
+	title = EOE_ghost.12.name
+	picture = GFX_evt_EOE_shroud_vortex
+	show_sound = event_mystic_reveal
+	immediate = {
+		if = {
+			limit = { is_hezi_in_shroud = yes }
+			owner = {
+				set_country_flag = EOE_ghost_12_hz
+			}
+		}
+	}
+	desc = {
+		trigger = {
+			is_hezi_in_shroud = yes
+			is_okra_in_shroud = yes
+		}
+		text = EOE_ghost.12.desc.a
+	}
+	desc = {
+		trigger = {
+			is_hezi_in_shroud = yes
+			is_okra_in_shroud = no
+		}
+		text = EOE_ghost.12.desc.b
+	}
+	desc = {
+		trigger = {
+			is_hezi_in_shroud = no
+			is_okra_in_shroud = yes
+		}
+		text = EOE_ghost.12.desc.c
+	}
+	desc = {
+		trigger = {
+			is_hezi_in_shroud = no
+			is_okra_in_shroud = no
+		}
+		text = EOE_ghost.12.desc.d
+	}
+	immediate = {
+		owner = {
+			random_owned_leader = {
+				limit = {
+					is_councilor_type = councilor_research
+					NOR = {
+						has_leader_flag = EOE_leader_hezi
+						has_leader_flag = EOE_leader_okra
+					}
+				}
+				kill_leader = {
+				}
+			}
+		}
+		if = {
+			limit = {
+				leader = {
+					NOR = {
+						has_leader_flag = EOE_leader_hezi
+						has_leader_flag = EOE_leader_okra
+					}
+				}
+			}
+			kill_leader = {
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.3.a
+		owner = {
+			add_modifier = {
+				modifier = EOE_whisperers_in_the_void
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.12.b
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value > 2000
+				}
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_help_mad_scientist
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -2000
+			}
+			add_modifier = {
+				modifier = EOE_whisperers_in_the_void
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.10.a
+	}
+}
+#渴求器具
+ship_event = {
+	
+	id = EOE_ghost.13
+	is_triggered_only = yes
+	title = EOE_ghost.13.name
+	immediate = {
+		if = {
+			limit = { is_hezi_in_shroud = yes }
+			owner = {
+				set_country_flag = EOE_ghost_13_hz
+			}
+		}
+	}
+	desc = {
+		trigger = {
+			is_hezi_in_shroud = no
+			is_okra_in_shroud = no
+		}
+		text = EOE_ghost.13.desc.b
+	}
+	desc = {
+		trigger = {
+			is_hezi_in_shroud = yes
+			is_okra_in_shroud = yes
+		}
+		text = EOE_ghost.13.desc.a
+	}
+	picture = GFX_evt_worrying_signal
+	show_sound = event_default
+	immediate = {
+		root.leader = {
+			save_event_target_as = EOE_leader_13_1
+		}
+		owner = {
+			every_owned_leader = {
+				limit = { is_councilor_type = councilor_research  }
+				save_event_target_as = EOE_leader_13_2
+			}
+		}
+	}
+	option = {
+		trigger = {
+			is_hezi_in_shroud = no
+			is_okra_in_shroud = no
+		}
+		name = EOE_ghost.13.a
+		hidden_effect = {
+			owner = {
+				every_owned_leader = {
+					limit = {
+						is_councilor_type = councilor_research
+					}
+					add_trait = trait_EOE_spark_of_love
+				}
+			}
+			root.leader = {
+				add_trait = trait_EOE_spark_of_love
+			}
+		}
+	}
+	option = {
+		trigger = {
+			is_hezi_in_shroud = yes
+			is_okra_in_shroud = yes
+		}
+		name = EOE_ghost.13.a
+		owner = {
+			every_owned_leader = {
+				limit = {
+					has_leader_flag = EOE_leader_hezi
+				}
+				remove_trait = leader_trait_spark_of_genius
+				add_trait = trait_EOE_spark_of_love_hezi
+			}
+			every_owned_leader = {
+				limit = {
+					has_leader_flag = EOE_leader_okra
+				}
+				remove_trait = leader_trait_spark_of_genius
+				add_trait = trait_EOE_spark_of_love_okra
+			}
+		}
+	}
+}
+#去世变成debuff
+country_event = {
+
+	id = EOE_ghost.14
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {
+			OR = {
+				has_trait = trait_EOE_spark_of_love
+				has_trait = trait_EOE_spark_of_love_okra
+				has_trait = trait_EOE_spark_of_love_hezi
+			}
+		}
+	}
+	immediate = {
+		if = {
+			limit = { 
+				from = {
+					has_trait = trait_EOE_spark_of_love
+				}
+			}
+			every_owned_leader = {
+				limit = {
+					has_trait = trait_EOE_spark_of_love
+				}
+				remove_trait = trait_EOE_spark_of_love
+				add_trait = trait_EOE_broken_spark_of_love
+			}
+		}
+		else_if = {
+			limit = { 
+				from = {
+					OR = {
+						has_trait = trait_EOE_spark_of_love_hezi
+						has_trait = trait_EOE_spark_of_love_okra
+					}
+					
+				}
+			}
+			every_owned_leader = {
+				limit = {
+					OR = {
+						has_trait = trait_EOE_spark_of_love_hezi
+						has_trait = trait_EOE_spark_of_love_okra
+					}
+				}
+				remove_trait = trait_EOE_spark_of_love_hezi
+				remove_trait = trait_EOE_spark_of_love_okra
+				add_trait = trait_EOE_broken_spark_of_love
+			}
+		}
+		
+	}
+}
+#虚境观景1星空
+ship_event = {
+	
+	id = EOE_ghost.15
+	is_triggered_only = yes
+	title = EOE_ghost.15.name
+	desc = EOE_ghost.15.desc
+	picture = GFX_evt_EOE_star_sky
+	show_sound = event_mystic_reveal
+	immediate = {
+		if = {
+			limit = { is_hezi_in_shroud = yes }
+			owner = {
+				set_country_flag = EOE_ghost_15_hz
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.3.a
+		#custom_tooltip = EOE_ghost.15.a.tooltip
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						is_hezi_in_shroud = yes
+						is_okra_in_shroud = yes
+					}
+				}
+				owner = {
+					add_modifier = {
+						modifier = EOE_shroud_star_sky_OH
+						days = -1
+					}
+				}
+				
+			}
+			else = {
+				owner = {
+					add_modifier = {
+						modifier = EOE_shroud_star_sky
+						days = -1
+					}	
+				}
+				
+			}
+		}
+	}
+}
+#虚境观景2，L星门
+ship_event = {
+	
+	id = EOE_ghost.16
+	is_triggered_only = yes
+	title = EOE_ghost.16.name
+	desc = {
+		trigger = {
+			has_global_flag = gray_goo_crisis_set
+		}
+		text = EOE_ghost.16.desc.a
+	}
+	desc = {
+		trigger = {
+			has_global_flag = dragon_season
+		}
+		text = EOE_ghost.16.desc.b
+	}
+	desc = {
+		trigger = {
+			has_global_flag = gray_goo_empire_set
+		}
+		text = EOE_ghost.16.desc.c
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				has_global_flag = gray_goo_empire_set
+				has_global_flag = dragon_season
+				has_global_flag = gray_goo_crisis_set
+			}
+		}
+		text = EOE_ghost.16.desc.d
+	}
+	picture = GFX_evt_EOE_star_sky
+	show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.16.a
+		hidden_effect = {
+			ship_event = {
+				id = EOE_ghost.20
+			}
+		}
+	}
+}
+#虚境观景3到处飞
+ship_event = {
+	
+	id = EOE_ghost.17
+	is_triggered_only = yes
+	title = EOE_ghost.17.name
+	desc = EOE_ghost.17.desc
+	picture = GFX_evt_continental
+	show_sound = event_wind_ruins_03	
+	immediate = {
+		if = {
+			limit = { is_hezi_in_shroud = yes }
+			owner = {
+				set_country_flag = EOE_ghost_17_hz
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.17.a
+		root.leader = {
+			add_trait = leader_trait_carefree
+		}
+		owner = {
+			add_resource = {
+				energy = 20000
+				society_research = 50000
+			}
+			add_modifier = {
+				modifier = EOE_antigravity_entertainment
+				days = -1
+			}
+			every_owned_leader = {
+				limit = {
+					is_councilor_type = councilor_research
+				}
+				add_trait = leader_trait_carefree
+			}
+		}
+	}
+}
+#虚境观景4浮空岛
+ship_event = {
+	
+	id = EOE_ghost.18
+	is_triggered_only = yes
+	title = EOE_ghost.18.name
+	desc = EOE_ghost.18.desc
+	picture = GFX_evt_EOE_floating_isiand
+	show_sound = event_wind_ruins_01
+	immediate = {
+		if = {
+			limit = { is_hezi_in_shroud = yes }
+			owner = {
+				set_country_flag = EOE_ghost_18_hz
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.3.a
+		#custom_tooltip = EOE_ghost.15.a.tooltip
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						is_hezi_in_shroud = yes
+						is_okra_in_shroud = yes
+					}
+				}
+				owner = {
+					add_modifier = {
+						modifier = EOE_floating_isiand_OH
+						days = -1
+					}
+				}
+				
+			}
+			else = {
+				owner = {
+					add_modifier = {
+						modifier = EOE_floating_isiand
+						days = -1
+					}
+				}
+				
+			}
+		}
+	}
+}
+#虚境观景5挨打
+ship_event = {
+	
+	id = EOE_ghost.19
+	is_triggered_only = yes
+	title = EOE_ghost.19.name
+	desc = {
+		trigger = {
+			is_hezi_in_shroud = yes
+		}
+		text = EOE_ghost.19.desc.a
+	}
+	desc = {
+		trigger = {
+			is_okra_in_shroud = yes
+		}
+		text = EOE_ghost.19.desc.b
+	}
+	desc = {
+		trigger = {
+			NOR = {
+				is_hezi_in_shroud = yes
+				is_okra_in_shroud = yes
+			}
+		}
+		text = EOE_ghost.19.desc.c
+	}
+	picture = GFX_evt_interior_battle
+	show_sound = event_ground_battle_01
+	immediate = {
+		if = {
+			limit = { is_hezi_in_shroud = yes }
+			owner = {
+				set_country_flag = EOE_ghost_19_hz
+			}
+		}
+	}
+	option = {
+		#秋葵在
+		name = EOE_ghost.19.b
+		trigger = {
+			is_hezi_in_shroud = yes
+		}
+		hidden_effect = {
+			ship_event = {
+				id = EOE_ghost.21
+			}
+		}
+	}
+	option = {
+		#核子在
+		name = EOE_ghost.19.a
+		custom_tooltip = EOE_ghost.19.a.tooltip
+		trigger = {
+			is_hezi_in_shroud = yes
+		}
+		hidden_effect = {
+			ship_event = {
+				id = EOE_ghost.21
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.19.c
+		trigger = {
+			NOR = {
+				is_hezi_in_shroud = yes
+				is_okra_in_shroud = yes
+			}
+		}
+		root.leader = {
+			add_trait = leader_trait_maimed
+		}
+		owner = {
+			every_owned_leader = {
+				limit = {
+					is_councilor_type = councilor_research
+				}
+				add_trait = leader_trait_maimed
+			}
+			add_modifier = {
+				modifier = EOE_psionic_psychology
+				days = 3600
+			}
+		}
+	}
+}
+#L星门相关
+ship_event = {
+	
+	id = EOE_ghost.20
+	is_triggered_only = yes
+	title = EOE_ghost.20.name
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = encountered_first_lgate
+				}
+				NOT = {
+					has_country_flag = completed_lcluster_chain
+				}
+				NOT = {
+					has_global_flag = l_cluster_opened
+				}
+			}
+		}
+		text = EOE_ghost.20.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = encountered_first_lgate
+				#NOT = { has_country_flag = completed_lcluster_chain }
+				NOT = {
+					has_global_flag = l_cluster_opened
+				}
+			}
+		}
+		text = EOE_ghost.20.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_global_flag = l_cluster_opened
+			}
+		}
+		text = EOE_ghost.20.desc.c
+	}
+	picture = GFX_evt_gray_gooed_planet
+	show_sound = event_default_02
+	option = {
+		name = EOE_ghost.20.a
+		hidden_effect = {
+			owner = {
+				random_planet_within_border = {
+					limit = {
+						has_anomaly = no
+						OR = {
+							is_planet_class = pc_molten
+							is_planet_class = pc_barren
+							is_planet_class = pc_barren_cold
+							is_planet_class = pc_frozen
+							is_planet_class = pc_toxic
+							is_planet_class = pc_gas_giant
+							is_planet_class = pc_asteroid
+						}
+					}
+					prev = {
+						enable_special_project = {
+							name = EOE_gray_goo
+							location = prev
+							owner = this
+						}
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = encountered_first_lgate
+						NOT = {
+							has_country_flag = completed_lcluster_chain
+						}
+						NOT = {
+							has_global_flag = l_cluster_opened
+						}
+					}
+				}
+				owner = {
+					generate_lcluster_clue = yes
+				}
+			}
+		}
+	}
+	# after = {
+	# 	if = {
+	# 		limit = {
+	# 			owner = {
+	# 				has_country_flag = encountered_first_lgate
+	# 				NOT = {
+	# 					has_country_flag = completed_lcluster_chain
+	# 				}
+	# 				NOT = {
+	# 					has_global_flag = l_cluster_opened
+	# 				}
+	# 			}
+	# 		}
+	# 		owner = {
+	# 			generate_lcluster_clue = yes
+	# 		}
+	# 	}
+	# }
+}
+#虚境观景5被打奖励
+ship_event = {
+	
+	id = EOE_ghost.21
+	is_triggered_only = yes
+	title = EOE_ghost.21.name
+	desc = EOE_ghost.21.desc
+	picture = GFX_evt_victorious_army
+	show_sound = event_ground_battle_02
+	option = {
+		name = EOE_ghost.3.a
+		EOE_battle_small_rewards = yes
+		owner = {
+			add_modifier = {
+				modifier = EOE_psionic_psychology
+				days = 3600
+			}
+		}
+	}
+}
+#欢迎7打游戏
+ship_event = {
+	
+	id = EOE_ghost.22
+	is_triggered_only = yes
+	title = EOE_ghost.22.name
+	desc = EOE_ghost.22.desc
+	picture = GFX_evt_engineering_research
+	show_sound = event_mystic_reveal
+	immediate = {
+		if = {
+			limit = { is_hezi_in_shroud = yes }
+			owner = {
+				set_country_flag = EOE_ghost_22_hz
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.3.a
+		owner = {
+			add_modifier = {
+				modifier = EOE_shroud_ship_design
+				days = -1
+			}
+		}
+	}
+}
+#欢迎6虚境集市
+ship_event = {
+	
+	id = EOE_ghost.23
+	is_triggered_only = yes
+	title = EOE_ghost.23.name
+	desc = EOE_ghost.23.desc
+	picture = GFX_evt_EOE_galactic_market
+	show_sound = event_primitive_civilization
+	option = {
+		name = EOE_ghost.23.a
+		ship_event = {
+			id = EOE_ghost.24
+		}
+	}
+	option = {
+		name = EOE_ghost.23.b
+	}
+}
+#虚境集市part1
+ship_event = {
+	
+	id = EOE_ghost.24
+	is_triggered_only = yes
+	title = EOE_ghost.24.name
+	desc = EOE_ghost.24.desc
+	picture = GFX_evt_EOE_galactic_market
+	#show_sound = event_primitive_civilization
+	option = {
+		#买电
+		name = EOE_ghost.24.a
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = sr_zro
+					value >= 1000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				sr_zro = -1000
+			}
+			add_modifier = {
+				modifier = EOE_shroud_market_energy
+				days = -1
+			}
+		}
+		hidden_effect = {
+			ship_event = {
+				id = EOE_ghost.26
+			}
+		}
+	}
+	option = {
+		#买矿
+		name = EOE_ghost.24.b
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = sr_zro
+					value >= 1000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				sr_zro = -1000
+			}
+			add_modifier = {
+				modifier = EOE_shroud_market_minerals
+				days = -1
+			}
+		}
+		hidden_effect = {
+			ship_event = {
+				id = EOE_ghost.26
+			}
+		}
+	}
+	option = {
+		#买食物
+		name = EOE_ghost.24.c
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = sr_zro
+					value >= 1000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				sr_zro = -1000
+			}
+			add_modifier = {
+				modifier = EOE_shroud_market_food
+				days = -1
+			}
+		}
+		hidden_effect = {
+			ship_event = {
+				id = EOE_ghost.26
+			}
+		}
+	}
+	option = {
+		#买消费品
+		name = EOE_ghost.24.d
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = sr_zro
+					value >= 2000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				sr_zro = -2000
+			}
+			add_modifier = {
+				modifier = EOE_shroud_market_consumer
+				days = -1
+			}
+		}
+		hidden_effect = {
+			ship_event = {
+				id = EOE_ghost.26
+			}
+		}
+	}
+	option = {
+		#买合金
+		name = EOE_ghost.24.e
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = sr_zro
+					value >= 2000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				sr_zro = -2000
+			}
+			add_modifier = {
+				modifier = EOE_shroud_market_alloy
+				days = -1
+			}
+		}
+		hidden_effect = {
+			ship_event = {
+				id = EOE_ghost.26
+			}
+		}
+	}
+	option = {
+		#买研究
+		name = EOE_ghost.24.f
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = sr_zro
+					value >= 2500
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				sr_zro = -2500
+			}
+			add_modifier = {
+				modifier = EOE_shroud_market_research
+				days = -1
+			}
+		}
+		hidden_effect = {
+			ship_event = {
+				id = EOE_ghost.26
+			}
+		}
+	}
+	option = {
+		#买凝聚
+		name = EOE_ghost.24.g
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = sr_zro
+					value >= 2500
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				sr_zro = -2500
+			}
+			add_modifier = {
+				modifier = EOE_shroud_market_unity
+				days = -1
+			}
+		}
+		hidden_effect = {
+			ship_event = {
+				id = EOE_ghost.26
+			}
+		}
+	}
+	option = {
+		#更多
+		name = EOE_ghost.24.h
+		ship_event = {
+			id = EOE_ghost.25
+		}
+	}
+	option = {
+		#离开
+		name = EOE_ghost.24.i
+	}
+}
+#虚境集市part2
+ship_event = {
+	
+	id = EOE_ghost.25
+	is_triggered_only = yes
+	title = EOE_ghost.25.name
+	desc = EOE_ghost.25.desc
+	picture = GFX_evt_EOE_galactic_market
+	#show_sound = event_primitive_civilization
+	option = {
+		#种子机枪
+		name = EOE_ghost.25.a
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = sr_zro
+					value >= 3000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				sr_zro = -3000
+			}
+			set_country_flag = EOE_tech7_1
+			give_technology = {
+				tech = tech_EOE_bullet_seed
+				message = yes
+			}
+		}
+		hidden_effect = {
+			ship_event = {
+				id = EOE_ghost.27
+			}
+		}
+	}
+	option = {
+		#十万伏特
+		name = EOE_ghost.25.b
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = sr_zro
+					value >= 3000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				sr_zro = -3000
+			}
+			set_country_flag = EOE_tech7_9
+			give_technology = {
+				tech = tech_EOE_thunder_bolt
+				message = yes
+			}
+		}
+		hidden_effect = {
+			ship_event = {
+				id = EOE_ghost.27
+			}
+		}
+	}
+	option = {
+		#飞叶快刀
+		name = EOE_ghost.25.c
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = sr_zro
+					value >= 3000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				sr_zro = -3000
+			}
+			set_country_flag = EOE_tech7_2
+			give_technology = {
+				tech = tech_EOE_razor_leaf
+				message = yes
+			}
+		}
+		hidden_effect = {
+			ship_event = {
+				id = EOE_ghost.27
+			}
+		}
+	}
+	option = {
+		#极光束
+		name = EOE_ghost.25.d
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = sr_zro
+					value >= 3000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				sr_zro = -3000
+			}
+			set_country_flag = EOE_tech7_8
+			give_technology = {
+				tech = tech_EOE_aurora_beam
+				message = yes
+			}
+		}
+		hidden_effect = {
+			ship_event = {
+				id = EOE_ghost.27
+			}
+		}
+	}
+	option = {
+		#进化奇石
+		name = EOE_ghost.25.e
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = sr_zro
+					value >= 3000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				sr_zro = -3000
+			}
+			set_country_flag = EOE_tech9_5
+			give_technology = {
+				tech = tech_EOE_evolite
+				message = yes
+			}
+		}
+		hidden_effect = {
+			ship_event = {
+				id = EOE_ghost.27
+			}
+		}
+	}
+	# option = { #藏宝图
+	# 	name = EOE_ghost.25.f
+	# 	allow = {
+	# 		owner = {
+	# 			resource_stockpile_compare = {
+	# 				resource = sr_zro
+	# 				value >= 3000
+	# 			}
+	# 		}
+	# 	}
+	# 	owner = {
+	# 		add_resource = {
+	# 			sr_zro = -3000
+	# 		}
+	# 	}
+	# 	hidden_effect = {
+	# 		ship_event = {
+	# 			id = EOE_ghost.28
+	# 		}
+	# 	}
+	# }
+	option = {
+		#回去
+		name = EOE_ghost.25.g
+		ship_event = {
+			id = EOE_ghost.24
+		}
+	}
+	option = {
+		#离开
+		name = EOE_ghost.25.h
+	}
+}
+#虚境集市part1买好了资源
+ship_event = {
+	
+	id = EOE_ghost.26
+	is_triggered_only = yes
+	title = EOE_ghost.26.name
+	desc = {
+		trigger = {
+			is_hezi_in_shroud = yes
+		}
+		text = EOE_ghost.26.desc.a
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				is_hezi_in_shroud = yes
+			}
+		}
+		text = EOE_ghost.26.desc.b
+	}
+	picture = GFX_evt_unity_symbol
+	show_sound = event_mystic_reveal
+	immediate = {
+		owner = {
+			set_country_flag = EOE_shroud_market_resource
+		}
+		if = {
+			limit = {
+				is_hezi_in_shroud = yes
+			}
+			owner = {
+				set_country_flag = EOE_ghost_26_hz
+				add_resource = {
+					energy = -500
+				}
+				add_resource = {
+					food = 500
+				}
+			}
+		}
+	}
+}
+#虚境集市part2买舰船配件
+ship_event = {
+	
+	id = EOE_ghost.27
+	is_triggered_only = yes
+	title = EOE_ghost.27.name
+	desc = EOE_ghost.27.desc
+	picture = GFX_evt_engineering_research
+	immediate = {
+		if = {
+			limit = { is_hezi_in_shroud = yes }
+			owner = {
+				set_country_flag = EOE_ghost_27_hz
+			}
+		}
+	}
+}
+#虚境集市part2买藏宝图，但是还不知道藏了啥
+ship_event = {
+	
+	id = EOE_ghost.28
+	is_triggered_only = yes
+	title = EOE_ghost.28.name
+	desc = EOE_ghost.28.desc
+	picture = GFX_evt_EOE_galactic_market
+	immediate = {
+		if = {
+			limit = { is_hezi_in_shroud = yes }
+			owner = {
+				set_country_flag = EOE_ghost_28_hz
+			}
+		}
+	}
+}
+#其他虚境进入者
+ship_event = {
+	
+	id = EOE_ghost.29
+	is_triggered_only = yes
+	title = EOE_ghost.29.name
+	desc = EOE_ghost.29.desc
+	picture = GFX_evt_psionic_battle
+	show_sound = event_ex_started_01
+	immediate = {
+		if = {
+			limit = { is_hezi_in_shroud = yes }
+			owner = {
+				set_country_flag = EOE_ghost_29_hz
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.29.a
+		owner = {
+			add_resource = {
+				energy = 50000
+			}
+		}
+	}
+}
+#灵能风暴
+ship_event = {
+	
+	id = EOE_ghost.30
+	is_triggered_only = yes
+	title = EOE_ghost.30.name
+	desc = EOE_ghost.30.desc
+	picture = GFX_evt_EOE_psionic_storm
+	show_sound = event_yellow_alert_01
+	immediate = {
+		if = {
+			limit = { is_hezi_in_shroud = yes }
+			owner = {
+				set_country_flag = EOE_ghost_30_hz
+			}
+		}
+	}
+	option = {
+		name = OK
+		owner = {
+			add_modifier = {
+				modifier = EOE_psionic_storm
+				days = 3600
+			}
+		}
+	}
+}
+#灵能蚂蚁
+ship_event = {
+
+	id = EOE_ghost.31
+	is_triggered_only = yes
+	title = EOE_ghost.31.name
+	desc = EOE_ghost.31.desc
+	picture = GFX_evt_EOE_formians
+	show_sound = event_alien_nature
+	immediate = {
+		if = {
+			limit = { is_hezi_in_shroud = yes }
+			owner = {
+				set_country_flag = EOE_ghost_31_hz
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.29.a
+		hidden_effect = {
+			owner = {
+				if = {
+					limit = {
+						OR = {
+							is_hezi_in_shroud = yes
+							is_okra_in_shroud = yes
+						}
+					}
+					add_modifier = {
+						modifier = EOE_formian_ants_OH
+						days = -1
+					}
+				}
+				else = {
+					add_modifier = {
+						modifier = EOE_formian_ants
+						days = -1
+					}
+				}
+			}
+		}
+	}
+}
+#虚境观景-机械堕落和肃正
+ship_event = {
+	
+	id = EOE_ghost.32
+	is_triggered_only = yes
+	title = EOE_ghost.32.name
+	desc = {
+		trigger = {
+			has_global_flag = EOE_good_machine_fallen_empire
+		}
+		text = EOE_ghost.32.desc.a
+	}
+	desc = {
+		trigger = {
+			has_global_flag = EOE_bad_machine_fallen_empire
+		}
+		text = EOE_ghost.32.desc.b
+	}
+	picture = GFX_evt_space_debris
+	show_sound = event_mystic_reveal
+	immediate = {
+		if = {
+			limit = { is_hezi_in_shroud = yes has_global_flag = EOE_bad_machine_fallen_empire }
+			owner = {
+				set_country_flag = EOE_ghost_32_hz
+			}
+		}
+		else_if = {
+			limit = { is_hezi_in_shroud = yes has_global_flag = EOE_good_machine_fallen_empire }
+			owner = {
+				set_country_flag = EOE_ghost_32_hz_b
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.32.a
+		owner = {
+			add_modifier = {
+				modifier = EOE_ancient_crisis
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.32.b
+	}
+}
+#欢迎8-哲学讨论
+ship_event = {
+	
+	id = EOE_ghost.33
+	is_triggered_only = yes
+	title = EOE_ghost.33.name
+	desc = EOE_ghost.33.desc
+	picture = GFX_evt_psionics
+	show_sound = event_mystic_reveal
+	immediate = {
+		if = {
+			limit = { is_hezi_in_shroud = yes }
+			owner = {
+				set_country_flag = EOE_ghost_33_hz
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.29.a
+		root.leader = {
+			add_trait = leader_trait_expertise_psionics
+		}
+		owner = {
+			every_owned_leader = {
+				limit = {
+					is_councilor_type = councilor_research
+				}
+				add_trait = leader_trait_expertise_psionics
+			}
+		}
+	}
+}
+#第四面墙，但是还没有实装
+ship_event = {
+	
+	id = EOE_ghost.34
+	is_triggered_only = yes
+	title = EOE_ghost.34.name
+	desc = EOE_ghost.34.desc
+	#picture = GFX_evt_machine_space_battle
+	#show_sound = event_space_battle
+	option = {
+		name = EOE_ghost.34.a
+	}
+}
+#观景-机械境
+ship_event = {
+	
+	id = EOE_ghost.88
+	is_triggered_only = yes
+	title = EOE_ghost.88.name
+	desc = EOE_ghost.88.desc
+	picture = GFX_evt_ai_planet
+	show_sound = event_administrative_work
+	immediate = {
+		if = {
+			limit = { is_hezi_in_shroud = yes }
+			owner = {
+				set_country_flag = EOE_ghost_88_hz
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.88.a
+		owner = {
+			add_modifier = {
+				modifier = EOE_machanus_influence
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.88.b
+	}
+}
+#观景-捡破烂
+ship_event = {
+	
+	id = EOE_ghost.89
+	is_triggered_only = yes
+	title = EOE_ghost.89.name
+	desc = EOE_ghost.89.desc
+	picture = GFX_evt_junkheap
+	show_sound = event_metal_fatigue_01
+	immediate = {
+		if = {
+			limit = { is_hezi_in_shroud = yes }
+			owner = {
+				set_country_flag = EOE_ghost_89_hz
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.89.a
+		custom_tooltip = EOE_ghost.89.a.tooltip
+		hidden_effect = {
+			owner = {
+				change_variable = {
+					which = class_4_singularity_build_count
+					value = 1
+				}
+				set_country_flag = class_4_singularity_can_build
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.89.b
+		owner = {
+			add_resource = {
+				alloys = 5000
+			}
+		}
+	}
+}
+#观景-虚境的星球
+ship_event = {
+	
+	id = EOE_ghost.90
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		random_list = {
+			5 = {
+				
+				ship_event = {
+					id = EOE_ghost.91
+				}
+			}
+			3 = {
+
+				ship_event = {
+					id = EOE_ghost.92
+				}
+			}
+			1 = {
+				owner = {
+					random_owned_planet = {
+						limit = {
+							has_planet_flag = EOE_ghost_planet_1
+						}
+						solar_system = {
+							spawn_system = {
+								min_distance = 1
+								max_distance = 2
+								max_jumps = 2
+								initializer = EOE_dyson_sphere_system
+							}
+							last_created_system = {
+								save_event_target_as = EOE_protoss_system_g
+							}
+						}
+					}
+				}
+				ship_event = {
+					id = EOE_ghost.93
+				}
+			}
+			1 = {
+				owner = {
+					random_owned_planet = {
+						limit = {
+							has_planet_flag = EOE_ghost_planet_1
+						}
+						solar_system = {
+							spawn_system = {
+								min_distance = 1
+								max_distance = 2
+								max_jumps = 2
+								initializer = EOE_matter_decompressor_system
+							}
+							last_created_system = {
+								save_event_target_as = EOE_protoss_system_g
+							}
+						}
+					}
+				}
+				ship_event = {
+					id = EOE_ghost.94
+				}
+			}
+			1 = {
+				owner = {
+					random_owned_planet = {
+						limit = {
+							has_planet_flag = EOE_ghost_planet_1
+						}
+						solar_system = {
+							spawn_system = {
+								min_distance = 1
+								max_distance = 2
+								max_jumps = 2
+								initializer = EOE_science_nexus_system
+							}
+							last_created_system = {
+								save_event_target_as = EOE_protoss_system_g
+							}
+						}
+					}
+				}
+				ship_event = {
+					id = EOE_ghost.95
+				}
+			}
+		}
+	}
+}
+#虚境盖亚
+ship_event = {
+	
+	id = EOE_ghost.91
+	is_triggered_only = yes
+	title = EOE_ghost.91.name
+	desc = EOE_ghost.91.desc
+	picture = GFX_evt_EOE_gaia_planet
+	show_sound = event_mystic_reveal
+	immediate = {
+		random_system = {
+			limit = {
+				any_system_planet = {
+					has_planet_flag = EOE_protoss_shroud_planet
+				}
+			}
+			random_system_planet = {
+				limit = {
+					has_planet_flag = EOE_protoss_shroud_planet
+				}
+				save_event_target_as = EOE_protoss_shroud_planet_g
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.91.a
+		hidden_effect = {
+			event_target:EOE_protoss_shroud_planet_g = {
+				change_pc = pc_gaia
+				remove_deposit = yes
+				add_deposit = d_collapsed_spire
+				add_deposit = d_massive_crevice
+				add_deposit = d_shattered_solar_array
+				add_deposit = d_flooded_reactor_pits
+				add_deposit = d_crumbling_mining_tunnels
+				add_deposit = d_ruined_arcology
+				add_deposit = d_EOE_Broken_tunnel
+				add_deposit = d_EOE_Broken_tunnel
+				add_building = building_class_4_singularity
+				add_modifier = {
+					modifier = EOE_protoss_world
+					days = -1
+				}
+				add_random_non_blocker_deposit = yes
+				add_random_non_blocker_deposit = yes
+				add_random_non_blocker_deposit = yes
+				add_random_non_blocker_deposit = yes
+				add_random_non_blocker_deposit = yes
+				add_random_non_blocker_deposit = yes
+				add_random_non_blocker_deposit = yes
+				add_random_non_blocker_deposit = yes
+				add_random_non_blocker_deposit = yes
+				add_random_non_blocker_deposit = yes
+			}
+		}
+		
+	}
+}
+#虚境遗落
+ship_event = {
+	
+	id = EOE_ghost.92
+	is_triggered_only = yes
+	title = EOE_ghost.92.name
+	desc = EOE_ghost.92.desc
+	picture = GFX_evt_relic_world
+	show_sound = event_mystic_reveal
+	immediate = {
+		random_system = {
+			limit = {
+				any_system_planet = {
+					has_planet_flag = EOE_protoss_shroud_planet
+				}
+			}
+			random_system_planet = {
+				limit = {
+					has_planet_flag = EOE_protoss_shroud_planet
+				}
+				save_event_target_as = EOE_protoss_shroud_planet_g
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.91.a
+		hidden_effect = {
+			event_target:EOE_protoss_shroud_planet_g = {
+				change_pc = pc_relic
+				remove_deposit = yes
+				add_modifier = {
+					modifier = EOE_protoss_world
+					days = -1
+				}
+				add_deposit = d_ruined_arcology
+				add_deposit = d_ruined_arcology
+				add_deposit = d_ruined_arcology
+				add_deposit = d_ruined_arcology
+				add_deposit = d_ruined_arcology
+				add_deposit = d_EOE_Broken_tunnel
+				add_deposit = d_EOE_Broken_tunnel
+				add_deposit = d_relic_dense_ruins
+				add_deposit = d_collapsed_spire
+				add_deposit = d_massive_crevice
+				add_deposit = d_shattered_solar_array
+				add_deposit = d_flooded_reactor_pits
+				add_deposit = d_crumbling_mining_tunnels
+				add_deposit = d_relic_metal_boneyard
+				add_building = building_class_4_singularity
+				add_random_non_blocker_deposit = yes
+				add_random_non_blocker_deposit = yes
+				add_random_non_blocker_deposit = yes
+			}
+		}
+		
+	}
+}
+#虚境戴森球
+ship_event = {
+	
+	id = EOE_ghost.93
+	is_triggered_only = yes
+	title = EOE_ghost.93.name
+	desc = EOE_ghost.93.desc
+	picture = GFX_evt_dyson_sphere
+	show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.91.a
+	}
+}
+#虚境解压器
+ship_event = {
+	
+	id = EOE_ghost.94
+	is_triggered_only = yes
+	title = EOE_ghost.94.name
+	desc = EOE_ghost.94.desc
+	picture = GFX_evt_matter_decompressor
+	show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.91.a
+	}
+}
+#虚境科学联合学院
+ship_event = {
+
+	id = EOE_ghost.95
+	is_triggered_only = yes
+	title = EOE_ghost.95.name
+	desc = EOE_ghost.95.desc
+	picture = GFX_evt_strategic_coordination_center
+	show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.91.a
+	}
+}
+
+
+
+
+######################################
+#竞技场,难度选择
+ship_event = {
+	
+	id = EOE_ghost.35
+	is_triggered_only = yes
+	title = EOE_ghost.35.name
+	desc = EOE_ghost.35.desc
+	picture = GFX_evt_EOE_protoss_Jingjichang
+	show_sound = event_mystic_reveal
+	option = {
+		trigger = {
+			always = no
+		}
+		name = EOE_ghost.35.a		#简单
+		custom_tooltip = EOE_ghost.35.a.tooltip
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_battle_easy
+			}
+			ship_event = {
+				id = EOE_ghost.96
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.35.b		#普通
+		custom_tooltip = EOE_ghost.35.b.tooltip
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_battle_normal
+			}
+			ship_event = {
+				id = EOE_ghost.37
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.35.c		#困难
+		custom_tooltip = EOE_ghost.35.c.tooltip
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_battle_hard
+			}
+			ship_event = {
+				id = EOE_ghost.37
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.35.d		#逃跑
+		ship_event = {
+			id = EOE_ghost.36
+		}
+	}
+	after = {
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						has_country_flag = EOE_battle_hard
+						has_country_flag = EOE_battle_normal
+						has_country_flag = EOE_battle_easy
+					}
+				}
+			}
+			random_list = {
+				1 = {
+					owner = {
+						set_country_flag = EOE_milotic
+					}
+				}
+				1 = {
+					owner = {
+						set_country_flag = EOE_ferrothorn
+					}
+				}
+				1 = {
+					owner = {
+						set_country_flag = EOE_porygon
+					}
+				}
+			}
+		}
+	}
+}
+#逃跑
+ship_event = {
+	
+	id = EOE_ghost.36
+	is_triggered_only = yes
+	title = EOE_ghost.36.name
+	desc = EOE_ghost.36.desc
+	picture = GFX_evt_EOE_protoss_Jingjichang
+	#show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.36.a
+	}
+}
+#描述对手，选人，赋初始值
+ship_event = {
+	
+	id = EOE_ghost.37
+	is_triggered_only = yes
+	title = EOE_ghost.37.name
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_milotic
+			}
+		}
+		text = EOE_ghost.37.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_ferrothorn
+			}
+		}
+		text = EOE_ghost.37.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_porygon
+			}
+		}
+		text = EOE_ghost.37.desc.c
+	}
+	picture = GFX_evt_EOE_protoss_Jingjichang
+	immediate = {
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_milotic
+				}
+			}
+			set_variable = {
+				which = EOE_e_hp
+				value = 300
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ferrothorn
+				}
+			}
+			set_variable = {
+				which = EOE_e_hp
+				value = 300
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_porygon
+				}
+			}
+			set_variable = {
+				which = EOE_e_hp
+				value = 225
+			}
+		}
+		set_variable = {
+			which = EOE_f_mp
+			value = 30
+		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_milotic
+				}
+			}
+			set_variable = {
+				which = EOE_e_mp
+				value = 50
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ferrothorn
+				}
+			}
+			set_variable = {
+				which = EOE_e_mp
+				value = 50
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_porygon
+				}
+			}
+			set_variable = {
+				which = EOE_e_mp
+				value = 80
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.37.a
+		custom_tooltip = EOE_ghost.37.a.tooltip
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_battle_eevee
+			}
+			set_variable = {
+				which = EOE_f_hp
+				value = 175
+			}
+			ship_event = {
+				id = EOE_ghost.38
+			}
+		}
+	}
+	option = {
+		trigger = {
+			is_okra_in_shroud = yes
+		}
+		name = EOE_ghost.37.b
+		custom_tooltip = EOE_ghost.37.b.tooltip
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_battle_okra
+			}
+			set_variable = {
+				which = EOE_f_hp
+				value = 175
+			}
+			ship_event = {
+				id = EOE_ghost.38
+			}
+		}
+	}
+	option = {
+		trigger = {
+			is_hezi_in_shroud = yes
+		}
+		name = EOE_ghost.37.c
+		custom_tooltip = EOE_ghost.37.c.tooltip
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_battle_hezi
+			}
+			set_variable = {
+				which = EOE_f_hp
+				value = 138
+			}
+			ship_event = {
+				id = EOE_ghost.38
+			}
+		}
+	}
+	option = {
+		#逃跑
+		name = EOE_ghost.37.d
+		ship_event = {
+			id = EOE_ghost.36
+		}
+	}
+}
+#页面分配，判断胜负
+ship_event = {
+	
+	id = EOE_ghost.38
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		owner = {
+			remove_country_flag = EOE_move_1
+			remove_country_flag = EOE_move_2
+			remove_country_flag = EOE_move_3
+			remove_country_flag = EOE_move_4
+			remove_country_flag = EOE_move_5
+			remove_country_flag = EOE_move_6
+			remove_country_flag = EOE_move_7
+			remove_country_flag = EOE_e_move1
+			remove_country_flag = EOE_e_move2
+			remove_country_flag = EOE_e_move3
+			remove_country_flag = EOE_e_move4
+			remove_country_flag = EOE_protected
+			remove_country_flag = EOE_missed
+			remove_country_flag = EOE_crithit
+		}
+		reroll_random = yes
+		change_variable = {
+			which = EOE_f_mp
+			value = 10
+		}
+		change_variable = {
+			which = EOE_e_mp
+			value = 10
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = EOE_f_mp
+					value < 0
+				}
+			}
+			set_variable = {
+				which = EOE_f_mp
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = EOE_e_mp
+					value < 0
+				}
+			}
+			set_variable = {
+				which = EOE_e_mp
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_leech_seed
+					NOT = {
+						has_country_flag = EOE_battle_okra
+					}
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_hp
+				value = 10
+			}
+			change_variable = {
+				which = EOE_e_hp
+				value = 10
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = EOE_e_hp
+					value <= 0
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_battle_hard
+					}
+				}
+				ship_event = {
+					id = EOE_ghost.84
+				}
+			}
+			else = {
+				ship_event = {
+					id = EOE_ghost.85
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = EOE_f_hp
+					value <= 0
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.86
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_milotic
+					has_country_flag = EOE_battle_eevee
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.39
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ferrothorn
+					has_country_flag = EOE_battle_eevee
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.40
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_porygon
+					has_country_flag = EOE_battle_eevee
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.41
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_milotic
+					has_country_flag = EOE_battle_okra
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.42
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ferrothorn
+					has_country_flag = EOE_battle_okra
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.43
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_porygon
+					has_country_flag = EOE_battle_okra
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.44
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_milotic
+					has_country_flag = EOE_battle_hezi
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.45
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ferrothorn
+					has_country_flag = EOE_battle_hezi
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.46
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_porygon
+					has_country_flag = EOE_battle_hezi
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.47
+			}
+		}
+	}
+}
+
+
+ship_event = {
+	id = EOE_ghost.39
+	is_triggered_only = yes
+	title = EOE_ghost.39.name
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value > @EOE_eevee_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_milotic_hpl
+			}
+		}
+		text = EOE_ghost.39.desc.a
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value > @EOE_eevee_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_milotic_hpl
+			}
+		}
+		text = EOE_ghost.39.desc.b
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value <= @EOE_eevee_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_milotic_hpl
+			}
+		}
+		text = EOE_ghost.39.desc.c
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value <= @EOE_eevee_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_milotic_hpl
+			}
+		}
+		text = EOE_ghost.39.desc.d
+	}
+	picture = GFX_evt_EOE_Eevee_VS_Milotic
+	#show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.39.a
+		custom_tooltip = EOE_ghost.39.a.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_eevee_1m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_1
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.39.b
+		custom_tooltip = EOE_ghost.39.b.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_eevee_2m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_2
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.39.c
+		custom_tooltip = EOE_ghost.39.c.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_eevee_3m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_3
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.39.d
+		custom_tooltip = EOE_ghost.39.d.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_eevee_4m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_4
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.39.e
+		custom_tooltip = EOE_ghost.39.e.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_eevee_5m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_5
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.39.f
+		custom_tooltip = EOE_ghost.39.f.tooltip
+		# allow = {
+		# 	check_variable = {
+		# 		which = EOE_f_mp
+		# 		value >= @EOE_eevee_6m 
+		# 	}
+		# }
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_6
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.39.g
+		custom_tooltip = EOE_ghost.39.g.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_eevee_7m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_7
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.35.d		#run
+		allow = {
+			always = no
+			text = EOE_no_escape
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.40
+	is_triggered_only = yes
+	title = EOE_ghost.40.name
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value > @EOE_eevee_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_ferrothorn_hpl
+			}
+		}
+		text = EOE_ghost.40.desc.a
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value > @EOE_eevee_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_ferrothorn_hpl
+			}
+		}
+		text = EOE_ghost.40.desc.b
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value <= @EOE_eevee_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_ferrothorn_hpl
+			}
+		}
+		text = EOE_ghost.40.desc.c
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value <= @EOE_eevee_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_ferrothorn_hpl
+			}
+		}
+		text = EOE_ghost.40.desc.d
+	}
+	picture = GFX_evt_EOE_Eevee_VS_Ferrothorn
+	#show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.40.a
+		custom_tooltip = EOE_ghost.40.a.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_eevee_1m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_1
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.40.b
+		custom_tooltip = EOE_ghost.40.b.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_eevee_2m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_2
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.40.c
+		custom_tooltip = EOE_ghost.40.c.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_eevee_3m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_3
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.40.d
+		custom_tooltip = EOE_ghost.40.d.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_eevee_4m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_4
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.40.e
+		custom_tooltip = EOE_ghost.40.e.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_eevee_5m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_5
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.40.f
+		custom_tooltip = EOE_ghost.40.f.tooltip
+		# allow = {
+		# 	check_variable = {
+		# 		which = EOE_f_mp
+		# 		value >= @EOE_eevee_6m 
+		# 	}
+		# }
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_6
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.40.g
+		custom_tooltip = EOE_ghost.40.g.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_eevee_7m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_7
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.35.d		#run
+		allow = {
+			always = no
+			text = EOE_no_escape
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.41
+	is_triggered_only = yes
+	title = EOE_ghost.41.name
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value > @EOE_eevee_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_porygon_hpl
+			}
+		}
+		text = EOE_ghost.41.desc.a
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value > @EOE_eevee_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_porygon_hpl
+			}
+		}
+		text = EOE_ghost.41.desc.b
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value <= @EOE_eevee_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_porygon_hpl
+			}
+		}
+		text = EOE_ghost.41.desc.c
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value <= @EOE_eevee_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_porygon_hpl
+			}
+		}
+		text = EOE_ghost.41.desc.d
+	}
+	picture = GFX_evt_EOE_Eevee_VS_Porygon
+	#show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.41.a
+		custom_tooltip = EOE_ghost.41.a.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_eevee_1m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_1
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.41.b
+		custom_tooltip = EOE_ghost.41.b.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_eevee_2m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_2
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.41.c
+		custom_tooltip = EOE_ghost.41.c.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_eevee_3m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_3
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.41.d
+		custom_tooltip = EOE_ghost.41.d.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_eevee_4m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_4
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.41.e
+		custom_tooltip = EOE_ghost.41.e.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_eevee_5m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_5
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.41.f
+		custom_tooltip = EOE_ghost.41.f.tooltip
+		# allow = {
+		# 	check_variable = {
+		# 		which = EOE_f_mp
+		# 		value >= @EOE_eevee_6m 
+		# 	}
+		# }
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_6
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.41.g
+		custom_tooltip = EOE_ghost.41.g.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_eevee_7m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_7
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.35.d		#run
+		allow = {
+			always = no
+			text = EOE_no_escape
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.42
+	is_triggered_only = yes
+	title = EOE_ghost.42.name
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value > @EOE_okra_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_milotic_hpl
+			}
+		}
+		text = EOE_ghost.42.desc.a
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value > @EOE_okra_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_milotic_hpl
+			}
+		}
+		text = EOE_ghost.42.desc.b
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value <= @EOE_okra_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_milotic_hpl
+			}
+		}
+		text = EOE_ghost.42.desc.c
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value <= @EOE_okra_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_milotic_hpl
+			}
+		}
+		text = EOE_ghost.42.desc.d
+	}
+	picture = GFX_evt_EOE_Leafeon_VS_Milotic
+	#show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.42.a
+		custom_tooltip = EOE_ghost.42.a.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_okra_1m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_1
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.42.b
+		custom_tooltip = EOE_ghost.42.b.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_okra_2m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_2
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.42.c
+		custom_tooltip = EOE_ghost.42.c.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_okra_3m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_3
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.42.d
+		custom_tooltip = EOE_ghost.42.d.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_okra_4m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_4
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.42.e
+		custom_tooltip = EOE_ghost.42.e.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_okra_5m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_5
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.42.f
+		custom_tooltip = EOE_ghost.42.f.tooltip
+		# allow = {
+		# 	check_variable = {
+		# 		which = EOE_f_mp
+		# 		value >= @EOE_okra_6m 
+		# 	}
+		# }
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_6
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.42.g
+		custom_tooltip = EOE_ghost.42.g.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_okra_7m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_7
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.35.d		#run
+		allow = {
+			always = no
+			text = EOE_no_escape
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.43
+	is_triggered_only = yes
+	title = EOE_ghost.43.name
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value > @EOE_okra_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_ferrothorn_hpl
+			}
+		}
+		text = EOE_ghost.43.desc.a
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value > @EOE_okra_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_ferrothorn_hpl
+			}
+		}
+		text = EOE_ghost.43.desc.b
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value <= @EOE_okra_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_ferrothorn_hpl
+			}
+		}
+		text = EOE_ghost.43.desc.c
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value <= @EOE_okra_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_ferrothorn_hpl
+			}
+		}
+		text = EOE_ghost.43.desc.d
+	}
+	picture = GFX_evt_EOE_Leafeon_VS_Ferrothorn
+	#show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.43.a
+		custom_tooltip = EOE_ghost.43.a.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_okra_1m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_1
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.43.b
+		custom_tooltip = EOE_ghost.43.b.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_okra_2m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_2
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.43.c
+		custom_tooltip = EOE_ghost.43.c.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_okra_3m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_3
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.43.d
+		custom_tooltip = EOE_ghost.43.d.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_okra_4m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_4
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.43.e
+		custom_tooltip = EOE_ghost.43.e.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_okra_5m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_5
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.43.f
+		custom_tooltip = EOE_ghost.43.f.tooltip
+		# allow = {
+		# 	check_variable = {
+		# 		which = EOE_f_mp
+		# 		value >= @EOE_okra_6m 
+		# 	}
+		# }
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_6
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.43.g
+		custom_tooltip = EOE_ghost.43.g.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_okra_7m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_7
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.35.d		#run
+		allow = {
+			always = no
+			text = EOE_no_escape
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.44
+	is_triggered_only = yes
+	title = EOE_ghost.44.name
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value > @EOE_okra_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_porygon_hpl
+			}
+		}
+		text = EOE_ghost.44.desc.a
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value > @EOE_okra_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_porygon_hpl
+			}
+		}
+		text = EOE_ghost.44.desc.b
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value <= @EOE_okra_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_porygon_hpl
+			}
+		}
+		text = EOE_ghost.44.desc.c
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value <= @EOE_okra_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_porygon_hpl
+			}
+		}
+		text = EOE_ghost.44.desc.d
+	}
+	picture = GFX_evt_EOE_Leafeon_VS_Porygon
+	#show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.44.a
+		custom_tooltip = EOE_ghost.44.a.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_okra_1m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_1
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.44.b
+		custom_tooltip = EOE_ghost.44.b.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_okra_2m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_2
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.44.c
+		custom_tooltip = EOE_ghost.44.c.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_okra_3m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_3
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.44.d
+		custom_tooltip = EOE_ghost.44.d.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_okra_4m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_4
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.44.e
+		custom_tooltip = EOE_ghost.44.e.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_okra_5m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_5
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.44.f
+		custom_tooltip = EOE_ghost.44.f.tooltip
+		# allow = {
+		# 	check_variable = {
+		# 		which = EOE_f_mp
+		# 		value >= @EOE_okra_6m 
+		# 	}
+		# }
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_6
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.44.g
+		custom_tooltip = EOE_ghost.44.g.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_okra_7m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_7
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.35.d		#run
+		allow = {
+			always = no
+			text = EOE_no_escape
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.45
+	is_triggered_only = yes
+	title = EOE_ghost.45.name
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value > @EOE_hezi_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_milotic_hpl
+			}
+		}
+		text = EOE_ghost.45.desc.a
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value > @EOE_hezi_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_milotic_hpl
+			}
+		}
+		text = EOE_ghost.45.desc.b
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value <= @EOE_hezi_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_milotic_hpl
+			}
+		}
+		text = EOE_ghost.45.desc.c
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value <= @EOE_hezi_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_milotic_hpl
+			}
+		}
+		text = EOE_ghost.45.desc.d
+	}
+	picture = GFX_evt_EOE_Hezi_VS_Milotic
+	#show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.45.a
+		custom_tooltip = EOE_ghost.45.a.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_hezi_1m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_1
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.45.b
+		custom_tooltip = EOE_ghost.45.b.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_hezi_2m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_2
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.45.c
+		custom_tooltip = EOE_ghost.45.c.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_hezi_3m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_3
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.45.d
+		custom_tooltip = EOE_ghost.45.d.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_hezi_4m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_4
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.45.e
+		custom_tooltip = EOE_ghost.45.e.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_hezi_5m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_5
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.45.f
+		custom_tooltip = EOE_ghost.45.f.tooltip
+		# allow = {
+		# 	check_variable = {
+		# 		which = EOE_f_mp
+		# 		value >= @EOE_hezi_6m 
+		# 	}
+		# }
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_6
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.45.g
+		custom_tooltip = EOE_ghost.45.g.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_hezi_7m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_7
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.35.d		#run
+		allow = {
+			always = no
+			text = EOE_no_escape
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.46
+	is_triggered_only = yes
+	title = EOE_ghost.46.name
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value > @EOE_hezi_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_ferrothorn_hpl
+			}
+		}
+		text = EOE_ghost.46.desc.a
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value > @EOE_hezi_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_ferrothorn_hpl
+			}
+		}
+		text = EOE_ghost.46.desc.b
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value <= @EOE_hezi_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_ferrothorn_hpl
+			}
+		}
+		text = EOE_ghost.46.desc.c
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value <= @EOE_hezi_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_ferrothorn_hpl
+			}
+		}
+		text = EOE_ghost.46.desc.d
+	}
+	picture = GFX_evt_EOE_Hezi_VS_Ferrothorn
+	#show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.46.a
+		custom_tooltip = EOE_ghost.46.a.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_hezi_1m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_1
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.46.b
+		custom_tooltip = EOE_ghost.46.b.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_hezi_2m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_2
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.46.c
+		custom_tooltip = EOE_ghost.46.c.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_hezi_3m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_3
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.46.d
+		custom_tooltip = EOE_ghost.46.d.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_hezi_4m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_4
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.46.e
+		custom_tooltip = EOE_ghost.46.e.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_hezi_5m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_5
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.46.f
+		custom_tooltip = EOE_ghost.46.f.tooltip
+		# allow = {
+		# 	check_variable = {
+		# 		which = EOE_f_mp
+		# 		value >= @EOE_hezi_6m 
+		# 	}
+		# }
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_6
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.46.g
+		custom_tooltip = EOE_ghost.46.g.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_hezi_7m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_7
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.35.d		#run
+		allow = {
+			always = no
+			text = EOE_no_escape
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.47
+	is_triggered_only = yes
+	title = EOE_ghost.47.name
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value > @EOE_hezi_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_porygon_hpl
+			}
+		}
+		text = EOE_ghost.47.desc.a
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value > @EOE_hezi_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_porygon_hpl
+			}
+		}
+		text = EOE_ghost.47.desc.b
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value <= @EOE_hezi_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_porygon_hpl
+			}
+		}
+		text = EOE_ghost.47.desc.c
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_f_hp
+				value <= @EOE_hezi_hpl
+			}
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_porygon_hpl
+			}
+		}
+		text = EOE_ghost.47.desc.d
+	}
+	picture = GFX_evt_EOE_Hezi_VS_Porygon
+	#show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.47.a
+		custom_tooltip = EOE_ghost.47.a.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_hezi_1m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_1
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.47.b
+		custom_tooltip = EOE_ghost.47.b.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_hezi_2m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_2
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.47.c
+		custom_tooltip = EOE_ghost.47.c.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_hezi_3m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_normal
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_3
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.47.d
+		custom_tooltip = EOE_ghost.47.d.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_hezi_4m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_4
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.47.e
+		custom_tooltip = EOE_ghost.47.e.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_hezi_5m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_5
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.47.f
+		custom_tooltip = EOE_ghost.47.f.tooltip
+		# allow = {
+		# 	check_variable = {
+		# 		which = EOE_f_mp
+		# 		value >= @EOE_hezi_6m 
+		# 	}
+		# }
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_6
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.47.g
+		custom_tooltip = EOE_ghost.47.g.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_hezi_7m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_7
+			}
+			ship_event = {
+				id = EOE_ghost.48
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.35.d		#run
+		allow = {
+			always = no
+			text = EOE_no_escape
+		}
+	}
+}
+#技能效果伤害，属性克制，21个事件分配
+ship_event = {
+	
+	id = EOE_ghost.48
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		reroll_random = yes
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_1
+					has_country_flag = EOE_battle_eevee
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_eevee_1m
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = @EOE_eevee_1
+			}
+			random_list = {
+				13 = {
+				}
+				6 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				1 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_ferrothorn
+					}
+				}
+				multiply_variable = {
+					which = EOE_f_dmg
+					value = 0.5
+				}
+			}
+			EOE_damage_fluctuation = {
+				x = f
+			}
+			subtract_variable = {
+				which = EOE_e_hp
+				value = EOE_f_dmg
+			}
+			ship_event = {
+				id = EOE_ghost.49
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_2
+					has_country_flag = EOE_battle_eevee
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_eevee_2m
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = @EOE_eevee_2
+			}
+			random_list = {
+				19 = {
+				}
+				1 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				0 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_ferrothorn
+					}
+				}
+				multiply_variable = {
+					which = EOE_f_dmg
+					value = 0.5
+				}
+			}
+			EOE_damage_fluctuation = {
+				x = f
+			}
+			subtract_variable = {
+				which = EOE_e_hp
+				value = EOE_f_dmg
+			}
+			ship_event = {
+				id = EOE_ghost.50
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_3
+					has_country_flag = EOE_battle_eevee
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_eevee_3m
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = @EOE_eevee_3
+			}
+			random_list = {
+				18 = {
+				}
+				1 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				1 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			EOE_damage_fluctuation = {
+				x = f
+			}
+			subtract_variable = {
+				which = EOE_e_hp
+				value = EOE_f_dmg
+			}
+			#############################特效区
+			subtract_variable = {
+				which = EOE_e_mp
+				value = 20
+			}
+			ship_event = {
+				id = EOE_ghost.51
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_4
+					has_country_flag = EOE_battle_eevee
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_eevee_4m
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = @EOE_eevee_4
+			}
+			random_list = {
+				19 = {
+				}
+				1 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				0 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_ferrothorn
+						not = {
+							has_country_flag = EOE_missed
+						}
+					}
+				}
+				multiply_variable = {
+					which = EOE_f_dmg
+					value = 0.5
+				}
+				subtract_variable = {
+					which = EOE_f_hp
+					value = @EOE_ironbarbs
+				}
+			}
+			EOE_damage_fluctuation = {
+				x = f
+			}
+			subtract_variable = {
+				which = EOE_e_hp
+				value = EOE_f_dmg
+			}
+			#############################特效区
+			divide_variable = {
+				which = EOE_f_dmg
+				value = 3
+			}
+			subtract_variable = {
+				which = EOE_f_hp
+				value = EOE_f_dmg
+			}
+			multiply_variable = {
+				which = EOE_f_dmg
+				value = 3
+			}
+			ship_event = {
+				id = EOE_ghost.52
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_5
+					has_country_flag = EOE_battle_eevee
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_eevee_5m
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = @EOE_eevee_5
+			}
+			random_list = {
+				18 = {
+				}
+				1 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				1 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_ferrothorn
+						not = {
+							has_country_flag = EOE_missed
+						}
+					}
+				}
+				subtract_variable = {
+					which = EOE_f_hp
+					value = @EOE_ironbarbs
+				}
+			}
+			EOE_damage_fluctuation = {
+				x = f
+			}
+			subtract_variable = {
+				which = EOE_e_hp
+				value = EOE_f_dmg
+			}
+			#############################特效区
+			subtract_variable = {
+				which = EOE_e_mp
+				value = 20
+			}
+			ship_event = {
+				id = EOE_ghost.53
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_6
+					has_country_flag = EOE_battle_eevee
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_eevee_6m
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = @EOE_eevee_6
+			}
+			random_list = {
+				19 = {
+				}
+				1 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				0 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			EOE_damage_fluctuation = {
+				x = f
+			}
+			subtract_variable = {
+				which = EOE_e_hp
+				value = EOE_f_dmg
+			}
+			ship_event = {
+				id = EOE_ghost.54
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_7
+					has_country_flag = EOE_battle_eevee
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_eevee_7m
+			}
+			#############################特效区
+			owner = {
+				set_country_flag = EOE_protected
+			}
+			ship_event = {
+				id = EOE_ghost.55
+			}
+		}
+		#############################################################################################
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_1
+					has_country_flag = EOE_battle_okra
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_okra_1m
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = @EOE_okra_1
+			}
+			random_list = {
+				19 = {
+				}
+				1 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				0 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_ferrothorn
+					}
+				}
+				multiply_variable = {
+					which = EOE_f_dmg
+					value = 0.5
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_milotic
+					}
+				}
+				multiply_variable = {
+					which = EOE_f_dmg
+					value = 2
+				}
+			}
+			EOE_damage_fluctuation = {
+				x = f
+			}
+			subtract_variable = {
+				which = EOE_e_hp
+				value = EOE_f_dmg
+			}
+			ship_event = {
+				id = EOE_ghost.56
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_2
+					has_country_flag = EOE_battle_okra
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_okra_2m
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = @EOE_okra_2
+			}
+			random_list = {
+				17 = {
+				}
+				1 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				2 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_ferrothorn
+					}
+				}
+				multiply_variable = {
+					which = EOE_f_dmg
+					value = 0.5
+				}
+			}
+			EOE_damage_fluctuation = {
+				x = f
+			}
+			subtract_variable = {
+				which = EOE_e_hp
+				value = EOE_f_dmg
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_milotic
+					}
+				}
+				multiply_variable = {
+					which = EOE_f_dmg
+					value = 2
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.57
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_3
+					has_country_flag = EOE_battle_okra
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_okra_3m
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = @EOE_okra_3
+			}
+			random_list = {
+				17 = {
+				}
+				1 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				2 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_ferrothorn
+					}
+				}
+				multiply_variable = {
+					which = EOE_f_dmg
+					value = 0.5
+				}
+			}
+			EOE_damage_fluctuation = {
+				x = f
+			}
+			subtract_variable = {
+				which = EOE_e_hp
+				value = EOE_f_dmg
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_milotic
+					}
+				}
+				multiply_variable = {
+					which = EOE_f_dmg
+					value = 2
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.58
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_4
+					has_country_flag = EOE_battle_okra
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_okra_4m
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = @EOE_okra_4
+			}
+			random_list = {
+				14 = {
+				}
+				6 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				0 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_ferrothorn
+						not = {
+							has_country_flag = EOE_missed
+						}
+					}
+				}
+				multiply_variable = {
+					which = EOE_f_dmg
+					value = 0.5
+				}
+				subtract_variable = {
+					which = EOE_f_hp
+					value = @EOE_ironbarbs
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_milotic
+					}
+				}
+				multiply_variable = {
+					which = EOE_f_dmg
+					value = 2
+				}
+			}
+			EOE_damage_fluctuation = {
+				x = f
+			}
+			subtract_variable = {
+				which = EOE_e_hp
+				value = EOE_f_dmg
+			}
+			ship_event = {
+				id = EOE_ghost.59
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_5
+					has_country_flag = EOE_battle_okra
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_okra_5m
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = @EOE_okra_5
+			}
+			random_list = {
+				17 = {
+				}
+				2 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				1 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_ferrothorn
+						not = {
+							has_country_flag = EOE_missed
+						}
+					}
+				}
+				multiply_variable = {
+					which = EOE_f_dmg
+					value = 2
+				}
+				subtract_variable = {
+					which = EOE_f_hp
+					value = @EOE_ironbarbs
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_porygon
+					}
+				}
+				multiply_variable = {
+					which = EOE_f_dmg
+					value = 2
+				}
+			}
+			EOE_damage_fluctuation = {
+				x = f
+			}
+			subtract_variable = {
+				which = EOE_e_hp
+				value = EOE_f_dmg
+			}
+			#############################特效区
+			subtract_variable = {
+				which = EOE_e_mp
+				value = 20
+			}
+			ship_event = {
+				id = EOE_ghost.60
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_6
+					has_country_flag = EOE_battle_okra
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_okra_6m
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = @EOE_okra_6
+			}
+			random_list = {
+				19 = {
+				}
+				1 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				0 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_ferrothorn
+					}
+				}
+				multiply_variable = {
+					which = EOE_f_dmg
+					value = 0.5
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_milotic
+					}
+				}
+				multiply_variable = {
+					which = EOE_f_dmg
+					value = 2
+				}
+			}
+			EOE_damage_fluctuation = {
+				x = f
+			}
+			subtract_variable = {
+				which = EOE_e_hp
+				value = EOE_f_dmg
+			}
+			#############################特效区
+			change_variable = {
+				which = EOE_f_hp
+				value = EOE_f_dmg
+			}
+			ship_event = {
+				id = EOE_ghost.61
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_7
+					has_country_flag = EOE_battle_okra
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_okra_7m
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = @EOE_okra_7
+			}
+			#############################特效区
+			change_variable = {
+				which = EOE_f_hp
+				value = @EOE_okra_7
+			}
+			ship_event = {
+				id = EOE_ghost.62
+			}
+		}
+		#############################################################################################
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_1
+					has_country_flag = EOE_battle_hezi
+				}
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = @EOE_hezi_1
+			}
+			#############################特效区
+			change_variable = {
+				which = EOE_f_dmg
+				value = EOE_f_mp
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_hezi_1m
+			}
+			random_list = {
+				19 = {
+				}
+				1 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				0 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_ferrothorn
+					}
+				}
+				multiply_variable = {
+					which = EOE_f_dmg
+					value = 0.5
+				}
+			}
+			EOE_damage_fluctuation = {
+				x = f
+			}
+			subtract_variable = {
+				which = EOE_e_hp
+				value = EOE_f_dmg
+			}
+			ship_event = {
+				id = EOE_ghost.63
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_2
+					has_country_flag = EOE_battle_hezi
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_hezi_2m
+			}
+			#############################特效区
+			divide_variable = {
+				which = EOE_e_hp
+				value = 2
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = EOE_e_hp
+			}
+			ship_event = {
+				id = EOE_ghost.64
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_3
+					has_country_flag = EOE_battle_hezi
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_hezi_3m
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = @EOE_hezi_3
+			}
+			#############################特效区
+			change_variable = {
+				which = EOE_f_hp
+				value = EOE_f_dmg
+			}
+			ship_event = {
+				id = EOE_ghost.65
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_4
+					has_country_flag = EOE_battle_hezi
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_hezi_4m
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = @EOE_hezi_4
+			}
+			random_list = {
+				15 = {
+				}
+				3 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				2 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_ferrothorn
+					}
+				}
+				multiply_variable = {
+					which = EOE_f_dmg
+					value = 0.5
+				}
+			}
+			EOE_damage_fluctuation = {
+				x = f
+			}
+			subtract_variable = {
+				which = EOE_e_hp
+				value = EOE_f_dmg
+			}
+			ship_event = {
+				id = EOE_ghost.66
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_5
+					has_country_flag = EOE_battle_hezi
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_hezi_5m
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = @EOE_hezi_5
+			}
+			divide_variable = {
+				which = EOE_e_hp
+				value = 20
+			}
+			change_variable = {
+				which = EOE_f_dmg
+				value = EOE_e_hp
+			}
+			multiply_variable = {
+				which = EOE_e_hp
+				value = 20
+			}
+			random_list = {
+				13 = {
+				}
+				6 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				1 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_ferrothorn
+						not = {
+							has_country_flag = EOE_missed
+						}
+					}
+				}
+				multiply_variable = {
+					which = EOE_f_dmg
+					value = 2
+				}
+				subtract_variable = {
+					which = EOE_f_hp
+					value = @EOE_ironbarbs
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_porygon
+					}
+				}
+				multiply_variable = {
+					which = EOE_f_dmg
+					value = 2
+				}
+			}
+			EOE_damage_fluctuation = {
+				x = f
+			}
+			subtract_variable = {
+				which = EOE_e_hp
+				value = EOE_f_dmg
+			}
+			ship_event = {
+				id = EOE_ghost.67
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_6
+					has_country_flag = EOE_battle_hezi
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_hezi_6m
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = @EOE_hezi_6
+			}
+			random_list = {
+				17 = {
+				}
+				3 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				0 = {
+					multiply_variable = {
+						which = EOE_f_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_ferrothorn
+					}
+				}
+				multiply_variable = {
+					which = EOE_f_dmg
+					value = 0.5
+				}
+			}
+			EOE_damage_fluctuation = {
+				x = f
+			}
+			subtract_variable = {
+				which = EOE_e_hp
+				value = EOE_f_dmg
+			}
+			ship_event = {
+				id = EOE_ghost.68
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_7
+					has_country_flag = EOE_battle_hezi
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_hezi_7m
+			}
+			#############################特效区
+			owner = {
+				set_country_flag = EOE_protected
+			}
+			ship_event = {
+				id = EOE_ghost.69
+			}
+		}
+	}
+}
+
+ship_event = {
+	id = EOE_ghost.49
+	is_triggered_only = yes
+	title = EOE_ghost.49.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.49.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.49.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.49.desc.c
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_space_battle
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.70
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.50
+	is_triggered_only = yes
+	title = EOE_ghost.50.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.50.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.50.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.50.desc.c
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_space_battle
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.70
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.51
+	is_triggered_only = yes
+	title = EOE_ghost.51.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.51.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.51.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.51.desc.c
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_ground_battle
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.70
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.52
+	is_triggered_only = yes
+	title = EOE_ghost.52.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.52.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.52.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.52.desc.c
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_super_explosion
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.70
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.53
+	is_triggered_only = yes
+	title = EOE_ghost.53.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.53.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.53.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.53.desc.c
+	}
+	picture = GFX_evt_gladiators
+	#show_sound = event_super_explosion
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.70
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.54
+	is_triggered_only = yes
+	title = EOE_ghost.54.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.54.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.54.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.54.desc.c
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_ancient_drone
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.70
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.55
+	is_triggered_only = yes
+	title = EOE_ghost.55.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.55.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.55.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.55.desc.c
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.70
+		}
+	}
+}
+
+ship_event = {
+	id = EOE_ghost.56
+	is_triggered_only = yes
+	title = EOE_ghost.56.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.56.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.56.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.56.desc.c
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_space_battle
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.70
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.57
+	is_triggered_only = yes
+	title = EOE_ghost.57.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.57.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.57.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.57.desc.c
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_trap_laser
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.70
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.58
+	is_triggered_only = yes
+	title = EOE_ghost.58.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.58.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.58.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.58.desc.c
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_trap_laser
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.70
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.59
+	is_triggered_only = yes
+	title = EOE_ghost.59.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.59.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.59.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.59.desc.c
+	}
+	picture = GFX_evt_gladiators
+	show_sound = sfx_relic_activation_blade_of_the_huntress
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.70
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.60
+	is_triggered_only = yes
+	title = EOE_ghost.60.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.60.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.60.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.60.desc.c
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_ground_battle_02
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.70
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.61
+	is_triggered_only = yes
+	title = EOE_ghost.61.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.61.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.61.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.61.desc.c
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.70
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.62
+	is_triggered_only = yes
+	title = EOE_ghost.62.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.62.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.62.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.62.desc.c
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.70
+		}
+	}
+}
+
+ship_event = {
+	id = EOE_ghost.63
+	is_triggered_only = yes
+	title = EOE_ghost.63.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.63.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.63.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.63.desc.c
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_red_alert
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.70
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.64
+	is_triggered_only = yes
+	title = EOE_ghost.64.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.64.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.64.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.64.desc.c
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_yellow_alert_01
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.70
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.65
+	is_triggered_only = yes
+	title = EOE_ghost.65.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.65.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.65.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.65.desc.c
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.70
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.66
+	is_triggered_only = yes
+	title = EOE_ghost.66.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.66.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.66.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.66.desc.c
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_red_alert
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.70
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.67
+	is_triggered_only = yes
+	title = EOE_ghost.67.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.67.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.67.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.67.desc.c
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_ground_battle_02
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.70
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.68
+	is_triggered_only = yes
+	title = EOE_ghost.68.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.68.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.68.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.68.desc.c
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_space_battle
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.70
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.69
+	is_triggered_only = yes
+	title = EOE_ghost.69.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.69.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.69.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.69.desc.c
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.70
+		}
+	}
+}
+#敌人出招ai
+ship_event = {
+	
+	id = EOE_ghost.70
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		owner = {
+			remove_country_flag = EOE_missed
+			remove_country_flag = EOE_crithit
+		}
+		reroll_random = yes
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_milotic
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = EOE_e_hp
+						value >= @EOE_milotic_aihp1
+					}
+					check_variable = {
+						which = EOE_e_mp
+						value >= @EOE_milotic_aimp2
+					}
+				}
+				random_list = {
+					1 = {
+						owner = {
+							set_country_flag = EOE_e_move1
+						}
+					}
+					1 = {
+						owner = {
+							set_country_flag = EOE_e_move2
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = EOE_e_hp
+						value >= @EOE_milotic_aihp1
+					}
+					check_variable = {
+						which = EOE_e_mp
+						value < @EOE_milotic_aimp2
+					}
+					check_variable = {
+						which = EOE_e_mp
+						value >= @EOE_milotic_aimp1
+					}
+				}
+				random_list = {
+					1 = {
+						owner = {
+							set_country_flag = EOE_e_move1
+						}
+					}
+					1 = {
+						owner = {
+							set_country_flag = EOE_e_move2
+						}
+					}
+					1 = {
+						owner = {
+							set_country_flag = EOE_e_move3
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = EOE_e_hp
+						value < @EOE_milotic_aihp1
+					}
+					check_variable = {
+						which = EOE_e_mp
+						value >= @EOE_milotic_aimp1
+					}
+				}
+				random_list = {
+					1 = {
+						owner = {
+							set_country_flag = EOE_e_move1
+						}
+					}
+					1 = {
+						owner = {
+							set_country_flag = EOE_e_move2
+						}
+					}
+					2 = {
+						owner = {
+							set_country_flag = EOE_e_move4
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = EOE_e_mp
+						value < @EOE_milotic_aimp1
+					}
+				}
+				owner = {
+					set_country_flag = EOE_e_move3
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ferrothorn
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = EOE_e_hp
+						value < @EOE_ferrothorn_aihp1
+					}
+					owner = {
+						NOT = {
+							has_country_flag = EOE_leech_seed
+						}
+					}
+				}
+				owner = {
+					set_country_flag = EOE_e_move4
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = EOE_e_mp
+						value >= @EOE_ferrothorn_aimp2
+					}
+				}
+				random_list = {
+					1 = {
+						owner = {
+							set_country_flag = EOE_e_move1
+						}
+					}
+					1 = {
+						owner = {
+							set_country_flag = EOE_e_move2
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = EOE_e_mp
+						value >= @EOE_ferrothorn_aimp1
+					}
+					check_variable = {
+						which = EOE_e_mp
+						value < @EOE_ferrothorn_aimp2
+					}
+				}
+				random_list = {
+					4 = {
+						owner = {
+							set_country_flag = EOE_e_move1
+						}
+					}
+					4 = {
+						owner = {
+							set_country_flag = EOE_e_move2
+						}
+					}
+					3 = {
+						owner = {
+							set_country_flag = EOE_e_move3
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = EOE_e_mp
+						value < @EOE_ferrothorn_aimp1
+					}
+				}
+				owner = {
+					set_country_flag = EOE_e_move3
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_porygon
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = EOE_e_mp
+						value >= @EOE_porygon_aimp2
+					}
+				}
+				owner = {
+					set_country_flag = EOE_e_move1
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = EOE_e_mp
+						value < @EOE_porygon_aimp2
+					}
+					check_variable = {
+						which = EOE_e_mp
+						value >= @EOE_porygon_aimp1
+					}
+				}
+				random_list = {
+					4 = {
+						owner = {
+							set_country_flag = EOE_e_move4
+						}
+					}
+					3 = {
+						owner = {
+							set_country_flag = EOE_e_move2
+						}
+					}
+					3 = {
+						owner = {
+							set_country_flag = EOE_e_move3
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = EOE_e_mp
+						value < @EOE_porygon_aimp1
+					}
+				}
+				owner = {
+					set_country_flag = EOE_e_move3
+				}
+			}
+		}
+	}
+	after = {
+		ship_event = {
+			id = EOE_ghost.71
+		}
+	}
+}
+#敌人的招式计算，12个事件分配
+ship_event = {
+	
+	id = EOE_ghost.71
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		reroll_random = yes
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_milotic
+					has_country_flag = EOE_e_move1
+				}
+			}
+			subtract_variable = {
+				which = EOE_e_mp
+				value = @EOE_milotic_1m
+			}
+			set_variable = {
+				which = EOE_e_dmg
+				value = @EOE_milotic_1
+			}
+			random_list = {
+				15 = {
+				}
+				1 = {
+					multiply_variable = {
+						which = EOE_e_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				4 = {
+					multiply_variable = {
+						which = EOE_e_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_battle_okra
+					}
+				}
+				multiply_variable = {
+					which = EOE_e_dmg
+					value = 0.5
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						owner = {
+							has_country_flag = EOE_protected
+						}
+					}
+				}
+				EOE_damage_fluctuation = {
+					x = e
+				}
+				subtract_variable = {
+					which = EOE_f_hp
+					value = EOE_e_dmg
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.72
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_milotic
+					has_country_flag = EOE_e_move2
+				}
+			}
+			subtract_variable = {
+				which = EOE_e_mp
+				value = @EOE_milotic_2m
+			}
+			set_variable = {
+				which = EOE_e_dmg
+				value = @EOE_milotic_2
+			}
+			random_list = {
+				19 = {
+				}
+				1 = {
+					multiply_variable = {
+						which = EOE_e_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				0 = {
+					multiply_variable = {
+						which = EOE_e_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_battle_okra
+					}
+				}
+				multiply_variable = {
+					which = EOE_e_dmg
+					value = 2
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						owner = {
+							has_country_flag = EOE_protected
+						}
+					}
+				}
+				EOE_damage_fluctuation = {
+					x = e
+				}
+				subtract_variable = {
+					which = EOE_f_hp
+					value = EOE_e_dmg
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.73
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_milotic
+					has_country_flag = EOE_e_move3
+				}
+			}
+			subtract_variable = {
+				which = EOE_e_mp
+				value = @EOE_milotic_3m
+			}
+			set_variable = {
+				which = EOE_e_dmg
+				value = @EOE_milotic_3
+			}
+			random_list = {
+				12 = {
+				}
+				0 = {
+					multiply_variable = {
+						which = EOE_e_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				8 = {
+					multiply_variable = {
+						which = EOE_e_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						owner = {
+							has_country_flag = EOE_protected
+						}
+					}
+				}
+				subtract_variable = {
+					which = EOE_f_mp
+					value = EOE_e_dmg
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.74
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_milotic
+					has_country_flag = EOE_e_move4
+				}
+			}
+			subtract_variable = {
+				which = EOE_e_mp
+				value = @EOE_milotic_4m
+			}
+			set_variable = {
+				which = EOE_e_dmg
+				value = @EOE_milotic_4
+			}
+			change_variable = {
+				which = EOE_e_hp
+				value = EOE_e_dmg
+			}
+			ship_event = {
+				id = EOE_ghost.75
+			}
+		}
+		############################################################################################
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ferrothorn
+					has_country_flag = EOE_e_move1
+				}
+			}
+			subtract_variable = {
+				which = EOE_e_mp
+				value = @EOE_ferrothorn_1m
+			}
+			set_variable = {
+				which = EOE_e_dmg
+				value = @EOE_ferrothorn_1
+			}
+			random_list = {
+				12 = {
+				}
+				3 = {
+					multiply_variable = {
+						which = EOE_e_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				5 = {
+					multiply_variable = {
+						which = EOE_e_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_battle_okra
+					}
+				}
+				multiply_variable = {
+					which = EOE_e_dmg
+					value = 0.5
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						owner = {
+							has_country_flag = EOE_protected
+						}
+					}
+				}
+				EOE_damage_fluctuation = {
+					x = e
+				}
+				subtract_variable = {
+					which = EOE_f_hp
+					value = EOE_e_dmg
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.76
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ferrothorn
+					has_country_flag = EOE_e_move2
+				}
+			}
+			subtract_variable = {
+				which = EOE_e_mp
+				value = @EOE_ferrothorn_2m
+			}
+			set_variable = {
+				which = EOE_e_dmg
+				value = @EOE_ferrothorn_2
+			}
+			random_list = {
+				19 = {
+				}
+				1 = {
+					multiply_variable = {
+						which = EOE_e_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				0 = {
+					multiply_variable = {
+						which = EOE_e_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						owner = {
+							has_country_flag = EOE_protected
+						}
+					}
+				}
+				EOE_damage_fluctuation = {
+					x = e
+				}
+				subtract_variable = {
+					which = EOE_f_hp
+					value = EOE_e_dmg
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.77
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ferrothorn
+					has_country_flag = EOE_e_move3
+				}
+			}
+			subtract_variable = {
+				which = EOE_e_mp
+				value = @EOE_ferrothorn_3m
+			}
+			set_variable = {
+				which = EOE_e_dmg
+				value = @EOE_ferrothorn_3
+			}
+			random_list = {
+				18 = {
+				}
+				0 = {
+					multiply_variable = {
+						which = EOE_e_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				2 = {
+					multiply_variable = {
+						which = EOE_e_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						owner = {
+							has_country_flag = EOE_protected
+						}
+					}
+				}
+				subtract_variable = {
+					which = EOE_f_mp
+					value = EOE_e_dmg
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.78
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ferrothorn
+					has_country_flag = EOE_e_move4
+				}
+			}
+			subtract_variable = {
+				which = EOE_e_mp
+				value = @EOE_ferrothorn_4m
+			}
+			random_list = {
+				18 = {
+					owner = {
+						set_country_flag = EOE_leech_seed
+					}
+				}
+				2 = {
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.79
+			}
+		}
+		############################################################################
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_porygon
+					has_country_flag = EOE_e_move1
+				}
+			}
+			subtract_variable = {
+				which = EOE_e_mp
+				value = @EOE_porygon_1m
+			}
+			set_variable = {
+				which = EOE_e_dmg
+				value = @EOE_porygon_1
+			}
+			random_list = {
+				19 = {
+				}
+				1 = {
+					multiply_variable = {
+						which = EOE_e_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				0 = {
+					multiply_variable = {
+						which = EOE_e_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						owner = {
+							has_country_flag = EOE_protected
+						}
+					}
+				}
+				EOE_damage_fluctuation = {
+					x = e
+				}
+				subtract_variable = {
+					which = EOE_f_hp
+					value = EOE_e_dmg
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.80
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_porygon
+					has_country_flag = EOE_e_move2
+				}
+			}
+			subtract_variable = {
+				which = EOE_e_mp
+				value = @EOE_porygon_2m
+			}
+			set_variable = {
+				which = EOE_e_dmg
+				value = @EOE_porygon_2
+			}
+			random_list = {
+				9 = {
+				}
+				1 = {
+					multiply_variable = {
+						which = EOE_e_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				10 = {
+					multiply_variable = {
+						which = EOE_e_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_battle_okra
+					}
+				}
+				multiply_variable = {
+					which = EOE_e_dmg
+					value = 0.5
+				}
+			}
+			if = {
+				limit = {
+					NOR = {
+						owner = {
+							has_country_flag = EOE_protected
+							has_country_flag = EOE_missed
+						}
+					}
+				}
+				EOE_damage_fluctuation = {
+					x = e
+				}
+				subtract_variable = {
+					which = EOE_f_hp
+					value = EOE_e_dmg
+				}
+				#####特效
+				subtract_variable = {
+					which = EOE_f_mp
+					value = 20
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.81
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_porygon
+					has_country_flag = EOE_e_move3
+				}
+			}
+			subtract_variable = {
+				which = EOE_e_mp
+				value = @EOE_porygon_3m
+			}
+			set_variable = {
+				which = EOE_e_dmg
+				value = @EOE_porygon_3
+			}
+			random_list = {
+				18 = {
+				}
+				0 = {
+					multiply_variable = {
+						which = EOE_e_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				2 = {
+					multiply_variable = {
+						which = EOE_e_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						owner = {
+							has_country_flag = EOE_protected
+						}
+					}
+				}
+				subtract_variable = {
+					which = EOE_f_mp
+					value = EOE_e_dmg
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.82
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_porygon
+					has_country_flag = EOE_e_move4
+				}
+			}
+			subtract_variable = {
+				which = EOE_e_mp
+				value = @EOE_porygon_4m
+			}
+			set_variable = {
+				which = EOE_e_dmg
+				value = @EOE_porygon_4
+			}
+			random_list = {
+				14 = {
+				}
+				1 = {
+					multiply_variable = {
+						which = EOE_e_dmg
+						value = 1.5
+					}
+					owner = {
+						set_country_flag = EOE_crithit
+					}
+				}
+				5 = {
+					multiply_variable = {
+						which = EOE_e_dmg
+						value = 0
+					}
+					owner = {
+						set_country_flag = EOE_missed
+					}
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_battle_okra
+					}
+				}
+				multiply_variable = {
+					which = EOE_e_dmg
+					value = 2
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						owner = {
+							has_country_flag = EOE_protected
+						}
+					}
+				}
+				EOE_damage_fluctuation = {
+					x = e
+				}
+				subtract_variable = {
+					which = EOE_f_hp
+					value = EOE_e_dmg
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.83
+			}
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.72
+	is_triggered_only = yes
+	title = EOE_ghost.72.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_protected
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.72.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_protected
+				}
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.72.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_protected
+				}
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.72.desc.c
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_protected
+				has_country_flag = EOE_battle_eevee
+			}
+		}
+		text = EOE_ghost.72.desc.d
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_protected
+				has_country_flag = EOE_battle_hezi
+			}
+		}
+		text = EOE_ghost.72.desc.e
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_space_battle
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.38
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.73
+	is_triggered_only = yes
+	title = EOE_ghost.73.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_protected
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.73.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_protected
+				}
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.73.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_protected
+				}
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.73.desc.c
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_protected
+				has_country_flag = EOE_battle_eevee
+			}
+		}
+		text = EOE_ghost.73.desc.d
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_protected
+				has_country_flag = EOE_battle_hezi
+			}
+		}
+		text = EOE_ghost.73.desc.e
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_power_down
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.38
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.74
+	is_triggered_only = yes
+	title = EOE_ghost.74.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_protected
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.74.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_protected
+				}
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.74.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_protected
+				}
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.74.desc.c
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_protected
+				has_country_flag = EOE_battle_eevee
+			}
+		}
+		text = EOE_ghost.74.desc.d
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_protected
+				has_country_flag = EOE_battle_hezi
+			}
+		}
+		text = EOE_ghost.74.desc.e
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.38
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.75
+	is_triggered_only = yes
+	title = EOE_ghost.75.name
+	desc = EOE_ghost.75.desc.a
+	picture = GFX_evt_gladiators
+	show_sound = archeology_log_entry_positive
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.38
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.76
+	is_triggered_only = yes
+	title = EOE_ghost.76.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_protected
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.76.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_protected
+				}
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.76.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_protected
+				}
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.76.desc.c
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_protected
+				has_country_flag = EOE_battle_eevee
+			}
+		}
+		text = EOE_ghost.76.desc.d
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_protected
+				has_country_flag = EOE_battle_hezi
+			}
+		}
+		text = EOE_ghost.76.desc.e
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_trap_arrows
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.38
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.77
+	is_triggered_only = yes
+	title = EOE_ghost.77.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_protected
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.77.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_protected
+				}
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.77.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_protected
+				}
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.77.desc.c
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_protected
+				has_country_flag = EOE_battle_eevee
+			}
+		}
+		text = EOE_ghost.77.desc.d
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_protected
+				has_country_flag = EOE_battle_hezi
+			}
+		}
+		text = EOE_ghost.77.desc.e
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_ground_battle_02
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.38
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.78
+	is_triggered_only = yes
+	title = EOE_ghost.78.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_protected
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.78.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_protected
+				}
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.78.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_protected
+				}
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.78.desc.c
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_protected
+				has_country_flag = EOE_battle_eevee
+			}
+		}
+		text = EOE_ghost.78.desc.d
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_protected
+				has_country_flag = EOE_battle_hezi
+			}
+		}
+		text = EOE_ghost.78.desc.e
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_power_down
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.38
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.79
+	is_triggered_only = yes
+	title = EOE_ghost.79.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_battle_okra
+					has_country_flag = EOE_protected
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.79.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_protected
+				}
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.79.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_missed
+				}
+				has_country_flag = EOE_battle_okra
+			}
+		}
+		text = EOE_ghost.79.desc.c
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_protected
+				has_country_flag = EOE_battle_eevee
+			}
+		}
+		text = EOE_ghost.79.desc.d
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_protected
+				has_country_flag = EOE_battle_hezi
+			}
+		}
+		text = EOE_ghost.79.desc.e
+	}
+	picture = GFX_evt_gladiators
+	show_sound = archeology_log_entry_positive
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.38
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.80
+	is_triggered_only = yes
+	title = EOE_ghost.80.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_protected
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.80.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_protected
+				}
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.80.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_protected
+				}
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.80.desc.c
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_protected
+				has_country_flag = EOE_battle_eevee
+			}
+		}
+		text = EOE_ghost.80.desc.d
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_protected
+				has_country_flag = EOE_battle_hezi
+			}
+		}
+		text = EOE_ghost.80.desc.e
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_space_battle
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.38
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.81
+	is_triggered_only = yes
+	title = EOE_ghost.81.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_protected
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.81.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_protected
+				}
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.81.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_protected
+				}
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.81.desc.c
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_protected
+				has_country_flag = EOE_battle_eevee
+			}
+		}
+		text = EOE_ghost.81.desc.d
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_protected
+				has_country_flag = EOE_battle_hezi
+			}
+		}
+		text = EOE_ghost.81.desc.e
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_super_explosion
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.38
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.82
+	is_triggered_only = yes
+	title = EOE_ghost.82.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_protected
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.82.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_protected
+				}
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.82.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_protected
+				}
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.82.desc.c
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_protected
+				has_country_flag = EOE_battle_eevee
+			}
+		}
+		text = EOE_ghost.82.desc.d
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_protected
+				has_country_flag = EOE_battle_hezi
+			}
+		}
+		text = EOE_ghost.82.desc.e
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_power_down
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.38
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.83
+	is_triggered_only = yes
+	title = EOE_ghost.83.name
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = EOE_protected
+					has_country_flag = EOE_missed
+					has_country_flag = EOE_crithit
+				}
+			}
+		}
+		text = EOE_ghost.83.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_protected
+				}
+				has_country_flag = EOE_missed
+			}
+		}
+		text = EOE_ghost.83.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_protected
+				}
+				has_country_flag = EOE_crithit
+			}
+		}
+		text = EOE_ghost.83.desc.c
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_protected
+				has_country_flag = EOE_battle_eevee
+			}
+		}
+		text = EOE_ghost.83.desc.d
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_protected
+				has_country_flag = EOE_battle_hezi
+			}
+		}
+		text = EOE_ghost.83.desc.e
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_wind_ruins
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.38
+		}
+	}
+}
+#大胜,回家
+ship_event = {
+	
+	id = EOE_ghost.84
+	is_triggered_only = yes
+	title = EOE_ghost.84.name
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_eevee
+				has_country_flag = EOE_milotic
+			}
+		}
+		text = EOE_ghost.84.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_eevee
+				has_country_flag = EOE_ferrothorn
+			}
+		}
+		text = EOE_ghost.84.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_eevee
+				has_country_flag = EOE_porygon
+			}
+		}
+		text = EOE_ghost.84.desc.c
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_okra
+				has_country_flag = EOE_milotic
+			}
+		}
+		text = EOE_ghost.84.desc.d
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_okra
+				has_country_flag = EOE_ferrothorn
+			}
+		}
+		text = EOE_ghost.84.desc.e
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_okra
+				has_country_flag = EOE_porygon
+			}
+		}
+		text = EOE_ghost.84.desc.f
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_hezi
+				has_country_flag = EOE_milotic
+			}
+		}
+		text = EOE_ghost.84.desc.g
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_hezi
+				has_country_flag = EOE_ferrothorn
+			}
+		}
+		text = EOE_ghost.84.desc.h
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_hezi
+				has_country_flag = EOE_porygon
+			}
+		}
+		text = EOE_ghost.84.desc.i
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_celebration
+	immediate = {
+		owner = {
+			set_country_flag = EOE_battle_win
+		}
+	}
+	option = {
+		name = EOE_ghost.84.a
+		custom_tooltip = EOE_ghost.84.a.tooltip
+		hidden_effect = {
+			if = {
+				limit = {
+					is_scrappy_mod_used = yes
+				}
+				EOE_battle_big_rewards = yes
+				EOE_battle_big_rewards = yes
+				EOE_battle_medium_rewards = yes
+			}
+			else = {
+				EOE_battle_medium_rewards = yes
+				EOE_battle_small_rewards = yes
+				EOE_battle_small_rewards = yes
+			}
+		}
+	}
+}
+#小胜,回家
+ship_event = {
+	
+	id = EOE_ghost.85
+	is_triggered_only = yes
+	title = EOE_ghost.84.name
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_eevee
+				has_country_flag = EOE_milotic
+			}
+		}
+		text = EOE_ghost.85.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_eevee
+				has_country_flag = EOE_ferrothorn
+			}
+		}
+		text = EOE_ghost.85.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_eevee
+				has_country_flag = EOE_porygon
+			}
+		}
+		text = EOE_ghost.85.desc.c
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_okra
+				has_country_flag = EOE_milotic
+			}
+		}
+		text = EOE_ghost.85.desc.d
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_okra
+				has_country_flag = EOE_ferrothorn
+			}
+		}
+		text = EOE_ghost.85.desc.e
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_okra
+				has_country_flag = EOE_porygon
+			}
+		}
+		text = EOE_ghost.85.desc.f
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_hezi
+				has_country_flag = EOE_milotic
+			}
+		}
+		text = EOE_ghost.85.desc.g
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_hezi
+				has_country_flag = EOE_ferrothorn
+			}
+		}
+		text = EOE_ghost.85.desc.h
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_hezi
+				has_country_flag = EOE_porygon
+			}
+		}
+		text = EOE_ghost.85.desc.i
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_celebration
+	immediate = {
+		owner = {
+			set_country_flag = EOE_battle_win
+		}
+	}
+	option = {
+		name = EOE_ghost.85.a
+		custom_tooltip = EOE_ghost.85.a.tooltip
+		hidden_effect = {
+			if = {
+				limit = {
+					is_scrappy_mod_used = yes
+				}
+				EOE_battle_medium_rewards = yes
+				EOE_battle_big_rewards = yes
+				EOE_battle_small_rewards = yes
+			}
+			else = {
+				EOE_battle_small_rewards = yes
+				EOE_battle_small_rewards = yes
+				EOE_battle_small_rewards = yes
+			}
+		}
+	}
+}
+#寄了,回家
+ship_event = {
+	
+	id = EOE_ghost.86
+	is_triggered_only = yes
+	title = EOE_ghost.86.name
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_eevee
+				has_country_flag = EOE_milotic
+			}
+		}
+		text = EOE_ghost.86.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_eevee
+				has_country_flag = EOE_ferrothorn
+			}
+		}
+		text = EOE_ghost.86.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_eevee
+				has_country_flag = EOE_porygon
+			}
+		}
+		text = EOE_ghost.86.desc.c
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_okra
+				has_country_flag = EOE_milotic
+			}
+		}
+		text = EOE_ghost.86.desc.d
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_okra
+				has_country_flag = EOE_ferrothorn
+			}
+		}
+		text = EOE_ghost.86.desc.e
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_okra
+				has_country_flag = EOE_porygon
+			}
+		}
+		text = EOE_ghost.86.desc.f
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_hezi
+				has_country_flag = EOE_milotic
+			}
+		}
+		text = EOE_ghost.86.desc.g
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_hezi
+				has_country_flag = EOE_ferrothorn
+			}
+		}
+		text = EOE_ghost.86.desc.h
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_hezi
+				has_country_flag = EOE_porygon
+			}
+		}
+		text = EOE_ghost.86.desc.i
+	}
+	picture = GFX_evt_gladiators
+	show_sound = event_mystic_reveal
+	immediate = {
+		owner = {
+			set_country_flag = EOE_battle_lose
+		}
+	}
+	option = {
+		name = EOE_ghost.86.a
+		custom_tooltip = EOE_ghost.86.a.tooltip
+		hidden_effect = {
+			EOE_battle_small_rewards = yes
+		}
+	}
+}
+#测试用
+country_event = {
+	
+	id = EOE_ghost.87
+	is_triggered_only = yes
+	show_sound = event_celebration
+	title = "EOE_ghost.87.name"
+	desc = "EOE_ghost.87.desc"
+	immediate = {
+		set_country_flag = EOE_ghost_87_hz
+		create_leader = {
+			class = scientist
+			species = owner_main_species
+			name = NAME_Okra
+			skill = 3
+			traits = {
+				trait = "leader_trait_spark_of_genius"
+				trait = "leader_trait_curator"
+				trait = "leader_trait_EOE_Plant_master"
+			}
+			event_leader = yes
+			randomize_traits = no
+			leader_age_min = 21
+			leader_age_max = 23
+			effect = {
+				set_leader_flag = EOE_leader_okra
+				set_leader_flag = legendary_leader
+				set_leader_flag = immune_to_negative_traits
+				set_leader_flag = leader_death_events_blocked
+			}
+		}
+		last_created_leader = {
+			set_gender = female
+			change_leader_portrait = EOEOkra
+			save_global_event_target_as = EOE_okra
+			owner = {
+			}
+		}
+		create_leader = {
+			class = scientist
+			species = owner_main_species
+			name = NAME_Hezi
+			skill = 1
+			traits = {
+				trait = "leader_trait_scientist_nuclear_type"
+				trait = "leader_trait_spark_of_genius"
+				trait = "leader_trait_physics_focus_2"
+				trait = "leader_trait_expertise_particles_2"
+				trait = "leader_trait_curator"
+			}
+			event_leader = yes
+			set_age = 18
+			effect = {
+				set_leader_flag = EOE_leader_hezi
+				set_leader_flag = legendary_leader
+				set_leader_flag = immune_to_negative_traits
+				set_leader_flag = leader_death_events_blocked
+				add_experience = 5000
+			}
+		}
+		last_created_leader = {
+			set_gender = female
+			change_leader_portrait = EOEHezi_test
+			save_global_event_target_as = EOE_hezi
+		}
+		country_event = {
+			id = leadereevent.26
+		}
+	}
+}
+
+
+
+
+
+##简单模式
+#简单模式，描述对手，选人，赋初始值
+ship_event = {
+	
+	id = EOE_ghost.96
+	is_triggered_only = yes
+	title = EOE_ghost.96.name
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_milotic
+			}
+		}
+		text = EOE_ghost.96.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_ferrothorn
+			}
+		}
+		text = EOE_ghost.96.desc.b
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_porygon
+			}
+		}
+		text = EOE_ghost.96.desc.c
+	}
+	picture = GFX_evt_EOE_protoss_Jingjichang
+	immediate = {
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_milotic
+				}
+			}
+			set_variable = {
+				which = EOE_e_hp
+				value = 300
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ferrothorn
+				}
+			}
+			set_variable = {
+				which = EOE_e_hp
+				value = 300
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_porygon
+				}
+			}
+			set_variable = {
+				which = EOE_e_hp
+				value = 225
+			}
+		}
+		set_variable = {
+			which = EOE_f_mp
+			value = 30
+		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_milotic
+				}
+			}
+			set_variable = {
+				which = EOE_e_mp
+				value = 50
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ferrothorn
+				}
+			}
+			set_variable = {
+				which = EOE_e_mp
+				value = 50
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_porygon
+				}
+			}
+			set_variable = {
+				which = EOE_e_mp
+				value = 80
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.96.a
+		custom_tooltip = EOE_ghost.96.a.tooltip
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_battle_eevee
+			}
+			set_variable = {
+				which = EOE_f_hp
+				value = 500
+			}
+			ship_event = {
+				id = EOE_ghost.97
+			}
+		}
+	}
+	option = {
+		trigger = {
+			is_okra_in_shroud = yes
+		}
+		name = EOE_ghost.96.b
+		custom_tooltip = EOE_ghost.96.b.tooltip
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_battle_okra
+			}
+			set_variable = {
+				which = EOE_f_hp
+				value = 500
+			}
+			ship_event = {
+				id = EOE_ghost.97
+			}
+		}
+	}
+	option = {
+		trigger = {
+			is_hezi_in_shroud = yes
+		}
+		name = EOE_ghost.96.c
+		custom_tooltip = EOE_ghost.96.c.tooltip
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_battle_hezi
+			}
+			set_variable = {
+				which = EOE_f_hp
+				value = 500
+			}
+			ship_event = {
+				id = EOE_ghost.97
+			}
+		}
+	}
+	option = {
+		#逃跑
+		name = EOE_ghost.96.d
+		allow = {
+			always = no
+			text = EOE_too_heavy
+		}
+	}
+}
+#页面分配，判断胜负
+ship_event = {
+	
+	id = EOE_ghost.97
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		owner = {
+			remove_country_flag = EOE_move_1
+			remove_country_flag = EOE_move_2
+			remove_country_flag = EOE_move_3
+			remove_country_flag = EOE_move_4
+			remove_country_flag = EOE_move_5
+			remove_country_flag = EOE_e_move1
+			remove_country_flag = EOE_e_move2
+		}
+		reroll_random = yes
+		change_variable = {
+			which = EOE_f_mp
+			value = 10
+		}
+		change_variable = {
+			which = EOE_e_mp
+			value = 10
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = EOE_f_mp
+					value < 0
+				}
+			}
+			set_variable = {
+				which = EOE_f_mp
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = EOE_e_mp
+					value < 0
+				}
+			}
+			set_variable = {
+				which = EOE_e_mp
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_leech_seed
+					NOT = {
+						has_country_flag = EOE_battle_okra
+					}
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_hp
+				value = 10
+			}
+			change_variable = {
+				which = EOE_e_hp
+				value = 10
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = EOE_e_hp
+					value <= 0
+				}
+			}
+			# 胜利事件
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = EOE_f_hp
+					value <= 0
+				}
+			}
+			# 失败事件
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_milotic
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.98
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ferrothorn
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.99
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_porygon
+				}
+			}
+			ship_event = {
+				id = EOE_ghost.100
+			}
+		}
+	}
+}
+
+ship_event = {
+	######机甲打美纳斯
+	id = EOE_ghost.98
+	is_triggered_only = yes
+	title = EOE_ghost.98.name
+	##########################核子desc
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_milotic_hpl
+			}
+			owner = {
+				has_country_flag = EOE_battle_hezi
+			}
+		}
+		text = EOE_ghost.98.desc.a
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_milotic_hpl
+			}
+			owner = {
+				has_country_flag = EOE_battle_hezi
+			}
+		}
+		text = EOE_ghost.98.desc.b
+	}
+	################################################秋葵desc
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_milotic_hpl
+			}
+			owner = {
+				has_country_flag = EOE_battle_okra
+			}
+		}
+		text = EOE_ghost.98.desc.c
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_milotic_hpl
+			}
+			owner = {
+				has_country_flag = EOE_battle_okra
+			}
+		}
+		text = EOE_ghost.98.desc.d
+	}
+	######################################伊布desc
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_milotic_hpl
+			}
+			owner = {
+				has_country_flag = EOE_battle_eevee
+			}
+		}
+		text = EOE_ghost.98.desc.e
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_milotic_hpl
+			}
+			owner = {
+				has_country_flag = EOE_battle_eevee
+			}
+		}
+		text = EOE_ghost.98.desc.f
+	}
+	picture = GFX_evt_EOE_Warbot_VS_Milotic
+	#show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.98.a
+		custom_tooltip = EOE_ghost.98.a.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_warbot_1m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_hezi
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_1
+			}
+			ship_event = {
+				id = EOE_ghost.101
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.98.b
+		custom_tooltip = EOE_ghost.98.b.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_warbot_2m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_okra
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_2
+			}
+			ship_event = {
+				id = EOE_ghost.101
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.98.c
+		custom_tooltip = EOE_ghost.98.c.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_warbot_3m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_eevee
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_3
+			}
+			ship_event = {
+				id = EOE_ghost.101
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.98.d
+		custom_tooltip = EOE_ghost.98.d.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_warbot_4m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_4
+			}
+			ship_event = {
+				id = EOE_ghost.101
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.98.e
+		custom_tooltip = EOE_ghost.98.e.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_warbot_5m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_5
+			}
+			ship_event = {
+				id = EOE_ghost.101
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.35.d		#run
+		allow = {
+			always = no
+			text = EOE_too_heavy
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.99
+	is_triggered_only = yes
+	title = EOE_ghost.99.name
+	##########################核子desc
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_ferrothorn_hpl
+			}
+			owner = {
+				has_country_flag = EOE_battle_hezi
+			}
+		}
+		text = EOE_ghost.99.desc.a
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_ferrothorn_hpl
+			}
+			owner = {
+				has_country_flag = EOE_battle_hezi
+			}
+		}
+		text = EOE_ghost.99.desc.b
+	}
+	################################################秋葵desc
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_ferrothorn_hpl
+			}
+			owner = {
+				has_country_flag = EOE_battle_okra
+			}
+		}
+		text = EOE_ghost.99.desc.c
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_ferrothorn_hpl
+			}
+			owner = {
+				has_country_flag = EOE_battle_okra
+			}
+		}
+		text = EOE_ghost.99.desc.d
+	}
+	######################################伊布desc
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_ferrothorn_hpl
+			}
+			owner = {
+				has_country_flag = EOE_battle_eevee
+			}
+		}
+		text = EOE_ghost.99.desc.e
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_ferrothorn_hpl
+			}
+			owner = {
+				has_country_flag = EOE_battle_eevee
+			}
+		}
+		text = EOE_ghost.99.desc.f
+	}
+	picture = GFX_evt_EOE_Warbot_VS_Ferrothorn
+	#show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.99.a
+		custom_tooltip = EOE_ghost.99.a.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_warbot_1m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_hezi
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_1
+			}
+			ship_event = {
+				id = EOE_ghost.101
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.99.b
+		custom_tooltip = EOE_ghost.99.b.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_warbot_2m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_okra
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_2
+			}
+			ship_event = {
+				id = EOE_ghost.101
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.99.c
+		custom_tooltip = EOE_ghost.99.c.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_warbot_3m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_eevee
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_3
+			}
+			ship_event = {
+				id = EOE_ghost.101
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.99.d
+		custom_tooltip = EOE_ghost.99.d.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_warbot_4m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_4
+			}
+			ship_event = {
+				id = EOE_ghost.101
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.99.e
+		custom_tooltip = EOE_ghost.99.e.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_warbot_5m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_5
+			}
+			ship_event = {
+				id = EOE_ghost.101
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.35.d		#run
+		allow = {
+			always = no
+			text = EOE_too_heavy
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.100
+	is_triggered_only = yes
+	title = EOE_ghost.100.name
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_e_hp
+				value > @EOE_porygon_hpl
+			}
+		}
+		text = EOE_ghost.100.desc.a
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_e_hp
+				value <= @EOE_porygon_hpl
+			}
+		}
+		text = EOE_ghost.100.desc.b
+	}
+	picture = GFX_evt_gladiators
+	#show_sound = event_mystic_reveal
+	option = {
+		name = EOE_ghost.100.a
+		custom_tooltip = EOE_ghost.100.a.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_warbot_1m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_hezi
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_1
+			}
+			ship_event = {
+				id = EOE_ghost.101
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.100.b
+		custom_tooltip = EOE_ghost.100.b.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_warbot_2m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_okra
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_2
+			}
+			ship_event = {
+				id = EOE_ghost.101
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.100.c
+		custom_tooltip = EOE_ghost.100.c.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_warbot_3m
+			}
+		}
+		trigger = {
+			owner = {
+				has_country_flag = EOE_battle_eevee
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_3
+			}
+			ship_event = {
+				id = EOE_ghost.101
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.100.d
+		custom_tooltip = EOE_ghost.100.d.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_warbot_4m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_4
+			}
+			ship_event = {
+				id = EOE_ghost.101
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.100.e
+		custom_tooltip = EOE_ghost.100.e.tooltip
+		allow = {
+			check_variable = {
+				which = EOE_f_mp
+				value >= @EOE_warbot_5m
+			}
+		}
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_move_5
+			}
+			ship_event = {
+				id = EOE_ghost.101
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.35.d		#run
+		allow = {
+			always = no
+			text = EOE_too_heavy
+		}
+	}
+}
+
+ship_event = {
+	#技能伤害
+	id = EOE_ghost.101
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		reroll_random = yes
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_1
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_warbot_1m
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = @EOE_warbot_1
+			}
+			EOE_damage_fluctuation = {
+				x = f
+			}
+			subtract_variable = {
+				which = EOE_e_hp
+				value = EOE_f_dmg
+			}
+			ship_event = {
+				id = EOE_ghost.102
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_2
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_warbot_2m
+			}
+			set_variable = {
+				which = EOE_f_hp
+				value = EOE_f_dmg				#回满了体力
+			}
+			ship_event = {
+				id = EOE_ghost.103
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_3
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_warbot_3m
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = @EOE_warbot_3
+			}
+			EOE_damage_fluctuation = {
+				x = f
+			}
+			subtract_variable = {
+				which = EOE_e_hp
+				value = EOE_f_dmg
+			}
+			ship_event = {
+				id = EOE_ghost.104
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_4
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_warbot_4m
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = @EOE_warbot_4
+			}
+			EOE_damage_fluctuation = {
+				x = f
+			}
+			subtract_variable = {
+				which = EOE_e_hp
+				value = EOE_f_dmg
+			}
+			ship_event = {
+				id = EOE_ghost.105
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_move_5
+				}
+			}
+			subtract_variable = {
+				which = EOE_f_mp
+				value = @EOE_warbot_5m
+			}
+			set_variable = {
+				which = EOE_f_dmg
+				value = @EOE_warbot_5
+			}
+			EOE_damage_fluctuation = {
+				x = f
+			}
+			subtract_variable = {
+				which = EOE_e_hp
+				value = EOE_f_dmg
+			}
+			ship_event = {
+				id = EOE_ghost.106
+			}
+		}
+	}
+}
+ship_event = {
+	#技能描述
+	id = EOE_ghost.102
+	is_triggered_only = yes
+	title = EOE_ghost.102.name
+	desc = EOE_ghost.102.desc
+	picture = GFX_evt_gladiators
+	#show_sound = event_space_battle
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.107
+		}
+	}
+}
+ship_event = {
+	#技能描述
+	id = EOE_ghost.103
+	is_triggered_only = yes
+	title = EOE_ghost.103.name
+	desc = EOE_ghost.103.desc
+	picture = GFX_evt_gladiators
+	#show_sound = event_space_battle
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.107
+		}
+	}
+}
+
+ship_event = {
+	#技能描述
+	id = EOE_ghost.104
+	is_triggered_only = yes
+	title = EOE_ghost.104.name
+	desc = EOE_ghost.104.desc
+	picture = GFX_evt_gladiators
+	#show_sound = event_space_battle
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.107
+		}
+	}
+}
+ship_event = {
+	#技能描述
+	id = EOE_ghost.105
+	is_triggered_only = yes
+	title = EOE_ghost.105.name
+	desc = EOE_ghost.105.desc
+	picture = GFX_evt_gladiators
+	#show_sound = event_space_battle
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.107
+		}
+	}
+}
+ship_event = {
+	#技能描述
+	id = EOE_ghost.106
+	is_triggered_only = yes
+	title = EOE_ghost.106.name
+	desc = EOE_ghost.106.desc
+	picture = GFX_evt_gladiators
+	#show_sound = event_space_battle
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.107
+		}
+	}
+}
+#敌人的招式计算，每个敌人2个招式，6个事件
+ship_event = {
+	
+	id = EOE_ghost.107
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		reroll_random = yes
+		random_list = {
+			1 = {
+				owner = {
+					set_country_flag = EOE_e_move1
+				}
+			}
+			1 = {
+				owner = {
+					set_country_flag = EOE_e_move2
+				}
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_milotic
+					has_country_flag = EOE_e_move1
+				}
+			}
+			subtract_variable = {
+				which = EOE_e_mp
+				value = @EOE_milotic_1m
+			}
+			set_variable = {
+				which = EOE_e_dmg
+				value = @EOE_milotic_1
+			}
+			EOE_damage_fluctuation = {
+				x = e
+			}
+			subtract_variable = {
+				which = EOE_f_hp
+				value = EOE_e_dmg
+			}
+			ship_event = {
+				id = EOE_ghost.108
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_milotic
+					has_country_flag = EOE_e_move2
+				}
+			}
+			subtract_variable = {
+				which = EOE_e_mp
+				value = @EOE_milotic_2m
+			}
+			set_variable = {
+				which = EOE_e_dmg
+				value = @EOE_milotic_2
+			}
+			EOE_damage_fluctuation = {
+				x = e
+			}
+			subtract_variable = {
+				which = EOE_f_hp
+				value = EOE_e_dmg
+			}
+			ship_event = {
+				id = EOE_ghost.109
+			}
+		}
+		############################################################################################
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ferrothorn
+					has_country_flag = EOE_e_move1
+				}
+			}
+			subtract_variable = {
+				which = EOE_e_mp
+				value = @EOE_ferrothorn_1m
+			}
+			set_variable = {
+				which = EOE_e_dmg
+				value = @EOE_ferrothorn_1
+			}
+			EOE_damage_fluctuation = {
+				x = e
+			}
+			subtract_variable = {
+				which = EOE_f_hp
+				value = EOE_e_dmg
+			}
+			ship_event = {
+				id = EOE_ghost.110
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_ferrothorn
+					has_country_flag = EOE_e_move2
+				}
+			}
+			subtract_variable = {
+				which = EOE_e_mp
+				value = @EOE_ferrothorn_2m
+			}
+			set_variable = {
+				which = EOE_e_dmg
+				value = @EOE_ferrothorn_2
+			}
+			EOE_damage_fluctuation = {
+				x = e
+			}
+			subtract_variable = {
+				which = EOE_f_hp
+				value = EOE_e_dmg
+			}
+			ship_event = {
+				id = EOE_ghost.111
+			}
+		}
+		############################################################################
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_porygon
+					has_country_flag = EOE_e_move1
+				}
+			}
+			subtract_variable = {
+				which = EOE_e_mp
+				value = @EOE_porygon_1m
+			}
+			set_variable = {
+				which = EOE_e_dmg
+				value = @EOE_porygon_1
+			}
+			EOE_damage_fluctuation = {
+				x = e
+			}
+			subtract_variable = {
+				which = EOE_f_hp
+				value = EOE_e_dmg
+			}
+			ship_event = {
+				id = EOE_ghost.112
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = EOE_porygon
+					has_country_flag = EOE_e_move2
+				}
+			}
+			subtract_variable = {
+				which = EOE_e_mp
+				value = @EOE_porygon_2m
+			}
+			set_variable = {
+				which = EOE_e_dmg
+				value = @EOE_porygon_2
+			}
+			EOE_damage_fluctuation = {
+				x = e
+			}
+			subtract_variable = {
+				which = EOE_f_hp
+				value = EOE_e_dmg
+			}
+			#####特效
+			subtract_variable = {
+				which = EOE_f_mp
+				value = 20
+			}
+			ship_event = {
+				id = EOE_ghost.113
+			}
+		}
+	}
+}
+
+ship_event = {
+	#敌人技能描述
+	id = EOE_ghost.108
+	is_triggered_only = yes
+	title = EOE_ghost.108.name
+	desc = EOE_ghost.108.desc
+	picture = GFX_evt_gladiators
+	#show_sound = event_space_battle
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.97
+		}
+	}
+}
+ship_event = {
+	#敌人技能描述
+	id = EOE_ghost.109
+	is_triggered_only = yes
+	title = EOE_ghost.109.name
+	desc = EOE_ghost.109.desc
+	picture = GFX_evt_gladiators
+	#show_sound = event_space_battle
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.97
+		}
+	}
+}
+ship_event = {
+	#敌人技能描述
+	id = EOE_ghost.110
+	is_triggered_only = yes
+	title = EOE_ghost.110.name
+	desc = EOE_ghost.110.desc
+	picture = GFX_evt_gladiators
+	#show_sound = event_space_battle
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.97
+		}
+	}
+}
+ship_event = {
+	#敌人技能描述
+	id = EOE_ghost.111
+	is_triggered_only = yes
+	title = EOE_ghost.111.name
+	desc = EOE_ghost.111.desc
+	picture = GFX_evt_gladiators
+	#show_sound = event_space_battle
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.97
+		}
+	}
+}
+ship_event = {
+	#敌人技能描述
+	id = EOE_ghost.112
+	is_triggered_only = yes
+	title = EOE_ghost.112.name
+	desc = EOE_ghost.112.desc
+	picture = GFX_evt_gladiators
+	#show_sound = event_space_battle
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.97
+		}
+	}
+}
+ship_event = {
+	#敌人技能描述
+	id = EOE_ghost.113
+	is_triggered_only = yes
+	title = EOE_ghost.113.name
+	desc = EOE_ghost.113.desc
+	picture = GFX_evt_gladiators
+	#show_sound = event_space_battle
+	option = {
+		name = EOE_ghost.49.a
+		ship_event = {
+			id = EOE_ghost.97
+		}
+	}
+}
+
+#########灵体联盟
+ship_event = {
+	id = EOE_ghost.114
+	is_triggered_only = yes
+	title = EOE_ghost.114.name
+	desc = EOE_ghost.114.desc 
+	picture = GFX_evt_galactic_empire
+	show_sound = event_cityscape_02
+	
+	option = {
+		name = EOE_ghost.114.a
+		ship_event = {
+			id = EOE_ghost.115
+		}
+	}
+}
+ship_event = {
+	id = EOE_ghost.115
+	is_triggered_only = yes
+	title = EOE_ghost.115.name
+	desc = EOE_ghost.115.desc 
+	picture = GFX_evt_ground_combat
+	show_sound = event_ground_battle
+	option = {
+		name = EOE_ghost.115.a
+		owner = {
+			country_event = {
+				id = EOE_ghost.116
+			}
+		}
+	}
+}
+country_event = {
+	id = EOE_ghost.116
+	is_triggered_only = yes
+	title = EOE_ghost.116.name
+	desc = EOE_ghost.116.desc 
+	diplomatic = yes
+	custom_gui = "enclave_artist_window"
+	custom_gui_option = "enclave_artist_option"
+	picture_event_data = {
+		portrait = EOE030
+		room = shroudwalkers_room
+	}
+	location = capital_scope
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				has_planet_flag = EOE_ghost_planet_1
+			}
+			save_event_target_as = EOE_the_ghost_planet
+		} 
+		owner = {
+			set_country_flag = EOE_has_com_with_sei
+			end_event_chain = EOE_ghost_story_chain
+			remove_global_flag = EOE_ghost_started
+			clear_global_event_target = EOE_ghost_planet
+			set_country_flag = EOE_portal_closed_hezi
+			random_owned_planet = {
+				limit = {
+					has_planet_flag = EOE_ghost_planet_1
+				}
+				remove_modifier = EOE_modifier_ghost_story
+			}
+		}
+	}
+	option = {
+		name = EOE_ghost.116.a	
+	}
+	option = {
+		name = EOE_ghost.116.b
+	}
+	after = {
+		country_event = {
+			id = EOE_ghost.117
+		}
+	}
+}
+country_event = {
+	id = EOE_ghost.117
+	is_triggered_only = yes
+	title = EOE_ghost.117.name
+	desc = EOE_ghost.117.desc 
+	picture = GFX_evt_surrender
+	show_sound = event_ground_battle
+	option = {
+		name = EOE_ghost.117.a
+		country_event = {
+			id = EOE_ghost.118
+		}
+	}
+}
+country_event = {
+	id = EOE_ghost.118
+	is_triggered_only = yes
+	title = EOE_ghost.118.name
+	desc = EOE_ghost.118.desc 
+	picture = GFX_evt_surrender
+	show_sound = event_ground_battle
+	option = {
+		name = EOE_ghost.118.a
+		
+	}
+	option = {
+		name = EOE_ghost.118.b
+		country_event = {
+			id = EOE_ghost.119
+		}
+	}
+}
+country_event = {
+	id = EOE_ghost.119
+	is_triggered_only = yes
+	title = EOE_ghost.119.name
+	desc = EOE_ghost.119.desc 
+	diplomatic = yes
+	custom_gui = "enclave_artist_window"
+	custom_gui_option = "enclave_artist_option"
+	picture_event_data = {
+		room = no_video_feed_room
+	}
+	location = capital_scope
+	option = {
+		name = EOE_ghost.119.a
+		set_country_flag = EOE_not_support
+		country_event = {
+			id = EOE_ghost.120
+		}
+	}
+}
+country_event = {
+	id = EOE_ghost.120
+	is_triggered_only = yes
+	title = EOE_ghost.120.name
+	desc = EOE_ghost.120.desc 
+	picture = GFX_evt_ground_combat
+	show_sound = event_red_alert
+	immediate = {
+		create_country = {
+			name = "NAME_Shroud_Kratz"
+			type = faction
+			flag = {
+				icon = {
+					category = "special"
+					file = "unknown.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "00_solid.dds"
+				}
+				colors = {
+					"purple"
+					"purple"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				establish_communications_no_message = root.owner
+				save_global_event_target_as = EOE_shroud_kratz
+			}
+		}
+		random_owned_planet = {
+			limit = {
+				has_planet_flag = EOE_ghost_planet_1
+			}
+			save_event_target_as = EOE_the_ghost_planet
+			create_army = {
+				name = "NAME_Shroud_Kratz"
+				owner = event_target:EOE_shroud_kratz
+				type = "EOE_kratz_shroud_army"
+			}
+			while = {
+				count = 4
+				hidden_effect = {
+					create_army = {
+						name = "NAME_Shroud_Kratz_small"
+						owner = event_target:EOE_shroud_kratz
+						type = "EOE_kratz_shroud_army_small"
+					}
+				}
+			}
+		} 
+	}
+}
+#打赢了突袭
+country_event = { 
+	id = EOE_ghost.121
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		From = { 
+			OR = {
+				army_type = EOE_kratz_shroud_army_small
+				army_type = EOE_kratz_shroud_army
+			}
+		}
+		fromfrom = {
+			has_country_flag = EOE_not_support
+		}
+	}
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				has_planet_flag = EOE_ghost_planet_1
+			}
+			if = {
+				limit = {
+					any_planet_army = {
+						NOR = {
+							army_type = EOE_kratz_shroud_army_small
+							army_type = EOE_kratz_shroud_army
+						}
+					}
+				}
+				fromfrom = {
+					country_event = {
+						id = EOE_ghost.122 days = 1
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = EOE_ghost.122
+	title = "EOE_ghost.122.name"
+	desc = "EOE_ghost.122.desc"
+	picture = GFX_evt_victorious_army
+	show_sound = event_mystic_reveal
+	is_triggered_only = yes
+	option = {
+		name = akx.9011.b #真遗憾
+		random_owned_planet = {
+			limit = {
+				has_planet_flag = EOE_ghost_planet_1
+			}
+			save_event_target_as = EOE_the_ghost_planet
+			add_deposit = d_EOE_ghost_trace
+		}
+	}
+}
+#打输，共用事件
+planet_event = {
+	id = EOE_ghost.123
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			AND = {
+				exists = event_target:EOE_shroud_kratz
+				FromFrom = { is_same_empire = event_target:EOE_shroud_kratz }
+			}
+			AND = {
+				exists = event_target:EOE_shroud_karkdim
+				FromFrom = { is_same_empire = event_target:EOE_shroud_karkdim }
+			}
+			AND = {
+				exists = event_target:EOE_shroud_alert
+				FromFrom = { is_same_empire = event_target:EOE_shroud_alert }
+			}
+		}
+	}
+	immediate = {
+		every_owned_pop = {
+			kill_pop = yes
+		}
+		change_pc = pc_shrouded
+		set_planet_flag = EOE_supress_com_with_sei
+	}
+} 

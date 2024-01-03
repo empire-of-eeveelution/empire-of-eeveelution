@@ -1,0 +1,177 @@
+@EOE_tier6cost1 = 64000
+@EOE_tier6cost2 = 80000
+@EOE_tier6cost3 = 96000
+
+@EOE_tier7cost1 = 128000
+@EOE_tier7cost2 = 160000
+@EOE_tier7cost3 = 192000
+
+@EOE_tier8cost1 = 256000
+@EOE_tier8cost2 = 320000
+@EOE_tier8cost3 = 384000
+
+@EOE_tier9cost1 = 512000
+@EOE_tier9cost2 = 640000
+@EOE_tier9cost3 = 768000
+
+@s7_EOE_cost = 50
+@s7_EOE_sr_cost = 2.7
+@s7_EOE_upkeep_energy = 0.29
+@s7_EOE_upkeep_food = 0.13
+
+@s9_EOE_cost = 50
+@s9_EOE_sr_cost = 12.00
+@s9_EOE_upkeep_energy = 1.12
+@s9_EOE_upkeep_food = 0.5
+
+@m7_EOE_cost = 100
+@m7_EOE_sr_cost = 5.4 
+@m7_EOE_upkeep_energy = 0.57
+@m7_EOE_upkeep_food = 0.234
+
+@m9_EOE_cost = 100
+@m9_EOE_sr_cost = 16.00 
+@m9_EOE_upkeep_energy = 2.08
+@m9_EOE_upkeep_food = 0.765
+
+@l7_EOE_cost = 337.5
+@l7_EOE_sr_cost = 9.9 
+@l7_EOE_upkeep_energy = 1.48
+@l7_EOE_upkeep_food = 0.666
+
+@l9_EOE_cost = 337.5
+@l9_EOE_sr_cost = 31.0 
+@l9_EOE_upkeep_energy = 5.92
+@l9_EOE_upkeep_food = 2.666
+
+@xl7_EOE_cost = 396
+@xl7_EOE_sr_cost = 13.5
+@xl7_EOE_upkeep_energy = 2.98
+@xl7_EOE_upkeep_food = 1.341
+
+@xl9_EOE_cost = 396
+@xl9_EOE_sr_cost = 32.0
+@xl9_EOE_upkeep_energy = 10.00
+@xl9_EOE_upkeep_food = 4.5
+
+@titanic7_EOE_cost = 1026
+@titanic7_EOE_sr_cost = 22.0
+@titanic7_EOE_upkeep_energy = 11.86 
+@titanic7_EOE_upkeep_food = 2.666
+
+@titanic9_EOE_cost = 1026
+@titanic9_EOE_sr_cost = 80
+@titanic9_EOE_upkeep_energy = 16.75 
+@titanic9_EOE_upkeep_food = 3.666
+
+@EOE_eevee_hpl = 75
+@EOE_okra_hpl = 100
+@EOE_hezi_hpl = 60
+@EOE_milotic_hpl = 150
+@EOE_ferrothorn_hpl = 150
+@EOE_porygon_hpl = 100
+
+@EOE_eevee_1 = 100
+@EOE_eevee_2 = 80
+@EOE_eevee_3 = 40
+@EOE_eevee_4 = 75
+@EOE_eevee_5 = 40
+@EOE_eevee_6 = 40
+@EOE_eevee_7 = 0
+
+@EOE_eevee_1m = 30
+@EOE_eevee_2m = 20
+@EOE_eevee_3m = 10
+@EOE_eevee_4m = 20
+@EOE_eevee_5m = 20
+@EOE_eevee_6m = 0
+@EOE_eevee_7m = 20
+
+
+
+@EOE_okra_1 = 120
+@EOE_okra_2 = 80
+@EOE_okra_3 = 40
+@EOE_okra_4 = 50
+@EOE_okra_5 = 20
+@EOE_okra_6 = 20
+@EOE_okra_7 = 60
+
+@EOE_okra_1m = 30
+@EOE_okra_2m = 20
+@EOE_okra_3m = 10
+@EOE_okra_4m = 20
+@EOE_okra_5m = 20
+@EOE_okra_6m = 0
+@EOE_okra_7m = 20
+
+
+
+@EOE_hezi_1 = 170
+@EOE_hezi_2 = 0
+@EOE_hezi_3 = 60
+@EOE_hezi_4 = 160
+@EOE_hezi_5 = 40
+@EOE_hezi_6 = 80
+@EOE_hezi_7 = 0
+
+@EOE_hezi_1m = 30
+@EOE_hezi_2m = 20
+@EOE_hezi_3m = 20
+@EOE_hezi_4m = 40
+@EOE_hezi_5m = 20
+@EOE_hezi_6m = 0
+@EOE_hezi_7m = 20
+
+@EOE_warbot_1 = 99999
+@EOE_warbot_2 = 500
+@EOE_warbot_3 = 200
+@EOE_warbot_4 = 120
+@EOE_warbot_5 = 80
+@EOE_warbot_1m = 50
+@EOE_warbot_2m = 30
+@EOE_warbot_3m = 30
+@EOE_warbot_4m = 20
+@EOE_warbot_5m = 0
+
+@EOE_milotic_1 = 65
+@EOE_milotic_2 = 40
+@EOE_milotic_3 = 30
+@EOE_milotic_4 = 150
+@EOE_milotic_1m = 20
+@EOE_milotic_2m = 10
+@EOE_milotic_3m = 0
+@EOE_milotic_4m = 20
+
+
+@EOE_ferrothorn_1 = 65
+@EOE_ferrothorn_2 = 50
+@EOE_ferrothorn_3 = 20
+@EOE_ferrothorn_4 = 0
+@EOE_ferrothorn_1m = 20
+@EOE_ferrothorn_2m = 20
+@EOE_ferrothorn_3m = 0
+@EOE_ferrothorn_4m = 0
+
+
+@EOE_porygon_1 = 100
+@EOE_porygon_2 = 60
+@EOE_porygon_3 = 20
+@EOE_porygon_4 = 60
+@EOE_porygon_1m = 50
+@EOE_porygon_2m = 20
+@EOE_porygon_3m = 0
+@EOE_porygon_4m = 20
+
+
+@EOE_ironbarbs = 10
+
+@EOE_milotic_aihp1 = 150
+@EOE_milotic_aimp1 = 20
+@EOE_milotic_aimp2 = 40
+@EOE_ferrothorn_aihp1 = 200
+@EOE_ferrothorn_aimp1 = 20
+@EOE_ferrothorn_aimp2 = 40
+@EOE_porygon_aihp1 = 0
+@EOE_porygon_aimp1 = 20
+@EOE_porygon_aimp2 = 60

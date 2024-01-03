@@ -1,0 +1,133 @@
+tech_precognition_interface_EOE = {
+	cost = @tier4cost2
+	area = society
+	tier = 4
+	category = { psionics }
+	is_rare = yes
+	weight = @tier4weight2
+	is_reverse_engineerable = no
+		
+	
+
+	# unlocks precognitive interface-component, combat-computer granting evasion to ships
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "TECH_UNLOCK_COMBAT_COMPUTER_PRECOG_TITLE"
+			desc = "TECH_UNLOCK_COMBAT_COMPUTER_PRECOG_DESC"
+		}
+	}
+
+
+	weight_modifier = {
+		factor = 0
+	}
+	potential = {
+		any_owned_pop = {
+			has_trait = trait_EOE_Inheritors
+		}
+	}
+
+	ai_weight = {
+		factor = 0 #very rare tech
+	}
+}
+
+tech_psi_jump_drive_1_EOE = {
+	cost = @tier5cost2
+	area = society
+	tier = 5
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	is_dangerous = yes
+	weight = @tier5weight2
+	is_dangerous = yes
+	is_reverse_engineerable = no
+
+	feature_flags = {
+		jump_method
+	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_PSI_JUMPDRIVE_1_TITLE"
+			desc = "TECH_UNLOCK_PSI_JUMPDRIVE_1_DESC"
+		}
+	}
+	potential = {
+		any_owned_pop = {
+			has_trait = trait_EOE_Inheritors
+		}
+	}
+	weight_modifier = {
+		factor = 0
+		
+	
+	}
+}
+
+tech_psionic_barrier_EOE = {
+	area = society
+	cost = @tier3cost1
+	tier = 3
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	weight = 0
+	is_reverse_engineerable = no
+	icon = tech_psionic_barrier
+	potential = {
+		any_owned_pop = {
+			has_trait = trait_EOE_Inheritors
+		}
+	}
+
+	weight_modifier = {
+		factor = 0
+	}
+}
+
+tech_psionic_shield_EOE = {
+	area = society
+	cost = @tier5cost3
+	tier = 5
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	weight = 0
+	is_reverse_engineerable = no
+	potential = {
+		any_owned_pop = {
+			has_trait = trait_EOE_Inheritors
+		}
+	}
+
+	weight_modifier = {
+		factor = 0
+	}
+}
+
+# tech_EOE_synapse_drones = {
+# 	area = society
+# 	cost = 1
+# 	tier = 1
+# 	category = { biology }
+# 	ai_update_type = all
+# 	is_rare = yes
+# 	weight = 0
+# 	is_reverse_engineerable = no
+# 	potential = {  }
+# 	modifier = {
+# 		job_synapse_drone_per_pop = -0.05
+# 		job_EOE_synapse_drone_per_pop = 0.05
+# 	}
+
+# 	weight_modifier = {
+# 		factor = 0
+# 	}
+# }
+
+
+

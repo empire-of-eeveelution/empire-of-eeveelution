@@ -1,0 +1,153 @@
+# All global modifiers are here.  They are applied from certain game-features.
+#
+# Effects are fully scriptable here.
+##########################################################################
+# Traits !!
+##########################################################################
+wear_trait_fairy_type_mega_evolution = {
+	country_base_influence_produces_add = 1
+	country_trust_growth = 0.25
+}
+
+From_generation_to_generation = {
+    category_biology_research_speed_mult = 0.2
+	country_influence_produces_mult = 0.1
+}
+	
+Technical_information_of_Umbrella_Corporation = {
+    category_biology_research_speed_mult = 0.15
+}
+EOE_Research_Sample ={ category_biology_research_speed_mult = 0.30 }
+	
+Warship_in_production = { }
+
+
+Curator_Information_from_Hezi = {
+	damage_vs_country_type_enclave_mult = 2
+}
+
+EOE_curator_insight_plus = {
+	all_technology_research_speed = 0.15
+}
+EOE_mother_computer = {
+	all_technology_research_speed = 0.1
+}
+
+EOE_Infinity_Sphere_research = {
+	all_technology_research_speed = 0.05
+}
+
+EOE_great_eoe_country_for_ai = {
+	hide_from_country_list = yes
+	ship_armor_mult = 0.2
+	ship_shield_mult = 0.2
+	ship_weapon_damage = 0.2
+	ship_fire_rate_mult = 0.2
+	starbase_shipyard_build_cost_mult = -0.2
+	starbase_shipyard_build_speed_mult = 0.5
+	planet_jobs_society_research_produces_mult = 0.2 
+	category_biology_research_speed_mult = 5
+	category_military_theory_research_speed_mult = 2
+	category_new_worlds_research_speed_mult = 2
+	category_statecraft_research_speed_mult = 2
+	country_unity_produces_mult = 0.5
+}
+
+EOE_hezi_dont_love_you = {
+	hide_from_country_list = yes
+	all_technology_research_speed = 0.05
+}
+
+
+advanced_petting_method = {  #################先进撸伊布法
+	planet_amenities_no_happiness_mult = 0.05
+ }
+
+
+ EOE_cthugha_failing = {
+	pop_ethic_spiritualist_attraction_mult = 0.2
+	country_unity_produces_mult = 0.2
+}
+
+EOE_strange_painting = {
+	country_society_research_produces_mult = 0.2
+}
+
+EOE_ancient_trap= {
+	country_engineering_research_produces_mult = 0.2
+}
+
+EOE_ancient_puzzle= {
+	damage_vs_country_type_guardian_EOE_cthugha_mult = 1
+}
+
+EOE_broken_habitat = {
+    icon_frame = 3
+    icon = "gfx/interface/icons/planet_modifiers/pm_city_ruins.dds"
+	pop_growth_speed = -1
+    pop_environment_tolerance = -0.5
+	planet_max_districts_add = -2
+	planet_district_hab_housing_build_speed_mult = -1
+	planet_district_hab_energy_build_speed_mult = -1
+	planet_district_hab_industrial_build_speed_mult = -1
+	planet_district_hab_science_build_speed_mult = -1
+	planet_district_hab_commercial_build_speed_mult = -1
+	planet_district_hab_cultural_build_speed_mult = -1
+
+}
+
+
+
+EOE_building_team = { #宝可工程队
+	icon = "gfx/interface/icons/planet_modifiers/pm_medieval_alien_civilization.dds"
+	icon_frame = 1
+	planet_building_build_speed_mult = 1
+}
+
+EOE_blocker_clear_team = { #宝可清障队
+	icon = "gfx/interface/icons/planet_modifiers/pm_mastery_of_nature.dds"
+	icon_frame = 1
+	planet_clear_blocker_speed_mult = 100
+	deposit_blockers_cost_mult = -0.75
+}
+
+EOE_pokeball_catched = {
+	ships_upkeep_mult = -100
+}
+
+EOE_pokeball_catched_run = {
+	ship_disengage_chance_mult = 10
+}
+
+EOE_pokeball_healing ={
+	ships_upkeep_mult = 5
+	ship_windup_mult = 10
+	ship_speed_mult = -10
+	ship_ftl_jumpdrive_range_mult = -0.9
+	ship_jumpdrive_cooldown_mult = 10
+	ship_weapon_damage = -1
+	ship_fire_rate_mult = -1
+	ship_weapon_range_mult = -1
+	ship_hull_mult = -0.8
+	ship_armor_mult = -0.8
+	ship_shield_mult = -0.8
+}
+
+EOE_steel_type_pokemon_produce_cooldown_modifier = {
+	icon = "gfx/interface/icons/planet_modifiers/EOE_steel_type_pokemon_produce_cooldown_modifier.dds"
+	icon_frame = 3
+}
+
+EOE_pokemon_produce_cooldown_modifier = {
+	icon = "gfx/interface/icons/planet_modifiers/EOE_pokemon_produce_cooldown_modifier.dds"
+	icon_frame = 3
+}
+
+EOE_OKRA_effect = {
+    icon_frame = 1
+    icon = "gfx/interface/icons/planet_modifiers/EOE_pokemon_produce_cooldown_modifier.dds"
+	pop_growth_speed = 0.25
+	planet_amenities_mult = 0.25
+    planet_jobs_society_research_produces_mult = 0.2
+	planet_jobs_produces_mult = 0.1
+}

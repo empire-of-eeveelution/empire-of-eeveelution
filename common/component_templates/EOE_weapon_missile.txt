@@ -1,0 +1,55 @@
+weapon_component_template = {
+	key = "EOE_MISSILE_fire_vampire"
+	size = small
+	
+	icon = "GFX_EOE_fire_vampire"
+	icon_frame = 1
+	type = missile
+
+	damage = { min = 60 max = 100 }
+	windup = { min = 5 max = 15 }
+	total_fire_time = 10
+	range = 150
+	accuracy = 1.0
+	missile_speed = 17 # 375 -- apparently, the game doesn't auto-convert speed for non-vanilla components
+	missile_evasion = 0.90
+	missile_health = 15
+	missile_shield = 0
+	missile_retarget_range = 150
+	power = -45
+	hull_damage = 2
+	armor_damage = 2
+	armor_penetration = 0.0
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	tracking = 1.0
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 3.15
+			volatile_motes = 6
+		}		
+		upkeep = {
+			energy = 2.85
+			alloys = 0.45
+			volatile_motes = 0.01
+		}
+	}
+
+	prerequisites = { "tech_EOE_fire_vampire" }
+	component_set = "EOE_fire_vampire"
+	projectile_gfx = "swarmer_missiles_02"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery }
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 0.0
+			has_monthly_income = {
+				resource = volatile_motes
+				value <= 2
+			}	
+		}
+	}
+}

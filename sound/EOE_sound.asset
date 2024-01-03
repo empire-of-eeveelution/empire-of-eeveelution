@@ -1,0 +1,234 @@
+
+######### MALE
+
+sound = 
+{
+	name = "eeveelution_greeting_01"
+	file = "vo/eeveelution_greeting_01.wav"
+}
+
+sound = 
+{
+	name = "eeveelution_greeting_02"
+	file = "vo/eeveelution_greeting_02.wav"
+}
+
+sound = 
+{
+	name = "eeveelution_greeting_03"
+	file = "vo/eeveelution_greeting_03.wav"
+}
+
+sound = 
+{
+	name = "eeveelution_greeting_04"
+	file = "vo/eeveelution_greeting_04.wav"
+}
+
+sound = 
+{
+	name = "eeveelution_greeting_05"
+	file = "vo/eeveelution_greeting_05.wav"
+}
+
+sound = 
+{
+	name = "eeveelution_greeting_06"
+	file = "vo/eeveelution_greeting_06.wav"
+}
+sound = 
+{
+	name = "eeveelution_greeting_07"
+	file = "vo/eeveelution_greeting_07.wav"
+}
+sound = 
+{
+	name = "eeveelution_greeting_08"
+	file = "vo/eeveelution_greeting_08.wav"
+}
+sound = 
+{
+	name = "eeveelution_greeting_09"
+	file = "vo/eeveelution_greeting_09.wav"
+}
+
+sound = 
+{
+	name = "eeveelution_greeting_10"
+	file = "vo/eeveelution_greeting_10.wav"
+}
+
+soundeffect = {
+	name = sfx_relic_activation_blade_of_the_huntress
+	sounds = {
+		sound = sfx_relic_activation_blade_of_the_huntress
+	} 
+	volume = 0.45
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = event_wind_ruins_01
+	sounds = {
+		sound = event_wind_ruins_01
+	} 
+	volume = 0.45
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+sound = 
+{
+	name = "event_wind_ruins_01"
+	file = "ancient_relics/sfx_archeology_event_wind_ruins_01.wav"
+}
+soundeffect = {
+	name = event_wind_ruins_03
+	sounds = {
+		sound = event_wind_ruins_03
+	} 
+	volume = 0.3
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+sound = 
+{
+	name = "event_wind_ruins_03"
+	file = "ancient_relics/sfx_archeology_event_wind_ruins_03.wav"
+}
+soundeffect = {
+	name = event_cityscape_02
+	sounds = {
+		sound = event_cityscape_02
+	} 
+	volume = 0.45
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = event_mystic_reveal_02
+	sounds = {
+		sound = event_mystic_reveal_02
+	} 
+	volume = 0.45
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = event_scanner_02
+	sounds = {
+		sound = event_scanner_02
+	} 
+	volume = 0.45
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = event_ground_battle_01
+	sounds = {
+		sound = event_ground_battle_01
+	} 
+	volume = 0.45
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+sound = 
+{
+	name = "event_ground_battle_01"
+	file = "event/event_ground_battle_01.wav"
+}
+soundeffect = {
+	name = event_ground_battle_02
+	sounds = {
+		sound = event_ground_battle_02
+	} 
+	volume = 0.45
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = event_default_02
+	sounds = {
+		sound = event_default_02
+	} 
+	volume = 0.45
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = event_ex_started_01
+	sounds = {
+		sound = event_ex_started_01
+	} 
+	volume = 0.45
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = event_yellow_alert_01
+	sounds = {
+		sound = event_yellow_alert_01
+	} 
+	volume = 0.45
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = event_default_04
+	sounds = {
+		sound = event_default_04
+	} 
+	volume = 0.45
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = event_begin_expedition
+	sounds = {
+		sound = event_begin_expedition
+	} 
+	volume = 0.45
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+sound = 
+{
+	name = "event_begin_expedition"
+	file = "ancient_relics/sfx_archeology_event_begin_expedition.wav"
+}
+
+soundeffect = {
+	name = event_whispering_01
+	sounds = {
+		sound = event_whispering_01
+	} 
+	volume = 0.45
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+sound = 
+{
+	name = "event_whispering_01"
+	file = "ancient_relics/sfx_archeology_event_whispering_01.wav"
+}
+soundeffect = {
+	name = event_metal_fatigue_01
+	sounds = {
+		sound = event_metal_fatigue_01
+	} 
+	volume = 0.45
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+sound = 
+{
+	name = "event_metal_fatigue_01"
+	file = "ancient_relics/sfx_archeology_event_metal_fatigue_01.wav"
+}

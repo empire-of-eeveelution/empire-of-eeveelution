@@ -1,0 +1,160 @@
+EOE = {
+	name = "EOE"
+	adjective = "Eeveelution"
+	spawn_enabled = no # yes / no / always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ISS"
+	
+	species={
+		class="Eeveelutions"
+		portrait="Eeveelutions"
+		name="Eeveelutions"
+		plural="Eeveelutions"
+		adjective="Eeveelutions"
+		name_list="MAM1"
+		trait = "trait_EOE_Inheritors"
+		trait="trait_extremely_cute"
+		trait="trait_natural_psionic_warrior"
+		trait="trait_pokeball_adaptability"
+		trait="trait_directed_evolution"
+		trait = "trait_natural_sociologists"
+		trait = "trait_traditional"
+	}
+	
+	room="default_room"
+	
+	authority="auth_dictatorial"
+	civics={
+		"civic_EOE_steel_type_trainer"
+		"civic_scientific_faith"
+	}
+	government="gov_illuminated_autocracy"
+	
+	ethic="ethic_militarist"
+	ethic="ethic_fanatic_materialist"
+
+	origin="origin_protoss_shattered_ring"
+
+	flags = { EOEst custom_start_screen EOEpc }
+	
+	planet_name = "Arceus"
+	planet_class = "pc_continental"
+	initializer="protoss_shattered_ring_start"
+	system_name = "Arceus"
+	
+	graphical_culture="mammalian_01"
+	city_graphical_culture="mammalian_01"
+	
+	empire_flag={
+		icon={
+			category="eevee"
+			file="tail.dds"
+		}
+		background={
+			category="backgrounds"
+			file="v.dds"
+		}
+		colors={
+			"teal"
+			"light_blue"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler={
+		gender=male
+		name="Enolether"
+		portrait="Vaporeon01"
+		texture=0
+		hair=0
+		clothes=0
+		ruler_title_male="NAME_Navigator"
+		trait = "leader_trait_spark_of_genius"
+		leader_class = scientist
+	}
+}
+
+Swarm_of_Eeveelutions = {
+	name = "Swarm_of_Eeveelutions"
+	adjective = "Eeveelution"
+	spawn_enabled = no # yes / no / always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "SWARM"
+	
+	species={
+		class="Eeveelutions"
+		portrait="Eeveelutions"
+		name="Eeveelutions"
+		plural="Eeveelutions"
+		adjective="Eeveelutions"
+		name_list="HIVE2"
+		trait="trait_hive_mind"
+		trait="trait_survivor"
+		trait = "trait_EOE_Inheritors"
+		trait="trait_extremely_cute"
+		trait="trait_natural_psionic_warrior"
+		trait="trait_pokeball_adaptability"
+		trait="trait_directed_evolution"
+		trait="trait_rapid_breeders"
+		trait="trait_natural_sociologists"
+		trait="trait_fleeting"
+	}
+	
+	room="personality_honorbound_warriors_room"
+	
+	authority="auth_hive_mind"
+	civics={
+		"civic_eeveelutions_assimilator"
+		"civic_external_synapse"
+	}
+	government="gov_eeveelutions_assimilator"
+	
+	ethic="ethic_gestalt_consciousness"
+
+	origin="origin_post_apocalyptic"
+
+	flags = { EOEst custom_start_screen }
+	
+	planet_name = "Aiur"
+	planet_class = "pc_continental"
+	initializer="custom_starting_init_05"
+	system_name = "Golden Orb of Day"
+	
+	graphical_culture="mammalian_01"
+	city_graphical_culture="mammalian_01"
+	
+	empire_flag={
+		icon={
+			category="eevee"
+			file="OIP.dds"
+		}
+
+		background={
+			category="backgrounds"
+			file="triangle_split.dds"
+		}
+		colors={
+			"dark_purple"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler={
+		gender=female
+		name="Leptailurus"
+		portrait="Umbreon01"
+		texture=0
+		hair=0
+		clothes=0
+		ruler_title_female="Queen_of_Blades"
+		leader_class="ruler"
+		trait = "leader_trait_shipwright"
+		leader_class = governor
+	}
+}
+

@@ -1,0 +1,502 @@
+trait_EOE_Inheritors = {
+	cost = 0
+	potential_crossbreeding_chance = 1.00
+	icon = "gfx/interface/icons/traits/trait_EOE_Inheritors.png"
+
+	opposites = { "trait_nonadaptive" }
+	improves_leaders = no
+	initial = yes
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+
+	allowed_archetypes = { POKEMON}
+
+}
+
+
+
+
+trait_directed_evolution = {
+	cost = 0
+	potential_crossbreeding_chance = 1.00
+	icon = "gfx/interface/icons/traits/EOET1.png"
+
+	opposites = { "trait_nonadaptive" }
+	improves_leaders = no
+	initial = yes
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+
+	allowed_archetypes = { POKEMON}
+
+	modifier = {
+		pop_environment_tolerance = 0.2
+	}
+}
+
+trait_pokeball_adaptability = {
+	cost = 0
+	potential_crossbreeding_chance = 1.00
+	icon = "gfx/interface/icons/traits/EOET2.png"
+
+	opposites = { "trait_solitary" "trait_sedentary" "trait_unruly"}
+	improves_leaders = no
+	initial = yes
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	allowed_archetypes = { POKEMON BIOLOGICAL MACHINE }
+	species_class = {
+		Steelmons
+		Eeveelutions
+		Othermons
+	}
+	modifier = {
+		pop_housing_usage_mult = -0.2
+	}
+}
+
+# trait_centralized_incubation_system = {
+# 	cost = 2
+# 	potential_crossbreeding_chance = 1.00
+# 	icon = "gfx/interface/icons/traits/EOET3.png"
+
+
+# 	improves_leaders = no
+# 	initial = no
+# 	randomized = no
+# 	species_potential_add = {
+# 		always = no
+# 	}
+# 	species_possible_remove = {
+# 		always = no
+# 	}
+# 	species_possible_merge_add = {
+# 		always = no
+# 	}
+
+# 	allowed_archetypes = { POKEMON}
+
+# 	modifier = {
+# 		pop_growth_speed = 0.20
+# 	}
+# }
+
+trait_natural_psionic_warrior = {
+	cost = 0
+	potential_crossbreeding_chance = 1.00
+	icon = "gfx/interface/icons/traits/EOET5.dds"
+	
+	improves_leaders = no
+	initial = yes
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	allowed_archetypes = { POKEMON BIOLOGICAL MACHINE }
+	species_class = {
+		Steelmons
+		Eeveelutions
+		Othermons
+	}
+	modifier = {
+		army_damage_mult = 0.2
+		planet_jobs_worker_produces_mult = 0.025
+		
+	}
+}
+
+trait_extremely_cute = {
+	cost = 0
+	potential_crossbreeding_chance = 1.00
+	icon = "gfx/interface/icons/traits/EOET4.png"
+	opposites = { "trait_repugnant" }
+	improves_leaders = no
+	initial = yes
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+
+	allowed_archetypes = { POKEMON}
+	custom_tooltip =  TRAIT_CUTE_EFFECT
+}
+
+trait_normal_type_mega_evolution = {
+	cost = 0
+	potential_crossbreeding_chance = 0.5
+	icon = "gfx/interface/icons/EeveelutionTypes/normal_type.png"
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	allowed_archetypes = { POKEMON}
+	modifier = {
+		pop_environment_tolerance = 1
+		
+		
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_grass_type_mega_evolution = {
+	cost = 4
+	potential_crossbreeding_chance = 0.5
+	icon = "gfx/interface/icons/EeveelutionTypes/grass_type.png"
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	allowed_archetypes = { POKEMON}
+	modifier = {
+		planet_pops_food_upkeep_mult = -0.50
+		planet_jobs_food_produces_mult = 0.25
+		pop_growth_speed = 0.10
+		army_defense_damage_mult = 0.5
+		
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_fire_type_mega_evolution = {
+	cost = 4
+	potential_crossbreeding_chance = 0.5
+	icon = "gfx/interface/icons/EeveelutionTypes/fire_type.png"
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	allowed_archetypes = { POKEMON}
+	modifier = {
+		planet_metallurgists_produces_mult = 0.15
+		planet_jobs_minerals_produces_mult = 0.3
+		army_damage_mult = 0.25
+		
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_water_type_mega_evolution = {
+	cost = 4
+	potential_crossbreeding_chance = 0.5
+	icon = "gfx/interface/icons/EeveelutionTypes/water_type.png"
+	initial = no
+	randomized = no
+	improves_leaders = yes
+	advanced_trait = yes
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	allowed_archetypes = { POKEMON}
+	modifier = {
+		leader_lifespan_add = 20
+		pop_growth_speed = 0.20
+		planet_jobs_society_research_produces_mult = 0.15
+		army_health = 0.25
+		
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_electric_type_mega_evolution = {
+	cost = 4
+	potential_crossbreeding_chance = 0.5
+	icon = "gfx/interface/icons/EeveelutionTypes/electric_type.png"
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	allowed_archetypes = { POKEMON}
+	modifier = {
+		planet_jobs_energy_produces_mult = 0.35
+		army_damage_mult = 0.3
+		planet_jobs_physics_research_produces_mult = 0.2
+		
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_psychic_type_mega_evolution = {
+	cost = 4
+	potential_crossbreeding_chance = 0.5
+	icon = "gfx/interface/icons/EeveelutionTypes/psychic_type.png"
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	allowed_archetypes = { POKEMON}
+	modifier = {
+		planet_jobs_physics_research_produces_mult = 0.2
+		planet_jobs_society_research_produces_mult = 0.2
+		planet_jobs_engineering_research_produces_mult = 0.2
+		species_leader_exp_gain = 0.2
+		negative_leader_traits_species = -1
+		leader_skill_levels = 2
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_dark_type_mega_evolution = {
+	cost = 4
+	potential_crossbreeding_chance = 0.5
+	icon = "gfx/interface/icons/EeveelutionTypes/dark_type.png"
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	allowed_archetypes = { POKEMON}
+	opposites = { trait_dark_type_mega_evolution_swarm }
+	
+	modifier = {
+		pop_government_ethic_attraction = 0.50
+		planet_jobs_unity_produces_mult = 0.20
+		planet_jobs_specialist_produces_mult = 0.05
+		planet_jobs_worker_produces_mult = 0.1
+		planet_jobs_slave_produces_mult = 0.15
+
+		
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+trait_dark_type_mega_evolution_swarm = {
+	cost = 4
+	potential_crossbreeding_chance = 0.5
+	icon = "gfx/interface/icons/EeveelutionTypes/dark_type.png"
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	species_potential_add = {
+		always = no
+	}
+
+	species_possible_merge_add = {
+		always = no
+	}
+	allowed_archetypes = { POKEMON}
+	
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.20
+		planet_jobs_complex_drone_produces_mult = 0.05
+		planet_jobs_simple_drone_produces_mult = 0.1
+		pop_amenities_usage_no_happiness_mult = -0.25
+		
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_ice_type_mega_evolution = {
+	cost = 4
+	potential_crossbreeding_chance = 0.5
+	icon = "gfx/interface/icons/EeveelutionTypes/ice_type.png"
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	allowed_archetypes = { POKEMON}
+	opposites = { trait_ice_type_mega_evolution_swarm }
+	
+	modifier = {
+		planet_jobs_consumer_goods_produces_mult = 0.15
+		planet_jobs_engineering_research_produces_mult = 0.15
+		planet_jobs_rare_crystals_produces_mult = 0.20
+		planet_jobs_exotic_gases_produces_mult = 0.20
+		planet_jobs_volatile_motes_produces_mult = 0.20
+		
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_ice_type_mega_evolution_swarm = {
+	cost = 4
+	potential_crossbreeding_chance = 0.5
+	icon = "gfx/interface/icons/EeveelutionTypes/ice_type.png"
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	species_potential_add = {
+		always = no
+	}
+
+	species_possible_merge_add = {
+		always = no
+	}
+	allowed_archetypes = { POKEMON}
+	
+	modifier = {
+		planet_jobs_minerals_produces_mult = 0.25
+		planet_jobs_engineering_research_produces_mult = 0.15
+		planet_jobs_rare_crystals_produces_mult = 0.20
+		planet_jobs_exotic_gases_produces_mult = 0.20
+		planet_jobs_volatile_motes_produces_mult = 0.20
+		
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_fairy_type_mega_evolution = {
+	cost = 4
+	potential_crossbreeding_chance = 0.5
+	icon = "gfx/interface/icons/EeveelutionTypes/fairy_type.png"
+	initial = no
+	randomized = no
+	improves_leaders = yes
+	advanced_trait = yes
+	allowed_archetypes = { POKEMON}
+	opposites = { trait_fairy_type_mega_evolution_swarm }
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+
+	modifier = {
+	    species_empire_size_mult = -0.45
+		pop_growth_from_immigration = 0.50
+		pop_resettlement_cost_mult = -0.50
+		
+		
+	}
+
+	slave_cost = {
+		energy = 50
+	}
+	
+}
+
+trait_fairy_type_mega_evolution_swarm = {
+	cost = 4
+	potential_crossbreeding_chance = 0.5
+	icon = "gfx/interface/icons/EeveelutionTypes/fairy_type.png"
+	initial = no
+	randomized = no
+	improves_leaders = yes
+	advanced_trait = yes
+	species_potential_add = {
+		always = no
+	}
+	
+	species_possible_merge_add = {
+		always = no
+	}
+	allowed_archetypes = { POKEMON}
+	modifier = {
+	    species_empire_size_mult = -0.50
+		pop_resettlement_cost_mult = -0.50
+		
+		
+	}
+
+	slave_cost = {
+		energy = 50
+	}
+	
+}
+
+#trait_nuclear_type_mega_evolution = {
+#	cost = 4
+#	potential_crossbreeding_chance = 0.5
+#	icon = "gfx/interface/icons/EeveelutionTypes/nuclear_type.png"
+#	initial = no
+#	randomized = no
+#	advanced_trait = yes
+#	allowed_archetypes = { POKEMON}
+#	modifier = {
+#		planet_jobs_physics_research_produces_mult = 0.20
+#		pc_nuked_habitability = 1.0
+#	}
+#	
+#}

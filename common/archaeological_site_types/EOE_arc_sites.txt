@@ -1,0 +1,358 @@
+site_eeveelab = {
+	desc = "site_eeveelab_intro"
+	picture = GFX_evt_EOE_protossRelic
+	stages = 3
+	weight = {
+		base = 0
+	}
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		is_ai = no
+		default_site_visible_trigger = yes
+	}
+
+
+	stage = {
+		difficulty = 0
+		icon = GFX_archaeology_runes_C1
+		event = eevent.6100
+	}
+
+	stage = {
+		difficulty = 0
+		icon = GFX_archaeology_runes_C2
+		event = eevent.6105
+	}
+
+	stage = {
+		difficulty = 0
+		icon = GFX_archaeology_runes_C3
+		event = eoestartleader.1
+	}
+
+
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}
+
+EOE_ProtossBase = {
+	desc = "EOE_ProtossBase_intro"
+	picture = GFX_evt_EOE_ProtossBase1
+	stages = 3
+	weight = {
+		base = 0
+	}
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		is_ai = no
+		default_site_visible_trigger = yes
+	}
+
+
+	stage = {
+		difficulty = 0
+		icon = GFX_archaeology_runes_C1
+		event = eevent.10
+	}
+
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_C2
+		event = eevent.11
+	}
+
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_C3
+		event = eevent.12
+	}
+
+
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}
+
+
+EOE_ProtossRelic = {
+	desc = "EOE_ProtossRelic_intro"
+	picture = GFX_evt_EOE_protossRelic
+	stages = 5
+	weight = {
+		base = 0
+	}
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		is_ai = no
+		default_site_visible_trigger = yes
+	}
+
+
+	stage = {
+		difficulty = 0
+		icon = GFX_archaeology_runes_C1
+		event = eevent.20
+	}
+
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_C2
+		event = eevent.21
+	}
+
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_C3
+		event = eevent.22
+	}
+
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_C4
+		event = eevent.23
+	}
+
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_C5
+		event = eevent.24
+	}
+
+
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}
+
+
+EOE_Dimension_Ark = {
+	desc = "EOE_Dimension_Ark_intro"
+	picture = GFX_evt_EOE_Dimension_Ark_1
+	stages = 4
+	weight = {
+		base = 0
+	}
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		is_ai = no
+		default_site_visible_trigger = yes
+	}
+
+
+
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_C1
+		event = eevent.31
+	}
+
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_C2
+		event = eevent.32
+	}
+
+	stage = {
+		difficulty = 0
+		icon = GFX_archaeology_runes_C3
+		event = eevent.33
+	}
+	
+	stage = {
+		difficulty = 3
+		icon = GFX_archaeology_runes_C4
+		event = eevent.34
+	}
+	
+
+
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}
+
+
+site_EOE_Cthugha = {
+	desc = "site_EOE_Cthugha_intro"
+	picture = GFX_evt_alien_ruins
+	stages = 4
+	weight = {
+		base = 0
+	}
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		is_ai = no
+		default_site_visible_trigger = yes
+	}
+
+
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_C1
+		event = EOE_branch.4
+	}
+
+	stage = {
+		difficulty = 5
+		icon = GFX_archaeology_runes_C2
+		event = EOE_branch.5
+	}
+
+	stage = {
+		difficulty = 5
+		icon = GFX_archaeology_runes_C3
+		event = EOE_branch.6
+	}
+	
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_C4
+		event = EOE_branch.7
+	}
+	
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}
+
+site_EOE_eevium_z = {
+	desc = "site_EOE_eevium_z_intro"
+	picture = GFX_evt_alien_ruins
+	stages = 3
+	weight = {
+		base = 0
+	}
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		is_ai = no
+		default_site_visible_trigger = yes
+	}
+
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_C1
+		event = EOE_branch.139
+	}
+
+	stage = {
+		difficulty = 0
+		icon = GFX_archaeology_runes_C2
+		event = EOE_branch.140
+	}
+
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_C3
+		event = EOE_branch.141
+	}
+	
+
+	
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}
+
+site_necrozma_systeam = {
+	desc = "site_EOE_ultra_city_intro"
+	picture = GFX_evt_alien_ruins
+	stages = 3
+	weight = {
+		base = 0
+	}
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		is_ai = no
+		default_site_visible_trigger = yes
+	}
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_C1
+		event = EOE_branch.153
+	}
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_C1
+		event = EOE_branch.154
+	}
+	stage = {
+		difficulty = 3
+		icon = GFX_archaeology_runes_C1
+		event = EOE_branch.155
+	}
+}
+
+# EOE_GFZongBu = {
+# 	desc = "EOE_GFZongBu_intro"
+# 	picture = GFX_evt_EOE_ProtossBase1
+# 	stages = 6
+# 	weight = {
+# 		base = 0
+# 	}
+# 	allow = {
+# 		exists = leader
+# 		leader = { leader_class = scientist }    #大饼区
+# 	}
+# 	visible = {
+# 		default_site_visible_trigger = yes
+# 		is_ai = no
+# 	}
+# 	stage = {
+# 		difficulty = 1
+# 		icon = GFX_archaeology_runes_C1
+# 		event = EOEjifei3.2
+# 	}
+
+# 	# stage = {
+# 	# 	difficulty = 1
+# 	# 	icon = GFX_archaeology_runes_C2
+# 	# 	event = EOEjifei3.10
+# 	# }
+
+# 	# stage = {
+# 	# 	difficulty = 1
+# 	# 	icon = GFX_archaeology_runes_C3
+# 	# 	event = eevent.12
+# 	# }
+
+
+# 	on_roll_failed = {
+# 		from = {
+# 			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+# 		}
+# 	}
+# }

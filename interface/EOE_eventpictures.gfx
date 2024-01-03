@@ -1,0 +1,395 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_evt_EOE_event1"
+		texturefile = "gfx/event_pictures/EOE_event1.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_event2"
+		texturefile = "gfx/event_pictures/EOE_event2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_event3"
+		texturefile = "gfx/event_pictures/EOE_event3.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_event4"
+		texturefile = "gfx/event_pictures/EOE_event4.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_event5"
+		texturefile = "gfx/event_pictures/EOE_event5.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_protossRelic"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_protossrelic.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Umbrella1"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Umbrella1.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Umbrella2"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Umbrella2.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Canned_Espeon"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Canned_Espeon.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_ProtossBase1"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_ProtossBase1.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_ProtossBase2"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_ProtossBase2.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Have_an_ice"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Have_an_ice.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Angry_Glaceon"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Angry_Glaceon.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Comforted"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Comforted.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_ARK"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_ARK.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_curator_room"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_curator_room.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Tempest"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Tempest.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Terran_Force"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Terran_Force.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Execution"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Execution.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_nuclear_warning"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_nuclear_warning.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Dimension_Ark_1"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Dimension_Ark_1.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Dimension_Ark_2"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Dimension_Ark_2.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Dimension_Ark_3"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Dimension_Ark_3.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Dimension_Ark_4"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Dimension_Ark_4.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Dimension_Ark_5"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Dimension_Ark_5.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Stagnant_cabin"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Stagnant_cabin.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Brain_in_can"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Brain_in_can.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Orbital_Drop"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Orbital_Drop.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Elena_tomb_room"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Elena_tomb_room.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_wild_eeveelution_discovered"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_wild_eeveelution_discovered.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_wild_eeveelution_hunt"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_wild_eeveelution_hunt.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_fire_vampires_city_ruins"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_fire_vampire_city_ruins.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_sc_painting"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_sc_painting.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_puzzle"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_puzzle.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_no_video_feed"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_no_video_feed.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_cthugha_calling"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_cthugha_calling.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_trap"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_trap.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Protoss_buliding"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Protoss_buliding.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_mental_omega"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_mental_omega.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_underground_ecosystem"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_underground_ecosystem.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_acient_facilities"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_acient_facilities.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_acient_facilities_1"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_acient_facilities_1.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_A_glance_on_acient_god"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_A_glance_on_acient_god.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_reactor"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_reactor.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_The_Vermillion_Problem"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_The_Vermillion_Problem.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_JingJiChang"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_JingJiChang.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		#对战
+		name = "GFX_evt_EOE_Milotic"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Milotic.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Ferrothorn"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Ferrothorn.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Porygon"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Porygon.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		#对战
+		name = "GFX_evt_EOE_Eevee_VS_Milotic"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Eevee_VS_Milotic.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Eevee_VS_Ferrothorn"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Eevee_VS_Ferrothorn.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Eevee_VS_Porygon"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Eevee_VS_Porygon.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		#对战
+		name = "GFX_evt_EOE_Leafeon_VS_Milotic"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Leafeon_VS_Milotic.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Leafeon_VS_Ferrothorn"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Leafeon_VS_Ferrothorn.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Leafeon_VS_Porygon"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Leafeon_VS_Porygon.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		#对战
+		name = "GFX_evt_EOE_Hezi_VS_Milotic"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Hezi_VS_Milotic.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Hezi_VS_Ferrothorn"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Hezi_VS_Ferrothorn.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Hezi_VS_Porygon"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Hezi_VS_Porygon.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		#对战
+		name = "GFX_evt_EOE_Warbot_VS_Milotic"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Warbot_VS_Milotic.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Warbot_VS_Ferrothorn"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Warbot_VS_Ferrothorn.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_Warbot_VS_Porygon"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_Warbot_VS_Porygon.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_protoss_Jingjichang"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_protoss_Jingjichang.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_mega_evolution"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_mega_evolution.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+
+	spriteType = {
+		name = "GFX_evt_EOE_ship_warping"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_ship_warping.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+
+
+
+
+
+
+
+	####遗珍
+	SpriteType = {
+		name = "GFX_relic_EOE_Warp_gate"
+		texturefile = "gfx/interface/icons/relics/GFX_relic_EOE_Warp_gate.png"
+		legacy_lazy_load = no
+	}
+	##地块
+	SpriteType = {
+		name = "EOE_district_rw_science"
+		texturefile = "gfx/interface/icons/deposits/EOE_district_rw_science.dds"
+		legacy_lazy_load = no
+	}
+	#########飞升
+	spriteType = {
+		name = "GFX_ap_mega_evolution_EOE"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_mega_evolution_EOE.dds"
+		alwaystransparent = yes
+	}
+	#########起源
+	spriteType = {
+		name = "GFX_origin_EOE_pokemon_trainer"
+		texturefile = "gfx/event_pictures/origins/GFX_evt_EOE_origin_trainer.dds"
+		alwaystransparent = yes
+	}
+	#############法令
+	spriteType = {
+		name = "GFX_breed_pokemon"
+		textureFile = "gfx/interface/icons/GFX_breed_pokemon.dds"
+	}
+}

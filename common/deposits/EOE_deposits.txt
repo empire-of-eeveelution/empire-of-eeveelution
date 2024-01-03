@@ -1,0 +1,663 @@
+d_EOE_ringworld_Ancient_ruins_1 = {
+	icon = d_city_ruins
+    is_for_colonizable = yes
+	time = 365
+	category = deposit_cat_blockers	
+	
+	potential = { always = no }
+		
+	planet_modifier = { 
+		planet_max_districts_add = -1
+		planet_housing_add = -5
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 250
+		}
+	}
+	on_cleared = {
+		random_list = {
+			33 = {
+				owner = { add_resource = { minor_artifacts = 1 } }
+			}
+			33 = {
+				owner = { add_resource = { minor_artifacts = 3 } }
+			}
+			33 = {
+				owner = { add_resource = { minor_artifacts = 5 } }
+			}
+		}
+	}
+}
+
+d_EOE_ringworld_Ancient_ruins_2 = {
+	icon = d_city_ruins
+    is_for_colonizable = yes
+	time = 365
+	category = deposit_cat_blockers	
+	
+	potential = { always = no }
+		
+	planet_modifier = { 
+		planet_max_districts_add = -1
+		planet_housing_add = -5
+		job_artisan_add = -2
+		job_foundry_add = -3
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 250
+		}
+	}
+	on_cleared = {
+		random_list = {
+			33 = {
+				owner = { add_resource = { minor_artifacts = 1 } }
+			}
+			33 = {
+				owner = { add_resource = { minor_artifacts = 3 } }
+			}
+			33 = {
+				owner = { add_resource = { minor_artifacts = 5 } }
+			}
+		}
+	}
+}
+
+d_EOE_ringworld_Broken_tunnel_1 = {
+	icon = d_mining_tunnels
+    is_for_colonizable = yes
+	time = 360
+	category = deposit_cat_blockers	
+	
+	potential = { always = no }
+		
+	planet_modifier = { 
+		planet_max_districts_add = -1
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 500
+		}
+	}
+	blocker_swap_types = {
+		d_EOE_ringworld_ancient_tech_district_1
+	}
+	on_cleared = {
+		owner = {
+			add_resource = {
+				rare_crystals = 50
+				minerals = 500
+			}
+		}
+		random_list = {
+			33 = {
+				owner = { add_resource = { minor_artifacts = 1 } }
+			}
+			33 = {
+				owner = { add_resource = { minor_artifacts = 3 } }
+			}
+			33 = {
+				owner = { add_resource = { minor_artifacts = 5 } }
+			}
+		}
+	}
+}
+
+d_EOE_ringworld_Broken_tunnel_2 = {
+	icon = d_mining_tunnels
+    is_for_colonizable = yes
+	time = 360
+	category = deposit_cat_blockers	
+	
+	potential = { always = no }
+		
+	planet_modifier = { 
+		planet_max_districts_add = -1
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 500
+		}
+	}
+	blocker_swap_types = {
+		d_EOE_ringworld_ancient_tech_district_1
+	}
+	on_cleared = {
+		owner = {
+			add_resource = {
+				volatile_motes = 50
+				minerals = 500
+			}
+		}
+		random_list = {
+			33 = {
+				owner = { add_resource = { minor_artifacts = 1 } }
+			}
+			33 = {
+				owner = { add_resource = { minor_artifacts = 3 } }
+			}
+			33 = {
+				owner = { add_resource = { minor_artifacts = 5 } }
+			}
+		}
+	}
+}
+
+d_EOE_ringworld_Broken_tunnel_3 = {
+	icon = d_mining_tunnels
+    is_for_colonizable = yes
+	time = 360
+	category = deposit_cat_blockers	
+	
+	potential = { always = no }
+		
+	planet_modifier = { 
+		planet_max_districts_add = -1
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 500
+		}
+	}
+	on_cleared = {
+		owner = {
+			add_resource = {
+				exotic_gases = 50
+				minerals = 500
+			}
+		}
+		random_list = {
+			33 = {
+				owner = { add_resource = { minor_artifacts = 1 } }
+			}
+			33 = {
+				owner = { add_resource = { minor_artifacts = 3 } }
+			}
+			33 = {
+				owner = { add_resource = { minor_artifacts = 5 } }
+			}
+		}
+	}
+}
+
+
+
+
+@rw_maintenance = 5
+@rw_maintenance_sr = 2
+
+d_EOE_arcane_generator = { #保留以防万一哪一天蠢驴给它删了
+	is_for_colonizable = yes
+	icon = "d_station_reactor"
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_amenities_add = 5
+	}
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			trigger = {
+				planet = { has_district = district_rw_farming	}
+			}
+			volatile_motes = @rw_maintenance_sr
+			energy = @rw_maintenance
+		}
+		produces = {
+			trigger = {
+				OR = {
+					planet = { has_district = district_rw_commercial }
+					planet = { has_district = district_rw_generator	}
+				}
+			}
+			rare_crystals = @rw_maintenance_sr
+			energy = @rw_maintenance
+		}
+		produces = {
+			trigger = {
+				planet = { has_district = district_rw_science }
+			}
+			exotic_gases = @rw_maintenance_sr
+			energy = @rw_maintenance
+		}
+		produces = {
+			trigger = {
+				OR = {
+					planet = { has_district = district_rw_city }
+					planet = { has_district = district_rw_hive }
+					planet = { has_district = district_rw_nexus	}
+				}
+			}
+			energy = @rw_maintenance
+		}
+		produces = {
+			trigger = {
+				planet = { has_district = district_rw_industrial }
+			}
+			energy = @rw_maintenance
+			volatile_motes = @rw_maintenance_sr
+		}
+	}
+}
+
+d_EOE_ringworld_ancient_tech_district = {
+	is_for_colonizable = yes
+	icon = EOE_district_rw_science
+	category = deposit_cat_rare
+
+	potential = { always = no }
+	
+	planet_modifier = {
+		job_researcher_add = 2
+		planet_researchers_produces_mult = 0.05
+	}
+	
+}
+
+d_EOE_ringworld_ancient_tech_district_1 = {
+	is_for_colonizable = yes
+	icon = EOE_district_rw_science
+	category = deposit_cat_rare
+
+	potential = { always = no }
+	
+	planet_modifier = {
+		job_researcher_add = 2
+		planet_researchers_produces_mult = 0.05
+	}
+	
+}
+
+
+
+d_EOE_ringworld_Refuge_City= {
+	is_for_colonizable = yes
+	icon = d_mining_tunnels
+	category = deposit_cat_rare
+
+	potential = { always = no }
+	
+	planet_modifier = {
+		job_farmer_add = 1
+		job_artisan_add = 1
+		planet_housing_add = 2
+		planet_jobs_unity_produces_mult = 0.1
+		
+	}
+	
+}
+
+
+d_EOE_wild_eeveelution_habitat = {
+	icon = d_EOE_wild_eeveelution_habitat
+    is_for_colonizable = yes
+	time = 720
+	category = deposit_cat_blockers	
+	
+	potential = { always = no }
+		
+	planet_modifier = { 
+		planet_max_districts_add = -3
+		job_culture_worker_add = 2
+		planet_jobs_society_research_produces_mult = 0.1
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 500
+			food = 200
+		}
+	}
+	blocker_swap_types = {
+		d_EOE_wild_eeveelution_reserve
+	}
+}
+
+d_EOE_wild_eeveelution_reserve = {
+	is_for_colonizable = yes
+	icon = d_EOE_wild_eeveelution_habitat
+	category = deposit_cat_rare
+
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_max_districts_add = -1
+		job_culture_worker_add = 3
+		planet_jobs_society_research_produces_mult = 0.15
+	}
+	
+}
+
+d_EOE_PC_center_building_hive_capital = {
+	is_for_colonizable = yes
+	icon = d_EOE_PC_center_building_hive_capital
+	category = deposit_cat_rare
+
+	potential = { always = no }
+	
+	planet_modifier = {
+		job_synapse_drone_add = -2
+		job_EOE_synapse_drone_add = 2
+	}
+	
+}
+
+d_EOE_PC_center_building_hive_major_capital = {
+	is_for_colonizable = yes
+	icon = d_EOE_PC_center_building_hive_capital
+	category = deposit_cat_rare
+
+	potential = { always = no }
+	
+	planet_modifier = {
+		job_synapse_drone_add = -3
+		job_EOE_synapse_drone_add = 3
+	}
+	
+}
+
+d_EOE_PC_center_building_imperial_hive_capital = {
+	is_for_colonizable = yes
+	icon = d_EOE_PC_center_building_hive_capital
+	category = deposit_cat_rare
+
+	potential = { always = no }
+	
+	planet_modifier = {
+		job_synapse_drone_add = -5
+		job_EOE_synapse_drone_add = 5
+	}
+	
+}
+
+d_EOE_PC_center_building_hab_capital = {
+	is_for_colonizable = yes
+	icon = d_EOE_PC_center_building_hive_capital
+	category = deposit_cat_rare
+
+	potential = { always = no }
+	
+	planet_modifier = {
+		job_synapse_drone_add = -2
+		job_EOE_synapse_drone_add = 2
+	}
+	
+}
+
+d_EOE_PC_center_building_hab_major_capital = {
+	is_for_colonizable = yes
+	icon = d_EOE_PC_center_building_hive_capital
+	category = deposit_cat_rare
+
+	potential = { always = no }
+	
+	planet_modifier = {
+		job_synapse_drone_add = -3
+		job_EOE_synapse_drone_add = 3
+	}
+	
+}
+
+d_EOE_protoss_relic = {
+	is_for_colonizable = yes
+	icon = d_EOE_protoss_relic
+	category = deposit_cat_rare
+
+	potential = { always = no }
+	
+	planet_modifier = {
+		job_researcher_add = 2
+		planet_researchers_produces_mult = 0.1
+	}
+	
+}
+
+
+d_EOE_scientific_faith_1 = {
+	is_for_colonizable = yes
+	icon = d_EOE_PC_center_building_hive_capital
+	category = deposit_cat_rare
+
+	potential = { always = no }
+	
+	planet_modifier = {
+    	job_politician_add= -1
+	}
+	
+}
+d_EOE_scientific_faith_1_a = {
+	is_for_colonizable = yes
+	icon = d_EOE_PC_center_building_hive_capital
+	category = deposit_cat_rare
+
+	potential = { always = no }
+	
+	planet_modifier = {
+    	job_head_researcher_add = 1
+	}
+	
+}
+
+d_EOE_scientific_faith_2 = {
+	is_for_colonizable = yes
+	icon = d_EOE_PC_center_building_hive_capital
+	category = deposit_cat_rare
+
+	potential = { always = no }
+	
+	planet_modifier = {
+		job_politician_add = -2
+    	
+	}
+	
+}
+
+d_EOE_scientific_faith_2_a = {
+	is_for_colonizable = yes
+	icon = d_EOE_PC_center_building_hive_capital
+	category = deposit_cat_rare
+
+	potential = { always = no }
+	
+	planet_modifier = {
+		
+    	job_head_researcher_add = 2
+	}
+	
+}
+
+d_EOE_scientific_faith_3 = {
+	is_for_colonizable = yes
+	icon = d_EOE_PC_center_building_hive_capital
+	category = deposit_cat_rare
+
+	potential = { always = no }
+	
+	planet_modifier = {
+		job_politician_add = -3
+    	
+	}
+	
+}
+
+d_EOE_scientific_faith_3_a = {
+	is_for_colonizable = yes
+	icon = d_EOE_PC_center_building_hive_capital
+	category = deposit_cat_rare
+
+	potential = { always = no }
+	
+	planet_modifier = {
+		
+    	job_head_researcher_add = 3
+	}
+	
+}
+
+d_EOE_Pokemon_Jingjichang = {
+	is_for_colonizable = yes
+	icon = d_EOE_Pokemon_Jingjichang
+	category = deposit_cat_rare
+
+	potential = { always = no }
+	
+	planet_modifier = {
+		
+    	job_duelist_add = 3
+	}
+	
+}
+
+d_EOE_wild_eevee_protoss_city_ruin = {
+	icon = d_city_ruins
+    is_for_colonizable = yes
+	time = 360
+	category = deposit_cat_blockers	
+	
+	potential = { always = no }
+		
+	planet_modifier = { 
+		planet_max_districts_add = -1
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			minerals = 200
+		}
+	}
+	blocker_swap_types = {
+		d_EOE_wild_eevee_protoss_city
+	}
+	on_cleared = {
+		owner = {
+			add_resource = {
+				rare_crystals = 50
+			}
+		}
+		random_list = {
+			33 = {
+				owner = { add_resource = { minor_artifacts = 1 } }
+			}
+			33 = {
+				owner = { add_resource = { minor_artifacts = 3 } }
+			}
+			33 = {
+				owner = { add_resource = { minor_artifacts = 5 } }
+			}
+		}
+	}
+}
+
+d_EOE_wild_eevee_protoss_city = {
+	is_for_colonizable = yes
+	icon = d_city
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			 owner = { NOT = { has_ethic = ethic_gestalt_consciousness }     } 
+		}
+		planet_housing_add = 5
+		planet_amenities_add = 10	
+		planet_max_buildings_add = 1
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			 owner = { has_ethic = ethic_gestalt_consciousness      } 
+		}
+		planet_housing_add = 5
+		planet_amenities_no_happiness_add = 10
+		planet_max_buildings_add = 1
+	}
+}
+
+d_EOE_ghost_trace = { #消散传送门痕迹的研究促进了物理学
+	is_for_colonizable = yes
+	icon = d_wormhole
+	category = deposit_cat_rare
+
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_max_buildings_add = -1
+		planet_jobs_physics_research_produces_mult = 0.05
+	}
+	
+}
+
+d_EOE_ghost_portal = { #传送门区域的研究促进了物理学
+	is_for_colonizable = yes
+	icon = d_wormhole
+	category = deposit_cat_rare
+
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_max_buildings_add = -1
+		planet_jobs_physics_research_produces_mult = 0.05
+	}
+	
+}
+d_EOE_Broken_tunnel = {
+	icon = d_mining_tunnels
+    is_for_colonizable = yes
+	time = 720
+	category = deposit_cat_blockers	
+	
+	potential = { always = no }
+		
+	planet_modifier = { 
+		planet_max_districts_add = -1
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 2000
+		}
+	}
+	blocker_swap_types = {
+		d_EOE_ringworld_ancient_tech_district_1
+	}
+	on_cleared = {
+		random_list = {
+			33 = {
+				owner = { add_resource = { minor_artifacts = 1 } }
+			}
+			33 = {
+				owner = { add_resource = { minor_artifacts = 3 } }
+			}
+			33 = {
+				owner = { add_resource = { minor_artifacts = 5 } }
+			}
+		}
+	}
+}
+
+
+d_EOE_mining_station = { 
+	is_for_colonizable = yes
+	icon = d_mining_tunnels
+	category = deposit_cat_rare
+
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_max_districts_add = 2
+		district_hab_mining_max = 3
+	}
+	
+}

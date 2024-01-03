@@ -1,0 +1,239 @@
+EEVEELUTION = {
+
+	category = "Eeveelution"
+	randomized = yes
+	alias = "Eeveelution"
+  ship_names = {
+    corvette = {
+    "Pidgey" "Spearow" "Zubat" "Hoothoot" "Ledyba" "Natu" "Starly" "Pidove" "Woobat" "Archen" "Fletchling" "pikipek" "Horsea" "Staryu" "Chinchou" "Carvanha" "Barboach" "Dratini" "Vibrava" "Denio" "Weedle" "Gastly"
+    }
+    destroyer = {
+    "Rookidee" "Corviknight" "Beedrill" "Doduo"  "Golbat" "Ledian" "Noctowl" "Pidgeotto" "Taillow" "Staravia" "Chatot" "Rotom" "Swoobat" "Ducklett" "Vullaby" "Hawlucha" "Trumbeak" "Watteral" "Ninjask" "Goldeen" "Finneon" "Lanturn" "Sharpedo" "Venomoth" "Haunter"
+    }
+    cruiser = {
+    "Corvisquire" "Crobat" "Aerodactyl" "Xatu" "Murkow" "Mantine" "Pidgeot" "Fearow" "Dodrio" "Wingull" "Yanmega" "Tranquill" "Archeops" "Rufflet" "Mandibuzz" "Fletchinder" "Toucannon" "Seadra" "Lumineon" "Zweilous"
+    }
+    battleship = {
+    "Dragonite" "Swellow" "Salamence" "Staraptor" "Sky Shaymin" "Braviary" "Talonflame" "Seaking" "Starmine" "Kindra" "Charizard" "Flygon" "Hydreigon"
+    }
+    titan = {
+    "Gyarados" "Rayquaza" "Thundurus" "Landorus" "Milotic" "Cresselia"
+    }
+    colossus = {
+    "Moltres" "Zapdos" "Articuno" "Yveltal"
+    }
+    juggernaut = {
+    "Lugia" "Ho-Oh" "Altaria" "Wailord" "Lapras"
+    }
+    constructor = {
+    "Difblim" "Magikarp" "Skiploom" "Jumpluff" "Feebas" "Luvdisc" "Gorebyss" "Slowpoke" "Bibarel" "Beautify" "Dustox" "Cutiefly"
+    }
+    colonizer = {
+    "Drifblim" "Masquerain" "Pelipper" "Vespiquen"
+    }
+    sponsored_colonizer = {
+    "Drifblim" "Masquerain" "Pelipper" "Vespiquen"
+    }
+    science = {
+    "Emolga" "Abra" "Uxie" "Mesprit" "Azelf" "Elgyem" "Beheeyem" "Espurr" "Cosmog" "Hatenna" "Hattrem" "Misdreavus"
+    }
+    transport = {
+    "Swablu" "Cramorant" "Wailmer" "Whiscash" "Delibird" "Hoopa"
+    }
+    military_station_small = {
+    "Minior" "Lunatone" "Solrock" "Rolycoly" "Geodude" "Graveler" "Golem" "Probopass"
+    }
+    ion_cannon = {
+    "Slowbrow" "Tentacruel" "Relicanth"
+    }
+    mew = {
+    "Mew"
+    }
+    latias = {
+    "Latias"
+    }
+    reshiram = {
+    "Reshiram"
+    }
+  }
+  
+  
+  ## Borrowing the human1 names for some of these for now... I guess it makes sense considering the creators.
+  fleet_names = {
+		sequential_name = HUMAN1_FLEET
+	}
+
+	army_names = {
+		machine_defense = {
+			sequential_name = HUMAN1_PLANETARYGUARD
+		}
+
+		machine_assault_1 = {
+			sequential_name = HUMAN1_EXPEDITIONARYFORCE
+		}
+
+		machine_assault_2 = {
+			sequential_name = HUMAN1_EXPEDITIONARYFORCE
+		}
+
+		machine_assault_3 = {
+			sequential_name = HUMAN1_EXPEDITIONARYFORCE
+		}
+
+		defense_army = {
+			sequential_name = HUMAN1_PLANETARYGUARD
+		}
+
+		assault_army = {
+			sequential_name = HUMAN1_EXPEDITIONARYFORCE
+		}
+
+		slave_army = {
+			sequential_name = HUMAN1_INDENTUREDRIFLES
+		}
+
+		clone_army = {
+			sequential_name = HUMAN1_CLONEARMY
+		}
+
+		undead_army = {
+			sequential_name = HUMAN1_DREADCOMMANDO
+		}
+
+		robotic_army = {
+			sequential_name = HUMAN1_HUNTERKILLERGROUP
+		}
+
+		robotic_defense_army = {
+			sequential_name = HUMAN1_GROUNDDEFENSEMATRIX
+		}
+
+		psionic_army = {
+			sequential_name = HUMAN1_PSICOMMANDO
+		}
+
+		xenomorph_army = {
+			sequential_name = HUMAN1_BIOWARFAREDIVISION
+		}
+
+		gene_warrior_army = {
+			random_names = {
+				HUMAN1_ARMY_SARC-AGladiators HUMAN1_ARMY_SARC-BWidowmakers HUMAN1_ARMY_SARC-CImmortals HUMAN1_ARMY_SARC-DBerserkers HUMAN1_ARMY_SARC-EAssassins
+				HUMAN1_ARMY_SARC-FReapers HUMAN1_ARMY_SARC-GNighthawks HUMAN1_ARMY_SARC-HDesperados HUMAN1_ARMY_SARC-IGreyKnights HUMAN1_ARMY_SARC-JRoughnecks
+			}
+			sequential_name = HUMAN1_BIOENGINEEREDSQUADRON
+		}
+
+		occupation_army = {
+			sequential_name = HUMAN1_GARRISONFORCE
+		}
+
+		robotic_occupation_army = {
+			sequential_name = HUMAN1_MECHANIZEDGARRISON
+		}
+
+		primitive_army = {
+			sequential_name = HUMAN1_PRIMITIVEARMY
+		}
+		industrial_army = {
+			sequential_name = HUMAN1_INDUSTRIALARMY
+		}
+		postatomic_army = {
+			sequential_name = HUMAN1_POSTATOMICARMY
+		}
+	}
+  planet_names = {
+
+#name them after regions and towns in pokemon, obviously.
+		generic = {
+			names = { "Accumula" "Alfornada" "Ambrette" "Anistar" "Anvillet" "Artazon" "Aspertia" "Azaela Planet" "Ballonlea" "Black"  "Blackthorn" "Cabo Poco" "Camphrier" "Canalave" "Cascarrafa" "Castelia" "Celadon" "Celestic" "Cerulean" "Cherrygrove" "Cianwood" "Circhester" "Cortondo" "Courmarine" "Couriway" "Cyllage" "Dendemille" "Diamond" "Driftviel" "Ecruteak" "Eterna" "Ever Grande" "Fallarbore" "Floaroma" "Floccesy" "Fortree" "Fuchsia" "Geosenge" "Goldenrod" "Hammerlocke" "Hau'oli" "Hulbury" "Humilau" "Icirrus" "Iki" "Jubilife" "Kiloude" "Konikoni" "Lacunosa" "Lavender" "Laverre" "Letimas" "Los Platos" "Lumiose" "Mahogany" "Malie" "Mauville" "Medali" "Mesagoza" "Mistraltron" "Montenevera" "Motostoke" "Nacrene" "Nuvema" "Oldale" "Olivine" "Opelucid" "Oreburgh" "Pacifidlog" "Pallet" "Pastoria" "Petalburg" "Pewter" "Po" "Postwick" "Rustboro" "Saffron" "Santalune" "Shalour" "Slateport" "Stow-on-Side" "Solaceon" "Spikemuth" "Striaton" "Tapu" "Turffield" "Undella" "Vaniville" "Veilstone" "Vermilion" "Violet" "Viridian" "Wedgehurst" "Wyndon" "Zapapico" "Agate" "Gateon" "Pyrite" "The Under"  "Axle" "Baram" "Boyleland" "Capim" "Centra" "Chicole" "Cocona" "Easterly" "Fall" "Haruba" "Lively" "Mintale" "Noe" "Northerly" "Puelworld" "Ryme" "Shra" "Serene" "Shaymin" "Tilt" "Vienworld" "Westerly" "Winworld"
+				
+			}
+		}
+
+		pc_tropical = {
+			names = { "Littleroot" "Mossdeep" "New Bark" "Twinleaf" "Verdanturf" "White Forest" "Leaf" "Mossgreen" "Arborville" "Banana Slakoth" "Shroomish" "Arrowroot" "Bewilder" "Chocovine" "Dustox" "Emeragrove" "Greenstation" "Flower Garden" "Allearth" "Okoya"
+				
+			}
+		}
+
+		pc_continental = {
+			names = { "Gaiva" "Gardenia" "Mulberry" "Rifure" "Rota" "Sable" "Blue Moon" "Eggseter" "Florando" "Catallia" "Bonita" "Greenfield" "Len" "Marion" "Maroon" "Megi" "Scarlet" "Sunflora" "Whitestone" "Foothill" "LaRousse" "Petalburg" "Rinshin" "Alamos" "Brussel" "Camellia" "Daybreak" "Gracidea" "Neighborly" "Sandalstraw" "Ambiga" "Astilbe" "Eindoak" "Ferroseed" "Luxuria" "New Tork" "Rainbow Valley" "Roshan" "Stonesthrow" "Vertress""Azoth" "Brackish" "Calanthe" "Fleurrh" "Gloire" "Joule" "Odyssey" "Orsay" "Starfall" "Fula" "Milyfa"
+				
+			}
+		}
+
+		pc_gaia = {
+			names = { "Pokelantis" "Pokemopolis" "Celebi" "Jirachi" "Deoxys" "Phione" "Manaphy" "Shaymin" "Arceus" "Keldeo" "Hoopa" "Zeraora" "Xerneas" "Solgaleo" "Lunala" "Groudon" "Ho-Oh" "Lugia" "Kyogre" "Virizion" "Cresselia" "Suicune" "Raikou" "Entei"
+				
+			}
+		}
+
+		pc_ocean = {
+			names = { "Lilycove" "Seafolk" "Sunnyshore" "Acapulco" "Camomile" "Hutber" "Potpourri" "Sayda" "Seafoam" "Ascorbia" "Butwal" "Celopatra" "Fairchild" "Golden" "Hamlin" "Knnow" "Kumquat" "Mandarin" "Mikan" "Murcott" "Navel" "Pinkan" "Pummelo" "Rind" "Grapefruit" "Shamouti" "Sunburst" "Tangelo" "Tarrco" "Trovita" "Valencia" "Alto" "Bluefin" "Blue Lagoon" "Blue Point" "Ogi" "Palmpona" "Pudgy Pidgey" "Red Rock"  "Silver Rock" "Way Away" "Yellow Rock" "Bomba" "Donto" "Izabe" "Maisie" "Monsu" "Muscle" "Wilmer" "Wales" "Wazoo" "Dandelion" "Lilypad" "Majolica" "Milos" "Capacia" "Spectrala" "Harvest" "Honey" "Paladin" "Torom" "Wayfarer" "Avignon" "Dahara" "Lagoon" "Manalo" "Treasure Island" "Cero"
+				
+			}
+		}
+
+		pc_alpine = {
+			names = { "Freezington" "Snowbelle" "Snowpoint" "Shiver" "Quena" "Remoraid" "Snowtop" "Crossgate" "Forina" "Kirikiri" "Square Top" "Metagross" "Michina" "Shady" "Arche" "Molteau" "Otori" "Pomace" "Lapidarian Highlands" "Tensei" "Raizen"
+				
+			}
+		}
+
+		pc_tundra = {
+			names = { "Freezington" "Snowbelle" "Snowpoint" "Shiver" "Fennel" "Stone" "Rubello" "Shelter" "Lapidarian Highlands"
+				
+			}
+		}
+
+		pc_arctic = {
+			names = { "Freezington" "Snowbelle" "Snowpoint" "Shiver" "Chrysanthemum" "Snowtop" "Rubello"
+				
+			}
+		}
+
+		pc_savannah = {
+			names = { "Cinnabar" "Lavaridge" "Sootopolis"
+				
+			}
+		}
+
+		pc_desert = {
+			names = { "Cinnabar" "Lavaridge" "Sandgem" "Sootopolis" "Charicific" "Oldale" "Jacore"
+				
+			}
+		}
+
+		pc_arid = {
+			names = { "Cinnabar" "Lavaridge" "Sootopolis" "Grampa Canyon" "Diglett World" "Onix" "Riyado" "Valley of Steel" "Squallvilla" "Kalos" "Nebel" "Bloom Canyon"
+				
+			}
+		}
+
+	}
+
+
+	### CHARACTERS
+
+	character_names = {
+
+		default = {
+    # Just use the full names. Leave the rest blank. Names should be mostly eevee/eeveelution puns or dirivitives obviously.
+			full_names = {
+			"Veera" "Veers" "Eve" "Eti" "Eon" "Eievui" "Evoii" "Eboi" "Vui" "Eilie" "Vulu" "Bree" "Breel" "Umrea" "Umbra" "Umbriss" "Umbrella" "Blacky" "Black" "Dark" "Umther" "Flareos" "Flare" "Ember" "Laree" "Ares" "Flass" "Booster" "Boost" "Boo" "Jolt" "Jollie" "Jolly" "Jollo" "Teal" "Teo" "Thunders" "Thunder" "Thundun" "Derz" "Esper" "Essy" "Seer" "Eifie" "Fie" "Fay" "Lee" "Lea" "Leaf" "Leafy" "Freon" "Syl" "Veo" "Ylvette" "Glitters" "Nymphia" "Nymph" "Nympho" "Glace" "Grace" "Ace" "Acer" "Vappy" "Vaper" "Vape" "Oreo" "Vapor" "Splashy" "Showers" "Shower" "ShoSho" "Wer" "Werner" "Speed" "Sunshine" "Silvia" "Lazuli" "Crystal" "Solarfalre" "Leaf" "Pearl" "Black" "Mollie" "Frost" "Frank" "Brian" "Blaze" "Rin" "Bolt"
+			}
+			first_names = {
+			}
+			second_names = {
+			}
+			regnal_full_names = {
+			"Enolether" "Leptailiurus"
+			}
+			regnal_first_names = {
+			}
+			regnal_second_names = {
+			}
+		}
+	}
+}

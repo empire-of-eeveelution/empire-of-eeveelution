@@ -1,0 +1,540 @@
+greetings = {
+
+	### AI Personality Greetings
+
+	EOE_EA_HOSTILE_GREETING_01 = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = map_patronizing_colonizers
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_unfriendly_to = FROM
+			}
+			from = {
+				NOR = {
+					has_authority = auth_machine_intelligence
+					has_country_flag = synthetic_empire
+				}
+			 }
+			from = {
+				NOR = {
+					has_authority = auth_machine_intelligence
+					has_country_flag = synthetic_empire
+				}
+			}
+		}
+	}
+	EOE_EA_HOSTILE_GREETING_02 = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_unfriendly_to = FROM
+			}
+			from = {
+				NOR = {
+					has_authority = auth_machine_intelligence
+					has_country_flag = synthetic_empire
+				}
+			}
+		}
+	}
+	EOE_EA_HOSTILE_GREETING_03 = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_unfriendly_to = FROM
+			}
+			from = {
+				NOR = {
+					has_authority = auth_machine_intelligence
+					has_country_flag = synthetic_empire
+				}
+			}
+		}
+	}
+	EOE_EA_HOSTILE_GREETING_01_ROBOT_NONRS = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_unfriendly_to = FROM
+			}
+			from = {			
+				OR = {
+					has_authority = auth_machine_intelligence
+					has_country_flag = synthetic_empire
+				}
+				NOT = {
+					has_civic = civic_machine_servitor
+				}
+			}
+		}
+	}
+	EOE_EA_HOSTILE_GREETING_02_ROBOT_RS = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_unfriendly_to = FROM
+			}
+			from = {
+				has_authority = auth_machine_intelligence
+				has_civic = civic_machine_servitor
+				
+			}
+		}
+	}
+	EOE_EA_HOSTILE_GREETING_02_ROBOT_NONRS = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_unfriendly_to = FROM
+			}
+			from = {			
+				OR = {
+					has_authority = auth_machine_intelligence
+					has_country_flag = synthetic_empire
+				}
+				NOT = {
+					has_civic = civic_machine_servitor
+				}
+			}
+		}
+	}
+	EOE_EA_HOSTILE_GREETING_01_ROBOT_RS = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_unfriendly_to = FROM
+			}
+			from = {
+				has_authority = auth_machine_intelligence
+				has_civic = civic_machine_servitor
+				
+			}
+		}
+	}
+	EOE_EA_DOMINEERING_GREETING_01 = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_domineering_to = FROM
+			}
+			from = {
+				NOR = {
+					has_authority = auth_machine_intelligence
+					has_country_flag = synthetic_empire
+				}
+			}
+		}
+	}
+	EOE_EA_DOMINEERING_GREETING_01_ROBOT_NONRS = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_domineering_to = FROM
+			}
+			from = {			
+				OR = {
+					has_authority = auth_machine_intelligence
+					has_country_flag = synthetic_empire
+				}
+				NOT = {
+					has_civic = civic_machine_servitor
+				}
+			}
+		}
+	}
+	EOE_EA_DOMINEERING_GREETING_01_ROBOT_RS = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_domineering_to = FROM
+			}
+			from = {
+				has_authority = auth_machine_intelligence
+				has_civic = civic_machine_servitor
+			}
+		}
+	}
+	EOE_EA_NEUTRAL_GREETING_01 = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			NOT = { is_at_war_with = FROM }
+			is_neutral_to = FROM
+		}
+	}		
+	EOE_EA_NEUTRAL_GREETING_02 = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			NOT = { is_at_war_with = FROM }
+			is_neutral_to = FROM
+			from = {
+				NOR = {
+					has_authority = auth_machine_intelligence
+					has_country_flag = synthetic_empire
+				}
+			 }
+		}
+	}		
+	EOE_EA_NEUTRAL_GREETING_02_ROBOT_RS = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			NOT = { is_at_war_with = FROM }
+			is_neutral_to = FROM
+			from = {
+				has_authority = auth_machine_intelligence
+				has_civic = civic_machine_servitor
+			}
+		}
+	}
+	EOE_EA_NEUTRAL_GREETING_03 = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			NOT = { is_at_war_with = FROM }
+			is_neutral_to = FROM
+		}
+			from = {
+				NOR = {
+					has_authority = auth_machine_intelligence
+					has_country_flag = synthetic_empire
+				}
+			 }
+	}
+	EOE_EA_NEUTRAL_GREETING_03_ROBOT_RS = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			NOT = { is_at_war_with = FROM }
+			is_neutral_to = FROM
+			from = {
+				has_authority = auth_machine_intelligence
+				has_civic = civic_machine_servitor
+			}
+		}
+	}
+	EOE_EA_THREATENED_GREETING_01 = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			NOT = { is_at_war_with = FROM }
+			is_threatened_to = FROM
+		}
+	}
+	EOE_EA_FRIENDLY_GREETING_01 = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	EOE_EA_FRIENDLY_GREETING_02 = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			NOT = { is_at_war_with = FROM }
+			is_at_war = no
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+			from = {
+				NOR = {
+					has_authority = auth_machine_intelligence
+					has_country_flag = synthetic_empire
+				}
+			 }
+		}
+	}
+	EOE_EA_FRIENDLY_GREETING_02_ROBOT_RS = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			NOT = { is_at_war_with = FROM }
+			is_at_war = no
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+			from = {
+				has_authority = auth_machine_intelligence
+				has_civic = civic_machine_servitor
+			}
+		}
+	}
+	EOE_EA_FRIENDLY_GREETING_03 = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			NOT = { is_at_war_with = FROM }
+			#is_at_war = yes
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+			from = {
+				NOR = {
+					has_authority = auth_machine_intelligence
+					has_country_flag = synthetic_empire
+				}
+			 }
+		}
+	}
+	EOE_EA_WAR_GREETING_01 = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			is_at_war_with = FROM
+			from = {
+				NOR = {
+					has_authority = auth_machine_intelligence
+					has_country_flag = synthetic_empire
+				}
+			 }
+		}
+	}
+	EOE_EA_WAR_GREETING_01_ROBOT_RS = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			is_at_war_with = FROM
+			from = {
+				has_authority = auth_machine_intelligence
+				has_civic = civic_machine_servitor
+			 }
+		}
+	}
+	EOE_EA_WAR_GREETING_02 = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			is_at_war_with = FROM
+			from = {
+				NOR = {
+					has_authority = auth_machine_intelligence
+					has_country_flag = synthetic_empire
+				}
+			 }
+		}
+	}
+	EOE_EA_WAR_GREETING_02_ROBOT_RS = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			is_at_war_with = FROM
+			from = {
+				has_authority = auth_machine_intelligence
+				has_civic = civic_machine_servitor
+			 }
+		}
+	}
+	EOE_EA_WAR_GREETING_03 = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			is_at_war_with = FROM
+			from = {
+				NOR = {
+					has_authority = auth_machine_intelligence
+					has_country_flag = synthetic_empire
+				}
+			 }
+		}
+	}
+	EOE_EA_WAR_GREETING_03_ROBOT_RS = {
+		weight = {
+			weight = 30
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			is_at_war_with = FROM
+			from = {
+				NOR = {
+					has_authority = auth_machine_intelligence
+					has_civic = civic_machine_servitor
+				}
+			 }
+		}
+	}
+	EOE_EA_VASSAL_GREETING_01 = {
+		weight = {
+			weight = 100
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			exists = overlord
+			overlord = { is_same_value = FROM }
+			NOT = { is_at_war_with = FROM }
+			NOT = { is_disloyal_to = FROM }
+			from = {
+				NOR = {
+					has_authority = auth_machine_intelligence
+					has_country_flag = synthetic_empire
+				}
+			 }
+		}
+	}
+	EOE_EA_VASSAL_GREETING_DISLOYAL_01 = {
+		weight = {
+			weight = 100
+		}
+		trigger = {
+			has_ai_personality = EOE_Eevee_assimilators
+			exists = overlord
+			overlord = { is_same_value = FROM }
+			NOT = { is_at_war_with = FROM }
+			is_disloyal_to = FROM
+			from = {
+				NOR = {
+					has_authority = auth_machine_intelligence
+					has_country_flag = synthetic_empire
+				}
+			 }
+		}
+	}
+	
+
+	
+}
+
+action_declare_war = {
+	propose = {
+		EOE_EA_DOW_PROPOSE_01 = {
+			weight = {
+				weight = 100
+			}
+			trigger = {
+			    NOR = {
+					has_authority = auth_machine_intelligence
+					has_country_flag = synthetic_empire
+				}
+				FROM = {
+					has_ai_personality = EOE_Eevee_assimilators
+				}
+			}
+		}
+		EOE_EA_DOW_PROPOSE_01_ROBOT_DA = {
+			weight = {
+				weight = 100
+			}
+			trigger = {
+				has_authority = civic_machine_assimilator
+				has_country_flag = synthetic_empire
+				FROM = {
+					has_ai_personality = EOE_Eevee_assimilators
+				}
+			}
+		}
+		EOE_EA_DOW_PROPOSE_02 = {
+			weight = {
+				weight = 100
+			}
+			trigger = {
+			    NOR = {
+					has_authority = auth_machine_intelligence
+					has_country_flag = synthetic_empire
+				}
+				FROM = {
+					has_ai_personality = EOE_Eevee_assimilators
+				}
+			}
+		}
+		EOE_EA_DOW_PROPOSE_02_ROBOT_DA = {
+			weight = {
+				weight = 100
+			}
+			trigger = {
+				has_authority = civic_machine_assimilator
+				has_country_flag = synthetic_empire
+				FROM = {
+					has_ai_personality = EOE_Eevee_assimilators
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,295 @@
+#############################################武器
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_Psichic"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_Psichic.dds"			
+	
+	}
+}
+
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_Psyshock"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_Psyshock.dds"			
+	
+	}
+}
+
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_Whirlpool"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_Whirlpool.png"			
+	
+	}
+}
+
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_Aura_Sphere"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_Aura_Sphere.dds"			
+	
+	}
+}
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_Draco_Meteor"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_Draco_Meteor.dds"			
+	
+	}
+}
+
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_Blue_Flare"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_Blue_Flare.dds"			
+	
+	}
+}
+#######################################梦幻组件
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_MEW_SENSOR"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_MEW_SENSOR.dds"			
+	
+	}
+}
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_MEW_BIO_REACTOR"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_MEW_BIO_REACTOR.dds"			
+	
+	}
+}
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_MEW_JUMP_DRIVE"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_MEW_JUMP_DRIVE.dds"			
+	
+	}
+}
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_MEW_THRUSTER"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_MEW_THRUSTER.dds"			
+	
+	}
+}
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_MEW_COMPUTER"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_MEW_COMPUTER.dds"			
+	
+	}
+}
+#################################################装甲与护盾
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_GuangQiang"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_GuangQiang.dds"			
+	
+	}
+}
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_FanSheBi"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_FanSheBi.dds"			
+	
+	}
+}
+#############################################拉迪亚斯组件
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_LATIAS_SENSOR"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_LATIAS_SENSOR.dds"			
+	
+	}
+}
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_LATIAS_BIO_REACTOR"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_LATIAS_BIO_REACTOR.dds"			
+	
+	}
+}
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_LATIAS_JUMP_DRIVE"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_LATIAS_JUMP_DRIVE.dds"			
+	
+	}
+}
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_LATIAS_THRUSTER"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_LATIAS_THRUSTER.dds"			
+	
+	}
+}
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_LATIAS_COMPUTER"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_LATIAS_COMPUTER.dds"			
+	
+	}
+}
+##############################################白龙组件
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_RESHIRAM_SENSOR"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_RESHIRAM_SENSOR.dds"			
+	
+	}
+}
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_RESHIRAM_BIO_REACTOR"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_RESHIRAM_BIO_REACTOR.dds"			
+	
+	}
+}
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_RESHIRAM_JUMP_DRIVE"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_RESHIRAM_JUMP_DRIVE.dds"			
+	
+	}
+}
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_RESHIRAM_THRUSTER"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_RESHIRAM_THRUSTER.dds"			
+	
+	}
+}
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_RESHIRAM_COMPUTER"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_RESHIRAM_COMPUTER.dds"			
+	
+	}
+}
+
+##################################A槽部件
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_LEFTOVERS"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_LEFTOVERS.dds"			
+	
+	}
+}
+
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_Emergency_Recall"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_Emergency_Recall.dds"			
+	
+	}
+}
+####################################薄荷
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_No_Mint"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_No_Mint.dds"			
+	
+	}
+}
+
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_Green_mint"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_Green_mint.dds"			
+	
+	}
+}
+
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_Blue_mint"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_Blue_mint.dds"			
+	
+	}
+}
+
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_Purple_mint"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_Purple_mint.dds"			
+	
+	}
+}
+
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_Red_mint"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_Red_mint.dds"			
+	
+	}
+}
+
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_Pink_mint"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_Pink_mint.dds"			
+	
+	}
+}
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_sky_attack"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_sky_attack.dds"			
+	
+	}
+}
+
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_MEW_CLOAKING_HIGH"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_MEW_CLOAKING_HIGH.dds"			
+	
+	}
+}
+
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_MEW_CLOAKING_LOW"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_MEW_CLOAKING_LOW.dds"			
+	
+	}
+}
+
+
+

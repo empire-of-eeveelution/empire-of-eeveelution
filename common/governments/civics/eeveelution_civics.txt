@@ -1,0 +1,145 @@
+#civic_example = {
+#	playable = {}								# AND trigger, no scope; use this to prevent the civic from being selectable by the player (UI)
+#	potential = {}								# requirements list, see ../readme_requirements.txt
+#	possible = {}								# requirements list, see ../readme_requirements.txt
+#	pickable_at_start = yes / no				# default: yes
+#	modification = yes / no						# default: yes, set to no to prevent adding or removing this after creation of the empire
+#
+#	random_weight = { base = 5 }				# scriptable weight for randomizing a civic; required, else the civic will not get assigned randomly
+#
+#	modifier = {}								# modifier added to the country if the civic is selected and valid
+#	can_build_ruler_ship = yes / no				# default: no
+#	traits = { trait = ... }					# default: empty; trait set to enforce on the primary species. They cannot be removed, but more can be added if points/picks permit
+#	has_secondary_species = {					# default: none; if present, will enable secondary species customization in empire designer and will create secondary species & pops at galaxy generation time (see empire_init_create_capital_secondary_pops)
+#		traits = { trait = ... }					# default: empty; trait set to enforce on the secondary species. They cannot be removed, but more can be added if points/picks permit
+#	}
+#}
+
+#############
+# Eeveelution
+#############
+
+# 伊布同化者
+civic_eeveelutions_assimilator = { 
+	potential = {
+		species_archetype = {
+			value = POKEMON
+		}
+	 }
+	possible = { 
+		ethics = {  
+			NOR = { 
+				value = ethic_fanatic_pacifist
+				value = ethic_pacifist
+			}
+		}
+		# civics = {
+		# 	NOT = {
+		# 		value = civic_fanatic_purifiers	
+		# 	}
+		# }
+		origin = {
+			NOT = {
+				value = origin_broken_shackles	
+			}
+		}
+	}
+	pickable_at_start = yes 
+	modification = yes
+	random_weight = {
+		base = 0
+	}
+
+	description = civic_tooltip_eeveelutions_assimilator_effects
+}
+
+civic_scientific_faith = {
+	description = civic_tooltip_scientific_faith_effects
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		ethics = {
+			value = ethic_fanatic_materialist
+		}
+		civics = {
+			NOR = {
+				value = civic_merchant_guilds
+				value = civic_exalted_priesthood
+				value = civic_aristocratic_elite
+				value = civic_shared_burden
+			}
+		}
+	}
+	modifier = {
+		num_tech_alternatives_add = 1
+		planet_researchers_unity_produces_add = 1
+	}
+	random_weight = {
+		base = 0
+	}
+}
+civic_EOE_steel_type_trainer = {
+	description = civic_EOE_steel_type_trainer_effects
+	pickable_at_start = yes
+	modification = yes
+	potential = {
+		origin = {
+			NOR = {
+				value = origin_EOE_pokemon_trainer
+				value = origin_mechanists
+				value = origin_broken_shackles	
+			}
+		}
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { 
+			NOT = { value = auth_corporate } 
+			# OR = {
+			# 	value = auth_EOE_oligarchic
+			# 	value = auth_EOE_imperial
+			# }
+		}
+	}
+	# possible = {
+	# 	ethics = {
+	# 		OR = {
+	# 			value = ethic_fanatic_materialist
+	# 			value = ethic_materialist
+	# 		}
+	# 	}
+	# }
+	random_weight = {
+		base = 0
+	}
+	
+}
+
+
+
+
+###########外置型突触
+civic_external_synapse = { 
+	potential = {
+		species_archetype = {
+			value = POKEMON
+		}
+		ethics = {  
+				 value = ethic_gestalt_consciousness
+			}
+	 }
+	pickable_at_start = yes 
+	modification = yes
+	random_weight = {
+		base = 0
+	}
+	modifier = {
+		armies_upkeep_mult = -0.3
+		ships_upkeep_mult = -0.15
+		country_naval_cap_mult = 0.25
+		pop_resettlement_cost_mult = -0.5
+		empire_size_penalty_mult = -0.1
+	}
+	description = civic_external_synapse_effects
+}
+

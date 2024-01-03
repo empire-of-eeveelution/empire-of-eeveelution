@@ -1,0 +1,22 @@
+ship_section_template = {
+	key = "EOE_masterball"
+	ship_size = EOE_masterball
+	fits_on_slot = mid
+	entity = "masterball_entity"
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	large_utility_slots = 0
+	aux_utility_slots = 0
+	component_slot = {
+		name = "EOE_masterball_gun"
+		template = "invisible_planet_killer_fixed"
+		locatorname = "EOE_masterball_gun"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 2000
+			sr_zro = 200
+		}
+	}
+}                                                                                

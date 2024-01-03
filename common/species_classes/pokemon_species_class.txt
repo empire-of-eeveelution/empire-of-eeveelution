@@ -1,0 +1,87 @@
+# Number of entries controlls amount to choose from in designer  I.E.   "mol1" "mol2" "mol3" "mol4"
+# graphical_culture is connected to the looks used for ships and cities, see "common/graphical_culture/"
+# Portraits here are one you can choose from in the character creater. For prescripted races they are grabbed straight from the .gfx file. 
+# playable=(yes/no)/trigger, default is yes, if this species class can is playable
+# randomized=(yes/no)/trigger, default is yes, if this species class is randomized
+# custom_portraits
+#	randomized = trigger, default is no, to specify if portraits are randomized
+#	playable = trigger, default is yes, to specify if portraits are playable
+#	portraits, list portrait keys
+# species_trait_points: base number of species trait points available for this species class
+# species_max_traits: maximum number of traits that species of this class can have (doesn't count those with cost == 0)
+# possible: ethics/government requirements; see common/governments/readme_requirements.txt
+# gender: yes|no (default: yes). whether the species have a gender
+# portrait_modding: yes|no (default: no). whether the portrait can be modified with genemodding/robomodding
+
+
+"Steelmons" = {
+	archetype = MACHINE
+	playable = {
+		always = yes
+	}
+	randomized = {
+		always = no
+	}
+	portraits = {
+		"Steelmons"
+	}
+	possible = {
+		authority = {
+			OR = {
+				value = auth_machine_intelligence
+				text = SPECIES_CLASS_MUST_USE_MACHINE_INTELLIGENCE
+			}
+		}
+	}
+	gender = no
+	use_climate_preference = no
+	playable = {
+		always = no
+	}
+	leader_age_min = 2
+	leader_age_max = 10
+	graphical_culture = pokemon_01
+	move_pop_sound_effect = "robot_pops_move"
+}
+
+"Othermons" = {
+	archetype = BIOLOGICAL
+	possible = {
+		always = no
+		authority = {
+			NOT = {
+				value = auth_machine_intelligence
+			}
+		}
+	}
+	portraits = {
+		"Othermons"
+	}
+	use_climate_preference = no
+	playable = {
+		always = no
+	}
+	randomized = {
+		always = no
+	}
+	leader_age_min = 2
+	leader_age_max = 10
+	graphical_culture = pokemon_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+"Eeveelutions" = {
+	archetype = POKEMON
+	possible = {
+		authority = {
+			NOT = {
+				value = auth_machine_intelligence
+			}
+		}
+	}
+	portraits = {
+		"Eeveelutions"
+	}
+	graphical_culture = pokemon_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+}

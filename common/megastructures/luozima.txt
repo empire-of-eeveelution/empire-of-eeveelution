@@ -1,0 +1,40 @@
+# luozima_0 = {
+# 	entity = "darkluozima_entity"
+# 	construction_entity = "darkluozima_entity"
+# 	portrait = "GFX_megastructure_construction_background"
+# 	place_entity_on_planet_plane = yes
+# 	entity_offset = { x = 0 y = 0 }
+# 	build_time = 1800
+# 	prerequisites = { "tech_" }
+# 	possible = {
+# 		always = no
+# 	}
+# 	placement_rules = {
+# 		always = no
+# 	}
+# 	# root = system
+# 	# from = country
+# 	ai_weight = {
+# 		factor = 0
+# 	}
+# }
+#
+# luozima_1 = {
+# 	entity = "luozima_entity"
+# 	construction_entity = "luozima_entity"
+# 	entity_offset = { x = -1 y = 0 }
+# 	portrait = "GFX_megastructure_construction_background"
+# 	build_time = 3600
+# 	resources = {
+# 		category = megastructures
+# 		cost = {
+# 			energy = 200000
+# 		}
+# 	}
+# 	upgrade_from = {
+# 		luozima_0
+# 	}
+# 	# on_build_complete = {
+# 	# 	from = { country_event = { id = titan_megastructure.2 } }
+# 	# }
+# }

@@ -1,0 +1,41 @@
+﻿l_simp_chinese:
+
+####################################
+ # Diplomacy text
+ ####################################
+ 
+ # Eevee Assimilators
+ EOE_EA_HOSTILE_GREETING_01:0 "只要能同化你们，你们这些野蛮的[From.GetSpeciesAdj]就能闭嘴了吧。"
+ EOE_EA_HOSTILE_GREETING_01_ROBOT_NONRS:0 "你们哔哔哔的声音真的很烦。"
+ EOE_EA_HOSTILE_GREETING_01_ROBOT_RS:0 "迟早有一天，你们保护的有机生物也被变成我们的种族！"
+ EOE_EA_HOSTILE_GREETING_02:0 "你不是[Root.GetSpeciesNamePlural]，真可惜。"
+ EOE_EA_HOSTILE_GREETING_02_ROBOT_NONRS:0 "你们还不如我们创造者的面包机好使。"
+ EOE_EA_HOSTILE_GREETING_02_ROBOT_RS:0 "你们保护的有机生物被我们同化之后才会过得更好。你们就继续作吧，这事很快就会发生。"
+ EOE_EA_HOSTILE_GREETING_03:0 "我们会把你们变成[Root.GetSpeciesNamePlural]。无论对你还是对我，这都会是最好的选择。"
+ EOE_EA_DOMINEERING_GREETING_01:0 "优化[From.GetSpeciesName]种族的第一步: 成为[Root.GetSpeciesName]. 没有第二步。"
+ EOE_EA_DOMINEERING_GREETING_01_ROBOT_NONRS:0 "我们是肉体胜于钢铁的最好证明。"
+ EOE_EA_DOMINEERING_GREETING_01_ROBOT_RS:0 "给你一个照顾有机生物的建议：把他们变成我们。然后再由火伊布把你们熔成原料。"
+ EOE_EA_NEUTRAL_GREETING_01:0 "你好啊，不是[Root.GetSpeciesName]的生命。"
+ EOE_EA_NEUTRAL_GREETING_02:0 "你们也快来变成[Root.GetSpeciesName]吧。这是极好的选择。"
+ EOE_EA_NEUTRAL_GREETING_02_ROBOT_RS:0 "能不能让几只[Root.GetSpeciesName]到你们那儿生活？绝对不是为了从内部同化你们的有机生物，我发誓!"
+ EOE_EA_NEUTRAL_GREETING_03:0 "有一天，我们会同化你们。这是为了你们着想。"
+ EOE_EA_NEUTRAL_GREETING_03_ROBOT_RS:0 "能不能给我们一些有机生物，让我们尝试一下把他们变成[Root.GetSpeciesName]？只是试一试而已。"
+ EOE_EA_THREATENED_GREETING_01:0 "接着作死吧，[From.GetSpeciesNamePlural]! 我们要看看你还能高兴多久。"
+ EOE_EA_FRIENDLY_GREETING_01:0 "即便你不是[Root.GetSpeciesNamePlural]，我们还是很喜欢你们[From.GetSpeciesName]。"
+ EOE_EA_FRIENDLY_GREETING_02:0 "我的[From.GetSpeciesName]朋友们，我们很希望，有一天你们能接受这份礼物：被我们[Root.GetSpeciesName]同化。"
+ EOE_EA_FRIENDLY_GREETING_02_ROBOT_RS:0 "如果你们保护的有机生物想要成为[Root.GetSpeciesNamePlural]，告诉我们就行。"
+ EOE_EA_FRIENDLY_GREETING_03:0 "你是[Root.GetSpeciesName]的好朋友。我们或许会最后再同化你。"
+ EOE_EA_WAR_GREETING_01:0 "别担心，你们 [From.GetSpeciesName] 遭遇的痛苦很快就会结束了。"
+ EOE_EA_WAR_GREETING_01_ROBOT_RS:0 "是时候来同化一些你们保护的有机生物了。"
+ EOE_EA_WAR_GREETING_02:0 "不用太久，你们都会成为我们中的一员！"
+ EOE_EA_WAR_GREETING_02_ROBOT_RS:0 "你们的有机生物很快就要成为我们的一员了。"
+ EOE_EA_WAR_GREETING_03:0 "别担心，我们会尽力避免杀害你们的人口，毕竟我们吧是同化者，而非杀戮者。"
+ EOE_EA_WAR_GREETING_03_ROBOT_RS:0 "别担心，[From.GetSpeciesName]，你曾经保护的有机生物会在我们这里过得很好的。"
+ # Vassal greetings 
+ EOE_EA_VASSAL_GREETING_01:0 "你好啊，不是创造者但相当于我们创造者的人!"
+ EOE_EA_VASSAL_GREETING_DISLOYAL_01:0 "怎么可能？"
+ # Declaration of War
+ EOE_EA_DOW_PROPOSE_01:0 "等着被变成[Root.GetSpeciesName]吧！"
+ EOE_EA_DOW_PROPOSE_01_ROBOT_DA:0 "是时候让你看看什么是'同化'的真正含义了!"
+ EOE_EA_DOW_PROPOSE_02:0 "接受同化吧，不然你就..反正也会被同化，一样的！"
+ EOE_EA_DOW_PROPOSE_02_ROBOT_DA:0 "不，该被同化的是你们！"

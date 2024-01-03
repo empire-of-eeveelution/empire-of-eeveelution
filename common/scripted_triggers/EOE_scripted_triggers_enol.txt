@@ -1,0 +1,115 @@
+is_hezi_in_shroud = {
+	OR = {
+		owner = {
+			any_owned_leader = {
+				is_councilor_type = councilor_research
+				has_leader_flag = EOE_leader_hezi
+			}
+		}
+		root.leader = {
+			has_leader_flag = EOE_leader_hezi
+		}
+		root.orbit.leader = {
+			has_leader_flag = EOE_leader_hezi
+		}
+		root.orbit.sector.leader = {
+			has_leader_flag = EOE_leader_hezi
+		}
+	}
+}
+is_okra_in_shroud = {
+	OR = {
+		owner = {
+			any_owned_leader = {
+				is_councilor_type = councilor_research
+				has_leader_flag = EOE_leader_okra
+			}
+		}
+		root.leader = {
+			has_leader_flag = EOE_leader_okra
+		}
+		root.orbit.leader = {
+			has_leader_flag = EOE_leader_okra
+		}
+		root.orbit.sector.leader = {
+			has_leader_flag = EOE_leader_okra
+		}
+	}
+}
+is_scrappy_mod_used = {
+	OR = {
+		has_global_flag = acot_activated
+		has_global_flag = giga_has_host
+	}
+}
+is_pokemon = {
+	has_trait = trait_natural_psionic_warrior
+	has_trait = trait_pokeball_adaptability
+	has_trait = trait_syncretic_proles
+}
+is_pokemon_2 = {
+	has_trait = trait_natural_psionic_warrior
+	has_trait = trait_pokeball_adaptability
+}
+
+#scope = planet
+has_4_pokemon = {
+	OR = {
+		count_owned_pop = {
+			limit = { is_pokemon = yes }
+			count >= 4
+		}
+		AND = {
+			owner = {
+				OR = {
+					has_ethic = ethic_authoritarian
+					has_ethic = ethic_fanatic_authoritarian
+				}
+			}
+			count_owned_pop = {
+				limit = { is_pokemon_2 = yes }
+				count >= 4
+			}
+		}
+	}
+}
+has_7_pokemon = {
+	OR = {
+		count_owned_pop = {
+			limit = { is_pokemon = yes }
+			count >= 7
+		}
+		AND = {
+			owner = {
+				OR = {
+					has_ethic = ethic_authoritarian
+					has_ethic = ethic_fanatic_authoritarian
+				}
+			}
+			count_owned_pop = {
+				limit = { is_pokemon_2 = yes }
+				count >= 7
+			}
+		}
+	}
+}
+has_30_pokemon = {
+	OR = {
+		count_owned_pop = {
+			limit = { is_pokemon = yes }
+			count >= 30
+		}
+		AND = {
+			owner = {
+				OR = {
+					has_ethic = ethic_authoritarian
+					has_ethic = ethic_fanatic_authoritarian
+				}
+			}
+			count_owned_pop = {
+				limit = { is_pokemon_2 = yes }
+				count >= 30
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+2.0.3
+* Started the Gitub. Hopefully this will lead to better coordination and progress.
+* Added missing english description for Pokemnon Trainer origin
+* Converted stray Chinese in English Pokemon Trainer Mobilization Menu to English
+* Added in missing English localizations for Pokemon farmer job description and effect description
+* Added in missing English localizations for Masterball Tech
+* Added in missing English localizatoins for Steel Type decision and armies.
+* Vampire Missile converted small slot to bring it in-line with other weapons. Range reduced to 150. This may change in the future...
+* Aura Sphere now penetrates shield and armor, acting a bit like a Point Defense Disruptor and making it effective against both missiles and strike craft. Damage has been reduced to compensate for this and it's 100% accuracy.
+* Added warnings to Shattered Ring and Pokemon Trainer origin descriptions against force-spawning AIs with them. A more automatic solution ALA Giga is still pending.
+* Steel Type Trainer can no longer be used with Mechanist (due to proposed AI only changes), nor with Broken Shackles (because that doesn't make sense.)
+* AIs spawning with the Eevee Assimilator civic now have a custom personality and some custom dialog.
+* Pokemon Bioships: Nixed the Alloy cost in leu of increased food and minerals. This should also have the added effect of making the recall device much more valuable (that has its alloy costs increased however.) Again, this is a temp solution untill something more substantial can be done with bioships (See future plans).
+* Psychic and Psyshock no longer shoot down missiles and strike craft. That's what Aura Sphere is for.
+* Eeveelution assmilators can no longer assimilate fellow eeveelutions, thus preventing a forever assimilation loop. Unfortunately this means that eevees cannot quick-assimilate non-psionic eevees into regular eevees, but psionic doesn't really work ATM anyway.
+* Eeveelution Assimilator perk can no longer be used with the Broken Shackles origin (Because that ruins the whole point of the Broken Shackles origin.)
+* Reworked the mints to be less clunky, so they are slightly better versions of the vanilla precog computers. Hasty=Swarm, Bold=Torpedo, Brave=Picket, Sassy=Line, Quiet=Artillery, and Timid=Carrier. All other mints have been remove.
+* Mew now has a torpedo slot and a new weapon (Sky Attack) that acts like a slight combo between a devestator torpedo and a neutron launcher. Hopefully this means it should suck less.

@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "masterball_mesh"
+		file = "gfx/models/ships/Masterball/masterball.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "masterballShapeShape"
+			index = 0
+			texture_diffuse = "maseterball_col.dds"
+			texture_normal = "maseterball_norm.dds"
+			texture_specular = "maseterball_spec.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

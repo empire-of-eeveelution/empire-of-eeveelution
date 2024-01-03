@@ -1,0 +1,53 @@
+tech_EOE_fire_vampire = {
+	area = engineering
+	cost = @tier5cost3
+	tier = @guardiantechtier
+	is_rare = yes
+	category = { propulsion }
+	ai_update_type = military
+	weight = 0
+	potential = {
+		has_country_flag = EOE_fire_vampire_appeared
+		is_ai = no
+		OR = {
+			any_owned_pop = { has_trait = trait_EOE_Inheritors }
+			has_origin = origin_lotus_hezi_start
+		}
+		
+	}
+
+	
+}
+
+tech_EOE_double_edge = {
+	area = engineering
+	cost = @EOE_tier7cost2
+	tier = 7
+	category = { propulsion }
+	ai_update_type = military	
+	weight = 0
+	potential = {
+		has_country_flag = EOE_tech7_3
+		is_ai = no
+		OR = {
+			any_owned_pop = { has_trait = trait_EOE_Inheritors }
+			has_origin = origin_lotus_hezi_start
+		}
+	}
+}
+tech_EOE_flare_blitz = {
+	area = engineering
+	cost = @EOE_tier7cost3
+	tier = 7
+	category = { propulsion }
+	ai_update_type = military	
+	weight = 0
+	potential = {
+		has_country_flag = EOE_tech7_4
+		is_ai = no
+		OR = {
+			any_owned_pop = { has_trait = trait_EOE_Inheritors }
+			has_origin = origin_lotus_hezi_start
+		}
+	}
+}

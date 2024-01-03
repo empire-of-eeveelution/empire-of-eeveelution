@@ -1,0 +1,297 @@
+add_eeveelution_leader_trait = {
+	if = {
+		limit = {
+			any_owned_pop = { has_trait = trait_psychic_type_mega_evolution }
+		}
+		ruler = { leader_trait_EOE_ruler_psionic }
+	}
+	if = {
+		limit = {
+			leader_class = scientist
+			owner = {
+				any_owned_pop = { has_trait = trait_psychic_type_mega_evolution }
+			}
+		}
+		add_trait = leader_trait_scientist_psychic_type_psionic_benefits_scienceship
+		add_trait = leader_trait_scientist_psychic_type_psionic_benefits
+	}
+	if = {
+		limit = {
+			leader_class = scientist
+			owner = {
+				any_owned_pop = {
+					OR = {
+						has_trait = trait_ice_type_mega_evolution
+						has_trait = trait_ice_type_mega_evolution_swarm
+					}
+				}
+			}
+		}
+		add_trait = leader_trait_scientist_ice_type_Particle_Mastery
+	}
+	if = {
+		limit = {
+			leader_class = scientist
+			owner = {
+				any_owned_pop = {
+					OR = {
+						has_trait = trait_dark_type_mega_evolution
+						has_trait = trait_dark_type_mega_evolution_swarm
+					}
+				}
+			}
+		}
+		add_trait = leader_trait_scientist_dark_type_night_owl
+	}
+	if = {
+		limit = {
+			leader_class = scientist
+			owner = {
+				any_owned_pop = { has_trait = trait_water_type_mega_evolution }
+			}
+		}
+		add_trait = leader_trait_scientist_water_type_Gene_Mastery
+	}
+	if = {
+		limit = {
+			leader_class = scientist
+			owner = {
+				any_owned_pop = { has_trait = trait_electric_type_mega_evolution }
+			}
+		}
+		add_trait = leader_trait_scientist_electric_type_Energy_Mastery
+	}
+	if = {
+		limit = {
+			leader_class = scientist
+			owner = {
+				any_owned_pop = { has_trait = trait_fire_type_mega_evolution }
+			}
+		}
+		add_trait = leader_trait_scientist_fire_type_reacter_calibration
+	}
+	if = {
+		limit = {
+			leader_class = governor
+			owner = {
+				any_owned_pop = {
+					has_trait = trait_psychic_type_mega_evolution
+				}
+			}
+		}
+		add_trait = leader_trait_EOE_governor_psionic
+	}
+	if = {
+		limit = {
+			leader_class = governor
+			owner = {
+				any_owned_pop = {
+					has_trait = trait_fairy_type_mega_evolution_swarm
+				}
+			}
+		}
+		add_trait = leader_trait_governor_fairy_type_Cloud_brain_services
+	}
+	if = {
+		limit = {
+			leader_class = governor
+			owner = {
+				any_owned_pop = {
+					has_trait = trait_fairy_type_mega_evolution_swarm
+				}
+			}
+		}
+		add_trait = leader_trait_governor_fairy_type_Cloud_brain_services
+	}
+	if = {
+		limit = {
+			leader_class = governor
+			owner = {
+				any_owned_pop = {
+					has_trait = trait_dark_type_mega_evolution
+				}
+			}
+		}
+		add_trait = leader_trait_governor_dark_type_necessary_evil
+	}
+	if = {
+		limit = {
+			leader_class = governor
+			owner = {
+				any_owned_pop = {
+					has_trait = trait_dark_type_mega_evolution_swarm
+				}
+			}
+		}
+		add_trait = leader_trait_governor_dark_type_Self_cognition_control
+	}
+	if = {
+		limit = {
+			leader_class = governor
+			owner = {
+				any_owned_pop = {
+					OR = {
+						has_trait = trait_ice_type_mega_evolution
+						has_trait = trait_ice_type_mega_evolution_swarm
+					}
+				}
+			}
+		}
+		add_trait = leader_trait_governor_ice_type_nano_builder
+	}
+	if = {
+		limit = {
+			leader_class = governor
+			owner = {
+				any_owned_pop = {
+					has_trait = trait_grass_type_mega_evolution
+				}
+			}
+		}
+		add_trait = leader_trait_governor_grass_type_Plants_vs_Aliens
+	}
+	if = {
+		limit = {
+			leader_class = general
+			owner = {
+				any_owned_pop = {
+					has_trait = trait_psychic_type_mega_evolution
+				}
+			}
+		}
+		add_trait = leader_trait_EOE_general_psionic
+	}
+	if = {
+		limit = {
+			leader_class = general
+			owner = {
+				any_owned_pop = {
+					has_trait = trait_psychic_type_mega_evolution
+				}
+			}
+		}
+		add_trait = leader_trait_EOE_general_psionic
+	}
+	if = {
+		limit = {
+			leader_class = general
+			owner = {
+				any_owned_pop = {
+					OR = {
+						has_trait = trait_dark_type_mega_evolution
+						has_trait = trait_dark_type_mega_evolution_swarm
+					}
+				}
+			}
+		}
+		add_trait = leader_trait_dark_type_Dark_Templar
+	}
+	if = {
+		limit = {
+			leader_class = general
+			owner = {
+				any_owned_pop = {
+					has_trait = trait_electric_type_mega_evolution
+				}
+			}
+		}
+		add_trait = leader_trait_electric_type_Tesla_Commander
+	}
+	if = {
+		limit = {
+			leader_class = general
+			owner = {
+				any_owned_pop = {
+					has_trait = trait_grass_type_mega_evolution
+				}
+			}
+		}
+		add_trait = leader_trait_grass_type_Production_Construction_Corps
+	}
+	if = {
+		limit = {
+			leader_class = general
+			owner = {
+				any_owned_pop = {
+					OR = {
+						has_trait = trait_fairy_type_mega_evolution
+						has_trait = trait_fairy_type_mega_evolution_swarm
+					}
+				}
+			}
+		}
+		add_trait = leader_trait_fairy_type_Shared_glory
+	}
+	if = {
+		limit = {
+			leader_class = admiral
+			owner = {
+				any_owned_pop = {
+					has_trait = trait_psychic_type_mega_evolution
+				}
+			}
+		}
+		add_trait = leader_trait_psychic_type_Psionic_detection_battle_system
+	}
+	if = {
+		limit = {
+			leader_class = admiral
+			owner = {
+				any_owned_pop = {
+					OR = {
+						has_trait = trait_dark_type_mega_evolution
+						has_trait = trait_dark_type_mega_evolution_swarm
+					}
+				}
+			}
+		}
+		add_trait = leader_trait_dark_type_Void_Stutter
+	}
+	if = {
+		limit = {
+			leader_class = admiral
+			owner = {
+				any_owned_pop = {
+					OR = {
+						has_trait = trait_ice_type_mega_evolution
+						has_trait = trait_ice_type_mega_evolution_swarm
+					}
+				}
+			}
+		}
+		add_trait = leader_trait_ice_type_Directed_molecular_activation
+	}
+	if = {
+		limit = {
+			leader_class = admiral
+			owner = {
+				any_owned_pop = {
+					has_trait = trait_electric_type_mega_evolution
+				}
+			}
+		}
+		add_trait = leader_trait_electric_type_Fundamental_Force_Interference
+	}
+	if = {
+		limit = {
+			leader_class = admiral
+			owner = {
+				any_owned_pop = {
+					has_trait = trait_fire_type_mega_evolution
+				}
+			}
+		}
+		add_trait = leader_trait_fire_type_Instantaneous_entropy_increase
+	}
+	if = {
+		limit = {
+			leader_class = admiral
+			owner = {
+				any_owned_pop = {
+					has_trait = trait_water_type_mega_evolution
+				}
+			}
+		}
+		add_trait = leader_trait_water_type_Organic_Symbiont
+	}
+}

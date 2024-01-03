@@ -1,0 +1,103 @@
+
+
+
+r_EOE_warp_gate = {
+	activation_duration = 1080
+	portrait = "GFX_relic_EOE_Warp_gate"
+	sound = "relic_activation_vultaum_real_perforator"
+
+	resources = {
+		category = relics
+		# Activation cost
+		cost = {
+			alloys = 1500
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+		starbase_shipyard_build_speed_mult = 0.3
+		megastructure_build_speed_mult = 0.5
+		country_megastructure_build_cap_add = 1
+	}
+
+	score = 200
+
+	active_effect = {
+		custom_tooltip = relic_EOE_call_fleet
+		custom_tooltip = relic_Warp_gate_cooldown
+		hidden_effect = {
+			add_modifier = {
+				modifier = "Warship_in_production"
+				days = 3600
+			}
+			country_event = { id = eevent.6132 }
+		}
+	}
+
+	# Possible check for activation
+	possible = {
+		custom_tooltip = {
+			fail_text = "EOE_no_cooldown"
+			NOT = { has_modifier = Warship_in_production }
+		}
+	}
+}
+
+r_EOE_eevium_z = {
+	activation_duration = 3600
+	portrait = "GFX_relic_dragon_trophy"
+	sound = "relic_activation_ether_drake_trophy"
+
+	resources = {
+		category = relics
+		# Activation cost
+		cost = {
+			unity = 3000
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+		#
+	}
+
+	score = 1000
+
+	active_effect = {
+		add_modifier = {
+			modifier = "EOE_eevium_z"
+			days = 360
+		}
+		custom_tooltip = relic_triumph_cooldown
+		hidden_effect = {
+			country_event = {
+				id = EOE_branch.142 days = 180
+			}
+			add_modifier = {
+				modifier = "relic_activation_cooldown"
+				days = 3600
+			}
+		}
+	}
+
+	# Possible check for activation
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_relic_no_cooldown"
+			NOT = { has_modifier = relic_activation_cooldown }
+		}
+	}
+}

@@ -1,0 +1,26 @@
+
+soundeffect = {
+	name = pokemon_Eeveelutions
+	sounds = {
+		sound = eeveelution_greeting_01
+		sound = eeveelution_greeting_02
+		sound = eeveelution_greeting_03
+		sound = eeveelution_greeting_04
+		sound = eeveelution_greeting_05
+		sound = eeveelution_greeting_06
+		sound = eeveelution_greeting_07
+		sound = eeveelution_greeting_08
+		sound = eeveelution_greeting_09
+		sound = eeveelution_greeting_10
+
+	}  
+	volume = 0.8
+}
+
+
+category = {
+	name = "Effects"
+	soundeffects = {
+		pokemon_Eeveelutions
+	   }
+   }

@@ -1,0 +1,204 @@
+
+# All leaders will have a common trait-point value set in defines, which they use to grab traits
+
+# leader_trait = yes - this tags the trait as a leader-trait and not a species-trait
+# initial = no - if set to no, this trait can not be granted to leaders when they are generated
+# leader_class = { admiral scientist }  -- OR  - if not set, it can be given to all leader-types except Rulers
+# requires_traits = { trait_psionic } -- AND - leader-trait can only be randomly given on generation if the leaders species has this trait
+# requires_governments = { despotic_hegemony ai_overlordship } -- OR - leader-trait can only be randomly given on generation if the Empire has this type of government form
+# prerequisites = { tech_psionic_theory } - AND - leader-trait can only be given if the technology specified has been researched by the Empire
+
+#####################
+# Admiral Traits    #
+#####################
+
+leader_trait_EOE_admiral_Bailong = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_EOE_admiral_Bailong.dds"
+	modifier = {
+		ship_weapon_damage = 1
+		ship_hull_mult = 2.5
+		ship_hull_regen_add_perc = 0.25
+	}
+	
+	leader_class = { commander }
+	initial = no
+	randomized = no
+}
+
+
+leader_trait_dark_type_Void_Stutter_1 = {
+
+	icon = "gfx/interface/icons/EeveelutionTypes/dark_type.png"
+	fleet_modifier = {
+		ship_speed_mult = 0.15
+		ship_evasion_add = 10
+		ship_ftl_jumpdrive_range_mult = 0.25
+		ship_jumpdrive_cooldown_mult = -0.6
+		ship_disengage_chance_mult = 0.5
+		ship_emergency_ftl_mult = -0.30
+		fleet_mia_time_mult = -0.5
+
+	}
+	# triggered_fleet_modifier = {
+	# 	# potential = { has_first_contact_dlc = yes }
+	# 	ship_cloaking_strength_add = 1
+	# }
+	leader_class = { commander }
+	initial = no
+	randomized = no
+}
+	    
+
+
+
+leader_trait_ice_type_Directed_molecular_activation_1 = {
+
+	icon = "gfx/interface/icons/EeveelutionTypes/ice_type.png"
+	fleet_modifier = {
+		ship_hull_mult = 0.15
+		ship_armor_mult = 0.15
+		# ship_shield_mult = 0.2
+		ship_hull_regen_add_perc = 0.02
+		ship_armor_regen_add_perc = 0.02
+		# ship_shield_regen_add_perc = 0.01
+	}
+
+	army_modifier = {
+		army_health = 0.25
+	}
+	
+	leader_class = { commander }
+	initial = no
+	randomized = no
+			
+}
+
+
+
+leader_trait_fire_type_Instantaneous_entropy_increase_1 = {
+
+	icon = "gfx/interface/icons/EeveelutionTypes/fire_type.png"
+	fleet_modifier = {
+		ship_weapon_damage = 0.2
+		ship_orbital_bombardment_mult = 0.5
+	}
+	army_modifier = {
+		army_damage_mult = 0.25
+	}
+	leader_class = { commander }
+	initial = no
+	randomized = no
+
+}
+
+leader_trait_governor_grass_type_Plants_vs_Aliens_1 = { #草系指挥官
+
+	icon = "gfx/interface/icons/EeveelutionTypes/grass_type.png"
+	councilor_modifier = {
+		planet_jobs_food_produces_mult = 0.1
+	}
+	army_modifier = {
+		armies_upkeep_mult = -0.40
+	}
+	fleet_modifier = {
+		ships_upkeep_mult = -0.25
+	}
+	planet_modifier = {
+		pop_defense_armies_add = 2
+		planet_soldiers_energy_produces_add = 3
+		planet_soldiers_minerals_produces_add = 3
+		planet_soldiers_food_produces_add = 3
+	}
+	sector_modifier = {
+		pop_defense_armies_add = 1
+		planet_soldiers_energy_produces_add = 1.5
+		planet_soldiers_minerals_produces_add = 1.5
+		planet_soldiers_food_produces_add = 1.5
+	}
+
+	leader_class = { commander }
+	initial = no
+	randomized = no
+
+}
+leader_trait_admiral_fairy_type_1 = { #仙系战略家
+
+	icon = "gfx/interface/icons/EeveelutionTypes/fairy_type.png"
+	councilor_trait = yes
+	councilor_modifier = {
+		# ship_fire_rate_mult = 0.1
+		commander_exp_gain = 0.2
+		commander_initial_skill = 2
+		ship_starting_experience_add = 100
+		starbase_shipyard_build_speed_mult = 0.10
+		starbase_shipyard_build_cost_mult = -0.05
+	}
+
+	leader_class = { commander }
+	initial = no
+	randomized = no
+
+}
+
+#leader_trait_electric_type_Fundamental_Force_Interference_1 = {
+#	cost = 0
+#
+#	icon = "gfx/interface/icons/EeveelutionTypes/electric_type.png"
+#	modifier = {
+#		ship_hull_damage_mult = 0.25
+#		ship_armor_damage_mult = 0.5
+#
+#
+#
+#	}
+#
+#	leader_class = { commander }
+#	opposites = { }
+#    selectable_weight = 2000
+#    leader_potential_add = {
+#	from = {
+#				any_owned_pop = {
+#				pop_has_trait = trait_electric_type_mega_evolution
+#			}
+#			}
+#			}
+#
+#	}
+#
+#
+#leader_trait_psychic_type_Psionic_detection_battle_system_1 = {
+#	cost = 0
+#
+#	icon = "gfx/interface/icons/EeveelutionTypes/psychic_type.png"
+#	modifier = {
+#		ship_shield_mult = 0.3
+#		ship_shield_regen_add_perc = 0.2
+#		ship_weapon_range_mult = 0.2
+#		ship_tracking_mult = 0.1
+#		ship_sensor_range_add = 2
+#		ship_hyperlane_range_add = 3
+#
+#
+#
+#
+#	}
+#
+#	leader_class = { commander }
+#	opposites = { }
+#    selectable_weight = 2000
+#    leader_potential_add = {
+#	from = {
+#				any_owned_pop = {
+#				pop_has_trait = trait_psychic_type_mega_evolution
+#			}
+#			}
+#			}
+#
+#	}
+	
+	
+
+	
+
+

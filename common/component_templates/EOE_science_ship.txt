@@ -1,0 +1,136 @@
+utility_component_template = {  #梦幻 反应堆
+	key = "OKRA_BIO_REACTOR"
+	size = small
+	icon = "GFX_EOE_OKRA_CORE"
+	icon_frame = 1
+	power = 2500
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = 56
+			alloys = 14
+		}
+		upkeep = {
+		}
+	}
+
+	#prerequisites = { "tech_EOE_Mew" }
+	component_set = "power_core"
+	size_restriction = { EOE_okra_ship }
+
+ai_weight = {
+		weight = 0
+	}}
+
+# utility_component_template = {  ###梦幻 跃迁引擎
+# 	key = "OKRA_JUMP_DRIVE"
+# 	size = small
+# 	icon = "GFX_EOE_MEW_JUMP_DRIVE"
+# 	icon_frame = 1
+# 	power = -15
+# 	resources = {
+# 		category = pokemon_ships
+# 		cost = {
+# 			food = 20
+# 			alloys = 5
+# 			}
+# 	}
+# 	ftl = yes
+# 	jumpdrive = yes
+# 	ship_modifier = {
+# 		ship_windup_mult = -0.8
+# 		ship_ftl_jumpdrive_range_mult = 0.50
+# 		ship_disengage_opportunities_add = 2
+# 	}
+	
+# ai_weight = {
+# 		weight = 0
+# 	}
+# 	size_restriction = { EOE_mew }
+# 	#prerequisites = { "tech_EOE_Mew" }
+# 	component_set = "ftl_components"
+# }
+
+utility_component_template = { #梦幻   推进器
+	key = "OKRA_THRUSTER"
+	size = small
+	icon = "GFX_ship_part_thruster_5"
+	icon_frame = 1
+	power = -15
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = 30
+			alloys = 7
+		}
+	}
+
+	modifier = {
+		ship_base_speed_mult = 1.25
+		ship_evasion_add = 20
+	}
+
+	#prerequisites = { "tech_EOE_Mew" }
+	component_set = "thruster_components"
+	size_restriction = { EOE_okra_ship }
+
+ai_weight = {
+		weight = 0
+	}}
+
+# utility_component_template = {  #梦幻 电脑
+# 	key = "MEW_COMPUTER"
+# 	size = small
+# 	icon = "GFX_EOE_MEW_COMPUTER"
+# 	icon_frame = 1
+# 	power = -5
+# 	resources = {
+# 		category = pokemon_ships
+# 		cost = {
+# 			food = 20
+# 			alloys = 5
+# 		}
+# 	}
+# 	modifier = {
+# 		ship_evasion_mult = 0.15
+# 		ship_speed_mult = 0.20
+# 	}
+# 	ship_modifier = {
+# 		ship_fire_rate_mult = 0.15
+# 	}
+# 	ship_behavior = "swarm"
+# 	#prerequisites = { "tech_EOE_Mew" }
+# 	class_restriction = { shipclass_military }
+# 	size_restriction = { EOE_mew}
+# 	component_set = "combat_computers"
+
+# ai_weight = {
+# 		weight = 0
+# 	}}
+
+# utility_component_template = {   #梦幻  雷达
+# 	key = "MEW_SENSOR"
+# 	size = medium
+# 	icon = "GFX_EOE_MEW_SENSOR"
+# 	icon_frame = 1
+# 	power = -10
+# 	resources = {
+# 		category = pokemon_ships
+# 		cost = {
+# 			food = 8
+# 			alloys = 2
+# 		}
+# 	}
+# 	sensor_range = 4
+# 	hyperlane_range = 5
+
+# 	ship_modifier = {
+# 		ship_tracking_add = 15
+# 	}
+
+# 	#prerequisites = { "tech_EOE_Mew" }
+# 	component_set = "sensor_components"
+# 	size_restriction = { EOE_mew }
+# ai_weight = {
+# 		weight = 0
+# 	}}

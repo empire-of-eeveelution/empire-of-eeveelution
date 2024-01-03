@@ -1,0 +1,164 @@
+leader_trait_EOE_radioactiveburned = { #辐射烧伤-20
+
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_maimed.dds"
+	self_modifier = {
+		leader_lifespan_add = -20
+	}
+	leader_class = {
+		scientist
+	}
+
+	initial = no
+	randomized = no
+}
+
+leader_trait_EOE_burned_2 = {
+	#烧伤2，机器人石头专属
+
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_traumatized.dds"
+	modifier = {
+		science_ship_survey_speed = -0.1
+		ship_anomaly_research_speed_mult = -0.1
+		ship_archaeological_site_excavation_speed_mult = -0.3
+	}
+	leader_class = {
+		scientist
+	}
+
+	initial = no
+	randomized = no
+}
+
+leader_trait_EOE_burned = {
+	#烧伤-20
+
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_maimed.dds"
+	self_modifier = {
+		leader_lifespan_add = -20
+	}
+	leader_class = {
+		scientist
+	}
+
+	initial = no
+	randomized = no
+}
+#究极可爱
+trait_EOE_ultra_cute = {
+
+	icon = "gfx/interface/icons/traits/EOET4.png"
+	opposites = { "trait_repugnant" "trait_extremely_cute" }
+	improves_leaders = no
+	initial = no
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+
+	allowed_archetypes = { POKEMON }
+	custom_tooltip =  TRAIT_ULTRA_CUTE_EFFECT
+}
+#感情火花
+trait_EOE_spark_of_love = {
+
+	icon = "gfx/interface/icons/traits/trait_EOE_spark_of_love.dds"
+	immortal_leaders = no
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+
+	self_modifier = {
+		leader_lifespan_add = 20
+	}
+	councilor_trait = yes
+	councilor_modifier = {
+		all_technology_research_speed = 0.15
+	}
+	#custom_tooltip =  TRAIT_SPARK_OF_LOVE
+}
+trait_EOE_spark_of_love_okra = {
+
+	icon = "gfx/interface/icons/traits/trait_EOE_spark_of_love_okra.dds"
+	immortal_leaders = no
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+
+	councilor_trait = yes
+	self_modifier = {
+		leader_lifespan_add = 20
+	}
+	councilor_modifier = {
+		all_technology_research_speed = 0.3
+	}
+	#custom_tooltip =  TRAIT_SPARK_OF_LOVE_OKRA
+}
+trait_EOE_spark_of_love_hezi = {
+
+	icon = "gfx/interface/icons/traits/trait_EOE_spark_of_love_hezi.dds"
+	immortal_leaders = no
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+
+	councilor_trait = yes
+	self_modifier = {
+		leader_lifespan_add = 20
+	}
+	councilor_modifier = {
+		all_technology_research_speed = 0.3
+	}
+	#custom_tooltip =  TRAIT_SPARK_OF_LOVE_HEZI
+}
+trait_EOE_broken_spark_of_love = {
+	icon = "gfx/interface/icons/traits/trait_EOE_broken_spark_of_love.dds"
+	immortal_leaders = no
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+	councilor_trait = yes
+	self_modifier = {
+		leader_lifespan_add = -40
+	}
+	councilor_modifier = {
+		all_technology_research_speed = 0.3
+	}
+	#custom_tooltip =  TRAIT_BROKEN_SPARK_OF_LOVE
+}
+#核子网络
+trait_EOE_hezi_network_host = {
+
+	icon = "gfx/interface/icons/traits/trait_EOE_hezi_network_host.dds"
+	immortal_leaders = no
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+	modifier = {
+		ship_fire_rate_mult = 4
+		ship_weapon_damage = 4
+		ship_weapon_range_mult = 0.2
+		ship_ftl_jumpdrive_range_mult = 5
+	}
+}
+trait_EOE_hezi_network = {
+
+	icon = "gfx/interface/icons/traits/trait_EOE_hezi_network.dds"
+	immortal_leaders = no
+	leader_class = { commander }
+	initial = no
+	randomized = no
+	ai_weight = {
+		weight = 100
+	}
+	modifier = {
+		ship_fire_rate_mult = 0.25
+		ship_weapon_damage = 0.25
+		ship_weapon_range_mult = 0.15
+	}
+}

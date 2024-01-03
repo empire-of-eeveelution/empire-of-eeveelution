@@ -1,0 +1,49 @@
+
+pokemon_ships = {
+	use_for_ai_budget = yes
+	generate_mult_modifiers = {
+		upkeep
+	}
+
+	ai_use_parent_for_resources_upkeep = {
+		energy
+	}
+
+	parent = ships
+	modifier_category = ship
+
+	triggered_cost_modifier = {
+		key = ship_EOE_mew
+		use_parent_icon = yes
+		modifier_types = { mult }
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_size = EOE_mew
+		}
+	}
+
+	triggered_cost_modifier = {
+		key = ship_EOE_Latias
+		use_parent_icon = yes
+		modifier_types = { mult }
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_size = EOE_Latias
+		}
+	}	
+	
+	triggered_cost_modifier = {
+		key = ship_EOE_Reshiram
+		use_parent_icon = yes
+		modifier_types = { mult }
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_size = EOE_Reshiram
+		}
+	}
+}
+
+

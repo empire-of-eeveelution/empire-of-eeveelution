@@ -1,0 +1,389 @@
+@cost1 = 5
+@cost2 = 10
+@cost3 = 15
+@cost4 = 20
+
+@power1 = -10
+@power2 = -15
+@power3 = -20
+@power4 = -30
+utility_component_template = {
+	key = "COMBAT_COMPUTER_SWARM_PRECOG_EOE"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_precog"
+	icon_frame = 1
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { corvette crisis_corvette }
+	component_set = "combat_computers"
+	ship_behavior = "swarm"
+	prerequisites = { "tech_precognition_interface_EOE" }
+
+	modifier = {
+		ship_evasion_mult = 0.15
+		ship_speed_mult = 0.20
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_PICKET_PRECOG_EOE"
+	size = small
+	icon = "GFX_ship_part_computer_picket_precog"
+	icon_frame = 1
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { corvette destroyer cruiser crisis_corvette crisis_destroyer crisis_cruiser }
+	component_set = "combat_computers"
+	ship_behavior = "picket"
+	prerequisites = { "tech_precognition_interface_EOE" }
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.20
+		ship_tracking_add = 40
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_LINE_PRECOG_EOE"
+	size = small
+	icon = "GFX_ship_part_computer_line_precog"
+	icon_frame = 1
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { destroyer cruiser battleship crisis_destroyer crisis_cruiser }
+	component_set = "combat_computers"
+	ship_behavior = "line"
+	prerequisites = { "tech_precognition_interface_EOE" }
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_accuracy_add = 15
+		ship_tracking_add = 10
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_ARTILLERY_PRECOG_EOE"
+	size = small
+	icon = "GFX_ship_part_computer_artillery_precog"
+	icon_frame = 1
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	class_restriction = { shipclass_military shipclass_starbase }
+	size_restriction = { destroyer cruiser battleship titan juggernaut crisis_destroyer crisis_cruiser }
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	prerequisites = { "tech_precognition_interface_EOE" }
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_weapon_range_mult = 0.15
+		ship_tracking_add = 10
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_CARRIER_PRECOG_EOE"
+	size = small
+	icon = "GFX_ship_part_computer_carrier_precog"
+	icon_frame = 1
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special }
+	size_restriction = { cruiser battleship juggernaut titan star_eater }
+	component_set = "combat_computers"
+	ship_behavior = "carrier"
+	prerequisites = { "tech_precognition_interface_EOE" }
+
+	ship_modifier = {
+		ship_engagement_range_mult = 0.75
+		ship_tracking_add = 10
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_PLATFORM_PRECOG_EOE"
+	size = small
+	icon = "GFX_ship_part_computer_platform_precog"
+	icon_frame = 1
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	class_restriction = { shipclass_military_station }
+	component_set = "combat_computers"
+	ship_behavior = "platform"
+	prerequisites = { "tech_precognition_interface_EOE" }
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_tracking_add = 25
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+utility_component_template = {
+	key = "PSI_JUMP_DRIVE_1_EOE"
+	size = small
+	icon = "GFX_ship_part_psi_jump_drive_1"
+	icon_frame = 1
+	power = @power4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost4
+		}
+	}
+	ftl = yes
+	jumpdrive = yes
+	ship_modifier = {
+		ship_windup_mult = -0.8
+		ship_ftl_jumpdrive_range_mult = 0.50
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+
+	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
+	prerequisites = { "tech_psi_jump_drive_1_EOE" }
+	component_set = "ftl_components"
+}
+
+utility_component_template = {
+	key = "SMALL_PSI_SHIELD_EOE"
+	size = small
+	icon = "GFX_ship_part_psi_shield"
+	icon_frame = 1
+	power = @power_S7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t7_cost
+			sr_zro = 0.111
+		}
+		upkeep = {
+			energy = @shield_s_t7_upkeep_energy
+			alloys = @shield_s_t7_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S7
+		ship_shield_regen_add_static = @regen_S7 #Regeneration per day
+	}
+	prerequisites = { "tech_psionic_shield_EOE" }
+	component_set = "PSI_SHIELD"
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_PSI_SHIELD_EOE"
+	size = medium
+	icon = "GFX_ship_part_psi_shield"
+	icon_frame = 1
+	power = @power_M7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t7_cost
+			sr_zro = 0.222
+		}
+		upkeep = {
+			energy = @shield_m_t7_upkeep_energy
+			alloys = @shield_m_t7_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M7
+		ship_shield_regen_add_static = @regen_M7 #Regeneration per day
+	}
+	prerequisites = { "tech_psionic_shield_EOE" }
+	component_set = "PSI_SHIELD"
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_PSI_SHIELD_EOE"
+	size = large
+	icon = "GFX_ship_part_psi_shield"
+	icon_frame = 1
+	power = @power_L7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t7_cost
+			sr_zro = 0.333
+		}
+		upkeep = {
+			energy = @shield_l_t7_upkeep_energy
+			alloys = @shield_l_t7_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L7
+		ship_shield_regen_add_static = @regen_L7 #Regeneration per day
+	}
+	prerequisites = { "tech_psionic_shield_EOE" }
+	component_set = "PSI_SHIELD"
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+utility_component_template = { #Low power requirements, lower str. Maybe good regen.
+	key = "SMALL_PSI_BARRIER_EOE"
+	size = small
+	icon = "GFX_ship_part_psi_shield"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t2_cost
+		}
+		upkeep = {
+			alloys = @shield_s_t2_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S2
+		ship_shield_regen_add_static = @regen_S5 #Regeneration per day
+	}
+	prerequisites = { "tech_psionic_barrier_EOE" }
+	component_set = "PSI_BARRIER"
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = { #Low power requirements, lower str. Maybe good regen.
+	key = "MEDIUM_PSI_BARRIER_EOE"
+	size = medium
+	icon = "GFX_ship_part_psi_shield"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t2_cost
+		}
+		upkeep = {
+			alloys = @shield_m_t2_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M2
+		ship_shield_regen_add_static = @regen_M5 #Regeneration per day
+	}
+	prerequisites = { "tech_psionic_barrier_EOE" }
+	component_set = "PSI_BARRIER"
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = { #Low power requirements, lower str. Maybe good regen.
+	key = "LARGE_PSI_BARRIER_EOE"
+	size = large
+	icon = "GFX_ship_part_psi_shield"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t2_cost
+		}
+		upkeep = {
+			alloys = @shield_l_t2_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L2
+		ship_shield_regen_add_static = @regen_L5 #Regeneration per day
+	}
+	prerequisites = { "tech_psionic_barrier_EOE" }
+	component_set = "PSI_BARRIER"
+
+	ai_weight = {
+		weight = 1
+	}
+}

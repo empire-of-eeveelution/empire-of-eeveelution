@@ -1,0 +1,357 @@
+@buildings_t1 = 1
+@buildings_t2 = 2
+@buildings_t3 = 3
+@buildings_t4 = 4
+
+building_hive_node_EOE = {
+	base_buildtime = @b1_time
+	can_build = no
+	category = unity
+	icon = building_hive_node
+
+	potential = {
+		exists = owner
+		building_relaxed_basic_income_check = yes
+		owner = {
+			is_hive_empire = yes
+		}
+	}
+
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			owner = { is_hive_empire = no }
+		}
+	}
+
+	convert_to = {
+		building_temple
+		building_simulation_1
+		building_autochthon_monument
+		building_corporate_monument
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = synaptic_reinforcement
+				}
+			}
+			energy = 2
+		}
+	}
+
+	planet_modifier = {
+		job_EOE_synapse_drone_add = @b1_jobs
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_swapped_tradition = tr_domination_synaptic_extensions
+			}
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_edict = synaptic_reinforcement
+			}
+		}
+		job_maintenance_drone_add = 1
+	}
+
+	prerequisites = {
+		"tech_hive_node"
+	}
+
+	upgrades = {
+		building_hive_cluster
+	}
+
+	triggered_desc = {
+		text = job_synapse_drone_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				has_edict = synaptic_reinforcement
+			}
+		}
+		text = job_maintenance_drone_effect_desc
+	}
+
+	on_queued = {
+		planet = {
+			set_timed_planet_flag = { flag = recent_admin_building_built days = 720 }
+		}
+	}
+}
+
+building_hive_cluster_EOE = {
+	base_buildtime = @b2_time
+	can_build = no
+
+	category = unity
+	icon = building_hive_cluster
+
+	potential = {
+		exists = owner
+		owner = {
+			is_hive_empire = yes
+		}
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+		buildings_upgrade_allow = yes
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_hive_empire = no }
+	}
+
+	convert_to = {
+		building_holotemple
+		building_simulation_2
+		building_heritage_site
+		building_corporate_site
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			exotic_gases = @b2_rare_cost
+		}
+		upkeep = {
+			energy = @b2_upkeep
+			exotic_gases = @b2_rare_upkeep
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = synaptic_reinforcement
+				}
+			}
+			energy = 2
+		}
+	}
+
+	planet_modifier = {
+		job_EOE_synapse_drone_add = @b2_jobs
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_swapped_tradition = tr_domination_synaptic_extensions
+			}
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_edict = synaptic_reinforcement
+			}
+		}
+		job_maintenance_drone_add = 1
+	}
+
+	prerequisites = {
+		"tech_hive_cluster"
+	}
+
+	upgrades = {
+		building_hive_confluence
+	}
+
+	triggered_desc = {
+		text = job_synapse_drone_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				has_edict = synaptic_reinforcement
+			}
+		}
+		text = job_maintenance_drone_effect_desc
+	}
+
+	on_queued = {
+		planet = {
+			set_timed_planet_flag = { flag = recent_admin_building_built days = 720 }
+		}
+	}
+}
+
+building_hive_confluence_EOE = {
+	base_buildtime = @b3_time
+	can_build = no
+
+	category = unity
+	icon = building_hive_confluence
+	potential = {
+		exists = owner
+		owner = {
+			is_hive_empire = yes
+		}
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+		buildings_upgrade_allow = yes
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_hive_empire = no }
+		buildings_no_exotic_gases = yes
+	}
+
+	convert_to = {
+		building_sacred_nexus
+		building_system_conflux
+		building_hypercomms_forum
+		building_corporate_forum
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			exotic_gases = @b3_rare_cost
+		}
+		upkeep = {
+			energy = @b3_upkeep
+			exotic_gases = @b3_rare_upkeep
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = synaptic_reinforcement
+				}
+			}
+			energy = 2
+		}
+	}
+
+	planet_modifier = {
+		job_EOE_synapse_drone_add = @b3_jobs
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_swapped_tradition = tr_domination_synaptic_extensions
+			}
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_edict = synaptic_reinforcement
+			}
+		}
+		job_maintenance_drone_add = 1
+	}
+
+	prerequisites = {
+		"tech_hive_confluence"
+	}
+
+	triggered_desc = {
+		text = job_synapse_drone_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				has_edict = synaptic_reinforcement
+			}
+		}
+		text = job_maintenance_drone_effect_desc
+	}
+
+	on_queued = {
+		planet = {
+			set_timed_planet_flag = { flag = recent_admin_building_built days = 720 }
+		}
+	}
+}
+
+building_EOE_trainer_department = {
+	capital = yes
+	can_build = no
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
+	position_priority = 0
+
+	category = government
+	icon = building_capital
+
+	potential = {
+		uses_habitat_capitals = yes
+		exists = owner
+		owner = { is_fallen_empire = no }
+	}
+	
+	planet_modifier = {
+		job_EOE_trainer_add = 1
+		planet_housing_add = 5
+		planet_amenities_add = 5
+		planet_max_buildings_add = @buildings_t2
+		planet_max_branch_office_buildings_add = 1
+	}
+
+
+	
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = @b2_upkeep
+		}
+	}
+
+	
+}

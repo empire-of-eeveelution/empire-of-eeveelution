@@ -1,0 +1,6 @@
+component_set = {
+	key = "pokemon_mint"
+	icon = "GFX_EOE_No_Mint"
+	icon_frame = 1	
+	required_component_set = yes
+}

@@ -1,0 +1,44 @@
+on_yearly_pulse = {
+	events = {
+		EOE_branch.61	#克子辅助
+	}
+}
+
+on_mid_game_pulse = {
+	events = {
+		EOE_branch.100  #见鬼
+	}
+}
+
+on_leader_death = {
+	events = {
+		EOE_ghost.14  #感情
+	}
+}
+
+on_planet_occupied = {
+	events = {
+		EOE_ghost.123 #神布
+	}
+}
+on_army_killed_in_combat = {
+	events = {
+		EOE_ghost.121 #神布
+	}
+}
+on_entering_system_first_time = {
+	events = {
+		leadereevent.64 #北落师门星在核子处显示的条件
+	}
+}
+on_entering_system_fleet = {
+	events = {
+		EOE_branch.150 #电磁波紊乱星系
+	}
+}
+
+on_monthly_pulse_country = {
+	events = {
+		eevent.44 #月检同化
+	}
+}

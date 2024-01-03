@@ -1,0 +1,87 @@
+portraits = {
+	EOEsteel001 = {
+		greeting_sound = "robot_human_greetings"
+		texturefile = "gfx/models/portraits/OtherTypePokemon/eoesteel081.png"
+	}
+	EOEsteel002 = {
+		greeting_sound = "robot_human_greetings"
+		texturefile = "gfx/models/portraits/OtherTypePokemon/eoesteel082.png"
+	}
+	EOEsteel003 = {
+		greeting_sound = "robot_human_greetings"
+		texturefile = "gfx/models/portraits/OtherTypePokemon/eoesteel600.png"
+	}
+	EOEsteel004 = {
+		greeting_sound = "robot_human_greetings"
+		texturefile = "gfx/models/portraits/OtherTypePokemon/eoesteel601.png"
+	}
+	EOEsteel005 = {
+		greeting_sound = "robot_human_greetings"
+		texturefile = "gfx/models/portraits/OtherTypePokemon/eoesteel809.png"
+	}
+}
+
+portrait_groups = {
+	Steelmons = {
+		default = EOEsteel001
+		game_setup = {
+			#will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				portraits = {
+					EOEsteel001
+					EOEsteel002
+					EOEsteel003
+					EOEsteel004
+					EOEsteel005
+				}
+			}
+		}
+		species = {
+			#generic portrait for a species
+			add = {
+				portraits = {
+					EOEsteel001
+					EOEsteel002
+					EOEsteel003
+					EOEsteel004
+					EOEsteel005
+				}
+			}
+		}
+		pop = {
+			#for a specific pop
+			add = {
+				portraits = {
+					EOEsteel001
+					EOEsteel002
+					EOEsteel003
+					EOEsteel004
+					EOEsteel005
+				}
+			}
+		}
+		leader = {
+			#scientists, generals, admirals, governor
+			add = {
+				portraits = {
+					EOEsteel001
+					EOEsteel002
+					EOEsteel003
+					EOEsteel004
+					EOEsteel005
+				}
+			}
+		}
+		ruler = {
+			add = {
+				portraits = {
+					EOEsteel001
+					EOEsteel002
+					EOEsteel003
+					EOEsteel004
+					EOEsteel005
+				}
+			}
+		}
+	}
+}

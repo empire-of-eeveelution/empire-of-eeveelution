@@ -1,0 +1,17 @@
+objectTypes = {
+	pdxmesh = {
+		name = "EOE_Hezi_dongtai_mesh"
+		file = "gfx/models/portraits/Pokemon_animated/01_Hezi/EOE_Hezi_dongtai.mesh"
+		scale = 1.0
+		animation = { id = "idle1"	type = "EOE_Hezi_dongtai_idle1_animation" }
+		animation = { id = "idle2"	type = "EOE_Hezi_dongtai_idle2_animation" }
+
+
+		meshsettings = {
+			name = "pPlaneShape1"
+			index = 0
+			texture_diffuse = "EOE_Hezi.dds"
+			shader = "PdxMeshPortrait"
+		}
+	}
+}

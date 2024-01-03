@@ -1,0 +1,53 @@
+
+
+entity = {
+	name = "EOE_Reshiram_entity"
+	pdxmesh = "BailongTest_mesh"
+	scale = 3
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_blend_time = 4   }
+	state = { name = "moving" state_time = 2.5
+	looping = no 
+		event = { time = 0 node = "EOE_Reshiram_fire" particle = "lithoid_01_meteor_ship_trail_2_effect" trigger_once = yes keep_particle = yes } 
+	}
+
+
+
+   #lithoid_01_meteor_ship_trail_effect
+   #lithoid_01_meteor_ship_trail_2_effect
+
+	#    state = { name = "moving" state_time = 5
+	#    	event = { time = 0 node = "engine_large_01" particle = "aquatic_01_050_ship_exhaust" trigger_once = yes keep_particle = yes }
+	#    	event = { time = 0 node = "engine_medium_01" particle = "aquatic_01_035_ship_exhaust" trigger_once = yes keep_particle = yes }
+	#    	event = { time = 0 node = "engine_medium_02" particle = "aquatic_01_035_ship_exhaust" trigger_once = yes keep_particle = yes }
+	#    	event = { time = 0 node = "light_locator_01" particle = "aquatic_01_ship_light_effect" trigger_once = yes keep_particle = yes }
+	#    	event = { time = 0 node = "light_locator_02" particle = "aquatic_01_ship_light_effect" trigger_once = yes keep_particle = yes }
+	#    	event = { time = 0 node = "EOE_fire_fire_fire" particle = "aquatic_01_050_ship_exhaust" trigger_once = yes keep_particle = yes }
+	#    	event = { time = 0 node = "EOE_fire_fire_fire" particle = "aquatic_01_035_ship_exhaust" trigger_once = yes keep_particle = yes }
+	#    	event = { time = 0 node = "EOE_fire_fire_fire" particle = "aquatic_01_035_ship_exhaust" trigger_once = yes keep_particle = yes }
+	#    	event = { time = 0 node = "EOE_fire_fire_fire" particle = "aquatic_01_ship_light_effect" trigger_once = yes keep_particle = yes }
+	#    	event = { time = 0 node = "EOE_fire_fire_fire" particle = "aquatic_01_ship_light_effect" trigger_once = yes keep_particle = yes }
+	#    }
+	locator = { name = "EOE_Reshiram_fire" 	position = { 0 -1 22 } } 
+	locator = { name = "EOE_fire_fire_fire" 	position = { 0 -1 22 } }   #第一个正数左负数右，第二个正数上负数下，第三个负数前正数后
+	locator = { name = "EOE_Reshiram_body" 	position = { 0 0 0 } }
+	locator = { name = "EOE_Reshiram_main_gun" 	position = { 0 1.5 -4 } }
+	locator = { name = "EOE_X_gun_l" 	position = { 2.5 2.5 -5} }
+	locator = { name = "EOE_X_gun_r" 	position = { -2.5 2.5 -5} }
+	locator = { name = "EOE_L_gun_l" 	position = { 5 2.5 -5} }
+	locator = { name = "EOE_L_gun_r" 	position = { -5 2.5 -5} }
+	locator = { name = "EOE_P_gun_l" 	position = { 5 2.5 -5} }
+	locator = { name = "EOE_P_gun_r" 	position = { -5 2.5 -5} }
+
+	
+	game_data = { 
+		size = 15
+		emissive_recolor_crunch = 0
+	}
+}
+
+
+animation = {
+	name = "BailongTest_idle1"
+	file = "BailongTest_idle1.anim"
+}

@@ -1,0 +1,19 @@
+spriteTypes = {
+	##特质图标
+	spriteType = {
+		name = "GFX_leader_trait_ruler_lotus_nuclear_type"
+		texturefile = "gfx/interface/icons/traits/GFX_leader_trait_ruler_lotus_nuclear_type.dds"			
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ruler_lotus_hezi_network_host"
+		texturefile = "gfx/interface/icons/traits/GFX_leader_trait_ruler_lotus_hezi_network_host.dds"			
+	}
+	spriteType = {
+		name = "GFX_trait_lotus_hezi_network"
+		texturefile = "gfx/interface/icons/traits/GFX_trait_lotus_hezi_network.dds"			
+	}
+	spriteType = {
+		name = "GFX_leader_trait_grass_type"
+		texturefile = "gfx/interface/icons/EeveelutionTypes/grass_type.png"
+	}
+}

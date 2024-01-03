@@ -1,0 +1,143 @@
+
+# All leaders will have a common trait-point value set in defines, which they use to grab traits
+
+# leader_trait = yes - this tags the trait as a leader-trait and not a species-trait
+# initial = no - if set to no, this trait can not be granted to leaders when they are generated
+# leader_class = { admiral scientist }  -- OR  - if not set, it can be given to all leader-types except Rulers
+# requires_traits = { trait_psionic } -- AND - leader-trait can only be randomly given on generation if the leaders species has this trait
+# requires_governments = { despotic_hegemony ai_overlordship } -- OR - leader-trait can only be randomly given on generation if the Empire has this type of government form
+# prerequisites = { tech_psionic_theory } - AND - leader-trait can only be given if the technology specified has been researched by the Empire
+
+##################
+# General Traits #
+##################
+
+
+# leader_trait_EOE_general_psionic = {
+# 	cost = 0
+
+# 	icon = "gfx/interface/icons/traits/trait_psionic_species.dds"
+# 	modifier = {
+# 		army_damage_mult = 0.15
+# 		army_morale = 0.15
+# 		army_morale_damage_mult = 0.15
+# 		army_collateral_damage_mult = 0.15
+# 		army_health = 0.15
+# 		species_leader_exp_gain = 0.5
+# 	}
+# 	
+# 	leader_class = { commander }
+# 	initial = no
+# 	randomized = no
+# }
+
+	
+	
+# leader_trait_dark_type_Dark_Templar_1 = {
+# 	cost = 0
+
+# 	icon = "gfx/interface/icons/EeveelutionTypes/dark_type.png"
+# 	modifier = {
+# 		army_disengage_chance_mult = 0.50
+# 		army_damage_mult = 0.2
+
+
+# 	}
+	
+# 	leader_class = { commander }
+# 	opposites = { }
+#     selectable_weight = 2000
+#     leader_potential_add = {
+# 	from = {
+# 				any_owned_pop = {
+# 					OR = {
+# 						pop_has_trait = trait_dark_type_mega_evolution
+# 						pop_has_trait = trait_dark_type_mega_evolution_swarm
+# 					}
+# 			}
+# 			}
+# 			}
+
+#  	}
+	
+	
+	
+	
+# leader_trait_electric_type_Tesla_Commander_1 = {
+# 	cost = 0
+
+# 	icon = "gfx/interface/icons/EeveelutionTypes/electric_type.png"
+# 	modifier = {
+# 		army_damage_mult = 0.4
+
+
+# 	}
+	
+# 	leader_class = { commander }
+# 	opposites = { }
+#     selectable_weight = 2000
+#     leader_potential_add = {
+# 	from = {
+# 				any_owned_pop = {
+# 				pop_has_trait = trait_electric_type_mega_evolution
+# 			}
+# 			}
+# 			}
+
+# 	}
+	
+		
+	
+			
+# leader_trait_grass_type_Production_Construction_Corps_1 = {
+# 	cost = 0
+
+# 	icon = "gfx/interface/icons/EeveelutionTypes/grass_type.png"
+# 	modifier = {
+# 		armies_upkeep_mult = -0.5
+
+
+# 	}
+	
+# 	leader_class = { commander }
+# 	opposites = { }
+#     selectable_weight = 2000
+#     leader_potential_add = {
+# 	from = {
+# 				any_owned_pop = {
+# 				pop_has_trait = trait_grass_type_mega_evolution
+# 			}
+# 			}
+# 			}
+
+#  	}
+				
+				
+# leader_trait_fairy_type_Shared_glory_1 = {
+# 	cost = 0
+
+# 	icon = "gfx/interface/icons/EeveelutionTypes/fairy_type.png"
+# 	modifier = {
+# 		army_morale = 0.4
+
+
+# 	}
+	
+# 	leader_class = { commander }
+# 	opposites = { }
+#     selectable_weight = 2000
+#     leader_potential_add = {
+# 	from = {
+# 				any_owned_pop = {
+# 					OR = {
+# 						pop_has_trait = trait_fairy_type_mega_evolution
+# 						pop_has_trait = trait_fairy_type_mega_evolution_swarm
+# 					}
+# 			}
+# 			}
+# 			}
+
+#  	}
+				
+				
+				

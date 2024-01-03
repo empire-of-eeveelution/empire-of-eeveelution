@@ -1,0 +1,18 @@
+entity = {
+	name = "EOE_Latias_entity"
+	pdxmesh = "Latias_mesh"
+	scale = 0.5
+
+
+	locator = { name = "EOE_Latias_body" 	position = { 0 0 0 } }
+	locator = { name = "EOE_Latias_main_gun" 	position = { 0 0 -12 } }   #第一个正数左负数右，第二个正数上负数下，第三个负数前正数后
+	locator = { name = "EOE_laser_gun_01_l" 	position = { 5 2 -5 } }
+	locator = { name = "EOE_laser_gun_02_r" 	position = { -5 2 -5 } }
+	locator = { name = "EOE_laser_gun_03_l" 	position = { 5 2 -5 } }
+	locator = { name = "EOE_laser_gun_03_r" 	position = { -5 2 -5 } }
+
+	game_data = { 
+		size = 10
+		emissive_recolor_crunch = 0
+	}
+}

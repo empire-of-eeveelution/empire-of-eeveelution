@@ -1,0 +1,27 @@
+component_set = { # the pokeball
+	key = "PLANET_KILLER_EOE"
+	
+	icon = "GFX_ship_part_nanobot_diffuser"
+	icon_frame = 1
+}
+
+component_set = { # FIRE, FIRE, FIRE
+	key = "PLANET_KILLER_FIRE_EOE"
+	
+	icon = "GFX_ship_part_world_cracker"
+	icon_frame = 1
+}
+component_set = { # FIRE, FIRE, FIRE
+	key = "PLANET_KILLER_FIRE_EOE_SMALL"
+	
+	icon = "GFX_EOE_Blue_Flare"
+	icon_frame = 1
+}
+
+
+# component_set = {
+# 	key = "BAILONG_PLANET_KILLER"
+# 	icon = "GFX_EOE_Blue_Flare"
+# 	icon_frame = 1	
+# 	required_component_set = yes
+# }

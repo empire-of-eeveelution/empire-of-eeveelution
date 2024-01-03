@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "EEVEE01_mesh"
+		file = "gfx/models/portraits/Pokemon_animated/EEVEE01/EEVEE01.mesh"
+		scale = 1.0
+		animation = { id = "idle1"	type = "EEVEE01_idle1_animation" }
+		animation = { id = "idle2"	type = "EEVEE01_idle2_animation" }
+
+		meshsettings = {
+			name = "pPlaneShape1"
+			index = 0
+			texture_diffuse = "EOE014.dds"
+			shader = "PdxMeshPortrait"
+		}
+	}
+}

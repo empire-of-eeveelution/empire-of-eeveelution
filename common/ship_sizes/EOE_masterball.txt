@@ -1,0 +1,41 @@
+EOE_masterball = {
+	entity = masterball_entity
+	formation_priority = 1
+	is_space_object = yes
+	graphical_culture = no
+	can_be_inspected = yes
+	max_speed = 100
+	acceleration = 1
+	rotation_speed = 1
+	collision_radius = 5
+	modifier = {
+		ship_evasion_add = 30
+	}
+	combat_disengage_chance = 10
+	max_hitpoints = 100000
+	size_multiplier = 32
+	combat_size_multiplier = 1
+	fleet_slot_size = 32
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 0
+	is_space_station = no
+	icon_frame = 5
+	icon = ship_size_military_1
+	base_buildtime = 360
+	default_behavior = colossus
+	class = shipclass_military_special
+	prerequisites = { "EOE_mental_storm" }
+	construction_type = starbase_shipyard
+	enable_default_design = yes
+	resources = {
+		category = ships
+		upkeep = {
+			energy = 10
+		}
+	}
+	is_designable = yes
+	required_component_set = "power_core"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "ftl_components_masterball"
+}

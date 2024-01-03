@@ -1,0 +1,104 @@
+# trait_EOE_self_replication = {  #没有实际效果
+# 	cost = 2
+# 	potential_crossbreeding_chance = 1.00
+# 	icon = "gfx/interface/icons/traits/trait_EOE_self_replication.dds"
+
+# 	opposites = { trait_robot_mass_produced }
+# 	improves_leaders = no
+# 	initial = yes
+# 	randomized = no
+# 	species_potential_add = {
+# 		always = no
+# 	}
+# 	species_possible_remove = {
+# 		always = no
+# 	}
+# 	species_possible_merge_add = {
+# 		always = no
+# 	}
+# 	species_class = {
+# 		Steelmons
+# 	}
+# 	allowed_archetypes = { MACHINE }
+# 	modifier = {
+# 		planet_pop_assembly_add = 1
+# 		planet_jobs_specialist_produces_mult = -0.4
+# 	}
+# }
+trait_EOE_alloy_structure = {
+	cost = 2
+	potential_crossbreeding_chance = 1.00
+	icon = "gfx/interface/icons/traits/trait_EOE_alloy_structure.dds"
+
+	opposites = { trait_robot_mass_produced }
+	improves_leaders = no
+	initial = yes
+	randomized = no
+	species_possible_merge_add = {
+		always = no
+	}
+	species_class = {
+		Steelmons
+	}
+	allowed_archetypes = { MACHINE }
+
+	modifier = {
+		planet_miners_alloys_produces_add = 1
+		planet_miners_minerals_upkeep_add = 1.5
+		# pop_category_workers_minerals_upkeep_add = 1
+		# pop_category_workers_energy_upkeep_add = -1
+		# pop_category_slave_minerals_upkeep_add = 1
+		# pop_category_slave_energy_upkeep_add = -1
+		# pop_category_specialists_minerals_upkeep_add = 1
+		# pop_category_specialists_energy_upkeep_add = -1
+		# pop_category_rulers_minerals_upkeep_add = 1
+		# pop_category_rulers_energy_upkeep_add = -1
+	}
+	slave_cost = {
+		energy = 1500
+	}
+}
+trait_EOE_miner_robot = {
+	cost = -2
+	improves_leaders = no
+	initial = yes
+	randomized = no
+	allowed_archetypes = { MACHINE }
+
+	modifier = {
+		planet_miners_produces_mult = 0.1
+		planet_farmers_produces_mult = -0.5
+		planet_technician_produces_mult = -0.5
+		species_empire_size_mult = -0.8
+	}
+	
+}
+
+trait_EOE_type_advantage = {
+	cost = 5
+	potential_crossbreeding_chance = 1.00
+	icon = "gfx/interface/icons/EeveelutionTypes/grass_type.png"
+
+	#opposites = { trait_robot_mass_produced }
+	improves_leaders = no
+	initial = no
+	randomized = no
+	species_possible_merge_add = {
+		always = no
+	}
+	species_class = {
+		Othermons
+	}
+	allowed_archetypes = { BIOLOGICAL }
+	forced_happiness = yes
+	modifier = {
+		planet_miners_alloys_produces_add = 1
+		planet_miners_minerals_upkeep_add = 1.5
+		pop_environment_tolerance = 2
+		species_empire_size_mult = -0.8
+		planet_technician_energy_upkeep_add = 1
+	}
+	slave_cost = {
+		energy = 2500
+	}
+}

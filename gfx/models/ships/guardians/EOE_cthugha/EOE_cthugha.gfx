@@ -1,0 +1,9 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "war_system_sun_mesh"
+		file = "gfx/models/ships/guardians/EOE_cthugha/war_system_sun.mesh"
+		scale = 1
+	}
+
+}

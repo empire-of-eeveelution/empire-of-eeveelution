@@ -1,0 +1,14 @@
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_EOE_black_drawf"
+		textureFile = "gfx/interface/icons/GFX_EOE_black_drawf.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_EOE_nolight"
+		textureFile = "gfx/interface/icons/GFX_EOE_nolight.dds"
+		alwaystransparent = yes		
+	}
+
+}

@@ -1,0 +1,13 @@
+
+# Triggers when the game starts
+on_ascension_perk_picked = {
+	events = {
+		EOE_trigger.1
+	}
+}
+
+on_tech_increased = {
+	events = {
+		EOE_trigger.2
+	}
+}

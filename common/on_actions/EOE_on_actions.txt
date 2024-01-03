@@ -1,0 +1,110 @@
+
+# Triggers when the game starts
+on_game_start = {
+	events = {	
+		pokemon_traits.1		#fairy type trust and influence growth
+	}
+}
+
+on_game_start_country = {
+	events = {	
+		eevent.6
+		eevent.6998
+		# leadereevent.3000
+	}
+}
+
+on_modification_complete = {
+	events = {	
+		pokemon_traits.1 		#fairy type trust and influence growth
+		pokemon_traits_remove.1
+		
+	}
+}
+
+on_yearly_pulse = {
+	events = {
+		pokemon_traits.1 		#fairy type trust and influence growth
+		pokemon_traits_remove.1
+
+	}
+}
+
+
+
+on_entering_system_fleet = {
+	events = {
+		eevent.142
+		eevent.143
+		#eevent.144
+	}
+}
+
+
+on_destroy_planet_with_PLANET_KILLER_EOE = {
+	events = {
+		crisis.5015 # Menace Objective - Destroy World/Empire
+		eevent.35
+	}
+}
+
+on_destroy_planet_with_PLANET_KILLER_OKRA = {
+	events = {
+		crisis.5015 # Menace Objective - Destroy World/Empire
+		leadereevent.20000
+	}
+}
+
+# on_monthly_pulse_country ={
+# 	events = {
+# 		eevent.37
+# 	}
+# }
+
+on_game_start_country = {
+	events = { 
+		EOEbuliding.1
+		EOEbuliding.2
+		EOEbuliding.3
+		EOEbuliding.4
+		EOEbuliding.5
+		EOEbuliding.6
+		EOEbuliding.9
+		}
+}
+
+on_building_complete = {
+	events = { 
+		EOEbuliding.0
+	}
+}
+on_district_complete = {
+	events = {
+		EOEbuliding.0
+	}
+}
+on_building_replaced = { 
+	events = {
+		EOEbuliding.0
+	}
+}
+
+
+on_destroy_planet_with_PLANET_KILLER_FIRE_EOE = {
+	events = {
+		crisis.5015 # Menace Objective - Destroy World/Empire
+		eevent.39
+	}
+}
+on_destroy_planet_with_PLANET_KILLER_FIRE_EOE_SMALL = {
+	events = {
+		crisis.5015 # Menace Objective - Destroy World/Empire
+		eevent.39
+	}
+}
+
+on_leader_death = {
+	events = {
+		EOE_branch.67
+	}
+}

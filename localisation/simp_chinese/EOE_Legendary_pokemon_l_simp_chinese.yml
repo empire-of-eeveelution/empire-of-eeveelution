@@ -1,0 +1,244 @@
+﻿l_simp_chinese:
+##################################宝可梦本体
+EOE_mew:0"梦幻"
+SHIP_GRAPHICS_EOE_MEW_DESC:0 "这种体长约10米的太空战生物以同名宝可梦为蓝本制造，模块化设计使其可以兼容不同的器官配置。梦幻强大的变化与隐身能力使其可以吸收大量伤害。"
+EOE_Latias:0"拉帝亚斯"
+SHIP_GRAPHICS_EOE_LATIAS_DESC:0 "这种约有护卫舰大小的太空战生物以同名宝可梦为蓝本制造，模块化设计使其可以兼容不同的器官配置。拉帝亚斯被设计为远程火力平台，几乎全身的灵能都用来供给她们的主要攻击器官。"
+EOE_Reshiram:0"莱希拉姆"
+SHIP_GRAPHICS_EOE_RESHIRAM_DESC:0 "这种太空巨兽以同名宝可梦为蓝本制造，模块化设计使其可以兼容不同的器官配置。莱希拉姆兼顾火力与防护，还能搭载大规模杀伤性武器。"
+################################武器
+EOE_MEW_Psychic:0"精神强念"
+EOE_MEW_Psychic_small:0"精神强念"
+EOE_MEW_Psychic_medium:0"增殖级精神强念"
+EOE_MEW_Psychic_large:0"巨兽级精神强念"
+EOE_MEW_Psychic_DESC:0"基于同名宝可梦招式研发，这个器官可以将灵能转化为动能，从内部撕裂战舰。宝可梦的定向念力攻击适合在远距离狙击小型高速目标，但对大型舰船难以造成有效伤害。\n§T你也可以在战舰上培养这些器官，将其用作舰船组件。§!"
+
+EOE_MEW_Psyshock:0"精神冲击"
+EOE_MEW_Psyshock_small:0"精神冲击"
+EOE_MEW_Psyshock_medium:0"增殖级精神冲击"
+EOE_MEW_Psyshock_large:0"巨兽级精神冲击"
+EOE_MEW_Psyshock_DESC:0"基于同名宝可梦招式研发，这个器官可以将灵能转化为动能，无需工质即可轰击敌舰。宝可梦的定向念力攻击适合在远距离狙击小型高速目标，但对大型舰船难以造成有效伤害。\n§T你也可以在战舰上培养这些器官，将其用作舰船组件。§!"
+
+EOE_MEW_Whirlpool:0"潮旋"
+EOE_MEW_Whirlpool_DESC:0"这个器官发出的灵能可以对亚空间造成剧烈扰动，干扰敌方的超光速引擎和护盾系统。"
+EOE_MEW_Aura_Sphere:0"波导弹"
+EOE_MEW_Aura_Sphere_DESC:0"基于同名宝可梦招式研发，这个器官能以极高的速度发射有追踪能力的灵能飞弹，适合用来拦截来袭的小型高速目标。\n§T你也可以在战舰上培养这些器官，将其用作舰船组件。§!"
+
+EOE_Draco_Meteor:0"龙星群"
+EOE_Draco_Meteor_DESC:0"基于同名宝可梦招式研发，这个器官能产生紧密聚集的高能中子并将其加速至近光速，相对论效应赋予抛射体的巨大质量令时空都为之颤动。\n§T你也可以在战舰上培养这些器官，将其用作舰船组件。§!"
+
+EOE_MEW_Sky_Attack:0 "神鸟猛击"
+EOE_MEW_Sky_Attack_DESC:0 "基于同名宝可梦招式研发，这个器官能产生飞鸟形状的粒子团，通过破坏性共振瘫痪护盾系统。\n§T你也可以在战舰上培养这些器官，将其用作舰船组件。§!"
+
+EOE_Blue_Flare:0"青焰"
+EOE_Blue_Flare_DESC:0"宛若洪荒初开的瞬间，这个器官发出的灵能攻击能在敌方舰体上制造4万亿摄氏度的高温，将敌方连人带船熔成一团夸克胶子汤。"
+ FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_FIRE_EOE_SMALL:0 "准备焚烧 $PLANET|Y$"
+ MESSAGE_DESC_FOR_PLANET_KILLER_FIRE_EOE_SMALL:0 "被焚烧"
+ PLANET_KILLER_FIRE_EOE_SMALL:1 "殁世青炎"
+ PLANET_KILLER_FIRE_EOE_SMALL_ACTION:0 "焚烧"
+ PLANET_KILLER_FIRE_EOE_SMALL_DESC:0 "这个器官产生的强大灵能足以在一定范围内改变物理法则，让重元素聚变反应的烈焰焚净整颗星球。\n§T将§Y宜居星球§!焚烧为§Y死寂星球§!\n将§Y非宜居类地行星§!焚烧为§Y熔融星球§!\n将§Y气态巨行星§!点燃为§Y褐矮星§!\n§!"
+################################防具
+MEW_SHIELD:0"光墙"
+MEW_SHIELD_DESC:0"基于同名宝可梦招式研发，这个器官能产生擅于偏转定向能量的灵能屏障，足以抵挡星舰炮火。\n§T你也可以在战舰上培养这些器官，将其用作舰船组件。§!"
+EOE_PSI_SHIELD_MID:0"增殖级光墙"
+EOE_PSI_SHIELD_MID_DESC:0"基于同名宝可梦招式研发，额外增殖的附属组织让这个器官能产生更强大的灵能屏障\n§T你也可以在战舰上培养这些器官，将其用作舰船组件。§!"
+EOE_PSI_SHIELD_BIG:0"巨兽级光墙"
+EOE_PSI_SHIELD_BIG_DESC:0"基于同名宝可梦招式研发，数个光墙器官组成的复合器官阵列能产生无比强大的灵能屏障\n§T你也可以在战舰上培养这些器官，将其用作舰船组件。§!"
+MEW_ARMOR:0"反射壁"
+MEW_ARMOR_DESC:0"基于同名宝可梦招式研发，这个器官能产生擅于抵消动能的灵能屏障，足以抵挡星舰炮火。\n§T你也可以在战舰上培养这些器官，将其用作舰船组件。§!"
+EOE_PSI_ARMOR_MID:0"增殖级反射壁"
+EOE_PSI_ARMOR_MID_DESC:0"基于同名宝可梦招式研发，额外增殖的附属组织让这个器官能产生更强大的灵能屏障\n§T你也可以在战舰上培养这些器官，将其用作舰船组件。§!"
+EOE_PSI_ARMOR_BIG:0"巨兽级反射壁"
+EOE_PSI_ARMOR_BIG_DESC:0"基于同名宝可梦招式研发，数个反射壁器官组成的复合器官阵列能产生无比强大的灵能屏障\n§T你也可以在战舰上培养这些器官，将其用作舰船组件。§!"
+
+################################组件
+#########梦幻
+MEW_BIO_REACTOR:0"梦幻型生化反应堆"
+MEW_BIO_REACTOR_DESC:1"利用智慧生物产生灵能的原理，这些脑部组织的输出功率堪比星舰反应堆。"
+MEW_JUMP_DRIVE:0"梦幻型灵能跃迁引擎"
+MEW_JUMP_DRIVE_DESC:1"这个器官利用梦幻的灵能打断时空的连续性，消除目的地与出发地之间的距离。理论上是这样。"
+MEW_THRUSTER:0"梦幻型推进器"
+MEW_THRUSTER_DESC:1"类似于伊布操作工具时使用的“原力”，这个器官可以将灵能转化为动能，赋予梦幻极佳的机动性。"
+MEW_COMPUTER:0"梦幻型思维核心"
+MEW_COMPUTER_DESC:1"梦幻复杂的大脑使其能处理瞬息万变的战场局势，其知性人格被限定为12岁伊布的水平。\n有士兵报告称，部分梦幻也会模仿拉帝亚斯的行为，变化为年轻女性的样貌去食堂蹭吃蹭喝。"
+MEW_SENSOR:0"梦幻心灵感应器"
+MEW_SENSOR_DESC:1"这个器官可以让梦幻窥探现实世界在虚境中的投影，附近数十光年内的一切活动在来自另一维度的注视下都无所遁形。"
+########拉帝亚斯
+LATIAS_BIO_REACTOR:0"拉帝亚斯型生化反应堆"
+LATIAS_BIO_REACTOR_DESC:1"利用智慧生物产生灵能的原理，这些脑部组织的输出功率堪比星舰反应堆。"
+LATIAS_JUMP_DRIVE:0"拉帝亚斯型灵能跃迁引擎"
+LATIAS_JUMP_DRIVE_DESC:1"这个器官利用拉帝亚斯的灵能打断时空的连续性，消除目的地与出发地之间的距离。理论上是这样。"
+LATIAS_THRUSTER:0"拉帝亚斯型推进器"
+LATIAS_THRUSTER_DESC:1"类似于伊布操作工具时使用的“原力”，这个器官可以将灵能转化为动能，不依靠任何工质来改变被推进物体的速度。"
+LATIAS_COMPUTER:0"拉帝亚斯型思维核心"
+LATIAS_COMPUTER_DESC:1"拉帝亚斯和梦幻相似，其知性人格被限定为12岁伊布的水平。\n她们热衷于制造年轻女性样貌的灵能化身与海军官兵互动，据说她们尤其喜欢身着女仆服装。\n§Y量产型萝莉兄控女仆舰娘（§!"
+LATIAS_SENSOR:0"拉帝亚斯心灵感应器"
+LATIAS_SENSOR_DESC:1"这个器官可以让拉帝亚斯窥探现实世界在虚境中的投影，附近数十光年内的一切活动在来自另一维度的注视下都无所遁形。"
+#########莱希拉姆
+RESHIRAM_BIO_REACTOR:0"莱希拉姆型生化反应堆"
+RESHIRAM_BIO_REACTOR_DESC:1"利用智慧生物产生灵能的原理，这些脑部组织的输出功率堪比星舰反应堆。这个器官产生的强大灵能足以在一定范围内改变物理法则，让重元素聚变反应的烈焰焚净整颗星球。"
+RESHIRAM_JUMP_DRIVE:0"莱希拉姆型灵能跃迁引擎"
+RESHIRAM_JUMP_DRIVE_DESC:1"这个器官利用莱希拉姆的灵能打断时空的连续性，消除目的地与出发地之间的距离。理论上是这样。"
+RESHIRAM_THRUSTER:0"莱希拉姆型推进器"
+RESHIRAM_THRUSTER_DESC:1"因为需要在限制体型的情况下输出超大功率，这个器官的能量转化效率达不到100%。一小部分灵能转化为了光能和热能，造就了莱希拉姆尾部耀眼的光焰。"
+RESHIRAM_COMPUTER:0"莱希拉姆型思维核心"
+RESHIRAM_COMPUTER_DESC:1"莱希拉姆拥有完整的知性人格，可作为基层指战员。为方便参与战术会议，她们也可以使用灵能制造小体型的化身。\n§Y莱希拉姆喜欢打扮为戴眼镜的战损装大姐姐。§!"
+RESHIRAM_SENSOR:0"莱希拉姆型心灵感应器"
+RESHIRAM_SENSOR_DESC:1"这个器官可以让莱希拉姆窥探现实世界在虚境中的投影，附近数十光年内的一切活动在来自另一维度的注视下都无所遁形。"
+
+
+###############################A槽
+EOE_Leftovers:0"吃剩的东西" #In-battle effect item
+EOE_Leftovers_DESC:0"与曾被创作者用作玩具的同名对战影响道具原理相似，这种军用微生物集群能与生物体单位共生，迅速修复其宿主遭受的损伤。"
+EOE_Emergency_Recall_small:0"紧急召回装置"
+EOE_Emergency_Recall_small_DESC:0"对精灵球紧急召回功能的逆向工程让我们复原出了创造者文明曾使用的军用级紧急召回装置。\n§T若装备这个组件的宝可梦被击败，濒死的宝可梦将被§Y召回§!至首都并进行治疗。正在治疗的宝可梦§R没有§!战斗力且维护费增加§R500%§!，同时装备多个此组件§R不会§!提高治疗速度。\n§Y梦幻§!所需的治疗时间为§G90§!天，若拥有§Y$mega_shipyard_3$§!，治疗时间为§G45§!天§!"
+EOE_Emergency_Recall:0"紧急召回装置"
+EOE_Emergency_Recall_DESC:0"对精灵球紧急召回功能的逆向工程让我们复原出了创造者文明曾使用的军用级紧急召回装置。\n§T若装备这个组件的宝可梦被击败，濒死的宝可梦将被§Y召回§!至首都并进行治疗。正在治疗的宝可梦§R没有§!战斗力且维护费增加§R500%§!，同时装备多个此组件§R不会§!提高治疗速度。\n§Y拉帝亚斯§!所需的治疗时间为§G270§!天，若拥有§Y$mega_shipyard_3$§!，治疗时间为§G135§!天§!"
+EOE_Emergency_Recall_large:0"紧急召回装置"
+EOE_Emergency_Recall_large_DESC:0"对精灵球紧急召回功能的逆向工程让我们复原出了创造者文明曾使用的军用级紧急召回装置。\n§T若装备这个组件的宝可梦被击败，濒死的宝可梦将被§Y召回§!至首都并进行治疗。正在治疗的宝可梦§R没有§!战斗力且维护费增加§R500%§!，同时装备多个此组件§R不会§!提高治疗速度。\n§Y莱希拉姆§!所需的治疗时间为§G720§!天，若拥有§Y$mega_shipyard_3$§!，治疗时间为§G360§!天§!"
+
+MEW_CLOAKING_HIGH:0"强力梦幻隐身"
+MEW_CLOAKING_HIGH_DESC:0"牺牲防护和速度以最大化释放梦幻的隐身能力"
+MEW_CLOAKING_HIGH_TOOLTIP:0"护盾强度§R-100%§!\n 基础舰船速度§R-20%§!"
+
+MEW_CLOAKING_LOW:0"低功率梦幻隐身"
+MEW_CLOAKING_LOW_DESC:0"低功率隐身能在不干扰护盾的同时减轻对速度的影响"
+MEW_CLOAKING_LOW_TOOLTIP:0"基础舰船速度§G+30%§!\n超空间跳跃充能时间§G-75%§!"
+
+
+
+##################科技与飞升
+tech_afterglow_of_the_old_days:0"旧日余晖"
+tech_afterglow_of_the_old_days_desc:0"对从创造者遗迹中搜寻到的碎片化知识进行整理与解读，将其纳入我们自己的技术体系。对历史的深刻洞悉也能让我们更加团结。"
+tech_EOE_Mew_weapon:0"小型进攻性器官"
+tech_EOE_Mew_weapon_desc:0"这些实验性的灵能器官可以在战舰上培养，作为进攻性武器。这是制造灵能生物战斗单位的第一步。"
+tech_EOE_Mew_armor:0"小型防御性器官"
+tech_EOE_Mew_armor_desc:0"这些实验性的灵能器官可以在战舰上培养，作为防御装备。"
+tech_EOE_Mew:0"构造体：梦幻"
+tech_EOE_Mew_desc:0"这种体长约10米的太空战生物以同名宝可梦为蓝本制造，模块化设计使其可以兼容不同的器官配置，还可以携带对舰武器并使用自身灵能为武器供能。梦幻强大的变化与隐身能力使其可以吸收大量伤害。"
+ TECH_UNLOCK_MEW_CONSTRUCTION_TITLE:0 "§H解锁舰船类型：§!梦幻"
+ TECH_UNLOCK_MEW_CONSTRUCTION_DESC:0 "§H梦幻§!\n这种体长约10米的太空战生物以同名宝可梦为蓝本制造，模块化设计使其可以兼容不同的器官配置。梦幻强大的变化与隐身能力使其可以吸收大量伤害。"
+tech_EOE_Latias_weapon:0"大功率进攻性器官"
+tech_EOE_Latias_weapon_desc:0"这些实验性的灵能器官可以在战舰上培养，作为进攻性武器。更进一步的灵能生物科技让这些器官能发射堪比战列舰主炮的攻击。"
+tech_EOE_Latias_armor:0"大功率防御性器官"
+tech_EOE_Latias_armor_desc:0"这些实验性的灵能器官可以在战舰上培养，作为防御装备。更进一步的灵能生物科技让这些器官能为更大的舰船提供防护。"
+tech_EOE_Latias:0"构造体：拉帝亚斯"
+tech_EOE_Latias_desc:0"这种约有护卫舰大小的太空战生物以同名宝可梦为蓝本制造，模块化设计使其可以兼容不同的器官配置，还可以携带对舰武器并使用自身灵能为武器供能。拉帝亚斯被设计为远程火力平台，几乎全身的灵能都用来供给她们的主要攻击器官。"
+ TECH_UNLOCK_LATIAS_CONSTRUCTION_TITLE:0 "§H解锁舰船类型：§!拉帝亚斯"
+ TECH_UNLOCK_LATIAS_CONSTRUCTION_DESC:0 "§H拉帝亚斯§!\n这种约有护卫舰大小的太空战生物以同名宝可梦为蓝本制造，模块化设计使其可以兼容不同的器官配置。拉帝亚斯被设计为远程火力平台，几乎全身的灵能都用来供给她们的主要攻击器官。"
+tech_EOE_Reshiram_weapon:0"巨兽级进攻性器官"
+tech_EOE_Reshiram_weapon_desc:0"这些实验性的灵能器官可以在战舰上培养，作为进攻性武器。对灵能生物科技的深入研究让这些器官有毁灭性的威力。"
+tech_EOE_Reshiram_armor:0"巨兽级防御性器官"
+tech_EOE_Reshiram_armor_desc:0"这些实验性的灵能器官可以在战舰上培养，作为防御装备。对灵能生物科技的深入研究让这些器官能为最大的舰船提供防护。"
+tech_EOE_Reshiram:0"构造体：莱希拉姆"
+tech_EOE_Reshiram_desc:0"这种太空巨兽以同名宝可梦为蓝本制造，模块化设计使其可以兼容不同的器官配置，还可以携带对舰武器并使用自身灵能为武器供能。莱希拉姆兼顾火力与防护，还能搭载大规模杀伤性武器。"
+ TECH_UNLOCK_RESHIRAM_CONSTRUCTION_TITLE:0 "§H解锁舰船类型：§!莱希拉姆"
+ TECH_UNLOCK_RESHIRAM_CONSTRUCTION_DESC:0 "§H莱希拉姆§!\n这种太空巨兽以同名宝可梦为蓝本制造，模块化设计使其可以兼容不同的器官配置。莱希拉姆兼顾火力与防护，还能搭载大规模杀伤性武器。"
+ap_mega_evolution_EOE:0"超级进化"
+ap_mega_evolution_EOE_desc:0"精神与物质，意识与肉身，曾被认为是互为因果的两种事物现已被证明不分彼此。用血肉与钢铁塑造强大的灵魂，再以灵魂之力量改变现世。我们将永远地进化下去，直至成为主宰一切法则的神灵。\n \n 建议采用§GGenetic Ascention Path§!.  \n \n§R含有不平衡的内容，采用此飞升天赋前请确保您使用的MOD中有足够强大的敌人。§!"
+requires_technology_tech_afterglow_of_the_old_days:0 "$TRIGGER_FAIL$需要£society£§Y$tech_afterglow_of_the_old_days$§!科技。"
+requires_technology_tech_mega_evolution:0 "$TRIGGER_FAIL$需要£society£§Y$tech_mega_evolution$§!科技。"
+ap_mega_evolution_EOE_modifier_desc:1 "$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$：$COST_MULT|%0=-$\n§H解锁舰船类型：§! 灵能生物战斗单位\n建造舰船消耗的£food£食物§G-20%§!"
+requires_ap_evolutionary_mastery:0"$TRIGGER_FAIL$需要§Y$tr_genetics_finish$§!或§Y$tr_synthetics_finish$§!或§Y$tr_cybernetics_finish$§!或§Y$tr_psionics_finish$§!。"
+EOEjifei3.11451.name:0"超级进化"
+EOEjifei3.11451.desc:0"当那些所谓“唯物主义者”对确实存在的灵能视而不见，唯心主义者认为自己的小脑瓜就是万物之源时，我们已彻底理解了意识与肉身的联系，用血肉与钢铁铸造威震寰宇的现世之神灵。\n在完成武器及护盾科技的研究后解锁对应的灵能生物战斗单位科技。\n§Y拉帝亚斯§!的所需科技将在§Y梦幻§!研究完成后有概率出现。\n§Y莱希拉姆§!的所需科技将在§Y拉帝亚斯§!研究完成后有概率出现。"
+
+
+
+
+
+################事件
+EOEjifei3.1.name:0"旧日余晖" #拨云见日
+EOEjifei3.1.b.desc:0"[wild_eeveelution_planet.GetName]上的科研团队汇报称，对[wild_eeveelution_planet.GetName]上的创造者遗迹的研究"
+
+##############薄荷
+
+pokemon_mint:0"薄荷"
+No_Mint:0"无薄荷"
+No_Mint_DESC:0"不携带薄荷"
+
+####走A
+Hasty_Mint:0"急躁薄荷"
+Hasty_Mint_DESC:0"这种植物共生体能够分泌激素，调节宿主的代谢方式并影响其行为模式。宝可梦装备了这种薄荷之后，会令速度容易提高，而防御则难以提高。"
+Hasty_Mint_100:0"急躁薄荷"
+Hasty_Mint_100_DESC:0"携带这种薄荷的宝可梦将试图远离敌人，在§Y100§!距离保持机动并用长程火力打击敌人。"
+
+Jolly_Mint:0"爽朗薄荷"
+Jolly_Mint_DESC:0"这种植物共生体能够分泌激素，调节宿主的代谢方式并影响其行为模式。宝可梦装备了这种薄荷之后，会令速度容易提高，而特攻则难以提高。"
+Jolly_Mint_150:0"爽朗薄荷"
+Jolly_Mint_150_DESC:0"携带这种薄荷的宝可梦将试图远离敌人，在§Y150§!距离保持机动并用长程火力打击敌人。"
+
+# Modest_Mint:0"内敛薄荷"
+# Modest_Mint_DESC:0"这种植物共生体能够分泌激素，调节宿主的代谢方式并影响其行为模式。宝可梦装备了这种薄荷之后，会令攻击容易提高，而特攻则难以提高。"
+# Modest_Mint_200:0"内敛薄荷"
+# Modest_Mint_200_DESC:0"携带这种薄荷的宝可梦将试图远离敌人，在§Y200§!距离保持机动并用长程火力打击敌人。"
+
+Naive_Mint:0"天真薄荷"
+Naive_Mint_DESC:0"这种植物共生体能够分泌激素，调节宿主的代谢方式并影响其行为模式。宝可梦装备了这种薄荷之后，会令速度容易提高，而特防则难以提高。"
+Naive_Mint_250:0"天真薄荷"
+Naive_Mint_250_DESC:0"携带这种薄荷的宝可梦将试图远离敌人，在§Y250§!距离保持机动并用长程火力打击敌人。"
+
+Timid_Mint:0"胆小薄荷"
+Timid_Mint_DESC:0"这种植物共生体能够分泌激素，调节宿主的代谢方式并影响其行为模式。宝可梦装备了这种薄荷之后，会令速度容易提高，而攻击则难以提高。"
+Timid_Mint_300:0"胆小薄荷"
+Timid_Mint_300_DESC:0"携带这种薄荷的宝可梦将试图远离敌人，在§Y300§!距离保持机动并用长程火力打击敌人。"
+
+Sassy_Mint:0"自大薄荷"
+Sassy_Mint_DESC:0"这种植物共生体能够分泌激素，调节宿主的代谢方式并影响其行为模式。宝可梦装备了这种薄荷之后，会令特防容易提高，而速度则难以提高。"
+Sassy_Mint_stay:0"自大薄荷"
+Sassy_Mint_stay_DESC:0"携带这种薄荷的宝可梦将试图在距离敌人§Y100§!距离时停在原地用长程火力打击敌人。"
+
+Brave_Mint:0"勇敢薄荷"
+Brave_Mint_DESC:0"这种植物共生体能够分泌激素，调节宿主的代谢方式并影响其行为模式。宝可梦装备了这种薄荷之后，会令攻击容易提高，而速度则难以提高。"
+Brave_Mint_stay:0"勇敢薄荷"
+Brave_Mint_stay_DESC:0"携带这种薄荷的宝可梦将试图在距离敌人§Y150§!距离时停在原地用长程火力打击敌人。"
+
+Quiet_Mint:0"冷静薄荷"
+Quiet_Mint_DESC:0"这种植物共生体能够分泌激素，调节宿主的代谢方式并影响其行为模式。宝可梦装备了这种薄荷之后，会令特攻容易提高，而速度则难以提高。"
+Quiet_Mint_stay:0"冷静薄荷"
+Quiet_Mint_stay_DESC:0"携带这种薄荷的宝可梦将试图在距离敌人§Y200§!距离时停在原地用长程火力打击敌人。"
+
+Relaxed_Mint:0"悠闲薄荷"
+Relaxed_Mint_DESC:0"这种植物共生体能够分泌激素，调节宿主的代谢方式并影响其行为模式。宝可梦装备了这种薄荷之后，会令防御容易提高，而速度则难以提高。"
+Relaxed_Mint_stay:0"悠闲薄荷"
+Relaxed_Mint_stay_DESC:0"携带这种薄荷的宝可梦将试图在距离敌人§Y250§!距离时停在原地用长程火力打击敌人。"
+
+Bold_Mint:0"大胆薄荷"
+Bold_Mint_DESC:0"这种植物共生体能够分泌激素，调节宿主的代谢方式并影响其行为模式。宝可梦装备了这种薄荷之后，会令防御容易提高，而攻击则难以提高。"
+Bold_Mint_charge:0"大胆薄荷"
+Bold_Mint_charge_DESC:0"携带这种薄荷的宝可梦将直接冲向敌舰。"
+
+EOE_pokeball_healing:0"濒死的宝可梦"
+
+policy_EOE_composition_doctrine:0"宝可梦训练学说（仅在开启§YNSC§!时可用）"
+policy_EOE_composition_doctrine_desc:0"此训练学说确定了哪种类型的宝可梦应构成我们海军的主要力量，从而使我们能够以较低的成本更快地建造自己偏爱的宝可梦，但花费更长的时间和更多的成本建造其他种类的的宝可梦。\n（为兼容性考虑，造舰费用效果只能作用于宝可梦生物组织与专属配件）"
+
+Mew_focus_name:0"重视小型宝可梦"
+Mew_focus:0"重视小型宝可梦"
+Mew_focus_desc:0"梦幻训练快并且成本低。她们非常适合用来镇压海盗，保护贸易，掩护更大的船舰以及阻止敌舰脱离战场。"
+
+Latias_focus_name:0"重视中型宝可梦"
+Latias_focus:0"重视中型宝可梦"
+Latias_focus_desc:0"拉帝亚斯有强悍的火力，能快速形成战斗力。她们能迅速从战斗中恢复并连续不断地对侵略者发起攻击，是保卫国土的理想选择。"
+
+Reshiram_focus_name:0"重视大型宝可梦"
+Reshiram_focus:0"重视大型宝可梦"
+Reshiram_focus_desc:0"莱希拉姆兼顾火力与防护，并且能搭载大规模杀伤性武器。她们能够胜任远征舰队的主力，是理想的外交人员。"
+
+mod_shipsize_EOE_mew_build_speed_mult:0"梦幻建造速度"
+mod_ship_EOE_mew_cost_mult:0"梦幻生物组织部分花费"
+
+mod_shipsize_EOE_Latias_build_speed_mult:0"拉帝亚斯建造速度"
+mod_ship_EOE_Latias_cost_mult:0"拉帝亚斯生物组织部分花费"
+
+mod_shipsize_EOE_Reshiram_build_speed_mult:0"莱希拉姆建造速度"
+mod_ship_EOE_Reshiram_cost_mult:0"莱希拉姆生物组织部分花费"
+
+
+pokemon_ships:0"宝可梦生物组织"
+
+
+
+
+
+

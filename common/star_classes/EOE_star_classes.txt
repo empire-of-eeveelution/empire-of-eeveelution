@@ -1,0 +1,11 @@
+# sc_black_drawf = {
+# 	class			= black_drawf
+# 	planet			= { key = pc_black_drawf }
+# 	spawn_odds		= 0
+# 	icon_scale		= 1.0
+# 	is_environmental_hazard = yes
+# 	modifier = {
+# 		ships_upkeep_mult = 0.25
+# 		ship_disengage_chance_reduction = 1
+# 	}
+# }

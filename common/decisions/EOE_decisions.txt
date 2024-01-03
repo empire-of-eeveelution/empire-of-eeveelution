@@ -1,0 +1,759 @@
+decision_EOE_habitat_repairing = {
+	owned_planets_only = yes
+	potential = {
+		is_planet_class = pc_habitat
+		has_modifier = EOE_broken_habitat
+	}
+	prerequisites = { tech_habitat_1 }
+	show_tech_unlock_if = {
+		has_origin = origin_protoss_shattered_ring
+	}
+	enactment_time = 180
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+			alloys = 750
+		}
+	}
+	effect = {
+		remove_modifier = EOE_broken_habitat
+		add_deposit = d_EOE_mining_station
+	}
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+decision_EOE_produce_steel_type_pokemon = {
+	owned_planets_only = yes
+	potential = {
+		owner = {
+			has_valid_civic = civic_EOE_steel_type_trainer
+		}
+		
+	}
+	allow = {
+		custom_tooltip = {
+			fail_text = EOE_steel_type_pokemon_produce_cooldown  #building
+			NOT = { has_planet_flag = EOE_steel_type_pokemon_produce_cooldown }
+		}
+	}
+	#Getting rid of this for the time being as it's still too easy to cheese it via the edict.
+	#enactment_time = 90
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 1200
+		}
+	}
+	
+	effect = {
+			create_pop = {species = event_target:EOE_steelmons}
+			create_pop = {species = event_target:EOE_steelmons}
+			create_pop = {species = event_target:EOE_steelmons}
+		
+		add_modifier = {
+				modifier = EOE_steel_type_pokemon_produce_cooldown_modifier days = 1080
+			}
+		set_timed_planet_flag = {
+			flag = EOE_steel_type_pokemon_produce_cooldown
+			days = 1080
+		} 
+	}
+	ai_weight = {
+		weight = 1000 #unfortunately this still doesn't make the AI actually use this. More research is needed as to why, or how to make them use it.
+	}
+}
+decision_EOE_assimilate = {
+	owned_planets_only = yes
+	potential = {
+		owner = {
+			has_country_flag = eoe_country
+		}
+		always = no
+	}
+	enactment_time = 30
+	effect = { 
+		hidden_effect = {
+			every_owned_pop = {
+				limit = {
+					NOT = { is_same_species = owner_main_species }
+					species = {
+						is_robotic = no
+					}
+					NOT = {
+						AND = {
+							has_trait = trait_syncretic_proles
+							has_trait = trait_pokeball_adaptability
+						}
+					}
+				}
+				kill_pop = yes
+				generate_cyborg_treats = yes
+				prev = {
+					create_pop = {
+						species = owner_main_species
+					}
+				}
+			}
+		}
+		
+	}
+}
+decision_EOE_produce_pokemon = {
+	owned_planets_only = yes
+	potential = {
+		owner = {
+			has_origin = origin_EOE_pokemon_trainer
+		}
+		
+	}
+	allow = {
+		custom_tooltip = {
+			fail_text = EOE_pokemon_produce_cooldown  #building
+			NOT = { has_planet_flag = EOE_pokemon_produce_cooldown }
+		}
+	}
+	#same thing.
+	#enactment_time = 90
+	resources = {
+		category = decisions
+		cost = {
+			food = 1200
+		}
+	}
+	
+	effect = {
+			create_pop = {species = event_target:EOE_othermons }
+			create_pop = {species = event_target:EOE_othermons }
+			create_pop = {species = event_target:EOE_othermons }
+			add_modifier = {
+				modifier = EOE_pokemon_produce_cooldown_modifier days = 1080
+			}
+		
+		set_timed_planet_flag = {
+			flag = EOE_pokemon_produce_cooldown
+			days = 1080
+		} 
+	}
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+#动员令，主菜单
+decision_EOE_use_pokemon_main = {
+	owned_planets_only = yes
+	potential = {
+		any_owned_pop = {
+			is_pokemon = yes
+		}
+	}
+	effect = {
+		planet_event = {
+			id = EOEbuliding.20
+		}
+	}
+}
+decision_EOE_use_pokemon_a = {
+	owned_planets_only = yes
+	potential = {
+		has_planet_flag = EOE_building_20_a
+		NOT = {
+			has_planet_flag = EOE_building_20_a_finished
+		}
+	}
+	
+	enactment_time = 180
+	effect = {
+		if = {
+			limit = { 
+				has_7_pokemon = yes
+			}
+			while = {
+				count = 6
+				EOE_use_pokemon = yes
+			}
+			set_planet_flag = EOE_building_20_a_finished
+		}
+		else = {
+			planet_event = {
+				id = EOEbuliding.23
+			}
+		}
+	}
+}
+decision_EOE_use_pokemon_b = {
+	owned_planets_only = yes
+	potential = {
+		has_planet_flag = EOE_building_20_b
+		NOT = {
+			has_planet_flag = EOE_building_20_b_finished
+		}
+	}
+	
+	enactment_time = 180
+	effect = {
+		if = {
+			limit = { 
+				has_7_pokemon = yes
+			}
+			while = {
+				count = 6
+				EOE_use_pokemon = yes
+			}
+			set_planet_flag = EOE_building_20_b_finished
+		}
+		else = {
+			planet_event = {
+				id = EOEbuliding.23
+			}
+		}
+	}
+}
+decision_EOE_use_pokemon_c = {
+	owned_planets_only = yes
+	potential = {
+		has_planet_flag = EOE_building_20_c
+		NOT = {
+			has_planet_flag = EOE_building_20_c_finished
+		}
+	}
+	
+	enactment_time = 180
+	effect = {
+		if = {
+			limit = { 
+				has_7_pokemon = yes
+			}
+			while = {
+				count = 6
+				EOE_use_pokemon = yes
+			}
+			set_planet_flag = EOE_building_20_c_finished
+		}
+		else = {
+			planet_event = {
+				id = EOEbuliding.23
+			}
+		}
+	}
+}
+decision_EOE_use_pokemon_d = {
+	owned_planets_only = yes
+	potential = {
+		has_planet_flag = EOE_building_20_d
+		NOT = {
+			has_planet_flag = EOE_building_20_d_finished
+		}
+	}
+	
+	enactment_time = 180
+	effect = {
+		if = {
+			limit = { 
+				has_7_pokemon = yes
+			}
+			while = {
+				count = 6
+				EOE_use_pokemon = yes
+			}
+			set_planet_flag = EOE_building_20_d_finished
+		}
+		else = {
+			planet_event = {
+				id = EOEbuliding.23
+			}
+		}
+	}
+}
+decision_EOE_use_pokemon_e = {
+	owned_planets_only = yes
+	potential = {
+		has_planet_flag = EOE_building_20_e
+		NOT = {
+			has_planet_flag = EOE_building_20_e_finished
+		}
+	}
+	
+	enactment_time = 180
+	effect = {
+		if = {
+			limit = { 
+				has_7_pokemon = yes
+			}
+			while = {
+				count = 6
+				EOE_use_pokemon = yes
+			}
+			set_planet_flag = EOE_building_20_e_finished
+		}
+		else = {
+			planet_event = {
+				id = EOEbuliding.23
+			}
+		}
+	}
+}
+decision_EOE_use_pokemon_f = {
+	owned_planets_only = yes
+	potential = {
+		has_planet_flag = EOE_building_20_f
+		NOT = {
+			has_planet_flag = EOE_building_20_f_finished
+		}
+	}
+	
+	enactment_time = 180
+	effect = {
+		if = {
+			limit = { 
+				has_7_pokemon = yes
+			}
+			while = {
+				count = 6
+				EOE_use_pokemon = yes
+			}
+			set_planet_flag = EOE_building_20_f_finished
+		}
+		else = {
+			planet_event = {
+				id = EOEbuliding.23
+			}
+		}
+	}
+}
+decision_EOE_use_pokemon_g = {
+	owned_planets_only = yes
+	potential = {
+		has_planet_flag = EOE_building_20_g
+		NOT = {
+			has_planet_flag = EOE_building_20_g_finished
+		}
+	}
+	
+	enactment_time = 180
+	effect = {
+		if = {
+			limit = { 
+				has_7_pokemon = yes
+			}
+			while = {
+				count = 6
+				EOE_use_pokemon = yes
+			}
+			set_planet_flag = EOE_building_20_g_finished
+		}
+		else = {
+			planet_event = {
+				id = EOEbuliding.23
+			}
+		}
+	}
+}
+
+#宝可梦星球改造
+decision_EOE_use_pokemon_h = {
+	owned_planets_only = yes
+	potential = {
+		has_planet_flag = EOE_building_20_h
+		NOT = {
+			has_planet_flag = EOE_building_20_h_finished
+		}
+	}
+	
+	allow = {
+		num_uncleared_blockers < 1
+		fail_text = {
+			text = EOE_must_no_blocker
+		}
+	}
+	prerequisites = {
+		tech_terrestrial_sculpting
+	}
+	show_tech_unlock_if = {
+		owner = {
+			has_origin = origin_EOE_pokemon_trainer
+		}
+	}
+	icon = decision_mastery_of_nature
+	enactment_time = 900
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1200
+			food = 1200
+		}
+	}
+	effect = {
+		if = {
+			limit = { 
+				has_7_pokemon = yes
+			}
+			while = {
+				count = 6
+				EOE_use_pokemon = yes
+			}
+			EOE_change_deposit = yes
+			EOE_change_district = yes
+			change_pc = pc_EOE_pokemon_gaia
+			set_planet_flag = EOE_building_20_h_finished
+			planet_event = {
+				id = EOEbuliding.10
+			}
+		}
+		else = {
+			planet_event = {
+				id = EOEbuliding.23
+			}
+		}
+	}
+	
+}
+
+#机器人回收
+decision_EOE_use_pokemon_i = {
+	owned_planets_only = yes
+	potential = {
+		has_planet_flag = EOE_building_20_i
+		any_owned_pop = {
+			species = {
+				is_robotic = yes
+			}
+		}
+	}
+	icon = decision_synth_sabotage
+	enactment_time = 180
+	effect = {
+		while = {
+			limit = {
+				any_owned_pop = {
+					OR = {
+						has_trait = trait_mechanical
+						species = {
+							is_robotic = yes
+						}
+					}	
+				}
+			}
+			random_owned_pop = {
+				limit = {
+					OR = {
+						has_trait = trait_mechanical
+						species = {
+							is_robotic = yes
+						}
+					}	
+				}
+				kill_pop = yes
+				owner = {
+					add_resource = {
+						alloys = 100
+					}
+				}
+			}
+		}
+		remove_planet_flag = EOE_building_20_i
+	}
+}
+
+#狡猾障碍工程
+decision_EOE_use_pokemon_j = {
+	owned_planets_only = yes
+	potential = {
+		num_uncleared_blockers >= 1
+		has_planet_flag = EOE_building_20_j
+	}
+	
+	icon = decision_mastery_of_nature
+	enactment_time = 90
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1000
+		}
+	}
+	
+	effect = {
+		if = {
+			limit = { 
+				has_4_pokemon = yes
+			}
+			while = {
+				count = 3
+				EOE_use_pokemon = yes
+			}
+			add_modifier = {
+				modifier = EOE_blocker_clear_team
+				days = -1
+			}
+			remove_planet_flag = EOE_building_20_j
+		}
+		else = {
+			planet_event = {
+				id = EOEbuliding.23
+			}
+		}
+	}
+}
+
+#建筑工程队
+decision_EOE_use_pokemon_k = {
+	owned_planets_only = yes
+	potential = {
+		has_planet_flag = EOE_building_20_k
+		NOT = {
+			has_planet_flag = EOE_building_20_k_finished
+		}
+	}
+	
+	icon = decision_medieval_alien_civilization
+	enactment_time = 180
+	effect = {
+		if = {
+			limit = { 
+				has_7_pokemon = yes
+			}
+			while = {
+				count = 6
+				EOE_use_pokemon = yes
+			}
+			set_planet_flag = EOE_building_20_k_finished
+			add_modifier = {
+				modifier = EOE_building_team
+				days = -1
+			}
+		}
+		else = {
+			planet_event = {
+				id = EOEbuliding.23
+			}
+		}
+		
+	}
+}
+
+#极速征兵
+decision_EOE_use_pokemon_l = {
+	owned_planets_only = yes
+	potential = {
+		has_planet_flag = EOE_building_20_l
+	}
+	
+	icon = decision_victorious_army
+	enactment_time = 3
+	effect = {
+		if = {
+			limit = {
+				has_4_pokemon = yes
+			 }
+			 while = {
+				count = 3
+				EOE_use_pokemon = yes
+			}
+			while = {
+				count = 5
+				create_army = {
+					owner = THIS
+					type = EOE_steel_type_pokemon_army
+				}
+				create_army = {
+					owner = THIS
+					type = assault_army
+				}
+			}
+			remove_planet_flag = EOE_building_20_l
+		}
+		else = {
+			planet_event = {
+				id = EOEbuliding.23
+			}
+		}
+	}
+}
+
+#二阶改造
+decision_EOE_use_pokemon_m = {
+	owned_planets_only = yes
+	potential = {
+		has_planet_flag = EOE_building_20_h_finished
+		NOT = {
+			has_planet_flag = EOE_finishing_transform_2
+		}
+	}
+	
+	icon = decision_mastery_of_nature
+	enactment_time = 900
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1200
+			food = 1200
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				has_7_pokemon = yes
+			}
+			while = {
+				count = 6
+				EOE_use_pokemon = yes
+			}
+			set_planet_flag = EOE_finishing_transform_2
+		}
+		else = {
+			planet_event = {
+				id = EOEbuliding.23
+			}
+		}
+	}
+}
+
+#三阶改造
+decision_EOE_use_pokemon_n = {
+	owned_planets_only = yes
+	icon = decision_EOE_tree_of_beginning
+	potential = {
+		has_planet_flag = EOE_finishing_transform_2
+		NOT = {
+			has_deposit = d_EOE_tree_of_beginning
+		}
+	}
+	
+	prerequisites = { tech_EOE_Mew }
+	show_tech_unlock_if = {
+		owner = {
+			has_country_flag = eoe_country
+		}
+	}
+	icon = decision_EOE_tree_of_beginning
+	enactment_time = 1200
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 10000
+			rare_crystals = 2000
+			alloys = 5000
+		}
+	}
+	effect = {
+		if = {
+			limit = { 
+				has_7_pokemon = yes
+			}
+			hidden_effect = {
+				while = {
+					count = 6
+					EOE_use_pokemon = yes
+				}
+				add_deposit = d_EOE_tree_of_beginning
+				while = {
+					count = 10
+					create_army = {
+						owner = root.owner
+						type = EOE_tree_def_army
+					}
+				}
+				
+			}
+		}
+		else = {
+			planet_event = {
+				id = EOEbuliding.23
+			}
+		}
+	}
+}
+
+#四阶改造
+decision_EOE_use_pokemon_o = {
+	owned_planets_only = yes
+	icon = decision_EOE_tree_of_beginning
+	potential = {
+		has_deposit = d_EOE_tree_of_beginning
+		NOT = {
+			is_planet_class = pc_EOE_city
+		}
+	}
+	icon = decision_EOE_city_planet
+	enactment_time = 3600
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 20000
+			food = 10000
+			sr_zro = 5000
+		}
+	}
+	effect = {
+		if = {
+			limit = { 
+				has_30_pokemon = yes
+			}
+			hidden_effect = {
+				while = {
+					count = 30
+					EOE_use_pokemon = yes
+				}
+				
+				while = {
+					limit = {
+						has_district = district_EOE_pokemon_city
+					}
+					remove_district = district_EOE_pokemon_city
+					add_district = district_EOE_arcology_housing
+				}
+				while = {
+					limit = {
+						has_district = district_EOE_pokemon_mining
+					}
+					remove_district = district_EOE_pokemon_mining
+				}
+				while = {
+					limit = {
+						has_district = district_EOE_pokemon_farming
+					}
+					remove_district = district_EOE_pokemon_farming
+				}
+				while = {
+					limit = {
+						has_district = district_EOE_pokemon_generator
+					}
+					remove_district = district_EOE_pokemon_generator
+				}
+				while = {
+					limit = {
+						has_district = district_EOE_pokemon_industrial
+					}
+					remove_district = district_EOE_pokemon_industrial
+					add_district = district_EOE_arcology_arms_industry
+				}
+				while = {
+					limit = {
+						has_district = district_EOE_pokemon_science
+					}
+					remove_district = district_EOE_pokemon_science
+					add_district = district_EOE_arcology_science
+				}
+				while = {
+					limit = {
+						has_district = district_EOE_pokemon_battle_field
+					}
+					remove_district = district_EOE_pokemon_battle_field
+					add_district = district_EOE_arcology_leisure
+				}
+				change_pc = pc_EOE_city
+				planet_event = {
+					id = EOEbuliding.25
+				}
+			}
+		}
+		else = {
+			planet_event = {
+				id = EOEbuliding.23
+			}
+		}
+	}
+}

@@ -1,0 +1,556 @@
+# Protoss Shattered Ring Origin
+protoss_shattered_ring_start = {
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 100
+	}
+	flags = { empire_home_system ring_world_built }
+	usage = origin
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+		spawn_megastructure = {
+			type = "ring_world_ruined"
+			orbit_angle = 0
+			orbit_distance = 45
+		}
+		spawn_megastructure = {
+			type = "ring_world_ruined"
+			orbit_angle = 180
+			orbit_distance = 45
+		}
+	}
+
+	class = "sc_b"
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		orbit_angle = 0
+		size = { min = 25 max = 30 }
+	}
+
+	change_orbit = 45
+
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "NAME_Ring_Section"
+		orbit_angle = 240
+		orbit_distance = 0
+	}
+
+	planet = {
+		class = "pc_ringworld_habitable"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+		starting_planet = yes
+		flags = { ignore_startup_effect megastructure }
+		init_effect = {
+			prevent_anomaly = yes
+			set_planet_flag = EOE_start_ring
+			set_planet_flag = special_start_planet
+		}
+	}
+
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "NAME_Ring_Section"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+
+	planet = {
+		class = "pc_ringworld_tech_damaged"
+		name = "NAME_Ring_Section"
+		orbit_angle = 120
+		orbit_distance = 0
+	}
+
+	planet = {
+		class = "pc_ringworld_seam_damaged"
+		name = "Irreparable Damage"
+		orbit_angle = 30
+		orbit_distance = 0
+		flags = { ignore_startup_effect starting_mining_target starting_deposit }
+
+		init_effect = {
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				entity_offset_height = -15
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 0
+					angle = 0
+				}
+			}
+			set_deposit = d_engineering_5
+			set_planet_flag = starting_research_target
+			set_planet_flag = starting_deposit
+		}
+	}
+
+	planet = {
+		class = "pc_shattered_2"
+		name = "The Interloper"
+		orbit_distance = -5
+		orbit_angle = 0
+		size = 5
+		has_ring = no
+		flags = { ignore_startup_effect starting_deposit starting_mining_target}
+		init_effect = {
+			set_deposit = d_minerals_10
+			set_planet_flag = EOE_interloper
+			save_global_event_target_as = EOE_the_interloper
+			
+		}
+
+
+
+		moon = {
+			name = "Space mining station"
+			class = pc_habitat
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+			size = 4
+			# starting_planet = yes
+			flags = {
+				megastructure habitat	
+			}
+			deposit_blockers = none
+			init_effect = {
+				# set_owner = root.owner
+				create_ambient_object = {
+					type = "medium_debris_01_object"
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 35
+						angle = 90
+					}
+				}
+				create_ambient_object = {
+					type = "medium_debris_02_object"
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 3
+						angle = 270
+					}
+				}
+			}
+		}
+	}
+	
+
+	planet = {
+		class = "pc_ringworld_tech_damaged"
+		name = "NAME_Ring_Section"
+		orbit_angle = 30
+		orbit_distance = 5
+	}
+
+	change_orbit = 55
+
+	planet = {
+		count = { min = 1 max = 1 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 0 max = 90 }
+		flags = { ignore_startup_effect starting_mining_target starting_deposit}
+		init_effect = {
+			add_deposit = d_minerals_2
+			set_planet_flag = EOE_may_have_more_deposit
+		}
+	}
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 180 }
+		flags = { ignore_startup_effect starting_mining_target starting_deposit}
+		init_effect = {
+			add_deposit = d_minerals_2
+			
+		}
+	}
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 180 max = 270 }
+		flags = { ignore_startup_effect starting_mining_target starting_deposit}
+		init_effect = {
+			add_deposit = d_minerals_2
+			
+		}
+	}
+	planet = {
+		class = pc_barren
+		orbit_distance = 30
+		orbit_angle = { min = 270 max = 360 }
+		flags = { ignore_startup_effect starting_mining_target starting_deposit}
+		init_effect = {
+			add_deposit = d_minerals_2
+			
+		}
+	}
+
+	
+	change_orbit = 45
+
+	planet = {
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+		change_orbit = @base_moon_distance
+		moon = {
+			count = { min = 1 max = 4 }
+			size = { min = 8 max = 20 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 6
+		}
+	}
+
+	change_orbit = 30
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = 20
+	planet = {
+		class = pc_shrouded
+		orbit_angle = { min = 90 max = 270 }
+		init_effect = {
+			set_planet_flag = EOE_protoss_shroud_planet
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 3
+					angle = 90
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_02_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 35
+					angle = 270
+				}
+			}
+		}
+	}
+
+
+
+
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "neighbor_t1"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "neighbor_t1_first_colony"
+	}
+}
+
+EOE_national_park_system = {
+	class = rl_standard_stars
+	name = National_Park
+	usage = misc_system_init
+	
+	usage_odds = 0
+	
+	flags = { EOE_national_park_system }
+
+	prevent_anomalies = no
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+		name = National_Park
+		init_effect = {
+			save_global_event_target_as = EOE_national_park_star
+		}
+	}
+	
+	change_orbit = 45
+	
+	planet = {
+		count = { min = 2 max = 4 }
+		class = rl_unhabitable_planets
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+		
+		change_orbit = @base_moon_distance
+		
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		class = pc_desert
+		orbit_distance = 30
+		name = National_Park
+		init_effect = {
+			set_planet_flag = EOE_national_park_planet
+			save_global_event_target_as = EOE_national_park_planet
+			
+		}
+	}
+	planet = {
+		count = { min = 2 max = 4 }
+		class = rl_unhabitable_planets
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+		
+		change_orbit = @base_moon_distance
+		
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+	init_effect = {
+		save_global_event_target_as = EOE_national_park_system
+	}
+}
+
+protoss_shattered_ring_2 = {
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 100
+	}
+	flags = { empire_home_system ring_world_built }
+	usage = misc_system_init
+	
+	usage_odds = 0
+
+	init_effect = {
+		spawn_megastructure = {
+			type = "ring_world_ruined"
+			orbit_angle = 0
+			orbit_distance = 45
+		}
+		spawn_megastructure = {
+			type = "ring_world_ruined"
+			orbit_angle = 180
+			orbit_distance = 45
+		}
+		spawn_megastructure = {
+			type = "ring_world_ruined"
+			orbit_angle = 30
+			orbit_distance = 45
+			init_effect = {
+				set_megastructure_flag = EOE_center_protoss_ring
+			}
+		}
+	}
+
+	class = "sc_b"
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		orbit_angle = 0
+		size = { min = 25 max = 30 }
+	}
+
+	change_orbit = 45
+
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "NAME_Ring_Section"
+		orbit_angle = 240
+		orbit_distance = 0
+	}
+
+
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "NAME_Ring_Section"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+
+	planet = {
+		class = "pc_ringworld_tech_damaged"
+		name = "NAME_Ring_Section"
+		orbit_angle = 120
+		orbit_distance = 0
+	}
+
+	planet = {
+		class = "pc_ringworld_seam_damaged"
+		name = "Irreparable Damage"
+		orbit_angle = 30
+		orbit_distance = 0
+		flags = { ignore_startup_effect starting_mining_target starting_deposit }
+
+		init_effect = {
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				entity_offset_height = -15
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 0
+					angle = 0
+				}
+			}
+			set_deposit = d_engineering_5
+			set_planet_flag = starting_research_target
+			set_planet_flag = starting_deposit
+		}
+	}
+
+	planet = {
+		class = "pc_shattered_2"
+		name = "The Interloper"
+		orbit_distance = -5
+		orbit_angle = 0
+		size = 5
+		has_ring = no
+		flags = { ignore_startup_effect starting_deposit }
+		init_effect = {
+			set_deposit = d_minerals_10
+			set_planet_flag = EOE_interloper
+			save_global_event_target_as = EOE_the_interloper
+		}
+	}
+	
+
+	planet = {
+		class = "pc_ringworld_tech_damaged"
+		name = "NAME_Ring_Section"
+		orbit_angle = 30
+		orbit_distance = 5
+	}
+
+	change_orbit = 55
+
+	planet = {
+		count = { min = 1 max = 1 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 0 max = 90 }
+	}
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 180 }
+	}
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 180 max = 270 }
+	}
+	planet = {
+		class = pc_barren
+		orbit_distance = 30
+		orbit_angle = { min = 270 max = 360 }
+	}
+
+	
+	change_orbit = 45
+
+	planet = {
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+		change_orbit = @base_moon_distance
+		moon = {
+			count = { min = 1 max = 4 }
+			size = { min = 8 max = 20 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 6
+		}
+	}
+
+	change_orbit = 30
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = 20
+	planet = {
+		class = pc_shrouded
+		orbit_angle = { min = 90 max = 270 }
+		init_effect = {
+			set_planet_flag = EOE_protoss_shroud_planet
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 3
+					angle = 90
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_02_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 35
+					angle = 270
+				}
+			}
+		}
+	}
+
+
+
+
+}

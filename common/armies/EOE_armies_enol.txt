@@ -1,0 +1,254 @@
+EOE_shroud_army = {
+	damage = 10.0
+	health = 14.0
+	has_morale = no
+	morale_damage = 4.0
+	collateral_damage = 10.0
+	war_exhaustion = 5.0
+	time = 5
+	icon = GFX_army_type_psionic
+	has_species = no
+
+	resources = {
+		category = armies
+		produces = {
+			energy = 1
+		}
+	}
+
+	potential = {
+		always = no
+	}
+}
+EOE_shroud_army_2 = {
+	damage = 20.0
+	health = 28.0
+	has_morale = no
+	morale_damage = 6.0
+	collateral_damage = 17.0
+	war_exhaustion = 7.0
+	time = 5
+	icon = GFX_army_type_psionic
+	has_species = no
+
+	resources = {
+		category = armies
+		produces = {
+			energy = 1
+		}
+	}
+
+	potential = {
+		always = no
+	}
+}
+EOE_steel_type_pokemon_army = {
+	damage = 1
+	health = 1
+	morale = 1
+	morale_damage = 1.00
+	collateral_damage = 1.00
+	war_exhaustion = 1.00
+	time = 180
+	icon = GFX_army_type_robot
+	has_species = no
+
+	prerequisites = { "tech_assault_armies" }
+	resources = {
+		category = armies
+		cost = {
+			minerals = 50
+		}
+	}
+
+	potential_country = {
+		OR = {
+			has_valid_civic = civic_EOE_steel_type_trainer
+			has_origin = origin_EOE_pokemon_trainer
+		}
+	}
+
+
+	ai_weight = {
+		base = 100
+		modifier = {
+			set = 0
+			OR = {
+				is_fallen_empire = yes
+				has_technology = tech_telepathy
+				has_technology = tech_gene_seed_purification
+				AND = {
+					OR = {
+						has_ethic = ethic_militarist
+						has_ethic = ethic_fanatic_militarist
+					}
+					has_technology = tech_gene_banks
+				}
+			}
+		}
+		modifier = {
+			factor = 0.01 #cannot guarantee that they actually have slaves/robots to get armies from
+			OR = {
+				AND = {
+					has_ai_personality_behaviour = slaver
+					has_technology = tech_neural_implants
+				}
+				AND = {
+					has_ai_personality_behaviour = robot_liberator
+					has_technology = tech_droid_workers
+				}
+				has_valid_civic = civic_reanimated_armies
+			}
+		}
+	}
+}
+EOE_kratz_shroud_army = {
+	damage = 10.0
+	health = 14.0
+	morale = 14.0
+	morale_damage = 4.0
+	collateral_damage = 10.0
+	war_exhaustion = 5.0
+	time = 5
+	icon = GFX_army_type_psionic
+	has_species = no
+
+	resources = {
+		category = armies
+		produces = {
+			energy = 1
+		}
+	}
+
+	potential = {
+		always = no
+	}
+}
+EOE_kratz_shroud_army_small = {
+	damage = 8
+	health = 4.0
+	morale = 4.0
+	morale_damage = 3
+	collateral_damage = 8
+	war_exhaustion = 4
+	time = 5
+	icon = GFX_army_type_psionic
+	has_species = no
+
+	resources = {
+		category = armies
+		produces = {
+			energy = 1
+		}
+	}
+
+	potential = {
+		always = no
+	}
+}
+EOE_regirock = {
+	damage = 10
+	health = 100
+	morale = 10
+	morale_damage = 0.1
+	collateral_damage = 1
+	war_exhaustion = 5.0
+	time = 720
+	icon = GFX_army_type_rebel
+	has_species = no
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 5000
+		}
+	}
+
+	potential = {
+		has_deposit = d_EOE_tree_of_beginning
+	}
+}
+EOE_registeel = {
+	damage = 2
+	health = 20
+	morale = 20
+	morale_damage = 1
+	collateral_damage = 1
+	war_exhaustion = 5
+	time = 720
+	icon = GFX_army_type_machine_assault
+	has_species = no
+
+	resources = {
+		category = armies
+		cost = {
+			alloys = 1000
+		}
+	}
+
+	potential = {
+		has_deposit = d_EOE_tree_of_beginning
+	}
+}
+EOE_regice = {
+	damage = 1
+	health = 10
+	morale = 100
+	morale_damage = 10
+	collateral_damage = 1
+	war_exhaustion = 5.0
+	time = 720
+	icon = GFX_army_type_xenomorph
+	has_species = no
+
+	resources = {
+		category = armies
+		cost = {
+			rare_crystals = 200
+		}
+	}
+
+	potential = {
+		has_deposit = d_EOE_tree_of_beginning
+	}
+}
+EOE_mew_fleet = {
+	damage = 1
+	health = 1
+	morale = 1
+	morale_damage = 1
+	collateral_damage = 1
+	war_exhaustion = 0
+	time = 30
+	icon = GFX_army_type_gene_warrior
+	has_species = no
+
+	resources = {
+		category = armies
+		cost = {
+			food = 12500
+			alloys = 1000
+			minerals = 1000
+		}
+	}
+	potential = {
+		has_deposit = d_EOE_tree_of_beginning
+	}
+
+}
+EOE_tree_def_army = {
+	damage = 10
+	health = 100
+	has_morale = no
+	morale_damage = 10
+	collateral_damage = 0
+	war_exhaustion = 0
+	defensive = yes
+	time = 720
+	icon = GFX_army_type_gene_warrior
+	has_species = no
+
+	potential = {
+		always = no
+	}
+}

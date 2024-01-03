@@ -1,0 +1,6 @@
+component_set = {
+	key = "EOE_fire_vampire"
+	
+	icon = "GFX_EOE_fire_vampire"
+	icon_frame = 1	
+}

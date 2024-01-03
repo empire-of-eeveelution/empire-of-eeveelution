@@ -1,0 +1,48 @@
+EOE_databank = {
+	show_in_contacts_list = yes
+	minimalist_contacts_list_profile = yes
+	share_communications = no
+	default_ships = no
+	government = no
+	observable = no
+	ai = {
+		enabled = no
+	}
+	faction = {
+		hostile = no
+		needs_border_access = no
+		generate_borders = no
+		needs_colony = no
+		auto_delete = no
+	}
+	custom_diplomacy = yes
+	modules = {
+		basic_technology_module = {}
+		exclusive_diplomacy_module = { contact_rule = on_action_only } 
+	}
+}
+
+guardian_EOE_cthugha = {
+	scaled_difficulty_bonuses = 0.5	# scales to setting
+	is_space_critter = yes
+	government = no
+	blocks_piracy = yes
+	end_game_crisis = yes
+	scaled_difficulty_bonuses = 1
+	destroys_starbases = yes
+	observable = no
+	ai = {
+		enabled = no
+	}
+	faction = {
+		hostile = yes
+		needs_border_access = no
+		generate_borders = no
+		needs_colony = no
+	}
+	modules = {
+		exclusive_diplomacy_module = { contact_rule = on_action_only } # Nothing is allowed, but we need this for relationships.
+		basic_technology_module = {}
+		standard_event_module = {} # For bouncing events
+	}
+}

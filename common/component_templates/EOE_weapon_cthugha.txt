@@ -1,0 +1,249 @@
+strike_craft_component_template = {
+	key = "EOE_strike_craft_fire_vampire"
+	size = LARGE
+	entity = "fighter_entity"
+	resources = {
+		category = ship_components
+		cost = {
+			energy = 0.1
+		}
+	}
+	power = -50
+
+	count = 4
+	regeneration_per_day = 1
+	launch_time = 0.2
+	
+	damage = { min = 250 max = 500 }
+	cooldown = 6
+	range = 300
+	attack_range = 140
+	accuracy = 1.0
+	
+	health = 150
+	armor = 0
+	shield = 150
+	evasion = 0.90
+	
+	speed = 750
+	rotation_speed = 1
+	acceleration = 2.5
+	
+	armor_damage = 1.5
+	shield_penetration = 1
+	hull_damage = 1.25
+	
+	ship_behavior = fighters_behavior
+	
+	weapon_type = instant
+	projectile_gfx = "small_space_amoeba_weapon"
+	
+	component_set = "EOE_strike_craft_fire_vampire"
+	icon = "GFX_ship_part_swarm_strike_craft_1"
+	icon_frame = 1
+	tags = { weapon_type_strike_craft weapon_type_energy }
+
+	hidden = yes
+}
+
+weapon_component_template = {
+	key = "EOE_cthugha_lance"
+	icon = GFX_ship_part_energy_lance_1
+	type = instant
+	size = titanic
+	icon_frame = 1	
+	resources = {
+		category = ship_components
+		cost = {
+			energy = 0.1
+		}
+	}
+	power = -50
+	
+	damage = { min = 15251 max = 31415 }
+	windup = { min = 1 max = 9 }
+	total_fire_time = 5
+	range = 300
+	accuracy = 1
+	power = -350
+	hull_damage = 2
+	armor_penetration = 0.0
+	armor_damage = 2
+	shield_penetration = 0.0
+	shield_damage = 1
+	tracking = 1000
+
+	firing_arc = 25.0
+	min_range = 0
+	use_ship_kill_target = no
+
+	component_set = "EOE_cthugha_lancet"
+	projectile_gfx = "particle_lance"
+	tags = { weapon_type_energy }
+	hidden = yes
+}
+
+weapon_component_template = {
+	key = "EOE_cthugha_lance_s"
+	icon = GFX_ship_part_energy_lance_1
+	type = instant
+	size = titanic
+	icon_frame = 1	
+	resources = {
+		category = ship_components
+		cost = {
+			energy = 0.1
+		}
+	}
+	power = -50
+	
+	damage = { min = 3082 max = 10405 }
+	windup = { min = 1 max = 9 }
+	total_fire_time = 5
+	range = 300
+	accuracy = 1
+	power = -350
+	hull_damage = 2
+	armor_penetration = 0.0
+	armor_damage = 2
+	shield_penetration = 0.0
+	shield_damage = 1
+	tracking = 1000
+
+	firing_arc = 25.0
+	min_range = 0
+	use_ship_kill_target = no
+
+	component_set = "EOE_cthugha_lancet"
+	projectile_gfx = "particle_lance"
+	tags = { weapon_type_energy }
+	hidden = yes
+}
+
+utility_component_template = {
+	key = "EOE_CTHUGHA_DRIVE"
+	size = small
+	icon = "GFX_ship_part_psi_jump_drive_1"
+	icon_frame = 1
+	power = 100
+	ftl = yes
+	jumpdrive = yes
+	ship_modifier = {
+		ship_windup_mult = -0.99
+		ship_ftl_jumpdrive_range_mult = 1.00
+		ship_base_speed_mult = 0.25
+		ship_jumpdrive_cooldown_mult = -0.75
+	}
+	
+	resources = {
+		category = ship_components
+		cost = {
+			unity = 100
+			sr_zro  = 5
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			has_resource = {
+				type = sr_zro
+				amount <= 5	
+			}
+			has_monthly_income = {
+				resource = sr_zro
+				value <= 1
+			}		
+		}
+	}
+	
+
+	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
+	hidden = yes
+	component_set = "ftl_components"
+}
+
+utility_component_template = {
+	key = "EOE_THRUSTER_CTHUGHA"
+	size = small
+	icon = "GFX_ship_part_thruster_4"
+	icon_frame = 1
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+			energy = 30
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1
+	}
+
+	hidden = yes
+	component_set = "thruster_components"
+	
+}
+
+utility_component_template = {
+	key = "EOE_CTHUGHA_AURA"
+	size = medium
+	icon = GFX_ship_part_aura_shield_dampener
+	icon_frame = 1
+	power = 0
+	hidden = yes
+	
+	component_set = "ship_aura_components"
+	resources = {
+		category = ship_components
+		cost = {
+			volatile_motes = 0.1
+		}
+	}
+	friendly_aura = {
+		name = "EOE_cthugha_aur_a"
+		stack_info = { 
+			id = EOE_cthugha_aur_a
+			priority = 1
+		}
+		modifier = {
+			ship_hull_regen_add_static = 2000
+			ship_shield_regen_add_static = 2000
+		}
+	}
+	hostile_aura = {
+		name = "EOE_cthugha_aura"
+		radius = 300
+		apply_on = ships
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = EOE_cthugha_aura
+			priority = 1
+		}
+		
+		damage_per_day = {
+			damage = {
+				min = 400
+				max = 600
+			}
+		}
+
+		modifier = {
+			ship_weapon_damage = -0.33
+			ship_shield_penetration_mult = -1
+			ship_accuracy_mult = 1
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}

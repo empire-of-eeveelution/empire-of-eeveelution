@@ -1,0 +1,28 @@
+#Some traits use empire range. We use these events to cheat the modifiers into traits.
+
+namespace = pokemon_traits
+
+### Hidden Game Start Event
+##########################################################################################
+### Adding traits bonus to eligible nations.
+
+#fairy type trust and influence growth
+event = {
+    id = pokemon_traits.1
+    hide_window = yes
+    is_triggered_only = yes
+   
+    immediate = {
+        every_country = {
+            limit = {
+					NOT = {has_country_flag = flag_trait_fairy_type_mega_evolution}
+					any_owned_pop = {    has_trait = trait_fairy_type_mega_evolution     }
+            }
+            add_modifier = {
+                modifier = wear_trait_fairy_type_mega_evolution
+                days = -1
+            }
+			set_country_flag = flag_trait_fairy_type_mega_evolution
+        }
+	}
+}

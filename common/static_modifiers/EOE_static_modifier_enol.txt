@@ -1,0 +1,146 @@
+EOE_radioactive_material = {
+    ships_upkeep_mult = -0.1
+}
+
+EOE_crisisfive = {
+    ship_weapon_damage = 7.5
+    ship_hull_mult = 7.5
+    ship_shield_mult = 7.5
+}
+
+EOE_modifier_ghost_story = {
+    icon_frame = 3
+    icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds"
+    pop_happiness = -0.05
+}
+
+EOE_fear_of_god = {
+    spiritualist_attraction = -0.5
+}
+
+EOE_scientific_faith_1 = {
+    job_politician_add = -1
+    job_head_researcher_add = 1
+}
+EOE_scientific_faith_2 = {
+    job_politician_add = -2
+    job_head_researcher_add = 2
+}
+EOE_scientific_faith_3 = {
+    job_politician_add = -3
+    job_head_researcher_add = 3
+}
+
+EOE_shroud_food = {
+    pop_happiness = 0.05
+}
+EOE_composer_of_strands = {
+	pop_growth_speed = 0.30
+	leader_age = 50
+}
+
+EOE_eater_of_worlds = {
+	ship_fire_rate_mult = 0.3
+    ship_weapon_damage = 0.3
+    country_food_produces_mult = -0.05
+}
+
+EOE_whisperers_in_the_void = {
+	all_technology_research_speed = 0.25
+    planet_researchers_produces_mult = 0.25
+}
+
+EOE_shroud_star_sky_OH = {
+	all_technology_research_speed = 0.05
+}
+
+EOE_shroud_star_sky = {
+    planet_jobs_physics_research_produces_mult = 0.05
+}
+
+EOE_floating_isiand_OH = {
+	all_technology_research_speed = 0.05
+}
+
+EOE_floating_isiand = {
+    planet_jobs_engineering_research_produces_mult = 0.05
+}
+
+EOE_antigravity_entertainment = {
+    pop_happiness = 0.1
+}
+
+EOE_psionic_psychology = {
+    country_society_research_produces_mult = 0.2
+}
+
+EOE_shroud_ship_design = {
+    ship_hull_mult = 0.1
+}
+
+EOE_shroud_market_energy = {
+    country_energy_produces_mult = 0.2
+}
+
+EOE_shroud_market_minerals = {
+    country_minerals_produces_mult = 0.2
+}
+
+EOE_shroud_market_food = {
+    country_food_produces_mult = 0.2
+}
+
+EOE_shroud_market_consumer = {
+    country_consumer_goods_produces_mult = 0.2
+}
+
+EOE_shroud_market_alloy = {
+    country_alloys_produces_mult = 0.2
+}
+
+EOE_shroud_market_research = {
+    all_technology_research_speed = 0.2
+}
+
+EOE_shroud_market_unity = {
+    country_unity_produces_mult = 0.2
+}
+
+EOE_psionic_storm = {
+    all_technology_research_speed = 0.2
+}
+EOE_formian_ants_OH = {
+    all_technology_research_speed = 0.05
+}
+EOE_formian_ants = {
+    planet_jobs_society_research_produces_mult = 0.05
+}
+EOE_ancient_crisis = {
+    starbase_shipyard_build_speed_mult = 0.33
+}
+EOE_machanus_influence = {
+    planet_stability_add = 5
+    planet_jobs_produces_mult = 0.05
+}
+EOE_protoss_world = {
+    planet_jobs_produces_mult = 0.1
+    icon_frame = 1
+    icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds"
+}
+EOE_eevium_z = {
+    ship_fire_rate_mult = 0.5
+    ship_weapon_damage = 0.5
+    ship_shield_mult = 0.5
+    ship_armor_mult = 0.5
+    ship_speed_mult = 0.5
+}
+EOE_hezi_network = {
+    country_produces_mult = 0.02 
+    custom_tooltip = EOE_hezi_network.tooltip
+    show_only_custom_tooltip = no
+}
+EOE_pop_unemploy = {
+    pop_demotion_time_mult = -10
+    icon_frame = 1
+    icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds"
+}

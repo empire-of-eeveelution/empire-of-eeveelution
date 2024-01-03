@@ -1,0 +1,7 @@
+EOE_protoss_shipbuild_three = {
+	base = 0
+	modifier = {
+		add = EOE_protoss_shipbuild
+	}
+	mult = 3
+}

@@ -1,0 +1,35 @@
+on_tech_increased = {
+	events = {
+		eevent.3
+		eevent.4
+		eevent.5
+		eevent.345
+		eevent.1002
+		eevent.1003
+
+
+	}
+}
+
+on_monthly_pulse_country ={
+	events = {
+		
+		eevent.1004
+	}
+}
+
+on_ascension_perk_picked = {
+	events = {
+		
+		eevent.1006
+	}
+}
+
+on_tradition_picked = {
+	events = {
+		eevent.1004
+		eevent.1005
+		eevent.1006
+		eevent.1007
+	}
+}

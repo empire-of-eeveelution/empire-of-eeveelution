@@ -1,0 +1,375 @@
+ship_design = {
+	name = "NAME_EOE_cthugha_1_smallship"
+	ship_size = EOE_cthugha_1_sz
+
+	section = {
+		template = EOE_cthugha
+		slot = "mid"
+		
+		component = {
+			slot = "EOE_fire_fire"
+			template = "PLANET_KILLER_FIRE_EOE"
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_01"
+			template = "EOE_cthugha_lance_s"
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_02"
+			template = "EOE_cthugha_lance_s"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_03"
+			template = "EOE_cthugha_lance_s"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_04"
+			template = "EOE_cthugha_lance_s"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_05"
+			template = "EOE_cthugha_lance_s"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_01"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_02"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_03"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_04"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_05"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_06"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_07"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_08"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_09"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_10"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_11"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_12"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_13"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_14"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_15"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_16"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_17"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_18"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_19"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_20"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_21"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_22"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_23"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_24"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_25"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+	}
+	required_component = "EOE_CTHUGHA_DRIVE"
+	required_component = "SENSOR_4"
+	required_component = "EOE_THRUSTER_CTHUGHA"
+	required_component = "STELLARITE_COMBAT_COMPUTER"
+	required_component = "EOE_CTHUGHA_AURA"
+	required_component = "EOE_Emergency_Recall"
+}
+
+ship_design = {
+	name = "NAME_EOE_cthugha_1_ship"
+	ship_size = EOE_cthugha_1_sz
+	
+
+	section = {
+		template = EOE_cthugha
+		slot = "mid"
+		
+		component = {
+			slot = "EOE_fire_fire"
+			template = "PLANET_KILLER_FIRE_EOE"
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_01"
+			template = "EOE_cthugha_lance"
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_02"
+			template = "EOE_cthugha_lance"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_03"
+			template = "EOE_cthugha_lance"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_04"
+			template = "EOE_cthugha_lance"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_05"
+			template = "EOE_cthugha_lance"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_01"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_02"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_03"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_04"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_05"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_06"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_07"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_08"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_09"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_10"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_11"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_12"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_13"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_14"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_15"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_16"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_17"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_18"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_19"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_20"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_21"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_22"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_23"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_24"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_25"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+	}
+	required_component = "EOE_CTHUGHA_DRIVE"
+	required_component = "SENSOR_4"
+	required_component = "EOE_THRUSTER_CTHUGHA"
+	required_component = "STELLARITE_COMBAT_COMPUTER"
+	required_component = "EOE_CTHUGHA_AURA"
+	required_component = "EOE_Emergency_Recall"
+}
+
+ship_design = {
+	name = "NAME_EOE_masterball"
+	ship_size = EOE_masterball
+	section = {
+		template = EOE_masterball
+		slot = "mid"
+	}
+	required_component = "EOE_masterball_REACTOR"
+	required_component = "SENSOR_4"
+	required_component = "EOE_masterball_JUMP_DRIVE"
+	
+}
+
+ship_design = {
+	name = "NAME_EOE_OKRASHIP"
+	ship_size = EOE_okra_ship
+	section = {
+		template = EOE_okra_ship
+		slot = "mid"
+		component = {
+			slot = "EOE_okra_ship_W"
+			template = "PLANET_KILLER_OKRA"
+		}
+
+	}
+
+	required_component = "OKRA_BIO_REACTOR"
+	required_component = "SENSOR_4"
+	required_component = "OKRA_THRUSTER"
+	required_component = "PSI_JUMP_DRIVE_1" 
+	required_component = "SCIENCE_CLOAKING_PSI"
+	
+}
+

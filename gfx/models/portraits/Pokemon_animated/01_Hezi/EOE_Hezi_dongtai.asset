@@ -1,0 +1,18 @@
+entity = {
+	name = "EOE_Hezi_dongtai_entity"
+	pdxmesh = "EOE_Hezi_dongtai_mesh"
+
+	scale = 1.0
+	default_state = "idle1"
+	state = { name = "idle1"		animation = "idle1" animation_blend_time = 0 chance =9.0 looping = no next_state = idle2 }
+	state = { name = "idle2"		animation = "idle2" animation_blend_time = 0 looping = no next_state = idle1 }
+}
+	animation = {
+		name = "EOE_Hezi_dongtai_idle1_animation"
+		file = "EOE_Hezi_dongtai_idle1.anim"
+	}
+
+	animation = {
+		name = "EOE_Hezi_dongtai_idle2_animation"
+		file = "EOE_Hezi_dongtai_idle2.anim"
+	}

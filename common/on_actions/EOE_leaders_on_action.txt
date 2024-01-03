@@ -1,0 +1,74 @@
+on_monthly_pulse_country = {
+	events = {
+		leadereevent.3		#改领袖头像
+
+	}
+}
+on_ship_destroyed_victim ={
+	events = {
+		leadereevent.19     #打策展人
+		EOE_branch.63	#克子落败
+	}
+}
+on_game_start = {
+	events = {	
+		leadereevent.25		#核子数据库展开
+	}
+}
+on_custom_diplomacy = {
+	events = {
+		leadereevent.200		#核子数据库外交
+		leadereevent.28
+		leadereevent.198
+	}
+}
+on_entering_system_fleet = {
+	events = {
+		leadereevent.6		#核子事件触发
+	}
+}
+on_yearly_pulse_country = {
+	events = {
+		leadereevent.4		#策展人10年计时
+	}
+}
+on_leader_spawned = {       
+	events = {
+		leadereevent.59		#仙系总督
+		leadereevent.60		#超能科学家
+		leadereevent.61	#月 迁 引 擎
+		# leadereevent.62	#虫群仙布
+		leadereevent.2000 #1级发特质
+		# leadereevent.2001 #火
+		# leadereevent.2002 #水
+		# leadereevent.2003 #冰
+		# leadereevent.2004 #雷
+		# leadereevent.2005 #光
+		# leadereevent.2006 #月
+		# leadereevent.2007 #仙
+	}
+}
+
+on_modification_complete = {
+	events = {
+		leadereevent.59		#仙系总督
+		leadereevent.60		#超能科学家
+		leadereevent.61	#月 迁 引 擎
+		# leadereevent.62	#虫群仙布
+		leadereevent.2000 #1级发特质
+		 leadereevent.2001 #4级发特质
+		 leadereevent.2002 #8级发特质
+		# leadereevent.2003 #冰
+		# leadereevent.2004 #雷
+		# leadereevent.2005 #光
+		# leadereevent.2006 #月
+		# leadereevent.2007 #仙
+	}
+}
+
+on_leader_level_up = {
+	events = {
+		leadereevent.2001 #4级发特质
+		leadereevent.2002 #8级发特质
+	}
+}

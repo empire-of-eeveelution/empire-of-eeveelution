@@ -1,0 +1,447 @@
+namespace = pokeball
+# country_event = {       ###########  BORING  ANNOYING  UNBALANCED  BUGSSSSSSSSS........  MAYBE NO MORE CATCHES IS BETTER
+# 	id = pokeball.1
+# 	hide_window = yes
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		fromfrom = {
+# 			OR = {
+# 				has_component = EOE_Psychic_Dominator_a
+# 				has_component = EOE_Psychic_Dominator 
+# 				}
+# 		}
+# 	}
+	
+# 	immediate = {
+# 		fromfromfrom = { save_event_target_as = EOE_catched_ship }
+		
+			
+# 		if = {
+# 			limit = {
+# 				fromfrom = {
+# 					has_component = EOE_Psychic_Dominator_a
+# 					NOT = { has_component = EOE_Psychic_Dominator }
+# 				}
+# 				fromfromfrom = {
+# 					OR = {
+# 						is_ship_size = corvette
+# 						is_ship_size = destroyer
+# 						is_ship_size = cruiser
+# 						is_ship_size = battleship
+# 						is_ship_size = titan
+# 						is_ship_size = juggernaut
+# 						is_ship_size = colossus
+# 						is_ship_size = small_ship_fallen_empire
+# 						is_ship_size = large_ship_fallen_empire
+# 						is_ship_size = massive_ship_fallen_empire
+# 						is_ship_size = marauder_corvette
+# 						is_ship_size = marauder_destroyer
+# 						is_ship_size = marauder_cruiser
+# 						is_ship_size = marauder_galleon
+# 						is_ship_size = caravaneer_cruiser_01
+# 						is_ship_size = caravaneer_destroyer_01 
+# 						is_ship_size = pirate_corvette
+# 						is_ship_size = pirate_destroyer
+# 						is_ship_size = pirate_cruiser
+# 						is_ship_size = galleon
+# 						is_ship_size = bemat_corvette
+# 						is_ship_size = bemat_destroyer
+# 						is_ship_size = bemat_cruiser
+# 						is_ship_size = large_ship_swarm
+# 						is_ship_size = large_ship_carrier_swarm
+# 						is_ship_size = small_ship_swarm
+# 						is_ship_size = large_ship_ai
+# 						is_ship_size = small_ship_ai
+# 						is_ship_size = large_ship_ed
+# 						is_ship_size = medium_ship_ed
+# 						is_ship_size = small_ship_ed
+# 					}
+# 				}
+# 			}
+# 			random_list = {
+# 				50 = {}
+# 				50 = { EOE_fleet_catched_effect = yes }
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = { 
+# 				fromfrom = { 
+# 				has_component = EOE_Psychic_Dominator
+# 				NOT = { has_component = EOE_Psychic_Dominator_a }
+# 			} 
+# 			fromfromfrom = {
+# 				OR = {
+# 					is_ship_size = corvette
+# 					is_ship_size = destroyer
+# 					is_ship_size = cruiser
+# 					is_ship_size = battleship
+# 					is_ship_size = titan
+# 					is_ship_size = juggernaut
+# 					is_ship_size = colossus
+# 					is_ship_size = small_ship_fallen_empire
+# 					is_ship_size = large_ship_fallen_empire
+# 					is_ship_size = massive_ship_fallen_empire
+# 					is_ship_size = marauder_corvette
+# 					is_ship_size = marauder_destroyer
+# 					is_ship_size = marauder_cruiser
+# 					is_ship_size = marauder_galleon
+# 					is_ship_size = caravaneer_cruiser_01
+# 					is_ship_size = caravaneer_destroyer_01 
+# 					is_ship_size = pirate_corvette
+# 					is_ship_size = pirate_destroyer
+# 					is_ship_size = pirate_cruiser
+# 					is_ship_size = galleon
+# 					is_ship_size = bemat_corvette
+# 					is_ship_size = bemat_destroyer
+# 					is_ship_size = bemat_cruiser
+# 					is_ship_size = large_ship_swarm
+# 					is_ship_size = large_ship_carrier_swarm
+# 					is_ship_size = small_ship_swarm
+# 					is_ship_size = large_ship_ai
+# 					is_ship_size = small_ship_ai
+# 					is_ship_size = large_ship_ed
+# 					is_ship_size = medium_ship_ed
+# 					is_ship_size = small_ship_ed
+# 					}
+# 			}
+# 		}
+# 			random_list = {
+# 				75 = {}
+# 				25 = { EOE_fleet_catched_effect = yes }
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = { 
+# 				fromfrom = { 
+# 					has_component = EOE_Psychic_Dominator_a
+# 					has_component = EOE_Psychic_Dominator 
+# 			} 
+# 			fromfromfrom = {
+# 				OR = {
+# 					is_ship_size = corvette
+# 					is_ship_size = destroyer
+# 					is_ship_size = cruiser
+# 					is_ship_size = battleship
+# 					is_ship_size = titan
+# 					is_ship_size = juggernaut
+# 					is_ship_size = colossus
+# 					is_ship_size = small_ship_fallen_empire
+# 					is_ship_size = large_ship_fallen_empire
+# 					is_ship_size = massive_ship_fallen_empire
+# 					is_ship_size = marauder_corvette
+# 					is_ship_size = marauder_destroyer
+# 					is_ship_size = marauder_cruiser
+# 					is_ship_size = marauder_galleon
+# 					is_ship_size = caravaneer_cruiser_01
+# 					is_ship_size = caravaneer_destroyer_01 
+# 					is_ship_size = pirate_corvette
+# 					is_ship_size = pirate_destroyer
+# 					is_ship_size = pirate_cruiser
+# 					is_ship_size = galleon
+# 					is_ship_size = bemat_corvette
+# 					is_ship_size = bemat_destroyer
+# 					is_ship_size = bemat_cruiser
+# 					is_ship_size = large_ship_swarm
+# 					is_ship_size = large_ship_carrier_swarm
+# 					is_ship_size = small_ship_swarm
+# 					is_ship_size = large_ship_ai
+# 					is_ship_size = small_ship_ai
+# 					is_ship_size = large_ship_ed
+# 					is_ship_size = medium_ship_ed
+# 					is_ship_size = small_ship_ed
+	
+# 					}
+# 			}
+# 		}
+# 			random_list = {
+# 				25 = {}
+# 				75 = { EOE_fleet_catched_effect = yes }
+# 			}
+# 		}
+# 		else_if = {    #除了上述舰船外的其他舰船和太空生物100%捕捉
+# 			limit = { 
+# 				fromfromfrom = { #不能捉的
+# 					NOR = {
+# 						is_ship_size = enclave_station  #拆了
+# 						is_ship_size = npc_warship_01  #要修复
+# 						is_ship_size = homebase			#拆了
+# 						is_ship_size = transport		#没陆军
+# 						is_ship_size = space_whale_1  #解剖了
+# 						is_ship_size = space_whale_2
+# 						is_ship_size = space_whale_3
+# 						is_ship_size = space_whale_4
+# 					}
+# 			}
+# 			}
+# 			 EOE_fleet_catched_effect = yes 
+# 		}
+# 	}
+# }
+
+
+###################################宝可梦复活
+country_event = {
+	id = pokeball.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+		fromfrom = {
+			OR = {
+				has_component = EOE_Emergency_Recall_small
+				has_component = EOE_Emergency_Recall
+				has_component = EOE_Emergency_Recall_large
+
+
+			}
+								
+		}
+	}
+
+	immediate = {
+		fromfrom = { save_event_target_as = fainted_pokemon }
+
+		if = {
+			limit = { 
+				any_owned_fleet = { has_fleet_flag = defeated_pokemons }
+			}
+		every_owned_fleet = {
+			limit = { has_fleet_flag = defeated_pokemons }
+			create_ship = {
+				name = random
+				design = event_target:fainted_pokemon
+			}
+				set_location = { target = owner.capital_scope }
+		}
+			
+	}
+
+		else = {
+			capital_scope = {
+				create_fleet = {
+					effect = {
+					set_owner = root
+					create_ship = {
+						name = random
+						design = event_target:fainted_pokemon
+					}
+						set_location = { target = owner.capital_scope }
+						set_timed_fleet_flag = { flag = defeated_pokemons days = 30	}				
+							}
+			}
+		}
+	}		
+	}
+	after = {
+		last_created_ship = {
+			if = {
+				limit = {
+					 is_ship_size = EOE_mew 
+					   owner = {
+						   NOR = {
+							   has_megastructure = mega_shipyard_3
+							   has_megastructure = mega_shipyard_restored
+						   }
+					   }
+		   }
+				   add_modifier = {	modifier = EOE_pokeball_healing	 days = 90 }
+			}
+
+			else_if = {
+				limit = {
+					 is_ship_size = EOE_mew 
+					   owner = {
+						   OR = {
+							   has_megastructure = mega_shipyard_3
+							   has_megastructure = mega_shipyard_restored
+						   }
+					   }
+		   }
+				   add_modifier = {	modifier = EOE_pokeball_healing	 days = 45 }
+			}
+			else_if = {
+				limit = {
+					 is_ship_size = EOE_Latias 
+					   owner = {
+						   NOR = {
+							   has_megastructure = mega_shipyard_3
+							   has_megastructure = mega_shipyard_restored
+						   }
+					   }
+		   }
+				   add_modifier = {	modifier = EOE_pokeball_healing	 days = 270 }
+			}
+
+			else_if = {
+				limit = {
+					 is_ship_size = EOE_Latias 
+					   owner = {
+						   OR = {
+							   has_megastructure = mega_shipyard_3
+							   has_megastructure = mega_shipyard_restored
+						   }
+					   }
+		   }
+		  		 add_modifier = {	modifier = EOE_pokeball_healing	 days = 135 }
+			}
+
+			else_if = {
+				limit = {
+					 is_ship_size = EOE_Reshiram 
+					   owner = {
+						   NOR = {
+							   has_megastructure = mega_shipyard_3
+							   has_megastructure = mega_shipyard_restored
+						   }
+					   }
+		   }
+				   add_modifier = {	modifier = EOE_pokeball_healing	 days = 720 }
+			}
+
+			else_if = {
+				limit = {
+					 is_ship_size = EOE_Reshiram 
+					   owner = {
+						   OR = {
+							   has_megastructure = mega_shipyard_3
+							   has_megastructure = mega_shipyard_restored
+						   }
+					   }
+		   }
+				   add_modifier = {	modifier = EOE_pokeball_healing	 days = 360 }
+			}
+		}
+	}
+}
+
+
+# 	country_event = {
+# 		id = pokeball.3
+# 		hide_window = yes
+# 		is_triggered_only = yes
+# 		immediate = {
+# 		capital_scope = {
+# 		create_fleet = {
+# 			effect = {
+# 			set_owner = root
+# 			create_ship = {
+# 				name = random
+# 				random_existing_design = EOE_mew
+# 			}
+# 				set_location = { target = owner.capital_scope }
+# 						}
+# 					}
+# 				}
+# 	}
+# }
+
+# country_event = {
+# 	id = pokeball.4
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	immediate = {
+# 	capital_scope = {
+# 	create_fleet = {
+# 		effect = {
+# 		set_owner = root
+# 		create_ship = {
+# 			name = random
+# 			random_existing_design = EOE_Latias
+# 		}
+# 			set_location = { target = owner.capital_scope }
+# 					}
+# 				}
+# 			}
+# }
+# }
+
+# country_event = {
+# 	id = pokeball.5
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	immediate = {
+# 	capital_scope = {
+# 	create_fleet = {
+# 		effect = {
+# 		set_owner = root
+# 		create_ship = {
+# 			name = random
+# 			random_existing_design = EOE_Reshiram
+# 		}
+# 			set_location = { target = owner.capital_scope }
+# 					}
+# 				}
+# 			}
+# }
+# }
+
+# fleet_event = {
+# 	id = pokeball.6
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		solar_system = {
+# 			NOT = {
+# 				has_star_flag = EOE_capital_system
+# 			}
+# 		} 
+# 		root = { is_ship_size = EOE_masterball }
+# 	}
+# 	immediate = {
+# 		from = {
+# 			random_ship_in_system = {
+# 				limit = {
+# 					owner = {
+# 						is_hostile = root.owner
+# 					}
+# 					NOR = {
+# 						is_civilian = yes
+# 						is_ship_class = shipclass_starbase
+# 						is_ship_class = shipclass_transport
+# 						is_ship_class = shipclass_military_station
+# 						is_ship_class = shipclass_mining_station
+# 						is_ship_class = shipclass_research_station
+# 						is_ship_class = shipclass_observation_station
+# 					}
+# 				}
+# 				create_fleet = {
+# 					effect = {
+# 					set_owner = root.owner
+# 					create_ship = {
+# 						name = random
+# 						design = prev
+# 						graphical_culture = prev.from
+# 						effect = {
+# 						 add_modifier = { modifier = EOE_pokeball_catched	}
+# 						 add_modifier = { modifier = EOE_pokeball_catched_run   days = 180	 }
+# 								 }
+			
+# 					}
+# 						set_location = { target = prev }
+# 								}
+# 							}
+# 				delete_ship = this
+# 			}
+# 	} 
+# 	delete_fleet = this
+# }
+# }
+
+
+
+
+# 你要让事件发生的地方.solar_system = {    
+# 	create_ambient_object = {
+# 		type = "xxx"
+# 		location = solar_system.star
+# 	}
+# 	last_created_ambient_object = {
+# 		set_location = {
+# 			target = solar_system.star
+# 			distance = 0
+# 			angle = random
+# 		}
+# 	}
+# }

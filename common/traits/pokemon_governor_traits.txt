@@ -1,0 +1,288 @@
+
+# All leaders will have a common trait-point value set in defines, which they use to grab traits
+
+# leader_trait = yes - this tags the trait as a leader-trait and not a species-trait
+# initial = no - if set to no, this trait can not be granted to leaders when they are generated
+# leader_class = { admiral scientist }  -- OR  - if not set, it can be given to all leader-types except Rulers
+# requires_traits = { trait_psionic } -- AND - leader-trait can only be randomly given on generation if the leaders species has this trait
+# requires_governments = { despotic_hegemony ai_overlordship } -- OR - leader-trait can only be randomly given on generation if the Empire has this type of government form
+# prerequisites = { tech_psionic_theory } - AND - leader-trait can only be given if the technology specified has been researched by the Empire
+
+###################
+# Governor Traits #
+###################
+
+# leader_trait_EOE_governor_psionic = {
+# 	cost = 0
+# 	icon = "gfx/interface/icons/traits/trait_psionic_species.dds"
+# 	modifier = {
+# 		planet_buildings_upkeep_mult = -0.05
+# 		planet_districts_upkeep_mult = -0.05
+# 		planet_jobs_unity_produces_mult = 0.05
+# 		planet_army_build_speed_mult = 0.05
+# 		army_defense_damage_mult = 0.05
+# 		armies_cost_mult = -0.05
+# 		planet_crime_add = -15
+# 		planet_jobs_produces_mult = 0.05
+# 		species_leader_exp_gain = 0.5
+# 	}
+# 	
+# 	leader_class = { official }
+# 	initial = no
+# 	randomized = no
+# }
+
+leader_trait_governor_fairy_type_Empathy_network_1 = {
+	icon = "gfx/interface/icons/EeveelutionTypes/fairy_type.png"
+	councilor_modifier = {
+		official_exp_gain = 0.2
+	}
+	planet_modifier = {
+		planet_stability_add = 15
+		planet_jobs_unity_produces_mult = 0.10
+		 planet_crime_add = -25
+		
+	}
+
+	# triggered_planet_modifier = {
+	# 	potential = { trait_is_gestalt_check = no }
+	# 	planet_crime_add = -25
+	# }
+	# triggered_planet_modifier = {
+	# 	potential = { trait_is_gestalt_check = yes }
+	# 	planet_crime_no_happiness_add = -25
+	# }
+
+	sector_modifier = {
+		planet_stability_add = 10
+		planet_jobs_unity_produces_mult = 0.05
+		 planet_crime_add = -15
+	}
+
+	# triggered_sector_modifier = {
+	# 	potential = { trait_is_gestalt_check = no }
+	# 	planet_crime_add = -15
+	# }
+	# triggered_sector_modifier = {
+	# 	potential = { trait_is_gestalt_check = yes }
+	# 	planet_crime_no_happiness_add = -15
+	# }
+	
+	leader_class = { official }
+
+	initial = no
+	randomized = no
+	}
+
+
+leader_trait_governor_ice_type_nano_builder_1 = {
+	icon = "gfx/interface/icons/EeveelutionTypes/ice_type.png"
+	planet_modifier = {
+		planet_buildings_cost_mult = -0.15
+		planet_districts_cost_mult = -0.15
+		planet_building_build_speed_mult = 0.15
+		
+	}
+	sector_modifier = {
+		planet_buildings_cost_mult = -0.075
+		planet_districts_cost_mult = -0.075
+		planet_building_build_speed_mult = 0.75
+		starbase_shipyard_build_speed_mult = 0.25
+		starbase_shipyard_build_cost_mult = -0.15
+	}
+	leader_class = { official }
+	initial = no
+	randomized = no
+}
+
+
+
+
+leader_trait_governor_dark_type_necessary_evil_1 = {
+	triggered_councilor_modifier = {
+		potential = {
+			trait_is_gestalt_check = no
+		}
+		council_agenda_progress_speed = 0.10
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			trait_is_gestalt_check = yes
+		}
+		country_unity_produces_mult = 0.1
+	}
+
+	icon = "gfx/interface/icons/EeveelutionTypes/dark_type.png"
+	
+	councilor_trait = yes
+	initial = no
+	randomized = no
+	leader_class = { official }
+}
+
+leader_trait_governor_water_type_1 = { #水系帝国代表
+
+	icon = "gfx/interface/icons/EeveelutionTypes/water_type.png"
+	councilor_modifier = {
+		envoys_add = 1
+		diplo_weight_mult = 0.2
+		country_councilor_influence_produces_add = 0.5
+		country_trust_cap_add = 25
+		monthly_loyalty_from_subjects = 0.5
+	}
+	galcom_modifier = {
+		#战争规则
+		resolution_category_rulesofwar_vote_strength_mult = 0.3
+		#防卫私有化
+		resolution_category_defenseprivatization_vote_strength_mult = 0.3
+		#星系间指令
+		resolution_category_intergalacticdirective_vote_strength_mult = 0.3 
+		#制裁法案
+		resolution_category_sanctions_commerce_industry_vote_strength_mult = 0.3
+		resolution_category_sanctions_politics_culture_vote_strength_mult = 0.3
+		resolution_category_sanctions_environment_technology_vote_strength_mult = 0.3
+		resolution_category_sanctions_defense_war_vote_strength_mult = 0.3
+		#星系改革
+		resolution_category_market_vote_strength_mult = 0.3
+		resolution_category_galacticreforms_vote_strength_mult = 0.3
+		resolution_category_declare_crisis_vote_strength_mult = 0.3
+		resolution_category_galactic_focus_vote_strength_mult = 0.3
+	}
+	triggered_galcom_modifier = {
+		potential = {
+			has_galactic_custodian = yes
+		}
+		resolution_category_term_limits_vote_strength_mult = 0.3
+		resolution_category_custodian_reforms_vote_strength_mult = 0.3
+		resolution_category_galactic_institutions_vote_strength_mult = 0.3
+	}
+	triggered_galcom_modifier = {
+		potential = {
+			has_galactic_emperor = yes
+		}
+		resolution_category_imperial_council_vote_strength_mult = 0.3
+		resolution_category_imperial_reforms_vote_strength_mult = 0.3
+		resolution_category_emperor_imperial_institutions_vote_strength_mult = 0.3
+		resolution_category_foreign_relations_vote_strength_mult = 0.3
+	}
+	federation_modifier = { #联邦加成
+		federation_experience_add = 1.00
+		federation_join_malus_mult = -0.15
+		cohesion_ethics_penalty_mult = -0.15
+		federation_naval_cap_contribution_mult = 0.15
+		federation_fleet_cap_add = 25
+	}
+	councilor_trait = yes
+	initial = no
+	randomized = no
+	leader_class = { official }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# leader_trait_governor_fairy_type_Cloud_brain_services_1 = {
+# 	icon = "gfx/interface/icons/EeveelutionTypes/fairy_type.png"
+# 	councilor_modifier = {
+# 		official_exp_gain = 0.2
+# 	}
+# 	planet_modifier = {
+# 		planet_stability_add = 15
+# 		planet_jobs_unity_produces_mult = 0.20
+# 		planet_crime_no_happiness_add = -25
+		
+# 	}
+
+# 	# triggered_planet_modifier = {
+# 	# 	potential = { trait_is_gestalt_check = no }
+# 	# 	planet_crime_add = -25
+# 	# }
+# 	# triggered_planet_modifier = {
+# 	# 	potential = { trait_is_gestalt_check = yes }
+# 	# 	planet_crime_no_happiness_add = -25
+# 	# }
+
+# 	sector_modifier = {
+# 		planet_stability_add = 10
+# 		planet_jobs_unity_produces_mult = 0.10
+# 		planet_crime_no_happiness_add = -15
+# 	}
+
+# 	# triggered_sector_modifier = {
+# 	# 	potential = { trait_is_gestalt_check = no }
+# 	# 	planet_crime_add = -15
+# 	# }
+# 	# triggered_sector_modifier = {
+# 	# 	potential = { trait_is_gestalt_check = yes }
+# 	# 	planet_crime_no_happiness_add = -15
+# 	# }
+	
+# 	leader_class = { official }
+
+# 	initial = no
+# 	randomized = no
+# }
+			
+# leader_trait_governor_dark_type_Self_cognition_control_1 = {
+# 	cost = 0
+
+# 	icon = "gfx/interface/icons/EeveelutionTypes/dark_type.png"
+# 	modifier = {
+# 	    planet_jobs_complex_drone_produces_mult = 0.1
+# 		planet_jobs_simple_drone_produces_mult = 0.2
+# 		planet_army_build_speed_mult = 0.2
+# 		armies_cost_mult = -0.2
+
+# 	}
+	
+# 	leader_class = { official }
+# 	opposites = { }
+
+# 	selectable_weight = 2000
+#     leader_potential_add = {
+# 	from = {
+# 				any_owned_pop = {
+# 				pop_has_trait = trait_dark_type_mega_evolution_swarm
+# 			}
+# 			}
+# 			}
+# 			}
+
+
+
+
+	
+
+#leader_trait_governor_grass_type_Plants_vs_Aliens_1 = {
+#	cost = 0
+#
+#	icon = "gfx/interface/icons/EeveelutionTypes/grass_type.png"
+#	modifier = {
+#		pop_defense_armies_add = 1
+#	}
+#
+#	leader_class = { official }
+#	opposites = { }
+#
+#	selectable_weight = 2000
+#    leader_potential_add = {
+#	from = {
+#				any_owned_pop = {
+#				pop_has_trait = trait_grass_type_mega_evolution
+#			}
+#			}
+#			}
+#}
+
+					

@@ -1,0 +1,50 @@
+objectTypes = {
+	pdxmesh = {
+		name = "FaXianHao_mesh"
+		file = "gfx/models/ships/EOEFaXianHao/FaXianHao.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "DSC_Discovery:dis_lightGlassShape"
+			index = 0
+			texture_diffuse = "dis_mainBody_luminance_v03.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "DSC_Discovery:dis_outerRingShape"
+			index = 0
+			texture_diffuse = "dis_outerRing_color_v03.dds"
+			texture_normal = "dis_outerRing_color_normal.dds"
+			texture_specular = "dis_outerRing_spec_v03.dds"
+			shader = "PdxMeshShip"
+		}
+
+		# meshsettings = {
+		# 	name = "DSC_Discovery:dis_insignia01Shape"
+		# 	index = 0
+		# 	texture_diffuse = "dis_saucerInsignia_colorTrans_v03.dds"
+		# 	texture_normal = "dis_saucerInsignia_colorTrans_normal.dds"
+		# 	texture_specular = "dis_saucerInsignia_colorTrans_spec.dds"
+		# 	shader = "PdxMeshShip"
+		# }
+
+		meshsettings = {
+			name = "DSC_Discovery:dis_nacelleShape"
+			index = 0
+			texture_diffuse = "dis_nacelle_color_V03.dds"
+			texture_normal = "dis_mainBody_normal.dds"
+			texture_specular = "dis_nacelle_spec_v03.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "DSC_Discovery:dis_mainBodyShape"
+			index = 0
+			texture_diffuse = "dis_mainBody_color_V03.dds"
+			texture_normal = "dis_mainBody_normal.dds"
+			texture_specular = "dis_mainBody_spec_v03.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

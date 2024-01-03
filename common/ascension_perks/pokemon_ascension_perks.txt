@@ -1,0 +1,63 @@
+#################
+# ASCENSION PATHS
+#################
+
+ap_mega_evolution_EOE = {
+	on_enabled = {
+		add_research_option = tech_EOE_Mew_weapon
+		add_research_option = tech_mega_evolution
+		hidden_effect = {
+			country_event = { id = EOEjifei3.11451 }
+		}
+	}
+	possible = {
+
+		custom_tooltip = {
+			fail_text = "requires_ap_evolutionary_mastery"
+			OR = {
+				has_tradition = tr_genetics_finish
+				has_tradition = tr_synthetics_finish
+				has_tradition = tr_cybernetics_finish
+				has_tradition = tr_psionics_finish
+			}
+		}
+		}
+
+		
+	modifier = {
+		description = ap_mega_evolution_EOE_modifier_desc
+		description_parameters = {
+			COST_MULT = -0.2
+		}
+		starbase_shipyard_build_food_cost_mult = -0.2
+		modify_species_cost_mult = -0.2
+	}
+
+	potential = {
+		OR = {
+			owner_main_species = { has_trait = trait_EOE_Inheritors }
+			has_origin = origin_lotus_hezi_start
+		}
+		NOT = {
+			has_ascension_perk = ap_mega_evolution_EOE
+		}
+	}
+
+	ai_weight = {
+		factor = 0
+		modifier = {
+			factor = 0
+			num_owned_planets < 1
+			owner_main_species = {
+				NOT = {
+					is_species_class = Eeveelutions
+				}
+			}
+		}
+		
+	}
+
+}
+
+
+

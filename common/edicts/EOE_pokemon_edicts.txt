@@ -1,0 +1,12 @@
+EOE_breed_pokemons = {
+	icon = "GFX_breed_pokemon"
+	length = 0
+	potential = {
+		OR = {
+			has_origin = origin_EOE_pokemon_trainer
+			has_civic = civic_EOE_steel_type_trainer
+		}
+	}
+	effect = { country_event = { id = EOEbuliding.30 } }
+	ai_weight = { weight = 0 }
+}

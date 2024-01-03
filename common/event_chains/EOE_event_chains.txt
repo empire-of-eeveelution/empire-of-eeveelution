@@ -1,0 +1,17 @@
+old_creators_chain = {
+	picture = GFX_evt_EOE_ProtossBase1
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+}
+academic_disputes = {
+	picture = GFX_evt_EOE_curator_room
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+}
+EOE_mysterious_ruins_chain = {
+	picture = GFX_evt_city_ruins
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	counter = {
+		ruins_explore_progress = {
+			max = 3
+		}
+	}
+}

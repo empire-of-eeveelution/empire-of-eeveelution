@@ -1,0 +1,104 @@
+"Eeveelutions" = {
+	articuno = {
+		name = "Eeveelution"
+		plural = "Eeveelutions"
+		home_planet = "Articuno"
+		home_system = "Articuno"
+		name_list = "MAM3"
+	}
+	zapdos = {
+		name = "Eeveelution"
+		plural = "Eeveelutions"
+		home_planet = "Zapdos"
+		home_system = "Zapdos"
+		name_list = "MAM3"
+	}
+	moltres = {
+		name = "Eeveelution"
+		plural = "Eeveelutions"
+		home_planet = "Moltres"
+		home_system = "Moltres"
+		name_list = "MAM3"
+	}
+	raikou = {
+		name = "Eeveelution"
+		plural = "Eeveelutions"
+		home_planet = "Raikou"
+		home_system = "Raikou"
+		name_list = "MAM3"
+	}
+	entei = {
+		name = "Eeveelution"
+		plural = "Eeveelutions"
+		home_planet = "Entei"
+		home_system = "Entei"
+		name_list = "MAM3"
+	}
+	suicune = {
+		name = "Eeveelution"
+		plural = "Eeveelutions"
+		home_planet = "Suicune"
+		home_system = "Suicune"
+		name_list = "MAM3"
+	}
+	regirock = {
+		name = "Eeveelution"
+		plural = "Eeveelutions"
+		home_planet = "Regirock"
+		home_system = "Regirock"
+		name_list = "MAM3"
+	}
+	regice = {
+		name = "Eeveelution"
+		plural = "Eeveelutions"
+		home_planet = "Regice"
+		home_system = "Regice"
+		name_list = "MAM3"
+	}
+	registeel = {
+		name = "Eeveelution"
+		plural = "Eeveelutions"
+		home_planet = "Registeel"
+		home_system = "Registeel"
+		name_list = "MAM3"
+	}
+	uxie = {
+		name = "Eeveelution"
+		plural = "Eeveelutions"
+		home_planet = "Uxie"
+		home_system = "Uxie"
+		name_list = "MAM3"
+	}
+	mesprit = {
+		name = "Eeveelution"
+		plural = "Eeveelutions"
+		home_planet = "Mesprit"
+		home_system = "Mesprit"
+		name_list = "MAM3"
+	}
+	azelf = {
+		name = "Eeveelution"
+		plural = "Eeveelutions"
+		home_planet = "Azelf"
+		home_system = "Azelf"
+		name_list = "MAM3"
+	}
+	aiur = {
+		language = "l_simp_chinese"
+		name = "Eeveelution"
+		plural = "Eeveelution"
+		home_planet = "Aiur"
+		home_system = "Aiur"
+		name_list = "MAM3"
+	}
+	shakuras = {
+		language = "l_simp_chinese"
+		name = "Eeveelution"
+		plural = "Eeveelution"
+		home_planet = "Shakuras"
+		home_system = "Shakuras"
+		name_list = "MAM3"
+	}
+}
+	
+

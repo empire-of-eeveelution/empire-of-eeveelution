@@ -1,0 +1,4 @@
+EOE_ghost_story_chain = {
+	picture = GFX_evt_unspeakable_horror
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+}

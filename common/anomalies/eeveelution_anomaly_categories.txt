@@ -1,0 +1,99 @@
+### Stranded Eeveelution Scientist ###
+#disco_stranded_eeveelution_scientist_cat = {
+#	desc = "disco_stranded_scientist_cat_desc"
+#	picture = "GFX_evt_asteroid_field"
+#	max_once_global = yes
+#	level = 4
+#
+#	spawn_chance = {
+#		modifier = {
+#			add = 2
+#			is_asteroid = yes
+#			has_any_strategic_resource = no
+#		}
+#		modifier = {
+#			factor = 0
+#			from.owner = {
+#				NOR = {
+#					is_species_class = Eeveelutions
+#				}
+#			}
+#		}
+#		modifier = {
+#			factor = 0
+#			from.owner = {
+#				has_country_flag = maybe_has_hezi
+#			}
+#		}
+#	}
+#
+#	on_success = eevent.1
+#	should_ai_use = no
+#}
+
+
+###创世者之遗###
+
+#old_creator_category = {
+#	desc = old_creator_category_desc
+#	picture = GFX_evt_EOE_ProtossBase1
+#	max_once_global = yes
+#	level = 3
+#
+#	spawn_chance = {
+#	
+#		modifier = {
+#			add = 2
+#			        is_planet_class = pc_molten
+#					is_planet_class = pc_barren
+#					is_planet_class = pc_barren_cold
+#					is_planet_class = pc_frozen
+#		}
+#		}
+#		modifier = {
+#			factor = 0
+#			from.owner = {
+#				NOR = {
+#					species_portrait = Eeveelutions
+#					is_species_class = Eeveelutions
+#				}
+#			}
+#		}
+#	}
+#
+#	on_success = eevent.140
+#	should_ai_use = no
+
+wild_eeveelution_cat = {       #发现野生原始伊布       
+	desc = wild_eeveelution_cat_desc
+	picture = GFX_evt_EOE_wild_eeveelution_discovered
+	max_once_global = yes
+	level = 1
+
+	spawn_chance = {
+		 modifier = {	add = 0	}
+		 }
+	
+	
+		
+		
+		
+	
+
+	on_success = eevent.7000
+	should_ai_use = no
+}
+
+EOE_cthugha_planet_cat = {
+	desc = "EOE_cthugha_planet_cat_desc"#星球表面有些不同寻常
+	picture = GFX_evt_alien_planet
+	max_once_global = yes
+	level = 3
+	spawn_chance = {
+		modifier = {
+			factor = 0
+		}
+	}
+	on_success = EOE_branch.2
+	should_ai_use = no
+}

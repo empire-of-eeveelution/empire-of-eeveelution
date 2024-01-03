@@ -1,0 +1,47 @@
+steel_type_trainer = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_robot_assembly_plant
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				AND = {
+					exists = owner
+					owner = {
+						is_ai = yes
+						has_valid_civic = civic_EOE_steel_type_trainer
+						NOT = { 
+							has_policy_flag = roboticist_output_build_cyborgs
+							is_synthetic_empire = yes
+						}
+					}
+				}
+				NOT = { exists = owner }
+			}
+		}
+		planet_pop_assembly_add = 4
+	}
+
+
+	resources = {
+		category = planet_pop_assemblers
+		upkeep = {
+			minerals = 12
+		}
+	}
+
+	weight = {
+		weight = 500
+	}
+}

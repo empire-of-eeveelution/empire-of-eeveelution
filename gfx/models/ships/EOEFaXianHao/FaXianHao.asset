@@ -1,0 +1,16 @@
+entity = {
+	name = "FaXianHao_entity"
+	pdxmesh = "FaXianHao_mesh"
+	scale = 0.05
+	
+
+
+
+
+locator = { name = "EOE_MEW_Psychic" 	position = { 0 0 -50 } }   #第一个正数左负数右，第二个正数上负数下，第三个负数前正数后
+
+game_data = { 
+	size = 2
+	emissive_recolor_crunch = 0
+}
+}

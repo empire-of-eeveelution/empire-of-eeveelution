@@ -1,0 +1,9 @@
+entity = {
+	name = "masterball_entity"
+	pdxmesh = "masterball_mesh"
+	game_data = { 
+		size = 15
+		emissive_recolor_crunch = 0
+	}
+	locator = { name = "EOE_masterball_gun" 	position = { 0 0 0 } } 
+}

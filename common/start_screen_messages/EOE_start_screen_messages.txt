@@ -1,0 +1,57 @@
+# Start Screen Messages
+# Parameters:
+#   trigger, a trigger with country which decides if this is a valid part. Empty will be treated as always=yes.
+#   localization, a key to a localized string.
+#	location, decides where this chunk of text is located in the description, cannot be negative.
+
+### FIRST PARTS
+
+
+
+# Protoss Shattered Ring 
+part = {
+	location = 0
+	localization = "START_SCREEN_EOE"
+	
+	trigger = {
+		has_origin = origin_protoss_shattered_ring
+	}
+}
+
+
+#蜂巢伊布
+part = {
+	location = 0
+	localization = "START_SCREEN_Swarm_of_Eeveelutions"
+	
+	trigger = {
+		has_civic = civic_external_synapse
+		has_origin = origin_post_apocalyptic
+	}
+}
+
+##训练师起源
+part = {
+	location = 0
+	localization = "START_SCREEN_EOE_trainer"
+	
+	trigger = {
+		NOT = {
+			owner_main_species = {
+				is_species_class = Eeveelutions
+			}
+		}
+		has_origin = origin_EOE_pokemon_trainer
+	}
+}
+part = {
+	location = 0
+	localization = "START_SCREEN_EOE_trainer_eevee"
+	
+	trigger = {
+		owner_main_species = {
+			is_species_class = Eeveelutions
+		}
+		has_origin = origin_EOE_pokemon_trainer
+	}
+}

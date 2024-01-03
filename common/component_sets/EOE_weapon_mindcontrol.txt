@@ -1,0 +1,20 @@
+component_set = {
+	key = "EOE_Psychic_Dominator"
+	
+	icon = "GFX_ship_part_EOE_Psionic Storm"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "EOE_Psychic_Dominator_a"
+	
+	icon = "GFX_ship_part_EOE_Psychic_Dominator"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ftl_components_masterball"
+	
+	icon = "GFX_ship_part_EOE_Psychic_Dominator"
+	icon_frame = 1	
+}

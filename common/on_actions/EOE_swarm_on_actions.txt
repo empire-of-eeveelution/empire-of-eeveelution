@@ -1,0 +1,22 @@
+
+
+on_modification_complete = {
+	events = {
+		eoeswarm.1
+		eoeswarm.2
+		eoeswarm.3
+	}
+}
+
+# on_tradition_picked = {
+# 	events = {eoeswarm.4}
+# }
+
+on_monthly_pulse_country ={
+	events = {
+		eoeswarm.1
+		eoeswarm.2
+		eoeswarm.3
+		# eoeswarm.4
+	}
+}

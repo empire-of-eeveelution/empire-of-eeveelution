@@ -1,0 +1,108 @@
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_ship_part_EOE_Psychic_Dominator"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_ship_part_EOE_Psychic_Dominator.png"			
+	
+	}
+	spriteType = {
+		name = "GFX_ship_part_EOE_Psychic_Dominator_a"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_ship_part_EOE_Psychic_Dominator_a.png"			
+	
+	}
+	spriteType = {
+		name = "GFX_ship_part_EOE_Psionic Storm"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_ship_part_EOE_Psionic Storm.png"			
+	
+	}
+	spriteType = { 
+		name = "GFX_EOE_fire_vampire"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_fire_vampire.dds"			
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EOE_tempest_1"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_tempest_1.dds"			
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EOE_tempest_2"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_tempest_2.dds"			
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EOE_fairy_star"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_fairy_stars.dds"			
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EOE_nuclear_star"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_nuclear_stars.dds"			
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EOE_aurora_beam"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_aurora_beam.dds"			
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EOE_bullet_seed"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_bullet_seed.dds"			
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EOE_double_edge"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_double_edge.dds"			
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EOE_flare_blitz"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_flare_blitz.dds"			
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EOE_razor_leaf"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_razor_leaf.dds"			
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EOE_swift"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_swift.dds"			
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EOE_thunder_bolt"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_thunder_bolt.dds"			
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EOE_calm_mind"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_calm_mind.dds"			
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EOE_radioactive_acid"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_radioactive_acid.dds"			
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EOE_fairy_beam"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_fairy_beam.dds"			
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EOE_nuclear_beam"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_nuclear_beam.dds"			
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EOE_evolite"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_evolite.dds"			
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EOE_OKRA_CORE"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_OKRA_CORE.dds"			
+		legacy_lazy_load = no
+	}
+}

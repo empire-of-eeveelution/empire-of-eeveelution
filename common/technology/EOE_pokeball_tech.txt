@@ -1,0 +1,266 @@
+###########民用
+EOE_afferent_nerve_stimulation = {
+	cost = 2000
+	area = society
+	category = { biology }
+	tier = 3
+	weight = 100
+	prerequisites = {
+		EOE_mental_assault
+	}
+	icon = EOE_afferent_nerve_stimulation
+
+	modifier = {
+			pop_housing_usage_mult = -0.1
+			pop_happiness = 0.05
+			empire_size_pops_mult = -0.1
+	}
+	potential = { any_owned_pop = { has_trait = trait_pokeball_adaptability } }
+
+	ai_weight = {
+		factor = 0
+		
+	}
+}
+
+EOE_dopamine_stimulation = {
+	cost = 4000
+	area = society
+	category = { biology }
+	tier = 3
+	weight = 100
+	is_rare = yes
+	icon = EOE_dopamine_stimulation
+	prerequisites = { EOE_afferent_nerve_stimulation }
+		
+	modifier = {
+			pop_housing_usage_mult = -0.1
+			pop_happiness = 0.05
+			empire_size_pops_mult = -0.1
+	}
+
+	potential = { any_owned_pop = { has_trait = trait_pokeball_adaptability } }
+	
+	ai_weight = {
+		factor = 0
+		
+	}
+}
+EOE_virtual_paradise = {
+	cost = 6000
+	area = society
+	category = { biology }
+	tier = 4
+	weight = 100
+	is_rare = yes
+	is_dangerous = yes
+	icon = EOE_virtual_paradise
+	prerequisites = { EOE_dopamine_stimulation }
+
+
+	modifier = {
+			pop_housing_usage_mult = -0.2
+			pop_happiness = 0.1
+			empire_size_pops_mult = -0.2
+			planet_crime_mult = 0.03
+	}
+
+	potential = { any_owned_pop = { has_trait = trait_pokeball_adaptability } }
+	ai_weight = {
+		factor = 0
+		
+	}
+}
+
+###############军用
+
+EOE_mental_assault = {
+	cost = 3000
+	area = society
+	category = { psionics }
+	tier = 2
+	weight = 100
+	is_rare = yes
+	icon = EOE_mental_assault
+	modifier = {
+		empire_size_penalty_mult = -0.1
+	}
+	potential = { 
+		OR = {
+			any_owned_pop = { has_trait = trait_pokeball_adaptability has_trait = trait_EOE_Inheritors }
+			has_origin = origin_lotus_hezi_start
+		}
+	 }
+	prereqfor_desc = {
+		custom = {
+			title = EOE_mental_assault_effect
+			desc = EOE_mental_assault_effect_desc
+		}
+	}
+	ai_weight = {
+		factor = 0
+		
+	}
+}
+
+EOE_mental_storm = {
+	cost = 10000
+	area = society
+	category = { psionics }
+	tier = 4
+	weight = 0
+	is_rare = yes
+	icon = EOE_mental_storm
+	modifier = {
+		empire_size_penalty_mult = -0.25
+	}
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_MASTERBALL_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_MASTERBALL_CONSTRUCTION_DESC"
+		}
+	}
+	potential = { 
+		OR = {
+			any_owned_pop = { has_trait = trait_pokeball_adaptability has_trait = trait_EOE_Inheritors }
+			has_origin = origin_lotus_hezi_start
+		}
+	 }
+	ai_weight = {
+		factor = 0
+		
+	}
+}
+
+# EOE_mental_omega = {
+# 	cost = 20000
+# 	area = society
+# 	category = { psionics }
+# 	tier = 5
+# 	weight = 0
+# 	is_rare = yes
+# 	icon = EOE_mental_omega
+# 	modifier = {
+# 		empire_size_penalty_mult = -0.3
+# 	}
+# 	potential = { any_owned_pop = { has_trait = trait_pokeball_adaptability has_trait = trait_EOE_Inheritors } }
+
+# 	ai_weight = {
+# 		factor = 0
+		
+# 	}
+# }
+
+EOE_Membrane_warp_mapping = {
+	cost = 5000
+	area = physics
+	category = { computing }
+	prerequisites = { EOE_mental_assault }
+		
+
+	tier = 3
+	weight = 100
+	is_rare = yes
+	icon = EOE_Membrane_warp_mapping
+	prereqfor_desc = {
+		custom = {
+			title = EOE_Membrane_warp_mapping_effect
+			desc = EOE_Membrane_warp_mapping_effect_desc
+		}
+	}
+	potential = { 
+		OR = {
+			any_owned_pop = { has_trait = trait_pokeball_adaptability has_trait = trait_EOE_Inheritors }
+			has_origin = origin_lotus_hezi_start
+		}
+	 }
+	ai_weight = {
+		factor = 0
+		
+	}
+}
+
+EOE_Membrane_fold = {
+	cost = 8000
+	area = physics
+	category = { computing }
+	prerequisites = { EOE_Membrane_warp_mapping }
+		
+
+	tier = 4
+	weight = 100
+	is_rare = yes
+	icon = EOE_Membrane_fold
+	prereqfor_desc = {
+		custom = {
+			title = EOE_Membrane_fold_effect
+			desc = EOE_Membrane_fold_effect_desc
+		}
+	}
+	potential = { 
+		OR = {
+			any_owned_pop = { has_trait = trait_pokeball_adaptability has_trait = trait_EOE_Inheritors }
+			has_origin = origin_lotus_hezi_start
+		}
+	 }
+	ai_weight = {
+		factor = 0
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

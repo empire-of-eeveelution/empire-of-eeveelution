@@ -1,0 +1,209 @@
+ship_section_template = {
+	key = "EOE_mew"
+	ship_size = EOE_mew
+	fits_on_slot = mid
+	entity = "EOE_mew_entity"
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	
+	component_slot = {
+		name = "EOE_MEW_Psychic"
+		template = "invisible_medium_turret"
+		locatorname = "EOE_MEW_Psychic"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "EOE_MEW_Psychic"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_small_turret"	
+		locatorname = "EOE_MEW_Psychic"
+	}
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "invisible_small_turret"	
+		locatorname = "EOE_MEW_Psychic"
+	}
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_turret"
+		locatorname = "EOE_MEW_Psychic"
+	}
+	component_slot = {
+		name = "POINT_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "EOE_MEW_Psychic"
+	}	
+	component_slot = {
+		name = "POINT_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "EOE_MEW_Psychic"
+	}	
+	
+	# component_slot = {
+	# 	name = "EOE_LARGE_GUN_01"
+	# 	template = "invisible_titanic_fixed"
+	# 	locatorname = "EOE_laser_gun_01"
+	# 	is_side_slot = yes
+	# }
+	small_utility_slots = 6
+	aux_utility_slots = 4
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = 260
+			minerals = 170
+		}
+	}
+}
+
+ship_section_template = {
+	key = "EOE_Latias"
+	ship_size = EOE_Latias
+	fits_on_slot = mid
+	entity = "EOE_Latias_entity"
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	
+	component_slot = {
+		name = "EOE_Latias_main_gun"
+		template = "invisible_extra_large_fixed"
+		locatorname = "EOE_Latias_main_gun"
+	}
+	component_slot = {
+		name = "BIG_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "EOE_laser_gun_01_l"
+	}	
+	component_slot = {
+		name = "BIG_GUN_02"
+		template = "invisible_large_turret"	
+		locatorname = "EOE_laser_gun_02_r"
+	}
+	component_slot = {
+		name = "BIG_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "EOE_laser_gun_01_l"
+	}	
+	component_slot = {
+		name = "BIG_GUN_04"
+		template = "invisible_large_turret"	
+		locatorname = "EOE_laser_gun_02_r"
+	}
+	component_slot = {
+		name = "POI_GUN_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "EOE_laser_gun_03_l"
+	}	
+	component_slot = {
+		name = "POI_GUN_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "EOE_laser_gun_03_r"
+	}	
+	
+	# component_slot = {
+	# 	name = "EOE_LARGE_GUN_01"
+	# 	template = "invisible_titanic_fixed"
+	# 	locatorname = "EOE_laser_gun_01"
+	# 	is_side_slot = yes
+	# }
+	medium_utility_slots = 8
+	aux_utility_slots = 4
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = 1150
+			minerals = 760
+		}
+	}
+	
+}
+
+ship_section_template = {
+	key = "EOE_Reshiram"
+	ship_size = EOE_Reshiram
+	fits_on_slot = mid
+	entity = "EOE_Reshiram1_entity"
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	
+	component_slot = {
+		name = "EOE_Reshiram_W"
+		template = "invisible_planet_killer_fixed"
+		locatorname = "EOE_Reshiram_main_gun"
+	}
+	component_slot = {
+		name = "EOE_Reshiram_main_gun"
+		template = "invisible_titanic_fixed"
+		locatorname = "EOE_Reshiram_main_gun"
+	}
+	component_slot = {
+		name = "X_GUN_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "EOE_X_gun_l"
+	}	
+	component_slot = {
+		name = "X_GUN_02"
+		template = "invisible_extra_large_fixed"	
+		locatorname = "EOE_X_gun_r"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "EOE_L_gun_l"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "EOE_L_gun_r"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "EOE_L_gun_l"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "invisible_large_turret"
+		locatorname = "EOE_L_gun_r"
+	}
+	component_slot = {
+		name = "POI_GUN_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "EOE_P_gun_l"
+	}	
+	component_slot = {
+		name = "POI_GUN_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "EOE_P_gun_l"
+	}	
+	component_slot = {
+		name = "POI_GUN_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "EOE_P_gun_r"
+	}	
+	component_slot = {
+		name = "POI_GUN_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "EOE_P_gun_r"
+	}	
+	
+	# component_slot = {
+	# 	name = "EOE_LARGE_GUN_01"
+	# 	template = "invisible_titanic_fixed"
+	# 	locatorname = "EOE_laser_gun_01"
+	# 	is_side_slot = yes
+	# }
+	large_utility_slots = 10
+	aux_utility_slots = 5
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = 3750
+			minerals = 2500
+		}
+	}
+	
+}

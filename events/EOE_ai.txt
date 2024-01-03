@@ -1,0 +1,33 @@
+namespace = EOEai
+
+country_event = {   #防暴毙BUFF，离玩家12跳以内就不给，方便早战抢老婆（
+	id = EOEai.1
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		is_ai = yes
+		NOT = {
+		any_system = {
+			distance = {
+				source = root
+				min_jumps = 1
+				max_jumps = 12
+			}
+			
+				owner = { is_ai = no }				
+		}
+	}
+		
+	}
+	
+	immediate = {
+		add_modifier = {
+			modifier = EOE_great_eoe_country_for_ai
+			days = -1
+		}								
+
+	
+}
+}

@@ -1,0 +1,196 @@
+# EOE_ap_engineered_evolution = {
+# 	cost = 1
+# 	area = society
+# 	category = { biology }
+# 	tier = 5
+# 	weight = 0
+# 	icon = tech_gene_expressions
+
+# 	modifier = {
+# 		description = EOE_ap_engineered_evolution_desc
+# 		description_parameters = {
+# 			POINTS = 3
+# 		}
+# 		POKEMON_species_trait_points_add = 3
+# 	}
+
+# 	potential = {
+		
+# 	}
+# 	ai_weight = {
+# 		factor = 0
+		
+# 	}
+# }
+
+# EOE_ap_evolutionary_mastery = {
+# 	cost = 1
+# 	area = society
+# 	category = { biology }
+# 	tier = 5
+# 	weight = 0
+# 	icon = tech_gene_expressions
+
+# 	modifier = {
+# 		description = EOE_ap_engineered_evolution_desc
+# 		description_parameters = {
+# 			POINTS = 3
+# 		}
+# 		POKEMON_species_trait_points_add = 3
+# 	}
+
+# 	potential = {
+		
+# 	}
+# 	ai_weight = {
+# 		factor = 0
+		
+# 	}
+# }
+
+EOE_tech_gene_tailoring = {
+	cost = 1
+	area = society
+	category = { biology }
+	tier = 5
+	weight = 0
+	icon = tech_gene_expressions
+
+	modifier = {
+		description = EOE_ap_engineered_evolution_desc
+		description_parameters = {
+			POINTS = 1
+		}
+		POKEMON_species_trait_points_add = 1
+	}
+
+	potential = {
+		
+	}
+	ai_weight = {
+		factor = 0
+		
+	}
+}
+
+EOE_tech_gene_expressions = {
+	cost = 1
+	area = society
+	category = { biology }
+	tier = 5
+	weight = 0
+	icon = tech_gene_expressions
+
+	modifier = {
+		description = EOE_ap_engineered_evolution_desc
+		description_parameters = {
+			POINTS = 1
+		}
+		POKEMON_species_trait_points_add = 1
+	}
+
+	potential = {
+		
+	}
+	ai_weight = {
+		factor = 0
+		
+	}
+}
+
+EOE_tech_tr_genetics_creation = {
+	cost = 1
+	area = society
+	category = { biology }
+	tier = 5
+	weight = 0
+	icon = tech_gene_expressions
+
+	modifier = {
+		description = EOE_ap_engineered_evolution_desc
+		description_parameters = {
+			POINTS = 2
+		}
+		POKEMON_species_trait_points_add = 2
+	}
+
+	potential = {
+		
+	}
+	ai_weight = {
+		factor = 0
+		
+	}
+}
+
+EOE_tech_tr_genetics_adopt = {
+	cost = 1
+	area = society
+	category = { biology }
+	tier = 5
+	weight = 0
+	icon = tech_gene_expressions
+
+	modifier = {
+		description = EOE_ap_engineered_evolution_desc
+		description_parameters = {
+			POINTS = 2
+		}
+		POKEMON_species_trait_points_add = 2
+	}
+
+	potential = {
+		
+	}
+	ai_weight = {
+		factor = 0
+		
+	}
+}
+
+EOE_tech_tr_genetics_finish = {
+	cost = 1
+	area = society
+	category = { biology }
+	tier = 5
+	weight = 0
+	icon = tech_gene_expressions
+
+	modifier = {
+		description = EOE_ap_engineered_evolution_desc
+		description_parameters = {
+			POINTS = 2
+		}
+		POKEMON_species_trait_points_add = 2
+	}
+
+	potential = {
+		
+	}
+	ai_weight = {
+		factor = 0
+		
+	}
+}
+
+EOE_tech_tr_genetics_enhanced_expression = {
+	cost = 1
+	area = society
+	category = { biology }
+	tier = 5
+	weight = 0
+	icon = tech_gene_expressions
+
+	modifier = {
+		description = EOE_tech_tr_genetics_enhanced_expression_desc
+		POKEMON_species_trait_picks_add = 1
+	}
+
+	potential = {
+		
+	}
+	ai_weight = {
+		factor = 0
+		
+	}
+}

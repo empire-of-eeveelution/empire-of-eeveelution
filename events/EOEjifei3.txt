@@ -1,0 +1,122 @@
+ namespace = EOEjifei3
+
+ country_event = {
+	id = EOEjifei3.11451
+	title = "EOEjifei3.11451.name"
+	desc = "EOEjifei3.11451.desc"
+	picture = GFX_evt_EOE_mega_evolution
+	show_sound = event_evolution_mastery
+
+	is_triggered_only = yes
+
+	option = {
+		name = EXCELLENT
+	}
+
+}
+
+ country_event = {
+	id = EOEjifei3.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		owner = {
+			create_ship_design = { design = "NAME_Crisis_Star_Eater" }
+	        add_ship_design = last_created_design
+			
+		}
+		
+	}
+	
+
+	is_triggered_only = yes
+
+	option = {
+		name = EXCELLENT
+	}
+
+}
+# country_event = {
+# 	id = EOEjifei3.1
+# 	title = "EOEjifei3.1.name"                                 ########################################################
+# 	desc = {
+# 		trigger = { has_ethic = ethic_gestalt_consciousness }
+# 		text = "EOEjifei3.1.a.desc"	                                    #      NOT    FINISHED     #
+# 	}
+# 	desc = {
+# 		trigger = { NOT = { has_ethic = ethic_gestalt_consciousness }  }  ################################################
+# 		text = "EOEjifei3.1.b.desc"	
+# 	}
+# 	picture = GFX_evt_EOE_protossRelic
+# 	show_sound = event_power_down
+# 	location = event_target:wild_eeveelution_planet
+
+# 	is_triggered_only = yes
+	
+
+
+# 	option = {
+# 		name = eevent.7.a
+# 		event_target:wild_eeveelution_planet = {
+# 			create_archaeological_site = EOE_GFZongBu
+# 		}
+# 	}
+# }
+
+# fleet_event = {
+# 	id = EOEjifei3.2
+# 	title = "eevent.11.name"
+# 	desc = "eevent.11.desc"
+# 	picture = GFX_evt_EOE_ProtossBase1    #ascension_perks_add = 1
+# 	show_sound = event_door_opening
+	
+# 	archaeology = yes
+
+# 	is_triggered_only = yes
+	
+# 	immediate = {
+# 		from = { set_site_progress_locked = yes }
+# 	}
+
+# 	after = { 
+# 		from = { set_site_progress_locked = no } 
+# 	}
+	
+# 	option = {
+# 		name = eevent.10.a
+# 		small_artifact_reward = yes
+# 		owner = {
+# 			country_event = { id = EOEjifei3.10 }
+# 		}
+# 	}
+# }
+
+
+# country_event = {
+# 	id = EOEjifei3.10
+# 	title = "EOEjifei3.10.name"
+# 	desc = {
+# 		trigger = { has_ethic = ethic_gestalt_consciousness }
+# 		text = "EOEjifei3.10.a.desc"	
+# 	}
+# 	desc = {
+# 		trigger = { NOT = { has_ethic = ethic_gestalt_consciousness }  }
+# 		text = "EOEjifei3.10.b.desc"	
+# 	}
+# 	picture = GFX_evt_EOE_protossRelic
+# 	show_sound = event_power_down
+
+# 	is_triggered_only = yes
+	
+
+
+# 	option = {
+# 		name = eevent.7.a
+# 		add_resource = {
+# 			society_research = 20000
+# 			unity = 20000
+# 		}
+# 		add_research_option = tech_afterglow_of_the_old_days
+# 		}
+		
+# 	}

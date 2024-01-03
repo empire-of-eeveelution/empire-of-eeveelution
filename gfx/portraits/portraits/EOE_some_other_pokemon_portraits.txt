@@ -1,0 +1,146 @@
+portraits = {
+	EOEother001 = {
+		texturefile = "gfx/models/portraits/OtherTypePokemon/eoesteel081.png"
+	}
+	EOEother002 = {
+		texturefile = "gfx/models/portraits/OtherTypePokemon/eoesteel082.png"
+	}
+	EOEother003 = {
+		texturefile = "gfx/models/portraits/OtherTypePokemon/eoesteel600.png"
+	}
+	EOEother004 = {
+		texturefile = "gfx/models/portraits/OtherTypePokemon/eoesteel601.png"
+	}
+	EOEother005 = {
+		texturefile = "gfx/models/portraits/OtherTypePokemon/eoesteel809.png"
+	}
+	EOEother006 = {
+		texturefile = "gfx/models/portraits/OtherTypePokemon/eoegrass673.png"
+	}
+	EOEother007 = {
+		texturefile = "gfx/models/portraits/OtherTypePokemon/eoegrass511.png"
+	}
+	EOEother008 = {
+		texturefile = "gfx/models/portraits/OtherTypePokemon/eoeground328.png"
+	}
+	EOEother009 = {
+		texturefile = "gfx/models/portraits/OtherTypePokemon/eoeground051.png"
+	}
+	EOEother010 = {
+		texturefile = "gfx/models/portraits/OtherTypePokemon/eoeelectric125.png"
+	}
+	EOEother011 = {
+		texturefile = "gfx/models/portraits/OtherTypePokemon/eoeelectric618.png"
+	}
+	EOEother012 = {
+		texturefile = "gfx/models/portraits/OtherTypePokemon/eoeelectric871.png"
+	}
+	EOEother013 = {
+		texturefile = "gfx/models/portraits/OtherTypePokemon/eoegrass830.png"
+	}
+}
+
+portrait_groups = {
+	Othermons = {
+		default = EOEsteel001
+		game_setup = {
+			#will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				portraits = {
+					EOEother001
+					EOEother002
+					EOEother003
+					EOEother004
+					EOEother005
+					EOEother006
+					EOEother007
+					EOEother008
+					EOEother009
+					EOEother010
+					EOEother011
+					EOEother012
+					EOEother013
+				}
+			}
+		}
+		species = {
+			#generic portrait for a species
+			add = {
+				portraits = {
+					EOEother001
+					EOEother002
+					EOEother003
+					EOEother004
+					EOEother005
+					EOEother006
+					EOEother007
+					EOEother008
+					EOEother009
+					EOEother010
+					EOEother011
+					EOEother012
+					EOEother013
+				}
+			}
+		}
+		pop = {
+			#for a specific pop
+			add = {
+				portraits = {
+					EOEother001
+					EOEother002
+					EOEother003
+					EOEother004
+					EOEother005
+					EOEother006
+					EOEother007
+					EOEother008
+					EOEother009
+					EOEother010
+					EOEother011
+					EOEother012
+					EOEother013
+				}
+			}
+		}
+		leader = {
+			#scientists, generals, admirals, governor
+			add = {
+				portraits = {
+					EOEother001
+					EOEother002
+					EOEother003
+					EOEother004
+					EOEother005
+					EOEother006
+					EOEother007
+					EOEother008
+					EOEother009
+					EOEother010
+					EOEother011
+					EOEother012
+					EOEother013
+				}
+			}
+		}
+		ruler = {
+			add = {
+				portraits = {
+					EOEother001
+					EOEother002
+					EOEother003
+					EOEother004
+					EOEother005
+					EOEother006
+					EOEother007
+					EOEother008
+					EOEother009
+					EOEother010
+					EOEother011
+					EOEother012
+					EOEother013
+				}
+			}
+		}
+	}
+}

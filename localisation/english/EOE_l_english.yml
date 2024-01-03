@@ -1,0 +1,528 @@
+﻿l_english:
+
+#namelist
+name_list_EEVEELUTION:0 "Eeveelution"
+
+
+#technology
+tech_Gender_Balance:0"Gender Balance"
+tech_Gender_Balance_desc:0"As we all know, female Eeveelutions are extremely efficient reproductive machines. They can produce enough offsprings to make the population of Eeveelutions keep growing even when the ratio of male to female is 7:1, compete with the irrational setting left by the Creators. Now, Eeveelutions can balance their sex ratio by promoting the use of drugs that can selectively inactivate some male gametes containing Y chromosome, break the \"7:1 curse\" in the blood, release the full potential of its own race in terms of proliferation and reproduction.\n This will also put an end to the custom of group marriage caused by the uneven sex ratio and make it possible to promote monogamy, improve the happiness of citizens and reduce sexual violence. "
+#origin
+origin_protoss_shattered_ring:0 "Shattered Ring(Eeveelutions)"
+origin_protoss_shattered_ring_DESC:0 "This civilization inhabits a Ring World built by unknown forerunners. If it can be understood and fully repaired it will grant them great power."
+origin_tooltip_protoss_shattered_ring_effects:1 "§YThis is the shattered ring origin of the old game version (3.0 version ).§!\nStart with a partially destroyed §YRing World§! as your homeworld.\nThe Ring World will start with an §Y$d_arcane_generator$§! that is able to maintain some of your segments. Won't set habitability. §RDO NOT USE WITH A FORCE-SPAWNED AI EMPIRE! IT WILL BREAK!§!"
+
+#startsystem
+protoss_shattered_ring_start_NAME:0 "Shattered Ring(Eeveelutions)"
+protoss_shattered_ring_start_DESC:0 "This will be the start system when choose Shattered Ring (Eeveelutions)."
+
+
+
+#compsets
+
+
+gov_EOE_despotic_empire:0 "$gov_star_empire$"
+gov_EOE_despotic_empire_desc:0 "$gov_star_empire_desc$"
+gov_EOE_plutocratic_oligarchy:0 "$gov_plutocratic_oligarchy$"
+gov_EOE_plutocratic_oligarchy_desc:0 "$gov_plutocratic_oligarchy_desc$"
+
+tech_endless_evolution:0"Endless Evolution"
+tech_endless_evolution_desc:0"With a deeper understanding of genes, we will eventually stimulate all our potential."
+tech_mega_evolution:0"Mega Evolution"
+tech_mega_evolution_desc:0"Born out of our ancestors millions of years ago, our psionic biotechnology has surpassed our creators. The study of the nature of genes and psionics will bring us endless possibilities."
+tech_mega_evolution_modifier_desc:0"$species_trait_points_add$: $POINTS|0=+$\nGene modification project cost:§G-25%§!"
+
+tech_grass_type_Wild_growth:0"Wild growth"
+tech_grass_type_Wild_growth_desc:0"In depth study of the nature of genes allows us to significantly increase the birth rate of the population, while minimizing the mortality caused by disease and aging."
+tech_grass_type_Wild_growth_1:0"Wild growth"
+tech_grass_type_Wild_growth_1_desc:0"In depth study of the nature of genes allows us to significantly increase the birth rate of the population, while minimizing the mortality caused by disease and aging."
+tech_EOE_psionic_application:0 "Application of psionics"
+tech_EOE_psionic_application_desc:0 "The application of psionic system on the fleet makes the shield works more efficiently and helps its weapon energy to penetrate some a little part of enemy's armor and shield."
+tech_grass_type_Wild_growth_2:0"Wild growth"
+tech_grass_type_Wild_growth_2_desc:0"In depth study of the nature of genes allows us to significantly increase the birth rate of the population, while minimizing the mortality caused by disease and aging."
+EOE_mental_omega:0 "Mental Omega"
+EOE_mental_omega_desc:0 "If we use the planet-killer weapon platform to power this "shroud ball", it is possible to create a super weapon that can control the minds of all intelligent creatures on the entire planet in one blow."
+
+#deposit
+d_EOE_ringworld_Ancient_ruins_1:0 "Ancient ruins"
+d_EOE_ringworld_Ancient_ruins_1_desc:0 "Damaged machinery and other debris prevent workers from taking use of the entire section. "
+d_EOE_ringworld_Ancient_ruins_2:0 "$d_EOE_ringworld_Ancient_ruins_1$"
+d_EOE_ringworld_Ancient_ruins_2_desc:0 "$d_EOE_ringworld_Ancient_ruins_1_desc$"
+d_EOE_ringworld_Broken_tunnel_1:0 "Broken tunnel"
+d_EOE_ringworld_Broken_tunnel_1_desc:0 "These ancient and broken tunnels have never been fully explored or cleared. "
+d_EOE_ringworld_Broken_tunnel_2:0 "$d_EOE_ringworld_Broken_tunnel_1$"
+d_EOE_ringworld_Broken_tunnel_2_desc:0 "$d_EOE_ringworld_Broken_tunnel_1_desc$"
+d_EOE_ringworld_Broken_tunnel_3:0 "$d_EOE_ringworld_Broken_tunnel_1$"
+d_EOE_ringworld_Broken_tunnel_3_desc:0 "$d_EOE_ringworld_Broken_tunnel_1_desc$"
+d_EOE_ringworld_ancient_tech_district:0 "Ancient Research Section"
+d_EOE_ringworld_ancient_tech_district_desc:0 "This part of the ringworld underground structure once belonged to an ancient research section. In the more than 200 years of waiting for the ringworld orbit to return to normal, we have built our own scientific research base relying on the dilapidated facilities here. Leaders and scientists are here to monitor the state of the sanctuary and prepare for the revival of our civilization."
+d_EOE_ringworld_ancient_tech_district_1:0 "Ancient scientific research section"
+d_EOE_ringworld_ancient_tech_district_1_desc:0 "This part of the underground structure around the world once belonged to an ancient scientific research section. After cleaning and repairing it, we can build our own scientific research base relying on the dilapidated facilities here."
+d_EOE_ringworld_Refuge_City:0"Refuge City"
+d_EOE_ringworld_Refuge_City_desc:0"Relying on the ancient energy system, we built underground farms in the ringworld underground structure to support a part of the population. The food produced by these farms played a crucial role when most of the population were waiting for the production of the pokeball. Now, these underground farms can not only continue to play their original role, but also become the spiritual symbol of our civilization's victory over destiny."
+
+
+
+
+#origin
+origin_protoss_shattered_ring:0 "Shattered Ring (Eevees version)"
+origin_protoss_shattered_ring_desc:0 "This civilization inhabits a Ring World built by unknown forerunners. If it can be understood and fully repaired it will grant them great power."
+origin_tooltip_protoss_shattered_ring_effects:1 "Start with a partially destroyed §YRing World§! as your homeworld.\nThe Ring World will start with an §Y$d_arcane_generator$§! that is able to maintain some of your segments.\nHabitability preference is set to §Y$trait_pc_ringworld_habitable_preference$§!, making other types of settlement undesirable."
+
+#startsystem
+protoss_shattered_ring_start_NAME:0 "Shattered Ring(Eevees version)"
+protoss_shattered_ring_start_DESC:0 "This will always be the starting system when using the Shattered Ring (Eevees version) Origin."
+
+PLANET_KILLER_EOE:1 "Master Ball Core"
+PLANET_KILLER_EOE_ACTION:0 "Catch"
+PLANET_KILLER_EOE_DESC:0 "This super weapon can control the minds of all intelligent creatures on the entire planet in one strike."
+FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_EOE:0 "Prepare to catch $PLANET|Y$"
+MESSAGE_DESC_FOR_PLANET_KILLER_EOE:0 "was catched by"
+
+#opinion_modifier
+triggered_opinion_trait_extremely_cute:0"Extremely Cute"
+triggered_eoe_opinion_of_eoe:0"Eeveelution Empire"
+triggered_negative_opinion_of_evassimilators:0"Eevee Assimilator"
+triggered_evassimilators_positive_opinion_of_others:0 "Yummy"
+triggered_evassimilators_negative_opinion_of_others:0 "Can not eat"
+
+#gov,civic,auth
+RT_NAVIGATOR:0 "Navigator"
+# civic_scientific_faith:0 "Scientific Faith"
+# civic_scientific_faith_desc:0 "Members of this society generally believe in science. They use science and reason as the standard by which all things are measured."
+civic_scientific_faith:0 "Technocracy (Old version)"
+civic_scientific_faith_desc:0"To maximize efficiency, this society is governed according to the principles of science and rationality. The personal whims of an ignorant and dangerously unqualified political elite must not be allowed to interfere.\n§LThis is the Technocracy civic in the old version of the game (version 3.0)§!"
+civic_tooltip_scientific_faith_effects:0 "£building£ §YCapital Buildings§! replace some £job_politician£ §Y$job_politician$§!Jobs with £job_head_researcher£ §Y$job_head_researcher_plural$§!\n§YScientists§!"
+gov_eeveelutions_assimilator:0"Eevee Assimilator"
+gov_eeveelutions_assimilator_desc:0"Eevee Assimilators allow to use other intelligent life as raw materials to expand their own ethnic groups."
+civic_eeveelutions_assimilator:0"Eevee Assimilator"
+civic_eeveelutions_assimilator_desc:0"This Eeveelution species has transformed its \"parasitic seeds\" move to make the nano viruses it secretes no longer plunder the target's biomass, but reshape the target's body from the molecular level. After the fertilized egg carrying parasitic seeds is implanted into the thinking organ of an intelligent organism, the Nanovirus will use the fertilized egg as a template to transform the ready-made organ of the target. The host will eventually become an Eevee, retaining most of it's previous personality and memory while showing the behavior of a young Eevee."
+civic_tooltip_eeveelutions_assimilator_effects:0"Start the game with the ability to §YAssimilate§! organics as eevees\nAssimilating an organic £pop£ Pop generates a small amount of £unity£ §YUnity§! and £society£ §YSociety Research§!\n The assimilated will inherit the previous traits while acquiring the unique traits of Eeveelutions \nHas the §Y\"Assimilation\"§! casus belli on all other empires\n Decreased §YOpinion§! for most other empires."
+casus_belli_cb_evsublimation:0"Sublimation"
+war_goal_wg_evassimilation:0"$war_goal_wg_assimilation$"
+war_goal_wg_evassimilation_desc:0"$war_goal_wg_assimilation_desc$"
+war_goal_wg_evassimilation_vs_fe:0"$war_goal_wg_assimilation$"
+war_goal_wg_evassimilation_vs_fe_desc:0"$war_goal_wg_assimilation_desc$"
+war_goal_wg_end_threat_evassimilators:0"$war_goal_wg_end_threat$"
+war_goal_wg_end_threat_evassimilators_desc:0"$war_goal_wg_end_threat_desc$"
+EOE_citizenship_assimilation:0"Eeveelution assimilation"
+EOE_citizenship_assimilation_tooltip:0 "Pops of this species are §Yaltered§! over time to better match the dominant species of the Empire. Pops that are in the process of being assimilated will not produce any resources."
+EOE_citizenship_assimilation_tooltip_delayed:0 "§LTransformed \"parasitic seeds\" move no longer plunder the target's biomass, but the nano viruses it secretes reshape the target's body from the molecular level. After the fertilized egg carrying parasitic seeds is implanted into the thinking organ of an intelligent organism, the Nanovirus will use the fertilized egg as a template to transform the ready-made organ of the target. The host will eventually become an Eevee, retaining most of it's previous personality and memory while showing the behavior of a young Eevee.§!\n The effect of this Citizenship is roughly the same as the original assimilation, but the assimilated population will retain its original $HABITABILITY$ when becoming Eevee."
+ job_EOE_assimilation:0 "Undergoing Assimilation"
+ job_EOE_assimilation_plural:0 "$job_assimilation$"
+ job_EOE_assimilation_desc:0 "This pop is being integrated into our collective."
+auth_EOE_oligarchic:0 "Oligarchic(Eevees)"
+auth_EOE_oligarchic_desc:0"Same as the normal oligarchic.Choose this authority to experience some story events about the origin of Eeveelutions."
+auth_EOE_imperial:0 "Imperial(Eevees)"
+auth_EOE_imperial_desc:0 "Same as the normal imperial.Choose this authority to experience some story events about the origin of Eeveelutions."
+SPECIES_CLASS_MUST_USE_EEVEELUTION_AUTHORITY:0 "Requires §Y$auth_EOE_oligarchic$§! or §Y$auth_EOE_imperial$§! Authority"
+gov_EOE_despotic_empire:0 "$gov_star_empire$"
+gov_EOE_despotic_empire_desc:0 "$gov_star_empire_desc$"
+gov_EOE_plutocratic_oligarchy:0 "$gov_plutocratic_oligarchy$"
+gov_EOE_plutocratic_oligarchy_desc:0 "$gov_plutocratic_oligarchy_desc$"
+personality_EOE_Eevee_assimilators:0"Eevee Assimilator"
+personality_EOE_Eevee_assimilators_desc:0"Eevee Assimilators allow to use other intelligent life as raw materials to expand their own ethnic groups. They're rather aggressive but can be gotten along given some effort..."
+ 
+#prescripted_country
+
+
+
+EOE:0 "Empire of Eeveelutions"
+EMPIRE_DESIGN_EOE_desc:0 "\tThese psionic egg laying mammals were originally created by a super civilization as pets or toys.After the creator's sudden disappear, Eeveelutions have embarked on the evolutionary route of social and intellectual development for their advantages in multi type cooperation, stood out from those primitive psionic creatures. Million years of natural selection have taught them to look up at the stars, But the large number of automatic factories left by the creators led the newly born Eeveelution civilization astray. Living in a life like fairy tale, They had a much larger population which far beyond the level of the times, but the automatic factories without maintenance would shut down one by one... \n\tEnvironmental capacity decreased, intraspecific struggle intensified. Face to hunger and death, technological progress and military expansion have became the only hope.Thousand years of famine and war have turned the fairies into a civilization like steel. Even the disaster of planetary collision and ring world orbit shift did not defeat them. Nowadays, they have the ability to set foot on the stars, set foot in a wider dark forest...(When choose this origin, your species's habitability won't set to ring world habitability because of their special origin story)"
+START_SCREEN_EOE:0"  At first, we were created by an advanced civilization as pets or toys. After the creators suddenly left for unknown reasons, our ancestors lived their lives as gregarious predators. The combination of different types makes us top predators in any environment, over millions of years of evolution, our vocalizations have become more and more complex, our tribes have grown larger and larger... Finally, oneday, maybe a primitive Eeveelution accidentally learned to use psionic power to operate a advanced weapon left by creators... All of a sudden, everything went faster.\n\tThe teaching of tool use skills, the formation of language and writing, the development of productive forces, the emergence of surplus wealth... The threshold of technology explosion has been broken, the power of wisdom and civilization has taken over the baton from natural selection. Ten thousand years passed in a flash, wandering matriarchal Eeveelution tribes gradually became vast empires. The cities of creators, silenced for million years, were once again ablaze with lights. But this time, pets became owners.\n\tHowever, the heritage of advanced civilization has also laid a hidden danger for our civilization. A large number of automatic factories restarted provide us with productivity far beyond the level of the times, let us live like a fairy tale. In the carefree lives, our population grew exponentially. Finally, relying on those nourishment centers and affluence centers, we supported the early space age population at the technical level of the bronze age. But those factories without maintenance must have a day to shut down...The continuous decrease of ancient factories and the continuous growth of population finally made our population exceed the environmental capacity, hunger and death made war the mainstream of the times. We started trying to use our experience to repair modular items left by our creators, tried to use our knowledge to make less crude weapons and tools. Scholars who have the ability to do this have became the most respected people, and countries which focus on science and military have emerged. In the thousand years of arms race and struggle for existence, we have gradually established a complete basic scientific system. Finally, even if time and war make most of the creators' legacy useless, we can still live a comfortable and stable life with our own technology and the fragile peace under nuclear deterrence.\n\tHowever, 500 years ago, a wandering planet intruded into our system had broke this short peace. After caculation, the ring world's attitude control engine can't provide enough acceleration to avoid this planet. The impact will destroy about three-quarters of the habitat sections, the remaining habitat section's orbit will also become an ellipse with large eccentricity, the temperature on it will vary periodically between 80 degrees below zero centigrade at aphelion and 170 degrees at perihelion. The only hope of life for survivors was hide in pokeballs and wait for the engine to restore the orbit to normal. The disaster duly struck. All life on the dangerous section was compressed into organic slurry at tremendous acceleration. The survivors hid in the subterranean structure of the remain ring world, waiting for the production of pokeballs. Outside, fertile fields cycled between ice fields and scorched earth, a quarter of the eeveelution civilization who survived floated into the future in the ark of time... Three hundred years ago, the orbit of the broken ring world finally returned to normal, Navigator woke up the time migrants, we rebuilt our home on the devastated landscape...\n\tNow, after the discovery of the hyperlane network, the finest minds of the [GetName] have finished development of the first hyper drives. During the thousands of orbital periods when we had to wait for the pokeball's production, we also learned to withstand the harsh conditions with our special abilities. Today, we are ready to catch the stars in our paws!"                     
+
+######伊布虫群
+Swarm_of_Eeveelutions:0 "Swarm of Eeveelutions"
+EMPIRE_DESIGN_Swarm_of_Eeveelutions_desc:0"If Eeveelutions learned to catch each other with pokeballs after they entered the atomic age..."
+START_SCREEN_Swarm_of_Eeveelutions:0"At first, we were created by an advanced civilization as pets or toys. After our creator's sudden disappear, we have embarked on the evolutionary route of social and intellectual development for our advantages in multi type cooperation, stood out from those primitive psionic creatures. Million years of natural selection have taught us to look up at the stars, let us embark on the journey of civilization. Stone Age, Bronze Age, Iron Age, Industrial Age... Along the way, through war and peace, we reached the top of the blue star. Finally, the day of splitting the atom came. In the face of unprecedented terrorist weapons, an iron curtain divided us into two groups of countries with different ideologies. Under the fragile balance, we have been confronting each other in the crazy arms race for decades...\n\tHowever, under the iron curtain of the cold war, an undercurrent is quietly flowing. Unlocking the mind control component of the pokeball allowed a coup to erupt silently. The Overmind secretly controlled the world's largest socialist country, and raised the efficiency of her drones to a level that no other country could matchand under the banner of communism. But she knew, other Eeveelutions won't tolerate her existence. Exposure means death.\n\tAfter decades of development and penetration, the time has finally come to conquer the world. Taking advantage of technology and information, she successfully destroyed most of the nuclear counterattack forces of other Eeveelution countries with nuclear attack.The assimilation technology recovered from the creator's remains also allowed her to turn a large number of other creatures into her own army, The iron and flesh flood that no fear of death have swallowed half of the land of [Root.Capital.GetName] in just a few years. However, other Eeveelutions would not wait to die, they reverse engineered mind control technology with the captured equipment and launched an effective counterattack. In the perplexing nuclear war and mutual capture, the last free Eeveelution was also included in the muddled mental network. Almost every Eeveelution captured other Eeveelutions in the plural, and itself is also controlled by a other Eeveelution. In the muddled mind control network, our consciousness gradually merged. Finally, after the Overmind uploads her own mind to the whole mental network due to aging, we were completely integrated. Then, the nuclear winter came as scheduled, the newly born swarm of Eeveelutions began to struggle for survival...\n\tThanks to our carefully designed genes and the rapid development of biotechnology, we quickly adapted to the environment of nuclear waste. Countless pairs of eyes began to look at the starry sky, we launched the journey to the Stars. Now, after the discovery of the hyperlane network, the brain drones of the [GetName] have finished development of the first hyper drives. Today, we have been able to put the distant stars in our pocket!"
+
+
+
+
+#static modifier
+Technical_information_of_Umbrella_Corporation:0"Technical information of ancient corporation"
+Technical_information_of_Umbrella_Corporation_desc:0"From the remains of the ancient corporation, we got our own initial blueprint and the technical information they left behind when they tried to militarize us"
+EOE_Research_Sample:0"Research Sample"
+EOE_Research_Sample_desc:0"In the ancient ruins, we found a large number of eevee organizations which had been militarized and transformed. These research samples and related technical data will be of great help to our biological research."
+Warship_in_production:0"Warship in production"
+Warship_in_production_desc:0"Creator base is producing the next batch of warships"
+
+
+#eevents
+
+
+
+
+eevent.7.name:0 "Discovery of the creator's remains"
+eevent.7.desc:0 "An expedition found the remains of a creator facility on a desolate planet in our territory. This facility was built on this desolate planet for some reason. We should explore it."
+eevent.7.1.desc:0 "An expedition drone found the remains of a creator facility on a desolate planet in our territory. This facility was built on this desolate planet for some reason. We should explore it."
+eevent.7.a:0 "Send a professional team to explore"
+site_eeveelab:0"Relics of the Creator"
+site_eeveelab_intro:" This facility was built on this desolate planet for some reason. We should explore it."
+eevent.6100.name:0"Umbrella Corporation?"
+eevent.6100.desc:0"The site used to be a research facility belonging to a technology company called Umbrella. According to the archaeological achievements in history, this company specializes in the development of artificial psionic biotechnology. Pokemon is one of their civilian products."
+eevent.6105.name:0"Military psionic creature"
+eevent.6105.desc:0"With the deepening of the investigation, we know why this facility is built on a desolate planet. This is a base for developing military biochemical monsters. There is no sign that the base is out of control. All kinds of data show that the people here left the base in the evacuation of the creators, leaving a large number of unfinished projects."
+###新伞公司坟  缸中之脑
+EOE_fictional_person:0"Maya"
+eoestartleader.1.name:0"Modular Eeveelution"
+eoestartleader.1.desc:0"In a laboratory, the expedition team found a number of Eeveelution organs soaked in storage tanks. Technical documents left behind show that Umbrella tried to militarize Eeveelutions. Adjacent to the lab is the biosynthetic workshop that produces military Eeveelution components. Most of the facilities in the workshop were destroyed by a micrometeorite impact about 200,000 years ago, except for a few stagnant cabins and a brain-transplant device in a corner remain intact. The statics hold three Eeveelution brains -- the core components of the military Eeveelution -- and a brainless body to hold Eeveelution brain. These parts remain bioactive under the action of the stagnant cabins, and can be assembled into a complete Eeveelution any time. In tests, the brain transplant equipment in the workshop failed to identify brainless body which from executed prisoners. Our current technology also does not allow us to create a working brainless body or brain-computer interface. All we can do is pick a brain and implant it into the last remaining brainless body and try to wake it up."
+eoestartleader.1.1.desc:0"In a laboratory, the expedition drones found a number of Eeveelution organs soaked in storage tanks. Technical documents left behind show that Umbrella tried to militarize Eeveelutions. Adjacent to the lab is the biosynthetic workshop that produces military Eeveelution components. Most of the facilities in the workshop were destroyed by a micrometeorite impact about 200,000 years ago, except for a few stagnant cabins and a brain-transplant device in a corner remain intact. The statics hold three Eeveelution brains -- the core components of the military Eeveelution -- and a brainless body to hold Eeveelution brain. These parts remain bioactive under the action of the stagnant cabins, and can be assembled into a complete Eeveelution any time. In tests, the brain transplant equipment in the workshop failed to identify brainless body which from our drones. Our current technology also does not allow us to create a working brainless body or brain-computer interface. All we can do is pick a brain and implant it into the last remaining brainless body and try to wake it up."
+eoestartleader.1.a:0"Implanted in the brain, let's see the power of ancient super civilization"
+eoestartleader.1.b:0"This kind of thing should be in the lab"
+eoestartleader.1.c:0"Revolting, seal these things up"
+eoestartleader.2.name:0"Choose a brain"
+eoestartleader.2.desc:0"Data files: EEVEE series psionic creature corps mind node. \n  Main brain EEVEE001: This type of main brain can coordinate each drones to create a more efficient mental communication network, improve the operation efficiency of the entire corps.\n   Main brain EEVEE002:Specializing in hive building, this main brain can direct drones to use psionic powers to greatly increase the efficiency of hive building, and turn the planet's native species into defensive forces.\n  Psionic Compute Core EEVEE003: This Psionic Compute Core have strong ability of calculation and logical thinking, Can greatly increase the rate of autonomous evolution of the corps, allowing the corps to quickly adapt to combat and enemy conditions.\n  Shipboard psionic center EEVEE004: This shipboard psionic core has several kinds of psionic operation templates built in, which can coordinate the psionic units in the space swarm to use multiple attributes of psionic power to strengthen the space war units.\n  Strategic support core EEVEE005: this strategic support core has built-in several kinds of psionic operation templates, which can coordinate the land war swarm to use psionic powers to create a variety of special effects and enhance the army's offensive and defensive capabilities."
+eoestartleader.2.a:0"Choose Main brain EEVEE001"
+eoestartleader.2.a.tooltip:0"Get a §Ygovernor§!, has advanced traits:\n1.§YEmpathy Network§!: Stability: §G+25§!, £unity£ Unity from £jobs£ Jobs: §G+20%§!, Crime: §G-40§!\n 2.§YNecessary Evil§!: Slave Pop Resource Output: §G+25%§!, Worker Pop Resource Output: §G+15%§!, Army Build: Speed §G+20%§!, Army Cost: §G-20%§!"
+eoestartleader.2.b:0"Choose Main brain EEVEE002"
+eoestartleader.2.b.tooltip:0"Get a §Ygovernor§!, has advanced traits:\n1.§YNano Builder§!: Building Cost: §G-20%§!, Planetary Build Speed §G+30%§!, Ship Build Speed: §G+30%§!, Ship Build Cost: §G-15%§! \n 2.§YPlants vs Aliens§!: Each pop on the planet spawns a defense army."
+eoestartleader.2.c:0"Choose Psionic Compute Core EEVEE003"
+eoestartleader.2.c.tooltip:0"Get a §Gscientist§!, has advanced traits:\n1.§Ypsionic benefits§!:Research Speed: §G+30%§!, Survey Speed: §G+50%§!, Archeaological Skill: §G+1§!, Anomaly Research Speed: §G+50%§!, Research Speed (Psionics): §G+20%§!, Research Speed (Field Manipulation): §G+20%§! \n 2.§YGene Mastery§!: Research Speed (New World)§G+20%§!, Research Speed (Biology)§G+20%§! "
+eoestartleader.2.d:0"Shipboard psionic center EEVEE004"
+eoestartleader.2.d.tooltip:0"Get a §Yadmiral§!, has advanced traits:\n1.§YOrganic Symbiont§!: Ship Hull Points: §G+20%§!  Daily Hull Regen: §G+15%§!  Ship Upkeep Cost: §G-40%§!  \n 4.§YPsionic detection-battle system§!: Shield Hit Points: §G+30%§!, Ship Weapons Range: §G+20%§!, Sensor Range: §G+2§!, Ship Hyperlane Detection Range: §G+3§!"
+eoestartleader.2.e:0"Choose Strategic support core EEVEE005"
+eoestartleader.2.e.tooltip:0"Get a §Ygeneral§!, has advanced traits:\n1.§YDark Templar§!:Army Disengagement Chance: §G+50%§!, Army Damage §G+20%§! \n 2§YTesla Commander§!: Army Damage §G+40%§! \n 3.§YShared Glory§!: Army Morale: §G+40%§! \n 4.§YProduction Construction Corps§!: Army Upkeep §G-50%§!  "
+eoestartleader.3.name:0"Boot-up interface"
+eoestartleader.3.desc:0"Brain installation complete, system in self-examination......\n ERROR:mental network disconnected \n No operator detected \n Error: detected in drones of same type, Unable to read permission level \n Sapient Tactics module is available, personality template is editable (Warning: half-finished feature, when enabled, the individual will gain complete self-cognition logic and autonomous personality)\n Switched to autonomous unit mode without predefined instructions and will accept instructions from any operator or other psionic creature drones \n System check finished, ready to activate "
+eoestartleader.3.a:0"Launch Sapient Tactics module"
+eoestartleader.3.b:0"We don't need extra personality and emotion, just activate it"
+eoestartleader.4.name:0"Plastic memories"
+eoestartleader.4.desc:0"You can use the brain transplant device's personality template editing feature to write his \"real\" life. Leading writers and psychologists collaborate with professionals from all walks of life will produce a rich and authentic account of his life and personality. Records relating to him would be added to departmental files as evidence that he was \"alive\". The public will only know that the [Root.GetName] has added a brilliant leader enhanced by the Creator facility.The optimism written into his personality also makes him more appreciative of life in the present, rather than dwelling on the past. If in the future he does realize that his life is abnormal, we can also tell him the truth, without making him nervous breakdown. \n Please choose his life experience:"
+####总督
+eoestartleader.4.a:0"Served in the navy"
+eoestartleader.4.a1:0"Was in shipbuilding industry"
+eoestartleader.4.b:0"Served in the army"
+eoestartleader.4.c:0"Experienced officialdom"
+eoestartleader.4.d:0"Intellectual background"
+eoestartleader.4.e:0"Architects family background"
+eoestartleader.4.g:0"Peasant family background"
+####科学家
+eoestartleader.4.h:0"Major in Archaeology"
+eoestartleader.4.i:0"Major in Materials"
+eoestartleader.4.j:0"Major in Propulsion"
+eoestartleader.4.k:0"Major in Voidcraft"
+eoestartleader.4.l:0"Major in Industry"
+eoestartleader.4.m:0"Major in Field Manipulation"
+eoestartleader.4.n:0"Major in Particles"
+eoestartleader.4.o:0"Major in Computing"
+eoestartleader.4.p:0"Major in New Worlds"
+eoestartleader.4.q:0"Major in Statecraft"
+eoestartleader.4.r:0"Major in Biology"
+eoestartleader.4.r.tooltip:0 "§GAcheive a Biological genius.§!"
+eoestartleader.4.s:0"Major in Military Theory"
+####舰队司令
+eoestartleader.4.t:0"In charge of fleet logistics"
+eoestartleader.4.u:0"RUSH Master"
+eoestartleader.4.v:0"Fell into enemy's trap"
+eoestartleader.4.v.tootip:0"(Abandon ship! This is a trap!)"
+eoestartleader.4.w:0"Fought to the end with the enemy"
+eoestartleader.4.x:0"Ranger leader"
+####陆军将领
+eoestartleader.4.y:0"A leading general"
+eoestartleader.4.z:0"Full of personal charm"
+eoestartleader.4.aa:0"In charge of army logistics"
+eoestartleader.4.ab:0"Not to injure the people in the least"
+####
+leader_trait_EOE_Organic_Machine_Intelligence:0"Organic Machine Intelligence"
+leader_trait_EOE_Organic_Machine_Intelligence_desc:0 ""
+eoestartleader.8.name:0"Fictional Person"
+eoestartleader.8.desc:0"How's it going... Is the operation successful?"
+eoestartleader.8.a:0"The operation was successful. You're a super Eeveelution now"
+eoestartleader.10.name:0"Organic Machine Intelligence"
+eoestartleader.10.desc:0"System started, waiting to hit"
+eoestartleader.10.a:0"You will serve us"
+
+eoestartleader.11.name:0"Doubt life"
+eoestartleader.11.desc:0"Elena, the fictional person whose personality was activated ten years ago, may have noticed the abnormality of her life experience. Monitors report that Elena has become suspicious and often goes to places where she spent her childhood in her memory for observation."
+eoestartleader.11.a:0"Inform the relevant personnel and prepare to launch the alternative."
+
+eoestartleader.12.name:0"Communication Request"
+eoestartleader.12.desc:0"The agent Ozer, who was arranged to watch Elena as husband and give her spiritual support, reveals her true origin to Elena as planned. Elena wants to talk to you now."
+eoestartleader.12.a:0"Open cumms."
+eoestartleader.13.name:0"Elena"
+eoestartleader.13.desc:0"Ozer has already told me that I was once the brain in a vat in the remains of the creator. My life before the "intensive surgery" was just a wonderful play. My childhood, my family, my friends, my lover, ther are just fictional plots and actors... aren't they?"
+eoestartleader.13.a:0"I'm sorry, but we need your ability."
+eoestartleader.14.name:0"Elena"
+eoestartleader.14.desc:0"You are honest... Not something bad anyway. Comparing with those who were born in an ordinary family, had a character shaped by randomly encountered people and things, and finally had done nothing in the whole life, I'm very lucky. I was born in the top laboratory of ancient empire, The experts in the empire shaped my character, made me a great scientist...I'm like the lead in a superhero movie. In fact, my reaction now is also in your expectation, isn't it."
+eoestartleader.14.a:0"Yes. However, the script next will be written by yourself, our superhero."
+
+
+
+
+#####剧情事件
+
+old_creators_chain_title:0"The truth of annihilation"
+old_creators_chain_desc:0"We may be able to find out the truth of their sudden departure from this base"
+eevent.140.name:0"Discovery of the creator's remains"
+eevent.140.desc:0"A sentinel recently reported the discovery of a military industrial base still in operation built by the civilization that created Eeveelutions on a desolate solid planet. Due to the temporary failure of its stealth field, our observers found traces of the base. The base seems to have been maintained by the AI in it for millions of years without damage. Base AI didn't respond to our communication request. Preliminary exploration shows that this base will not attack our ships automatically. We can investigate this base."
+eevent.140.a:0"Investigate now!"
+EOE_ProtossBase:0"Creator's Relic"
+EOE_ProtossBase_intro:0"The base seems to have been maintained by the AI in it for millions of years without damage. Base AI didn't respond to our communication request. Preliminary exploration shows that this base will not attack our ships automatically. We can investigate this base."
+eevent.10.name:0"Enter the base"
+eevent.10.desc:0"When the scientific research ship tried to approach the base, the base sent out a psionic beam to scan it comprehensively. After that, the base still had no response to our ships and even allowed it to land on the apron of the base. The explorers entered the base unhindered. Base AI has iterated many times in the past one million years. The model of its maintenance UAV is different from any other creator relics on our home planet. This artificial intelligence is obviously running in an abnormal way. It ignores all the communication attempts of the exploration team members. Instead, it judges them as some kind of \"runaway family pet\" and forced them to take off their spacesuits then cleaned their whole body."
+eevent.10.a:0"Keep investigating"
+eevent.11.name:0"Stagnanted base"
+eevent.11.desc:0"Fortunately, the AI here does not limit the freedom of \"family pets\", and the explorers can still investigate the base. The cabin in the base indicates that it was once inhabited, but left long ago. There is no sign that the base has been attacked, and most of its facilities are in a static state for long-term preservation."
+eevent.12.name:0"A base full of mysteries"
+eevent.12.desc:0"The explorers also found a primitive Eeveelution in the cabin. It's exactly the same as our ancestors a million years ago, with a small brain and no language ability. It is the only living body in the base except us, and has been taken care of by the base's artificial intelligence in the way it treats family pets. Why it's here is still a mystery. The explorers didn't find any more. Maybe only by arousing the AI of this base can they get more information."
+eevent.12.a:0"Continue to try to communicate with AI base, do not act rashly"
+eevent.12.b:0"Tentatively attack a drone"
+EOE_wait:0"Wait"
+EOE_wait_DESC:0"Continue to try to communicate with AI base in different ways"
+eevent.16.name:0"Successful communication"
+eevent.16.desc:0"The team's 60 day continuous communication attempt has finally worked, we have successfully established communication with AI at the base. \n By the way, [Root.GetLeaderName] spoke highly of the massage services provided by AI in the base during this period."
+eevent.16.1.desc:0"The drone's 60 day continuous communication attempt has finally worked, we have successfully established communication with AI at the base. \n By the way, the massage services provided by AI in the base is really comfortable~~"
+eevent.16.a:0"Open the communication interface"
+eevent.16.b:0"Open the communication interface"
+advanced_petting_method:0"Advanced petting method"
+advanced_petting_method_desc:0"The advanced petting method learnt from creator's artifical intelligence can make our drones get better maintenance"
+eevent.17.name:0"Successful communication"
+eevent.17.desc:0"After an exploration team member attacked a drone trying to comb his hair with a small power move, the maintenance drones in the whole base were stalled for several seconds. After that, AI at the base finally established communication with us."
+eevent.17.a:0"Open the communication interface"
+eevent.13.name:0"Ancient artificial intelligence"
+eevent.13.desc:0"I can't believe I'm not dreaming this time. In a million years, you have really evolved into an intelligent species that can carry out interstellar navigation. If you have any questions, just ask. There are too many things I want to say."
+eevent.13.a:0"This time? Dream? Do Androids Dream of Electric Eeveelutions?"
+eevent.13.b:0"What happened in those years? Why does the creator suddenly disappear?"
+eevent.13.c:0"What's going on with that primitive Eeveelution?"
+eevent.13.d:0"Can you share the creator's technology with us?"
+eevent.13.e:0"Can you produce warships for us?"
+eevent.13.f:0"End communication and view project in Situation Log"
+eevent.13.f.tootip:0"Base AI has marked the last coordinates of the creator fleet in the list of special items, which we can investigate immediately"
+eevent.13.a.response:0"In fact, I'm not quite the same as the robot you know. My bionic neural network is completely imitated by the neural network in the brain of carbon based organisms, which enables me, a robot to use psionic power to drive the psionic devices in the base. My way of thinking is similar to yours. In the past million years, I have had 145874 cognitive errors and 12425 long-term hallucinations. Among the long-term illusions, 6013 are about the return of the master, 3793 about the invasion of the enemy, and 1571 about Pokemon, including you Eeveelutions, or other creators' adherents who evolved into the interstellar civilization came to visit me... In the later stage, I even began to enjoy these illusions and try my best to avoid the trigger of error correction mechanism. It makes me feel alive, at least. I didn't expect that my dream had really come true one day."
+eevent.13.b.response:0"I don't know. I'm just an AI in charge of warship production. I only remember that they left with all their warships after receiving an urgent order and never came back. \n In those days, it seemed that the Lord's society was undergoing a great change. They began to doubt their world outlook, and began to study the \"real matter\" which had been despised before, trying to solve the mystery of consciousness and psionic power from the material level. It was a glorious golden age. The whole society seemed to be awaken and develop with unprecedented vitality. Countless new things sprang up. We psionic machines and you artificial psionic creatures are both products of that time. We were used as tools, you were used as toys. But all of this suddenly disappeared, without any sign, leaving you and me in the glorious ruins at a loss. \n  I still keep the last coordinates of those warships before they disappeared. Maybe you can find out the truth about the sudden disappearance of our creators there."
+eevent.13.c.response:0" She is Daisy,the mascot of this base. The last instruction the hosts left me was \"take care of Daisy\". Whenever she grows old and dies, I use the base's medical facilities to clone a new Daisy and accompany her through life again. Although I know that this \"command\" is just a casual command out of sensibility, at least I still have this thing to do. Whenever I want to cancel myself and end this endless waiting, Daisy's company always makes me forget this idea. We wait together, wait for the master's back..."
+eevent.14.name:0"Ancient artificial intelligence"
+eevent.14.desc:0"I'm sorry, I don't have enough authority to open those encrypted data. You know, the masters of those days put a lot of restrictions on us 'soulless servants'. Maybe you can study my production facilities. I hope it can help you."
+eevent.14.a:0"No soul? But you can use psionic powers"
+eevent.14.a.response:0"Who knows... Even the masters can't tell exactly what \"soul\" is. Perhaps what they called \"soul\" is just a program runned in organic brains, is just the result of the interaction of \"real matters\" reactions? Is it just another way for these \"real matters\" to react that we use psionic power to interfere with reality?"
+eevent.14.b:0"Maybe......"
+eevent.15.name:0"Ancient artificial intelligence"
+eevent.15.desc:0"That's all right. The master's instruction to me is \"take care of Daisy\". Take care of Daisy is take care of Eeveelutions. Produce warships for Eeveelutions is also take care of Eeveelutions. As long as you provide enough resources, I can produce advanced warships for you."
+eevent.15.a:0"Great. But is your logic system really OK?"
+eevent.15.a.response:0"Ah, don't worry about so much. In short, as long as you provide enough alloy, I can start producing warships again. A Dimensional Fabricator in the base can provide rare resources for building ships. I'm in the process of recovering the production line from the stasis state, which will take some time."
+eevent.15.b:0"Yeah!"
+
+eevent.6131.desc:0"As a matter of fact, I had expected that this would be the case. The masters really won't come back. \n But at least, we are still alive. The masters didn't die in vain. The children they sheltered have grown up, and now they will touch the stars again. \n I am restoring the production line at the base and it will §Ytake some time and resources§! to restore maximum production capacity. A batch of unsealed warships can be used after maintenance, you can activate a Pylon on your home planet to provide warp beacons for the fleet. The warship's psionic components have adapted the mode of Eeveetion's psionic power supply, which can exert their full power under your controlling. I hope these warships can become the solid backing of your civilization and defend you against those threats in the Dark Universe."
+eevent.6131.a:0"Yeah!"
+
+
+r_EOE_warp_gate:0"Warp Gate"
+r_EOE_warp_gate_desc:0"This warp gate allows the warships produced by the creator base to reach our capital directly. The research on the creator's military industrial base can also greatly improve our engineering construction capacity."
+EOE_no_cooldown:0" §R Need the Warp Gate not in cooling down. This relic won't share cooling time with other relics. § "
+relic_EOE_call_fleet:0"Summon a small Fallen Empire fleet. Every activation will increase the size of the fleet."
+relic_Warp_gate_cooldown:0"Cooling time: 10 years"
+eevent.6132.desc:0"This fleet has arrived, I'm starting a new producing line \n Take it to play, little ones."
+eevent.6132.a:0"Yeah!"
+
+
+
+
+OLD_creators_1:0"The first creator ship"
+OLD_creators_1_DESC:0"We found the first creator ship"
+old_creators_shrine_poi_1:0"The first creator ship"
+old_creators_shrine_poi_1_desc:0"This is the last place before the creator fleet disappeared"
+old_creators_shrine_poi_2:0"Second creator ship"
+old_creators_shrine_poi_2_desc:0"There may be another creator ship hidden here"
+OLD_creators_2:0"Second creator ship"
+OLD_creators_2_DESC:0"We found a second creator ship"
+
+
+
+
+
+eevent.142.name:0 "Discover the creator ship"
+eevent.142.desc:0 "[Root.GetName] has entered the [Root.GetStarName] system. The crew observed the creator spacecraft in the expected position."
+eevent.142.a:0 "Start the investigation."
+eevent.143.name:0 "Discover the creator ship"
+eevent.143.desc:0 "[Root.GetName] has entered the [Root.GetStarName] system. The crew observed the creator spacecraft in the expected position."
+eevent.143.a:0 "Good job"
+
+eevent.165.name:0"No man's ship"
+eevent.165.desc:0"The ship's hull was reinforced with an extremely advanced crystalline alloy coating, and the explorers worked hard to successfully cut holes in the hull for Eeveelutions to enter. \n Although the hull of the ship is intact and there is no sign of on board operation, the claw marks in the cabin and the melting marks left by directional energy weapons indicate that there was a fierce white-edged battle inside the ship. Strangely enough, the explorers did not find any bodies. To be exact, they did not find any biomass residues. Only a lot of broken clothes floated quietly in the cabin. It seems that the biomass that once belonged to both sides of the war mysteriously disappeared. \n The spacecraft's recording equipment has been seriously damaged, and the explorers only extracted a group of suspected data of other fleet coordinates from it, which has been marked on the star map\ The explorers brought back samples of crystalline alloys that we can reverse engineer."
+eevent.165.a:0"View the new coordinates in the Situation Log"
+eevent.166.name:0"Invisible infection"
+eevent.166.desc:0"The cabin was filled with twisted and mutated bodies of the creator race. The bodies were covered with dysplastic limbs and organs, and were also wrapped in ragged crew uniforms. The previous claw marks should have been left by them. Some of the bodies were eerie, with their heads broken and their brains in their hands. They may remain in this position until the ship loses temperature and freezes into ice sculptures. \n The explorers found the black box of the spaceship, which recorded the scene of the change: the normal crew suddenly changed into a twisted Monster without warning, and waved the bone claws to the other crew around. The crew who tried to resist also mutated one after another, and soon only twisted monsters were left in the cabin. They started some kind of sacrificial ritual, smashed their heads and pulled their brains out. But then, these monsters suddenly stopped at the same time and completely turned into lifeless corpses.... \n The black box also contains the last route of the ship, which points to a solid planet in our territory. The ship seems to be joining the fleet that is moored there."
+eevent.166.a:0"View the new coordinates in the Situation Log"
+
+EOE_ProtossRelic:0"The dead ARK"
+EOE_ProtossRelic_intro:0"A re scan of the planet revealed the crash of an ark of the creator civilization. The ark is about 74 kilometers long, half buried in a continuous mountain range. The geological movement has made the huge ark almost sink into the ground, which our previous scanning failed to find."
+eevent.20.name:0"The dead ARK"
+eevent.20.desc:0"The cabin is full of organic debris. Most of the passages are blocked by ferocious tentacles and tumors. The vacuum environment and low temperature make the debris still intact. Fierce fighting was broken out on the ark, and the remains of countless normal crew members were mixed with the remains of monsters. Preliminary analysis shows that some high-level psionic warriors sheltered the crew from mutation."
+eevent.20.a:0"Keep digging"
+eevent.21.name:0"The End of the Cycle?"
+eevent.21.desc:0"Dissection of the crew's remains revealed that the skull cavity was empty, and the ashes were all mixed with some psionic dust called Zro. They seem to have collectively burned their powers before they die. A passage in a crew log caught the attention of the explorers: we have signed a contract with The End of the Cycle, and liquidation is coming."  
+eevent.22.name:0"The broken egg"
+eevent.22.desc:0"The explorers found the remains of half a giant flesh egg in the center section of the spaceship. The giant egg is about a kilometer in diameter and is covered with scorching marks left by psychic storms. There's a thick layer of Zro dust on the ground here. It's hard to imagine how huge psionic powers burned here in those days."
+eevent.23.name:0"War in hell"
+eevent.23.desc:0"The Explorer recorded the video from the monitor system: the giant egg suddenly appeared on the central square of the ark, and countless biomass warpped directly to the fast growing flesh egg. Tens of thousands of High Templars quickly assembled to attack the giant egg, but they failed to restrain the growth trend of the giant egg. Instead, they were suppressed by the blood monsters and the power arc of the giant egg. As a result, these High Templars and the crew fighting in other parts of the ark began to burn their powers together, turning into a huge psionic energy body and perish together with the giant egg. After that, the whole ark was completely silent, all the crew were dead, all the monsters lost their life, and there was no signal coming from the communication system. This may be the video of the sacrifice of the last creators."
+eevent.24.name:0"Creator's message?"
+eevent.24.desc:0"One of the explorers used an ancient decoder from our homeworld to turn on the encrypted storage device in the ark command center. There seems to be a message for us?"
+eevent.24.a:0"Start reading"
+
+
+eevent.22222.name:0"Legacy of the Void(Part I)"
+eevent.22222.desc:0"Kids, I'm so glad that you can come here.By the time you read this message, you must have mastered FTL technology and stepped onto the galactic stage.\nOnly our special decoder can open this text, so I'm pretty sure you're the cute little creatures we left behind. Did you evolve dexterous fingers, or learn to manipulate tools with your psionic power?\nFifty years ago, we rashly entered into a contract with a existence of the Shroud in order to gain enormous growth on all sides. But it's just a sweet trap. That being wants to use our psionic power as the springboard and our flesh and blood as the carrier to enter the physical dimension. At that time, our high-level psychics soon found that the power of existence was secretly establishing some connection with our bodies, but no matter how we used our psionic power to resist, we could not change this disturbing fact at all. No one knows what this connection means, and no theoretical model can predict the consequences of this connection. We finally discovered, the everything in the Shroud, even our entire technology system based on psionic power,are just incomprehensible black boxes. Once reality no longer moves with our consciousness, we can only left with fear and helplessness. We used to think that our ability to interfere with reality with our mind is reasonable because reality itself is the product of consciousness. But a higher being tells us in action that we were wrong.\n We finally began to face up to the world we live in, and begin to study the essence of consciousness and psionic power from the material level. But it was too late... Finally, after finding that the situation was irreparable, we chose to leave our homeworld to meet the decisive battle in the star field where the devil's power was the weakest, and left the hope of life... To you. Now, it seems that you have lived up to our expectations."
+eevent.22222.a:0"Next Page"
+eevent.168.name:0"Legacy of the Void(Part II)"
+eevent.168.desc:0"  Perhaps, for our carbon-based creatures, the real secret of psionic power lies in our genes. It contains all the information of our brain, which is the basis of our consciousness. We have been on this path, but before we have gone far, we were destroyed by the disaster of the Shroud. You, Pokemon, who are born to use all kinds of magical abilities, are one of our top achievements on this road.\n  Keep going on this road. We backup all psionic data many times and save them in the distributed storage unit of the spacecraft. This is our last gift. Hope you can understand the essence of psionic power and the basic law of the Shroud before you go deep there, and let those arrogant gods trembling under your artillery fire.\n    May your civilization prosper forever!"
+eevent.168.b:0"We are the swarm."
+eevent.168.c:0"Take the legacy and publish the findings to the nation"
+eevent.168.c.tootip:0"The biggest mystery in our history has been solved. We know where we come from and find a way to truth. \n §YPsionic§! jump drive will be available for research after unlocking the §YJump drive§! \n §YPrecognition Interface§! will be available for research after unlocking the §YSapient combat computer§!  \n §YPsionic Shields§ will be available for research after unlocking the §Hyper Shield§!"
+From_generation_to_generation:0"From generation to generation"
+From_generation_to_generation_desc:0"The road to truth is endless, and countless intelligent creatures follow it. A civilization has fallen, and their children will inherit their mantle and continue on this road  \n  §YPsionic Jump Drive§! will be available for research after unlocking the §YJump drive§! \n §YPrecognition Interface§! will be available for research after unlocking the §YSapient combat computer§!  \n §YPsionic Shields§! will be available for research after unlocking the §Hyper Shield§!"
+eevent.3.name:0"Precognition Interface unlocked"
+eevent.3.desc:0"After completing the research of the Sapient combat computer, we can try to use the psionic technology information left by the creator to develop a psionic tactical computer called the Precognition Interface"
+eevent.3.a:0"The way beyond is catched in our paws!"
+eevent.4.name:0"Psionic jump drive unlocked"
+eevent.4.desc:0"After completing the research of the Jump drive, we can try to use the psionic technology information left by the creator to develop Psionic jump drive."
+eevent.4.a:0"The way beyond is catched in our paws!"
+eevent.5.name:0"Psionic Shields unlocked"
+eevent.5.desc:0"After completing the research of the Hyper Shield, we can try to use the psionic technology information left by the creator to develop Psionic Shields."
+eevent.5.a:0"The way beyond is catched in our paws!"
+
+
+
+###小豪坟
+EOE_Dimension_Ark:0"Subspace Facilities"
+EOE_Dimension_Ark_intro:0"Preliminary investigation showed that these facilities built by the creators rely on the original satellite of the habitable planet. They were sent into subspace for some specific purpose. Due to the invalidation of the subspace stabilization devices, the facilities fall back to the surface of the satellite."
+eevent.30.name:0"Evidence of Influx of Subspace Matter"
+eevent.30.desc:0"Massive incoming subspace surge was detected in the orbits of [target_planet.GetName], a large amount of matter fell from the subspace into the surface of the satellite. Preliminary investigation showed that these facilities built by the creators rely on the original satellite of [target_planet.GetName].They were sent into subspace for some specific purpose. Due to the invalidation of the subspace stabilization devices, the facilities fall back to the surface of the satellite."
+eevent.31.name:0"Dimension Ark"
+eevent.31.desc:0"We found a lot of dimensional extractors in the facilities. Hundreds of dimensional extractors that have been discovered are all damaged from the inside. Records show that these dimensional extraction machines have reversely operated, and sent a large amount of material into other dimensions. Each ten tons of materials were transported, the core of these dimensional extraction machines would be damaged due to reversely operation. We can't imagine how our creators brought these expensive equipment from industrial planets to here, then burned them down one by one. The operating records indicate that the materials delivered are named \"kindling\". "
+eevent.32.name:0"kindling......or Tombstones?"
+eevent.32.desc:0"In the control center, our exploratory team found more detailed information about these facilities. \n  They were used for a programme called \"Project Kindling\". The creators launched this programme before their destruction, trying to leave the flame of its own race and civilization. They created a retrovirus with their own genes as the core, and sent them to other dimensions, together with storage media that record their civilization history and basic natural science knowledge, artificial psionic creatures that are sufficient to form and multiply ethnic groups, and all research materials on the nature of psionics. Then a shroud-entity that has signed a contract with them will guide these \"Kindling\" to land on a habitable planet in another dimension. Subsequently, the retrovirus in \"Kindling\" will integrate the gene of the creator into the genes of the local indigenous organisms, and pass on their blood while avoiding the end of the cycle. These psionic creatures that can be easily tamed will also begin to multiply in new homes, becoming a huge boost to a new primitive civilization, or, like us, evolving into a new civilization on their own. They also launched hundreds of self-driving spacecraft, carrying the same cargo to the outer galaxy, and perform the same mission. ..... \n  At least, some of their genes will continue to be passed on, their creations will continue to multiply, their history will be remembered by the new civilization......"
+eevent.33.name:0"Remain of God"
+eevent.33.desc:0"In the enhanced psionic room of the ruins, the exploration team found a well-preserved remains of the creator. According to the identification mark, this remains was the chief psychic responsible for communicating with the shroud-entity in the \"Project Kindling\". He sits at the core of the enhanced psionic array, holding a pokeball in his hand. Many of the creator's clothing remains on the surrounding. The residual energy indicates that here was once connected to the Shroud. In the log of the base, the exploratory team found out the true identity of the \"chief psychic\". \n This \"psychic\" is actually the incarnation of that shroud-entity. He likes to travel through the realms, and he is very good at influencing and controlling the minds of intellengent creatures. Relying on this ability, he can integrate his avatar into any intelligent civilization and experience their life with any capacity. At the end of \"Project Kindling\", he confessed his identity to the creator. Then, according to the previous contract, with this avatar as a guide, all the personnel in the base will be taken into the shroud as his collection. "
+eevent.33.a:0"Study these relics "
+eevent.34.name:0"Shroud ball"
+eevent.34.desc:0"Scientists did not find too many useful things in the remains of the incarnation of the shroud. But the pokeball that had been used by the shroud-entity attracted their attention. The operation record in the pokeball records that there was a Suicune in the ball. Under the  guidance of the shroud-entity, it entered the shroud directly from the subspace bubble generated by the pokeball. The remaining energy samples in this ball can be used as a reference for us to develop more powerful mind control weapons. "
+eevent.34.a:0"Cool"
+eevent.36.name:0 "Planet Successfully Controled"
+eevent.36.desc:0 "The master ball broke through the boundary between reality and the Shroud and guided a huge amount of psionic power on [From.GetName] to blow a planetary psionic storm. The memory and personality of all intelligent organic lives on [From.GetName] have been rewritten, and they will be loyal to [From.From.Owner.GetName] from the bottom of their hearts. After the capture, the master ball was irreversibly absorbed by the Shroud and disappeared into another dimension. "
+eevent.36.a:0 "We would call it efficient."
+
+#####################################捕捉式轨道轰炸
+bombardment_catch:0 "Catch"
+bombardment_catch_desc:4 "When the fleet suppresses the enemy's air defense firepower, the armed UAV equipped with the master ball can be launched into the densely populated area to effectively plunder the enemy's population\n- §YMedium§! damage to §YArmies§!\n- §ELight§! damage to §YPlanet§!\n- Will §Yabduct§! Pops efficiently instead of killing them\n- Will §RNOT§! abduct or kill the last 1 Pop"
+bombardment_catch_1:0 "Catch I"
+bombardment_catch_1_desc:4 "When the fleet suppresses the enemy's air defense firepower, the armed UAV equipped with the master ball can be launched into the densely populated area and directly transport the catached enemy pops to the mothership. \n-§HHeavy§! damage to §YArmies§!\n- §ELight§! damage to §YPlanet§!\n- Will §Yabduct§! Pops efficiently instead of killing them\n- Will §RNOT§! abduct or kill the last 1 Pop"
+bombardment_catch_2:0 "Catch II"
+bombardment_catch_2_desc:4 "The fleet will create tiny wormholes in orbit to directly capture the enemy population.\n-§RMassive§! damage to §YArmies§!\n-§Elight§! damage to §YPlanet§!\n-Will bombard undefended planets\n- Will §Yabduct§! Pops efficiently instead of killing them\n- Will §RNOT§! abduct or kill the last 1 Pop"
+bombardment_catch_swarm:0 "Advanced Catch"
+bombardment_catch_swarm_desc:4 "When the fleet suppresses the enemy's air defense firepower, the armed UAV equipped with the master ball can be launched into the densely populated area to effectively plunder the enemy's population\n-§HHeavy§! damage to §YArmies§!\n- §ELight§! damage to §YPlanet§!\n- Will §Yabduct§! Pops efficiently instead of killing them\n- Will §RNOT§! abduct or kill the last 1 Pop"
+bombardment_catch_swarm_1:0 "Advanced Catch I"
+bombardment_catch_swarm_1_desc:4 "When the fleet suppresses the enemy's air defense firepower, the armed UAV equipped with the master ball can be launched into the densely populated area and directly transport the catached enemy pops to the mothership.\n-§RMassive§! damage to §YArmies§!\n-§Elight§! damage to §YPlanet§!\n-Will bombard undefended planets\n- Will §Yabduct§! Pops efficiently instead of killing them\n- Will §RNOT§! abduct or kill the last 1 Pop"
+bombardment_catch_swarm_2:0 "Advanced Catch II"
+bombardment_catch_swarm_2_desc:4 "The fleet will create tiny wormholes in orwbit to directly capture the enemy population.\n-§MIMBA§! damage to §YArmies§!\n-§Elight§! damage to §YPlanet§!\n-Will bombard undefended planets\n- Will §Yabduct§! Pops efficiently instead of killing them\n- Will §RNOT§! abduct or kill the last 1 Pop"
+#########################################蜂群伊布
+civic_external_synapse:0"External Synapse"
+civic_external_synapse_desc:0"Eeveelutions was not originally a creature with Gestalt consciousness. They use the technology of ancient super civilization to connect the mind in order to control the drones. Synapse drones equipped with a large number of pokeballs will play the role of trainers. The drones in the ball can maintain the connection with the swarm without consuming any supplies."
+civic_external_synapse_effects:0"Allow to use §YCatch§! bombardment stances\n§YSynapse Drones§! prodece §G6§!£amenities_no_happiness£§YAmenities§!\n§YSynapse Drones§! reduce §G5§!£crime£§YDeviancy§!\n§YSynapse Drones§! consume §R0.2§!£alloys£Alloys"
+ building_hive_node_EOE:0 "Synaptic Nodes"
+ building_hive_node_EOE_desc:1 "A center of massive, macroscopic synapses, these nodes, tended to and assisted by specialized drones, receive and transmit the will of the Hive."
+ building_hive_cluster_EOE:0 "Synaptic Clusters"
+ building_hive_clusterE_EOE_desc:1 "Synaptic hive nodes networked and clustered together produce maximum meganeuron transmission per available surface area, strengthening the organization of the will to its drones."
+ building_hive_confluence_EOE:0 "Confluence of Thought"
+ building_hive_confluence_EOE_desc:1 "A massive nervous center of macroscopic neurology, billions of meganeurons fire along vast stretches of roiling protoplasmic fibers in the Confluence, spreading, strengthening, coordinating the will of the Hive."
+ building_hive_capital_EOE:0 "Hive Core"
+ building_hive_capital_EOE_desc:1 "The organizational core from which the Hive Mind coordinates planetside functions."
+ building_hive_major_capital_EOE:0 "Hive Nexus"
+ building_hive_major_capital_EOE_desc:1 "A sprawling capital complex from which the Hive Mind focuses planetary organization, coordination, and planning."
+ building_hab_capital_EOE:0 "Habitat Lair"
+ building_hab_capital_EOE_desc:0 "The administrative hub of the Habitat, serving as its Lair and the mainbrain of the local swarm."
+ building_hab_major_capital_EOE:0 "Habitat Hive"
+ building_hab_major_capital_EOE_desc:1 "An extensive complex of cerebrate hives that oversees the administration of a highly-populated habitat."
+ building_imperial_hive_capital_EOE:0 "Imperial Complex"
+ building_imperial_hive_capital_EOE_desc:1 "From this massive structure, the Hive Mind governs the Galactic Imperium. This is where the fate of the galaxy is decided."
+ district_rw_hive_EOE:0 "Hive Segment"
+ district_rw_hive_EOE_plural:0 "Hive Segments"
+ district_rw_hive_EOE_desc:0 "Towering spires stretch across this Ring World section for drones to gather when not working to rejuvenate and consume nutrients."
+
+
+ job_EOE_synapse_drone:0 "Synapse Drone"
+ job_EOE_synapse_drone_plural:0 "Synapse Drones"
+ job_EOE_synapse_drone_desc:1 "The macroscopic embodiment of a synapse, these drones focus on amplifying the Overmind's ceaseless messages, and cleaning them of distortions."
+mod_job_EOE_synapse_drone_add:0"$job_synapse_drone$ Jobs"
+mod_planet_pops_food_upkeep_mult:0"Pops food upkeep"
+
+##################################野生原始伊布事件
+wild_eeveelution_cat:0"Discovered wild primitive Eeveelutions"
+wild_eeveelution_cat_desc:0"[Root.GetName] found a large number of wild Pokemons on [From.GetName]. This should be another group of creator's relic like us."
+eevent.7000.name:0"Wild primitive Eeveelutions"
+eevent.7000.desc:0"This planet was also a colony of the creator civilization. The Pokemon they left behind are still living the life of wild animals, including our own kind. Like us ten thousand years ago, these wild Eeveelutions formed tribes with 20 to 100 individuals and lived a life of hunting in groups. The tribes in some areas have developed the rudiments of language, and began to harvest wild fruits regularly by using the ability of Leafeon... They have reached the threshold of technology explosion, and the fire of civilization may start to burn on this planet at any time. We're just 10000 years ahead of them...\nThey've evolved a brain size similar to ours and have no reproductive isolation from us. [Root.GetLeaderName] believes that if the wild Eeveelutions are given appropriate drug stimulation and education, they can also become qualified citizens of [Root.Owner.GetName]."
+eevent.7000.1.desc:0"This planet was also a colony of the creator civilization. The Pokemon they left behind are still living the life of wild animals, including our own kind. Like us ten thousand years ago, these wild Eeveelutions formed tribes with 20 to 100 individuals and lived a life of hunting in groups. The tribes in some areas have developed the rudiments of language, and began to harvest wild fruits regularly by using the ability of Leafeon... They have reached the threshold of technology explosion, and the fire of civilization may start to burn on this planet at any time. We're just 10000 years ahead of them...\nThey've evolved a brain size similar to ours and have no reproductive isolation from us. They can become qualified citizens of [Root.Owner.GetName] with just a single catch."
+eevent.7000.a:0"Great, we need more productivity!"
+eevent.7000.a.tootip:0"Science ship can't handle this kind of business. We need some \"professionals\" to help"
+eevent.7000.b:0"Precious samples of primitive society! Plan a nature reserve here!"
+Catch_Eeveelutions:0"Catch wild eeveelutions"
+Catch_Eeveelutions_DESC:0"Catch wild eeveelutions with military ships"
+d_EOE_wild_eeveelution_habitat:0"Wild eeveelution habitat"
+d_EOE_wild_eeveelution_habitat_desc:0"This area is occupied by a large number of wild Eeveelution tribes. We can move these primitive tribes to the planned reserves to free up land."
+d_EOE_wild_eeveelution_reserve:0"Wild eeveelution reserve"
+d_EOE_wild_eeveelution_reserve_desc:0"The more limited resources in the reserve will intensify the survival struggle among primitive tribes and produce more research data."
+eevent.7001.name:0"Catch finished"
+eevent.7001.desc:0"The capture fleet's specially modified airdrop module uses parachutes instead of recoil engines for terminal deceleration to avoid scaring wild eeveelutions. After reaching the predetermined altitude, the UAV group with master ball will pour out from the airdrop module, accurately capture each wild eeveelution on the sensor, and return to the airdrop module to wait for the recovery team to arrive\nIn this efficient way, we quickly catched all the wild eeveelutions on the planet and sent them to the transformation center on [Root.Capital.GetName]. Now we can start transforming them at any time."
+eevent.7001.1.desc:0"The capture fleet's specially modified airdrop module uses parachutes instead of recoil engines for terminal deceleration to avoid scaring wild eeveelutions. After reaching the predetermined altitude, the UAV group with master ball will pour out from the airdrop module, accurately capture each wild eeveelution on the sensor, and return to the airdrop module to wait for the recovery team to arrive\nIn this efficient way, we quickly catched all the wild eeveelutions on the planet and sent them to the main hive on [Root.Capital.GetName]. Now we can connect them to the mental network at any time."
+eevent.7001.a:0"We would call it efficient"
+eevent.7001.b:0"The swarm is hungry"
+Improve_Eeveelutions:0"Transforming wild eeveelutions"
+Improve_Eeveelutions_DESC:0"Stimulate the nervous system of wild eeveelutions and teach them."
+eevent.7002.name:0"New members' joining"
+eevent.7002.desc:0"After being modified by drugs that stimulate the nervous system, the intelligence quotient and learning ability of these wild Eeveelutions soon increased to the same level as ours. With the help of holographic projection classroom and a large number of volunteers, they gradually adapted to the life of modern people and successfully integrated into our society."
+eevent.7002.1.desc:0"The newly captured drones have been successfully connected to the mental network and are in good condition."
+eevent.7002.a:0"Need to hatch more overlords"
+eevent.7002.b:0"Nice"
+
+eevent.7100.name:0"Pokemon Theme Park"
+eevent.7100.desc:0"After further exploring [wild_eeveelution_planet.GetName], we found that this planet was once a pokemon themed resort rorld. The whole planet is divided into several areas suitable for different pokemons, with countless relics of Pokémon Gyms, characteristic resorts and sightseeing facilities scattered among them. The creators left behind a large number of facilities related to artificial psionic creatures, but they have been seriously damaged by millions of years of geological activities. Some of these research facilities still retain some incomprehensible information, and the research action on these facilities can provide employment opportunities for hundreds of millions of scientific researchers. Some Pokémon Gyms are still worth repairing and may be used by us after renovation."
+eevent.7100.a:0"GOOD"
+eevent.7100.b:0"GOOD"
+Repair_pokemon_park:0"Repair acient Pokémon Gyms"
+Repair_pokemon_park_DESC:0"These Pokémon Gyms are still worth repairing and may be used by us after renovation."
+eevent.7102.name:0"Acient Pokémon Gyms"
+eevent.7102.desc:0"With the repair of the last set of emergency recall devices completed, the Pokémon Gyms on [wild_eeveelution_planet.GetName], which has been abandoned for millions of years will restore all the functions of the past, but this time, the audience will be replaced by ourselves. These Pokémon Gyms uses a lot of neutron material which connected by strong interaction force, which are as strong as a whole atomic nucleus. We don't have to worry that the infantry weapons used for competition will damage these historical monuments that can withstand starship gunfire. \nAlthough our existing theories cannot explain how these materials was made at all, these valuable samples will come in handy one day. Perhaps at that time, we can also arm our own warships with these indestructible neutron armor."
+eevent.7102.1.desc:0"The Pokémon Gyms on [wild_eeveelution_planet.GetName] uses a lot of neutron material which connected by strong interaction force, which are as strong as a whole atomic nucleus.\nAlthough our existing theories cannot explain how these materials was made at all, these valuable samples will come in handy one day. Perhaps at that time, we can also arm our own warships with these indestructible neutron armor.The medical facilities supporting the Pokémon Gyms have also been reopened to provide additional maintenance for our drones."
+eevent.7100.a:0"Worth celebrating"
+
+
+eevent.7005.name:0"Exponential surge" 
+eevent.7005.desc:0"In a routine study of \"shroud ball\", scientists have found that if it is powered by an external energy source, the energy of the shroud-entity in this ball can be infinitely amplified and control all the intellegent creatures affected by it. The upper limit of the energy that this \"Shroud Ball\" can withstand is still unknowen. They came up with a crazy idea: If we use the planet-killer weapon platform to power this \"Shroud Ball\", it is possible to create a super weapon that can control the minds of all intelligent creatures on the entire planet in one blow."
+eevent.7005.a:0"Nice"
+
+EOE_great_eoe_country_for_ai:0" "
+EOE_great_eoe_country_for_ai_desc:0"Increase the chance of AI Eeveelution countries to select gene ascension. If this country is within 12 jumps from the player, this won't appear."
+FLAG_CATEGORY_eevee:0 "eevee"
+EOE_pop_unemploy:0 "Reduce demotion time"
+
+
+######################2022年5月15日16:26:08添加
+NAME_EOE_Old_daddy:0"Ancient mechanical fleet"
+
+#################2022年6月15日18:23:28添加
+eevent.7102.a.tootip:0"§Y$tech_ship_armor_5$§! will get the research options and add 50% of the research progress immediately after the completion of §Y$tech_ship_armor_4$§!."
+eevent.345.name:0"$tech_ship_armor_5$"
+eevent.345.desc:0"After completing the research of $tech_ship_armor_4$, we can use the $tech_ship_armor_5$ samples left by the creator for reverse research."
+eevent.345.a:0"GOOD"
+
+
+opinion_burned_a_world:0"Burned a world"
+
+
+
+#########2023年7月12日20:59:15添加
+ councilor_eeveelutions_assimilator:0 "Grand assimilator"
+councilor_eeveelutions_assimilator_female:0 "$councilor_eeveelutions_assimilator$"
+councilor_eeveelutions_assimilator_desc:1 "$TITLE$ committed to make the whole galaxy join the glorious evolution."
+
+ EOE_councilor_technocracy:0 "$councilor_technocracy$"
+ EOE_councilor_technocracy_female:0 "$councilor_technocracy$"
+ EOE_councilor_technocracy_desc:0 "The $TITLE$ ensures fundamental research is promoted and shared between departments."
+
+ councilor_steel_type_trainer:0 "Top Champion"
+councilor_steel_type_trainer_female:0 "$councilor_steel_type_trainer$"
+councilor_steel_type_trainer_desc:1 "$TITLE$ is proficient in taking care and managing Pokemons - including ourselves."
+
+ councilor_external_synapse:0 "Champion Node"
+councilor_external_synapse_female:0 "$councilor_external_synapse$"
+councilor_external_synapse_desc:1 "$TITLE$ is where we managing our drones."

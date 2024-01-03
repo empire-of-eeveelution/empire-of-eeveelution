@@ -1,0 +1,36 @@
+namespace = EOE_trigger
+country_event ={   #创造者坟
+	id = EOE_trigger.1
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = { 
+		any_owned_pop = {
+			has_trait = trait_EOE_Inheritors
+		}
+		num_ascension_perks > 1
+	 }
+	immediate = {
+		country_event = { id = eevent.140 days = 360 random = 60  }
+	}
+
+}
+
+country_event ={
+	id = EOE_trigger.2
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = { 
+		any_owned_pop = {
+			has_trait = trait_EOE_Inheritors
+		}
+		has_technology = EOE_mental_assault
+		has_ascension_perk = ap_mega_evolution_EOE
+		has_country_flag = EOE_psychic_tech
+	 }
+	immediate = {
+		country_event = { id = eevent.30 days = 360 random = 60 }
+	}
+
+}

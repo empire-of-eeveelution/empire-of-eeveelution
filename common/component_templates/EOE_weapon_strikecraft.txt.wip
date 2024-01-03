@@ -1,0 +1,54 @@
+## WIP For Unown strike fighter. Currently based off the flagellum and uses flagellum graphics as a placeholder.
+
+strike_craft_component_template = {
+	key = "EOE_UNOWN_STRIKE_CRAFT"
+
+	size = LARGE
+	entity = "space_amoeba_small_entity" #Placeholder
+	power = -30
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+		}
+	}
+
+	count = @count
+	regeneration_per_day = @regen
+	launch_time = @launch_time
+
+	damage = { min = 10 max = 20 }
+	cooldown = 2.0
+	range = @attack_range
+	engagement_range = @engagement_range
+	accuracy = 1.00
+	tracking = 1.00
+
+	health = 8
+	armor = 0
+	shield = 40
+	evasion = 0.9
+
+	speed = 500
+	rotation_speed = 0.8
+	acceleration = 1
+
+	shield_damage = 1.25
+	shield_penetration = 1
+	armor_damage = 1.25
+	armor_penetration = 1
+	hull_damage = 1.25
+
+	ship_behavior = "fighters_behavior"
+
+	weapon_type = instant 
+	projectile_gfx = "small_space_amoeba_weapon"
+
+	component_set = "AMOEBA_STRIKE_CRAFT_1"
+	prerequisites = { "tech_amoeba_strike_craft_1" }
+
+	icon = "GFX_ship_part_amoeba_strike_craft_1"
+	icon_frame = 1
+	tags = { weapon_type_strike_craft weapon_type_space_fauna }
+	ai_tags = { weapon_role_anti_hull }
+}

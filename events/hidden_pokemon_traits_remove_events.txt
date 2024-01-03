@@ -1,0 +1,26 @@
+#Some traits use empire range. We use these events to cheat the modifiers into traits.
+
+namespace = pokemon_traits_remove
+
+### Hidden Game Start Event
+##########################################################################################
+### Removing traits bonus from non-eligible nations.
+
+#Sociable
+event = {
+    id = pokemon_traits_remove.1
+    hide_window = yes
+    is_triggered_only = yes
+   
+    immediate = {
+        every_country = {
+            limit = {
+				has_country_flag = flag_trait_fairy_type_mega_evolution
+				NOT = { any_owned_pop = {    has_trait = trait_fairy_type_mega_evolution     }       }
+            }
+            remove_modifier =  wear_trait_fairy_type_mega_evolution
+			remove_country_flag = flag_trait_fairy_type_mega_evolution
+        }
+	}
+}
+

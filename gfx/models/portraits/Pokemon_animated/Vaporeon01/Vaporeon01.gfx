@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Vaporeon01_mesh"
+		file = "gfx/models/portraits/Pokemon_animated/Vaporeon01/Vaporeon01.mesh"
+		scale = 1.2
+		animation = { id = "idle1"	type = "Vaporeon01_idle1_animation" }
+		animation = { id = "idle2"	type = "Vaporeon01_idle2_animation" }
+
+		meshsettings = {
+			name = "pPlane1Shape"
+			index = 0
+			texture_diffuse = "EOE031.dds"
+			shader = "PdxMeshPortrait"
+		}
+	}
+}

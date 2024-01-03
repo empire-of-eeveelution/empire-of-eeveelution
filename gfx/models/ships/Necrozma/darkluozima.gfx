@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "darkluozima_mesh"
+		file = "gfx/models/ships/Necrozma/darkluozima.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "pm0865_00_fiShape"
+			index = 0
+			texture_diffuse = "darkluozima_diffuse.dds"
+			texture_normal = "darkluozima_normal.dds"
+			texture_specular = "darkluozima_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

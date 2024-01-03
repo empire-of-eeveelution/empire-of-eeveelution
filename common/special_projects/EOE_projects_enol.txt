@@ -1,0 +1,339 @@
+special_project = { #鬼故事调查
+	key = "EOE_ghost_story"
+	event_scope = ship_event
+	days_to_research = 360
+	timelimit = -1
+	picture = GFX_evt_colony_settlement
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill = 2
+	}
+
+	on_success = { 
+		ship_event = {
+			id = EOE_branch.103
+		}
+	}
+}
+special_project = { #人口统计
+	key = "EOE_pop_stat"
+	event_scope = ship_event
+	days_to_research = 360
+	timelimit = -1
+	picture = GFX_evt_colony_settlement
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill = 2
+	}
+
+	on_success = { 
+		ship_event = {
+			id = EOE_branch.108
+		}
+	}
+}
+
+special_project = { #实地调查
+	key = "EOE_field_invs"
+	event_scope = ship_event
+	days_to_research = 360
+	timelimit = -1
+	picture = GFX_evt_colony_settlement
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill = 2
+	}
+
+	on_success = { 
+		ship_event = {
+			id = EOE_branch.112
+		}
+	}
+}
+
+special_project = { #灵能调查
+	key = "EOE_psionic_invs"
+	event_scope = ship_event
+	days_to_research = 360
+	timelimit = -1
+	picture = GFX_evt_colony_settlement
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill = 2
+	}
+
+	on_success = { 
+		ship_event = {
+			id = EOE_branch.115
+		}
+	}
+}
+
+special_project = { #大调查
+	key = "EOE_large_invs"
+	event_scope = ship_event
+	cost = 60000
+	timelimit = -1
+	picture = GFX_evt_colony_settlement
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	tech_department = society_technology
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill = 2
+	}
+
+	on_success = { 
+		ship_event = {
+			id = EOE_branch.142
+		}
+	}
+}
+
+special_project = { #调查破鬼
+	key = "EOE_ghost_research"
+	event_scope = country_event
+	cost = 15000
+	timelimit = -1
+	picture = GFX_evt_EOE_the_ghost
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	tech_department = physics_technology
+	on_success = {
+		event_target:EOE_ghost_planet = {
+			planet_event = {
+				id = EOE_branch.126
+			}
+		}
+	 }
+}
+
+special_project = { #调查好鬼
+	key = "EOE_compelete_ghost_research"
+	event_scope = country_event
+	cost = 6000
+	timelimit = -1
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	tech_department = physics_technology
+	on_success = {
+		event_target:EOE_ghost_planet = {
+			planet_event = {
+				id = EOE_branch.126
+			}
+		}
+	 }
+}
+
+special_project = { #安全关闭传送门
+	key = "EOE_close_portal"
+	event_scope = country_event
+	cost = 6000
+	timelimit = -1
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	tech_department = society_technology
+	on_success = {
+		event_target:EOE_ghost_planet = {
+			planet_event = {
+				id = EOE_branch.127
+			}
+		}
+	 }
+}
+
+special_project = { #大开传送门
+	key = "EOE_open_portal"
+	event_scope = country_event
+	cost = 12000
+	timelimit = -1
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	tech_department = society_technology
+	on_success = {
+		event_target:EOE_ghost_planet = {
+			planet_event = {
+				id = EOE_branch.128
+			}
+		}
+	 }
+}
+
+special_project = {
+	key = "EOE_enter_portal_1"
+	event_scope = ship_event
+	cost = 729	
+	timelimit = -1
+	picture = GFX_evt_vortex
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	tech_department = society_technology
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill = 1
+	}
+	on_success = { 
+		ship_event = {
+			id = EOE_branch.129
+		}
+	}
+}
+special_project = {
+	key = "EOE_enter_portal_2"
+	event_scope = ship_event
+	cost = 6561
+	timelimit = -1
+	picture = GFX_evt_vortex
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	tech_department = society_technology
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill = 1
+	}
+	on_success = { 
+		ship_event = {
+			id = EOE_ghost.1
+		}
+		ship_event = {
+			id = EOE_branch.134 days = 5
+		}
+	}
+}
+special_project = {
+	key = "EOE_enter_portal_3"
+	event_scope = ship_event
+	cost = 59049
+	timelimit = -1
+	picture = GFX_evt_vortex
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	tech_department = society_technology
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill = 1
+	}
+	on_success = { 
+		ship_event = {
+			id = EOE_ghost.1
+		}
+		ship_event = {
+			id = EOE_branch.135 days = 5
+		}
+	}
+}
+special_project = {
+	key = "EOE_enter_portal_4"
+	event_scope = ship_event
+	cost = 177147
+	timelimit = -1
+	picture = GFX_evt_vortex
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	tech_department = society_technology
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill = 1
+	}
+	on_progress_25 = {
+		ship_event = {
+			id = EOE_branch.143
+		}
+	}
+	on_success = { 
+		ship_event = {
+			id = EOE_ghost.1
+		}
+		ship_event = {
+			id = EOE_branch.136 days = 5
+		}
+	}
+}
+special_project = {
+	key = "EOE_enter_portal_5"
+	event_scope = ship_event
+	cost = 177147
+	timelimit = -1
+	picture = GFX_evt_vortex
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	tech_department = society_technology
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill = 1
+	}
+	on_progress_25 = {
+		ship_event = {
+			id = EOE_branch.144
+		}
+	}
+	on_success = { 
+		ship_event = {
+			id = EOE_ghost.1
+		}
+		ship_event = {
+			id = EOE_branch.137 days = 5
+		}
+	}
+}
+special_project = {
+	key = "EOE_enter_portal_6"
+	event_scope = ship_event
+	cost = 177147
+	timelimit = -1
+	picture = GFX_evt_vortex
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	tech_department = society_technology
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill = 1
+	}
+	on_progress_25 = {
+		ship_event = {
+			id = EOE_branch.145
+		}
+	}
+	on_success = { 
+		ship_event = {
+			id = EOE_ghost.1
+		}
+		ship_event = {
+			id = EOE_branch.138 days = 5
+		}
+	}
+}
+special_project = {
+	key = "EOE_gray_goo"
+	event_scope = ship_event
+	days_to_research = 100
+	timelimit = -1
+	picture = GFX_evt_ship_in_orbit_2
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill = 1
+	}
+	on_success = { 
+		ship_event = {
+			id = graygoo.400
+		}
+	}
+}
+special_project = { #调查电磁混乱
+	key = "EOE_search_electromagnetic_chaotic"
+	event_scope = country_event
+	cost = 20000
+	timelimit = -1
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	tech_department = physics_technology
+	on_success = {
+		country_event = { id = EOE_branch.152 }
+		set_country_flag = EOE_searched_electromagnetic_chaotic
+	}
+}

@@ -1,0 +1,31 @@
+#my_casus_belli = {
+#	potential = { ... }		# trigger to make some CBs invalid for certain types of countries; this = attacker (CB owner); default: { always = yes }
+#	is_valid = { ... }		# trigger, evaluated daily to check if CB should be created or destroyed automatically, does not affect CBs granted via script;
+#								# this = attacker (CB owner), from = defender (target country); default: { always = yes }
+#	destroy_if = { ... }	# trigger, evaluated daily to destroy CBs that have been granted via script ahead of expiration date;
+#								# this = attacker (CB owner), from = defender (target country); default: { always = no }
+#	show_notification = no/yes	# optional (default = yes), flag to control whether this CB will generate a notification (to avoid duplicate
+# 								# notification when a claim CB is generated)
+#}
+
+#同化成伊布，不会有冲突
+cb_evsublimation = { 
+	show_in_diplomacy = no
+	show_notification = no
+	potential = {
+		has_valid_civic = civic_eeveelutions_assimilator
+	}
+	is_valid = {
+		NOT = { is_overlord_to = FROM }
+		OR = {
+			is_subject = no
+			overlord = { NOT = { is_same_value = from } }
+		}
+		from = {
+			NOR = { 
+				has_authority = auth_machine_intelligence 
+				is_species_class = Eeveelutions
+			 }
+		}
+	}
+}

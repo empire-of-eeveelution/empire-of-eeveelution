@@ -1,0 +1,204 @@
+triggered_opinion_trait_extremely_cute = {
+	trigger = {
+		FROM = {
+				exists = ruler
+				ruler = {
+					species = {
+						has_trait = "trait_extremely_cute"		
+					}
+				}	
+		}
+	}
+
+	opinion = {
+		base = 50 
+	}
+}
+triggered_opinion_trait_EOE_ultra_cute = {
+	trigger = {
+		FROM = {
+				exists = ruler
+				ruler = {
+					species = {
+						has_trait = trait_EOE_ultra_cute		
+					}
+				}	
+		}
+	}
+
+	opinion = {
+		base = 150 
+	}
+}
+
+triggered_eoe_opinion_of_eoe = { 
+	trigger = {
+
+		is_species_class = Eeveelutions
+		FROM = {
+			is_species_class = Eeveelutions
+		}
+	}
+	opinion = {
+		base = 200
+	}
+}
+
+triggered_pokemon_opinion_of_pokemon = { 
+	trigger = {
+		OR = {
+			is_species_class = Eeveelutions
+			is_species_class = Othermons
+		}
+		FROM = {
+			OR = {
+				is_species_class = Eeveelutions
+				is_species_class = Othermons
+			}	
+		}
+		NOT = {
+			is_species_class = Eeveelutions
+			FROM = {
+				is_species_class = Eeveelutions
+			}
+		}
+	}
+	opinion = {
+		base = 150
+	}
+}
+
+
+
+triggered_negative_opinion_of_evassimilators = {
+
+	trigger = {
+		is_country_type = default
+		NOR = {
+			has_ethic = ethic_spiritualist
+			has_ethic = ethic_fanatic_spiritualist
+			has_ethic = ethic_gestalt_consciousness
+			has_ai_personality = democratic_crusaders
+		}
+		FROM = { has_civic = civic_eeveelutions_assimilator }
+	}
+
+	opinion = {
+		base = -100
+		modifier = {
+				add = 100
+				OR = {
+					 is_same_species = FROM
+				}
+		}
+	}
+	
+}
+triggered_evassimilators_positive_opinion_of_others = {
+	trigger = {
+		has_valid_civic = civic_eeveelutions_assimilator
+		FROM = { 
+			is_robotic_species = no
+			NOT = {
+				is_species_class = Eeveelutions
+			}
+		}
+	}
+	opinion = {
+		base = 50
+	}
+}
+triggered_evassimilators_negative_opinion_of_others = {
+	trigger = {
+		has_valid_civic = civic_eeveelutions_assimilator
+		FROM = { 
+			is_robotic_species = yes
+		}
+	}
+	opinion = {
+		base = -15
+	}
+}
+opinion_burned_an_uninhabited_world = {
+	opinion = {
+		base = -30
+	}
+
+	accumulative = yes
+
+	min = -150
+
+	decay = {
+		base = 1
+	}
+}
+
+opinion_burned_a_world = {
+	opinion = {
+		base = -100
+	}
+
+	accumulative = yes
+
+	min = -500
+
+	decay = {
+		base = 1
+	}
+}
+
+opinion_burned_my_uninhabited_world = {
+	opinion = {
+		base = -300
+	}
+
+	accumulative = yes
+
+	min = -1500
+
+	decay = {
+		base = 1
+	}
+}
+
+opinion_burned_my_world = {
+	opinion = {
+		base = -1000
+	}
+
+	accumulative = yes
+
+	min = -5000
+
+	decay = {
+		base = 1
+	}
+}
+
+opinion_burned_a_primitive_world = {
+	opinion = {
+		base = -40
+	}
+
+	accumulative = yes
+
+	min = -200
+
+	decay = {
+		base = 1
+	}
+}
+
+opinion_burned_a_primitive_world_phile = {
+	opinion = {
+		base = -60
+	}
+
+	accumulative = yes
+
+	min = -300
+
+	decay = {
+		base = 1
+	}
+}

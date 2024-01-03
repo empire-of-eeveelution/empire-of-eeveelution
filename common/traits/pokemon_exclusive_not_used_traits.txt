@@ -1,0 +1,96 @@
+leader_trait_EOE_Psionic_overload = { #菲诺灵能过载
+	cost = 0
+
+	icon = "gfx/interface/icons/EeveelutionTypes/psychic_type.png"
+	immortal_leaders = no
+	modifier = {
+		ship_armor_penetration_mult = 1.0
+		ship_shield_penetration_mult = 1.0
+		ship_shield_mult = -0.2
+		ship_armor_mult = -0.2
+		ship_fire_rate_mult = -0.2 
+		
+	}
+	
+	leader_class = { commander }
+	initial = no
+	randomized = no
+}
+leader_trait_EOE_Concealing_master = { #艾琳隐匿专家
+	cost = 0
+
+	icon = "gfx/interface/icons/EeveelutionTypes/fairy_type.png"
+	immortal_leaders = no
+	modifier = {
+		ship_tracking_add = 30
+		ship_evasion_add = 30
+	}
+	
+	leader_class = { commander }
+	initial = no
+	randomized = no
+}
+
+leader_trait_EOE_intellectual_2 = { #埃琳娜知识分子2
+	cost = 0
+
+	icon = "gfx/interface/icons/EeveelutionTypes/psychic_type.png"
+	modifier = {
+		planet_stability_add = 15
+		planet_jobs_engineering_research_produces_mult = 0.15
+		planet_jobs_physics_research_produces_mult = 0.15
+		planet_jobs_society_research_produces_mult = 0.15
+		planet_jobs_specialist_produces_mult = 0.10
+		planet_jobs_unity_produces_mult = -0.10
+	}
+	
+	leader_class = { official }
+	initial = no
+	randomized = no
+}
+leader_trait_EOE_Empathy_network_2 = { #伊希尔共情网络2
+	cost = 0
+
+	icon = "gfx/interface/icons/EeveelutionTypes/fairy_type.png"
+	modifier = {
+		planet_stability_add = 10
+		planet_jobs_unity_produces_mult = 0.20
+		planet_crime_add = -50
+		pop_happiness = 0.30
+	}
+	
+	leader_class = { official }
+	initial = no
+	randomized = no
+}
+leader_trait_EOE_ver_victorious = { #班泽洛攻无不克
+	cost = 0
+
+	icon = "gfx/interface/icons/EeveelutionTypes/dark_type.png"
+	modifier = {
+		army_morale = 1
+		army_damage_mult = 1
+		army_collateral_damage_mult = 1
+		army_experience_gain_mult = 10
+	}
+	
+	leader_class = { commander }
+	initial = no
+	randomized = no
+}
+leader_trait_EOE_drive_sweep = { #埃雷森雷厉风行
+	cost = 0
+
+	icon = "gfx/interface/icons/EeveelutionTypes/electric_type.png"
+	modifier = {
+		army_morale = 0.25
+		army_damage_mult = 0.25
+		army_collateral_damage_mult = 0.25
+		army_experience_gain_mult = 2.5
+		armies_upkeep_mult = -0.25
+	}
+	
+	leader_class = { commander }
+	initial = no
+	randomized = no
+}

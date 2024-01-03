@@ -1,0 +1,84 @@
+spriteTypes = {
+	
+
+	spriteType = { #evtpicture
+		name = "GFX_evt_EOE_factory_ruin"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_factory_ruin.dds"		
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+
+	spriteType = {
+		name = "GFX_evt_EOE_the_ghost"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_the_ghost.dds"		
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes	
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_shrouded_planet_mother"
+		textureFile = "gfx/event_pictures/GFX_evt_EOE_shrouded_planet_mother.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_dangerous_shrouded_planet"
+		textureFile = "gfx/event_pictures/GFX_evt_EOE_dangerous_shrouded_planet.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_galactic_empire"
+		textureFile = "gfx/event_pictures/GFX_evt_EOE_galactic_empire.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_galactic_market"
+		textureFile = "gfx/event_pictures/GFX_evt_EOE_galactic_market.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_gaia_planet"
+		textureFile = "gfx/event_pictures/GFX_evt_EOE_gaia_planet.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_shroud_vortex"
+		textureFile = "gfx/event_pictures/GFX_evt_EOE_shroud_vortex.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_black_hole"
+		textureFile = "gfx/event_pictures/GFX_evt_EOE_black_hole.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_star_sky"
+		textureFile = "gfx/event_pictures/GFX_evt_EOE_star_sky.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_floating_isiand"
+		textureFile = "gfx/event_pictures/GFX_evt_EOE_floating_isiand.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_psionic_storm"
+		textureFile = "gfx/event_pictures/GFX_evt_EOE_psionic_storm.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_formians"
+		textureFile = "gfx/event_pictures/GFX_evt_EOE_formians.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	
+}

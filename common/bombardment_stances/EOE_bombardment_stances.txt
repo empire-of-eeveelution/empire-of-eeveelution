@@ -1,0 +1,196 @@
+catch = {
+	trigger = {
+		OR = {
+			owner = { has_valid_civic = civic_external_synapse }
+			owner = { has_technology = EOE_mental_assault }
+		}
+		NAND = {
+			owner = { has_valid_civic = civic_external_synapse }
+			owner = { has_technology = EOE_mental_assault }
+		}
+		NOR = {
+			owner = { has_technology = EOE_Membrane_warp_mapping }
+			owner = { has_technology = EOE_Membrane_fold }
+	}
+}
+
+	icon_frame = 4
+	default = no
+
+	stop_when_armies_dead = no
+	abduct_pops = yes
+
+	planet_damage = 0.5
+	army_damage = 1
+
+	kill_pop_chance = {
+		base = 8
+	}
+	min_pops_to_kill_pop = 1
+
+	# root = fleet
+	# from = planet
+	ai_weight = {
+		weight = 0
+	}
+}
+
+catch_1 = {
+	trigger = {
+		NOR = {
+			owner = { has_valid_civic = civic_external_synapse }
+			owner = { has_technology = EOE_Membrane_fold }
+		}
+		owner = { has_technology = EOE_mental_assault }
+		owner = { has_technology = EOE_Membrane_warp_mapping }
+	}
+
+	icon_frame = 4
+	default = no
+
+	stop_when_armies_dead = no
+	abduct_pops = yes
+
+	planet_damage = 0.5
+	army_damage = 2.25
+
+	kill_pop_chance = {
+		base = 12
+	}
+	min_pops_to_kill_pop = 1
+
+	# root = fleet
+	# from = planet
+	ai_weight = {
+		weight = 0
+	}
+}
+
+catch_2 = {
+	trigger = {
+		NOT = {
+			owner = { has_valid_civic = civic_external_synapse }
+		}
+		owner = { has_technology = EOE_mental_assault }
+		owner = { has_technology = EOE_Membrane_warp_mapping  }
+		owner = { has_technology = EOE_Membrane_fold}
+	}
+
+	icon_frame = 4
+	default = no
+
+	stop_when_armies_dead = no
+	abduct_pops = yes
+
+	planet_damage = 0.5
+	army_damage = 3
+
+	kill_pop_chance = {
+		base = 16
+	}
+	min_pops_to_kill_pop = 1
+
+	# root = fleet
+	# from = planet
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+catch_swarm = {
+	trigger = {
+		AND = {
+			owner = { has_valid_civic = civic_external_synapse }
+			owner = { has_technology = EOE_mental_assault }
+		}
+		NOR = {
+			owner = { has_technology = EOE_Membrane_warp_mapping }
+			owner = { has_technology = EOE_Membrane_fold }
+		}
+	}
+
+	icon_frame = 4
+	default = no
+
+	stop_when_armies_dead = no
+	abduct_pops = yes
+
+	planet_damage = 0.5
+	army_damage = 3
+
+	kill_pop_chance = {
+		base = 16
+	}
+	min_pops_to_kill_pop = 1
+
+	# root = fleet
+	# from = planet
+	ai_weight = {
+		weight = 0
+	}
+}
+
+catch_swarm_1 = {
+	trigger = {
+		AND = {
+			owner = { has_valid_civic = civic_external_synapse }
+			owner = { has_technology = EOE_mental_assault }
+			owner = { has_technology = EOE_Membrane_warp_mapping }
+		}
+		NOT = {
+			owner = { has_technology = EOE_Membrane_fold }
+		}
+	}
+
+	icon_frame = 4
+	default = no
+
+	stop_when_armies_dead = no
+	abduct_pops = yes
+
+	planet_damage = 0.5
+	army_damage = 4.5
+
+	kill_pop_chance = {
+		base = 24
+	}
+	min_pops_to_kill_pop = 1
+
+	# root = fleet
+	# from = planet
+	ai_weight = {
+		weight = 0
+	}
+}
+
+catch_swarm_2 = {
+	trigger = {
+		AND = {
+			owner = { has_valid_civic = civic_external_synapse }
+			owner = { has_technology = EOE_Membrane_fold }
+			owner = { has_technology = EOE_Membrane_warp_mapping }
+			owner = { has_technology = EOE_mental_assault }
+		}
+	}
+
+	icon_frame = 4
+	default = no
+
+	stop_when_armies_dead = no
+	abduct_pops = yes
+
+	planet_damage = 0.5
+	army_damage = 6
+
+	kill_pop_chance = {
+		base = 32
+	}
+	min_pops_to_kill_pop = 1
+
+	# root = fleet
+	# from = planet
+	ai_weight = {
+		weight = 0
+	}
+}

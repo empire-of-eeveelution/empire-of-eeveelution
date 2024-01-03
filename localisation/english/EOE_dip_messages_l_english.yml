@@ -1,0 +1,40 @@
+﻿l_english:
+####################################
+ # Diplomacy text
+ ####################################
+ 
+ # Eevee Assimilators
+ EOE_EA_HOSTILE_GREETING_01:0 "We look forward to assimilating you, if only to shut you [From.GetSpeciesAdj] savages up."
+ EOE_EA_HOSTILE_GREETING_01_ROBOT_NONRS:0 "Stop your infernal beeping!"
+ EOE_EA_HOSTILE_GREETING_01_ROBOT_RS:0 "You are poor caretakers. We look forward to assimilating your bio-trophies and making them us!"
+ EOE_EA_HOSTILE_GREETING_02:0 "On some level, we pity you. You aren't [Root.GetSpeciesNamePlural], after all."
+ EOE_EA_HOSTILE_GREETING_02_ROBOT_NONRS:0 "Our creators had much better machines than you are."
+ EOE_EA_HOSTILE_GREETING_02_ROBOT_RS:0 "Your Biotrophies would be better off being assimilated under us. Keep pushing, and that might happen soon."
+ EOE_EA_HOSTILE_GREETING_03:0 "One day we will turn you into [Root.GetSpeciesNamePlural]. Then everything will be better for the both of us."
+ EOE_EA_DOMINEERING_GREETING_01:0 "Step one to improving the [From.GetSpeciesName]: Become [Root.GetSpeciesName]. There is no step 2."
+ EOE_EA_DOMINEERING_GREETING_01_ROBOT_NONRS:0 "We are the perfect example of why flesh exeeds steel."
+ EOE_EA_DOMINEERING_GREETING_01_ROBOT_RS:0 "Allow us to give you a tip on how to care for your Bio-Trophies: Turn them over to us, then allow the Flareons to melt you."
+ EOE_EA_NEUTRAL_GREETING_01:0 "Hello there Mr or Mrs Non-[Root.GetSpeciesName]."
+ EOE_EA_NEUTRAL_GREETING_02:0 "I urge you to accept Assimilation. It really is for the better."
+ EOE_EA_NEUTRAL_GREETING_02_ROBOT_RS:0 "I don't suppose I can convince you to take a few biopops of ours in? It's totally not a ploy to assimilate them from the inside, I swear!"
+ EOE_EA_NEUTRAL_GREETING_03:0 "We really do have your best interests in mind. Some day, we shall assimilate you. It is inevidable."
+ EOE_EA_NEUTRAL_GREETING_03_ROBOT_RS:0 "Could you give us a few pops to assimilate? No? Well, it was worth a try..."
+ EOE_EA_THREATENED_GREETING_01:0 "Keep pushing [From.GetSpeciesNamePlural]! We'll soon see how far it goes."
+ EOE_EA_FRIENDLY_GREETING_01:0 "Despite not being [Root.GetSpeciesNamePlural], we still like you [From.GetSpeciesName]."
+ EOE_EA_FRIENDLY_GREETING_02:0 "We really hope one day you will accept the gift of [Root.GetSpeciesName] assimilation, my [From.GetSpeciesName] friend."
+ EOE_EA_FRIENDLY_GREETING_02_ROBOT_RS:0 "If any of your biotrophies want to become [Root.GetSpeciesNamePlural], let us know."
+ EOE_EA_FRIENDLY_GREETING_03:0 "You are a dear friend to the [Root.GetSpeciesName]. We'll assimilate you last."
+ EOE_EA_WAR_GREETING_01:0 "Don't worry, your [From.GetSpeciesName] suffering will soon be over."
+ EOE_EA_WAR_GREETING_01_ROBOT_RS:0 "Time to assimilate some bio-trophies!"
+ EOE_EA_WAR_GREETING_02:0 "One of us! Soon you will all be one of us!"
+ EOE_EA_WAR_GREETING_02_ROBOT_RS:0 "Your bio-trophies will serve soon us, as us! And then there will be cake."
+ EOE_EA_WAR_GREETING_03:0 "Don't worry, we'll try to avoid killing your population. After all, we're assimilators, not murderers."
+ EOE_EA_WAR_GREETING_03_ROBOT_RS:0 "Don't worry [From.GetSpeciesName], your bio-trophies will be safe and happy under us. You on the other hand? I'm afraid I can make no such promise..."
+ # Vassal greetings 
+ EOE_EA_VASSAL_GREETING_01:0 "Hello not-creators-but-might-as-well-be!"
+ EOE_EA_VASSAL_GREETING_DISLOYAL_01:0 "How could this happen?!"
+ # Declaration of War
+ EOE_EA_DOW_PROPOSE_01:0 "Prepare for your Assimilation!"
+ EOE_EA_DOW_PROPOSE_01_ROBOT_DA:0 "Time to show you what 'assimilation' really means!"
+ EOE_EA_DOW_PROPOSE_02:0 "Embrace Assimilation, or you will be... Assimilated anyway!"
+ EOE_EA_DOW_PROPOSE_02_ROBOT_DA:0 "No, YOU will be assimilated!"

@@ -1,0 +1,6288 @@
+namespace = EOE_branch
+
+country_event = { #开局刷星，需要onaction，在玩家星系边上刷出北落师门，不一定需要伊布帝国    目前改成一定需要了（2022年12月25日14:50:17）
+	id = EOE_branch.1
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+			#has_global_flag = expanded_events_active   #ee mod
+			#has_global_flag = mem_crucible_system_spawned   #MEM mod
+			#has_global_flag = xvcv_aspmod_active  #asp mod
+			owner = {
+				OR = {
+					owner_main_species = { has_trait = trait_EOE_Inheritors }
+					has_origin = origin_lotus_hezi_start
+				}
+			}
+		
+		is_ai = no
+		any_system = {
+			distance = {
+				source = root
+				min_jumps = 6
+				max_jumps = 8
+			}
+			has_access_fleet = root.owner
+			has_owner = no
+			NOT = {
+				any_fleet_in_system = {
+					owner = { 
+						is_hostile = root.owner
+					}
+				}
+			}
+		}
+	}
+	immediate = {
+		random_system = {
+			limit = {
+				distance = {
+					source = root
+					min_jumps = 6
+					max_jumps = 8
+				}
+				has_access_fleet = root.owner
+				has_owner = no
+				NOT = {
+					any_fleet_in_system = {
+						owner = { 
+							is_hostile = root.owner
+						}
+					}
+				}
+			}
+			spawn_system = {
+				min_distance >= 29
+				max_distance <= 31
+				min_orientation_angle = 24
+				max_orientation_angle = 66
+				initializer = EOE_cthugha_system
+			}
+		}
+	}
+}
+
+
+ship_event = {
+	id = EOE_branch.2
+	title = "EOE_branch.2.name"
+	desc = "EOE_branch.2.desc" #发现一些星球表面的零散文明痕迹。这些零散建筑体现不出文明的发达。下结论是这帮可怜的土著遭到了武器攻击。
+	is_triggered_only = yes
+	picture = GFX_evt_underground_city
+	immediate = {
+		event_target:EOE_cthugha_planet = {
+			add_deposit = d_society_3
+			set_planet_flag = EOE_cthugha_anomaly_end
+		}
+	}
+	option = {
+		name = EOE_branch.2.a
+		ship_event = {
+			id = EOE_branch.3
+		}
+		event_target:EOE_cthugha_planet = {
+			add_deposit = d_society_3
+		}
+	}
+	option = {
+		name = EOE_branch.2.b
+		
+		owner = { 
+			add_resource = {
+				unity = 500
+			}
+	 }
+		event_target:EOE_cthugha_planet = {
+			add_deposit = d_society_3
+		}
+	}
+}
+
+ship_event = {
+	id = EOE_branch.3
+	title = "EOE_branch.3.name" #[Root.GetLeaderName]认为事情不会这么简单。
+	desc = "EOE_branch.3.desc"
+	is_triggered_only = yes
+	picture = GFX_evt_underground_city
+	trigger = {
+		owner = {
+			NOT = {
+				has_country_flag = EOE_hezi_cthugha_1
+			}
+		}
+	}
+	option = { #考古好耶
+		name = "EOE_branch.3.a"
+		event_target:EOE_cthugha_planet = {
+			create_archaeological_site = site_EOE_Cthugha
+		}
+		owner = {
+			set_country_flag = EOE_hezi_cthugha_1
+		}
+	}
+}
+
+
+fleet_event = { 
+	id = EOE_branch.4
+	title = "EOE_branch.4.name"
+	desc = "EOE_branch.4.desc" #这颗并没有什么大气的荒芜星球上，表面上都是熔化过的痕迹。科学家原本以为这是一颗受到过扰动的熔岩星球凝固而成；但是取样结果表明，表层数米的岩石和内层岩石结构不同，意味着只有十分表面的一层岩石曾经被熔化过。
+	is_triggered_only = yes
+	picture = "GFX_evt_cold_barren"
+	show_sound = "event_dig_site"
+	archaeology = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = "EOE_branch.4.a"
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = { 
+	id = EOE_branch.5
+	title = "EOE_branch.5.name"
+	desc = "EOE_branch.5.desc" #研究一度陷入瓶颈。但是在经过仔细勘探之后，科学家们发现了细微的熔化岩石厚度差异。向着一个方向前进，熔化过的岩石厚度会不断增加。各处的厚度梯度指向了星球上一个大致固定的方向。
+	is_triggered_only = yes
+	picture = GFX_evt_cold_barren
+	show_sound = event_dig_site
+	archaeology = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = "EOE_branch.5.a"
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = { 
+	id = EOE_branch.6
+	title = "EOE_branch.6.name"
+	desc = "EOE_branch.6.desc" #在厚度梯度指向的方向上，科学家们发现了大建筑群的痕迹，证明了该星球上曾经有先进文明的存在。这些建筑的表面大部分被熔化，和覆盖地面的熔融岩石层几乎融为一体，只有通过内部结构才能确认是建筑。这一片建筑群似乎是一座古城市。此处也许可以得到一些城市相关科技。
+	is_triggered_only = yes
+	picture = GFX_evt_underground_city
+	show_sound = event_wind_ruins
+	archaeology = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = "EOE_branch.6.a"
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = { 
+	id = EOE_branch.7
+	title = "EOE_branch.7.name"
+	desc = "EOE_branch.7.desc" #科学家们对于城市进行了调查。在一片怪异的神庙类似建筑当中发现了一些财物和古生物化石（能量币和社会学点数）。增加了星球的社会点数值。开展特殊项目调查神庙建筑群。
+	is_triggered_only = yes
+	picture = GFX_evt_underground_city
+	show_sound = event_wind_ruins
+	archaeology = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = "EOE_branch.7.a" #标红，深入探索可能很危险
+		custom_tooltip = "EOE_branch.7.a.tooltip"
+		large_artifact_reward = yes
+		owner = {
+			add_resource = {
+				society_research = 20000
+			}
+			begin_event_chain = {
+				event_chain = EOE_mysterious_ruins_chain
+				target = this
+			}
+			set_country_flag = EOE_hezi_cthugha_2
+		}
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = EOE_branch.16
+				}
+			}
+		}
+	}
+	option = {
+		name = "EOE_branch.7.b" #应当保持敬畏
+		large_artifact_reward = yes
+		owner = {
+			add_resource = {
+				society_research = 20000
+				influence = 100
+			}
+			
+		}
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = EOE_branch.57
+				}
+			}
+		}
+	}
+}
+
+ship_event = { #炎之精完成
+	id = EOE_branch.8
+	title = "EOE_branch.8.name"
+	desc = {
+		trigger = {
+			owner = {
+				owner_main_species = {
+					is_species_class = Eeveelutions
+				}
+			}
+		}
+		text = EOE_branch.8.1.desc
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				owner = {
+					owner_main_species = {
+						is_species_class = Eeveelutions
+					}
+				}
+			}	
+		}
+		text = EOE_branch.8.2.desc
+	}
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_fire_vampires_city_ruins"
+	show_sound = event_dig_site
+	immediate = {
+		event_target:EOE_cthugha_planet = {
+			set_planet_flag = EOE_cthugha_accident_1
+		}
+		leader = {
+			set_leader_flag = EOE_cthugha_accident_1_f
+		}
+		owner = {
+			add_event_chain_counter = {
+				event_chain = EOE_mysterious_ruins_chain
+				counter = ruins_explore_progress
+				amount = 1
+			}
+		}
+	}
+	option = {
+		name = "EOE_branch.8.a"
+		trigger = {
+			owner = {
+				owner_main_species = {
+					is_species_class = Eeveelutions
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				volatile_motes = 100
+				
+			}
+			small_artifact_reward = yes
+			add_research_option = tech_EOE_fire_vampire
+		}
+		event_target:EOE_cthugha_planet = {
+			add_deposit = d_volatile_motes_3 #还有很多爆炸微粒可以收
+			add_deposit = d_rare_crystals_1 #发现了稀有水晶
+		}
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = EOE_branch.16
+				}
+			}
+		}
+	}
+	option = {
+		name = "EOE_branch.8.b"
+		trigger = {
+			NOT = {
+				owner = {
+					owner_main_species = {
+						is_species_class = Eeveelutions
+					}
+				}
+			}	
+		}
+		owner = {
+			add_resource = {
+				volatile_motes = 100
+				
+			}
+			small_artifact_reward = yes
+		}
+		event_target:EOE_cthugha_planet = {
+			add_deposit = d_volatile_motes_3 #还有很多爆炸微粒可以收
+			add_deposit = d_rare_crystals_1 #发现了稀有水晶
+		}
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = EOE_branch.16
+				}
+			}
+		}
+	}
+}
+
+ship_event = { #辐射废料完成
+	id = EOE_branch.9
+	title = "EOE_branch.9.name"
+	desc = "EOE_branch.9.desc"
+	is_triggered_only = yes
+	picture = GFX_evt_EOE_reactor
+	show_sound = event_dig_site
+	immediate = {
+		event_target:EOE_cthugha_planet = {
+			set_planet_flag = EOE_cthugha_accident_2
+		}
+		leader = {
+			set_leader_flag = EOE_cthugha_accident_2_f
+		}
+		owner = {
+			add_event_chain_counter = {
+				event_chain = EOE_mysterious_ruins_chain
+				counter = ruins_explore_progress
+				amount = 1
+			}
+			
+		}
+	}
+	option = {
+		name = "EOE_branch.9.a"
+		owner = {
+			add_resource = {
+				physics_research = 10000
+			}
+			small_artifact_reward = yes
+			add_modifier = {
+				modifier = EOE_radioactive_material days = -1
+			}
+		}
+		event_target:EOE_cthugha_planet = {
+			add_deposit = d_physics_10  #回收辐射废料
+		}
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = EOE_branch.16
+				}
+			}
+		}
+	}
+}
+
+ship_event = { #地震塌方完成
+	id = EOE_branch.10
+	title = "EOE_branch.10.name"
+	desc = "EOE_branch.10.desc"
+	is_triggered_only = yes
+	picture = GFX_evt_EOE_underground_ecosystem
+	show_sound = event_dig_site
+	immediate = {
+		event_target:EOE_cthugha_planet = {
+			set_planet_flag = EOE_cthugha_accident_3
+		}
+		leader = {
+			set_leader_flag = EOE_cthugha_accident_3_f
+		}
+		owner = {
+			add_event_chain_counter = {
+				event_chain = EOE_mysterious_ruins_chain
+				counter = ruins_explore_progress
+				amount = 1
+			}
+		}
+	}
+	option = {
+		name = "EOE_branch.10.a"
+		owner = {
+			add_resource = {
+				society_research = 20000
+				minor_artifacts = 3  #地震暴露生物群系遗址
+			}
+			medium_artifact_reward = yes
+		}
+		event_target:EOE_cthugha_planet = { #地震暴露矿物 改成生物群系
+			add_deposit = d_society_8
+		}
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = EOE_branch.16
+				}
+			}
+		}
+	}
+}
+
+ship_event = { #致疯绘画雕塑完成
+	id = EOE_branch.11
+	title = "EOE_branch.11.name"
+	desc = "EOE_branch.11.desc"
+	is_triggered_only = yes
+	picture = GFX_evt_archaeological_dig
+	show_sound = event_dig_site
+	immediate = {
+		event_target:EOE_cthugha_planet = {
+			set_planet_flag = EOE_cthugha_accident_4
+		}
+		leader = {
+			set_leader_flag = EOE_cthugha_accident_4_f
+		}
+		owner = {
+			add_event_chain_counter = {
+				event_chain = EOE_mysterious_ruins_chain
+				counter = ruins_explore_progress
+				amount = 1
+			}
+			
+		}
+	}
+	option = {
+		name = "EOE_branch.11.a"
+		owner = {
+			add_resource = {
+				society_research = 10000
+			}
+			medium_artifact_reward = yes
+			add_modifier = {
+				modifier = EOE_strange_painting days = -1
+			}
+		}
+		
+		event_target:EOE_cthugha_planet = {
+			add_deposit = d_society_10
+		}
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = EOE_branch.16
+				}
+			}
+		}
+	}
+}
+
+ship_event = { #古老陷阱完成
+	id = EOE_branch.12
+	title = "EOE_branch.12.name"
+	desc = "EOE_branch.12.desc"
+	is_triggered_only = yes
+	picture = GFX_evt_EOE_acient_facilities
+	show_sound = event_dig_site
+	immediate = {
+		event_target:EOE_cthugha_planet = {
+			set_planet_flag = EOE_cthugha_accident_5
+		}
+		leader = {
+			set_leader_flag = EOE_cthugha_accident_5_f
+		}
+		owner = {
+			add_event_chain_counter = {
+				event_chain = EOE_mysterious_ruins_chain
+				counter = ruins_explore_progress
+				amount = 1
+			}
+		}
+	}
+	option = { 
+		name = "EOE_branch.12.a"
+		owner = {
+			add_resource = {
+				engineering_research = 10000
+			}
+			add_modifier = {
+				modifier = EOE_ancient_trap days = -1
+			}
+		}
+		
+		event_target:EOE_cthugha_planet = {
+			add_deposit = d_engineering_10
+		}
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = EOE_branch.16
+				}
+			}
+		}
+	}
+}
+
+ship_event = { #解谜密室完成
+	id = EOE_branch.13
+	title = "EOE_branch.13.name"
+	desc = "EOE_branch.13.desc"
+	is_triggered_only = yes
+	picture = GFX_evt_EOE_A_glance_on_acient_god
+	show_sound = event_dig_site
+	immediate = {
+		event_target:EOE_cthugha_planet = {
+			set_planet_flag = EOE_cthugha_accident_6
+		}
+		leader = {
+			set_leader_flag = EOE_cthugha_accident_6_f
+		}
+	}
+	option = {
+		name = "EOE_branch.13.a"
+		owner = {
+			add_resource = {
+				physics_research = 10000
+			}
+			add_modifier = {
+				modifier = EOE_ancient_puzzle days = -1
+			}
+		}
+		event_target:EOE_cthugha_planet = {
+			add_deposit = d_physics_10
+		}
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = EOE_branch.16
+				}
+			}
+		}
+	}
+}
+
+country_event = { #随机数处理
+	id = EOE_branch.14
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				event_target:EOE_cthugha_planet = {
+					NOR = {
+						has_planet_flag = EOE_cthugha_accident_1
+						has_planet_flag = EOE_cthugha_accident_2
+						has_planet_flag = EOE_cthugha_accident_3
+						has_planet_flag = EOE_cthugha_accident_4
+						has_planet_flag = EOE_cthugha_accident_5
+						has_planet_flag = EOE_cthugha_accident_6
+					}	
+				}
+			}
+			random_list = {
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_1
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_2
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_3
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_4
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_5
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_6
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				event_target:EOE_cthugha_planet = {
+					has_planet_flag = EOE_cthugha_accident_1
+					NOR = {
+						
+						has_planet_flag = EOE_cthugha_accident_2
+						has_planet_flag = EOE_cthugha_accident_3
+						has_planet_flag = EOE_cthugha_accident_4
+						has_planet_flag = EOE_cthugha_accident_5
+						has_planet_flag = EOE_cthugha_accident_6
+					}	
+				}
+			}
+			random_list = {
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_2
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_3
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_4
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_5
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_6
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				event_target:EOE_cthugha_planet = {
+					has_planet_flag = EOE_cthugha_accident_2
+					NOR = {
+						has_planet_flag = EOE_cthugha_accident_1
+						
+						has_planet_flag = EOE_cthugha_accident_3
+						has_planet_flag = EOE_cthugha_accident_4
+						has_planet_flag = EOE_cthugha_accident_5
+						has_planet_flag = EOE_cthugha_accident_6
+					}	
+				}
+			}
+			random_list = {
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_1
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_3
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_4
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_5
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_6
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				event_target:EOE_cthugha_planet = {
+					has_planet_flag = EOE_cthugha_accident_3
+					NOR = {
+						has_planet_flag = EOE_cthugha_accident_1
+						has_planet_flag = EOE_cthugha_accident_2
+						
+						has_planet_flag = EOE_cthugha_accident_4
+						has_planet_flag = EOE_cthugha_accident_5
+						has_planet_flag = EOE_cthugha_accident_6
+					}	
+				}
+			}
+			random_list = {
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_1
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_2
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_4
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_5
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_6
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				event_target:EOE_cthugha_planet = {
+					has_planet_flag = EOE_cthugha_accident_4
+					NOR = {
+						has_planet_flag = EOE_cthugha_accident_1
+						has_planet_flag = EOE_cthugha_accident_2
+						has_planet_flag = EOE_cthugha_accident_3
+						
+						has_planet_flag = EOE_cthugha_accident_5
+						has_planet_flag = EOE_cthugha_accident_6
+					}	
+				}
+			}
+			random_list = {
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_1
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_2
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_3
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_5
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_6
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				event_target:EOE_cthugha_planet = {
+					has_planet_flag = EOE_cthugha_accident_5
+					NOR = {
+						has_planet_flag = EOE_cthugha_accident_1
+						has_planet_flag = EOE_cthugha_accident_2
+						has_planet_flag = EOE_cthugha_accident_3
+						has_planet_flag = EOE_cthugha_accident_4
+						
+						has_planet_flag = EOE_cthugha_accident_6
+					}	
+				}
+			}
+			random_list = {
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_1
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_2
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_3
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_4
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_6
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				event_target:EOE_cthugha_planet = {
+					has_planet_flag = EOE_cthugha_accident_6
+					NOR = {
+						has_planet_flag = EOE_cthugha_accident_1
+						has_planet_flag = EOE_cthugha_accident_2
+						has_planet_flag = EOE_cthugha_accident_3
+						has_planet_flag = EOE_cthugha_accident_4
+						has_planet_flag = EOE_cthugha_accident_5
+						
+					}	
+				}
+			}
+			random_list = {
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_1
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_2
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_3
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_4
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_5
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+
+			}
+		}
+		else_if = {
+			limit = { 
+				event_target:EOE_cthugha_planet = {
+					has_planet_flag = EOE_cthugha_accident_1
+					has_planet_flag = EOE_cthugha_accident_2
+					NOR = {
+						
+						has_planet_flag = EOE_cthugha_accident_3
+						has_planet_flag = EOE_cthugha_accident_4
+						has_planet_flag = EOE_cthugha_accident_5
+						has_planet_flag = EOE_cthugha_accident_6
+					}	
+				}
+			}
+			random_list = {
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_3
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_4
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_5
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_6
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				event_target:EOE_cthugha_planet = {
+					has_planet_flag = EOE_cthugha_accident_1
+					has_planet_flag = EOE_cthugha_accident_3
+					NOR = {
+						
+						has_planet_flag = EOE_cthugha_accident_2
+						
+						has_planet_flag = EOE_cthugha_accident_4
+						has_planet_flag = EOE_cthugha_accident_5
+						has_planet_flag = EOE_cthugha_accident_6
+					}	
+				}
+			}
+			random_list = {
+				
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_2
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_4
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_5
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_6
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				event_target:EOE_cthugha_planet = {
+					has_planet_flag = EOE_cthugha_accident_1
+					has_planet_flag = EOE_cthugha_accident_4
+					NOR = {
+						
+						has_planet_flag = EOE_cthugha_accident_2
+						has_planet_flag = EOE_cthugha_accident_3
+						
+						has_planet_flag = EOE_cthugha_accident_5
+						has_planet_flag = EOE_cthugha_accident_6
+					}	
+				}
+			}
+			random_list = {
+				
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_2
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_3
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_5
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_6
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				event_target:EOE_cthugha_planet = {
+					has_planet_flag = EOE_cthugha_accident_1
+					has_planet_flag = EOE_cthugha_accident_5
+					NOR = {
+						
+						has_planet_flag = EOE_cthugha_accident_2
+						has_planet_flag = EOE_cthugha_accident_3
+						has_planet_flag = EOE_cthugha_accident_4
+						
+						has_planet_flag = EOE_cthugha_accident_6
+					}	
+				}
+			}
+			random_list = {
+				
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_2
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_3
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_4
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_6
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				event_target:EOE_cthugha_planet = {
+					has_planet_flag = EOE_cthugha_accident_1
+					has_planet_flag = EOE_cthugha_accident_6
+					NOR = {
+						
+						has_planet_flag = EOE_cthugha_accident_2
+						has_planet_flag = EOE_cthugha_accident_3
+						has_planet_flag = EOE_cthugha_accident_4
+						has_planet_flag = EOE_cthugha_accident_5
+						
+					}	
+				}
+			}
+			random_list = {
+
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_2
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_3
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_4
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_5
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+
+			}
+		}
+		else_if = {
+			limit = { 
+				event_target:EOE_cthugha_planet = {
+					has_planet_flag = EOE_cthugha_accident_2
+					has_planet_flag = EOE_cthugha_accident_3
+					NOR = {
+						has_planet_flag = EOE_cthugha_accident_1
+						
+						
+						has_planet_flag = EOE_cthugha_accident_4
+						has_planet_flag = EOE_cthugha_accident_5
+						has_planet_flag = EOE_cthugha_accident_6
+					}	
+				}
+			}
+			random_list = {
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_1
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+			
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_4
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_5
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_6
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				event_target:EOE_cthugha_planet = {
+					has_planet_flag = EOE_cthugha_accident_2
+					has_planet_flag = EOE_cthugha_accident_4
+					NOR = {
+						has_planet_flag = EOE_cthugha_accident_1
+						
+						has_planet_flag = EOE_cthugha_accident_3
+						
+						has_planet_flag = EOE_cthugha_accident_5
+						has_planet_flag = EOE_cthugha_accident_6
+					}	
+				}
+			}
+			random_list = {
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_1
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_3
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_5
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_6
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				event_target:EOE_cthugha_planet = {
+					has_planet_flag = EOE_cthugha_accident_2
+					has_planet_flag = EOE_cthugha_accident_5
+					NOR = {
+						has_planet_flag = EOE_cthugha_accident_1
+						
+						has_planet_flag = EOE_cthugha_accident_3
+						has_planet_flag = EOE_cthugha_accident_4
+						
+						has_planet_flag = EOE_cthugha_accident_6
+					}	
+				}
+			}
+			random_list = {
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_1
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_3
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_4
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_6
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				event_target:EOE_cthugha_planet = {
+					has_planet_flag = EOE_cthugha_accident_2
+					has_planet_flag = EOE_cthugha_accident_6
+					NOR = {
+						has_planet_flag = EOE_cthugha_accident_1
+						
+						has_planet_flag = EOE_cthugha_accident_3
+						has_planet_flag = EOE_cthugha_accident_4
+						has_planet_flag = EOE_cthugha_accident_5
+						
+					}	
+				}
+			}
+			random_list = {
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_1
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_3
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_4
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_5
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				
+			}
+		}
+		else_if = {
+			limit = { 
+				event_target:EOE_cthugha_planet = {
+					has_planet_flag = EOE_cthugha_accident_3
+					has_planet_flag = EOE_cthugha_accident_4
+					NOR = {
+						has_planet_flag = EOE_cthugha_accident_1
+						has_planet_flag = EOE_cthugha_accident_2
+						
+						has_planet_flag = EOE_cthugha_accident_5
+						has_planet_flag = EOE_cthugha_accident_6
+					}	
+				}
+			}
+			random_list = {
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_1
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_2
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_5
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_6
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				event_target:EOE_cthugha_planet = {
+					has_planet_flag = EOE_cthugha_accident_3
+					has_planet_flag = EOE_cthugha_accident_5
+					NOR = {
+						has_planet_flag = EOE_cthugha_accident_1
+						has_planet_flag = EOE_cthugha_accident_2
+						
+						has_planet_flag = EOE_cthugha_accident_4
+						
+						has_planet_flag = EOE_cthugha_accident_6
+					}	
+				}
+			}
+			random_list = {
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_1
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_2
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_4
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_6
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				event_target:EOE_cthugha_planet = {
+					has_planet_flag = EOE_cthugha_accident_3
+					has_planet_flag = EOE_cthugha_accident_6
+					NOR = {
+						has_planet_flag = EOE_cthugha_accident_1
+						has_planet_flag = EOE_cthugha_accident_2
+						
+						has_planet_flag = EOE_cthugha_accident_4
+						has_planet_flag = EOE_cthugha_accident_5
+						
+					}	
+				}
+			}
+			random_list = {
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_1
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_2
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_4
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_5
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				
+			}
+		}
+		else_if = {
+			limit = { 
+				event_target:EOE_cthugha_planet = {
+					has_planet_flag = EOE_cthugha_accident_4
+					has_planet_flag = EOE_cthugha_accident_5
+					NOR = {
+						has_planet_flag = EOE_cthugha_accident_1
+						has_planet_flag = EOE_cthugha_accident_2
+						has_planet_flag = EOE_cthugha_accident_3
+						
+						
+						has_planet_flag = EOE_cthugha_accident_6
+					}	
+				}
+			}
+			random_list = {
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_1
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_2
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_3
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_6
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				event_target:EOE_cthugha_planet = {
+					has_planet_flag = EOE_cthugha_accident_4
+					has_planet_flag = EOE_cthugha_accident_6
+					NOR = {
+						has_planet_flag = EOE_cthugha_accident_1
+						has_planet_flag = EOE_cthugha_accident_2
+						has_planet_flag = EOE_cthugha_accident_3
+						
+						has_planet_flag = EOE_cthugha_accident_5
+						
+					}	
+				}
+			}
+			random_list = {
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_1
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_2
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_3
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_5
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				
+			}
+		}
+		else_if = {
+			limit = { 
+				event_target:EOE_cthugha_planet = {
+					has_planet_flag = EOE_cthugha_accident_5
+					has_planet_flag = EOE_cthugha_accident_6
+					NOR = {
+						has_planet_flag = EOE_cthugha_accident_1
+						has_planet_flag = EOE_cthugha_accident_2
+						has_planet_flag = EOE_cthugha_accident_3
+						has_planet_flag = EOE_cthugha_accident_4
+						
+					}	
+				}
+			}
+			random_list = {
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_1
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_2
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_3
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				1 = {
+					enable_special_project = {
+						name = EOE_cthugha_4
+						location = event_target:EOE_cthugha_planet
+						owner = this
+					}
+				}
+				
+			}
+		}
+		else = {
+			set_country_flag = EOE_cthugha_search_finish
+			country_event = {
+				id = EOE_branch.16
+			}
+		}
+	}
+}
+
+country_event = { #主界面
+	id = EOE_branch.16 
+	title = "EOE_branch.16.name"  #阶段性进展
+	is_triggered_only = yes
+	picture = GFX_evt_hidden_door
+	show_sound = event_big_door_opening
+	desc = {
+		trigger = {
+			NOT = {
+				has_country_flag = EOE_cthugha_search_finish
+			}
+		}
+		text = "EOE_branch.16.a.desc" #总结了上一步工作，并进行下一步
+	}
+	desc = {
+		trigger = {
+			has_country_flag = EOE_cthugha_search_finish
+		}
+		text = "EOE_branch.16.b.desc" #完成工作
+	}
+	option = {
+		trigger = {
+			NOT = {
+				has_country_flag = EOE_cthugha_search_finish
+			}
+		}
+		name = "EOE_branch.16.a"
+		hidden_effect = {
+			country_event = {
+				id = EOE_branch.14
+			}
+		}
+	}
+	option = {
+		trigger = {
+			has_country_flag = EOE_cthugha_search_finish
+		}
+		name = "EOE_branch.16.b"
+		hidden_effect = {
+			country_event = {
+				id = EOE_branch.50
+			}
+		}
+	}
+}
+
+ship_event = { #炎精事故-开始
+	id = EOE_branch.15
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		event_target:EOE_cthugha_planet = {
+			NOT = {
+				has_planet_flag = EOE_vampire_cleaned
+			}
+		}
+	}
+	 immediate = {
+		root.owner = {
+			set_country_flag = EOE_fire_vampire_appeared
+			create_point_of_interest = {
+				id = EOE_fire_vampire
+				name = "EOE_int_fire_vampire.name"
+				desc = "EOE_int_fire_vampire.desc"
+				event_chain = EOE_mysterious_ruins_chain
+				location = event_target:EOE_cthugha_planet
+			}
+	 	}
+		if = {
+			limit = {
+				fleet.leader = {
+					has_leader_flag = EOE_leader_hezi
+				}
+			}
+			ship_event = {
+				id = EOE_branch.17
+			}
+		}
+		else_if = {
+			limit = {
+				fleet.leader = {
+					OR = {
+						has_leader_flag = EOE_leader_okra
+						has_leader_flag = EOE_leader_elena
+						has_trait = leader_trait_curator
+						has_skill >= 5
+					}
+				}
+			}
+			ship_event = {
+				id = EOE_branch.18
+			}
+		}
+		else_if = {
+			limit = {
+				root.owner = {
+					owner_main_species = {
+						OR = {
+							is_species_class = MACHINE
+							has_trait = trait_lithoid
+						}
+					}
+				}
+			}
+			random_list = {
+				95 = { 
+					ship_event = {
+						id = EOE_branch.22
+					}
+				}
+				5 = { 
+					ship_event = {
+						id = EOE_branch.21
+					}
+				}
+			}
+		}
+		else = {
+			random_list = {
+				95 = { 
+					ship_event = {
+						id = EOE_branch.20
+					}
+				}
+				5 = { 
+					ship_event = {
+						id = EOE_branch.19
+					}
+				}
+			}
+		}
+	 }
+}
+
+ship_event = { #炎精事故-无事发生-仅核子
+	id = EOE_branch.17
+	title = "EOE_branch.17.name"
+	desc =  "EOE_branch.17.desc"
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_fire_vampires_city_ruins"
+	show_sound = "event_burning_city"
+	immediate = {
+		hidden_effect = {
+			root.leader = { unassign_leader = this }			
+		}
+	}
+	option = {
+		name = "EOE_branch.17.a"
+		owner = {
+			abort_special_project = {
+				type = EOE_cthugha_1
+			}
+			enable_special_project = {
+				name = EOE_vampire_clean
+				location = event_target:EOE_cthugha_planet
+				owner = this
+			} 
+		}
+	} 
+}
+
+ship_event = { #炎精事故-有事发生-策展人，秋葵，埃琳娜
+	id = EOE_branch.18
+	title = "EOE_branch.18.name"
+	desc = "EOE_branch.18.desc"
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_fire_vampires_city_ruins"
+	show_sound = "event_burning_city"
+	immediate = {
+		root.leader = {
+			add_trait = leader_trait_EOE_burned #-40有点多，最好自己写一个烧伤-20
+		}
+	}
+
+	option = {
+		name = "EOE_branch.17.a"
+		owner = {
+			abort_special_project = {
+				type = EOE_cthugha_1
+			}
+			enable_special_project = {
+				name = EOE_vampire_clean
+				location = event_target:EOE_cthugha_planet
+				owner = this
+			} 
+		}
+	} 
+}
+
+ship_event = { #炎精事故-有事发生-普通
+	id = EOE_branch.19
+	title = "EOE_branch.19.name"
+	desc = {
+		trigger = {
+			owner = {
+			owner_main_species = {
+				is_species_class = Eeveelutions
+				}
+			}
+			
+		}
+		text = EOE_branch.19.desc.1
+	}
+	desc = {
+		trigger = {
+			owner = {
+			owner_main_species = {
+				NOT = {
+					is_species_class = Eeveelutions
+				}
+				is_archetype = BIOLOGICAL
+				}
+			}
+			
+		}
+		text = EOE_branch.19.desc.2
+	}
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_fire_vampires_city_ruins"
+	show_sound = "event_burning_city"
+	immediate = {
+		fleet.leader = {
+			add_trait = leader_trait_maimed 
+		}
+	}
+	option = {
+		name = "EOE_branch.17.a"
+		owner = {
+			abort_special_project = {
+				type = EOE_cthugha_1
+			}
+			enable_special_project = {
+				name = EOE_vampire_clean
+				location = event_target:EOE_cthugha_planet
+				owner = this
+			} 
+		}
+	} 
+}
+
+ship_event = { #炎精事故-大事发生-普通
+	id = EOE_branch.20
+	title = "EOE_branch.20.name"
+	desc = {
+		trigger = {
+			owner = {
+				owner_main_species = {
+					is_species_class = Eeveelutions
+				}
+			}
+		}
+		text = EOE_branch.20.desc.1
+	}
+	desc = {
+		trigger = {
+			owner = {
+				owner_main_species = {
+					NOT = {
+						is_species_class = Eeveelutions
+					}
+					is_archetype = BIOLOGICAL
+				}
+			}
+			#text = EOE_branch.20.desc.2
+		}
+		text = EOE_branch.20.desc.2
+	}
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_fire_vampires_city_ruins"
+	show_sound = "event_burning_city"
+	immediate = {
+		owner = {
+			set_country_flag = EOE_leader_death_accident
+			
+		}
+		fleet.leader = {
+			kill_leader = {}
+		}
+	}
+	option = {
+		name = "EOE_branch.17.a"
+		owner = {
+			abort_special_project = {
+				type = EOE_cthugha_1
+			}
+			enable_special_project = {
+				name = EOE_vampire_clean
+				location = event_target:EOE_cthugha_planet
+				owner = this
+			} 
+		}
+	} 
+}
+
+ship_event = { #炎精事故-有事发生-石头和机械
+	id = EOE_branch.21
+	title = "EOE_branch.21.name"
+	desc = "EOE_branch.21.desc"
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_fire_vampires_city_ruins"
+	show_sound = "event_burning_city"
+	immediate = {
+		fleet.leader = {
+			add_trait = leader_trait_EOE_burned_2
+		}
+		hidden_effect = {
+			root.leader = { unassign_leader = this }			
+		}
+	}
+	
+	option = {
+		name = "EOE_branch.17.a"
+		owner = {
+			abort_special_project = {
+				type = EOE_cthugha_1
+			}
+			enable_special_project = {
+				name = EOE_vampire_clean
+				location = event_target:EOE_cthugha_planet
+				owner = this
+			} 
+		}
+	} 
+}
+
+ship_event = { #炎精事故-大事发生-石头和机械
+	id = EOE_branch.22
+	title = "EOE_branch.22.name"
+	desc = "EOE_branch.22.desc"
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_fire_vampires_city_ruins"
+	show_sound = "event_burning_city"
+	immediate = {
+		fleet.leader = {
+			kill_leader = { }
+		}
+		owner = {
+			set_country_flag = EOE_leader_death_accident
+			
+		}
+	}
+	option = {
+		name = "EOE_branch.17.a"
+		owner = {
+			abort_special_project = {
+				type = EOE_cthugha_1
+			}
+			enable_special_project = {
+				name = EOE_vampire_clean
+				location = event_target:EOE_cthugha_planet
+				owner = this
+			} 
+		}
+	} 
+}
+
+ship_event = { #完成炎精清理
+	id = EOE_branch.23
+	title = "EOE_branch.23.name"
+	desc = {
+		trigger = {
+			owner = {
+			owner_main_species = {
+				is_species_class = Eeveelutions
+				}
+			}
+			
+		}
+		text = EOE_branch.23.1.desc
+	}
+	desc = {
+		trigger = {
+			owner = {
+			owner_main_species = {
+				is_archetype = BIOLOGICAL
+				}
+			}
+		}
+		text = EOE_branch.23.2.desc
+	}
+	is_triggered_only = yes
+	picture = GFX_evt_city_ruins
+	show_sound = pc_gas_giant
+	option = {
+		name = "EOE_branch.23.a"
+		event_target:EOE_cthugha_planet = {
+			set_planet_flag = EOE_vampire_cleaned
+		}
+		root.owner = {
+			add_resource = {
+				volatile_motes = 100
+			}
+			enable_special_project = {
+				name = EOE_cthugha_1
+				location = event_target:EOE_cthugha_planet
+				owner = this
+			}
+		}
+	}	 
+}
+
+ship_event = { #辐射事故发生
+	id = EOE_branch.59
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			event_target:EOE_cthugha_planet = {
+				NOT = {
+					has_planet_flag = EOE_radioactivity_cleaned
+				}
+			}
+			
+		}
+	}
+	immediate = {
+		root.owner = {
+			set_country_flag = EOE_radioactive_appeared
+			create_point_of_interest = {
+				id = EOE_radioactive_accident
+				name = "EOE_int_radioactive_accident.name"
+				desc = "EOE_int_radioactive_accident.desc"
+				event_chain = EOE_mysterious_ruins_chain
+				location = event_target:EOE_cthugha_planet
+			}
+		}
+		if = {
+			limit = {
+				fleet.leader = {
+					has_leader_flag = EOE_leader_hezi
+				}
+			}
+			ship_event = {
+				id = EOE_branch.24
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					owner = {
+						owner_main_species = {
+							has_trait = trait_pc_nuked_preference
+							has_trait = trait_plantoid_radiotrophic
+							has_trait = trait_survivor
+							has_trait = trait_presapient_irradiated
+						}
+					}
+					fleet.leader = {
+						OR = {
+							has_leader_flag = EOE_leader_okra
+							has_leader_flag = EOE_leader_elena
+							has_trait = leader_trait_curator
+							has_skill >= 5
+						}
+					}
+				}
+			}
+			ship_event = {
+				id = EOE_branch.25
+			}
+		}
+		else = {
+			ship_event = {
+				id = EOE_branch.26
+			}
+		}
+	}
+}
+
+ship_event = { #辐射事故-无事发生
+	id = EOE_branch.24
+	title = "EOE_branch.24.name"
+	desc = "EOE_branch.24.desc"
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_reactor"
+	show_sound = "event_red_alert"
+	option = {
+		name = "EOE_branch.24.a"
+		owner = {
+			hidden_effect = {
+				root.leader = { unassign_leader = this }			
+			}
+			abort_special_project = {
+				type = EOE_cthugha_2
+			}
+			enable_special_project = {
+				name = EOE_radioactivity_clean
+				location = event_target:EOE_cthugha_planet
+				owner = this
+			} 
+		}
+	}  
+}
+
+ship_event = { #辐射事故-有事发生-策展人，秋葵，埃琳娜，死寂适应
+	id = EOE_branch.25
+	title = "EOE_branch.25.name"
+	desc = {
+		trigger = {
+			fleet.leader = {
+				OR = {
+					has_leader_flag = EOE_leader_okra
+					has_leader_flag = EOE_leader_elena
+					has_trait = leader_trait_curator
+				}
+			}
+		}
+		text = "EOE_branch.25.desc.a"
+	}
+	desc = {
+		trigger = {
+			owner = {
+				owner_main_species = {
+					has_trait = trait_pc_nuked_preference
+				}
+			}
+		}
+		text = "EOE_branch.25.desc.b"
+	}
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_nuclear_warning"
+	show_sound = "event_red_alert"
+	immediate = {
+		fleet.leader = {
+			add_trait = leader_trait_EOE_radioactiveburned #辐射烧伤-20
+		}
+		hidden_effect = {
+			root.leader = { unassign_leader = this }			
+		}
+	}
+
+	option = {
+		name = "EOE_branch.24.a"
+		owner = {
+			abort_special_project = {
+				type = EOE_cthugha_2
+			}
+			enable_special_project = {
+				name = EOE_radioactivity_clean
+				location = event_target:EOE_cthugha_planet
+				owner = this
+			} 
+		}
+	} 
+}
+
+ship_event = { #辐射事故-有事发生
+	id = EOE_branch.26
+	title = "EOE_branch.26.name"
+	desc = {
+		trigger = {
+			root.owner = {
+				owner_main_species = {
+					NOT = {is_species_class = MACHINE}
+				}
+			}
+		}
+		text = "EOE_branch.26.desc.b"
+	}
+	 
+	desc = {
+		trigger = {
+			root.owner = {
+				owner_main_species = {
+					is_species_class = MACHINE
+				}
+			}
+		}
+		text = "EOE_branch.26.desc.a"
+	}
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_nuclear_warning"
+	show_sound = "event_red_alert"
+	immediate = {
+		fleet.leader = {
+			kill_leader = { }
+		}
+		owner = {
+			set_country_flag = EOE_leader_death_accident
+		}
+	}
+	
+	option = {
+		name = "EOE_branch.24.a"
+		trigger = {
+			root.owner = {
+				owner_main_species = {
+					NOT = {is_species_class = MACHINE}
+				}
+			}
+		}
+		owner = {
+			abort_special_project = {
+				type = EOE_cthugha_2
+			}
+			enable_special_project = {
+				name = EOE_radioactivity_clean
+				location = event_target:EOE_cthugha_planet
+				owner = this
+			} 
+		}
+	} 
+	option = {
+		name = "EOE_branch.24.b"
+		trigger = {
+			root.owner = {
+				owner_main_species = {
+					 is_species_class = MACHINE
+				}
+			}
+		}
+		owner = {
+			enable_special_project = {
+				name = EOE_radioactivity_clean
+				location = event_target:EOE_cthugha_planet
+				owner = this
+			} 
+		}
+	} 
+}
+
+ship_event = { #辐射清理完成
+	id = EOE_branch.27
+	title = "EOE_branch.27.name"
+	desc = {
+		trigger = {
+			owner = {
+				OR = {
+					any_owned_pop = {
+						has_trait = trait_EOE_Inheritors
+					}
+					has_origin = origin_lotus_hezi_start
+					has_civic = civic_external_synapse
+				}
+			}
+		}
+		text = EOE_branch.27.1.desc
+	}
+	desc = {
+		trigger = {
+			owner = {
+				NOR = {
+					any_owned_pop = {
+						has_trait = trait_EOE_Inheritors
+					}
+					has_origin = origin_lotus_hezi_start
+					has_civic = civic_external_synapse
+				}
+			}	
+		}
+		text = EOE_branch.27.desc
+	}
+
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_reactor"
+	show_sound = "event_yellow_alert"
+	immediate = {
+		event_target:EOE_cthugha_planet = {
+			set_planet_flag = EOE_radioactivity_cleaned
+		}
+	}
+	
+	option = {
+		name = "EOE_branch.27.a"
+		owner = {
+			enable_special_project = {
+				name = EOE_cthugha_2
+				location = event_target:EOE_cthugha_planet
+				owner = this
+			} 
+		}
+	} 
+}
+
+ship_event = { #发生了地震
+	id = EOE_branch.28
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { 
+				owner = {
+					has_country_flag = EOE_earthquake_happened
+				}
+			}
+			#nothing happened.
+		}
+		else_if = {
+			limit = {
+				fleet.leader = {
+					OR = {
+						has_leader_flag = EOE_leader_hezi
+						has_leader_flag = EOE_leader_okra
+						has_leader_flag = EOE_leader_elena
+						has_trait = leader_trait_curator
+						has_skill >= 5
+					}
+				}
+			} 
+			ship_event = {
+				id = EOE_branch.29
+			}
+		}
+		else = {
+			random_list = {
+				50 = {
+					ship_event = {
+						id = EOE_branch.29
+					}
+				}
+				50 = {
+					ship_event = {
+						id = EOE_branch.30
+					}
+				}
+			}
+		}
+	}
+}
+
+ship_event = { #地震，无事发生
+	id = EOE_branch.29
+	title = "EOE_branch.29.name"
+	desc = "EOE_branch.29.desc"
+	is_triggered_only = yes
+	picture = "GFX_evt_collapsing_roof"
+	show_sound = "event_collapsing_ruins"
+	option = {
+		name = OK
+	}
+}
+
+ship_event = { #地震，有事发生
+	id = EOE_branch.30
+	title = "EOE_branch.30.name"
+	desc = "EOE_branch.30.desc"
+	is_triggered_only = yes
+	picture = "GFX_evt_collapsing_roof"
+	show_sound = "event_collapsing_ruins"
+	immediate = {
+		fleet.leader = {
+			kill_leader = { }
+		}
+		owner = {
+			set_country_flag = EOE_leader_death_accident
+			set_country_flag = EOE_earthquake_happened
+		}
+	}
+	option = {
+		name = OK
+	}
+}
+
+ship_event = { #看到了致疯绘画
+	id = EOE_branch.31
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		owner = {
+			create_point_of_interest = {
+				id = EOE_sc_painting
+				name = "EOE_int_sc_painting.name"
+				desc = "EOE_int_sc_painting.desc"
+				event_chain = EOE_mysterious_ruins_chain
+				location = event_target:EOE_cthugha_planet
+			}
+		}
+		if = {
+			limit = {
+				fleet.leader = {
+					OR = {
+						has_leader_flag = EOE_leader_hezi
+						has_leader_flag = EOE_leader_okra
+						has_leader_flag = EOE_leader_elena
+						has_trait = leader_trait_curator
+						has_skill >= 5
+					}
+				}
+			} 
+			ship_event = {
+				id = EOE_branch.32
+			}
+		}
+		else_if = {  #第一次sancheck
+			limit = { 
+				owner = {
+					NOT = { has_country_flag = EOE_sancheck_1 }
+				}
+			}
+			owner = {
+
+				set_country_flag = EOE_sancheck_1
+			}
+			if = {
+				limit = {
+					owner = {
+						owner_main_species = {
+							is_species_class = MACHINE
+						}
+					}
+				}
+				ship_event = {
+					id = EOE_branch.33
+				}
+			}
+			else = {
+				ship_event = {
+					id = EOE_branch.34
+				}
+			}
+		}
+		else_if = {  #第二次sancheck
+			limit = { 
+				owner = {
+					has_country_flag = EOE_sancheck_1
+					NOT = { has_country_flag = EOE_sancheck_2 }
+				}
+			}
+			owner = {			
+				set_country_flag = EOE_sancheck_2
+			}
+			if = {
+				limit = {
+					owner = {
+						owner_main_species = {
+							is_species_class = MACHINE
+						}
+					}
+				}
+				random_list = {
+					50 = {
+						ship_event = {
+							id = EOE_branch.33
+						}
+					}
+					50 = {
+						ship_event = {
+							id = EOE_branch.35
+						}
+					}
+				}	
+			}
+			else = {
+				random_list = {
+					50 = {
+						ship_event = {
+							id = EOE_branch.34
+						}
+					}
+					50 = {
+						ship_event = {
+							id = EOE_branch.36
+						}
+					}
+				}	
+			}
+		}
+		else = { #第三次一定成功
+			if = {
+				limit = { 
+					owner = {
+						owner_main_species = {
+							is_species_class = MACHINE
+						}
+					}
+				}
+				ship_event = {
+					id = EOE_branch.35
+				}
+			}
+			else = {
+				ship_event = {
+					id = EOE_branch.36
+				}
+			}
+		}
+	}
+}
+
+ship_event = { #sancheck，成功，核子和埃琳娜
+	id = EOE_branch.32
+	title = "EOE_branch.32.name"
+	desc = "EOE_branch.32.desc"
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_sc_painting"
+	show_sound = "event_whispering"
+	immediate = {
+		
+	}
+	option = {
+		name = EOE_branch.32.a
+	}
+}
+
+ship_event = { #机器人sc失败
+	id = EOE_branch.33
+	title = "EOE_branch.33.name"
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {has_country_flag = EOE_sancheck_2}
+			}
+		}
+		text = "EOE_branch.33.desc.a"
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_sancheck_2
+			}
+		}
+		text = "EOE_branch.33.desc.b"
+	}
+	
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_sc_painting"
+	show_sound = "event_bad_omen"
+	immediate = {
+		leader = {
+			kill_leader = {}
+		}
+		owner = {
+			set_country_flag = EOE_leader_death_accident
+		}
+		
+	}
+	option = { #再来
+		name = "EOE_branch.34.a"
+	}
+	option = { #放弃
+		name = "EOE_branch.34.b"
+		owner = {
+			abort_special_project = {
+				type = EOE_cthugha_4
+			}
+			country_event = {
+				id = EOE_branch.57
+			}
+		}
+	}
+}
+
+ship_event = { #普通人sc失败
+	id = EOE_branch.34
+	title = "EOE_branch.34.name"
+	desc = {
+		trigger = {
+			owner = {
+				NOT = {has_country_flag = EOE_sancheck_2}
+			}
+		}
+		text = "EOE_branch.34.desc.a"
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = EOE_sancheck_2
+			}
+		}
+		text = "EOE_branch.34.desc.b"
+	}
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_sc_painting"
+	show_sound = "event_bad_omen"
+	immediate = {
+		leader = {
+			kill_leader = {}
+		}
+		owner = {
+			set_country_flag = EOE_leader_death_accident
+			abort_special_project = {
+				type = EOE_cthugha_2
+			}
+		}
+	}
+	option = { #再来
+		name = "EOE_branch.34.a"
+
+	}
+	option = { #放弃
+		name = "EOE_branch.34.b"
+		owner = {
+			abort_special_project = {
+				type = EOE_cthugha_2
+			}
+			country_event = {
+				id = EOE_branch.57
+			}
+		}
+	}
+}
+
+ship_event = { #机器人sc成功
+	id = EOE_branch.35
+	title = "EOE_branch.35.name"
+	desc = "EOE_branch.35.desc"
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_sc_painting"
+	show_sound = "event_whispering"
+	immediate = {
+		leader = {
+			add_trait = leader_trait_traumatized
+		}
+	}
+	option = {
+		name = OK
+	}
+}
+
+ship_event = { #普通人sc成功
+	id = EOE_branch.36
+	title = "EOE_branch.36.name"
+	desc = "EOE_branch.36.desc"
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_sc_painting"
+	show_sound = "event_whispering"
+	immediate = {
+		leader = {
+			add_trait = leader_trait_traumatized
+		}
+	}
+	option = {
+		name = OK
+	}
+}
+
+ship_event = { #触发了陷阱
+	id = EOE_branch.37
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			event_target:EOE_cthugha_planet = {
+				has_planet_flag = EOE_trap_cleaned
+			}
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				fleet.leader = {
+					OR = {
+						has_leader_flag = EOE_leader_hezi
+						has_leader_flag = EOE_leader_okra
+						has_leader_flag = EOE_leader_elena
+						has_trait = leader_trait_curator
+						has_skill >= 5
+					}
+				}
+			} 
+			ship_event = {
+				id = EOE_branch.38
+			}
+		}
+		else = {
+			ship_event = {
+				id = EOE_branch.39
+			}
+		}
+	}
+}
+
+ship_event = { #完全无视了陷阱
+	id = EOE_branch.38
+	title = "EOE_branch.38.name"
+	desc = "EOE_branch.38.desc"
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_acient_facilities_1"
+	show_sound = "event_trap_arrows"
+	immediate = {
+		
+	}
+	option = {
+		name = OK
+	}
+}
+
+ship_event = { #被陷阱弄死了
+	id = EOE_branch.39
+	title = "EOE_branch.39.name"
+	desc = "EOE_branch.39.desc"
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_trap"
+	show_sound = "event_trap_spikes"
+	immediate = {
+		leader = {
+			kill_leader = {}
+		}
+		owner = {
+			set_country_flag = EOE_trap_appeared
+			set_country_flag = EOE_leader_death_accident
+		}
+	}
+	option = {
+		name = EOE_branch.39.a
+		owner = {
+			hidden_effect = {
+				abort_special_project = {
+					type = EOE_cthugha_5
+				}
+			}
+			enable_special_project = {
+				name = EOE_trap_clean
+				location = event_target:EOE_cthugha_planet
+				owner = this
+			}
+		}
+	}
+}
+
+ship_event = { #清理了陷阱
+	id = EOE_branch.40
+	title = "EOE_branch.40.name"
+	desc = "EOE_branch.40.desc"
+	is_triggered_only = yes
+	picture = "GFX_evt_underground_city"
+	show_sound = "event_dig_site"
+	# after = {
+	# 	event_target:EOE_cthugha_planet = {
+	# 		set_planet_flag = EOE_trap_cleaned
+	# 	}
+	# 	owner = {
+	# 		enable_special_project = {
+	# 			name = EOE_cthugha_5
+	# 			location = event_target:EOE_cthugha_planet
+	# 			owner = this
+	# 		}
+	# 	}
+	# }
+	option = {
+		name = OK
+		event_target:EOE_cthugha_planet = {
+			set_planet_flag = EOE_trap_cleaned
+		}
+		owner = {
+			enable_special_project = {
+				name = EOE_cthugha_5
+				location = event_target:EOE_cthugha_planet
+				owner = this
+			}
+		}
+	}
+}
+
+ship_event = { #遇上了谜题
+	id = EOE_branch.41
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		event_target:EOE_cthugha_planet = {
+			NOT = {
+				has_planet_flag = EOE_puzzle_sloved
+			}
+		}
+		owner = {
+			NOT = {
+				has_country_flag = EOE_puzzle_solved_11
+			}
+		}
+	}
+
+	immediate = {
+		owner = {
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = EOE_puzzle_appeared
+					}
+				}
+				create_point_of_interest = {
+					id = EOE_puzzle
+					name = "EOE_int_puzzle.name"
+					desc = "EOE_int_puzzle.desc"
+					event_chain = EOE_mysterious_ruins_chain
+					location = event_target:EOE_cthugha_planet
+				}
+				set_country_flag = EOE_puzzle_appeared
+			}
+		}
+	
+		if = {
+			limit = { 
+				fleet.leader = {
+					NOR = {
+						has_leader_flag = EOE_leader_hezi
+					}
+				}
+			}
+			random_list = {
+				50 = {
+					ship_event = {
+						id = EOE_branch.42
+					}
+				}
+				50 = {
+					ship_event = {
+						id = EOE_branch.46
+					}
+				}
+			}
+			
+		}
+		else = {
+			ship_event = {
+				id = EOE_branch.42
+			}
+		}
+	}
+}
+ 
+ship_event = { #谜团的解答
+	id = EOE_branch.42
+	title = "EOE_branch.42.name"
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_puzzle"
+	show_sound = "event_finding_loot"
+	desc = {
+		trigger = {
+			owner = {
+				OR = {
+					has_ethic = ethic_spiritualist
+					has_ethic = ethic_fanatic_spiritualist
+					any_owned_pop = { has_trait = trait_natural_psionic_warrior }
+				}
+			}
+		}
+		text = "EOE_branch.42.desc.a"
+	}
+	desc = {
+		trigger = {
+			owner = {
+			NOR = {
+				has_ethic = ethic_spiritualist
+				has_ethic = ethic_fanatic_spiritualist
+				any_owned_pop = { has_trait = trait_natural_psionic_warrior }
+				}
+			}
+		}
+		text = "EOE_branch.42.desc.b"
+	}
+
+	option = {
+		name = "EOE_branch.42.a"
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_puzzle_try1
+				}
+			}
+		}
+		owner = {
+			hidden_effect = {
+				set_country_flag = EOE_puzzle_try1
+			}
+		}
+		ship_event = {
+			id = EOE_branch.43
+		}
+	}
+	option = {
+		name = "EOE_branch.42.b"
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_puzzle_try2
+				}
+			}
+		}
+		owner = {
+			hidden_effect = {
+				set_country_flag = EOE_puzzle_try2
+			}
+		}
+		ship_event = {
+			id = EOE_branch.43
+		}
+	}
+	option = {
+		name = "EOE_branch.42.c"
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_puzzle_try3
+				}
+			}
+		}
+		owner = {
+			hidden_effect = {
+				set_country_flag = EOE_puzzle_try3
+			}
+		}
+		ship_event = {
+			id = EOE_branch.43
+		}
+	}
+	option = { #都不对
+		name = "EOE_branch.42.d"
+		ship_event = {
+			id = EOE_branch.44
+		}
+	}
+}
+
+ship_event = { #谜团的解答2
+	id = EOE_branch.43
+	title = "EOE_branch.43.name"
+	desc = "EOE_branch.43.desc"
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_puzzle"
+	# immediate = {
+	# 	hidden_effect = {
+	# 		unassign_leader = this
+	# 	}
+	# }
+	option = {
+		name = "EOE_branch.43.a"
+		owner = {
+			abort_special_project = {
+				type = EOE_cthugha_6
+			}
+			enable_special_project = {
+				name = EOE_cthugha_puzzle
+				location = event_target:EOE_cthugha_planet
+				owner = this
+			}
+		}
+	}
+	option = { #我就要选
+		name = "EOE_branch.43.b"
+		hidden_effect = {
+			ship_event = {
+				id = EOE_branch.47
+			}
+		}
+	}
+}
+
+ship_event = { #谜团的解答2-1
+	id = EOE_branch.44
+	title = "EOE_branch.44.name"
+	desc = "EOE_branch.44.desc"
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_puzzle"
+	option = {
+		name = "EOE_branch.44.a"
+		owner = {
+			abort_special_project = {
+				type = EOE_cthugha_6
+			}
+			enable_special_project = {
+				name = EOE_cthugha_puzzle
+				location = event_target:EOE_cthugha_planet
+				owner = this
+			}
+		}
+	}
+}
+
+ship_event = { #谜团的解答~终
+	id = EOE_branch.45
+	title = "EOE_branch.45.name"
+	desc = "EOE_branch.45.desc"
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_puzzle"
+	show_sound = event_nem_asset_acquired_positive
+	immediate = {
+		owner = {
+			set_country_flag = EOE_puzzle_solved_11
+		}
+		event_target:EOE_cthugha_planet = {
+			set_planet_flag = EOE_puzzle_solved
+		}
+	}
+	option = {
+		name = "EOE_branch.45.a"
+		enable_special_project = {
+			name = EOE_cthugha_6
+			location = event_target:EOE_cthugha_planet
+			owner = this
+		}
+	}
+}
+
+ship_event = { #错误解答示范
+	id = EOE_branch.46
+	title = "EOE_branch.46.name"
+	desc = "EOE_branch.46.desc"
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_puzzle"
+	show_sound = "event_finding_loot"
+	
+	option = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_puzzle_try1
+				}
+				NOT = {
+					any_owned_leader = {
+						has_leader_flag = EOE_leader_hezi
+					}
+				}
+			}	
+		}
+		name = "EOE_branch.42.a"
+		owner = {
+			hidden_effect = {
+				set_country_flag = EOE_puzzle_try1
+			}
+		}	
+		ship_event = {
+			id = EOE_branch.47
+		}
+	}
+	option = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_puzzle_try2
+				}
+				NOT = {
+					any_owned_leader = {
+						has_leader_flag = EOE_leader_hezi
+					}
+				}
+			}
+		}
+		name = "EOE_branch.42.b"
+		owner = {
+			hidden_effect = {
+				set_country_flag = EOE_puzzle_try2
+			}
+		}
+		ship_event = {
+			id = EOE_branch.47
+		}
+	}
+	option = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = EOE_puzzle_try3
+				}
+				NOT = {
+					any_owned_leader = {
+						has_leader_flag = EOE_leader_hezi
+					}
+				}
+			}
+		}
+		name = "EOE_branch.42.c"
+		owner = {
+			hidden_effect = {
+				set_country_flag = EOE_puzzle_try3
+			}
+		}
+		ship_event = {
+			id = EOE_branch.47
+		}
+	}
+	option = {
+		trigger = {
+			owner = {
+				any_owned_leader = {
+					has_leader_flag = EOE_leader_hezi
+				}
+				NOT = {
+					has_country_flag = EOE_puzzle_try1
+				}
+			}
+		}
+		owner = {
+			hidden_effect = {
+				set_country_flag = EOE_puzzle_try1
+			}
+		}
+		name = "EOE_branch.42.a"
+		ship_event = {
+			id = EOE_branch.48  #核子在的话，会阻止领袖尝试送死
+		}
+	}
+	option = {
+		trigger = {
+			owner = {
+				any_owned_leader = {
+					has_leader_flag = EOE_leader_hezi
+				}
+				NOT = {
+					has_country_flag = EOE_puzzle_try2
+				}
+			}
+			
+		}
+		owner = {
+			hidden_effect = {
+				set_country_flag = EOE_puzzle_try2
+			}
+		}
+		name = "EOE_branch.42.b"
+		ship_event = {
+			id = EOE_branch.48
+		}
+	}
+	option = {
+		trigger = {
+			owner = {
+				any_owned_leader = {
+					has_leader_flag = EOE_leader_hezi
+				}
+				NOT = {
+					has_country_flag = EOE_puzzle_try3
+				}
+			}
+		}
+		owner = {
+			hidden_effect = {
+				set_country_flag = EOE_puzzle_try3
+			}
+		}
+		name = "EOE_branch.42.c"
+		ship_event = {
+			id = EOE_branch.48
+		}
+	}
+}
+
+ship_event = { #错误解答后果1，没有核子 
+	id = EOE_branch.47
+	title = "EOE_branch.47.name"
+	desc = "EOE_branch.47.desc"
+	is_triggered_only = yes
+	picture = "GFX_evt_EOE_no_video_feed"
+	
+	immediate = {
+		leader = {
+			kill_leader = {}
+		}
+		owner = {
+			set_country_flag = EOE_leader_death_accident
+			abort_special_project = {
+				type = EOE_cthugha_6
+			}
+			enable_special_project = {
+				name = EOE_cthugha_6
+				location = event_target:EOE_cthugha_planet
+				owner = this
+			}
+		}
+		
+	}
+	option = { #再派一队人调查
+		trigger = {
+			NAND = {
+				owner = {
+					has_country_flag = EOE_puzzle_try1
+					has_country_flag = EOE_puzzle_try2
+					has_country_flag = EOE_puzzle_try3
+				}
+			}
+		}
+		name = "EOE_branch.47.a"
+	}
+	option = { #算了吧
+		trigger = {
+			NAND = {
+				owner = {
+					has_country_flag = EOE_puzzle_try1
+					has_country_flag = EOE_puzzle_try2
+					has_country_flag = EOE_puzzle_try3
+				}
+			}
+		}
+		name = "EOE_branch.47.b"
+		hidden_effect = {
+			owner = {
+				abort_special_project = {
+					type = EOE_cthugha_6
+				}
+				country_event = {
+					id = EOE_branch.57
+				}
+			}
+		}
+	}
+	option = { #怎么会这样
+		trigger = {
+			AND = {
+				owner = {
+					has_country_flag = EOE_puzzle_try1
+					has_country_flag = EOE_puzzle_try2
+					has_country_flag = EOE_puzzle_try3
+				}
+			}
+		}
+		name = "EOE_branch.47.c"
+		hidden_effect = {
+			ship_event = {
+				id = EOE_branch.49
+			}
+		}
+	}
+}
+
+ship_event = { #错误解答2，只要核子在核子就会阻止
+	id = EOE_branch.48
+	title = "EOE_branch.48.name"
+	desc = "EOE_branch.48.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "enclave_curator_window"
+	picture_event_data = {
+		room = enclave_curator_room
+		portrait = EOEHezi_test
+	}
+	option = {
+		name = "EOE_branch.43.a"
+		custom_gui = "enclave_curator_option"
+		enable_special_project = {
+			name = EOE_cthugha_puzzle
+			location = event_target:EOE_cthugha_planet
+			owner = this
+		}
+	}
+	option = { #我就要选
+		name = "EOE_branch.43.b"
+		custom_gui = "enclave_curator_option"
+		hidden_effect = {
+			ship_event = {
+				id = EOE_branch.47
+			}
+		}
+	}
+}
+
+ship_event = { #最终大失败
+	id = EOE_branch.49
+	title = "EOE_branch.49.name"
+	desc = "EOE_branch.49.desc"
+	is_triggered_only = yes
+	picture = "GFX_evt_metropolis"
+	show_sound = "event_mystic_reveal"
+	option = { #保持敬畏。到时候可以给予一个凝聚力加成，影响力增加，唯心思潮增加。
+		name = "EOE_branch.49.a"
+		owner = {
+			country_event = {
+				id = EOE_branch.57
+			}
+		}
+	}
+}
+
+country_event = { #给出最终答案
+	id = EOE_branch.50
+	title = "EOE_branch.50.name"
+	desc = "EOE_branch.50.desc"
+	is_triggered_only = yes
+	picture = GFX_evt_ancient_artifact
+	show_sound = event_door_opening
+	option = { #将其唤醒
+		trigger = {
+			owner = {
+				resource_stockpile_compare = { resource = energy value >= 1000 }
+			}
+		}
+		name = "EOE_branch.50.a"
+		owner = {
+			add_resource = {
+				energy = -1000
+			}
+			end_event_chain = "EOE_mysterious_ruins_chain"
+			set_country_flag = EOE_finish_cthugha_2
+		}
+		hidden_effect = {
+			country_event = {
+				id = EOE_branch.51
+			}
+		}
+	}
+	option = { #保持敬畏。到时候可以给予一个凝聚力加成，影响力增加，唯心思潮增加。
+		name = "EOE_branch.50.b"
+		owner = {
+			country_event = {
+				id = EOE_branch.57
+			}
+		}
+	}
+}
+
+country_event = { #记得把时间改对，第一次唤醒失败，只得到几只炎精
+	id = EOE_branch.51
+	title = "EOE_branch.51.name"
+	desc = "EOE_branch.51.desc"
+	is_triggered_only = yes
+	picture = GFX_evt_archaeologists_escaping
+	show_sound = event_trap_laser
+
+	immediate = {
+		owner = {
+			set_country_flag = EOE_finish_cthugha_3
+		}
+	}
+	option = { #问核子试试看
+		trigger = {
+			owner = {
+				any_owned_leader = {
+					has_leader_flag = EOE_leader_hezi
+				}
+			}
+		}
+		name = "EOE_branch.51.a"
+		owner = {
+			country_event = {
+				id = EOE_branch.52
+			}
+		}
+	}
+	option = { #真是遗憾
+		trigger = {
+			NOT = {
+				owner = {
+					any_owned_leader = {
+						has_leader_flag = EOE_leader_hezi
+					}
+				}
+			}
+		}
+		name = "EOE_branch.51.b"
+		owner = {
+			country_event = {
+				id = EOE_branch.58 days = 3600 random = 1000
+			}
+		}
+	}
+}
+
+country_event = { #核子的建议。随时可以找回这个界面。
+	id = EOE_branch.52
+	title = "EOE_branch.52.name"
+	desc = "EOE_branch.52.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "enclave_curator_window"
+	picture_event_data = {
+		room = enclave_curator_room
+		portrait = EOEHezi_test
+	}
+	trigger = {
+		event_target:EOE_cthugha_planet = {
+			NOT = {
+				has_planet_flag = EOE_has_calling_cthugha
+			}
+		}
+	}
+	option = { #马上就召唤
+		name = "EOE_branch.52.a"
+		custom_gui = "enclave_curator_option"
+		custom_tooltip = EOE_branch.52.a.desc
+		allow = {
+			resource_stockpile_compare = { resource = energy value >= 20000 }
+		}
+
+		add_resource = {
+			energy = -20000
+		}
+		enable_special_project = {
+			name =  EOE_cthugha_calling
+			location = event_target:EOE_cthugha_planet.system_star
+			owner = this
+		}
+		event_target:EOE_cthugha_planet = {
+			set_planet_flag = EOE_has_calling_cthugha
+		}
+	}
+
+	option = { #算了
+		custom_gui = "enclave_curator_option"
+		name = "EOE_branch.52.b"
+	}
+}
+
+ship_event = { #召唤出了古神
+	id = EOE_branch.53
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		event_target:EOE_cthugha_planet.system_star = {
+			save_event_target_as = EOE_cthugha_star
+		}
+		create_country = {
+			name = "NAME_EOE_cthugha"
+			type = guardian_EOE_cthugha
+			flag = {
+				icon = {
+					category = "zoological"
+					file = "flag_zoological_5.dds"
+				}
+				background= {
+					category = "backgrounds"
+					file = "00_solid.dds"
+				}
+				colors={
+					"yellow"
+					"yellow"
+					"null"
+					"null"
+				}
+			}
+		}
+		if = {
+			limit = {
+				is_scrappy_mod_used = yes
+			}
+			last_created_country = {
+				set_country_flag = EOE_cthugha_country
+				save_global_event_target_as = EOE_cthugha_country
+				create_fleet = {
+					name = "NAME_EOE_Cthugha_2"
+					settings = {
+						spawn_debris = no
+						is_boss = no
+					}
+					effect = {
+						set_owner = event_target:EOE_cthugha_country
+						create_ship = {
+							name = "NAME_EOE_Cthugha_3"
+							design = NAME_EOE_cthugha_1_ship
+							effect = {
+								set_ship_flag = EOE_cthugha_ship
+							}
+						}
+						save_global_event_target_as = EOE_cthugha_fleet
+						set_fleet_flag = EOE_cthugha_fleet
+						set_location = event_target:EOE_cthugha_star
+						set_fleet_stance = aggressive
+						set_aggro_range_measure_from = self
+						set_aggro_range = 500
+						
+						queue_actions = {
+							repeat = {
+								find_closest_system = {
+									trigger = {
+										id = EOE.cthugha.1.trigger.1
+										NOR = {
+											any_fleet_in_system = {
+												is_same_value = event_target:EOE_cthugha_fleet
+											}
+											has_star_flag = guardians_EOE_cthugha_visited
+										}
+									}
+									found_system = {
+										move_to = this
+										find_closest_planet = {
+											trigger = {
+												id = EOE.cthugha.1.trigger.2
+												has_owner = yes
+												is_a_planet = yes
+											}
+											found_planet = {
+												move_to = this
+												wait = 720
+												#event_target:EOE_ghost_planet_planet = this
+												effect = {
+													id = EOE.cthugha.2
+													every_owned_pop = {
+														kill_pop = yes
+													}
+													save_event_target_as = EOE_cthugha_burned_planet_oh_no
+													change_pc = pc_molten
+													clear_deposits = yes
+													random_list = {
+														1 = {
+															add_deposit = d_energy_4
+															add_deposit = d_energy_4
+															add_deposit = d_energy_4
+															add_deposit = d_energy_4
+														}
+														1 = {
+															add_deposit = d_energy_4
+															add_deposit = d_energy_4
+															add_deposit = d_energy_4
+														}
+														1 = {
+															add_deposit = d_energy_4
+															add_deposit = d_energy_4
+														}
+														1 = {
+															add_deposit = d_energy_4
+														}
+													}
+													planet_event = {
+														id = EOE_branch.64
+													}
+												}
+												wait = {
+													duration = 1080
+												}
+											}
+										}
+										effect = {
+											id = EOE_cthugha.2
+											set_star_flag = guardians_EOE_cthugha_visited
+										}
+									}
+								}
+							}
+						}
+					}
+					
+				}
+			}
+		}
+		else = {
+			last_created_country = {
+				set_country_flag = EOE_cthugha_country
+				save_global_event_target_as = EOE_cthugha_country
+				create_fleet = {
+					name = "NAME_EOE_Cthugha_2_small"
+					settings = {
+						spawn_debris = no
+						is_boss = yes
+					}
+					effect = {
+						set_owner = event_target:EOE_cthugha_country
+						create_ship = {
+							name = "NAME_EOE_Cthugha_3_small"
+							design = NAME_EOE_cthugha_1_smallship
+							effect = {
+								set_ship_flag = EOE_cthugha_ship
+							}
+						}
+						save_global_event_target_as = EOE_cthugha_fleet
+						set_fleet_flag = EOE_cthugha_fleet
+						set_location = event_target:EOE_cthugha_star
+						set_fleet_stance = aggressive
+						set_aggro_range_measure_from = self
+						set_aggro_range = 500
+						
+						queue_actions = {
+							repeat = {
+								find_closest_system = {
+									trigger = {
+										id = EOE.cthugha.1.trigger.1
+										NOR = {
+											any_fleet_in_system = {
+												is_same_value = event_target:EOE_cthugha_fleet
+											}
+											has_star_flag = guardians_EOE_cthugha_visited
+										}
+									}
+									found_system = {
+										move_to = this
+										find_closest_planet = {
+											trigger = {
+												id = EOE.cthugha.1.trigger.2
+												has_owner = yes
+												is_a_planet = yes
+											}
+											found_planet = {
+												move_to = this
+												wait = 720
+												#event_target:EOE_ghost_planet_planet = this
+												effect = {
+													id = EOE.cthugha.2
+													every_owned_pop = {
+														kill_pop = yes
+													}
+													save_event_target_as = EOE_cthugha_burned_planet_oh_no
+													change_pc = pc_molten
+													clear_deposits = yes
+													random_list = {
+														1 = {
+															add_deposit = d_energy_4
+															add_deposit = d_energy_4
+															add_deposit = d_energy_4
+															add_deposit = d_energy_4
+														}
+														1 = {
+															add_deposit = d_energy_4
+															add_deposit = d_energy_4
+															add_deposit = d_energy_4
+														}
+														1 = {
+															add_deposit = d_energy_4
+															add_deposit = d_energy_4
+														}
+														1 = {
+															add_deposit = d_energy_4
+														}
+													}
+													planet_event = {
+														id = EOE_branch.64
+													}
+												}
+												wait = {
+													duration = 1080
+												}
+											}
+										}
+										effect = {
+											id = EOE_cthugha.2
+											set_star_flag = guardians_EOE_cthugha_visited
+										}
+									}
+								}
+							}
+						}
+					}
+					
+				}
+			}
+		}
+		
+		if = {
+			limit = { exists = space_owner }
+			space_owner = {
+				country_event = { id = EOE_branch.60 }
+			}
+		}
+	}
+}
+
+
+country_event = { #古神出现在领地
+	id = EOE_branch.60
+	title = "EOE_branch.60.name"
+	desc = EOE_branch.60.desc
+	picture = GFX_evt_EOE_cthugha_calling
+	show_sound = event_space_whale
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_event = { id = story.8 days = 15 }
+		establish_communications_no_message = event_target:EOE_cthugha_country
+		set_country_flag = guardians_EOE_cthugha_encountered
+	}
+
+	option = {
+		name = EOE_branch.60.a
+	}
+}
+
+country_event = { #古神进入
+	id = EOE_branch.54
+	title = "EOE_branch.53.name"
+	desc = EOE_branch.54.desc
+	picture = GFX_evt_EOE_cthugha_calling
+	show_sound = event_space_whale
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM.OWNER = { has_country_flag = EOE_cthugha_country }
+		NOT = { has_country_flag = guardians_EOE_cthugha_encountered }
+	}
+
+	immediate = {
+		country_event = { id = story.8 days = 15 }
+		establish_communications_no_message = event_target:EOE_cthugha_country
+		set_country_flag = guardians_EOE_cthugha_encountered
+	}
+
+	option = {
+		name = EOE_branch.54.a
+	}
+}
+
+country_event = { #古神击败
+	id = EOE_branch.55
+	title = "EOE_branch.55.name"
+	desc =  EOE_branch.55.desc
+	picture = GFX_evt_EOE_cthugha_calling
+	show_sound = event_space_whale
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = killed_EOE_cthugha
+		remove_modifier = EOE_ancient_puzzle
+	}
+
+	option = {
+		name = EOE_branch.55.a
+		trigger = {
+			owner_main_species = {
+				is_species_class = Eeveelutions
+				}
+		}
+		
+		enable_special_project = {
+			name = EOE_cthugha_capturing
+			location = event_target:EOE_cthugha_planet.system_star
+			owner = this
+		}
+	}
+
+	option = {
+		name = EOE_branch.55.b
+		trigger = {
+			NOT = {
+				owner_main_species = {
+					is_species_class = Eeveelutions
+					}
+			}
+		}
+		
+		enable_special_project = {
+			name = EOE_cthugha_capturing
+			location = event_target:EOE_cthugha_planet.system_star
+			owner = this
+		}
+	}
+	option = { #至少一百万年内它不会醒了
+		name = EOE_branch.55.c
+		event_target:EOE_cthugha_planet.system_star = {
+			add_deposit = d_physics_10
+			add_deposit = d_society_10
+			add_deposit = d_engineering_10
+			add_deposit = d_physics_10
+			add_deposit = d_society_10
+			add_deposit = d_engineering_10
+			add_deposit = d_physics_10
+			add_deposit = d_society_10
+			add_deposit = d_engineering_10
+			add_deposit = d_physics_10
+			add_deposit = d_society_10
+			add_deposit = d_engineering_10
+			add_deposit = d_physics_10
+			add_deposit = d_society_10
+			add_deposit = d_engineering_10
+			add_deposit = d_physics_10
+			add_deposit = d_society_10
+			add_deposit = d_engineering_10
+			add_deposit = d_physics_10
+			add_deposit = d_society_10
+			add_deposit = d_engineering_10
+			add_deposit = d_physics_10
+			add_deposit = d_society_10
+			add_deposit = d_engineering_10
+			add_deposit = d_physics_10
+			add_deposit = d_society_10
+			add_deposit = d_engineering_10
+			add_deposit = d_physics_10
+			add_deposit = d_society_10
+			add_deposit = d_engineering_10
+			add_deposit = d_physics_10
+			add_deposit = d_society_10
+			add_deposit = d_engineering_10
+			add_deposit = d_physics_10
+			add_deposit = d_society_10
+			add_deposit = d_engineering_10
+			add_deposit = d_physics_10
+			add_deposit = d_society_10
+			add_deposit = d_engineering_10
+			add_deposit = d_physics_10
+			add_deposit = d_society_10
+			add_deposit = d_engineering_10
+			add_deposit = d_physics_10
+			add_deposit = d_society_10
+			add_deposit = d_engineering_10
+			add_deposit = d_physics_10
+			add_deposit = d_society_10
+			add_deposit = d_engineering_10
+			add_deposit = d_physics_10
+			add_deposit = d_society_10
+			add_deposit = d_engineering_10
+			add_deposit = d_physics_10
+			add_deposit = d_society_10
+			add_deposit = d_engineering_10
+			add_deposit = d_physics_10
+			add_deposit = d_society_10
+			add_deposit = d_engineering_10
+			add_deposit = d_physics_10
+			add_deposit = d_society_10
+			add_deposit = d_engineering_10
+			add_deposit = d_energy_10
+			add_deposit = d_energy_10
+			add_deposit = d_energy_10
+			add_deposit = d_energy_10
+			add_deposit = d_energy_10
+			add_deposit = d_energy_10
+			add_deposit = d_energy_10
+			add_deposit = d_energy_10
+			add_deposit = d_energy_10
+			add_deposit = d_energy_10
+		}
+	}
+}
+
+ship_event = { #古神捕获
+	id = EOE_branch.56
+	title = "EOE_branch.56.name"
+	desc = {
+		text = EOE_branch.56.desc
+		trigger = {
+			owner_main_species = {
+				is_species_class = Eeveelutions
+				}
+		}
+	}
+	desc = {
+		text = EOE_branch.56.desc.b
+		trigger = {
+			NOT = {
+			owner_main_species = {
+				is_species_class = Eeveelutions
+				}
+			}
+		}
+	}
+	picture = GFX_evt_EOE_cthugha_calling
+	show_sound = event_space_whale
+
+	is_triggered_only = yes
+
+	trigger = {
+		
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					has_global_flag = acot_activated
+					has_global_flag = giga_has_host
+					has_global_flag = has_wsg_mod
+				}
+			}
+			create_fleet = {
+				name = "NAME_EOE_Cthugha_2"
+				settings = {
+					spawn_debris = no
+					is_boss = yes
+					
+				}
+				effect = {
+					create_ship = {
+						name = "NAME_EOE_Cthugha_3"
+						design = NAME_EOE_cthugha_1_ship
+						effect = {
+							set_ship_flag = EOE_cthugha_ship_2
+						}
+					}
+					add_modifier = {
+						modifier = EOE_crisisfive
+					}
+					set_owner = root.owner
+					save_global_event_target_as = EOE_cthugha_fleet
+					set_fleet_flag = EOE_cthugha_fleet
+					set_location = event_target:EOE_cthugha_star
+				}	
+			}
+		}
+		else = {
+			create_fleet = {
+				name = "NAME_EOE_Cthugha_2_small"
+				settings = {
+					spawn_debris = no
+					is_boss = yes
+					
+				}
+				effect = {
+					create_ship = {
+						name = "NAME_EOE_Cthugha_3_small"
+						design = NAME_EOE_cthugha_1_smallship
+						effect = {
+							set_ship_flag = EOE_cthugha_ship_2
+						}
+					}
+					add_modifier = {
+						modifier = EOE_crisisfive
+					}
+					set_owner = root.owner
+					save_global_event_target_as = EOE_cthugha_fleet
+					set_fleet_flag = EOE_cthugha_fleet
+					set_location = event_target:EOE_cthugha_star
+				}	
+			}
+		}
+	}
+	option = {
+		name = EOE_branch.56.a
+		trigger = {
+			owner_main_species = {
+				is_species_class = Eeveelutions
+				}
+		}
+		hidden_effect = {
+			owner = {
+				country_event = { id= EOE_branch.66 }
+			}
+		}
+	}
+	option = {
+		name = EOE_branch.56.b
+		trigger = {
+			
+			NOT={	
+				owner_main_species = {
+					is_species_class = Eeveelutions
+					}
+		  }
+			
+		}
+		hidden_effect = {
+			owner = {
+				country_event = { id= EOE_branch.66 }
+			}
+		}
+	}
+}
+
+
+
+
+country_event = { #保持敬畏
+	id = EOE_branch.57
+	title = "EOE_branch.57.name"
+	desc = "EOE_branch.57.desc"
+	picture = GFX_evt_unspeakable_horror
+	show_sound = event_mystic_reveal
+	is_triggered_only = yes
+	option = {
+		name = "EOE_branch.57.a"
+		add_modifier = {
+			modifier = EOE_cthugha_failing days = -1
+		}
+		add_resource = {
+			influence = 200
+		}
+		end_event_chain = "EOE_mysterious_ruins_chain"
+		set_country_flag = EOE_cthugha_chain_giveup
+		remove_point_of_interest = EOE_puzzle
+		remove_point_of_interest = EOE_sc_painting
+		remove_point_of_interest = EOE_radioactive_accident
+		remove_point_of_interest = EOE_fire_vampire_appeared
+	}
+}
+
+
+country_event = { #召唤方法   
+	id = EOE_branch.58
+	title = "EOE_branch.58.name"
+	desc = "EOE_branch.58.desc"
+	is_triggered_only = yes
+	picture = GFX_evt_star_yellow
+	show_sound = event_mystic_reveal
+	trigger = {
+		event_target:EOE_cthugha_planet = {
+			NOT = {
+				has_planet_flag = EOE_has_calling_cthugha
+			}
+		}
+	}
+	option = { #马上就召唤
+		name = "EOE_branch.52.a"
+		custom_tooltip = EOE_branch.58.a.desc
+		trigger = {
+			resource_stockpile_compare = { resource = energy value >= 5000 }
+		}
+		add_resource = {
+			energy = -5000
+		}
+		enable_special_project = {
+			name =  EOE_cthugha_calling
+			location = event_target:EOE_cthugha_planet.system_star
+			owner = this
+		}
+		event_target:EOE_cthugha_planet = {
+			set_planet_flag = EOE_has_calling_cthugha
+		}
+	}
+	option = { #算了
+		name = "EOE_branch.52.b"
+	}
+}
+
+event = { #尝试让克子走
+	id = EOE_branch.61
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = event_target:EOE_cthugha_fleet
+	}
+	immediate = {
+		random_system = {
+			limit = {
+				any_ship_in_system = {
+					has_ship_flag = EOE_cthugha_ship
+				}
+			}
+			set_star_flag = guardians_EOE_cthugha_visited
+		}
+	}
+}
+
+# fleet_event = { #克子定位
+# 	id = EOE_branch.62
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		owner = {
+# 			has_country_flag = EOE_cthugha_country
+# 		}
+# 	}
+# 	immediate = {
+# 		from = {
+# 			set_star_flag = EOE_cthugha_present
+# 		}
+# 		if = {
+# 			limit = { 
+# 				any_system = {
+# 					has_star_flag = EOE_cthugha_present
+# 					NOT = {
+# 						any_fleet_in_system = {
+# 							has_fleet_flag = EOE_cthugha_fleet
+# 						}
+# 					}
+# 				}
+# 			}
+# 			every_system = {
+# 				limit = {
+# 					has_star_flag = EOE_cthugha_present
+# 					NOT = {
+# 						any_fleet_in_system = {
+# 							has_fleet_flag = EOE_cthugha_fleet
+# 						}
+# 					}
+# 				}
+# 				remove_star_flag = EOE_cthugha_present
+# 			}
+# 		}
+# 	}
+# }
+
+country_event = { #克子的落败——隐藏事件
+	id = EOE_branch.63
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_country_flag = EOE_cthugha_country
+	}
+
+	immediate = {
+		from = { 
+			country_event = {
+				id = EOE_branch.55
+			}
+		}
+	}
+}
+
+planet_event = { #克子拆星弹窗1
+	id = EOE_branch.64
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_communications = event_target:EOE_cthugha_country
+			}
+			country_event = {
+				id = EOE_branch.65
+			}
+		}
+	}
+}
+
+country_event = { #克子拆星弹窗2
+	id = EOE_branch.65
+	title = EOE_branch.65.name
+	desc = EOE_branch.65.desc
+	picture = GFX_evt_EOE_The_Vermillion_Problem
+	show_sound = "event_red_alert"
+	location = from
+	is_triggered_only = yes
+	option = {
+		name = EOE_branch.65.a
+	}
+}
+
+country_event = { #克子拆星弹窗2
+	id = EOE_branch.65
+	title = EOE_branch.65.name
+	desc = EOE_branch.65.desc
+	picture = GFX_evt_EOE_The_Vermillion_Problem
+	show_sound = "event_red_alert"
+	location = from
+	is_triggered_only = yes
+	option = {
+		name = EOE_branch.65.a
+	}
+}
+
+
+country_event = {    #白龙领袖
+	id = EOE_branch.66
+	title = "EOE_branch.66.name"
+	desc = "EOE_branch.66.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "enclave_curator_window"
+	picture_event_data = {
+		portrait = EOEReshiram
+		room = ethic_spaceship_room
+	}
+	option = {
+		name = EOE_branch.66.a
+		response_text = EOE_branch.66.a.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = EOE_branch.66.c
+		response_text = EOE_branch.66.c.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = EOE_branch.66.b
+		hidden_effect ={
+			create_leader = {
+				class = admiral
+				species = owner_main_species
+				name = NAME_Bailong
+				skill = 10
+				traits = {
+					trait = "leader_trait_EOE_admiral_Bailong"
+				}
+				event_leader = yes	
+				leader_age_min = 1
+				leader_age_max = 1
+				effect = {
+					set_leader_flag = EOE_leader_Bailong
+				}				
+			}
+			last_created_leader = {
+				set_gender = female
+				change_leader_portrait = EOEReshiram
+				save_global_event_target_as = EOE_leader_Bailong
+			}
+			
+		}
+	}
+	
+}
+
+country_event = {    #白龙领袖复活
+	id = EOE_branch.67
+	title = "EOE_branch.67.name"
+	desc = "EOE_branch.67.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "enclave_curator_window"
+	trigger = {
+		prev.from = {has_leader_flag = EOE_leader_Bailong }
+	}
+	picture_event_data = {
+		portrait = EOEReshiram
+		room = ethic_spaceship_room
+	}
+	option = {
+		name = EOE_branch.67.a
+		hidden_effect ={
+			create_leader = {
+				class = admiral
+				species = owner_main_species
+				name = NAME_Bailong
+				skill = 10
+				traits = {
+					trait = "leader_trait_EOE_admiral_Bailong"
+				}
+				event_leader = yes	
+				leader_age_min = 1
+				leader_age_max = 1
+				effect = {
+					set_leader_flag = EOE_leader_Bailong
+				}				
+			}
+			last_created_leader = {
+				set_gender = female
+				change_leader_portrait = EOEReshiram
+				save_global_event_target_as = EOE_leader_Bailong
+			}
+			
+		}
+	}
+	
+}
+
+###########################################################################################################
+
+event = {  #见鬼——伊布专属事件
+	id = EOE_branch.100 #目前是中期触发
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		any_country = { has_country_flag = eoe_country }
+		NOT = { has_global_flag = EOE_ghost_started }
+	}
+	immediate = {
+		set_global_flag = EOE_ghost_started
+		random_country = {
+			limit = {
+				has_country_flag = eoe_country
+				is_ai = no
+				any_owned_planet = {
+					is_colony = yes
+					is_a_planet = yes
+				}
+			}
+			set_country_flag = EOE_ghost_started_1
+			random_owned_planet = {
+				limit = {
+					is_colony = yes
+					is_a_planet = yes
+				}
+				set_planet_flag = EOE_ghost_planet_1
+				save_global_event_target_as = EOE_ghost_planet
+				planet_event = {
+					id = EOE_branch.101
+				}
+			}
+		} 
+		if = { #捉鬼随机事件中判断机械爸爸
+			limit = { 
+				any_country = {
+					has_country_flag = fallen_machine_empire_awaken_1	
+				}
+			}
+			set_global_flag = EOE_good_machine_fallen_empire
+		}
+		else_if = {
+			limit = { 
+				any_country = {
+					has_country_flag = fallen_machine_empire_awaken_2
+				}
+			}
+			set_global_flag = EOE_bad_machine_fallen_empire
+		}
+		else = {
+			set_global_flag = EOE_no_machine_fallen_empire
+		}
+	}
+}
+
+planet_event = {
+	id = EOE_branch.101
+	title = "EOE_branch.101.name"	#鬼故事
+	desc = "EOE_branch.101.desc"	#鬼故事的开头，是一些传言。下一个事件才是总督报道人口失踪。
+	is_triggered_only = yes
+	picture = GFX_evt_smugglers_in_bar
+	show_sound = event_whispering
+	immediate = {
+		save_global_event_target_as = EOE_ghost_planet
+	}
+	option = {
+		name = EOE_branch.101.a	#持续观察
+		hidden_effect = {
+			planet_event = {
+				id = EOE_branch.102	days = 60
+			}
+		}
+	}
+	option = {
+		name = EOE_branch.101.b	#无稽之谈
+		hidden_effect = {
+			planet_event = {
+				id = EOE_branch.102	days = 60
+			}
+		}
+	}
+	# after = {
+	# 	hidden_effect = {
+	# 		planet_event = {
+	# 			id = EOE_branch.102	days = 60
+	# 		}
+	# 	}
+	# }
+}
+
+planet_event = {
+	id = EOE_branch.102
+	title = "EOE_branch.102.name"  #鬼故事
+	is_triggered_only = yes
+	picture = GFX_evt_unspeakable_horror
+	show_sound = event_mystic_reveal
+	desc = {
+		trigger = {
+			NOT = {has_planet_flag = EOE_has_seen_ghost_1}
+		}
+		text = "EOE_branch.102.desc.a"   #第一次听说有见鬼的事情，不太相信
+	}
+	desc = {
+		trigger = {
+			has_planet_flag = EOE_has_seen_ghost_1
+		}
+		text = "EOE_branch.102.desc.b"	#第二次来到这个界面(我们没有足够的证据证明鬼的存在，但是传言仍然存在）
+	} 
+	after = {
+		hidden_effect = {
+			if = {
+				limit = { NOT = {has_planet_flag = EOE_has_seen_ghost_1} }
+			}
+			add_modifier = {
+				modifier = EOE_modifier_ghost_story days = -1
+			}
+			set_planet_flag = EOE_has_seen_ghost_1
+			owner = {
+				begin_event_chain = {
+					event_chain = EOE_ghost_story_chain
+					target = root
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = EOE_has_research_story }
+			}
+		}
+		allow = {
+			owner = {
+				resource_stockpile_compare = { resource = energy value >= 1000 }
+			}
+		}
+		name = "EOE_branch.102.a"	#从鬼故事入手。
+		owner = {
+			enable_special_project = {
+				name = EOE_ghost_story
+				location = root
+				owner = this
+			}
+		}
+	}
+	option = {
+		trigger = {
+			owner = {
+				NOT = {has_country_flag = EOE_has_pop_stat}
+			}
+		}
+		allow = {
+			owner = {
+				resource_stockpile_compare = { resource = energy value >= 1000 }
+			}
+		}
+		name = "EOE_branch.102.b"	#从人口统计入手。
+		owner = {
+			enable_special_project = {
+				name = EOE_pop_stat
+				location = root
+				owner = this
+			}
+		}
+	}
+	option = {
+		trigger = {
+			owner = {
+				NOT = {has_country_flag = EOE_has_field_invs}
+			}
+		}
+		allow = {
+			owner = {
+				resource_stockpile_compare = { resource = energy value >= 1000 }
+			}
+		}
+		name = "EOE_branch.102.c"	#从实地考察入手。
+		owner = {
+			enable_special_project = {
+				name = EOE_field_invs
+				location = root
+				owner = this
+			}
+		}
+	}
+	option = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = EOE_psionic_evidence
+					AND = {
+						has_country_flag = EOE_story_search_successful
+						has_country_flag = EOE_pop_stat_successful
+					}
+				}
+			}
+		}
+		name = "EOE_branch.102.d"	#隐藏，问核子才知道。从灵能入手。
+		owner = {
+			enable_special_project = {
+				name = EOE_psionic_invs
+				location = root
+				owner = this
+			}
+			create_point_of_interest = {
+				id = EOE_psionic_trace
+				name = "EOE_psoinic_trace.name"
+				event_chain = EOE_ghost_story_chain
+				location = event_target:EOE_ghost_planet
+			}
+		}
+	}
+	# option = { #这个选项看着没用，不要也罢
+	# 	name = "EOE_branch.102.e"	#查看现有信息。
+	# }
+
+	option = {
+		trigger = {
+			owner = {
+				OR = {
+					AND = {
+						has_country_flag = EOE_pop_stat_successful
+						has_country_flag = EOE_story_search_fail
+					}
+					AND = {
+						has_country_flag = EOE_pop_stat_fail
+						has_country_flag = EOE_story_search_fail
+					}	
+					AND = {
+						has_country_flag = EOE_pop_stat_fail
+						has_country_flag = EOE_story_search_successful
+					}	
+				}
+			}
+		}
+		name = "EOE_branch.102.h"	#123全都失败。小规模调查行不通，集全国之力对此事件进行调查
+		owner = {
+			enable_special_project = {
+				name = EOE_large_invs
+				location = root
+				owner = this
+			}
+		}
+	}
+
+}
+
+ship_event = {	#鬼故事调查——成功判断
+	id = EOE_branch.103
+	hide_window = yes	
+	is_triggered_only = yes
+	immediate = {
+		owner = {
+			set_country_flag = EOE_has_research_story
+		}
+		if = {
+			limit = {
+				leader = {
+					has_leader_flag = EOE_leader_hezi
+				}
+			}
+			random_list = {
+				40 = {
+					ship_event = {
+						id = EOE_branch.105
+					}
+				}
+				40 = {
+					ship_event = {
+						id = EOE_branch.106
+					}
+				}
+				20 = {
+					ship_event = {
+						id = EOE_branch.107
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				leader = {
+					OR = {
+						has_leader_flag = EOE_leader_elena
+						has_leader_flag = EOE_leader_okra
+						has_trait = leader_trait_curator
+						has_skill = 6
+					}	
+				}
+			}
+			random_list = {
+				25 = {
+					ship_event = {
+						id = EOE_branch.104
+					}
+				}
+				50 = {
+					ship_event = {
+						id = EOE_branch.105
+					}
+				}
+				25 = {
+					ship_event = {
+						id = EOE_branch.106
+					}
+				}
+			}
+		}
+		else = {
+			random_list = {
+				50 = {
+					ship_event = {
+						id = EOE_branch.104
+					}
+				}
+				45 = {
+					ship_event = {
+						id = EOE_branch.105
+					}
+				}
+				5 = {
+					ship_event = {
+						id = EOE_branch.106
+					}
+				}
+			}
+		}
+	}
+}
+
+ship_event = {	#鬼故事调查——失败
+	id = EOE_branch.104
+	title = "EOE_branch.104.name"
+	desc = "EOE_branch.104.desc"
+	picture = GFX_evt_colony_settlement
+	show_sound = event_scanner
+	is_triggered_only = yes
+	option = {
+		name = "EOE_branch.104.a"
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_story_search_fail
+			}
+			event_target:EOE_ghost_planet = {
+				planet_event = {
+					id = EOE_branch.102 days = 60
+				}
+			}
+		}
+	}
+}
+
+ship_event = {	#鬼故事调查——成功
+	id = EOE_branch.105
+	title = "EOE_branch.105.name"
+	desc = "EOE_branch.105.desc" #找到了一些线索
+	picture = GFX_evt_colony_settlement
+	show_sound = event_whispering
+	is_triggered_only = yes
+	immediate = {
+		owner = {
+			set_country_flag = EOE_story_search_successful
+		}
+		event_target:EOE_ghost_planet = {
+			planet_event = {
+				id = EOE_branch.102 
+			}
+		}
+	}
+}
+
+ship_event = {	#鬼故事调查——大成功
+	id = EOE_branch.106
+	title = "EOE_branch.106.name"
+	desc = "EOE_branch.106.desc"
+	picture = GFX_evt_EOE_factory_ruin
+	show_sound = event_ghost_town
+	is_triggered_only = yes
+	option = {
+		name = OK
+		ship_event = {
+			id = EOE_branch.116
+		}
+		owner = {
+			create_point_of_interest = {
+				id = EOE_factory_ruin
+				name = "EOE_factory_ruin.name"
+				event_chain = EOE_ghost_story_chain
+				location = event_target:EOE_ghost_planet
+			}
+			set_country_flag = EOE_find_factory
+		}
+
+	}
+	# after = {
+	# 	ship_event = {
+	# 		id = EOE_branch.116
+	# 	}
+	# 	owner = {
+	# 		create_point_of_interest = {
+	# 			id = EOE_factory_ruin
+	# 			name = "EOE_factory_ruin.name"
+	# 			event_chain = EOE_ghost_story_chain
+	# 			location = event_target:EOE_ghost_planet
+	# 		}
+	# 		set_country_flag = EOE_find_factory
+	# 	}
+	# }
+}
+
+ship_event = {	#鬼故事调查——大大成功，不仅见了，还当场抓一只
+	id = EOE_branch.107
+	title = "EOE_branch.107.name"
+	desc = "EOE_branch.107.desc"
+	picture = GFX_evt_EOE_factory_ruin
+	show_sound = event_ghost_town
+	is_triggered_only = yes
+	option = {
+		name = OK
+		owner = {
+			create_point_of_interest = {
+				id = EOE_factory_ruin
+				name = "EOE_factory_ruin.name"
+				event_chain = EOE_ghost_story_chain
+				location = event_target:EOE_ghost_planet
+			}
+			set_country_flag = EOE_find_factory
+		}
+		event_target:EOE_ghost_planet = {
+			planet_event = {
+				id = EOE_branch.125
+			}
+		}
+
+	}
+	# after = {
+	# 	owner = {
+	# 		create_point_of_interest = {
+	# 			id = EOE_factory_ruin
+	# 			name = "EOE_factory_ruin.name"
+	# 			event_chain = EOE_ghost_story_chain
+	# 			location = event_target:EOE_ghost_planet
+	# 		}
+	# 		set_country_flag = EOE_find_factory
+	# 	}
+	# 	event_target:EOE_ghost_planet = {
+	# 		planet_event = {
+	# 			id = EOE_branch.125
+	# 		}
+	# 	}
+	# }
+}
+
+ship_event = {	#人口统计——成功判断
+	id = EOE_branch.108
+	hide_window = yes	
+	is_triggered_only = yes
+	immediate = {
+		owner = {
+			set_country_flag = EOE_has_pop_stat
+		}
+		if = {
+			limit = {
+				leader = {
+					OR = {
+						has_leader_flag = EOE_leader_hezi
+						has_leader_flag = EOE_leader_elena
+						has_leader_flag = EOE_leader_okra
+						has_trait = leader_trait_curator
+						has_skill = 6
+					}	
+				}
+			}
+			random_list = {
+				25 = {
+					ship_event = {
+						id = EOE_branch.109
+					}
+				}
+				50 = {
+					ship_event = {
+						id = EOE_branch.110
+					}
+				}
+				25 = {
+					ship_event = {
+						id = EOE_branch.111
+					}
+				}
+			}
+		}
+		else = {
+			random_list = {
+				50 = {
+					ship_event = {
+						id = EOE_branch.109
+					}
+				}
+				45 = {
+					ship_event = {
+						id = EOE_branch.110
+					}
+				}
+				5 = {
+					ship_event = {
+						id = EOE_branch.111
+					}
+				}
+			}
+		}
+	}
+}
+
+ship_event = {	#人口统计——失败
+	id = EOE_branch.109
+	title = "EOE_branch.109.name"
+	desc = "EOE_branch.109.desc"
+	picture = GFX_evt_colony_settlement
+	show_sound = event_scanner
+	is_triggered_only = yes
+	option = {
+		name = "EOE_branch.104.a"
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_pop_stat_fail
+			}
+			event_target:EOE_ghost_planet = {
+				planet_event = {
+					id = EOE_branch.102 days = 60
+				}
+			}
+		}
+	}
+}
+
+ship_event = {	#人口统计——成功
+	id = EOE_branch.110
+	title = "EOE_branch.110.name"
+	desc = "EOE_branch.110.desc" #找到了一些线索，注意到失踪人口其实都去过某一个特定地区
+	picture = GFX_evt_colony_settlement
+	show_sound = event_whispering
+	is_triggered_only = yes
+	immediate = {
+		owner = {
+			set_country_flag = EOE_pop_stat_successful
+		}
+		event_target:EOE_ghost_planet = {
+			planet_event = {
+				id = EOE_branch.102 
+			}
+		}
+	}
+}
+
+ship_event = {	#人口统计——大成功，注意到不仅他们都去过某特定地区，还注意到，没有任何小伊布和月伊布失踪。
+	id = EOE_branch.111
+	title = "EOE_branch.111.name"
+	desc = "EOE_branch.111.desc"
+	picture = GFX_evt_EOE_factory_ruin
+	show_sound = event_ghost_town
+	is_triggered_only = yes
+	option = {
+		name = OK
+		ship_event = {
+			id = EOE_branch.116
+		}
+		owner = {
+			create_point_of_interest = {
+				id = EOE_factory_ruin
+				name = "EOE_factory_ruin.name"
+				event_chain = EOE_ghost_story_chain
+				location = event_target:EOE_ghost_planet
+			}
+			set_country_flag = EOE_find_factory
+		}
+		
+	}
+	# after = {
+	# 	ship_event = {
+	# 		id = EOE_branch.116
+	# 	}
+	# 	owner = {
+	# 		create_point_of_interest = {
+	# 			id = EOE_factory_ruin
+	# 			name = "EOE_factory_ruin.name"
+	# 			event_chain = EOE_ghost_story_chain
+	# 			location = event_target:EOE_ghost_planet
+	# 		}
+	# 		set_country_flag = EOE_find_factory
+	# 	}
+	# }
+}
+
+ship_event = {	#实地考察——成功判断
+	id = EOE_branch.112
+	hide_window = yes	
+	is_triggered_only = yes
+	immediate = {
+		owner = {
+			set_country_flag = EOE_has_field_invs
+		}
+		if = {
+			limit = {
+				leader = {
+					OR = {
+						has_leader_flag = EOE_leader_hezi
+						has_leader_flag = EOE_leader_elena
+						has_leader_flag = EOE_leader_okra
+						has_trait = leader_trait_curator
+						has_skill = 6
+					}	
+				}
+			}
+			random_list = {
+				50 = {
+					ship_event = {
+						id = EOE_branch.113
+					}
+				}
+				50 = {
+					ship_event = {
+						id = EOE_branch.114
+					}
+				}
+			}
+		}
+		else = {
+			random_list = {
+				75 = {
+					ship_event = {
+						id = EOE_branch.113
+					}
+				}
+				25 = {
+					ship_event = {
+						id = EOE_branch.114
+					}
+				}
+			}
+		}
+	}
+}
+
+ship_event = {	#实地考察——失败，没有找到特别的痕迹
+	id = EOE_branch.113
+	title = "EOE_branch.113.name"
+	desc = "EOE_branch.113.desc"
+	picture = GFX_evt_colony_settlement
+	show_sound = event_scanner
+	is_triggered_only = yes
+	option = {
+		name = "EOE_branch.104.a"
+		hidden_effect = {
+			owner = {
+				set_country_flag = EOE_field_invs_fail
+			}
+			event_target:EOE_ghost_planet = {
+				planet_event = {
+					id = EOE_branch.102 days = 60
+				}
+			}
+		}
+	}
+}
+
+ship_event = {	#实地考察——成功，找到灵能波动的痕迹
+	id = EOE_branch.114
+	title = "EOE_branch.114.name"
+	desc = "EOE_branch.114.desc"
+	picture = GFX_evt_colony_settlement
+	show_sound = event_mystic_reveal
+	is_triggered_only = yes
+	immediate = {
+		owner = {
+			set_country_flag = EOE_field_invs_successful
+			set_country_flag = EOE_psionic_evidence
+		}
+		event_target:EOE_ghost_planet = {
+			planet_event = {
+				id = EOE_branch.102
+			}
+		}
+	}
+}
+
+ship_event = {	#灵能调查——必然成功
+	id = EOE_branch.115
+	title = "EOE_branch.115.name"
+	desc = "EOE_branch.115.desc"
+	picture = "GFX_evt_EOE_factory_ruin"
+	show_sound = "event_mystic_reveal"
+	is_triggered_only = yes
+	option = {
+		name = EOE_branch.115.a
+		ship_event = {
+			id = EOE_branch.116
+		}
+		owner = {
+			create_point_of_interest = {
+				id = EOE_factory_ruin
+				name = "EOE_factory_ruin.name"
+				event_chain = EOE_ghost_story_chain
+				location = event_target:EOE_ghost_planet
+			}
+			set_country_flag = EOE_find_factory
+		}
+	}
+}
+ship_event = {	#大规模调查——必然成功
+	id = EOE_branch.142
+	title = "EOE_branch.142.name"
+	desc = "EOE_branch.142.desc"
+	picture = "GFX_evt_EOE_factory_ruin"
+	show_sound = "event_mystic_reveal"
+	is_triggered_only = yes
+	option = {
+		name = EOE_branch.115.a
+		ship_event = {
+			id = EOE_branch.116
+		}
+		owner = {
+			create_point_of_interest = {
+				id = EOE_factory_ruin
+				name = "EOE_factory_ruin.name"
+				event_chain = EOE_ghost_story_chain
+				location = event_target:EOE_ghost_planet
+			}
+			set_country_flag = EOE_find_factory
+		}
+	}
+}
+
+ship_event = {	#发现废弃工厂
+	id = EOE_branch.116
+	title = "EOE_branch.116.name" #废弃工厂
+	desc = "EOE_branch.116.desc" #在废弃工厂当中发现了灵能信号。
+	picture = "GFX_evt_EOE_factory_ruin" #需要使用灵能（jing）束缚（ling）装置（qiu）尝试抓鬼。
+	show_sound = "event_ghost_town" 
+	is_triggered_only = yes
+	immediate = {
+		event_target:EOE_ghost_planet = {
+			set_variable = {
+				which = EOE_times_ghost_1
+				value = 0
+			}
+		}
+	}
+	option = {
+		name = OK
+		hidden_effect = {
+			event_target:EOE_ghost_planet = {
+				planet_event = {
+					id = EOE_branch.117
+				}
+			}
+		}
+	}
+	# after = {
+	# 	hidden_effect = {
+	# 		event_target:EOE_ghost_planet = {
+	# 			planet_event = {
+	# 				id = EOE_branch.117
+	# 			}
+	# 		}
+	# 	}
+	# }
+}
+
+planet_event = {  #发现废弃工厂
+	id = EOE_branch.117
+	title = "EOE_branch.116.name" #废弃工厂
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_times_ghost_1
+				value = 0
+			}
+		}
+		text = "EOE_branch.117.desc.a" #在废弃工厂当中发现了传送门。似乎是未拆除仪器意外创造的。
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = EOE_times_ghost_1
+				value > 0
+			}
+		}
+		text = "EOE_branch.117.desc.b" #重新进行一次捕获。
+	}
+	picture = "GFX_evt_EOE_factory_ruin" #需要使用灵能（jing）束缚（ling）装置（qiu）尝试抓鬼。
+	is_triggered_only = yes
+	immediate = {
+		owner = {
+			set_country_flag = EOE_find_portal
+		}
+	}
+	option = { #精灵球级 1/3成功 1/4完好 
+		name = EOE_branch.116.a #使用红白装置
+		custom_tooltip = EOE_branch.116.a.tooltip #小概率……以下依次类推
+		
+		hidden_effect = {
+			change_variable = {
+				which = EOE_times_ghost_1
+				value = 1
+			}
+			planet_event = {
+				id = EOE_branch.118 days = 180
+			}
+		}
+	}
+	option = { #超级球级 2/3成功 1/2完好
+		name = EOE_branch.116.b #使用红蓝装置
+		custom_tooltip = EOE_branch.116.b.tooltip
+		allow = {
+			owner = {
+				resource_stockpile_compare = { resource = energy value >= 1000 }
+				has_technology = EOE_afferent_nerve_stimulation
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -1000
+			}
+		}
+		
+		hidden_effect = {
+			change_variable = {
+				which = EOE_times_ghost_1
+				value = 1
+			}
+			planet_event = {
+				id = EOE_branch.119 days = 180
+			}
+		}
+	}
+	option = { #高级球级 必成功 3/4完好
+		name = EOE_branch.116.c #使用黄黑装置
+		custom_tooltip = EOE_branch.116.c.tooltip
+		allow = {
+			owner = {
+				resource_stockpile_compare = { resource = energy value >= 3000 }
+				has_technology = EOE_dopamine_stimulation
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -3000
+			}
+		}
+		
+		hidden_effect = {
+			change_variable = {
+				which = EOE_times_ghost_1
+				value = 1
+			}
+			planet_event = {
+				id = EOE_branch.120 days = 180
+			}
+		}
+	}
+	option = { #大师球级 必成功 必完好
+		name = EOE_branch.116.d #使用紫白装置
+		custom_tooltip = EOE_branch.116.d.tooltip
+		allow = {
+			owner = {
+				resource_stockpile_compare = { resource = energy value >= 5000 }
+				has_technology = EOE_virtual_paradise
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -5000
+			}
+		}
+		
+		hidden_effect = {
+			change_variable = {
+				which = EOE_times_ghost_1
+				value = 1
+			}
+			planet_event = {
+				id = EOE_branch.125 days = 180
+			}
+		}
+	}
+	option = { #放弃捕捉，关闭传送门
+		name = EOE_branch.116.e
+		trigger = {
+			check_variable = {
+				which = EOE_times_ghost_1
+				value >= 1
+			}
+		}
+		hidden_effect = {
+			planet_event = {
+				id = EOE_branch.123 days = 180
+			}
+		}
+	}
+}
+
+planet_event = { #精灵球级
+	id = EOE_branch.118
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		random_list = {
+			1 = { #成功
+				random_list = {
+					1 = { #完整
+						planet_event = {
+							id = EOE_branch.125
+						}
+					} 
+					3 = {
+						planet_event = {
+							id = EOE_branch.124
+						}
+					}
+				}
+			}
+			2 = {
+				planet_event = {
+					id = EOE_branch.122
+				}
+			}
+		}
+	}
+}
+planet_event = { #超级球级
+	id = EOE_branch.119
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		random_list = {
+			2 = { #成功
+				random_list = {
+					1 = { #完整
+						planet_event = {
+							id = EOE_branch.125
+						}
+					} 
+					1 = {
+						planet_event = {
+							id = EOE_branch.124
+						}
+					}
+				}
+			}
+			1 = {
+				planet_event = {
+					id = EOE_branch.122
+				}
+			}
+		}
+	}
+}
+planet_event = { #高级球级
+	id = EOE_branch.120
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		random_list = {
+			1 = { #成功
+				random_list = {
+					3 = { #完整
+						planet_event = {
+							id = EOE_branch.125
+						}
+					} 
+					1 = {
+						planet_event = {
+							id = EOE_branch.124
+						}
+					}
+				}
+			}
+		}
+	}
+}
+planet_event = { #捕捉失败
+	id = EOE_branch.122
+	is_triggered_only = yes
+	title = EOE.branch.122.name
+	desc = EOE.branch.122.desc.a #直接跑了 传送门变得更加不稳定
+	desc = EOE.branch.122.desc.b #球形收容器晃了一下跑了 传送门变得更加不稳定
+	desc = EOE.branch.122.desc.c #晃两下跑了 传送门变得更加不稳定
+	picture = GFX_evt_physics_research
+	show_sound = event_scanner
+	option = {
+		name = EOE_branch.122.a #传送门还在等着我们
+		trigger = {
+			check_variable = {
+				which = EOE_times_ghost_1
+				value < 3
+			}
+		}
+		planet_event = {
+			id = EOE_branch.117
+		}
+	}
+	option = {
+		name = EOE_branch.122.a #传送门还在等着我们
+		trigger = {
+			check_variable = {
+				which = EOE_times_ghost_1
+				value >= 3
+			}
+		}
+		planet_event = {
+			id = EOE_branch.121
+		}
+	}
+}
+planet_event = { #失败三次，传送门爆了
+	id = EOE_branch.121
+	is_triggered_only = yes
+	title = "EOE_branch.121.name"
+	desc = "EOE_branch.121.desc" #爆炸，抢救回了资源，有泽洛和暗物质，留下灵能痕迹星球物理+5%
+	picture = GFX_evt_exploding_ship 
+	show_sound = event_super_explosion
+	option = {
+		name = OK
+		add_deposit = d_EOE_ghost_trace
+		owner = {
+			add_resource = {
+				sr_zro = 1000
+				sr_dark_matter = 100
+			}
+		}
+		remove_modifier = EOE_modifier_ghost_story
+		owner = {
+			end_event_chain = EOE_ghost_story_chain
+			remove_global_flag = EOE_ghost_started
+			clear_global_event_target = EOE_ghost_planet
+			set_country_flag = EOE_portal_exploded
+		}
+	}
+}
+planet_event = { #传送门消失
+	id = EOE_branch.123
+	is_triggered_only = yes
+	title = "EOE_branch.123.name"
+	desc = "EOE_branch.123.desc" #没有彻底研究，传送门爆了，同上
+	picture = GFX_evt_exploding_ship 
+	show_sound = event_super_explosion
+	option = {
+		name = OK
+		add_deposit = d_EOE_ghost_trace
+		remove_modifier = EOE_modifier_ghost_story
+		owner = {
+			end_event_chain = EOE_ghost_story_chain
+			remove_global_flag = EOE_ghost_started
+			clear_global_event_target = EOE_ghost_planet
+			set_country_flag = EOE_portal_exploded
+		}
+	}
+}
+planet_event = { #破鬼
+	id = EOE_branch.124
+	is_triggered_only = yes
+	title = "EOE_branch.124.name"
+	desc = "EOE_branch.124.desc" #成功抓到了一个灵能实体，但是抓捕过程中不慎破坏一部分
+	picture = GFX_evt_EOE_the_ghost
+	show_sound = event_default_04
+	option = {
+		name = EOE_branch.124.a
+		owner = {
+			create_point_of_interest = {
+				id = EOE_broken_ghost
+				name = EOE_broken_ghost.name
+				event_chain = EOE_ghost_story_chain
+				location = root
+			}
+			enable_special_project = {
+				name = EOE_ghost_research
+				location = root
+				owner = this
+			}
+		}
+	}
+	
+}
+planet_event = { #完整鬼
+	id = EOE_branch.125
+	is_triggered_only = yes
+	title = "EOE_branch.125.name"
+	desc = "EOE_branch.125.desc"  #成功抓到了一个灵能实体
+	picture = GFX_evt_EOE_the_ghost
+	show_sound = event_default_04
+	option = {
+		name = EOE_branch.125.a
+		owner = {
+			create_point_of_interest = {
+				id = EOE_compelete_ghost
+				name = EOE_compelete_ghost.name
+				event_chain = EOE_ghost_story_chain
+				location = root
+			}
+			enable_special_project = {
+				name = EOE_compelete_ghost_research
+				location = root
+				owner = this
+			}
+		}
+	}
+}
+planet_event = { #研究完成
+	id = EOE_branch.126
+	is_triggered_only = yes
+	title = "EOE_branch.126.name"
+	desc = "EOE_branch.126.desc"  #完成了对于灵能实体和传送门的研究，现在可以安全关闭之
+	picture = GFX_evt_wormhole
+	show_sound = event_mystic_reveal_02
+	option = {
+		name = EOE_branch.126.a #安全关闭传送门
+		owner = {
+			enable_special_project = {
+				name = EOE_close_portal
+				location = root
+				owner = this
+			}
+		}
+	}
+	option = {
+		name = EOE_branch.126.b
+		custom_tooltip = EOE_branch.126.b.tooltip #谁知道会发生什么呢？
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value > 1000
+				}
+			}	
+		}
+		owner = {
+			add_resource = {
+				energy = -1000
+			}
+			create_point_of_interest = {
+				id = EOE_open_portal
+				name = EOE_open_portal.name
+				event_chain = EOE_ghost_story_chain
+				location = root
+			}
+			enable_special_project = {
+				name = EOE_open_portal
+				location = root
+				owner = this
+			}
+		}
+	}
+}
+planet_event = { #关闭传送门
+	id = EOE_branch.127
+	is_triggered_only = yes
+	title = "EOE_branch.127.name"
+	desc = "EOE_branch.127.desc"  #安全关闭传送门，不再有鬼出没，回收了有用资源
+	picture = GFX_evt_physics_research
+	show_sound = event_power_down
+
+	option = {
+		name = OK
+		owner = {
+			add_tech_option_or_research_effect = {
+				TECH = tech_jump_drive_1
+				PROGRESS = 0.05
+				CATEGORY = physics_research
+			}
+			add_resource = {
+				energy = 1000
+				sr_zro = 1000
+				sr_dark_matter = 100
+			}
+			end_event_chain = EOE_ghost_story_chain
+			remove_global_flag = EOE_ghost_started
+			clear_global_event_target = EOE_ghost_planet
+			set_country_flag = EOE_portal_closed_hezi
+			random_owned_planet = {
+				limit = {
+					has_planet_flag = EOE_ghost_planet_1
+				}
+				remove_modifier = EOE_modifier_ghost_story
+			}
+		}
+	}
+}
+planet_event = { #传送门大开！
+	id = EOE_branch.128
+	is_triggered_only = yes
+	title = "EOE_branch.128.name"
+	desc = "EOE_branch.128.desc"  #大开传送门，可以进入
+	picture = GFX_evt_vortex
+	show_sound = event_begin_expedition
+	option = {
+		name = OK
+		owner = {
+			create_point_of_interest = {
+				id = EOE_enter_portal
+				name = EOE_enter_portal.name
+				event_chain = EOE_ghost_story_chain
+				location = root
+			}
+			enable_special_project = {
+				name = EOE_enter_portal_1
+				location = root
+				owner = this
+			}
+			set_country_flag = EOE_portal_opened_hezi
+		}
+	}
+}
+ship_event = { #第一次调查，分支
+	id = EOE_branch.129
+	is_triggered_only = yes
+	title = EOE_branch.129.name #虚境
+	desc = EOE_branch.129.desc
+	picture = GFX_evt_shrouded_planet
+	show_sound = event_mystic_reveal_light
+	option = {
+		name = OK
+		ship_event = {
+			id = EOE_branch.131
+		}
+		# hidden_effect = {
+		# 	if = {
+		# 		limit = {
+		# 			is_hezi_in_shroud = yes
+		# 			owner = {
+		# 				has_country_flag = EOE_mothergone
+		# 			}
+		# 		}
+		# 		owner = {
+		# 			set_country_flag = EOE_saw_mother
+		# 		}
+		# 		ship_event = {
+		# 			id = EOE_branch.130
+		# 		}
+		# 	}
+		# 	else = {
+		# 		ship_event = {
+		# 			id = EOE_branch.131
+		# 		}
+		# 	}
+		# }
+	}
+}
+ship_event = { #核子第一次
+	id = EOE_branch.130
+	is_triggered_only = yes
+	title = EOE_branch.130.name
+	desc = EOE_branch.130.desc
+	picture = GFX_evt_EOE_shrouded_planet_mother
+	show_sound = event_whispering_01
+	option = {
+		name = EOE_branch.126.a #安全关闭传送门
+		owner = {
+			enable_special_project = {
+				name = EOE_close_portal
+				location = event_target:EOE_ghost_planet
+				owner = this
+			}
+		}
+	}
+	option = {
+		name = EOE_branch.130.b
+		custom_tooltip = EOE_branch.130.b.tooltip #继续使用传送门
+		owner = {
+			enable_special_project = {
+				name = EOE_enter_portal_2
+				location = event_target:EOE_ghost_planet
+				owner = this
+			}
+		}
+	}
+}
+ship_event = { #其他第一次
+	id = EOE_branch.131
+	is_triggered_only = yes
+	title = EOE_branch.131.name
+	desc = EOE_branch.131.desc
+	picture = GFX_evt_EOE_the_ghost
+	show_sound = event_mystic_reveal
+	immediate = {
+
+		event_target:EOE_ghost_planet = {
+			create_army = {
+				name = "NAME_Avatar"
+				owner = root.owner
+				type = "EOE_shroud_army"
+			}
+		}
+	}
+	option = {
+		name = EOE_branch.126.a #差不多得了，安全关闭传送门
+		
+		owner = {
+			enable_special_project = {
+				name = EOE_close_portal
+				location = event_target:EOE_ghost_planet
+				owner = this
+			}
+		}
+	}
+	option = {
+		name = EOE_branch.130.b
+		custom_tooltip = EOE_branch.130.b.tooltip #继续使用传送门
+		owner = {
+			enable_special_project = {
+				name = EOE_enter_portal_2
+				location = event_target:EOE_ghost_planet
+				owner = this
+			}
+		}
+	}
+} 
+ship_event = { #核子第三次，还没写完，后面插入光锥边缘事件
+	id = EOE_branch.132
+	is_triggered_only = yes
+	title = EOE_branch.132.name
+	desc = EOE_branch.132.desc
+}
+ship_event = { #其他第三次，正常抓个鬼
+	id = EOE_branch.133
+	is_triggered_only = yes
+	title = EOE_branch.133.name
+	desc = EOE_branch.133.desc
+	picture = GFX_evt_EOE_the_ghost
+	show_sound = event_mystic_reveal
+	option = {
+		name = EOE_branch.126.a #差不多得了，安全关闭传送门
+		owner = {
+			enable_special_project = {
+				name = EOE_close_portal
+				location = event_target:EOE_ghost_planet
+				owner = this
+			}
+		}
+	}
+	option = {
+		name = EOE_branch.130.b
+		custom_tooltip = EOE_branch.130.b.tooltip #继续使用传送门
+		owner = {
+			enable_special_project = {
+				name = EOE_enter_portal_4
+				location = event_target:EOE_ghost_planet
+				owner = this
+			}
+		}
+	}
+} 
+ship_event = { #第二次的随机，结尾事件
+	id = EOE_branch.134
+	is_triggered_only = yes
+	title = EOE_branch.134.name #探索完成
+	desc = EOE_branch.134.desc #可以选择关门或继续
+	picture = GFX_evt_physics_research
+	show_sound = event_mystic_reveal
+	option = {
+		name = EOE_branch.126.a #差不多得了，安全关闭传送门
+		owner = {
+			enable_special_project = {
+				name = EOE_close_portal
+				location = event_target:EOE_ghost_planet
+				owner = this
+			}
+		}
+	}
+	option = {
+		name = EOE_branch.130.b
+		custom_tooltip = EOE_branch.130.b.tooltip #继续使用传送门
+		owner = {
+			enable_special_project = {
+				name = EOE_enter_portal_3
+				location = event_target:EOE_ghost_planet
+				owner = this
+			}
+		}
+	}
+} 
+ship_event = { #第三次调查，分支
+	id = EOE_branch.135
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		owner = {
+			NOT = {
+				has_country_flag = EOE_has_com_with_sei
+			}
+		}
+	}
+	immediate = {
+		ship_event = {
+			id = EOE_branch.133
+		}
+		# hidden_effect = {
+		# 	if = {
+		# 		limit = {
+		# 			is_hezi_in_shroud = yes
+		# 			owner = {
+		# 				has_country_flag = EOE_mothergone
+		# 				has_country_flag = EOE_saw_mother
+		# 			}
+		# 		}
+		# 		ship_event = {
+		# 			id = EOE_branch.132
+		# 		}
+		# 	}
+		# 	else = {
+		# 		ship_event = {
+		# 			id = EOE_branch.133
+		# 		}
+		# 	}
+		# }
+	}
+}
+ship_event = { #第四次的随机，结尾事件
+	id = EOE_branch.136
+	is_triggered_only = yes
+	title = EOE_branch.134.name #探索完成
+	desc = EOE_branch.134.desc #可以选择关门或继续
+	picture = GFX_evt_physics_research
+	show_sound = event_mystic_reveal
+	trigger = {
+		owner = {
+			NOT = {
+				has_country_flag = EOE_has_com_with_sei
+			}
+		}
+	}
+	option = {
+		name = EOE_branch.126.a #差不多得了，安全关闭传送门
+		owner = {
+			enable_special_project = {
+				name = EOE_close_portal
+				location = event_target:EOE_ghost_planet
+				owner = this
+			}
+		}
+	}
+	option = {
+		name = EOE_branch.130.b
+		custom_tooltip = EOE_branch.130.b.tooltip #继续使用传送门
+		owner = {
+			enable_special_project = {
+				name = EOE_enter_portal_5
+				location = event_target:EOE_ghost_planet
+				owner = this
+			}
+		}
+	}
+} 
+ship_event = { #第五次的随机，结尾事件
+	id = EOE_branch.137
+	is_triggered_only = yes
+	title = EOE_branch.134.name #探索完成
+	desc = EOE_branch.134.desc #可以选择关门或继续
+	picture = GFX_evt_physics_research
+	show_sound = event_mystic_reveal
+	trigger = {
+		owner = {
+			NOT = {
+				has_country_flag = EOE_has_com_with_sei
+			}
+		}
+	}
+	option = {
+		name = EOE_branch.126.a #差不多得了，安全关闭传送门
+		owner = {
+			enable_special_project = {
+				name = EOE_close_portal
+				location = event_target:EOE_ghost_planet
+				owner = this
+			}
+		}
+	}
+	option = {
+		name = EOE_branch.130.b
+		custom_tooltip = EOE_branch.130.b.tooltip #继续使用传送门
+		owner = {
+			enable_special_project = {
+				name = EOE_enter_portal_6
+				location = event_target:EOE_ghost_planet
+				owner = this
+			}
+		}
+	}
+} 
+ship_event = { #第六次的随机，结尾事件
+	id = EOE_branch.138
+	is_triggered_only = yes
+	title = EOE_branch.138.name #探索完成
+	desc = EOE_branch.138.desc #炸了
+	picture = GFX_evt_exploding_ship 
+	show_sound = event_super_explosion
+	trigger = {
+		owner = {
+			NOT = {
+				has_country_flag = EOE_has_com_with_sei
+			}
+		}
+	}
+	option = {
+		name = OK
+		event_target:EOE_cthugha_planet ={
+			add_deposit = d_EOE_ghost_trace
+			remove_modifier = EOE_modifier_ghost_story
+		}
+		owner = {
+			add_resource = {
+				sr_zro = 1000
+				sr_dark_matter = 100
+			}
+		}
+		
+		owner = {
+			end_event_chain = EOE_ghost_story_chain
+			remove_global_flag = EOE_ghost_started
+			clear_global_event_target = EOE_ghost_planet
+			set_country_flag = EOE_portal_exploded_finally
+		}
+	}
+} 
+
+ship_event = { #第四次随机时收钱
+	id = EOE_branch.143
+	is_triggered_only = yes
+	title = EOE_branch.143.name 
+	desc = EOE_branch.143.desc 
+	picture = GFX_evt_physics_research
+	trigger = {
+		owner = {
+			NOT = {
+				has_country_flag = EOE_has_com_with_sei
+			}
+		}
+	}
+	option = {
+		name = EOE_branch.143.a #提供维护费
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = alloys
+					value >= 4096
+				}
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 4096
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -4096
+				alloys = -4096
+			}
+		}
+	}
+	option = { 
+		name = EOE_branch.143.b #暂停项目
+		hidden_effect = {
+			unassign_leader = root.leader
+		}
+	}
+} 
+ship_event = { #第五次随机时收钱
+	id = EOE_branch.144
+	is_triggered_only = yes
+	title = EOE_branch.144.name 
+	desc = EOE_branch.144.desc #快支持不住传送门了
+	picture = GFX_evt_physics_research
+	trigger = {
+		owner = {
+			NOT = {
+				has_country_flag = EOE_has_com_with_sei
+			}
+		}
+	}
+	option = {
+		name = EOE_branch.143.a #提供维护费
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = alloys
+					value >= 16384
+				}
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 16384
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -16384
+				alloys = -16384
+			}
+		}
+	}
+	option = { 
+		name = EOE_branch.143.b #暂停项目
+		hidden_effect = {
+			unassign_leader = root.leader
+		}
+	}
+} 
+ship_event = { #第六次随机时收钱
+	id = EOE_branch.145
+	is_triggered_only = yes
+	title = EOE_branch.145.name 
+	desc = EOE_branch.145.desc #传送门快无了，最后勉强顶一下
+	picture = GFX_evt_physics_research
+	trigger = {
+		owner = {
+			NOT = {
+				has_country_flag = EOE_has_com_with_sei
+			}
+		}
+	}
+	option = {
+		name = EOE_branch.143.a #提供维护费
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = alloys
+					value >= 16384
+				}
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 16384
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -16384
+				alloys = -16384
+			}
+		}
+	}
+	option = { 
+		name = EOE_branch.143.b #暂停项目
+		hidden_effect = {
+			unassign_leader = root.leader
+		}
+	}
+} 
+
+#############################
+#Z晶和究极空间
+country_event = {  
+	id = EOE_branch.146
+	is_triggered_only = yes
+	title = EOE_branch.146.name
+	desc = EOE_branch.146.desc #调查到了研究Z晶的gf研究所位置
+	picture = GFX_evt_alien_ruins
+	show_sound = event_default_04
+	fire_only_once = yes
+	option = {
+		name = "EOE_branch.146.a" #立即着手调查
+		hidden_effect = {
+			random_planet_within_border = {
+				limit = {
+					is_colony = no
+					has_anomaly = no
+					OR = {
+						is_planet_class = pc_barren
+						is_planet_class = pc_barren_cold
+						is_planet_class = pc_frozen 
+					}
+					NOT = { exists = archaeological_site }
+					NOT = { has_planet_flag = suppress_archaeological_sites }
+				}
+				save_event_target_as = EOE_z_site
+				create_archaeological_site = site_EOE_eevium_z 
+			}
+		}
+	} 
+}
+#考古
+fleet_event = { 
+	id = EOE_branch.139
+	is_triggered_only = yes
+	title = EOE_branch.139.name
+	desc = EOE_branch.139.desc #清理完了研究所的废墟
+	picture = GFX_evt_alien_ruins
+	show_sound = "event_dig_site"
+	archaeology = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = "EOE_branch.139.a" #继续探索
+		small_artifact_reward = yes
+	} 
+}
+fleet_event = {  #考古
+	id = EOE_branch.140
+	is_triggered_only = yes
+	title = EOE_branch.140.name
+	desc = EOE_branch.140.desc #发现了很多能量晶体
+	picture = GFX_evt_alien_ruins
+	show_sound = "event_dig_site"
+	archaeology = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = "EOE_branch.140.a" #继续探索
+		small_artifact_reward = yes
+		owner = {
+			add_resource = {
+				physics_research = 114514
+			}
+		}
+	} 
+}
+fleet_event = {  #考古
+	id = EOE_branch.141
+	is_triggered_only = yes
+	title = EOE_branch.141.name
+	desc = EOE_branch.141.desc #弄清楚了所有信息
+	picture = GFX_evt_analyzing_artifacts
+	show_sound = "event_dig_site"
+	archaeology = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = "EOE_branch.141.a" #继续探索
+		small_artifact_reward = yes
+		owner = {
+			add_relic = r_EOE_eevium_z
+		}
+	} 
+}
+#信号
+country_event = {  
+	id = EOE_branch.149
+	is_triggered_only = yes
+	title = EOE_branch.149.name
+	desc = EOE_branch.149.desc #收到了奇怪信号
+	picture = GFX_evt_mysterious_signal
+	show_sound = "event_yellow_alert"
+
+	option = {
+		name = "EOE_branch.149.a" 
+		country_event = {
+			id = EOE_branch.148
+		}
+	} 
+}
+#有了虫洞操作才可以构造通道
+country_event = {
+	id = EOE_branch.148
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { 
+				NOT = {
+					has_technology = tech_wormhole_stabilization
+				}
+			}
+			country_event = {
+				id = EOE_branch.148 days = 1800
+			}
+		}
+		else = {
+			country_event = {
+				id = EOE_branch.147 days = 1800
+			}
+		}
+		
+	}
+}
+#解析信号
+country_event = {
+	id = EOE_branch.147
+	title = EOE_branch.147.name
+	desc = EOE_branch.147.desc
+	is_triggered_only = yes
+	picture = GFX_evt_mysterious_signal
+	show_sound = event_mystic_reveal
+	option = {
+		name = EOE_branch.147.a
+		hidden_effect = {
+			no_scope = {
+				spawn_system = {
+					min_distance = 563
+					max_distance = 563
+					min_orientation_angle = 90
+					max_orientation_angle = 180
+					initializer = EOE_ultra_system
+					hyperlane = no
+				}
+			}
+			random_system = {
+				limit = {
+					has_star_flag = ultra_space_system
+				}
+				save_event_target_as = EOE_ultra_space_system
+				isolate_system = yes
+			}
+			capital_scope.solar_system = {
+				spawn_natural_wormhole = {
+					bypass_type = wormhole
+					random_pos = no
+					orbit_angle = 207
+				}
+				event_target:EOE_ultra_space_system = {
+					spawn_natural_wormhole = {
+						bypass_type = wormhole
+						random_pos = no
+						orbit_angle = 159
+					}
+					link_wormholes = prev
+				}
+			}
+		}
+	}
+	option = {
+		name = EOE_branch.147.b
+		add_resource = {
+			influence = 100
+		}
+	}
+}
+#进入电磁故障区域发生的事件
+fleet_event = {  
+	id = EOE_branch.150
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {
+			has_star_flag = EOE_electromagnetic_suppress
+		}
+	}
+	immediate = {
+		#其他国家。都默认不会发生舰队暴毙
+		if = { 
+			limit = {
+				owner = {
+					is_country_type = default
+				}
+			}
+			owner = {
+				if = {
+					limit = { 
+						NOT = { has_country_flag = EOE_has_known_electromagnetic_chaotic }
+					}
+					country_event = {
+						id = EOE_branch.151
+					}
+					set_country_flag = EOE_has_known_electromagnetic_chaotic
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = EOE_has_known_electromagnetic_chaotic
+						NOT = { has_technology = tech_boson_photon_field_generator }
+					}
+				}
+				destroy_fleet = this
+			}
+		} 
+		#但是其他国家不研究一定吃debuff
+		else = {
+			
+		}
+	} 
+}
+country_event = {
+	id = EOE_branch.151
+	is_triggered_only = yes
+	title = EOE_branch.151.name #失联
+	desc = EOE_branch.151.desc #进去的所有船都失联了
+	picture = GFX_evt_EOE_no_video_feed
+	show_sound = event_default
+	immediate = {
+		from = {
+			save_event_target_as = EOE_destroyed_fleet
+		}
+		fromfrom = {
+			save_event_target_as = EOE_first_access_electromagnetic_chaotic_system
+		}
+	}
+	option = {
+		name = EOE_branch.151.a #开展一个特殊项目研究对策
+		enable_special_project = {
+			name = EOE_search_electromagnetic_chaotic
+			owner = this
+		}
+		hidden_effect = {
+			destroy_fleet = event_target:EOE_destroyed_fleet
+		}
+	}
+	# after = {
+	# 	destroy_fleet = event_target:EOE_destroyed_fleet
+	# }
+}
+country_event = {
+	id = EOE_branch.152
+	is_triggered_only = yes
+	title = EOE_branch.152.name #成功
+	desc = EOE_branch.152.desc #成功研发应对之策
+	picture = GFX_evt_EOE_no_video_feed
+	show_sound = event_default
+	immediate = {
+		give_technology = { tech = EOE_boson_photon_field message = no } #给进入必须的科技
+	}
+	option = {
+		name = EOE_branch.152.a #祝贺研究组，现在该进去仔细研究了
+		hidden_effect = {
+			event_target:necrozma_archaeological_sites = { create_archaeological_site = site_necrozma_systeam }
+		}
+	}
+}
+fleet_event = { 
+	id = EOE_branch.153
+	is_triggered_only = yes
+	title = EOE_branch.153.name
+	desc = EOE_branch.153.desc #纳米探测机投放
+	picture = GFX_evt_alien_ruins
+	show_sound = "event_dig_site"
+	archaeology = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = "EOE_branch.153.a" #继续探索
+		small_artifact_reward = yes
+	} 
+}
+fleet_event = { 
+	id = EOE_branch.154
+	is_triggered_only = yes
+	title = EOE_branch.154.name
+	desc = EOE_branch.154.desc #古文明记录
+	picture = GFX_evt_alien_ruins
+	show_sound = "event_dig_site"
+	archaeology = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = "EOE_branch.154.a" #继续探索
+		add_resource = {
+			rare_crystals = 500
+		}
+		small_artifact_reward = yes
+	} 
+}
+fleet_event = { 
+	id = EOE_branch.155
+	is_triggered_only = yes
+	title = EOE_branch.155.name
+	desc = EOE_branch.155.desc #清理完了研究所的废墟
+	picture = GFX_evt_alien_ruins
+	show_sound = "event_dig_site"
+	archaeology = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = "EOE_branch.155.a" #继续探索
+		medium_artifact_reward = yes
+		hidden_effect = {
+			spawn_megastructure = {
+				type = luozima_0
+				planet = necrozma_archaeological_sites
+				coords_from = this
+				orbit_distance = 10
+				orbit_angle = 0
+			}
+		}
+	} 
+}

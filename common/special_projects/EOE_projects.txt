@@ -1,0 +1,453 @@
+special_project = {
+	key = "OLD_creators_1"
+	event_chain = old_creators_chain
+	#cost = 30
+	days_to_research = 90
+	tech_department = society_technology
+	timelimit = -1
+	picture = GFX_evt_EOE_event1
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	
+	event_scope = ship_event
+	
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		#skill = 3
+	}
+	
+	on_success = { ship_event = { id = eevent.165 } }
+}
+
+special_project = {
+	key = "OLD_creators_2"
+	event_chain = old_creators_chain
+	#cost = 30
+	days_to_research = 90
+	tech_department = engineering_technology
+	timelimit = -1
+	picture = GFX_evt_EOE_event2
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	
+	event_scope = ship_event
+	
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		#skill = 3
+	}
+	
+	on_success = { ship_event = { id = eevent.166 } }
+}
+
+
+
+
+special_project = {
+	key = "EOE_wait"
+	#cost = 30
+	days_to_research = 60
+	timelimit = -1
+	picture = GFX_evt_EOE_ProtossBase1
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	
+	event_scope = ship_event
+	
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		#skill = 3
+	}
+	
+	on_success = { ship_event = { id = eevent.16 } }
+}
+
+special_project = {
+	key = "EOE_distress_signal_science"
+	days_to_research = 2
+	timelimit = 540
+	picture = GFX_evt_asteroid_field
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	
+	event_scope = ship_event
+	
+	requirements = {
+		shipclass_science_ship =   1
+		#leader = scientist
+	}
+	
+	on_success = { ship_event = { id = leadereevent.7 } }
+}
+
+special_project = {
+	key = "EOE_distress_signal_military"
+	days_to_research = 2
+	timelimit = 540
+	picture = GFX_evt_asteroid_field
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	
+	event_scope = ship_event
+	
+	requirements = {
+		shipclass_military =   1
+		
+	}
+	
+	on_success = { ship_event = { id = leadereevent.7 } }
+}
+
+special_project = {
+	key = "EOE_distress_signal_constructor"
+	days_to_research = 2
+	timelimit = 540
+	picture = GFX_evt_asteroid_field
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	
+	event_scope = ship_event
+	
+	requirements = {
+		shipclass_constructor =   1
+	}
+	
+	on_success = { ship_event = { id = leadereevent.7 } }
+}
+
+
+
+special_project = {
+	key = "EOE_curator_hacking"
+	event_scope = country_event
+	cost = 2000
+	tech_department = physics_technology
+	on_success = { 
+		country_event = {
+			id = leadereevent.18
+		}
+	}
+}
+
+special_project = {
+	key = "EOE_curator_hacking_for_acot_databank"
+	event_scope = country_event
+	cost = 40000
+	tech_department = physics_technology
+	on_success = { 
+		country_event = {
+			id = leadereevent.54
+		}
+	}
+}
+
+special_project = {   #######################捕捉原始伊布
+	key = "Catch_Eeveelutions"
+	days_to_research = 480
+	picture = GFX_evt_EOE_Orbital_Drop
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	
+	event_scope = ship_event
+	
+	requirements = {
+		shipclass_military =   1
+	}
+	
+	on_success = { owner = {country_event = { id = eevent.7001 } } }
+}
+
+special_project = {   ##############改造原始伊布
+	key = "Improve_Eeveelutions"
+	picture = GFX_evt_EOE_Canned_Espeon
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	event_scope = country_event
+	cost = 2000
+	tech_department = society_technology
+	on_success = { country_event = { id = eevent.7002 } }
+}
+
+
+
+special_project = {   ##############修复竞技场
+	key = "Repair_pokemon_park"
+	picture = GFX_evt_EOE_JingJiChang
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	event_scope = country_event
+	cost = 1000
+	tech_department = engineering_technology
+		on_success = { country_event = { id = eevent.7102 } }
+}
+
+
+
+
+
+
+
+
+special_project = { #炎之精
+	key = "EOE_cthugha_1"
+	event_scope = ship_event
+	days_to_research = 720
+	timelimit = -1
+	picture = GFX_evt_dead_city
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill = 2
+	}
+
+	on_progress_50 = {
+		ship_event = {
+			id = EOE_branch.15
+		}
+	}
+	on_success = { 
+		ship_event = {
+			id = EOE_branch.8
+		}
+	}
+}
+
+special_project = { #辐射废料
+	key = "EOE_cthugha_2"
+	event_scope = ship_event
+	days_to_research = 720
+	timelimit = -1
+	picture = GFX_evt_dead_city
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill = 2
+	}
+
+	on_progress_75 = {
+		ship_event = {
+			id = EOE_branch.59
+		}
+	}
+	on_success = { 
+		ship_event = {
+			id = EOE_branch.9
+		}
+	}
+}
+
+
+special_project = { #地震塌方
+	key = "EOE_cthugha_3"
+	event_scope = ship_event
+	days_to_research = 720
+	timelimit = -1
+	picture = GFX_evt_dead_city
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill = 2
+	}
+
+	on_progress_25 = {
+		ship_event = {
+			id = EOE_branch.28
+		}
+	}
+	on_success = { 
+		ship_event = {
+			id = EOE_branch.10
+		}
+	}
+}
+
+
+special_project = { #致疯绘画
+	key = "EOE_cthugha_4"
+	event_scope = ship_event
+	days_to_research = 720
+	timelimit = -1
+	picture = GFX_evt_dead_city
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill = 2
+	}
+
+	on_progress_75 = {
+		ship_event = {
+			id = EOE_branch.31
+		}
+	}
+	on_success = { 
+		ship_event = {
+			id = EOE_branch.11
+		}
+	}
+}
+
+
+special_project = { #古老陷阱
+	key = "EOE_cthugha_5"
+	event_scope = ship_event
+	days_to_research = 720
+	timelimit = -1
+	picture = GFX_evt_dead_city
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill = 2
+	}
+
+	on_progress_25 = {
+		ship_event = {
+			id = EOE_branch.37
+		}
+	}
+	on_success = { 
+		ship_event = {
+			id = EOE_branch.12
+		}
+	}
+}
+
+
+special_project = { #解谜密室
+	key = "EOE_cthugha_6"
+	event_scope = ship_event
+	days_to_research = 720
+	timelimit = -1
+	picture = GFX_evt_dead_city
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill = 2
+	}
+	on_progress_25 = {
+		ship_event = {
+			id = EOE_branch.41
+		}
+	}
+	on_success = { 
+		ship_event = {
+			id = EOE_branch.13
+		}
+	}
+}
+
+special_project = { #炎精清除
+	key = "EOE_vampire_clean"
+	event_scope = ship_event
+	days_to_research = 60
+	timelimit = -1
+	picture = GFX_evt_EOE_fire_vampires_city_ruins
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	requirements = {
+		shipclass_transport = 1
+	}
+
+	on_success = { 
+		ship_event = {
+			id = EOE_branch.23
+		}
+	}
+}
+
+special_project = { #放射清理
+	key = "EOE_radioactivity_clean"
+	event_scope = ship_event
+	days_to_research = 30
+	timelimit = -1
+	picture = "GFX_evt_EOE_nuclear_warning"
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	requirements = {
+		shipclass_constructor = 1
+	}
+
+	on_success = { 
+		ship_event = {
+			id = EOE_branch.27
+		}
+	}
+}
+
+special_project = { #拆除陷阱
+	key = "EOE_trap_clean"
+	event_scope = ship_event
+	days_to_research = 30
+	timelimit = -1
+	picture = GFX_evt_archaeology_trap 
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill = 3
+	}
+
+	on_success = { 
+		ship_event = {
+			id = EOE_branch.40
+		}
+	}
+}
+
+special_project = { #解谜
+	key = "EOE_cthugha_puzzle"
+	event_scope = ship_event
+	cost = 50000
+	tech_department = society_technology
+	timelimit = -1
+	picture = GFX_evt_EOE_puzzle
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds" 
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = { 
+		ship_event = {
+			id = EOE_branch.45
+		}
+	}
+}
+
+
+special_project = { #召唤古神
+	key = "EOE_cthugha_calling"
+	event_scope = ship_event
+	days_to_research = 15
+	timelimit = -1
+	picture = GFX_evt_star_yellow
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds" 
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = { 
+		ship_event = {
+			id = EOE_branch.53
+		}
+	}
+}
+
+special_project = { #捕获古神
+	key = "EOE_cthugha_capturing"
+	event_scope = ship_event
+	days_to_research = 10
+	tech_department = society_technology
+	timelimit = -1
+	picture = GFX_evt_star_yellow
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds" 
+	requirements = {
+		shipclass_military =   1
+		
+	}
+
+	on_success = { 
+		ship_event = {
+			id = EOE_branch.56
+		}
+	}
+}
+

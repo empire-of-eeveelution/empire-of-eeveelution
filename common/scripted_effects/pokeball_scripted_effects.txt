@@ -1,0 +1,22 @@
+
+# EOE_fleet_catched_effect ={
+# 	create_fleet = {
+# 		effect = {
+# 		set_owner = root
+# 		create_ship = {
+# 			name = random
+# 			design = event_target:EOE_catched_ship
+# 			graphical_culture = prevprev.from
+# 			effect = {
+# 			 add_modifier = { modifier = EOE_pokeball_catched	}
+# 			 add_modifier = { modifier = EOE_pokeball_catched_run   days = 180	 }
+# 								 }
+
+			
+# 		}
+# 			set_location = { target = event_target:EOE_catched_ship }
+# 					}
+# 				}
+# 	destroy_ship = event_target:EOE_catched_ship
+# }
+

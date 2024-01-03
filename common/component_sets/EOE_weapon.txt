@@ -1,0 +1,114 @@
+component_set = {
+	key = "EOE_tempest_1"
+	
+	icon = "GFX_EOE_tempest_1"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_strike_craft_fire_vampire"
+	
+	icon = "GFX_EOE_fire_vampire"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_cthugha_lancet"
+	
+	icon = GFX_ship_part_energy_lance_1
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_tempest_2"
+	
+	icon = "GFX_EOE_tempest_2"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_fairy_star"
+	
+	icon = "GFX_EOE_fairy_star"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_nuclear_star"
+	
+	icon = "GFX_EOE_nuclear_star"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_aurora_beam"
+	
+	icon = "GFX_EOE_aurora_beam"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_bullet_seed"
+	
+	icon = "GFX_EOE_bullet_seed"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_double_edge"
+	
+	icon = "GFX_EOE_double_edge"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_flare_blitz"
+	
+	icon = "GFX_EOE_flare_blitz"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_razor_leaf"
+	
+	icon = "GFX_EOE_razor_leaf"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_swift"
+	
+	icon = "GFX_EOE_swift"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_thunder_bolt"
+	
+	icon = "GFX_EOE_thunder_bolt"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_calm_mind"
+	
+	icon = "GFX_EOE_calm_mind"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_radioactive_acid"
+	
+	icon = "GFX_EOE_radioactive_acid"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_fairy_beam"
+	
+	icon = "GFX_EOE_fairy_beam"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_nuclear_beam"
+	
+	icon = "GFX_EOE_nuclear_beam"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_blue_flare"
+	
+	icon = "GFX_ship_part_global_pacifier"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_evolite"
+	
+	icon = "GFX_EOE_evolite"
+	icon_frame = 1	
+}

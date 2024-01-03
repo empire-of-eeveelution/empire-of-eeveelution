@@ -1,0 +1,43 @@
+tech_EOE_bullet_seed = {
+	area = engineering
+	cost = @EOE_tier7cost1
+	tier = 7
+	category = { biology }
+	ai_update_type = military	
+	weight = 0
+	potential = {
+		has_country_flag = EOE_tech7_1
+		any_owned_pop = {
+			has_trait = trait_EOE_Inheritors
+		}
+		
+	}
+}
+tech_EOE_razor_leaf = {
+	area = engineering
+	cost = @EOE_tier7cost2
+	tier = 7
+	category = { biology }
+	ai_update_type = military	
+	weight = 0
+	potential = {
+		has_country_flag = EOE_tech7_2
+		any_owned_pop = {
+			has_trait = trait_EOE_Inheritors
+		}
+	}
+}
+tech_EOE_radioactive_acid = {
+	area = physics
+	cost = @EOE_tier9cost1
+	tier = 9
+	category = { biology }
+	ai_update_type = military	
+	weight = 0
+	potential = {
+		has_country_flag = EOE_tech9_2
+		any_owned_pop = {
+			has_trait = trait_EOE_Inheritors
+		}
+	}
+}

@@ -1,0 +1,330 @@
+ship_behavior = {    #急躁薄荷 100范围走A
+	name = "Hasty_Mint_100"
+	desc = "Hasty_Mint_100_DESC"
+	
+	preferred_attack_range = 100
+	formation_distance = 95
+	return_to_formation_distance = 110
+	collision_awareness = 0.5
+
+	attack_move_pattern = flee
+	passive_move_pattern = charge
+}
+
+ship_behavior = {    #急躁薄荷 75范围走A
+	name = "Hasty_Mint_70"
+	desc = "Hasty_Mint_70_DESC"
+	
+	preferred_attack_range = 70
+	formation_distance = 65
+	return_to_formation_distance = 75
+	collision_awareness = 0.5
+
+	attack_move_pattern = flee
+	passive_move_pattern = charge
+}
+
+ship_behavior = {    #急躁薄荷 40范围走A
+	name = "Hasty_Mint_40"
+	desc = "Hasty_Mint_40_DESC"
+	
+	preferred_attack_range = 40
+	formation_distance = 35
+	return_to_formation_distance = 45
+	collision_awareness = 0.5
+
+	attack_move_pattern = flee
+	passive_move_pattern = charge
+}
+
+ship_behavior = {    #爽朗薄荷  150范围走A
+	name = "Jolly_Mint_150"
+	desc = "Jolly_Mint_150_DESC"
+	
+	preferred_attack_range = 150
+	formation_distance = 145
+	return_to_formation_distance = 160
+	collision_awareness = 0.5
+
+	attack_move_pattern = flee
+	passive_move_pattern = charge
+
+	
+}
+
+ship_behavior = {    #爽朗薄荷  100范围走A
+	name = "Jolly_Mint_100"
+	desc = "Jolly_Mint_100_DESC"
+	
+	preferred_attack_range = 100
+	formation_distance = 95
+	return_to_formation_distance = 110
+	collision_awareness = 0.5
+
+	attack_move_pattern = flee
+	passive_move_pattern = charge
+
+	
+}
+
+ship_behavior = {    #爽朗薄荷  50范围走A
+	name = "Jolly_Mint_50"
+	desc = "Jolly_Mint_50_DESC"
+	
+	preferred_attack_range = 50
+	formation_distance = 45
+	return_to_formation_distance = 55
+	collision_awareness = 0.5
+
+	attack_move_pattern = flee
+	passive_move_pattern = charge
+
+	
+}
+
+ship_behavior = {    #天真薄荷  250范围走A
+	name = "Naive_Mint_250"
+	desc = "Naive_Mint_250_DESC"
+	
+	preferred_attack_range = 250
+	formation_distance = 245
+	return_to_formation_distance = 260
+	collision_awareness = 0.5
+
+	attack_move_pattern = flee
+	passive_move_pattern = charge
+}
+
+ship_behavior = {    #天真薄荷  190范围走A
+	name = "Naive_Mint_190"
+	desc = "Naive_Mint_190_DESC"
+	
+	preferred_attack_range = 190
+	formation_distance = 185
+	return_to_formation_distance = 200
+	collision_awareness = 0.5
+
+	attack_move_pattern = flee
+	passive_move_pattern = charge
+}
+
+ship_behavior = {    #天真薄荷  60范围走A
+	name = "Naive_Mint_60"
+	desc = "Naive_Mint_60_DESC"
+	
+	preferred_attack_range = 60
+	formation_distance = 55
+	return_to_formation_distance = 65
+	collision_awareness = 0.5
+
+	attack_move_pattern = flee
+	passive_move_pattern = charge
+}
+
+ship_behavior = {    #胆小薄荷  300范围走A
+	name = "Timid_Mint_300"
+	desc = "Timid_Mint_300_DESC"
+	
+	preferred_attack_range = 300
+	formation_distance = 295
+	return_to_formation_distance = 310
+	collision_awareness = 0.5
+
+	attack_move_pattern = flee
+	passive_move_pattern = charge
+}
+
+ship_behavior = {    #胆小薄荷  200范围走A
+	name = "Timid_Mint_200"
+	desc = "Timid_Mint_200_DESC"
+	
+	preferred_attack_range = 200
+	formation_distance = 195
+	return_to_formation_distance = 210
+	collision_awareness = 0.5
+
+	attack_move_pattern = flee
+	passive_move_pattern = charge
+}
+
+ship_behavior = {    #胆小薄荷  100范围走A
+	name = "Timid_Mint_100"
+	desc = "Timid_Mint_100_DESC"
+	
+	preferred_attack_range = 100
+	formation_distance = 295
+	return_to_formation_distance = 110
+	collision_awareness = 0.5
+
+	attack_move_pattern = flee
+	passive_move_pattern = charge
+}
+
+ship_behavior = {   #大胆  冲
+	name = "Bold_Mint_charge"
+	desc = "Bold_Mint_charge_DESC"
+	
+	preferred_attack_range = 10
+	formation_distance = 20
+	return_to_formation_distance = 60
+	collision_awareness = 0.5
+
+	attack_move_pattern = charge
+	passive_move_pattern = charge
+}
+
+ship_behavior = {    #自大 炮击
+	name = "Sassy_Mint_stay"
+	desc = "Sassy_Mint_stay_DESC"
+	
+	preferred_attack_range = 100
+	formation_distance = 105
+	return_to_formation_distance = 120
+	collision_awareness = 0.35
+
+	attack_move_pattern = stay_at_range
+	passive_move_pattern = charge
+}
+
+ship_behavior = {    #自大 炮击
+	name = "Sassy_Mint_stay_1"
+	desc = "Sassy_Mint_stay_1_DESC"
+	
+	preferred_attack_range = 70
+	formation_distance = 75
+	return_to_formation_distance = 80
+	collision_awareness = 0.35
+
+	attack_move_pattern = stay_at_range
+	passive_move_pattern = charge
+}
+
+ship_behavior = {    #自大 炮击
+	name = "Sassy_Mint_stay_2"
+	desc = "Sassy_Mint_stay_2_DESC"
+	
+	preferred_attack_range = 40
+	formation_distance = 45
+	return_to_formation_distance = 50
+	collision_awareness = 0.35
+
+	attack_move_pattern = stay_at_range
+	passive_move_pattern = charge
+}
+
+ship_behavior = {     #勇敢   炮击
+	name = "Brave_Mint_stay"
+	desc = "Brave_Mint_stay_DESC"
+	
+	preferred_attack_range = 150
+	formation_distance = 155
+	return_to_formation_distance = 170
+	collision_awareness = 0.35
+
+	attack_move_pattern = stay_at_range
+	passive_move_pattern = charge
+}
+
+ship_behavior = {     #勇敢   炮击
+	name = "Brave_Mint_stay_1"
+	desc = "Brave_Mint_stay_1_DESC"
+	
+	preferred_attack_range = 105
+	formation_distance = 110
+	return_to_formation_distance = 120
+	collision_awareness = 0.35
+
+	attack_move_pattern = stay_at_range
+	passive_move_pattern = charge
+}
+
+ship_behavior = {     #勇敢   炮击
+	name = "Brave_Mint_stay_2"
+	desc = "Brave_Mint_stay_2_DESC"
+	
+	preferred_attack_range = 60
+	formation_distance = 65
+	return_to_formation_distance = 70
+	collision_awareness = 0.35
+
+	attack_move_pattern = stay_at_range
+	passive_move_pattern = charge
+}
+
+ship_behavior = {     #冷静   炮击
+	name = "Quiet_Mint_stay"
+	desc = "Quiet_Mint_stay_DESC"
+	
+	preferred_attack_range = 200
+	formation_distance = 205
+	return_to_formation_distance = 220
+	collision_awareness = 0.35
+
+	attack_move_pattern = stay_at_range
+	passive_move_pattern = charge
+}
+
+ship_behavior = {     #冷静   炮击
+	name = "Quiet_Mint_stay_1"
+	desc = "Quiet_Mint_stay_1_DESC"
+	
+	preferred_attack_range = 130
+	formation_distance = 135
+	return_to_formation_distance = 140
+	collision_awareness = 0.35
+
+	attack_move_pattern = stay_at_range
+	passive_move_pattern = charge
+}
+
+ship_behavior = {     #冷静   炮击
+	name = "Quiet_Mint_stay_2"
+	desc = "Quiet_Mint_stay_2_DESC"
+	
+	preferred_attack_range = 60
+	formation_distance = 65
+	return_to_formation_distance = 70
+	collision_awareness = 0.35
+
+	attack_move_pattern = stay_at_range
+	passive_move_pattern = charge
+}
+
+ship_behavior = {     #悠闲   炮击
+	name = "Relaxed_Mint_stay"
+	desc = "Relaxed_Mint_stay_DESC"
+	
+	preferred_attack_range = 250
+	formation_distance = 255
+	return_to_formation_distance = 270
+	collision_awareness = 0.35
+
+	attack_move_pattern = stay_at_range
+	passive_move_pattern = charge
+}
+
+ship_behavior = {     #悠闲   炮击
+	name = "Relaxed_Mint_stay_1"
+	desc = "Relaxed_Mint_stay_1_DESC"
+	
+	preferred_attack_range = 175
+	formation_distance = 180
+	return_to_formation_distance = 190
+	collision_awareness = 0.35
+
+	attack_move_pattern = stay_at_range
+	passive_move_pattern = charge
+}
+
+ship_behavior = {     #悠闲   炮击
+	name = "Relaxed_Mint_stay_2"
+	desc = "Relaxed_Mint_stay_2_DESC"
+	
+	preferred_attack_range = 100
+	formation_distance = 105
+	return_to_formation_distance = 110
+	collision_awareness = 0.35
+
+	attack_move_pattern = stay_at_range
+	passive_move_pattern = charge
+}

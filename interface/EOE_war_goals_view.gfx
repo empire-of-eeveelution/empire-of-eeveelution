@@ -1,0 +1,21 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_wg_evassimilation"
+		texturefile = "gfx/interface/icons/diplomacy/diplomacy_war.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_wg_end_threat_evassimilators"
+		texturefile = "gfx/interface/icons/diplomacy/diplomacy_war.dds"
+		noOfFrames = 2
+	}
+
+
+	spriteType = {
+		name = "GFX_wg_evassimilation_vs_fe"
+		texturefile = "gfx/interface/icons/diplomacy/diplomacy_war.dds"
+		noOfFrames = 2
+	}
+
+}

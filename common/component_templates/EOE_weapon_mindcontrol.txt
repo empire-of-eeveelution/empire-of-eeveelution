@@ -1,0 +1,195 @@
+# utility_component_template = {
+	
+# 	key = "EOE_Psychic_Dominator_a"
+# 	size = aux
+# 	icon = "GFX_ship_part_EOE_Psychic_Dominator_a"
+# 	icon_frame = 1
+# 	power = -20
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = 5
+# 		}
+# 	}
+# 	#####
+# 	# friendly_aura = {#加被捕获的脱战
+# 	# 	name = EOE_catched_disengage
+# 	# 	radius = 150
+# 	# 	system_wide = yes
+# 	# 	apply_on = ships
+# 	# 	stack_info = {
+# 	# 		id = Psychic_Dominator_aura_catched
+# 	# 		priority = 1
+# 	# 	 }
+# 	# 	 modifier = {
+# 	# 		ship_disengage_chance_mult = 5
+# 	# 	}
+
+# 	# }
+
+# 	#####
+# 	hostile_aura = {
+# 		name = "aura_ship_subspace_snare"
+# 		radius = 150
+# 		apply_on = fleets
+# 		system_wide = yes
+		
+# 		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+# 			id = Psychic_Dominator_aura
+# 			priority = 1
+# 		}
+		
+# 		modifier = {
+# 			ship_disengage_chance_mult = -999
+# 		}
+		
+# 		graphics = {
+# 			area_effect = {
+# 				entity = "circle_area_entity"
+# 				dynamic_scale = yes
+# 			}
+# 			ship_effect = {
+# 				entity = "ship_aura_negative_entity"   
+# 				dynamic_scale = no
+# 			}
+# 		}
+# 	}
+	
+# 	prerequisites = { "EOE_mental_storm" }
+# 	component_set = "EOE_Psychic_Dominator_a"
+	
+# 	ai_weight = {
+# 		weight = 0
+# 	}
+# }
+
+# weapon_component_template = {
+# 	key = "EOE_Psychic_Dominator"
+# 	size = extra_large
+# 	type = instant
+	
+# 	icon = "GFX_ship_part_EOE_Psionic Storm"
+# 	icon_frame = 1
+# 	power = -250
+# 	prerequisites = { "EOE_mental_storm" }
+# 	component_set = "EOE_Psychic_Dominator"
+# 	projectile_gfx = "focused_arc_emitter"
+# 	tags = { weapon_type_energy }
+# 	ai_tags = { weapon_role_artillery }
+# 	ai_tag_weight = 0
+# 	#upgrades_to = {}
+# 	damage = {
+# 		min = 1
+# 		max = 1700
+# 	}
+# 	windup = {
+# 		min = 1
+# 		max = 19
+# 	}
+# 	total_fire_time = 71
+# 	range = 150
+# 	accuracy = 1
+# 	tracking = 0.2
+# 	hull_damage = 1
+# 	shield_damage = 1
+# 	armor_damage = 1
+# 	shield_penetration = 1
+# 	armor_penetration = 1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = 229 
+# 			rare_crystals = 3.38
+# 		}		
+# 		upkeep = {
+# 			energy = 1.425
+# 			alloys = 0.285
+# 		}
+# 	}
+	
+
+# 	ai_weight = {
+# 		weight = 1
+# 	}
+# }
+
+#大师球
+utility_component_template = {  #大师球 反应堆
+	key = "EOE_masterball_REACTOR"
+	size = small
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+	power = 1000
+
+	component_set = "power_core"
+	size_restriction = { EOE_masterball }
+
+	ai_weight = {
+		weight = 0
+	
+	}
+}
+utility_component_template = {  ###大师球 跃迁引擎
+	key = "EOE_masterball_JUMP_DRIVE"
+	size = small
+	icon = "GFX_ship_part_jump_drive_1"
+	icon_frame = 1
+	power = -15
+
+	ftl = yes
+	jumpdrive = yes
+	ship_modifier = {
+		ship_windup_mult = -0.8
+		ship_ftl_jumpdrive_range_mult = 10
+		ship_disengage_chance_mult = 20
+	}
+	ai_weight = {
+		weight = 0
+	
+	}
+	size_restriction = { EOE_masterball }
+	component_set = "ftl_components_masterball"
+}
+utility_component_template = { #大师球   推进器
+	key = "EOE_masterball_THRUSTER"
+	size = small
+	icon = "GFX_ship_part_thruster_5"
+	icon_frame = 1
+	power = -15
+
+	modifier = {
+		ship_base_speed_mult = 0.8
+	}
+	component_set = "thruster_components"
+	size_restriction = { EOE_masterball }
+	ai_weight = {
+		weight = 0
+	
+	}
+}
+# utility_component_template = {  #大师球 电脑
+# 	key = "EOE_masterball_COMPUTER"
+# 	size = small
+# 	icon = "GFX_ship_part_computer_default"
+# 	icon_frame = 1
+# 	power = -5
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = 10
+# 		}
+# 	}
+# 	modifier = {
+# 		ship_evasion_mult = 0.15
+# 		ship_speed_mult = 0.20
+# 	}
+# 	ship_behavior = "colossus"
+# 	#prerequisites = { "tech_EOE_ EOE_masterball_" }
+# 	class_restriction = { shipclass_military }
+# 	size_restriction = { EOE_masterball}
+# 	component_set = "combat_computers"
+# 	ai_weight = {
+# 		weight = 0
+	
+# 	}
+# }

@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Umbreon01_mesh"
+		file = "gfx/models/portraits/Pokemon_animated/Umbreon01/Umbreon01.mesh"
+		scale = 0.85
+		animation = { id = "idle1"	type = "Umbreon01_idle1_animation" }
+		animation = { id = "idle2"	type = "Umbreon01_idle2_animation" }
+
+		meshsettings = {
+			name = "pPlaneShape1"
+			index = 0
+			texture_diffuse = "EOE075.dds"
+			shader = "PdxMeshPortrait"
+		}
+	}
+}

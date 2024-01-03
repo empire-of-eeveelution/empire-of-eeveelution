@@ -1,0 +1,133 @@
+component_set = {
+	key = "EOE_MEW_Psychic"
+	
+	icon = "GFX_EOE_Psichic"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_MEW_Psyshock"
+	
+	icon = "GFX_EOE_Psyshock"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "EOE_MEW_Sky_Attack"
+	
+	icon = "GFX_ship_part_energy_torpedo_2" # Temp measure untill we get something better.
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "EOE_MEW_Whirlpool"
+	
+	icon = "GFX_EOE_Whirlpool"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_MEW_Aura_Sphere"
+	
+	icon = "GFX_EOE_Aura_Sphere"
+	icon_frame = 1	
+}
+component_set = {
+	key = "MEW_BIO_REACTOR"
+	
+	icon = "GFX_EOE_MEW_BIO_REACTOR"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "MEW_THRUSTER"
+	
+	icon = "GFX_EOE_MEW_THRUSTER"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "MEW_COMPUTER"
+	
+	icon = "GFX_EOE_MEW_COMPUTER"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "MEW_JUMP_DRIVE"
+	
+	icon = "GFX_EOE_MEW_JUMP_DRIVE"
+	icon_frame = 1	
+}
+component_set = {
+	key = "MEW_SENSOR"
+	
+	icon = "GFX_EOE_MEW_SENSOR"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "MEW_SHIELD"
+	
+	icon = "GFX_EOE_GuangQiang"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "MEW_ARMOR"
+	
+	icon = "GFX_EOE_FanSheBi"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_Draco_Meteor"
+	
+	icon = "GFX_EOE_Draco_Meteor"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "EOE_Blue_Flare"
+	
+	icon = "GFX_EOE_Blue_Flare"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "EOE_Leftovers"
+	
+	icon = "GFX_EOE_LEFTOVERS"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_Emergency_Recall_small"
+	
+	icon = "GFX_EOE_Emergency_Recall"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "EOE_Emergency_Recall"
+	
+	icon = "GFX_EOE_Emergency_Recall"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "EOE_Emergency_Recall_large"
+	
+	icon = "GFX_EOE_Emergency_Recall"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "MEW_CLOAKING_HIGH"
+	
+	icon = "GFX_MEW_CLOAKING_HIGH"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "MEW_CLOAKING_LOW"
+	
+	icon = "GFX_MEW_CLOAKING_LOW"
+	icon_frame = 1	
+}

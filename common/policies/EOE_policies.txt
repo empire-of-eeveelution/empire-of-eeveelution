@@ -1,0 +1,71 @@
+################
+### POLICIES ###
+################
+
+### TECH OPTIONS POLICY ###
+
+### FLEET COMPOSITION DOCTRINE ###
+EOE_composition_doctrine = {
+	potential = {
+		is_country_type = default
+		is_ai = no
+		OR = {
+			owner_main_species = { has_trait = trait_EOE_Inheritors }
+			has_origin = origin_lotus_hezi_start
+		} 
+		has_global_flag = has_nsc_active
+		has_tradition = tr_nsc_fleet_doctrine_fleet
+	}
+
+	option = {
+		name = "standard_composition"
+		policy_flags = { standard_composition }
+		ai_weight = { factor = 0 }
+	}
+
+	option = {
+		name = "Mew_focus"
+		valid = { has_ascension_perk = ap_mega_evolution_EOE }
+		policy_flags = { Mew_focus }
+		modifier = {
+			shipsize_EOE_mew_build_speed_mult = 0.2
+			ship_EOE_mew_cost_mult = -0.2
+			shipsize_EOE_Latias_build_speed_mult = -0.2
+			ship_EOE_Latias_cost_mult = 0.2
+			shipsize_EOE_Reshiram_build_speed_mult = -0.2
+			ship_EOE_Reshiram_cost_mult = 0.2
+		}
+		ai_weight = { factor = 0 }
+	}
+
+	option = {
+		name = "Latias_focus"
+		valid = { has_ascension_perk = ap_mega_evolution_EOE }
+		policy_flags = { Latias_focus }
+		modifier = {
+			shipsize_EOE_mew_build_speed_mult = -0.2
+			ship_EOE_mew_cost_mult = 0.2
+			shipsize_EOE_Latias_build_speed_mult = 0.2
+			ship_EOE_Latias_cost_mult = -0.2
+			shipsize_EOE_Reshiram_build_speed_mult = -0.2
+			ship_EOE_Reshiram_cost_mult = 0.2
+		}
+		ai_weight = { factor = 0 }
+	}
+
+	option = {
+		name = "Reshiram_focus"
+		valid = { has_ascension_perk = ap_mega_evolution_EOE }
+		policy_flags = { Reshiram_focus }
+		modifier = {
+			shipsize_EOE_mew_build_speed_mult = -0.2
+			ship_EOE_mew_cost_mult = 0.2
+			shipsize_EOE_Latias_build_speed_mult = -0.2
+			ship_EOE_Latias_cost_mult = 0.2
+			shipsize_EOE_Reshiram_build_speed_mult = 0.2
+			ship_EOE_Reshiram_cost_mult = -0.2
+		}
+		ai_weight = { factor = 0 }
+	}
+}
+

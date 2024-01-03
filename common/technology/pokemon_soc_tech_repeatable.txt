@@ -1,0 +1,50 @@
+
+
+
+tech_endless_evolution = {
+	area = society
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { biology }
+	levels = 60
+	prerequisites = {  }
+	icon = tech_gene_tailoring
+	weight = @repeatableTechWeight
+	
+	potential = {
+		has_tradition = tr_genetics_finish
+	}
+	weight_modifier = {
+		factor = @repatableTechFactor
+	    modifier = {
+			factor = 0
+			NOT = { 
+				any_owned_pop = {
+				pop_has_trait = trait_directed_evolution
+			}
+			}
+			}
+		
+	
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	modifier = {
+		description = tech_gene_expressions_modifier_desc
+		description_parameters = {
+			POINTS = 1
+		}
+		POKEMON_species_trait_points_add = 1
+	}
+}

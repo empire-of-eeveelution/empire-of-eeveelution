@@ -1,0 +1,249 @@
+tech_EOE_energy_torpedoes_1 = {
+	area = physics
+	cost = @tier4cost2
+	tier = 4
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_energy_torpedoes_2" }
+	weight = @tier4weight2
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				research_leader = {
+					area = physics
+					has_leader_flag = EOE_leader_hezi
+				}
+			}
+		}	
+		modifier = {
+			factor = 100
+				research_leader = {
+					area = physics
+					has_leader_flag = EOE_leader_hezi
+				}
+		}	
+
+		
+	}
+	potential = {
+		is_ai = no
+		has_country_flag = leadereevent6_has_happened
+		any_owned_pop = {
+			has_trait = trait_EOE_Inheritors
+		}
+	}
+	
+	ai_weight = {
+		factor = 0
+
+	}
+}
+tech_EOE_energy_torpedoes_2 = {
+	area = physics
+	cost = 60000
+	tier = 6
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_dark_matter_power_core" "tech_EOE_energy_torpedoes_1" }
+	weight = 15
+	potential = {
+		any_owned_pop = {
+			has_trait = trait_EOE_Inheritors
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				research_leader = {
+					area = physics
+					has_leader_flag = EOE_leader_hezi
+				}
+			}
+		}	
+		modifier = {
+			factor = 100
+				research_leader = {
+					area = physics
+					has_leader_flag = EOE_leader_hezi
+				}
+		}	
+
+		
+	}
+	
+	ai_weight = {
+		factor = 0
+		modifier = {
+			factor = 1
+			has_global_flag = EOE_tempest_digged
+		}		
+		modifier = {
+			factor = 1.25
+			AND = {
+				has_ethic = ethic_militarist
+				has_global_flag = EOE_tempest_digged
+		}
+	}
+
+		modifier = {
+			factor = 1.5
+			AND = {
+				has_ethic = ethic_fanatic_militarist
+				has_global_flag = EOE_tempest_digged
+		}
+	}
+		modifier = {
+			factor = 1.25
+			AND = {
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_expertise_particles"
+				}
+				has_global_flag = EOE_tempest_digged
+		}
+	}
+
+	}
+}
+tech_EOE_thunder_bolt = {
+	area = physics
+	cost = @EOE_tier7cost1
+	tier = 7
+	category = { particles }
+	ai_update_type = military	
+	weight = 0
+	potential = {
+		has_country_flag = EOE_tech7_9
+		any_owned_pop = {
+			has_trait = trait_EOE_Inheritors
+		}
+	}
+}
+tech_EOE_aurora_beam = {
+	area = physics
+	cost = @EOE_tier7cost2
+	tier = 7
+	category = { particles }
+	ai_update_type = military	
+	weight = 0
+	potential = {
+		has_country_flag = EOE_tech7_8
+		any_owned_pop = {
+			has_trait = trait_EOE_Inheritors
+		}
+	}
+}
+tech_EOE_swift = {
+	area = physics
+	cost = @EOE_tier7cost2
+	tier = 7
+	category = { field_manipulation }
+	ai_update_type = military	
+	weight = 0
+	potential = {
+		has_country_flag = EOE_tech7_7
+		any_owned_pop = {
+			has_trait = trait_EOE_Inheritors
+		}
+	}
+}
+tech_EOE_fairy_star = {
+	area = physics
+	cost = @EOE_tier7cost3
+	tier = 7
+	category = { field_manipulation }
+	ai_update_type = military	
+	weight = 0
+	potential = {
+		has_country_flag = EOE_tech7_6
+		any_owned_pop = {
+			has_trait = trait_EOE_Inheritors
+		}
+	}
+}
+# tech_EOE_blue_flare = {
+# 	area = physics
+# 	cost = @EOE_tier7cost3
+# 	tier = 7
+# 	category = { field_manipulation }
+# 	ai_update_type = military	
+# 	weight = 0
+# 	potential = {
+# 		has_country_flag = eoe_country
+# 	}
+# }
+tech_EOE_nuclear_star = {
+	area = physics
+	cost = @EOE_tier9cost2
+	tier = 9
+	category = { field_manipulation }
+	ai_update_type = military	
+	weight = 0
+	potential = {
+		has_country_flag = EOE_tech9_1
+		any_owned_pop = {
+			has_trait = trait_EOE_Inheritors
+		}
+	}
+}
+
+tech_EOE_fairy_beam = {
+	area = physics
+	cost = @EOE_tier9cost3
+	tier = 9
+	category = { particles }
+	ai_update_type = military	
+	weight = 0
+	potential = {
+		has_country_flag = EOE_tech9_3
+		any_owned_pop = {
+			has_trait = trait_EOE_Inheritors
+		}
+	}
+}
+tech_EOE_nuclear_beam = {
+	area = physics
+	cost = @EOE_tier9cost3
+	tier = 9
+	category = { particles }
+	ai_update_type = military	
+	weight = 0
+	potential = {
+		has_country_flag = EOE_tech9_4
+		any_owned_pop = {
+			has_trait = trait_EOE_Inheritors
+		}
+	}
+}
+tech_EOE_evolite = {
+	area = physics
+	cost = @EOE_tier9cost3
+	tier = 9
+	category = { field_manipulation }
+	ai_update_type = military	
+	weight = 0
+	potential = {
+		has_country_flag = EOE_tech9_5
+		any_owned_pop = {
+			has_trait = trait_EOE_Inheritors
+		}
+	}
+}
+tech_EOE_calm_mind = {
+	area = physics
+	cost = @EOE_tier7cost3
+	tier = 7
+	category = { field_manipulation }
+	ai_update_type = military	
+	weight = 0
+	potential = {
+		has_country_flag = EOE_tech7_5
+		any_owned_pop = {
+			has_trait = trait_EOE_Inheritors
+		}
+	}
+}

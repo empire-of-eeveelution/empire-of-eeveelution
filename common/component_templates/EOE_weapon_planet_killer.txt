@@ -1,0 +1,128 @@
+weapon_component_template = { # the pokeball
+	key = "PLANET_KILLER_EOE"
+	size = planet_killer
+	type = planet_killer
+	use_ship_kill_target = no
+
+	prerequisites = { "EOE_mental_storm" }
+
+	windup = { min = 30.0 max = 30.0 }
+	total_fire_time = 30
+
+	icon = GFX_ship_part_nanobot_diffuser
+	icon_frame = 1
+
+	size_restriction = { EOE_masterball }
+	component_set = "PLANET_KILLER_EOE"
+
+	planet_destruction_gfx = "god_ray_gfx"
+
+	ai_weight = {
+		factor = 10
+	}
+}
+
+weapon_component_template = { # FIRE, FIRE, FIRE
+	key = "PLANET_KILLER_FIRE_EOE"
+	size = planet_killer
+	type = planet_killer
+	use_ship_kill_target = no
+
+	hidden = yes
+
+	windup = { min = 10 max = 10 }
+	total_fire_time = 15
+
+	icon = GFX_ship_part_world_cracker
+	icon_frame = 1
+
+	size_restriction = { colossus }
+	component_set = "PLANET_KILLER_FIRE_EOE"
+
+	planet_destruction_gfx = shatter_planet_gfx
+
+}	
+
+weapon_component_template = { # FIRE, FIRE, FIRE
+	key = "PLANET_KILLER_FIRE_EOE_SMALL"
+	size = planet_killer
+	type = planet_killer
+	use_ship_kill_target = no
+
+
+	windup = { min = 18 max = 18 }
+	total_fire_time = 18
+
+	icon = GFX_EOE_Blue_Flare
+	icon_frame = 1
+
+	size_restriction = { EOE_Reshiram }
+	prerequisites = {
+		tech_EOE_Reshiram
+	}
+	component_set = "PLANET_KILLER_FIRE_EOE_SMALL"
+
+	planet_destruction_gfx = shatter_planet_gfx
+
+}	
+
+weapon_component_template = { # the pokeball
+	key = "PLANET_KILLER_OKRA"
+	size = planet_killer
+	type = planet_killer
+	use_ship_kill_target = no
+
+	hidden = yes
+
+	windup = { min = 60 max = 60 }
+	total_fire_time = 300
+
+	icon = GFX_ship_part_nanobot_diffuser
+	icon_frame = 1
+
+	size_restriction = { EOE_okra_ship }
+	component_set = "PLANET_KILLER_EOE"
+
+	planet_destruction_gfx = "god_ray_gfx"
+
+	ai_weight = {
+		factor = 0
+	}
+}
+
+# utility_component_template = {
+# 	key = "BAILONG_PLANET_KILLER"
+# 	size = small
+# 	icon = "GFX_EOE_Blue_Flare"
+# 	icon_frame = 1
+# 	power = 0
+
+# 	scripted_action_possible = {
+# 		this = {
+# 			NOT = { has_planet_flag = cracked_planet }
+# 		}
+# 	}
+# 	scripted_action_button_possible = {
+
+# 	}
+# 	scripted_action_finished = {
+# 		this = {
+# 			has_planet_flag = cracked_planet
+# 		}
+# 	}
+
+# 	scripted_action_name = on_destroy_planet_with_PLANET_KILLER_FIRE_EOE_SMALL
+# 	scripted_action_tooltip = scripted_action_tooltip
+# 	scripted_action_icon = "GFX_ship_forerunner_thrusters"
+# 	scripted_action_on_cancel = on_test_cancel
+# 	scripted_action_activity_key = test_key
+
+# 	ai_weight = {
+# 		weight = 0
+# 	}
+# 	component_set = "BAILONG_PLANET_KILLER"
+# 	size_restriction = { EOE_Reshiram }
+# 	prerequisites = {
+# 		tech_EOE_Reshiram
+# 	}
+# }

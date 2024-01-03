@@ -1,0 +1,322 @@
+portraits = {
+		EOE001 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE001.dds"	}
+		EOE002 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE002.dds"	}
+		EOE003 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE003.dds"	}
+		EOE004 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE004.dds"	}
+		EOE005 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE005.dds"	}
+		EOE006 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE006.dds"	}
+		EOE007 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE007.dds"	}
+		EOE008 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE008.dds"	}
+		EOE009 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE009.dds"	}
+		EOE010 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE010.dds"	}
+		EOE011 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE011.dds"	}
+		EOE012 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE012.dds"	}
+		EOE013 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE013.dds"	}
+		#EOE014 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE014.dds"	}
+		EOE015 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE015.png" }
+		EOE016 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE016.png" }
+		EOE017 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE017.png" }
+		EOE018 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE018.png" }
+		EOE019 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE019.png" }
+		EOE020 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE020.png" }
+		EOE021 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE021.png" }
+		EOE022 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE022.png" }
+		EOE023 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE023.png" }
+		EOE024 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE024.png" }
+		EOE025 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE025.png" }
+		EOE026 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE026.png" }
+		EOE027 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE027.png" }
+		EOE028 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE028.png" }
+		EOE029 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE029.png" }
+		EOE030 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE030.png" }
+		#EOE031 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE031.png" }
+		EOE032 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE032.png" }
+		EOE033 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE033.png" }
+		EOE034 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE034.png" }
+		EOE035 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE035.png" }
+		EOE036 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE036.png" }
+		EOE037 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE037.png" }
+		EOE038 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE038.png" }
+		EOE039 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE039.png" }
+		EOE040 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE040.png" }
+		EOE041 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE041.png" }
+		EOE042 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE042.png" }
+		EOE043 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE043.png" }
+		EOE044 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE044.png" }
+		EOE045 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE045.png" }
+		EOE046 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE046.png" }
+		EOE047 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE047.png" }
+		EOE048 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE048.png" }
+		EOE049 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE049.png" }
+		EOE050 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE050.png" }
+		EOE051 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE051.png" }
+		EOE052 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE052.png" }
+		EOE053 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE053.png" }
+		EOE054 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE054.png" }
+		EOE055 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE055.png" }
+		EOE056 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE056.png" }
+		EOE058 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE058.png" }
+		EOE059 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE059.png" }
+		EOE060 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE060.png" }
+		EOE061 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE061.png" }
+		EOE062 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE062.png" }
+		EOE063 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE063.png" }
+		EOE064 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE064.png" }
+		EOE065 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE065.png" }
+		EOE066 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE066.png" }
+		EOE067 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE067.png" }
+		EOE068 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE068.png" }
+		EOE069 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE069.png" }
+		EOE070 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE070.png" }
+		EOE071 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE071.png" }
+		EOE072 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE072.png" }
+		EOE073 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE073.png" }
+		EOE074 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE074.png" }
+		#EOE075 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE075.png" }
+		EOE076 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE076.png" }
+		EOE077 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE077.png" }
+		EOE078 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE078.png" }
+		EOE079 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE079.png" }
+		EOE080 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE080.png" }
+		EOE081 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE081.png" }
+		EOE082 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE082.png" }
+		EOE083 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE083.png" }
+		EOE084 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE084.png" }
+		EOE085 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE085.png" }
+		EOE086 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE086.png" }
+		EOE087 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE087.png" }
+		EOE088 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE088.png" }
+		EOE089 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE089.png" }
+		EOE090 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE090.png" }
+		EOE091 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE091.png" }
+		EOE092 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE092.png" }
+		EOE093 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE093.png" }
+		EOE094 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE094.png" }
+		EOE095 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE095.png" }
+		EOE096 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE096.png" }
+		EOE097 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE097.png" }
+		EOE098 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE098.png" }
+		EOE099 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE099.png" }
+		#EOEhezi = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE_Hezi.png" }
+		EOEOkra = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE_Okra.dds" }
+		EOE100 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE100.png" }
+		EOE101 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE101.png" }
+		EOE102 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE102.png" }
+		EOE103 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE103.png" }
+		EOE104 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE104.png" }
+		EOE105 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE105.png" }
+		EOE106 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE106.png" }
+		EOE107 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE107.png" }
+		EOE108 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE108.png" }
+		EOE109 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE109.png" }
+		EOE110 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE110.png" }
+		EOE111 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE111.png" }
+		EOE112 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE112.png" }
+		EOE113 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE113.png" }
+		EOE114 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE114.png" }
+		EOE115 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE115.png" }
+		EOE116 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE116.png" }
+		EOE117 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE117.png" }
+		EOE118 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE118.png" }
+		EOE119 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE119.png" }
+		EOE120 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE120.png" }
+		EOE121 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE121.png" }
+		EOE122 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE122.png" }
+		EOE123 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE123.png" }
+		EOE124 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE124.png" }
+		EOE125 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE125.png" }
+		EOE126 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE126.png" }
+		EOE127 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE127.png" }
+		EOE128 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE128.png" }
+		EOE129 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE129.png" }
+		EOE130 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE130.png" }
+		EOE131 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE131.png" }
+		EOE132 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE132.png" }
+		EOE133 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE133.png" }
+		EOE134 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE134.png" }
+		EOE135 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE135.png" }
+		EOE136 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE136.png" }
+		EOE137 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE137.png" }
+		EOE138 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE138.png" }
+		EOE139 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE139.png" }
+		EOE140 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE140.png" }
+		EOE141 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE141.png" }
+		EOE142 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE142.png" }
+		EOE143 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE143.png" }
+		EOE144 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE144.png" }
+		EOE145 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE145.png" }
+		EOE146 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE146.png" }
+		EOE147 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE147.png" }
+		EOE148 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE148.png" }
+		EOE149 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE149.png" }
+		EOE150 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE150.png" }
+		EOE151 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE151.png" }
+		EOE152 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE152.png" }
+		EOE153 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE153.png" }
+		EOE154 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE154.png" }
+		EOE155 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE155.png" }
+		EOE156 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE156.png" }
+		EOE157 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE157.png" }
+		EOE158 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE158.png" }
+		EOE159 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE159.png" }
+		EOE160 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE160.png" }
+		EOEReshiram = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE_Reshiram.png" }
+		Umbreon01 = {
+			entity = "Umbreon01_entity"
+			clothes_selector = "no_texture"
+			hair_selector = "no_texture"
+			greeting_sound = "pokemon_Eeveelutions"
+			character_textures = {
+				"gfx/models/portraits/Pokemon_animated/Umbreon01/EOE075.dds"
+			
+			}
+			
+		}
+		EOEHezi_test = {
+			entity = "EOE_Hezi_dongtai_entity"
+			clothes_selector = "no_texture"
+			hair_selector = "no_texture"
+			greeting_sound = "pokemon_Eeveelutions"
+			character_textures = {
+				"gfx/models/portraits/Pokemon_animated/01_Hezi/EOE_Hezi.dds"
+			
+			}
+			
+		}
+
+	
+		EOE014 = {
+		entity = "EEVEE01_entity"
+		clothes_selector = "no_texture"
+		hair_selector = "no_texture"
+		greeting_sound = "pokemon_Eeveelutions"
+		character_textures = {
+			"gfx/models/portraits/Pokemon_animated/EEVEE01/EOE014.dds"
+		
+		}
+		}
+		
+		Vaporeon01 = {
+			entity = "Vaporeon01_entity"
+			clothes_selector = "no_texture"
+			hair_selector = "no_texture"
+			greeting_sound = "pokemon_Eeveelutions"
+			character_textures = {
+				"gfx/models/portraits/Pokemon_animated/Vaporeon01/EOE031.dds"
+			
+			}
+			}
+
+	}
+
+	
+
+
+
+
+
+portrait_groups = {
+Eeveelutions= {
+		default = EOE014
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = { gender = female }
+				}
+                                portraits = {
+EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 Umbreon01 Vaporeon01
+
+				}
+			}
+            add = {
+                trigger = {
+                    ruler = { gender = male }
+                }
+                portraits = {
+EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 Umbreon01 Vaporeon01
+
+                }
+            }
+        }
+            
+        species = { #generic portrait for a species
+            add = {
+                portraits = {
+EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150  EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 Umbreon01 Vaporeon01
+
+                }
+            }
+
+        }
+
+        pop = { #for a specific pop
+            add = {
+				trigger = {
+						AND = {
+									is_enslaved = no
+						}			
+				}
+                portraits = {
+EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 Umbreon01 Vaporeon01
+
+                }
+            }
+			add = {
+				trigger = {
+						AND = {
+									is_enslaved = yes
+						}
+				}
+                portraits = {
+EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 Umbreon01 Vaporeon01
+                            }
+                 }
+        }
+
+        leader = { #scientists, generals, admirals, governor
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 Umbreon01 Vaporeon01
+
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 Umbreon01 Vaporeon01
+
+                }
+            }
+        }
+        
+        ruler = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 Umbreon01 Vaporeon01
+
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 Umbreon01 Vaporeon01
+
+
+
+
+					}
+			}
+
+		}
+	}
+}

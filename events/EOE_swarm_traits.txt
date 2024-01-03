@@ -1,0 +1,111 @@
+namespace = eoeswarm
+country_event = {
+	id = eoeswarm.1
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		owner = {
+			has_ethic = ethic_gestalt_consciousness
+			}		
+	}
+	immediate = {
+		every_owned_pop = {
+			if = {
+				limit = { 
+				has_trait = trait_ice_type_mega_evolution
+					} 
+				
+				modify_species = {
+					species = this
+					add_trait = trait_ice_type_mega_evolution_swarm
+					remove_trait = trait_ice_type_mega_evolution
+				}
+			}
+			}
+		
+			
+		}
+				
+}
+	
+	
+
+	
+country_event = {
+	id = eoeswarm.2
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {		
+		owner = {
+			has_ethic = ethic_gestalt_consciousness
+			}		
+	}
+	immediate = {
+		every_owned_pop = {
+			if = {
+				limit = { 
+				has_trait = trait_dark_type_mega_evolution
+					} 
+				
+				modify_species = {
+					species = this
+					add_trait = trait_dark_type_mega_evolution_swarm
+					remove_trait = trait_dark_type_mega_evolution
+				}
+			}
+			}
+		
+			
+		}
+				
+}
+	
+
+country_event = {
+	id = eoeswarm.3
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {			
+		owner = {
+			has_ethic = ethic_gestalt_consciousness
+			}		
+	}
+	immediate = {
+		every_owned_pop = {
+			if = {
+				limit = { 
+				has_trait = trait_fairy_type_mega_evolution
+					} 
+				
+				modify_species = {
+					species = this
+					add_trait = trait_fairy_type_mega_evolution_swarm
+					remove_trait = trait_fairy_type_mega_evolution
+				}
+			}
+			}
+		
+			
+		}
+				
+}
+# country_event = {
+# 	id = eoeswarm.4
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	fire_only_once = yes
+# 	trigger = {
+# 		AND = {
+# 			has_tradition = tr_prosperity_finish
+# 			has_civic = civic_external_synapse
+# 		}	
+# 	}
+# 	immediate = {
+# 		give_technology = {
+# 			tech = tech_EOE_synapse_drones
+# 		}
+			
+# 		}
+				
+# }
+	
