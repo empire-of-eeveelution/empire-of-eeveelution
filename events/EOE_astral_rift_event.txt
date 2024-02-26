@@ -1,0 +1,208 @@
+namespace = EOE_astral_rift
+astral_rift_event = {			##发现平行-先行者
+	id = EOE_astral_rift.1
+	title = EOE_astral_rift.1.name
+	desc = EOE_astral_rift.1.desc
+	picture = GFX_evt_astral_rift_library
+	show_sound = event_mystic_reveal_light
+	difficulty = 1
+	astral_rift = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = EOE_astral_rift.1.a
+		set_next_astral_rift_event = { id = EOE_astral_rift.11 }
+	}
+	option = {
+		name = EOE_astral_rift.1.b
+		set_next_astral_rift_event = { id = EOE_astral_rift.12 }
+	}
+
+	after = {
+		explorer = {
+			astral_thread_small_reward = yes
+		}
+	}
+}
+astral_rift_event = {			##不予干涉
+	id = EOE_astral_rift.11
+	title = EOE_astral_rift.11.name
+	desc = EOE_astral_rift.11.desc
+	picture = GFX_evt_astral_rift_library
+	show_sound = event_mystic_reveal_light
+	difficulty = 0
+	astral_rift = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = EOE_astral_rift.11.a
+	}
+
+	after = {
+		explorer = {
+			astral_thread_small_reward = yes
+		}
+	}
+}
+astral_rift_event = {		##问候-先行者惊讶
+	id = EOE_astral_rift.12
+	title = EOE_astral_rift.12.name
+	desc = EOE_astral_rift.12.desc
+	picture = GFX_evt_astral_rift_library
+	show_sound = event_mystic_reveal_light
+	difficulty = 6
+	astral_rift = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = EOE_astral_rift.12.a
+		set_next_astral_rift_event = { id = EOE_astral_rift.121 }
+	}
+	option = {
+		name = EOE_astral_rift.12.b
+		set_next_astral_rift_event = { id = EOE_astral_rift.122 }
+	}
+
+	after = {
+		explorer = {
+			astral_thread_small_reward = yes
+		}
+	}
+}
+astral_rift_event = {		##被动观测
+	id = EOE_astral_rift.121
+	title = EOE_astral_rift.121.name
+	desc = EOE_astral_rift.121.desc
+	picture = GFX_evt_astral_rift_library
+	show_sound = event_mystic_reveal_light
+	difficulty = 1
+	astral_rift = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = EOE_astral_rift.121.a
+	}
+
+	after = {
+		explorer = {
+			astral_thread_small_reward = yes
+		}
+	}
+}
+astral_rift_event = {		##提出援助
+	id = EOE_astral_rift.122
+	title = EOE_astral_rift.122.name
+	desc = EOE_astral_rift.122.desc
+	picture = GFX_evt_astral_rift_library
+	show_sound = event_mystic_reveal_light
+	difficulty = 6
+	astral_rift = yes
+
+	is_triggered_only = yes
+
+	option = {
+		allow = {
+			custom_tooltip = {
+				fail_text = EOE_astral_rift.122.condition
+				has_resource = { type = alloys amount < 5000 }
+			}
+		}
+		name = EOE_astral_rift.122.a
+		add_resource = { alloys = -5000 }
+		set_next_astral_rift_event = { id = EOE_astral_rift.1221 }
+	}
+	option = {
+		allow = {
+			custom_tooltip = {
+				fail_text = EOE_astral_rift.122.condition
+				has_resource = { type = astral_threads amount < 50 }
+			}
+		}
+		name = EOE_astral_rift.122.b
+		add_resource = { astral_threads = -50 }
+		set_next_astral_rift_event = { id = EOE_astral_rift.1222 }
+	}
+
+	after = {
+		explorer = {
+			astral_thread_small_reward = yes
+		}
+	}
+}
+astral_rift_event = {		##武器支持
+	id = EOE_astral_rift.1221
+	title = EOE_astral_rift.1221.name
+	desc = EOE_astral_rift.1221.desc
+	picture = GFX_evt_astral_rift_library
+	show_sound = event_mystic_reveal_light
+	difficulty = 6
+	astral_rift = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = EOE_astral_rift.1221.a
+		set_next_astral_rift_event = { id = EOE_astral_rift.12221 }
+	}
+
+	after = {
+		explorer = {
+			astral_thread_large_reward = yes
+			add_research_option = forerunner_genetic_template
+		}
+	}
+}
+astral_rift_event = {		##星界丝缕新式武备支持
+	id = EOE_astral_rift.1222
+	title = EOE_astral_rift.1222.name
+	desc = EOE_astral_rift.1222.desc
+	picture = GFX_evt_astral_rift_library
+	show_sound = event_mystic_reveal_light
+	difficulty = 0
+	astral_rift = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = EOE_astral_rift.1222.a
+		set_next_astral_rift_event = { id = EOE_astral_rift.12221 }
+	}
+
+	after = {
+		explorer = {
+			astral_thread_large_reward = yes
+			add_research_option = forerunner_genetic_template
+			hidden_effect = {
+				add_modifier = { modifier = astral_rift_damage_to_crisis }
+			}
+		}
+	}
+}
+astral_rift_event = {		##谢礼
+	id = EOE_astral_rift.12221
+	title = EOE_astral_rift.12221.name
+	desc = EOE_astral_rift.12221.desc
+	picture = GFX_evt_astral_rift_library
+	show_sound = event_mystic_reveal_light
+	difficulty = 6
+	astral_rift = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = EOE_astral_rift.12221.a
+	}
+
+	after = {
+		explorer = {
+			hidden_effect = {
+				set_country_flag = finished_forerunner_astral_rift
+			}
+			astral_thread_large_reward = yes
+		}
+	}
+}

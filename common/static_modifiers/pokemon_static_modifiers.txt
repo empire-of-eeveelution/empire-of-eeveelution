@@ -151,3 +151,12 @@ EOE_OKRA_effect = {
     planet_jobs_society_research_produces_mult = 0.2
 	planet_jobs_produces_mult = 0.1
 }
+
+astral_rift_damage_to_crisis = {
+	hide_from_country_list = yes
+	damage_vs_country_type_shroud_mult = 0.5
+	damage_vs_country_type_shroud_spirits_mult = 0.5
+	damage_vs_country_type_extradimensional_mult = 0.5
+	damage_vs_country_type_extradimensional_2_mult = 0.5
+	damage_vs_country_type_extradimensional_3_mult = 0.5
+}

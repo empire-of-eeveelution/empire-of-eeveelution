@@ -1,0 +1,9 @@
+EOE_test_rift = {
+	name = EOE_astral_rift_riftworld
+	randomized = no
+	flags = { forerunner_rift }
+	event = EOE_astral_rift.1
+	on_roll_failed = {
+		standard_astral_rift_on_roll_failed = yes
+	}
+}
