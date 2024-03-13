@@ -149,7 +149,7 @@ fleet_event = {
 			has_country_flag = leadereevent5_has_happened
 			NOR = {
 				has_country_flag = leadereevent6_has_happened
-				has_civic = civic_slaver_guilds
+				#has_civic = civic_slaver_guilds
 			}
 		}
 		solar_system = {
@@ -358,6 +358,7 @@ country_event = {
 				species = owner_main_species
 				name = NAME_Hezi
 				skill = 1
+				randomize_traits = no
 				traits = {
 					trait = "leader_trait_scientist_nuclear_type"
 					trait = "leader_trait_spark_of_genius"
@@ -365,7 +366,6 @@ country_event = {
 					trait = "leader_trait_expertise_particles_2"
 					trait = "leader_trait_curator"
 				}
-				event_leader = yes
 				set_age = 18
 				effect = {
 					set_leader_flag = EOE_leader_hezi
@@ -5254,7 +5254,7 @@ country_event = {
 					trait = "leader_trait_expertise_particles_2"
 					trait = "leader_trait_curator"
 				}
-				event_leader = yes
+				randomize_traits = no
 				set_age = 18
 				effect = {
 					set_leader_flag = EOE_leader_hezi
@@ -5333,7 +5333,6 @@ country_event = {
 					trait = "leader_trait_expertise_biology_3"
 					trait = "leader_trait_society_focus_3"
 				}
-				event_leader = yes
 				randomize_traits = no
 				set_age = 21
 				effect = {
@@ -5363,6 +5362,9 @@ country_event = {
 						name = "NAME_EOE_OKRASHIP"
 						design = "NAME_EOE_OKRASHIP"
 						graphical_culture = fallen_empire_02
+						effect = {
+							save_global_event_target_as = EOE_okra_ship
+						}
 					}
 	
 							}
@@ -5443,6 +5445,7 @@ country_event = {
 	title = "leadereevent.84.name"
 	desc = "leadereevent.84.desc"
 	is_triggered_only = yes
+	diplomatic = yes
 	trigger = {
 		AND = {
 			any_owned_leader = {
@@ -5456,7 +5459,10 @@ country_event = {
 			}
 		}
 	}
-	picture = GFX_evt_EOE_Elena_tomb_room
+	picture_event_data = {
+		room = EOE_tomb_room
+		portrait = EOE081
+	}
 	option = {
 		name = leadereevent.84.a
 		hidden_effect = {
@@ -6187,8 +6193,6 @@ country_event = {   #一级随机上特质
 		
 	}
 }
-
-
 
 
 country_event = {   #4级随机上特质
@@ -9761,14 +9765,204 @@ country_event = {
 	}
 }
 
+#秋葵效果
+planet_event = { 
+	id = leadereevent.66
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = event_target:EOE_okra
+		exists = event_target:EOE_okra_ship
+		any_fleet_in_orbit = {
+			any_owned_ship = {
+				is_same_value = event_target:EOE_okra_ship
+			}
+		}
+		NOT = { has_planet_flag = EOE_okra_effect_exist }
+		NOT = { has_planet_flag = EOE_okra_effect_start }
+	}
+
+	immediate = {
+		planet_event = { id = leadereevent.68 days = 3 }
+
+		remove_planet_flag = EOE_okra_effect_canceled
+		set_planet_flag = EOE_okra_effect_start
+
+		# Set vars to adapt effect to planet size
+		export_trigger_value_to_variable = {
+			trigger = planet_size
+			variable = effect_size_var
+		}
+		multiply_variable = {
+			which = effect_size_var
+			value = 0.13
+		}
+		create_ambient_object = {
+			type = terraforming_planet_effect
+			location = this
+			use_3d_location = yes
+			entity_scale_to_size = yes
+			scripted_scale = effect_size_var
+		}
+		last_created_ambient_object = {
+			set_ambient_object_flag = eoe_okra_terraforming_effect
+		}
+		# Set vars to adapt beam to planet size
+		export_trigger_value_to_variable = {
+			trigger = planet_size
+			variable = beam_size_var
+		}
+		switch = {
+			trigger = planet_size
+			30 >= { multiply_variable = { which = beam_size_var value = 0.26 } }
+			28 >= { multiply_variable = { which = beam_size_var value = 0.27 } }
+			26 >= { multiply_variable = { which = beam_size_var value = 0.28 } }
+			24 >= { multiply_variable = { which = beam_size_var value = 0.30 } }
+			22 >= { multiply_variable = { which = beam_size_var value = 0.31 } }
+			20 >= { multiply_variable = { which = beam_size_var value = 0.34 } }
+			19 >= { multiply_variable = { which = beam_size_var value = 0.36 } }
+			18 >= { multiply_variable = { which = beam_size_var value = 0.37 } }
+			16 >= { multiply_variable = { which = beam_size_var value = 0.42 } }
+			14 >= { multiply_variable = { which = beam_size_var value = 0.47 } }
+			12 >= { multiply_variable = { which = beam_size_var value = 0.58 } }
+			10 >= { multiply_variable = { which = beam_size_var value = 0.65 } }
+		}
+		create_ambient_object = {
+			type = terraforming_ship_beam
+			location = event_target:EOE_okra_ship
+			entity_face_object = this
+			use_3d_location = yes
+			entity_scale_to_size = yes
+			scripted_scale = beam_size_var
+			play_animation_once = yes
+		}
+		last_created_ambient_object = {
+			set_ambient_object_flag = eoe_okra_terraforming_effect
+		}
+	}
+}
+
+#秋葵 取消
 planet_event = {
-	id = leadereevent.20000
+	id = leadereevent.67
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = event_target:EOE_okra
+		exists = event_target:EOE_okra_ship
+	}
+
+	immediate = {
+		set_planet_flag = EOE_okra_effect_canceled
+		remove_planet_flag = EOE_okra_effect_start
+
+		# Destroy beam and planet effects
+		solar_system = {
+			every_system_ambient_object = {
+				limit = {
+					OR = {
+						has_ambient_object_flag = eoe_okra_terraforming_beam
+						has_ambient_object_flag = eoe_okra_terraforming_effect
+					}
+				}
+				destroy_ambient_object = this
+			}
+		}
+
+		# Notification - Terraforming Canceled
+		# create_message = {
+		# 	type = MESSAGE_EOE_OKRA_EFFECT_CANCELED
+		# 	localization = MESSAGE_EOE_OKRA_EFFECT_CANCELED_DESC
+		# 	days = 10
+		# 	target = this
+		# 	variable = {
+		# 		type = name
+		# 		localization = PLANET
+		# 		scope = this
+		# 	}
+		# }
+	}
+}
+
+planet_event = {
+	id = leadereevent.68
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = event_target:EOE_okra
+		exists = event_target:EOE_okra_ship
+		any_fleet_in_orbit = {
+			any_owned_ship = {
+				is_same_value = event_target:EOE_okra_ship
+			}
+		}
+		NOT = { has_planet_flag = EOE_okra_effect_exist }
+		NOT = { has_planet_flag = EOE_okra_effect_canceled }
+	}
+
+	immediate = {
+		
+
+		set_planet_flag = EOE_okra_effect_exist
+		remove_planet_flag = EOE_okra_effect_start
+		owner = {
+			add_resource = {
+				energy = -5000
+			}
+		}
+		event_target:EOE_okra_ship = {
+			fleet = {	
+				set_event_locked = yes
+			}
+		}
+
+		planet_event = {
+			id = leadereevent.69 days = 300
+		}
+		
+			# Notification - Terraforming Started
+			create_message = {
+				type = MESSAGE_EOE_OKRA_EFFECT_STARTED
+				localization = MESSAGE_EOE_OKRA_EFFECT_STARTED_DESC
+				days = 10
+				target = prev
+				variable = {
+					type = name
+					localization = PLANET
+					scope = prev
+				}
+			}
+		}
+	}
+
+
+planet_event = {
+	id = leadereevent.69
 	hide_window = yes
 
 	is_triggered_only = yes
 
 	immediate = {
-
+		solar_system = {
+			every_system_ambient_object = {
+				limit = {
+					OR = {
+						has_ambient_object_flag = eoe_okra_terraforming_beam
+						has_ambient_object_flag = eoe_okra_terraforming_effect
+					}
+				}
+				destroy_ambient_object = this
+			}
+		}
+		
+		event_target:EOE_okra_ship = {
+			fleet = {	
+				set_event_locked = no
+			}
+		}
 		if = {
 			limit = {
 				exists = owner
@@ -9778,6 +9972,7 @@ planet_event = {
 			add_modifier = {
 				modifier = EOE_OKRA_effect
 			}
+			
 		}
 	}
 }

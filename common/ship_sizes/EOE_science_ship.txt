@@ -8,7 +8,10 @@ EOE_okra_ship = {
 	collision_radius = 5   #←←←←←←←←←←←←←←←←←←
 	modifier = {
 		ship_shield_add = 5000
+		ship_shield_regen_add_static = 200
 		ship_armor_add = 5000
+		ship_armor_regen_add_static = 200
+		ship_hull_regen_add_static = 1000
 		ship_evasion_add = 50
 		ship_disengage_opportunities_add = 5
 		ship_disengage_chance_mult = 2
@@ -18,6 +21,7 @@ EOE_okra_ship = {
 		ship_hyperlane_range_add = 3
 	}
 	combat_disengage_chance = 10
+	cloaking_forbidden = yes
 	max_hitpoints = 10000
 	size_multiplier = 2
 	combat_size_multiplier = 2
@@ -26,8 +30,10 @@ EOE_okra_ship = {
 	num_target_locators = 0
 	is_space_station = no
 	is_designable = no
+	is_civilian = yes
 	icon_frame = 5
 	icon = ship_size_science
+	class = shipclass_science_ship
 	base_buildtime = 180
 	default_behavior = colossus
 	enable_3dview_in_ship_browser = no
@@ -35,13 +41,10 @@ EOE_okra_ship = {
 	resources = {
 		category = ships
 		upkeep = {
-			energy = 500
-			food = 200
+			energy = 5
+			food = 2
 		}
 	}
-	
-	class = shipclass_science_ship
-
 
 	is_designable = no
 	required_component_set = "power_core"

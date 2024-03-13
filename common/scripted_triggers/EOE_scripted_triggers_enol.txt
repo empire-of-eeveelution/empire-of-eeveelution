@@ -2,7 +2,7 @@ is_hezi_in_shroud = {
 	OR = {
 		owner = {
 			any_owned_leader = {
-				is_councilor_type = councilor_research
+				is_councilor = yes
 				has_leader_flag = EOE_leader_hezi
 			}
 		}
@@ -21,7 +21,7 @@ is_okra_in_shroud = {
 	OR = {
 		owner = {
 			any_owned_leader = {
-				is_councilor_type = councilor_research
+				is_councilor = yes
 				has_leader_flag = EOE_leader_okra
 			}
 		}
@@ -50,6 +50,9 @@ is_pokemon = {
 is_pokemon_2 = {
 	has_trait = trait_natural_psionic_warrior
 	has_trait = trait_pokeball_adaptability
+	has_citizenship_type = {
+		type = citizenship_slavery
+	}
 }
 
 #scope = planet

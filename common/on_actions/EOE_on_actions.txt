@@ -48,13 +48,22 @@ on_destroy_planet_with_PLANET_KILLER_EOE = {
 	}
 }
 
-on_destroy_planet_with_PLANET_KILLER_OKRA = {
+# on_destroy_planet_with_PLANET_KILLER_OKRA = {
+# 	events = {
+# 		crisis.5015 # Menace Objective - Destroy World/Empire
+# 		leadereevent.20000
+# 	}
+# }
+on_eoe_okra_target_planet_reached = {
 	events = {
-		crisis.5015 # Menace Objective - Destroy World/Empire
-		leadereevent.20000
+		leadereevent.66
 	}
 }
-
+on_eoe_okra_action_cancel = {
+	events = {
+		leadereevent.67
+	}
+}
 # on_monthly_pulse_country ={
 # 	events = {
 # 		eevent.37

@@ -11,18 +11,22 @@ tech_EOE_energy_torpedoes_1 = {
 		modifier = {
 			factor = 0
 			NOT = {
-				research_leader = {
-					area = physics
-					has_leader_flag = EOE_leader_hezi
+				owner = {
+					any_owned_leader = {
+						is_councilor = yes
+						has_leader_flag = EOE_leader_hezi
+					}
 				}
 			}
 		}	
 		modifier = {
 			factor = 100
-				research_leader = {
-					area = physics
+			owner = {
+				any_owned_leader = {
+					is_councilor = yes
 					has_leader_flag = EOE_leader_hezi
 				}
+			}
 		}	
 
 		

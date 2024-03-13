@@ -16,11 +16,11 @@ ship_section_template = {
 		template = "invisible_small_turret"
 		locatorname = "EOE_MEW_Psychic"
 	}	
-	component_slot = {
-		name = "SMALL_GUN_03"
-		template = "invisible_small_turret"	
-		locatorname = "EOE_MEW_Psychic"
-	}
+	# component_slot = {
+	# 	name = "SMALL_GUN_03"
+	# 	template = "invisible_small_turret"	
+	# 	locatorname = "EOE_MEW_Psychic"
+	# }
 	component_slot = {
 		name = "SMALL_GUN_04"
 		template = "invisible_small_turret"	
@@ -36,11 +36,11 @@ ship_section_template = {
 		template = "invisible_point_defence_turret"
 		locatorname = "EOE_MEW_Psychic"
 	}	
-	component_slot = {
-		name = "POINT_02"
-		template = "invisible_point_defence_turret"
-		locatorname = "EOE_MEW_Psychic"
-	}	
+	# component_slot = {
+	# 	name = "POINT_02"
+	# 	template = "invisible_point_defence_turret"
+	# 	locatorname = "EOE_MEW_Psychic"
+	# }	
 	
 	# component_slot = {
 	# 	name = "EOE_LARGE_GUN_01"
@@ -87,11 +87,11 @@ ship_section_template = {
 		template = "invisible_large_turret"
 		locatorname = "EOE_laser_gun_01_l"
 	}	
-	component_slot = {
-		name = "BIG_GUN_04"
-		template = "invisible_large_turret"	
-		locatorname = "EOE_laser_gun_02_r"
-	}
+	# component_slot = {
+	# 	name = "BIG_GUN_04"
+	# 	template = "invisible_large_turret"	
+	# 	locatorname = "EOE_laser_gun_02_r"
+	# }
 	component_slot = {
 		name = "POI_GUN_01"
 		template = "invisible_point_defence_turret"
@@ -125,7 +125,7 @@ ship_section_template = {
 	key = "EOE_Reshiram"
 	ship_size = EOE_Reshiram
 	fits_on_slot = mid
-	entity = "EOE_Reshiram1_entity"
+	entity = "EOE_Reshiram1_entity" #EOEmpty_entity
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
 	
@@ -139,16 +139,16 @@ ship_section_template = {
 		template = "invisible_titanic_fixed"
 		locatorname = "EOE_Reshiram_main_gun"
 	}
-	component_slot = {
-		name = "X_GUN_01"
-		template = "invisible_extra_large_fixed"
-		locatorname = "EOE_X_gun_l"
-	}	
-	component_slot = {
-		name = "X_GUN_02"
-		template = "invisible_extra_large_fixed"	
-		locatorname = "EOE_X_gun_r"
-	}
+	# component_slot = {
+	# 	name = "X_GUN_01"
+	# 	template = "invisible_extra_large_fixed"
+	# 	locatorname = "EOE_X_gun_l"
+	# }	
+	# component_slot = {
+	# 	name = "X_GUN_02"
+	# 	template = "invisible_extra_large_fixed"	
+	# 	locatorname = "EOE_X_gun_r"
+	# }
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "invisible_large_turret"
@@ -164,11 +164,11 @@ ship_section_template = {
 		template = "invisible_large_turret"
 		locatorname = "EOE_L_gun_l"
 	}	
-	component_slot = {
-		name = "LARGE_GUN_04"
-		template = "invisible_large_turret"
-		locatorname = "EOE_L_gun_r"
-	}
+	# component_slot = {
+	# 	name = "LARGE_GUN_04"
+	# 	template = "invisible_large_turret"
+	# 	locatorname = "EOE_L_gun_r"
+	# }
 	component_slot = {
 		name = "POI_GUN_01"
 		template = "invisible_point_defence_turret"
@@ -179,16 +179,16 @@ ship_section_template = {
 		template = "invisible_point_defence_turret"
 		locatorname = "EOE_P_gun_l"
 	}	
-	component_slot = {
-		name = "POI_GUN_03"
-		template = "invisible_point_defence_turret"
-		locatorname = "EOE_P_gun_r"
-	}	
-	component_slot = {
-		name = "POI_GUN_04"
-		template = "invisible_point_defence_turret"
-		locatorname = "EOE_P_gun_r"
-	}	
+	# component_slot = {
+	# 	name = "POI_GUN_03"
+	# 	template = "invisible_point_defence_turret"
+	# 	locatorname = "EOE_P_gun_r"
+	# }	
+	# component_slot = {
+	# 	name = "POI_GUN_04"
+	# 	template = "invisible_point_defence_turret"
+	# 	locatorname = "EOE_P_gun_r"
+	# }	
 	
 	# component_slot = {
 	# 	name = "EOE_LARGE_GUN_01"
@@ -203,6 +203,34 @@ ship_section_template = {
 		cost = {
 			food = 3750
 			minerals = 2500
+		}
+	}
+	
+}
+
+
+
+ship_section_template = {
+	key = "EOE_Minior"
+	ship_size = EOE_minior
+	fits_on_slot = mid
+	entity = "EOEmpty_entity"
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_turret"
+		locatorname = "EOE_Minior_body"
+	}
+
+	small_utility_slots = 10
+	aux_utility_slots = 3
+	resources = {
+		category = pokemon_ships
+		cost = {
+			minerals = 100
+			rare_crystals = 2
 		}
 	}
 	

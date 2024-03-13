@@ -58,7 +58,11 @@ on_building_demolished = {
 		EOEbuliding.0
 	}
 }
-
+on_post_government_changed = {
+	events = {
+		EOEbuliding.0
+	}
+}
 # on_monthly_pulse = {
 # 	events = {
 # 		EOEbuliding.13

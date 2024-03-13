@@ -4201,18 +4201,24 @@ country_event = {    #白龙领袖
 		name = EOE_branch.66.b
 		hidden_effect ={
 			create_leader = {
-				class = admiral
+				class = commander
 				species = owner_main_species
 				name = NAME_Bailong
-				skill = 10
+				skill = 1
+				randomize_traits = no
 				traits = {
 					trait = "leader_trait_EOE_admiral_Bailong"
 				}
 				event_leader = yes	
 				leader_age_min = 1
 				leader_age_max = 1
+				#custom_description = reshiram_backstory
 				effect = {
 					set_leader_flag = EOE_leader_Bailong
+					set_leader_flag = leader_death_events_blocked
+					set_leader_flag = legendary_leader
+					set_leader_flag = immune_to_negative_traits
+					add_experience = 114514
 				}				
 			}
 			last_created_leader = {
@@ -4277,7 +4283,12 @@ event = {  #见鬼——伊布专属事件
 	is_triggered_only = yes
 
 	trigger = {
-		any_country = { has_country_flag = eoe_country }
+		any_country = { 
+			OR = {
+				has_country_flag = eoe_country 
+				has_country_flag = eoe_country_lotus #让核子灵能军团也能过这个事件
+			}
+		}
 		NOT = { has_global_flag = EOE_ghost_started }
 	}
 	immediate = {
@@ -5775,7 +5786,7 @@ ship_event = { #第六次的随机，结尾事件
 	}
 	option = {
 		name = OK
-		event_target:EOE_cthugha_planet ={
+		event_target:EOE_ghost_planet = {
 			add_deposit = d_EOE_ghost_trace
 			remove_modifier = EOE_modifier_ghost_story
 		}

@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Minior_mesh"
+		file = "gfx/models/ships/Minior/Minior.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "MiniorShape"
+			index = 0
+			texture_diffuse = "pm0824_11_Body1.dds"
+			texture_normal = "EOE_minor_norm.dds"
+			texture_specular = "EOE_minor_spec.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

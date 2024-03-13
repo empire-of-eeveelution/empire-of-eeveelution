@@ -1,0 +1,15 @@
+
+entity = {
+	name = "EOE_minior_entity"
+	pdxmesh = "Minior_mesh"
+	scale = 0.5
+
+
+	locator = { name = "EOE_Minior_body" 	position = { 0 0 0 } }
+
+
+	game_data = { 
+		size = 10
+		emissive_recolor_crunch = 0
+	}
+}

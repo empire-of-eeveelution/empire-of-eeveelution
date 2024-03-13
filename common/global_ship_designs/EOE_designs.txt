@@ -354,15 +354,52 @@ ship_design = {
 
 ship_design = {
 	name = "NAME_EOE_OKRASHIP"
-	ship_size = EOE_okra_ship
-	section = {
-		template = EOE_okra_ship
-		slot = "mid"
-		component = {
-			slot = "EOE_okra_ship_W"
-			template = "PLANET_KILLER_OKRA"
-		}
+	ship_size = azaryn_dome
 
+	section = {
+		template = "azaryn_dome_key"
+		slot = "ship"
+
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_9"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_10"
+			template = "LARGE_SHIELD_5"
+		}
 	}
 
 	required_component = "OKRA_BIO_REACTOR"
@@ -370,6 +407,8 @@ ship_design = {
 	required_component = "OKRA_THRUSTER"
 	required_component = "PSI_JUMP_DRIVE_1" 
 	required_component = "SCIENCE_CLOAKING_PSI"
+	required_component = "SHIP_EOE_OKRA_TERRAFORM"
+	
 	
 }
 

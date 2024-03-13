@@ -159,11 +159,11 @@ eoestartleader.1.c:0"令伊布作呕，封存这些东西"
 eoestartleader.2.name:0"选择一颗大脑"
 eoestartleader.2.desc:0"资料档案：EEVEE系列灵能生物军团心智节点 \n  军团主脑EEVEE001：此款军团主脑可协调各子个体创建更加高效的心智交流网络，提高整个军团的运行效率。\n  舰载灵能中枢EEVEE002：此款舰载灵能中枢内置了数种灵能运行模板，可以协调太空虫群中的灵能单位使用多种属性的灵能对太空战单位进行强化。\n    灵能计算核心EEVEE003：此款灵能计算核心拥有极强的运算能力与逻辑思维能力，能大幅提高军团的自主进化速度，使军团能针对战况和敌情进行快速的适应性调整。"
 eoestartleader.2.a:0"选择军团主脑EEVEE001"
-eoestartleader.2.a.tooltip:0"获得一名§Y总督§!，拥有高级特质\n1.§Y共情网络§!：稳定度§G+25§!，岗位生产的凝聚力§G+20%§!，犯罪度§G-40§! "
+eoestartleader.2.a.tooltip:0"获得一名§Y总督§!，拥有高级特质\n1.§Y共情网络§!：稳定度§G+15§!，岗位生产的凝聚力§G+10%§!，犯罪度§G-25§! "
  eoestartleader.2.b:0"选择舰载灵能中枢EEVEE002"
- eoestartleader.2.b.tooltip:0"获得一名§Y舰队司令§!，拥有高级特质"
+ eoestartleader.2.b.tooltip:0"获得一名§Y舰队司令§!，拥有高级特质\n1.§Y虚空潜航§!：舰船速度§G+15%§!，舰船闪避§G+10§!，跃迁引擎冷却§G-60%§!等 "
  eoestartleader.2.c:0"选择有机计算核心EEVEE003"
- eoestartleader.2.c.tooltip:0"获得一名§G科学家§!，拥有高级特质\n1.§Y灵能之利§!：研究速度§G+30%§!，调查速度§G+50%§!，异常现象研究速度§G+50%§!，考古技能§G+1§!，灵能理论研究速度§G+20%§!，力场操控研究速度§G+20%§! "
+ eoestartleader.2.c.tooltip:0"获得一名§G科学家§!，拥有高级特质\n1.§Y灵能之利§!：研究速度§G+15%§!，调查速度§G+25%§!，异常现象研究速度§G+25%§!，经验获取§G+20%§! "
 
 
  eoestartleader.3.name:0"开机启动界面"
@@ -195,7 +195,7 @@ eoestartleader.2.a.tooltip:0"获得一名§Y总督§!，拥有高级特质\n1.§
  eoestartleader.4.k:0 "外交使节"
  eoestartleader.4.k.tooltip:0 "月亮伊布"
  eoestartleader.4.l:0 "国务顾问"
- eoestartleader.4.l.tooltip:0 "仙伊布"
+ eoestartleader.4.l.tooltip:0 "仙子伊布"
 
 
  ####总督

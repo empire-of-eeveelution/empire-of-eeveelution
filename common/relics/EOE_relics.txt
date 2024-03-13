@@ -10,7 +10,7 @@ r_EOE_warp_gate = {
 		category = relics
 		# Activation cost
 		cost = {
-			alloys = 1500
+			alloys = 3000
 		}
 	}
 
@@ -22,8 +22,8 @@ r_EOE_warp_gate = {
 		potential = {
 			always = yes
 		}
-		starbase_shipyard_build_speed_mult = 0.3
-		megastructure_build_speed_mult = 0.5
+		starbase_shipyard_build_speed_mult = 0.15     #0.3
+		megastructure_build_speed_mult = 0.2   #0.5
 		country_megastructure_build_cap_add = 1
 	}
 

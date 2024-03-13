@@ -131,3 +131,10 @@ component_set = {
 	icon = "GFX_MEW_CLOAKING_LOW"
 	icon_frame = 1	
 }
+
+component_set = {
+	key = "EOE_MINIOR_EXPLOSION"
+	
+	icon = "GFX_ship_part_energy_torpedo_2" # Temp measure untill we get something better.
+	icon_frame = 1	
+}

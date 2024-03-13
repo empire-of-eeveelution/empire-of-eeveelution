@@ -107,7 +107,7 @@ leader_trait_scientist_psychic_type_psionic_benefits_1 = {     #####超能系科
 	}
 
 	leader_class = { scientist }
-	initial = no
+	initial = no 
 	randomized = no
 }
 
@@ -187,22 +187,22 @@ leader_trait_scientist_dark_type_night_owl_1 = {
 
 leader_trait_scientist_electric_type_1 = { #电系科学家
 	icon = "gfx/interface/icons/EeveelutionTypes/electric_type.png"
-	planet_modifier = {
-		planet_jobs_physics_research_produces_mult = 0.1
-		planet_jobs_society_research_produces_mult = 0.1
-		planet_jobs_engineering_research_produces_mult = 0.1
-		planet_researchers_upkeep_mult = -0.1
-		planet_jobs_energy_produces_mult = 0.1
-	}
+	# planet_modifier = {
+	# 	planet_jobs_physics_research_produces_mult = 0.1
+	# 	planet_jobs_society_research_produces_mult = 0.1
+	# 	planet_jobs_engineering_research_produces_mult = 0.1
+	# 	planet_researchers_upkeep_mult = -0.1
+	# 	planet_jobs_energy_produces_mult = 0.1
+	# }
 	sector_modifier = {
-		planet_jobs_physics_research_produces_mult = 0.05
-		planet_jobs_society_research_produces_mult = 0.05
-		planet_jobs_engineering_research_produces_mult = 0.05
-		planet_researchers_upkeep_mult = -0.05
-		planet_jobs_energy_produces_mult = 0.05
+		planet_jobs_physics_research_produces_mult = 0.075
+		planet_jobs_society_research_produces_mult = 0.075
+		planet_jobs_engineering_research_produces_mult = 0.075
+		planet_researchers_upkeep_mult = -0.075
+		planet_jobs_energy_produces_mult = 0.075
 	}
 	councilor_modifier = {
-		planet_researchers_upkeep_mult = -0.1
+		planet_researchers_upkeep_mult = -0.05
 	}
 	
 

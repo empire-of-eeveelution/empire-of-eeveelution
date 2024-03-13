@@ -1,6 +1,11 @@
 leader_trait_EOE_radioactiveburned = { #辐射烧伤-20
 
-	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_maimed.dds"
+	leader_trait_type = negative
+	inline_script = {
+		script = trait/icon_negative_no_tiers
+		ICON = "GFX_leader_trait_maimed"
+		COUNCIL = no
+	}
 	self_modifier = {
 		leader_lifespan_add = -20
 	}
@@ -15,7 +20,12 @@ leader_trait_EOE_radioactiveburned = { #辐射烧伤-20
 leader_trait_EOE_burned_2 = {
 	#烧伤2，机器人石头专属
 
-	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_traumatized.dds"
+	leader_trait_type = negative
+	inline_script = {
+		script = trait/icon_negative_no_tiers
+		ICON = "GFX_leader_trait_traumatized"
+		COUNCIL = no
+	}
 	modifier = {
 		science_ship_survey_speed = -0.1
 		ship_anomaly_research_speed_mult = -0.1
@@ -32,7 +42,11 @@ leader_trait_EOE_burned_2 = {
 leader_trait_EOE_burned = {
 	#烧伤-20
 
-	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_maimed.dds"
+	inline_script = {
+		script = trait/icon_negative_no_tiers
+		ICON = "GFX_leader_trait_maimed"
+		COUNCIL = no
+	}
 	self_modifier = {
 		leader_lifespan_add = -20
 	}

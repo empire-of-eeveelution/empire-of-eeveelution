@@ -4,6 +4,6 @@ tags={
 	"Spaceships"
 	"Events"
 }
-name="EOEtest111"
+name="Empire of eeveelution v2.0.3"
 supported_version="3.*.*"
 remote_file_id="2398450274"

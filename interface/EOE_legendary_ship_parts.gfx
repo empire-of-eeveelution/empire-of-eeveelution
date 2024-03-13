@@ -292,4 +292,45 @@ spriteTypes = {
 }
 
 
+#######################################小陨星组件
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_MINIOR_SENSOR"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_MINIOR_SENSOR.dds"			
+	
+	}
+}
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_MINIOR_BIO_REACTOR"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_MINIOR_BIO_REACTOR.dds"			
+	
+	}
+}
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_MINIOR_JUMP_DRIVE"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_MINIOR_JUMP_DRIVE.dds"			
+	
+	}
+}
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_MINIOR_THRUSTER"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_MINIOR_THRUSTER.dds"			
+	
+	}
+}
+spriteTypes = {
+	##舰船部件
+	spriteType = {
+		name = "GFX_EOE_MINIOR_COMPUTER"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_MINIOR_COMPUTER.dds"			
+	
+	}
+}
 

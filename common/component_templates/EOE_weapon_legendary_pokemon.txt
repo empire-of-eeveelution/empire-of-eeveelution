@@ -33,7 +33,7 @@ weapon_component_template = { #大 精神强念
 	
 	windup = { min = 2 max = 20 }
 	total_fire_time = 32
-	range = 120
+	range = 90
 	accuracy = 1
 	tracking = 0.5
 	hull_damage = 1
@@ -75,12 +75,12 @@ weapon_component_template = { #中 精神强念
 	power = -20
 	damage = {
 		min = 5
-		max = 43
+		max = 44
 	}
 	
 	windup = { min = 2 max = 15 }
-	total_fire_time = 24
-	range = 80
+	total_fire_time = 26
+	range = 60
 	accuracy = 1
 	tracking = 0.75
 	hull_damage = 1
@@ -165,8 +165,8 @@ weapon_component_template = { #大 精神冲击
 
 	power = -40
 	damage = {
-		min = 82
-		max = 198
+		min = 62
+		max = 148
 	}
 	
 	windup = { min = 2 max = 20 }
@@ -179,11 +179,11 @@ weapon_component_template = { #大 精神冲击
 	armor_damage = 1.25
 	shield_penetration = 0
 	armor_penetration = 0
-ai_weight = {
+	ai_weight = {
 		weight = 0
 	}	}
 
-	weapon_component_template = { #中 精神冲击
+weapon_component_template = { #中 精神冲击
 	key = "EOE_MEW_Psyshock_medium"
 	size = medium
 	type = instant
@@ -224,7 +224,7 @@ ai_weight = {
 	armor_damage = 1.25
 	shield_penetration = 0
 	armor_penetration = 0
-ai_weight = {
+	ai_weight = {
 		weight = 0
 	}	}
 
@@ -269,7 +269,7 @@ weapon_component_template = { #小 精神冲击
 	armor_damage = 1.25
 	shield_penetration = 0
 	armor_penetration = 0
-ai_weight = {
+	ai_weight = {
 		weight = 0
 	}	
 }
@@ -317,7 +317,49 @@ weapon_component_template = { #神鸟猛击
 }
 
 
-	weapon_component_template = {   ###############波导弹
+weapon_component_template = { #大自爆
+	key = "EOE_MINIOR_EXPLOSION" 
+	size = torpedo
+	
+	icon = "GFX_EOE_sky_attack" 
+	icon_frame = 1
+	type = instant #Essentially a neutron launcher but in reverse.
+	
+	damage = { min = 1300 max = 1950 }
+	windup = { min = 10 max = 20 }
+	total_fire_time = 2085
+	min_range = 0
+	#firing_arc = 30
+	range = 30
+	accuracy = 1
+	tracking = 1
+	power = -70
+	armor_damage = 1.5
+	shield_penetration = 1
+	size_damage_factor = 1.0
+
+	resources = {
+		category = pokemon_ships
+		cost = {
+			minerals = 50
+			rare_crystals = 1
+		}
+		upkeep = {
+			minerals = 0.1
+		}
+	}
+
+	prerequisites = { "tech_EOE_Mew_weapon" }
+	component_set = "EOE_MINIOR_EXPLOSION"
+	projectile_gfx = "neutron_torpedoes" #again, a placeholder untill we get something better.
+	tags = { weapon_type_explosive weapon_type_energy }
+	ai_tags = { weapon_role_artillery artillery artillery_stealth  }
+	ai_weight = {
+		weight = 3
+	}
+}
+
+weapon_component_template = {   ###############波导弹
 		key = "EOE_MEW_Aura_Sphere"
 		size = point_defence
 		icon = "GFX_EOE_Aura_Sphere"
@@ -334,16 +376,16 @@ weapon_component_template = { #神鸟猛击
 				food = 0.1
 			}
 		}
-		damage = { min = 3 max = 6 }
+		damage = { min = 6 max = 8 }
 		windup = { min = 0 max = 0 }
 		total_fire_time = 8
 		range = 35
 		accuracy = 1
 		power = -10
 		hull_damage = 1.0
-		armor_penetration = 1.0
+		#armor_penetration = 1.0
 		armor_damage = 1.0
-		shield_penetration = 1.0
+		#shield_penetration = 1.0
 		shield_damage = 1.0
 		tracking = 1
 		component_set = "EOE_MEW_Aura_Sphere"
@@ -362,7 +404,7 @@ weapon_component_template = { #神鸟猛击
 		# size_restriction = { starbase_starport starbase_starhold starbase_starfortress starbase_citadel starbase_stronghold starbase_headquarters }
 	}
 
-	weapon_component_template = { #X槽 龙星群
+weapon_component_template = { #X槽 龙星群
 	key = "EOE_Draco_Meteor"
 	size = extra_large
 	type = instant
@@ -390,79 +432,79 @@ weapon_component_template = { #神鸟猛击
 	}
 	power = -300
 	damage = {
-		min = 800
-		max = 2000
+		min = 514
+		max = 1818
 	}
 	windup = {
 		min = 1
 		max = 19
 	}
 	total_fire_time = 90
-	range = 250
-	accuracy = 1
-	tracking = 0.5
+	range = 200
+	accuracy = 0.9
+	tracking = 0.3
 	hull_damage = 1.5
 	shield_damage = 1.25
 	armor_damage = 1.25
 	shield_penetration = 0
 	armor_penetration = 0
 
-ai_weight = {
+	ai_weight = {
 		weight = 0
-	}}
+	}
+}
 
 weapon_component_template = { #T槽 青炎
-key = "EOE_Blue_Flare"
-size = titanic
-type = instant
+	key = "EOE_Blue_Flare"
+	size = titanic
+	type = instant
 
-icon = "GFX_EOE_Blue_Flare"
-icon_frame = 1
-#color = { 0.1 1.0 0.1 1 }
+	icon = "GFX_EOE_Blue_Flare"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
 
-prerequisites = { "tech_EOE_Reshiram_weapon" }
-component_set = "EOE_Blue_Flare"
-projectile_gfx = "tachyon_lance"
-tags = { weapon_type_energy }
-ai_tags = { weapon_role_anti_hull }
-ai_tag_weight = 100
-resources = {
-	category = pokemon_ships
-	cost = {
-		food = 600
-		exotic_gases = 12
-		alloys = 304
-	}
-	upkeep = {
-		food = 3
-	}
-}
-
-
-
-power = -300
-damage = {
-		min = 1000
-		max = 1350
-	}
-windup = {
-		min = 1
-		max = 9
+	prerequisites = { "tech_EOE_Reshiram_weapon" }
+	component_set = "EOE_Blue_Flare"
+	projectile_gfx = "tachyon_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_hull }
+	ai_tag_weight = 100
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = 600
+			exotic_gases = 12
+			alloys = 304
 		}
-total_fire_time = 40
-range = 300
-accuracy = 1
-tracking = 0.5
-hull_damage = 1.5
-shield_damage = 1
-armor_damage = 1.25
-shield_penetration = 0
-armor_penetration = 0
-size_restriction = { EOE_Reshiram }
+		upkeep = {
+			food = 3
+		}
+	}
 
-ai_weight = {
-	weight = 0
-}
+
+	power = -300
+	damage = {
+		min = 191
+		max = 9180
+	}
+	windup = {
+		min = 1
+		max = 91
+		}
+	total_fire_time = 180
+	range = 200
+	accuracy = 0.85
+	tracking = 0.3
+	hull_damage = 1.5
+	shield_damage = 1
+	armor_damage = 1.25
+	shield_penetration = 0
+	armor_penetration = 0
+	size_restriction = { EOE_Reshiram }
+
+	ai_weight = {
+		weight = 0
+	}
 }
 
 # weapon_component_template = {
@@ -1404,3 +1446,144 @@ utility_component_template = {
 	}
 	
 }
+
+
+
+
+########################################################################小陨星组件
+utility_component_template = {  #小陨星 反应堆
+	key = "MINIOR_BIO_REACTOR"
+	size = small
+	icon = "GFX_EOE_MINIOR_BIO_REACTOR"
+	icon_frame = 1
+	power = 2500
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = 56
+			alloys = 14
+		}
+		upkeep = {
+		}
+	}
+
+	#prerequisites = { "tech_EOE_Mew" }
+	component_set = "power_core"
+	size_restriction = { EOE_minior }
+
+ai_weight = {
+		weight = 0
+	}}
+
+utility_component_template = {  ###小陨星 跃迁引擎
+	key = "MINIOR_JUMP_DRIVE"
+	size = small
+	icon = "GFX_EOE_MINIOR_JUMP_DRIVE"
+	icon_frame = 1
+	power = -15
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = 20
+			alloys = 5
+			}
+	}
+	ftl = yes
+	jumpdrive = yes
+	ship_modifier = {
+		ship_windup_mult = -0.8
+		ship_ftl_jumpdrive_range_mult = 0.50
+		ship_disengage_opportunities_add = 2
+	}
+	
+ai_weight = {
+		weight = 0
+	}
+	size_restriction = { EOE_minior }
+	#prerequisites = { "tech_EOE_Mew" }
+	component_set = "ftl_components"
+}
+
+utility_component_template = { #小陨星   推进器
+	key = "MINIOR_THRUSTER"
+	size = small
+	icon = "GFX_EOE_MINIOR_THRUSTER"
+	icon_frame = 1
+	power = -15
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = 30
+			alloys = 7
+		}
+	}
+
+	modifier = {
+		ship_base_speed_mult = 1.25
+		ship_evasion_add = 20
+	}
+
+	#prerequisites = { "tech_EOE_Mew" }
+	component_set = "thruster_components"
+	size_restriction = { EOE_minior }
+
+ai_weight = {
+		weight = 0
+	}}
+
+utility_component_template = {  #小陨星电脑
+	key = "MINIOR_COMPUTER"
+	size = small
+	icon = "GFX_EOE_MINIOR_COMPUTER"
+	icon_frame = 1
+	power = -5
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = 20
+			alloys = 5
+		}
+	}
+	modifier = {
+		ship_evasion_mult = 0.15
+		ship_speed_mult = 0.20
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+	}
+	ship_behavior = "swarm"
+	#prerequisites = { "tech_EOE_Mew" }
+	class_restriction = { shipclass_military }
+	size_restriction = { EOE_minior}
+	component_set = "combat_computers"
+
+ai_weight = {
+		weight = 0
+	}}
+
+utility_component_template = {   #小陨星  雷达
+	key = "MINIOR_SENSOR"
+	size = medium
+	icon = "GFX_EOE_MINIOR_SENSOR"
+	icon_frame = 1
+	power = -10
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = 8
+			alloys = 2
+		}
+	}
+	sensor_range = 4
+	hyperlane_range = 5
+
+	ship_modifier = {
+		ship_tracking_add = 15
+	}
+
+	#prerequisites = { "tech_EOE_Mew" }
+	component_set = "sensor_components"
+	size_restriction = { EOE_minior }
+ai_weight = {
+		weight = 0
+	}}

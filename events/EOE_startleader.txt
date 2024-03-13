@@ -82,7 +82,6 @@ country_event = {
 				species = owner_main_species
 				name = "EEVEE001"
 				skill = 1
-				set_age = 16
 				traits = {
 					trait = leader_trait_gifted
 					trait = leader_trait_governor_fairy_type_Empathy_network_1
@@ -90,6 +89,7 @@ country_event = {
 				randomize_traits = no
 				background_ethic = ethic_materialist
 				effect = {
+					set_age = 16
 					set_leader_flag = legendary_leader
 					set_leader_flag = immune_to_negative_traits
 					set_leader_flag = leader_death_events_blocked
@@ -112,7 +112,6 @@ country_event = {
 				species = owner_main_species
 				name = "EEVEE002"
 				skill = 1
-				set_age = 16
 				traits = {
 					trait = leader_trait_gifted
 					trait = leader_trait_dark_type_Void_Stutter_1
@@ -120,6 +119,7 @@ country_event = {
 				randomize_traits = no
 				background_ethic = ethic_materialist
 				effect = {
+					set_age = 16
 					set_leader_flag = legendary_leader
 					set_leader_flag = immune_to_negative_traits
 					set_leader_flag = leader_death_events_blocked
@@ -141,7 +141,6 @@ country_event = {
 				species = owner_main_species
 				name = "EEVEE003"
 				skill = 1
-				set_age = 16
 				traits = {
 					trait = leader_trait_gifted
 					trait = leader_trait_scientist_psychic_type_psionic_benefits_1
@@ -149,6 +148,7 @@ country_event = {
 				randomize_traits = no
 				background_ethic = ethic_materialist
 				effect = {
+					set_age = 16
 					set_leader_flag = legendary_leader
 					set_leader_flag = immune_to_negative_traits
 					set_leader_flag = leader_death_events_blocked
@@ -208,7 +208,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {#探索者，光布，超能+恶
 		name = eoestartleader.4.a
-		custom_tooltip = eoestartleader.4.a.custom_tooltip
+		custom_tooltip = eoestartleader.4.a.tooltip
 		trigger = {
 			has_country_flag = EOE_startleader_scientist
 		}
@@ -224,7 +224,7 @@ country_event = {
 	}
 	option = {#前沿学者，月布，超能+恶
 		name = eoestartleader.4.b
-		custom_tooltip = eoestartleader.4.b.custom_tooltip
+		custom_tooltip = eoestartleader.4.b.tooltip
 		trigger = {
 			has_country_flag = EOE_startleader_scientist
 		}
@@ -240,7 +240,7 @@ country_event = {
 	}
 	option = {#分析专员，雷布，超能+电
 		name = eoestartleader.4.c
-		custom_tooltip = eoestartleader.4.c.custom_tooltip
+		custom_tooltip = eoestartleader.4.c.tooltip
 		trigger = {
 			has_country_flag = EOE_startleader_scientist
 		}
@@ -256,7 +256,7 @@ country_event = {
 	}
 	option = {#统计学家，冰布，超能+水
 		name = eoestartleader.4.d
-		custom_tooltip = eoestartleader.4.d.custom_tooltip
+		custom_tooltip = eoestartleader.4.d.tooltip
 		trigger = {
 			has_country_flag = EOE_startleader_scientist
 		}
@@ -282,7 +282,7 @@ country_event = {
 	}
 	option = {#舰队司令，冰布，恶+冰
 		name = eoestartleader.4.e
-		custom_tooltip = eoestartleader.4.e.custom_tooltip
+		custom_tooltip = eoestartleader.4.e.tooltip
 		trigger = {
 			has_country_flag = EOE_startleader_commander
 		}
@@ -308,7 +308,7 @@ country_event = {
 	}
 	option = {#陆军司令，火布，恶+火
 		name = eoestartleader.4.f
-		custom_tooltip = eoestartleader.4.f.custom_tooltip
+		custom_tooltip = eoestartleader.4.f.tooltip
 		trigger = {
 			has_country_flag = EOE_startleader_commander
 		}
@@ -324,7 +324,7 @@ country_event = {
 	}
 	option = {#督管专员，叶布，恶+草
 		name = eoestartleader.4.g
-		custom_tooltip = eoestartleader.4.g.custom_tooltip
+		custom_tooltip = eoestartleader.4.g.tooltip
 		trigger = {
 			has_country_flag = EOE_startleader_commander
 		}
@@ -340,7 +340,7 @@ country_event = {
 	}
 	option = {#战略家，仙布，恶+仙
 		name = eoestartleader.4.h
-		custom_tooltip = eoestartleader.4.h.custom_tooltip
+		custom_tooltip = eoestartleader.4.h.tooltip
 		trigger = {
 			has_country_flag = EOE_startleader_commander
 		}
@@ -356,7 +356,7 @@ country_event = {
 	}
 	option = {#帝国代表，水布，仙+水
 		name = eoestartleader.4.i
-		custom_tooltip = eoestartleader.4.i.custom_tooltip
+		custom_tooltip = eoestartleader.4.i.tooltip
 		trigger = {
 			has_country_flag = EOE_startleader_official
 		}
@@ -372,7 +372,7 @@ country_event = {
 	}
 	option = {#产业专员，冰布，仙+冰
 		name = eoestartleader.4.j
-		custom_tooltip = eoestartleader.4.j.custom_tooltip
+		custom_tooltip = eoestartleader.4.j.tooltip
 		trigger = {
 			has_country_flag = EOE_startleader_official
 		}
@@ -398,7 +398,7 @@ country_event = {
 	}
 	option = {#外交使节，月布，仙+恶
 		name = eoestartleader.4.k
-		custom_tooltip = eoestartleader.4.k.custom_tooltip
+		custom_tooltip = eoestartleader.4.k.tooltip
 		trigger = {
 			has_country_flag = EOE_startleader_official
 		}
@@ -414,7 +414,7 @@ country_event = {
 	}
 	option = {#国务顾问，仙布，仙+恶
 		name = eoestartleader.4.l
-		custom_tooltip = eoestartleader.4.l.custom_tooltip
+		custom_tooltip = eoestartleader.4.l.tooltip
 		trigger = {
 			has_country_flag = EOE_startleader_official
 		}
@@ -645,7 +645,8 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = EOE_Elena_room
+		portrait = EOE081
+		room = EOE_cool_room
 	}
 	option = {
 		name = eoestartleader.13.a
@@ -665,7 +666,8 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = EOE_Elena_room
+		portrait = EOE081
+		room = EOE_cool_room
 	}
 	option = {
 		name = eoestartleader.14.a

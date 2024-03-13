@@ -8,7 +8,7 @@ utility_component_template = {
 	component_set = "pokemon_mint"
 	
 
-	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram }
+	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram EOE_minior }
 
 	ai_weight = { weight = 0 }
 }
@@ -33,7 +33,7 @@ utility_component_template = {
 		ship_base_speed_mult = 0.1
 		ship_armor_mult = -0.1
 	}
-	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram }
+	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram EOE_minior}
 
 	ai_weight = { weight = 0 }
 }
@@ -59,34 +59,34 @@ utility_component_template = {
 	ship_modifier = {
 		weapon_type_energy_weapon_damage_mult = -0.1
 	}
-	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram }
+	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram EOE_minior}
 
 	ai_weight = { weight = 0 }
 }
 
-# utility_component_template = {
-# 	key = "Modest_Mint"
-# 	size = small
+utility_component_template = {
+	key = "Modest_Mint"
+	size = small
 
-# 	icon = "GFX_EOE_Blue_mint"
-# 	icon_frame = 1
+	icon = "GFX_EOE_Blue_mint"
+	icon_frame = 1
 
-# 	component_set = "pokemon_mint"
-# 	ship_behavior = "Modest_Mint_230"
+	component_set = "pokemon_mint"
+	ship_behavior = "Naive_Mint_190"
 	
-# 	resources = {
-# 		category = pokemon_ships
-# 		cost = { food = 20 }
-# 	}
-# 	ship_modifier = {
-# 		weapon_type_energy_weapon_damage_mult = 0.1
-# 		weapon_type_kinetic_weapon_damage_mult = -0.1
-# 	}
+	resources = {
+		category = pokemon_ships
+		cost = { food = 20 }
+	}
+	ship_modifier = {
+		weapon_type_energy_weapon_damage_mult = 0.1
+		weapon_type_kinetic_weapon_damage_mult = -0.1
+	}
 	
-# 	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram }
+	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram EOE_minior}
 
-# 	ai_weight = { weight = 0 }
-# }
+	ai_weight = { weight = 0 }
+}
 
 utility_component_template = {
 	key = "Naive_Mint"
@@ -107,7 +107,7 @@ utility_component_template = {
 		ship_base_speed_mult = 0.1
 		ship_shield_mult = -0.1
 	}
-	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram }
+	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram EOE_minior}
 
 	ai_weight = { weight = 0 }
 }
@@ -133,7 +133,7 @@ utility_component_template = {
 	ship_modifier = {
 		weapon_type_kinetic_weapon_damage_mult = -0.1
 	} 
-	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram }
+	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram EOE_minior}
 
 	ai_weight = { weight = 0 }
 }
@@ -158,7 +158,7 @@ utility_component_template = {
 		ship_shield_mult = 0.1
 		ship_base_speed_mult = -0.1
 	}
-	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram }
+	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram EOE_minior}
 
 	ai_weight = { weight = 0 }
 }
@@ -183,7 +183,7 @@ utility_component_template = {
 	modifier = {
 		ship_base_speed_mult = -0.1
 	}
-	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram }
+	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram EOE_minior}
 
 	ai_weight = { weight = 0 }
 }
@@ -207,7 +207,7 @@ utility_component_template = {
 	modifier = {
 		ship_base_speed_mult = -0.1
 	}
-	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram }
+	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram EOE_minior}
 
 	ai_weight = { weight = 0 }
 }
@@ -230,7 +230,7 @@ utility_component_template = {
 		ship_armor_mult = 0.1
 		ship_base_speed_mult = -0.1
 	}
-	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram }
+	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram EOE_minior}
 
 	ai_weight = { weight = 0 }
 }
@@ -256,7 +256,7 @@ utility_component_template = {
 		weapon_type_kinetic_weapon_damage_mult = -0.1
 	}
 	
-	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram }
+	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram EOE_minior}
 
 	ai_weight = { weight = 0 }
 }

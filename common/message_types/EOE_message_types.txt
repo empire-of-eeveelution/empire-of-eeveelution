@@ -1,0 +1,11 @@
+message_type = {
+	key = "MESSAGE_EOE_OKRA_EFFECT_STARTED"
+	icon = "GFX_message_terraform_started"
+	icon_frame = 1
+
+	name = "MESSAGE_EOE_OKRA_EFFECT_STARTED_TITLE"
+	sound = "notification"
+	ping = "ping_notification_green"
+
+	category = other
+}

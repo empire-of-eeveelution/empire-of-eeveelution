@@ -68,7 +68,7 @@ EOE_Latias = {
 	collision_radius = 5
 	modifier = {
 		ship_shield_add = 200
-		ship_evasion_add = 50
+		ship_evasion_add = 40
 		ship_piracy_suppression_add = 10
 	}
 	combat_disengage_chance = 10
@@ -114,6 +114,7 @@ EOE_Latias = {
 }
 
 EOE_Reshiram = {
+	entity = EOE_Reshiram_entity
 	formation_priority = 5
 	is_space_object = yes
 	graphical_culture = no
@@ -124,7 +125,7 @@ EOE_Reshiram = {
 	collision_radius = 12   #←←←←←←←←←←←←←←←←←←
 	modifier = {
 		ship_shield_add = 2000
-		ship_evasion_add = 40
+		ship_evasion_add = 25
 		ship_piracy_suppression_add = 5
 	}
 	combat_disengage_chance = 10
@@ -167,5 +168,66 @@ EOE_Reshiram = {
 	required_component_set = "combat_computers"
 	required_component_set = "pokemon_mint"
 	#required_component_set = "BAILONG_PLANET_KILLER"
+	
+}
+
+
+EOE_minior = {
+	#entity = EOEmpty_entity
+	formation_priority = 1
+	is_space_object = yes
+	graphical_culture = no
+	can_be_inspected = yes
+	max_speed = 160
+	acceleration = 1
+	rotation_speed = 1
+	collision_radius = 5
+	modifier = {
+		ship_shield_add = 400
+		ship_evasion_add = 80
+		ship_piracy_suppression_add = 10
+	}
+	combat_disengage_chance = 10
+	max_hitpoints = 2000
+	size_multiplier = 2
+	combat_size_multiplier = 8
+	fleet_slot_size = 1
+	section_slots = { "mid" = { locator = "EOE_Minior_body" } }
+	num_target_locators = 0
+	is_space_station = no
+	icon_frame = 5
+	icon = ship_size_military_1
+	base_buildtime = 90
+	default_behavior = swarm
+	enable_default_design = yes
+	enable_3dview_in_ship_browser = no
+	prerequisites = { "tech_EOE_Mew" }
+	potential_construction = {
+		owner ={ 
+			owner_main_species = {
+				is_species_class = Eeveelutions
+			}
+			is_ai = no }
+	}
+	resources = {
+		category = ships
+		upkeep = {
+			food = 0.4
+		}
+	}
+	
+	class = shipclass_military
+	construction_type = starbase_shipyard
+
+	is_designable = yes
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	required_component_set = "pokemon_mint"
+	ai_ship_data = {
+		
+	}
 	
 }

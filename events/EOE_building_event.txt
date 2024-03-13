@@ -1078,7 +1078,14 @@ planet_event = {
 					has_district = district_EOE_pokemon_industrial
 				}
 				remove_district = district_EOE_pokemon_industrial
-				add_district = district_EOE_arcology_arms_industry
+				if = {
+					limit = { colony_type = col_industrial }
+					add_district = district_EOE_arcology_civilian_industry
+				}
+				else = {
+					add_district = district_EOE_arcology_arms_industry
+				}
+				
 			}
 			while = {
 				limit = {

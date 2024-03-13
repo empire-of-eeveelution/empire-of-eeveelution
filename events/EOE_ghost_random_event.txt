@@ -701,7 +701,7 @@ ship_event = {
 	}
 	desc = {
 		trigger = {
-			NOT = {
+			NAND = {
 				is_hezi_in_shroud = yes
 				is_okra_in_shroud = yes
 			}
@@ -901,19 +901,19 @@ ship_event = {
 	option = {
 		name = OK
 		root.leader = {
-			add_experience = 20000
+			add_experience = 2000
 		}
 		owner = {
 			add_resource = {
-				society_research = 500000
-				physics_research = 500000
-				engineering_research = 500000
+				society_research = 200000
+				physics_research = 200000
+				engineering_research = 200000
 			}
 			every_owned_leader = {
 				limit = {
-					is_councilor_type = councilor_research
+					is_councilor = yes
 				}
-				add_experience = 20000
+				add_experience = 2000
 			}
 		}
 	}
@@ -1459,7 +1459,7 @@ ship_event = {
 	}
 	option = {
 		name = EOE_ghost.3.a
-		#custom_tooltip = EOE_ghost.15.a.tooltip
+		custom_tooltip = EOE_ghost.15.a.tooltip
 		hidden_effect = {
 			if = {
 				limit = {
@@ -2410,6 +2410,7 @@ ship_event = {
 	}
 	option = {
 		name = EOE_ghost.29.a
+		custom_tooltip = EOE_ghost.15.a.tooltip
 		hidden_effect = {
 			owner = {
 				if = {
@@ -9017,7 +9018,7 @@ ship_event = {
 			}
 			else = {
 				EOE_battle_medium_rewards = yes
-				EOE_battle_small_rewards = yes
+				EOE_battle_medium_rewards = yes
 				EOE_battle_small_rewards = yes
 			}
 		}
@@ -9291,6 +9292,7 @@ country_event = {
 			}
 			event_leader = yes
 			set_age = 18
+			randomize_traits = no
 			effect = {
 				set_leader_flag = EOE_leader_hezi
 				set_leader_flag = legendary_leader

@@ -71,7 +71,7 @@ EOE_antigravity_entertainment = {
 }
 
 EOE_psionic_psychology = {
-    country_society_research_produces_mult = 0.2
+    country_society_research_produces_mult = 0.1
 }
 
 EOE_shroud_ship_design = {

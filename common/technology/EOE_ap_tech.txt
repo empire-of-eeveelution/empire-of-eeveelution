@@ -9,9 +9,9 @@
 # 	modifier = {
 # 		description = EOE_ap_engineered_evolution_desc
 # 		description_parameters = {
-# 			POINTS = 3
+# 			POINTS = 7
 # 		}
-# 		POKEMON_species_trait_points_add = 3
+# 		POKEMON_species_trait_points_add = 7
 # 	}
 
 # 	potential = {

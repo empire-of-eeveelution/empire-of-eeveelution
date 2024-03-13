@@ -150,7 +150,7 @@ leadereevent.27.desc.c:0 "We all know that curators love money. As far as I know
 leadereevent.27.desc.d:0 "What is acot? Is that tastier than a banana?"
 leadereevent.27.desc.e:0 "I don't know how long I can live, but at least I'm happy now..."
 leadereevent.27.desc.f:0 "A teacher who treated me well and some old classmates I knew died in the attack... I can't forgive myself, but the national interest is above everything..."
-leadereevent.27.desc.i:0 "I don't like to talk politics ...... but seeing the way our researchers are being bullied, all I can say is I'm a little sorry I came back."
+leadereevent.27.desc.i:0 "I don't understand how slavery has grown to such a large extent as it has today."
 # leadereevent.27.g:0"I want a big toy!"
 # leadereevent.27.g.tooltip:0"Get super weapon §YMaster Ball§!, One time use, control all units in the system after jumping to the target system.\nCooling time §Y10§! years."
 # leadereevent.27.g.tooltip.cooldown:0"Cooling time §Y10§! years."
@@ -577,6 +577,14 @@ EOE_OKRA_effect:0"Sapient Garden"
 EOE_OKRA_effect_desc:0"The plants on this planet have been transformed to form a system that serves the residents. From home cleaning to the treatment of major diseases, plants can be seen everywhere, just like intelligent robots, which can meet most of the needs of residents' lives. The fruits they produce are within reach, incredibly delicious and nutritious, with hormones that encourage residents to engage in romantic intimate encounters."
  FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_OKRA:0 "Prepare for greening $PLANET|Y$"
  MESSAGE_DESC_FOR_PLANET_KILLER_OKRA:0 "Greened"
+
+SHIP_EOE_OKRA_TERRAFORM:1 "Okra's flute"
+eoe_okra_ship_button:0 "§GGreening§!\nTransform the plants on the planet to form an intelligent system that serves the residents. From home cleaning to the treatment of major diseases, plants can be seen everywhere, just like intelligent robots, which can meet most of the needs of residents' lives. The fruits they produce are within reach, incredibly delicious and nutritious, with hormones that encourage residents to engage in romantic intimate encounters.\n\ncost：£energy£§Y5000§!\ntime：£resource_time£§Y300§!days\n"
+eoe_okra_action_activity_key:0 "move to green $PLANET_NAME|Y$"
+
+ MESSAGE_EOE_OKRA_EFFECT_STARTED_TITLE: "Start Greening"
+ MESSAGE_EOE_OKRA_EFFECT_STARTED_DESC: "The greening of the colonies has begun."
+
  PLANET_KILLER_OKRA:1 "Organic modification device"
  PLANET_KILLER_OKRA_ACTION:0 "Green"
  PLANET_KILLER_OKRA_DESC:0 "Transform the plants on the planet to form an intelligent system that serves the residents. From home cleaning to the treatment of major diseases, plants can be seen everywhere, just like intelligent robots, which can meet most of the needs of residents' lives. The fruits they produce are within reach, incredibly delicious and nutritious, with hormones that encourage residents to engage in romantic intimate encounters."

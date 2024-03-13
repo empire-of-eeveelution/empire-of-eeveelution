@@ -512,14 +512,24 @@ country_event = {
 			  
 
 		}
-
-		else = {
+		else_if = {
+			limit = { 
+				closest_system = {
+					min_steps = 2
+					max_steps = 100
+					exists = this
+				}
+			}
 			closest_system = {
 				min_steps = 2
 				max_steps = 100
 				set_star_flag = old_creators_system_1@root.owner
 			}
-			
+		}
+		else = {
+			random_system_within_border = {
+				set_star_flag = old_creators_system_1@root.owner #Larry指的是因为遗迹生成在孤立星系而无法继续事件的稀有bug
+			}
 		}
 
 		}
@@ -781,14 +791,26 @@ ship_event = {
 			  
 
 		}
-
-		else = {
+		else_if = {
+			limit = { 
+				closest_system = {
+					min_steps = 2
+					max_steps = 100
+					exists = this
+				}
+			}
 			closest_system = {
 				min_steps = 2
 				max_steps = 100
 				set_star_flag = old_creators_system_2@root.owner
 			}
-			
+		}
+		else = {
+			owner = {
+				random_system_within_border = {
+					set_star_flag = old_creators_system_2@root.owner #Larry指的是因为遗迹生成在孤立星系而无法继续事件的稀有bug
+				}
+			}
 		}
 
 		

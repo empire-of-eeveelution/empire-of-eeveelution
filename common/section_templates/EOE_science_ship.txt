@@ -1,22 +1,22 @@
 ship_section_template = {
 	key = "EOE_okra_ship"
 	ship_size = EOE_okra_ship
-	fits_on_slot = mid
-	entity = "FaXianHao_entity"
+	fits_on_slot = ship
+	entity = "azaryn_dome_ship_entity" #"FaXianHao_entity"
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
 	
-	component_slot = {
-		name = "EOE_okra_ship_W"
-		template = "invisible_planet_killer_fixed"
-		locatorname = "EOE_MEW_Psychic"
-	}
+	# component_slot = {
+	# 	name = "EOE_okra_ship_W"
+	# 	template = "invisible_planet_killer_fixed"
+	# 	locatorname = "EOE_MEW_Psychic"
+	# }
 	
 	resources = {
 		category = pokemon_ships
 		cost = {
-			food = 2000
-			alloys = 500
+			food = 20
+			alloys = 5
 		}
 	}
 	

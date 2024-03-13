@@ -31,23 +31,23 @@ origin_protoss_shattered_ring = {
 
 }
 
-origin_EOE_pokemon_trainer = {
-	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_EOE_pokemon_trainer.dds"
-	picture = GFX_origin_EOE_pokemon_trainer
+# origin_EOE_pokemon_trainer = {
+# 	is_origin = yes
+# 	icon = "gfx/interface/icons/origins/origins_EOE_pokemon_trainer.dds"
+# 	picture = GFX_origin_EOE_pokemon_trainer
 
-	initializers = { EOE_pokemon_system_initializer }
-	max_once_global = yes
-	possible = {
-		always = no
-		ethics = { NOT = { value = ethic_gestalt_consciousness } value = ethic_gestalt_consciousness}
-	} 
-	description = origin_EOE_pokemon_trainer_effects_remove
-	flags = { custom_start_screen }
+# 	initializers = { EOE_pokemon_system_initializer }
+# 	max_once_global = yes
+# 	possible = {
+# 		always = no
+# 		ethics = { NOT = { value = ethic_gestalt_consciousness } value = ethic_gestalt_consciousness}
+# 	} 
+# 	description = origin_EOE_pokemon_trainer_effects_remove
+# 	flags = { custom_start_screen }
 
-	advanced_start = yes
+# 	advanced_start = yes
 
-	random_weight = {
-		base = 2
-	}
-}
+# 	random_weight = {
+# 		base = 2
+# 	}
+# }
