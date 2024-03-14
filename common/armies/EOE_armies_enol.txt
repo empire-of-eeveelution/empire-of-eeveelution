@@ -42,6 +42,50 @@ EOE_shroud_army_2 = {
 		always = no
 	}
 }
+EOE_kratz_shroud_army = {
+	damage = 10.0
+	health = 14.0
+	morale = 14.0
+	morale_damage = 4.0
+	collateral_damage = 10.0
+	war_exhaustion = 5.0
+	time = 5
+	icon = GFX_army_type_psionic
+	has_species = no
+
+	resources = {
+		category = armies
+		produces = {
+			energy = 1
+		}
+	}
+
+	potential = {
+		always = no
+	}
+}
+EOE_kratz_shroud_army_small = {
+	damage = 8
+	health = 4.0
+	morale = 4.0
+	morale_damage = 3
+	collateral_damage = 8
+	war_exhaustion = 4
+	time = 5
+	icon = GFX_army_type_psionic
+	has_species = no
+
+	resources = {
+		category = armies
+		produces = {
+			energy = 1
+		}
+	}
+
+	potential = {
+		always = no
+	}
+}
 EOE_steel_type_pokemon_army = {
 	damage = 1
 	health = 1
@@ -102,50 +146,7 @@ EOE_steel_type_pokemon_army = {
 		}
 	}
 }
-EOE_kratz_shroud_army = {
-	damage = 10.0
-	health = 14.0
-	morale = 14.0
-	morale_damage = 4.0
-	collateral_damage = 10.0
-	war_exhaustion = 5.0
-	time = 5
-	icon = GFX_army_type_psionic
-	has_species = no
 
-	resources = {
-		category = armies
-		produces = {
-			energy = 1
-		}
-	}
-
-	potential = {
-		always = no
-	}
-}
-EOE_kratz_shroud_army_small = {
-	damage = 8
-	health = 4.0
-	morale = 4.0
-	morale_damage = 3
-	collateral_damage = 8
-	war_exhaustion = 4
-	time = 5
-	icon = GFX_army_type_psionic
-	has_species = no
-
-	resources = {
-		category = armies
-		produces = {
-			energy = 1
-		}
-	}
-
-	potential = {
-		always = no
-	}
-}
 EOE_regirock = {
 	damage = 10
 	health = 100

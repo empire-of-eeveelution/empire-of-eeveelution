@@ -27,7 +27,7 @@ EOE = {
 	authority="auth_dictatorial"
 	civics={
 		"civic_EOE_steel_type_trainer"
-		"civic_scientific_faith"
+		"civic_technocracy"	#"civic_scientific_faith"
 	}
 	government="gov_illuminated_autocracy"
 	

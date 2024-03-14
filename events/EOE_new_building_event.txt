@@ -1,0 +1,316 @@
+namespace = EOE_building
+
+event = {
+	id = EOE_building.1
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_valid_civic = civic_EOE_evolution_planning
+	}
+	immediate = {
+		country_event = {
+			id = EOE_building.2 
+		}
+	}
+}
+country_event = {
+	id = EOE_building.2
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		capital_scope = {
+			if = {
+				limit = { 
+					has_building = building_bureaucratic_1
+				}
+				remove_building = building_bureaucratic_1
+				add_building = building_EOE_evolution_planning_office
+			}
+			else_if = {
+				limit = { 
+					has_building = building_temple
+				}
+				remove_building = building_temple
+				add_building = building_EOE_evolution_planning_office
+			}
+			else_if = {
+				limit = { 
+					has_building = building_sacrificial_temple_1
+				}
+				remove_building = building_sacrificial_temple_1
+				add_building = building_EOE_evolution_planning_office
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = EOE_building.3
+	is_triggered_only = yes
+	title = "EOE_building.3.name"
+	picture = GFX_evt_circuitry_modification
+	desc = {
+		trigger = {
+			has_planet_flag = EOE_evoplan_grass
+		}
+		text = "EOE_building.3.desc.a"
+	}
+	option = {
+		trigger = {
+			NOT = {
+				has_planet_flag = EOE_evoplan_grass
+			}
+		}
+		name = EOE_building.3.a
+		custom_tooltip = EOE_building.3.a.tooltip
+		set_planet_flag = EOE_evoplan_grass
+		remove_planet_flag = EOE_evoplan_water
+		remove_planet_flag = EOE_evoplan_fire
+		remove_planet_flag = EOE_evoplan_electric
+		remove_planet_flag = EOE_evoplan_psychic
+		remove_planet_flag = EOE_evoplan_dark
+		remove_planet_flag = EOE_evoplan_ice
+		remove_planet_flag = EOE_evoplan_fairy
+	}
+
+	desc = {
+		trigger = {
+			has_planet_flag = EOE_evoplan_water
+		}
+		text = "EOE_building.3.desc.b"
+	}
+	option = {
+		trigger = {
+			NOT = {
+				has_planet_flag = EOE_evoplan_water
+			}
+		}
+		name = EOE_building.3.b
+		custom_tooltip = EOE_building.3.b.tooltip
+		remove_planet_flag = EOE_evoplan_grass
+		set_planet_flag = EOE_evoplan_water
+		remove_planet_flag = EOE_evoplan_fire
+		remove_planet_flag = EOE_evoplan_electric
+		remove_planet_flag = EOE_evoplan_psychic
+		remove_planet_flag = EOE_evoplan_dark
+		remove_planet_flag = EOE_evoplan_ice
+		remove_planet_flag = EOE_evoplan_fairy
+	}
+
+	desc = {
+		trigger = {
+			has_planet_flag = EOE_evoplan_fire
+		}
+		text = "EOE_building.3.desc.c"
+	}
+	option = {
+		trigger = {
+			NOT = {
+				has_planet_flag = EOE_evoplan_fire
+			}
+		}
+		name = EOE_building.3.c
+		custom_tooltip = EOE_building.3.c.tooltip
+		remove_planet_flag = EOE_evoplan_grass
+		remove_planet_flag = EOE_evoplan_water
+		set_planet_flag = EOE_evoplan_fire
+		remove_planet_flag = EOE_evoplan_electric
+		remove_planet_flag = EOE_evoplan_psychic
+		remove_planet_flag = EOE_evoplan_dark
+		remove_planet_flag = EOE_evoplan_ice
+		remove_planet_flag = EOE_evoplan_fairy
+	}
+	
+	desc = {
+		trigger = {
+			has_planet_flag = EOE_evoplan_electric
+		}
+		text = "EOE_building.3.desc.d"
+	}
+	option = {
+		trigger = {
+			NOT = {
+				has_planet_flag = EOE_evoplan_electric
+			}
+		}
+		name = EOE_building.3.d
+		custom_tooltip = EOE_building.3.d.tooltip
+		remove_planet_flag = EOE_evoplan_grass
+		remove_planet_flag = EOE_evoplan_water
+		remove_planet_flag = EOE_evoplan_fire
+		set_planet_flag = EOE_evoplan_electric
+		remove_planet_flag = EOE_evoplan_psychic
+		remove_planet_flag = EOE_evoplan_dark
+		remove_planet_flag = EOE_evoplan_ice
+		remove_planet_flag = EOE_evoplan_fairy
+	}
+
+	
+	desc = {
+		trigger = {
+			has_planet_flag = EOE_evoplan_psychic
+		}
+		text = "EOE_building.3.desc.e"
+	}
+	option = {
+		trigger = {
+			NOT = {
+				has_planet_flag = EOE_evoplan_psychic
+			}
+		}
+		name = EOE_building.3.e
+		custom_tooltip = EOE_building.3.e.tooltip
+		remove_planet_flag = EOE_evoplan_grass
+		remove_planet_flag = EOE_evoplan_water
+		remove_planet_flag = EOE_evoplan_fire
+		remove_planet_flag = EOE_evoplan_electric
+		set_planet_flag = EOE_evoplan_psychic
+		remove_planet_flag = EOE_evoplan_dark
+		remove_planet_flag = EOE_evoplan_ice
+		remove_planet_flag = EOE_evoplan_fairy
+	}
+
+	
+	desc = {
+		trigger = {
+			has_planet_flag = EOE_evoplan_dark
+		}
+		text = "EOE_building.3.desc.f"
+	}
+	option = {
+		trigger = {
+			NOT = {
+				has_planet_flag = EOE_evoplan_dark
+			}
+		}
+		name = EOE_building.3.f
+		custom_tooltip = EOE_building.3.f.tooltip
+		remove_planet_flag = EOE_evoplan_grass
+		remove_planet_flag = EOE_evoplan_water
+		remove_planet_flag = EOE_evoplan_fire
+		remove_planet_flag = EOE_evoplan_electric
+		remove_planet_flag = EOE_evoplan_psychic
+		set_planet_flag = EOE_evoplan_dark
+		remove_planet_flag = EOE_evoplan_ice
+		remove_planet_flag = EOE_evoplan_fairy
+	}
+	
+	desc = {
+		trigger = {
+			has_planet_flag = EOE_evoplan_ice
+		}
+		text = "EOE_building.3.desc.g"
+	}
+	option = {
+		trigger = {
+			NOT = {
+				has_planet_flag = EOE_evoplan_ice
+			}
+		}
+		name = EOE_building.3.g
+		custom_tooltip = EOE_building.3.g.tooltip
+		remove_planet_flag = EOE_evoplan_grass
+		remove_planet_flag = EOE_evoplan_water
+		remove_planet_flag = EOE_evoplan_fire
+		remove_planet_flag = EOE_evoplan_electric
+		remove_planet_flag = EOE_evoplan_psychic
+		remove_planet_flag = EOE_evoplan_dark
+		set_planet_flag = EOE_evoplan_ice
+		remove_planet_flag = EOE_evoplan_fairy
+	}
+
+	
+	desc = {
+		trigger = {
+			has_planet_flag = EOE_evoplan_fairy
+		}
+		text = "EOE_building.3.desc.h"
+	}
+	option = {
+		trigger = {
+			NOT = {
+				has_planet_flag = EOE_evoplan_fairy
+			}
+		}
+		name = EOE_building.3.h
+		custom_tooltip = EOE_building.3.h.tooltip
+		remove_planet_flag = EOE_evoplan_grass
+		remove_planet_flag = EOE_evoplan_water
+		remove_planet_flag = EOE_evoplan_fire
+		remove_planet_flag = EOE_evoplan_electric
+		remove_planet_flag = EOE_evoplan_psychic
+		remove_planet_flag = EOE_evoplan_dark
+		remove_planet_flag = EOE_evoplan_ice
+		set_planet_flag = EOE_evoplan_fairy
+	}
+
+	
+	desc = {
+		trigger = {
+			NOR = {
+				has_planet_flag = EOE_evoplan_grass
+				has_planet_flag = EOE_evoplan_water
+				has_planet_flag = EOE_evoplan_fire
+				has_planet_flag = EOE_evoplan_electric
+				has_planet_flag = EOE_evoplan_psychic
+				has_planet_flag = EOE_evoplan_dark
+				has_planet_flag = EOE_evoplan_ice
+				has_planet_flag = EOE_evoplan_fairy
+			}
+		}
+		text = "EOE_building.3.desc.i"
+	}
+	option = {
+		trigger = {
+			OR = {
+				has_planet_flag = EOE_evoplan_grass
+				has_planet_flag = EOE_evoplan_water
+				has_planet_flag = EOE_evoplan_fire
+				has_planet_flag = EOE_evoplan_electric
+				has_planet_flag = EOE_evoplan_psychic
+				has_planet_flag = EOE_evoplan_dark
+				has_planet_flag = EOE_evoplan_ice
+				has_planet_flag = EOE_evoplan_fairy
+			}
+		}
+		name = EOE_building.3.i
+		custom_tooltip = EOE_building.3.i.tooltip
+		remove_planet_flag = EOE_evoplan_grass
+		remove_planet_flag = EOE_evoplan_water
+		remove_planet_flag = EOE_evoplan_fire
+		remove_planet_flag = EOE_evoplan_electric
+		remove_planet_flag = EOE_evoplan_psychic
+		remove_planet_flag = EOE_evoplan_dark
+		remove_planet_flag = EOE_evoplan_ice
+		remove_planet_flag = EOE_evoplan_fairy
+	}
+	option = {
+		name = EOE_building.3.j
+	}
+}
+
+country_event = {
+	id = EOE_building.4
+	is_triggered_only = yes
+	title = "EOE_building.4.name"
+	picture = GFX_evt_circuitry_modification
+	desc = "EOE_building.4.desc"
+	trigger = {
+		has_tradition = tr_genetics_creation
+		has_valid_civic = civic_EOE_evolution_planning
+	}
+	option = {
+		name = EOE_building.4.a
+		force_remove_civic = civic_EOE_evolution_planning
+		every_controlled_planet = {
+			remove_planet_flag = EOE_evoplan_grass
+			remove_planet_flag = EOE_evoplan_water
+			remove_planet_flag = EOE_evoplan_fire
+			remove_planet_flag = EOE_evoplan_electric
+			remove_planet_flag = EOE_evoplan_psychic
+			remove_planet_flag = EOE_evoplan_dark
+			remove_planet_flag = EOE_evoplan_ice
+			remove_planet_flag = EOE_evoplan_fairy
+		}
+	}
+}
