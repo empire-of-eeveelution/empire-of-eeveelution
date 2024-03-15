@@ -32,6 +32,9 @@ EOE_Draco_Meteor_DESC:0"基于同名宝可梦招式研发，这个器官能产�
 EOE_MEW_Sky_Attack:0 "神鸟猛击"
 EOE_MEW_Sky_Attack_DESC:0 "基于同名宝可梦招式研发，这个器官能产生飞鸟形状的粒子团，通过破坏性共振瘫痪护盾系统。\n§T你也可以在战舰上培养这些器官，将其用作舰船组件。§!"
 
+ EOE_MINIOR_EXPLOSION:0 "大爆炸"
+ EOE_MINIOR_EXPLOSION_DESC:0 "将变异小陨星身体中储存的能量和晶体物质瞬间释放，大量的晶体碎片将能对敌方舰船造成严重的损害。爆发后只留下一颗核心。\n并不会像同名宝可梦招式那样自毁，但是晶体物质和能量的重新积累仍然需要很长时间。"
+
 EOE_Blue_Flare:0"青焰"
 EOE_Blue_Flare_DESC:0"宛若洪荒初开的瞬间，这个器官发出的灵能攻击能在敌方舰体上制造4万亿摄氏度的高温，将敌方连人带船熔成一团夸克胶子汤。"
  FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_FIRE_EOE_SMALL:0 "准备焚烧 $PLANET|Y$"
@@ -99,8 +102,11 @@ MINIOR_COMPUTER:0"小陨星型思维核心"
 MINIOR_COMPUTER_DESC:1"小陨星没有复杂的智能，它们将遵循被编入思维核心的本能冲向敌人并甩出大部分质量进行自爆攻击，随后在敌人周围袭扰以吸引火力。"
 MINIOR_SENSOR:0"小陨星心灵感应器"
 MINIOR_SENSOR_DESC:1"这个器官可以让小陨星窥探现实世界在虚境中的投影，附近数十光年内的一切活动在来自另一维度的注视下都无所遁形。"
+<<<<<<< HEAD
 EOE_MINIOR_EXPLOSION:0"大爆炸"
 EOE_MINIOR_EXPLOSION_DESC:0"变异的小陨星可以将身体的大部分质量抛向敌舰，并以极高的效率将其转化为能量，在短时间内对敌舰造成大量伤害。发动此技能后的小陨星需要相当长的时间进食并休息。"
+=======
+>>>>>>> 8b4ad3021e72353cf5d4b61eea65640c26c6991f
 
 
 ###############################A槽
@@ -158,6 +164,28 @@ ap_mega_evolution_EOE_modifier_desc:1 "$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$：
 requires_ap_evolutionary_mastery:0"$TRIGGER_FAIL$需要§Y$tr_genetics_finish$§!或§Y$tr_synthetics_finish$§!或§Y$tr_cybernetics_finish$§!或§Y$tr_psionics_finish$§!。"
 EOEjifei3.11451.name:0"超级进化"
 EOEjifei3.11451.desc:0"当那些所谓“唯物主义者”对确实存在的灵能视而不见，唯心主义者认为自己的小脑瓜就是万物之源时，我们已彻底理解了意识与肉身的联系，用血肉与钢铁铸造威震寰宇的现世之神灵。\n在完成武器及护盾科技的研究后解锁对应的灵能生物战斗单位科技。\n§Y拉帝亚斯§!的所需科技将在§Y梦幻§!研究完成后有概率出现。\n§Y莱希拉姆§!的所需科技将在§Y拉帝亚斯§!研究完成后有概率出现。"
+
+
+
+tech_EOE_Minior:0"构造体：小陨星"
+tech_EOE_Minior_desc:0"正常的小陨星是微小的石质太空生物，难以造成任何威胁。但是这些与稀有水晶结合而变异的小陨星，体型巨大，能量充盈，易于繁殖，或许能够在太空战当中发挥用处。"
+TECH_UNLOCK_MINIOR_CONSTRUCTION_TITLE:0 "§H解锁舰船类型：§!小陨星"
+TECH_UNLOCK_MINIOR_CONSTRUCTION_DESC:0 "§H小陨星§!\n这种变异太空生物体经过改造，培育和筛选之后，可以用于太空作战。它们将遵循被编入思维核心的本能，冲向敌人并甩出大部分质量进行自爆攻击。"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

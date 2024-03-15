@@ -178,30 +178,29 @@ EOE_minior = {
 	is_space_object = yes
 	graphical_culture = no
 	can_be_inspected = yes
-	max_speed = 160
-	acceleration = 1
-	rotation_speed = 1
-	collision_radius = 5
+	max_speed = 200
+	acceleration = 2
+	rotation_speed = 2
+	collision_radius = 4
 	modifier = {
-		ship_shield_add = 400
+		ship_armor_add = 400
 		ship_evasion_add = 80
-		ship_piracy_suppression_add = 10
 	}
 	combat_disengage_chance = 10
-	max_hitpoints = 2000
-	size_multiplier = 2
-	combat_size_multiplier = 8
+	max_hitpoints = 800
+	size_multiplier = 1
+	combat_size_multiplier = 4
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "EOE_Minior_body" } }
 	num_target_locators = 0
 	is_space_station = no
 	icon_frame = 5
 	icon = ship_size_military_1
-	base_buildtime = 90
+	base_buildtime = 45
 	default_behavior = swarm
 	enable_default_design = yes
 	enable_3dview_in_ship_browser = no
-	prerequisites = { "tech_EOE_Mew" }
+	prerequisites = { "tech_EOE_Minior" }
 	potential_construction = {
 		owner ={ 
 			owner_main_species = {
@@ -212,7 +211,7 @@ EOE_minior = {
 	resources = {
 		category = ships
 		upkeep = {
-			food = 0.4
+			minerals = 0.4
 		}
 	}
 	

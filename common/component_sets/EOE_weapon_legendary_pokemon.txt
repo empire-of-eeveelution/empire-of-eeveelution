@@ -14,7 +14,7 @@ component_set = {
 component_set = {
 	key = "EOE_MEW_Sky_Attack"
 	
-	icon = "GFX_ship_part_energy_torpedo_2" # Temp measure untill we get something better.
+	icon = "GFX_EOE_sky_attack"
 	icon_frame = 1	
 }
 
@@ -135,6 +135,6 @@ component_set = {
 component_set = {
 	key = "EOE_MINIOR_EXPLOSION"
 	
-	icon = "GFX_ship_part_energy_torpedo_2" # Temp measure untill we get something better.
+	icon = "GFX_EOE_sky_attack" 
 	icon_frame = 1	
 }
