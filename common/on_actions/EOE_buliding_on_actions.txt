@@ -10,6 +10,7 @@ on_game_start_country = {
 		EOEbuliding.16
 		EOEbuliding.18
 		EOEbuliding.19
+		EOE_building.1 #计划进化国策的初始化
 		}
 }
 
@@ -60,7 +61,13 @@ on_building_demolished = {
 }
 on_post_government_changed = {
 	events = {
-		EOEbuliding.0
+		EOEbuliding.1
+		EOEbuliding.2
+		EOEbuliding.3
+		EOEbuliding.4
+		EOEbuliding.5
+		EOEbuliding.6
+		EOEbuliding.9
 	}
 }
 # on_monthly_pulse = {

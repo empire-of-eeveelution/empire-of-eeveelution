@@ -1908,9 +1908,9 @@ country_event = { #环开开局布置
 			
 
 		}
-		#country_event = {
-		#	id = eevent.2
-		#}
+		country_event = {
+			id = EOE_building.1 #这个是计划进化初始化给建筑
+		}
 	}
 	
 }

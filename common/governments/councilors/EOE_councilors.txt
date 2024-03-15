@@ -31,14 +31,29 @@ councilor_eeveelutions_assimilator = {
 	}
 }
 
-EOE_councilor_technocracy = {
-	leader_class = { scientist }
+# EOE_councilor_technocracy = {
+# 	leader_class = { scientist }
+# 	is_leader_possible = {
+# 		leader_class = scientist 
+# 	}
+# 	civic = civic_scientific_faith
+# 	modifier = {
+# 		planet_researchers_upkeep_mult = -0.02
+# 	}
+# }
+
+councilor_EOE_evolution_planning = {
+	leader_class = { scientist official commander}
 	is_leader_possible = {
-		leader_class = scientist 
+		OR = {
+			leader_class = commander
+			leader_class = scientist
+			leader_class = official
+		}
 	}
-	civic = civic_scientific_faith
+	civic = civic_EOE_evolution_planning
 	modifier = {
-		planet_researchers_upkeep_mult = -0.02
+		pop_EOE_evolution_planning_effect_mult = 0.05
 	}
 }
 
