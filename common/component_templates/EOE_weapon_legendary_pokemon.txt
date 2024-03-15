@@ -286,7 +286,7 @@ weapon_component_template = { #神鸟猛击
 	windup = { min = 20 max = 140 }
 	total_fire_time = 130
 	min_range = 0
-	firing_arc = 30
+	# firing_arc = 30
 	range = 50
 	accuracy = 1
 	tracking = 0.1
@@ -348,7 +348,7 @@ weapon_component_template = { #大自爆
 			minerals = 0.1
 		}
 	}
-
+	size_restriction = { EOE_minior }
 	prerequisites = { "tech_EOE_Mew_weapon" }
 	component_set = "EOE_MINIOR_EXPLOSION"
 	projectile_gfx = "neutron_torpedoes" #again, a placeholder untill we get something better.
