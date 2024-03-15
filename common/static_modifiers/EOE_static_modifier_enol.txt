@@ -3,9 +3,9 @@ EOE_radioactive_material = {
 }
 
 EOE_crisisfive = {
-    ship_weapon_damage = 7.5
-    ship_hull_mult = 7.5
-    ship_shield_mult = 7.5
+    ship_weapon_damage = 1.5
+    ship_hull_mult = 1.5
+    ship_shield_mult = 1.5
 }
 
 EOE_modifier_ghost_story = {

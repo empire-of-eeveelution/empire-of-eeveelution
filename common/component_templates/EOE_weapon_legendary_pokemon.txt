@@ -325,14 +325,14 @@ weapon_component_template = { #大自爆
 	icon_frame = 1
 	type = instant #Essentially a neutron launcher but in reverse.
 	
-	damage = { min = 1300 max = 1950 }
+	damage = { min = 500 max = 583 }
 	windup = { min = 10 max = 20 }
 	total_fire_time = 2085
 	min_range = 0
 	#firing_arc = 30
 	range = 30
 	accuracy = 1
-	tracking = 1
+	tracking = 0.1
 	power = -70
 	armor_damage = 1
 	shield_penetration = 1
@@ -342,7 +342,7 @@ weapon_component_template = { #大自爆
 	resources = {
 		category = pokemon_ships
 		cost = {
-			minerals = 50
+			minerals = 100
 			rare_crystals = 1
 		}
 		upkeep = {
@@ -1290,7 +1290,7 @@ utility_component_template = {
 		}
 	}
 	size_restriction = {
-		EOE_mew EOE_Latias EOE_Reshiram
+		EOE_mew EOE_Latias EOE_Reshiram EOE_minior
 	}
 	
 	ai_weight = {

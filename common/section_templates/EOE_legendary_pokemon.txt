@@ -229,7 +229,7 @@ ship_section_template = {
 	resources = {
 		category = pokemon_ships
 		cost = {
-			minerals = 100
+			minerals = 200
 			rare_crystals = 2
 		}
 	}
