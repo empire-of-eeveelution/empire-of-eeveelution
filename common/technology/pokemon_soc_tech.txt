@@ -614,3 +614,37 @@ tech_EOE_Reshiram = {
 # }
 
 
+tech_EOE_Minior = {
+	cost = 8000
+	area = engineering
+	tier = 3
+	category = { materials }
+	is_rare = yes
+	weight = 0
+
+	gateway = ship
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_MINIOR_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_MINIOR_CONSTRUCTION_DESC"
+		}
+	}
+
+
+	potential = {
+		owner_main_species = {
+			is_species_class = Eeveelutions
+		}
+		has_ascension_perk = ap_mega_evolution_EOE
+		OR = {
+			any_owned_pop = { has_trait = trait_EOE_Inheritors }
+			any_owned_pop = { has_trait = trait_transfur_eevee }
+			has_origin = origin_lotus_hezi_start
+		}
+		is_ai = no
+	}
+	ai_weight = {
+		weight = 0
+	}
+}

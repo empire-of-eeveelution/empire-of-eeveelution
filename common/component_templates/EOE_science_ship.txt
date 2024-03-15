@@ -1,4 +1,4 @@
-utility_component_template = {  #梦幻 反应堆
+utility_component_template = {  #葵 反应堆
 	key = "OKRA_BIO_REACTOR"
 	size = small
 	icon = "GFX_EOE_OKRA_CORE"
@@ -51,7 +51,7 @@ ai_weight = {
 # 	component_set = "ftl_components"
 # }
 
-utility_component_template = { #梦幻   推进器
+utility_component_template = { #葵   推进器
 	key = "OKRA_THRUSTER"
 	size = small
 	icon = "GFX_ship_part_thruster_5"
