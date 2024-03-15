@@ -412,3 +412,61 @@ ship_design = {
 	
 }
 
+ship_design = {
+	name = "NAME_EOE_CRYSTALSHIP"
+	ship_size = EOE_minior
+	section = {
+		template = EOE_Minior
+		slot = mid
+		component = {
+			slot = "TORPEDO_01"
+			template = "EOE_MINIOR_EXPLOSION"
+		}
+		component = {
+			slot = "SMALL_UTILITY_1"
+			template = "MEW_ARMOR"
+		}
+		component = {
+			slot = "SMALL_UTILITY_2"
+			template = "MEW_ARMOR"
+		}
+		component = {
+			slot = "SMALL_UTILITY_3"
+			template = "MEW_ARMOR"
+		}
+		component = {
+			slot = "SMALL_UTILITY_4"
+			template = "MEW_ARMOR"
+		}
+		component = {
+			slot = "SMALL_UTILITY_5"
+			template = "MEW_ARMOR"
+		}
+		component = {
+			slot = "SMALL_UTILITY_6"
+			template = "MEW_SHIELD"
+		}
+		component = {
+			slot = "SMALL_UTILITY_7"
+			template = "MEW_SHIELD"
+		}
+		component = {
+			slot = "SMALL_UTILITY_8"
+			template = "MEW_SHIELD"
+		}
+		component = {
+			slot = "SMALL_UTILITY_9"
+			template = "MEW_SHIELD"
+		}
+		component = {
+			slot = "SMALL_UTILITY_10"
+			template = "MEW_SHIELD"
+		}
+	
+	}
+		required_component = MINIOR_BIO_REACTOR
+		required_component = MINIOR_COMPUTER
+		required_component = MINIOR_SENSOR
+		required_component = MINIOR_JUMP_DRIVE
+		required_component = MINIOR_THRUSTER
+}

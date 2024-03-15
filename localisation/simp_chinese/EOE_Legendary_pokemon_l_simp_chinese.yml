@@ -113,17 +113,17 @@ MINIOR_SENSOR_DESC:1"这个器官可以让小陨星窥探现实世界在虚境�
 EOE_Leftovers:0"吃剩的东西" #In-battle effect item
 EOE_Leftovers_DESC:0"与曾被创作者用作玩具的同名对战影响道具原理相似，这种军用微生物集群能与生物体单位共生，迅速修复其宿主遭受的损伤。"
 EOE_Emergency_Recall_small:0"紧急召回装置"
-EOE_Emergency_Recall_small_DESC:0"对精灵球紧急召回功能的逆向工程让我们复原出了创造者文明曾使用的军用级紧急召回装置。\n§T若装备这个组件的宝可梦被击败，濒死的宝可梦将被§Y召回§!至首都并进行治疗。正在治疗的宝可梦§R没有§!战斗力且维护费增加§R500%§!，同时装备多个此组件§R不会§!提高治疗速度。\n§Y梦幻§!所需的治疗时间为§G90§!天，若拥有§Y$mega_shipyard_3$§!，治疗时间为§G45§!天§!"
+EOE_Emergency_Recall_small_DESC:0"对精灵球紧急召回功能的逆向工程让我们复原出了创造者文明曾使用的军用级紧急召回装置。\n§T若装备这个组件的宝可梦被击败，濒死的宝可梦将被§Y召回§!至首都并进行治疗。正在治疗的宝可梦§R没有§!战斗力且维护费增加§R500%§!，同时装备多个此组件§R不会§!提高治疗速度。\n§Y梦幻§!和§Y小陨星§!所需的治疗时间为§G90§!天，若拥有§Y$mega_shipyard_3$§!，治疗时间为§G45§!天§!"
 EOE_Emergency_Recall:0"紧急召回装置"
 EOE_Emergency_Recall_DESC:0"对精灵球紧急召回功能的逆向工程让我们复原出了创造者文明曾使用的军用级紧急召回装置。\n§T若装备这个组件的宝可梦被击败，濒死的宝可梦将被§Y召回§!至首都并进行治疗。正在治疗的宝可梦§R没有§!战斗力且维护费增加§R500%§!，同时装备多个此组件§R不会§!提高治疗速度。\n§Y拉帝亚斯§!所需的治疗时间为§G270§!天，若拥有§Y$mega_shipyard_3$§!，治疗时间为§G135§!天§!"
 EOE_Emergency_Recall_large:0"紧急召回装置"
 EOE_Emergency_Recall_large_DESC:0"对精灵球紧急召回功能的逆向工程让我们复原出了创造者文明曾使用的军用级紧急召回装置。\n§T若装备这个组件的宝可梦被击败，濒死的宝可梦将被§Y召回§!至首都并进行治疗。正在治疗的宝可梦§R没有§!战斗力且维护费增加§R500%§!，同时装备多个此组件§R不会§!提高治疗速度。\n§Y莱希拉姆§!所需的治疗时间为§G720§!天，若拥有§Y$mega_shipyard_3$§!，治疗时间为§G360§!天§!"
 
-MEW_CLOAKING_HIGH:0"强力梦幻隐身"
-MEW_CLOAKING_HIGH_DESC:0"牺牲防护和速度以最大化释放梦幻的隐身能力"
+MEW_CLOAKING_HIGH:0"强力宝可梦隐身"
+MEW_CLOAKING_HIGH_DESC:0"牺牲防护和速度以最大化释放小型宝可梦的隐身能力"
 MEW_CLOAKING_HIGH_TOOLTIP:0"护盾强度§R-100%§!\n 基础舰船速度§R-20%§!"
 
-MEW_CLOAKING_LOW:0"低功率梦幻隐身"
+MEW_CLOAKING_LOW:0"低功率宝可梦隐身"
 MEW_CLOAKING_LOW_DESC:0"低功率隐身能在不干扰护盾的同时减轻对速度的影响"
 MEW_CLOAKING_LOW_TOOLTIP:0"基础舰船速度§G+30%§!\n超空间跳跃充能时间§G-75%§!"
 

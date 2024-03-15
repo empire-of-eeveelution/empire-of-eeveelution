@@ -28,7 +28,6 @@ guardian_EOE_cthugha = {
 	government = no
 	blocks_piracy = yes
 	end_game_crisis = yes
-	scaled_difficulty_bonuses = 1
 	destroys_starbases = yes
 	observable = no
 	ai = {
@@ -44,5 +43,27 @@ guardian_EOE_cthugha = {
 		exclusive_diplomacy_module = { contact_rule = on_action_only } # Nothing is allowed, but we need this for relationships.
 		basic_technology_module = {}
 		standard_event_module = {} # For bouncing events
+	}
+}
+
+EOE_crystal = {
+	share_communications = no
+	is_space_critter = yes
+	blocks_piracy = yes
+	government = no
+	observable = no
+	ai = {
+		enabled = no
+	}
+	faction = {
+		hostile = yes
+		needs_border_access = no
+		generate_borders = no
+		needs_colony = no
+		space_creatures = yes
+	}
+	modules = {
+		exclusive_diplomacy_module = {} # Nothing is allowed, but we need this for relationships.
+		basic_technology_module = {}
 	}
 }

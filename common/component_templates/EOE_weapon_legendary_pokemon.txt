@@ -321,11 +321,11 @@ weapon_component_template = { #大自爆
 	key = "EOE_MINIOR_EXPLOSION" 
 	size = torpedo
 	
-	icon = "GFX_EOE_sky_attack" 
+	icon = "GFX_EOE_explosion" 
 	icon_frame = 1
-	type = instant #Essentially a neutron launcher but in reverse.
+	type = instant 
 	
-	damage = { min = 500 max = 583 }
+	damage = { min = 650 max = 975 }
 	windup = { min = 10 max = 20 }
 	total_fire_time = 2085
 	min_range = 0
@@ -615,7 +615,7 @@ utility_component_template = {
 
 		ACOT_CLOAKING_DIMENSIONAL
 	}
-	size_restriction = { EOE_mew }
+	size_restriction = { EOE_mew EOE_minior }
 	prerequisites = { "tech_EOE_Mew" }
 	component_set = "MEW_CLOAKING_HIGH"
 	ai_tags = {
@@ -675,7 +675,7 @@ utility_component_template = {
 
 		ACOT_CLOAKING_DIMENSIONAL
 	}
-	size_restriction = { EOE_mew }
+	size_restriction = { EOE_mew EOE_minior }
 	prerequisites = { "tech_EOE_Mew" }
 	component_set = "MEW_CLOAKING_LOW"
 	ai_tags = {
@@ -1320,7 +1320,7 @@ utility_component_template = {
 		ship_emergency_ftl_mult = -1
 	}
 	size_restriction = {
-		EOE_mew 
+		EOE_mew EOE_minior
 	}
 
 	ai_weight = {

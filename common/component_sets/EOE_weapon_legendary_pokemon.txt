@@ -135,6 +135,6 @@ component_set = {
 component_set = {
 	key = "EOE_MINIOR_EXPLOSION"
 	
-	icon = "GFX_EOE_sky_attack" 
+	icon = "GFX_EOE_explosion" 
 	icon_frame = 1	
 }
