@@ -238,7 +238,11 @@ country_event = {
 		last_created_ship = {
 			if = {
 				limit = {
-					 is_ship_size = EOE_mew 
+					OR = {
+						is_ship_size = EOE_mew 
+						is_ship_size = EOE_minior
+					}
+					
 					   owner = {
 						   NOR = {
 							   has_megastructure = mega_shipyard_3
@@ -251,7 +255,10 @@ country_event = {
 
 			else_if = {
 				limit = {
-					 is_ship_size = EOE_mew 
+					OR = {
+						is_ship_size = EOE_mew 
+						is_ship_size = EOE_minior
+					}
 					   owner = {
 						   OR = {
 							   has_megastructure = mega_shipyard_3
