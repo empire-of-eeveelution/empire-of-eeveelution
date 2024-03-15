@@ -123,6 +123,67 @@ gov_EOE_plutocratic_oligarchy_desc:0 "$gov_plutocratic_oligarchy_desc$"
 personality_EOE_Eevee_assimilators:0"Eevee Assimilator"
 personality_EOE_Eevee_assimilators_desc:0"Eevee Assimilators allow to use other intelligent life as raw materials to expand their own ethnic groups. They're rather aggressive but can be gotten along given some effort..."
  
+
+
+
+building_EOE_evolution_planning_office:0 "Evolution Planning Office"
+building_EOE_evolution_planning_office_desc:0 "Evolution Planning Office orients the evolution according to the needs of the planet."
+civic_EOE_evolution_planning:0 "Evolution Planning"
+civic_EOE_evolution_planning_desc:0 "Individuals in this society possess epigenetic characteristics known as "evolution". In order to maximize the efficiency of evolution, the society has developed the Evolution Planning Department, which controls the direction of evolution. \n\n§L Can build \YEvolution Planning Office§! , change the major evolutionary types on planets through planetary resolutions, and provide §G10%§! ~§G15%§! of a certain resource bonus, and a habitability modifier of §Y±10%§!. The cost is a happiness level of §R-5%§!\n§Y Obviously, this only works for populations with the "Directed Evolution" trait. §! \n§Y Will be forcibly removed after acquiring the "Genetics creation" Tradition.§!"
+councilor_EOE_evolution_planning:0 "Evolution Planning Manager"
+councilor_EOE_evolution_planning_desc:0 "Evolution Planning Manager is responsible for managing the Evolution Planning program within the empire."
+mod_pop_EOE_evolution_planning_effect_mult:0 "Evolution Planning effect multiplier"
+ decision_EOE_evolution_planning:0 "Evolution Planning"
+ decision_EOE_evolution_planning_desc:0 "The direction of Evolution Planning can be adjusted here. It is only valid for populations with the "Directed Evolution" trait."
+decision_EOE_evolution_effects:0 "The direction of Evolution Planning can be adjusted here. It is only valid for populations with the "Directed Evolution" trait."
+ EOE_building.3.name:0 "Evolution Planning"
+ EOE_building.3.desc.a:0 "Current effect：£food£ Food from £pops£ Jobs: §G+15%§!\nHabitability on wet planet：§G+10%§!\nHabitability on cold planet：§R-10%§!"
+ EOE_building.3.a:0 "Focus on Leafeon"
+ EOE_building.3.a.tooltip:0 "Effect：£food£ Food from £pops£ Jobs: §G+15%§!\nHabitability on wet planet：§G+10%§!\nHabitability on cold planet：§R-10%§!"
+ EOE_building.3.desc.b:0 "Current effect：pop growth：§G+10%§!\nHabitability on wet planet：§G+10%§!\nHabitability on dry planet：§R-10%§!"
+ EOE_building.3.b:0 "Focus on Vaporeon"
+ EOE_building.3.b.tooltip:0 "Effect：pop growth：§G+10%§!\nHabitability on wet planet：§G+10%§!\nHabitability on dry planet：§R-10%§!"
+ EOE_building.3.desc.c:0 "Current effect：£alloys£ Alloys from £pops£ Jobs：§G+10%§!\nHabitability on dry planet：§G+10%§!\nHabitability on cold planet：§R-10%§!"
+ EOE_building.3.c:0 "Focus on Flareon"
+ EOE_building.3.c.tooltip:0 "Effect：£alloys£ Alloys from £pops£ Jobs：§G+10%§!\nHabitability on dry planet：§G+10%§!\nHabitability on cold planet：§R-10%§!"
+ EOE_building.3.desc.d:0 "Current effect：£energy£ Energy from £pops£ Jobs: §G+15%§!\nHabitability on dry planet：§G+10%§!\nHabitability on wet planet：§R-10%§!"
+ EOE_building.3.d:0 "Focus on Jolteon"
+ EOE_building.3.d.tooltip:0 "Effect：£energy£ Energy from £pops£ Jobs: §G+15%§!\nHabitability on dry planet：§G+10%§!\nHabitability on wet planet：§R-10%§!"
+ EOE_building.3.desc.e:0 "Current effect：£physics£ £society£ £engineering£ Research points from £pops£ Jobs：§G+10%§!"
+ EOE_building.3.e:0 "Focus on Espeon"
+ EOE_building.3.e.tooltip:0 "Effect：£physics£ £society£ £engineering£ Research points from £pops£ Jobs：§G+10%§!"
+ EOE_building.3.desc.f:0 "Current effect：£minerals£ Minerals from £pops£ Jobs: §G+15%§!\nHabitability on Tomb World：§G+10%§!"
+ EOE_building.3.f:0 "Focus on Umbreon"
+ EOE_building.3.f.tooltip:0 "Effect：£minerals£ Minerals from £pops£ Jobs: §G+15%§!\nHabitability on Tomb World：§G+10%§!"
+ EOE_building.3.desc.g:0 "Current effect：£consumer_goods£ Consumer goods from £pops£ Jobs：§G+10%§!\nHabitability on cold planet：§G+10%§!\nHabitability on dry planet：§R-10%§!"
+ EOE_building.3.g:0 "Focus on Espeon"
+ EOE_building.3.g.tooltip:0 "Effect：£consumer_goods£ Consumer goods from £pops£ Jobs：§G+10%§!\nHabitability on cold planet：§G+10%§!\nHabitability on dry planet：§R-10%§!"
+ EOE_building.3.desc.h:0 "Current effect：£unity£ Unity from £pops£ Jobs：§G+10%§!"
+ EOE_building.3.h:0 "Focus on Sylveon"
+ EOE_building.3.h.tooltip:0 "REffect：£unity£ Unity from £pops£ Jobs：§G+10%§!"
+ EOE_building.3.desc.i:0 "No evolution plan yet."
+ EOE_building.3.i:0 "Free evolution"
+ EOE_building.3.i.tooltip:0 "No bonus or loss"
+ EOE_building.3.j:0 "Cancel"
+EOE_building.4.name:0 "End of Evolution Planning"
+EOE_building.4.desc:0 "With the unlocking of the Megaevolution traits, we were no longer bound to a single evolution type, and the Evolution Planning ended and became a thing of the past."
+EOE_building.4.a:0 "OK"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #prescripted_country
 
 
