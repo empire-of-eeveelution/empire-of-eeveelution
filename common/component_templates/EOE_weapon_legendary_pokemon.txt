@@ -349,13 +349,9 @@ weapon_component_template = { #大自爆
 			minerals = 0.1
 		}
 	}
-<<<<<<< HEAD
-	size_restriction = { EOE_minior }
-	prerequisites = { "tech_EOE_Mew_weapon" }
-=======
 
+	size_restriction = { EOE_minior }
 	prerequisites = { "tech_EOE_Minior" }
->>>>>>> 8b4ad3021e72353cf5d4b61eea65640c26c6991f
 	component_set = "EOE_MINIOR_EXPLOSION"
 	projectile_gfx = "neutron_torpedoes" #again, a placeholder untill we get something better.
 	tags = { weapon_type_explosive weapon_type_energy }
