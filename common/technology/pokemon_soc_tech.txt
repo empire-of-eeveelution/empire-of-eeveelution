@@ -636,7 +636,7 @@ tech_EOE_Minior = {
 		owner_main_species = {
 			is_species_class = Eeveelutions
 		}
-		has_ascension_perk = ap_mega_evolution_EOE
+		#has_ascension_perk = ap_mega_evolution_EOE
 		OR = {
 			any_owned_pop = { has_trait = trait_EOE_Inheritors }
 			any_owned_pop = { has_trait = trait_transfur_eevee }
