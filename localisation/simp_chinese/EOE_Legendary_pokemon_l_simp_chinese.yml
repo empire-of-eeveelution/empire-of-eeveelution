@@ -7,6 +7,7 @@ SHIP_GRAPHICS_EOE_LATIAS_DESC:0 "这种约有护卫舰大小的太空战生物�
 EOE_Reshiram:0"莱希拉姆"
 SHIP_GRAPHICS_EOE_RESHIRAM_DESC:0 "这种太空巨兽以同名宝可梦为蓝本制造，模块化设计使其可以兼容不同的器官配置。莱希拉姆兼顾火力与防护，还能搭载大规模杀伤性武器。"
 EOE_Minior:0"小陨星"
+EOE_minior:0"小陨星"
 SHIP_GRAPHICS_EOE_MINIOR_DESC:0 "太空毒爆虫"
 ################################武器
 EOE_MEW_Psychic:0"精神强念"
