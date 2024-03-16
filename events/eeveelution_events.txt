@@ -3233,6 +3233,9 @@ ship_event = { #完成异常现象
 		from = {
 			set_deposit = d_rare_crystals_1
 			save_global_event_target_as = EOE_crystal_asteroid
+			solar_system = {
+				set_star_flag = EOE_minior_system
+			}
 		}
 		owner = {
 			country_event = {
@@ -3245,11 +3248,23 @@ ship_event = { #完成异常现象
 country_event = { #刷晶体了
 	id = eevent.46
 	title = eevent.46.name
-	desc = eevent.46.desc
+	desc = { #科技发达
+		trigger = {
+			
+		}
+		text = eevent.46.desc.a
+	}
+	desc = { #科技不发达
+		trigger = {
+			
+		}
+		text = eevent.46.desc.b
+	}
 	is_triggered_only = yes
 	picture = GFX_evt_astral_rift_crystal_1
 	show_sound = event_crystal_ship
 	immediate = {
+		set_country_flag = EOE_country_meet_minior
 		event_target:EOE_crystal_asteroid = {
 			event_target:EOE_crystal_country = {
 				create_fleet = {
@@ -3281,11 +3296,10 @@ country_event = { #刷晶体了
 							name = ""
 							design = "NAME_EOE_CRYSTALSHIP"
 							effect = {
-								set_ship_flag = EOE_minior_ship
-								set_disable_at_health = 0.05
-								save_event_target_as = EOE_minior_ship
+								save_global_event_target_as = EOE_minior_ship
 							}
 						}
+						save_global_event_target_as = EOE_minior_fleet
 						set_location = PREVPREV
 						set_fleet_stance = passive
 						set_aggro_range_measure_from = self
@@ -3295,5 +3309,258 @@ country_event = { #刷晶体了
 			}
 		}
 	}
+	option = {
+		name = eevent.46.a #发动攻击尝试捕获。
+		allow = {
+			has_technology = EOE_afferent_nerve_stimulation
+		}
+		hidden_effect = {
+			event_target:EOE_minior_ship = {
+				set_ship_flag = EOE_minior_ship
+				set_disable_at_health = 0.05
+			}
+		}
+	}
+	option = {
+		name = eevent.46.b #我们应该等待科技更发达了再发动攻击。
+		trigger = {
+			NOT = { has_technology = EOE_afferent_nerve_stimulation }
+		}
+		set_country_flag = EOE_minior_waiting_for_technology
+	}
+	option= {
+		allow = {
+			has_resource = { type = rare_crystals amount > 5000 }
+		}
+		name = eevent.46.c #我们应该喂它们晶体。科技不发达也可以喂水晶
+		add_resource = {
+			rare_crystals = -5000
+		}
+		country_event = {
+			id = eevent.50 days = 480
+		}
+	}
 	
+}
+
+#打爆后检测
+ship_event = {
+	id = eevent.47
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_ship_flag = EOE_minior_ship
+	}
+	immediate = {
+		FROM = { owner = { country_event = { id = eevent.48 } } }
+	}
+}
+
+country_event = {
+	id = eevent.48
+	is_triggered_only = yes
+	title = eevent.48.name
+	desc = eevent.48.desc
+	picture = GFX_evt_debris
+	show_sound = event_space_battle
+	immediate = {
+		FROM = { save_event_target_as = EOE_disabled_minior_ship }
+	}
+	option = {
+		name = "eevent.48.a"
+		from = {
+			create_ambient_object = {
+				type = small_debris_object
+				scale = 0.1
+				effect = { #unused, but leaving it in to show people it's now possible...
+					set_ambient_object_flag = EOE_minior_ship_debris
+					save_event_target_as = EOE_minior_ship_debris
+				}
+			}
+			enable_special_project = {
+				name = "CATCH_EOE_MINIOR_SHIP"
+				location = event_target:EOE_minior_ship_debris
+				owner = root
+			}
+		}
+		hidden_effect = {
+			remove_point_of_interest = radical_cult_poi.1
+		}
+	}
+}
+
+#捉到了小陨星，给个科技研究
+ship_event = {
+	id = eevent.49
+	is_triggered_only = yes
+	title = eevent.49.name
+	desc = eevent.49.desc
+	picture = GFX_evt_astral_rift_crystal_1
+	show_sound = event_crystal_ship
+
+	immediate = {
+		hidden_effect = {
+			event_target:EOE_minior_ship = {
+				fleet = { destroy_fleet = this }
+			}
+			event_target:EOE_crystal_asteroid = {
+				root.owner = {
+					create_fleet = {
+						name = "EOE_Minior"
+						effect = {
+							set_owner = root.owner
+							create_ship = {
+								name = "EOE_Minior"
+								design = "NAME_EOE_CRYSTALSHIP"
+							}
+							set_location = PREVPREV
+						}
+					}
+				}
+			}
+			clear_global_event_target = EOE_minior_ship
+			clear_global_event_target = EOE_crystal_asteroid
+		}
+	}
+
+	option = {
+		name = eevent.49.a
+		owner = {
+			add_research_option = tech_EOE_Minior
+		}
+	}
+}
+
+
+country_event = { #喂饱了，那么所有水晶舰队归你了
+	id = eevent.50
+	is_triggered_only = yes
+	title = eevent.50.name
+	desc = eevent.50.desc
+	picture = GFX_evt_astral_rift_crystal_1
+	show_sound = event_crystal_ship
+	immediate = {
+		event_target:EOE_minior_fleet = {
+			set_owner = prev
+		}
+		clear_global_event_target = EOE_minior_ship
+		clear_global_event_target = EOE_crystal_asteroid
+	}
+	option = {
+		name = eevent.49.a
+		owner = {
+			add_research_option = tech_EOE_Minior
+		}
+
+	}
+}
+
+country_event = { #一开始科技不足，现在科技够了触发的事件
+	id = eevent.51
+	is_triggered_only = yes
+	title = eevent.51.name
+	desc = eevent.51.desc
+	picture = GFX_evt_astral_rift_crystal_1
+	show_sound = event_crystal_ship
+	trigger = {
+		has_technology = EOE_afferent_nerve_stimulation
+		has_country_flag = EOE_minior_waiting_for_technology
+		event_target:EOE_minior_ship = {
+			exists = this
+		}
+	}
+	option = {
+		name = eevent.46.a #发动攻击尝试捕获。
+		hidden_effect = {
+			event_target:EOE_minior_ship = {
+				set_ship_flag = EOE_minior_ship
+				set_disable_at_health = 0.05
+			}
+		}
+	}
+	option= {
+		allow = {
+			has_resource = { type = rare_crystals amount > 5000 }
+		}
+		name = eevent.46.c #我们还是应该喂它们晶体
+		add_resource = {
+			rare_crystals = -5000
+		}
+		country_event = {
+			id = eevent.50 days = 480
+		}
+	}
+}
+
+fleet_event = { #极端情况下，如果被别人做了这个异常，那么进入星系的时候还是会弹窗
+	id = eevent.51
+	is_triggered_only = yes
+	title = eevent.51.name
+	desc = eevent.51.desc
+	picture = GFX_evt_astral_rift_crystal_1
+	show_sound = event_crystal_ship
+	trigger = {
+		from = {
+			has_star_flag = EOE_minior_system
+			owner = {
+				has_country_flag = eoe_country
+				NOT = {
+					has_country_flag = EOE_country_meet_minior
+				}
+			}
+		}
+		event_target:EOE_minior_ship = {
+			exists = this
+		}
+	}
+	immediate = {
+		owner = {
+			set_country_flag = EOE_country_meet_minior
+		}
+	}
+	option = {
+		name = eevent.46.a #发动攻击尝试捕获。
+		allow = {
+			owner = {
+				has_technology = EOE_afferent_nerve_stimulation
+			}
+		}
+		hidden_effect = {
+			event_target:EOE_minior_ship = {
+				set_ship_flag = EOE_minior_ship
+				set_disable_at_health = 0.05
+			}
+		}
+	}
+	option = {
+		name = eevent.46.b #我们应该等待科技更发达了再发动攻击。
+		trigger = {
+			owner = {
+				NOT = { has_technology = EOE_afferent_nerve_stimulation }
+			}
+			
+		}
+		owner = {
+			set_country_flag = EOE_minior_waiting_for_technology
+		}
+		
+	}
+	option= {
+		allow = {
+			owner = {
+				has_resource = { type = rare_crystals amount > 5000 }
+			}
+			
+		}
+		name = eevent.46.c #我们应该喂它们晶体。科技不发达也可以喂水晶
+		owner = {
+			add_resource = {
+				rare_crystals = -5000
+			}
+			country_event = {
+				id = eevent.50 days = 480
+			}
+		}
+		
+	}
 }

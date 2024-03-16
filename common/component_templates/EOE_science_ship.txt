@@ -162,7 +162,7 @@ utility_component_template = { # the okra terraform
 
 	scripted_action_button_possible = {
 		owner = {
-			has_resource = { type = energy amount >= 10000 }
+			has_resource = { type = energy amount >= 5000 }
 		}
 	}
 
