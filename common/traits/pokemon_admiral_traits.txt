@@ -15,10 +15,10 @@
 leader_trait_EOE_admiral_Bailong = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/trait_EOE_admiral_Bailong.dds"
-	modifier = {
-		ship_weapon_damage = 1
-		ship_hull_mult = 2.5
-		ship_hull_regen_add_perc = 0.25
+	fleet_modifier = {
+		ship_weapon_damage = 0.5
+		ship_hull_mult = 0.8
+		ship_hull_regen_add_perc = 0.2
 	}
 	
 	leader_class = { commander }

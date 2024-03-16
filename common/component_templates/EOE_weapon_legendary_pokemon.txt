@@ -321,18 +321,18 @@ weapon_component_template = { #大自爆
 	key = "EOE_MINIOR_EXPLOSION" 
 	size = torpedo
 	
-	icon = "GFX_EOE_sky_attack" 
+	icon = "GFX_EOE_explosion" 
 	icon_frame = 1
-	type = instant #Essentially a neutron launcher but in reverse.
+	type = instant 
 	
-	damage = { min = 1300 max = 1950 }
+	damage = { min = 650 max = 975 }
 	windup = { min = 10 max = 20 }
 	total_fire_time = 2085
 	min_range = 0
 	#firing_arc = 30
 	range = 30
 	accuracy = 1
-	tracking = 1
+	tracking = 0.1
 	power = -70
 	armor_damage = 1
 	shield_penetration = 1
@@ -342,7 +342,7 @@ weapon_component_template = { #大自爆
 	resources = {
 		category = pokemon_ships
 		cost = {
-			minerals = 50
+			minerals = 100
 			rare_crystals = 1
 		}
 		upkeep = {
@@ -615,7 +615,7 @@ utility_component_template = {
 
 		ACOT_CLOAKING_DIMENSIONAL
 	}
-	size_restriction = { EOE_mew }
+	size_restriction = { EOE_mew EOE_minior }
 	prerequisites = { "tech_EOE_Mew" }
 	component_set = "MEW_CLOAKING_HIGH"
 	ai_tags = {
@@ -675,7 +675,7 @@ utility_component_template = {
 
 		ACOT_CLOAKING_DIMENSIONAL
 	}
-	size_restriction = { EOE_mew }
+	size_restriction = { EOE_mew EOE_minior }
 	prerequisites = { "tech_EOE_Mew" }
 	component_set = "MEW_CLOAKING_LOW"
 	ai_tags = {
@@ -1290,7 +1290,7 @@ utility_component_template = {
 		}
 	}
 	size_restriction = {
-		EOE_mew EOE_Latias EOE_Reshiram
+		EOE_mew EOE_Latias EOE_Reshiram EOE_minior
 	}
 	
 	ai_weight = {
@@ -1320,7 +1320,7 @@ utility_component_template = {
 		ship_emergency_ftl_mult = -1
 	}
 	size_restriction = {
-		EOE_mew 
+		EOE_mew EOE_minior
 	}
 
 	ai_weight = {

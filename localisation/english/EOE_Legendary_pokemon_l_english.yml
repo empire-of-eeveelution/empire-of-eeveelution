@@ -93,17 +93,17 @@ RESHIRAM_SENSOR_DESC:1 "This organ allows Reshiram to peer into the projection o
 EOE_Leftovers:0 "Leftovers" #In-battle effect item
 EOE_Leftovers_DESC:0 "Similar with eponymous In-battle effect item which which were used as toys by our creators, this military microbial cluster can live symbiotically with biological units, rapidly repairing damage of its host."
 EOE_Emergency_Recall_small:0"Emergency recall device"
-EOE_Emergency_Recall_small_DESC:0"Reverse engineering of the Pokéball's emergency recall function has allowed us to recover the military-grade emergency recall device once used by the creator civilization.\n§TIf a Pokémon with this component is defeated, the fainted Pokémon will be §Yrecalled§! to the capital and healed. The pokemon who is under treatment has §Rno§! Combat power and maintenance cost increased by §R500%§! Equipping more than one of this component at the same time will §Rnot§! Increase the healing speed. \nThe required healing time for §YMew§! is §G90§! days. If you have §Y$mega_shipyard_3$§!, the healing time is §G45§! days.§!"
+EOE_Emergency_Recall_small_DESC:0"Reverse engineering of the Pokéball's emergency recall function has allowed us to recover the military-grade emergency recall device once used by the creator civilization.\n§TIf a Pokémon with this component is defeated, the fainted Pokémon will be §Yrecalled§! to the capital and healed. The pokemon who is under treatment has §Rno§! Combat power and maintenance cost increased by §R500%§! Equipping more than one of this component at the same time will §Rnot§! Increase the healing speed. \nThe required healing time for §YMew§! and §YMinior§! is §G90§! days. If you have §Y$mega_shipyard_3$§!, the healing time is §G45§! days.§!"
 EOE_Emergency_Recall:0"Emergency recall device"
 EOE_Emergency_Recall_DESC:0"Reverse engineering of the Pokéball's emergency recall function has allowed us to recover the military-grade emergency recall device once used by the creator civilization.\n§TIf a Pokémon with this component is defeated, the fainted Pokémon will be §Yrecalled§! to the capital and healed. The pokemon who is under treatment has §Rno§! Combat power and maintenance cost increased by §R500%§! Equipping more than one of this component at the same time will §Rnot §! Increase the healing speed. \nThe required healing time for §YLatias§! is §G270§! days. If you have §Y$mega_shipyard_3$§!, the healing time is §G135§! days.§!"
 EOE_Emergency_Recall_large:0"Emergency recall device"
 EOE_Emergency_Recall_large_DESC:0"Reverse engineering of the Pokéball's emergency recall function has allowed us to recover the military-grade emergency recall device once used by the creator civilization.\n§TIf a Pokémon with this component is defeated, the fainted Pokémon will be §Yrecalled§! to the capital and healed. The pokemon who is under treatment has §Rno§! Combat power and maintenance cost increased by §R500%§! Equipping more than one of this component at the same time will §Rnot§! Increase the healing speed. \nThe required healing time for §YReshiram§! is §G720§! days. If you have §Y$mega_shipyard_3$§!, the healing time is §G360§! days.§!"
 
-MEW_CLOAKING_HIGH:0"High power Mew cloaking"
-MEW_CLOAKING_HIGH_DESC:0"Sacrifice protection and speed to maximize the Mew's cloaking abilities"
+MEW_CLOAKING_HIGH:0"High power pokemon cloaking"
+MEW_CLOAKING_HIGH_DESC:0"Sacrifice protection and speed to maximize the pokemon's cloaking abilities"
 MEW_CLOAKING_HIGH_TOOLTIP:0"Shield Hit Points§R-100%§!\nBase Ship Speed§R-20%§!"
 
-MEW_CLOAKING_LOW:0"Low power Mew cloaking"
+MEW_CLOAKING_LOW:0"Low power pokemon cloaking"
 MEW_CLOAKING_LOW_DESC:0"Low power stealth can reduce the impact on speed without disturbing the shield"
 MEW_CLOAKING_LOW_TOOLTIP:0"Base Ship Speed§G+30%§!\nHyper Jump Charge Time§G-75%§!"
 

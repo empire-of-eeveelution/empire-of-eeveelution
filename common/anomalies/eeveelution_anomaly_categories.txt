@@ -72,14 +72,8 @@ wild_eeveelution_cat = {       #发现野生原始伊布
 
 	spawn_chance = {
 		 modifier = {	add = 0	}
-		 }
-	
-	
+	}
 		
-		
-		
-	
-
 	on_success = eevent.7000
 	should_ai_use = no
 }
@@ -95,5 +89,21 @@ EOE_cthugha_planet_cat = {
 		}
 	}
 	on_success = EOE_branch.2
+	should_ai_use = no
+}
+
+EOE_wierd_crystals = {
+	desc = "EOE_wierd_crystals" #奇怪的晶体小行星
+	picture = GFX_evt_astral_rift_crystal_1
+	max_once_global = yes
+	level = 3
+	spawn_chance = {
+		modifier = {
+			add = 3
+			is_asteroid = yes
+			has_any_strategic_resource = no
+		}
+	}
+	on_success = eevent.45
 	should_ai_use = no
 }

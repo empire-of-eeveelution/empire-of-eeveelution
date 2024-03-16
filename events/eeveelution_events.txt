@@ -3191,3 +3191,109 @@ country_event = {
 		}
 	}
 }
+
+
+#小陨星晶体
+
+ship_event = { #完成异常现象
+	id = eevent.45
+	title = eevent.45.name
+	desc = eevent.45.desc
+	is_triggered_only = yes
+	picture = GFX_evt_astral_rift_crystal_1
+	show_sound = event_crystal_ship
+	immediate = {
+		create_country = {
+			name = "NAME_EOE_Crystal"
+			type = EOE_crystal
+			flag = {
+				icon = {
+					category = "zoological"
+					file = "flag_zoological_1.dds"
+				}
+				background= {
+					category = "backgrounds"
+					file = "00_solid.dds"
+				}
+				colors={
+					"black"
+					"black"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				save_event_target_as = EOE_crystal_country
+				establish_communications_no_message = root.owner
+			}
+		}
+	}
+	option = {
+		name = eevent.45.a
+		from = {
+			set_deposit = d_rare_crystals_1
+			save_global_event_target_as = EOE_crystal_asteroid
+		}
+		owner = {
+			country_event = {
+				id = eevent.46 days = 360
+			}
+		}
+	}
+}
+
+country_event = { #刷晶体了
+	id = eevent.46
+	title = eevent.46.name
+	desc = eevent.46.desc
+	is_triggered_only = yes
+	picture = GFX_evt_astral_rift_crystal_1
+	show_sound = event_crystal_ship
+	immediate = {
+		event_target:EOE_crystal_asteroid = {
+			event_target:EOE_crystal_country = {
+				create_fleet = {
+					name = "NAME_Ruby_Stack"
+					effect = {
+						set_owner = event_target:EOE_crystal_country
+						while = {
+							count = 7
+							create_ship = {
+								name = ""
+								design = "NAME_Large_Crystal_Entity_Red"
+							}
+						}
+						while = {
+							count = 9
+							create_ship = {
+								name = ""
+								design = "NAME_Medium_Crystal_Entity_Red"
+							}
+						}
+						while = {
+							count = 20
+							create_ship = {
+								name = ""
+								design = "NAME_Small_Crystal_Entity_Red"
+							}
+						}
+						create_ship = {
+							name = ""
+							design = "NAME_EOE_CRYSTALSHIP"
+							effect = {
+								set_ship_flag = EOE_minior_ship
+								set_disable_at_health = 0.05
+								save_event_target_as = EOE_minior_ship
+							}
+						}
+						set_location = PREVPREV
+						set_fleet_stance = passive
+						set_aggro_range_measure_from = self
+						set_aggro_range = 150
+					}
+				}
+			}
+		}
+	}
+	
+}
