@@ -1,0 +1,90 @@
+entity = {
+	name = "luozima_entity"
+	pdxmesh = "luozima_mesh"
+	scale = 1
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_blend_time = 4   }
+
+ 
+    locator = {	name = "part1"                  position = { 0 0 0 }    	}
+	locator = { name = "EOE_fire_fire_fire" 	position = { 0 -1 10 } }   #第一个正数左负数右，第二个正数上负数下，第三个负数前正数后
+	locator = { name = "EOE_Bailongwocaonima" 	position = { 0 6.5 -17 } }
+	locator = { name = "Ban_shen_EOE_laser_gun_01_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "Ban_shen_EOE_laser_gun_01_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "Ban_shen_EOE_laser_gun_02_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "Ban_shen_EOE_laser_gun_02_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "Ban_shen_EOE_laser_gun_03_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "Ban_shen_EOE_laser_gun_03_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "Ban_shen_EOE_laser_gun_04_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "Ban_shen_EOE_laser_gun_04_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "Ban_shen_EOE_laser_gun_05_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "Ban_shen_EOE_laser_gun_05_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_01_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_01_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_02_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_02_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_03_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_03_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_04_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_04_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_05_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_05_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_06_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_06_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_07_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_07_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_08_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_08_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_09_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_09_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_10_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_10_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_11_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_11_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_12_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_12_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_13_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_13_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_14_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_14_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_15_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_15_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_16_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_16_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_17_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_17_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_18_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_18_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_19_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_19_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_20_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_20_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_21_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_21_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_22_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_22_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_23_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_23_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_24_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_24_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_25_l" 	position = { 0 6.5 -17 } }
+	locator = { name = "EOE_fire_vampire_scraft_25_r" 	position = { 0 6.5 -17 } }
+	locator = { name = "Ban_shen_EOE_laser_gun_01" 	position = { 0 6.5 -17 } }
+	locator = { name = "Ban_shen_EOE_laser_gun_02" 	position = { 0 6.5 -17 } }
+	locator = { name = "Ban_shen_EOE_laser_gun_03" 	position = { 0 6.5 -17 } }
+	locator = { name = "Ban_shen_EOE_laser_gun_04" 	position = { 0 6.5 -17 } }
+	locator = { name = "Ban_shen_EOE_laser_gun_05" 	position = { 0 6.5 -17 } }
+	
+
+	
+	game_data = { 
+		size = 150
+		emissive_recolor_crunch = 0
+	}
+}
+
+
+animation = {
+	name = "luozima_idle1"
+	file = "luozima_idle1.anim"
+}
