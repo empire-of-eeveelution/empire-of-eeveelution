@@ -451,3 +451,22 @@ special_project = { #捕获古神
 	}
 }
 
+special_project = { #抓小陨星
+	key = "CATCH_EOE_MINIOR_SHIP"
+	event_scope = ship_event
+	days_to_research = 10
+	#tech_department = society_technology
+	timelimit = -1
+	picture = GFX_evt_astral_rift_crystal_1
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds" 
+	requirements = {
+		shipclass_military =   1
+	}
+
+	on_success = { 
+		ship_event = {
+			id = EOE_branch.56
+		}
+	}
+}
+

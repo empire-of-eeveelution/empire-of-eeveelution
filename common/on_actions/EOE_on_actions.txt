@@ -97,3 +97,9 @@ on_tradition_picked = {
 		EOE_building.4
 	}
 }
+
+on_ship_disabled = {
+	events = {
+		eevent.47
+	}
+}
