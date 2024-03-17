@@ -3,7 +3,7 @@ objectTypes = {
 		name = "luozima_mesh"
 		file = "gfx/models/ships/LuozimaCouHuoYong/luozima.mesh"
 		scale = 1.0
-
+		animation = { id = "idle"			type = "luozima_idle1" }
 		meshsettings = {
 			name = "luozimaShape"
 			index = 0
