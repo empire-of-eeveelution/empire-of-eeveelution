@@ -93,10 +93,10 @@ EOE_cthugha_planet_cat = {
 }
 
 EOE_wierd_crystals = {
-	desc = "EOE_wierd_crystals" #奇怪的晶体小行星
+	desc = "EOE_wierd_crystals_desc" #奇怪的晶体小行星
 	picture = GFX_evt_astral_rift_crystal_1
 	max_once_global = yes
-	level = 3
+	level = 2
 	spawn_chance = {
 		modifier = {
 			add = 3
