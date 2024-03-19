@@ -93,7 +93,7 @@ personality_EOE_Eevee_assimilators_desc:0"伊布同化者可以使用其他智�
 building_EOE_evolution_planning_office:0 "计划进化办公室"
 building_EOE_evolution_planning_office_desc:0 "计划进化办公室按照星球的实际需要来安排进化的方向。"
 civic_EOE_evolution_planning:0 "计划进化"
-civic_EOE_evolution_planning_desc:0 "这个社会的个体拥有被称为“进化”的表观遗传学特性。为了最大效率利用进化，这个社会发展出了对于进化方向进行把控的计划进化部门。\n\n§L可以建造§Y计划进化办公室§!,通过星球决议来改变行星上的主要进化型种类，并提供§G10%§!~§G15%§!的某项资源加成，以及§Y±10%§G的宜居度修正。代价是幸福度§R-5%§!。§!\n§Y显然，这只对拥有“定向进化”特质的人口有效。§!\n§Y获得“设计起源”传统之后将会被强制移除。§!"
+civic_EOE_evolution_planning_desc:0 "这个社会的个体拥有被称为“进化”的表观遗传学特性。为了最大效率利用进化，这个社会发展出了对于进化方向进行把控的计划进化部门。\n\n§L可以建造§Y计划进化办公室§!,通过星球决议来改变行星上的主要进化型种类，并提供§G10%§!~§G15%§!的某项资源加成，以及§Y±10%§!的宜居度修正。代价是幸福度§R-5%§!。§!\n§Y显然，这只对拥有“定向进化”特质的人口有效。§!\n§Y获得“设计起源”传统之后将会被强制移除。§!"
 councilor_EOE_evolution_planning:0 "计划进化委员会主席"
 councilor_EOE_evolution_planning_desc:0 "计划进化委员会主席负责管理帝国内的计划进化项目。"
 mod_pop_EOE_evolution_planning_effect_mult:0 "计划进化资源效果乘数"
