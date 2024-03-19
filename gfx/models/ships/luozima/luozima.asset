@@ -1,7 +1,0 @@
-entity = {
-	name = "luozima_entity"
-	pdxmesh = "luozima_mesh"
-	game_data = { 
-		emissive_recolor_crunch = 0
-	}
-}
