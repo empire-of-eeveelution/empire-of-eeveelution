@@ -3200,7 +3200,7 @@ ship_event = { #完成异常现象
 	title = eevent.45.name
 	desc = eevent.45.desc
 	is_triggered_only = yes
-	picture = GFX_evt_astral_rift_crystal_1
+	picture = GFX_evt_crystal_kraken
 	show_sound = event_crystal_ship
 	immediate = {
 		create_country = {
@@ -3250,13 +3250,15 @@ country_event = { #刷晶体了
 	title = eevent.46.name
 	desc = { #科技发达
 		trigger = {
-			
+			has_technology = EOE_afferent_nerve_stimulation
 		}
 		text = eevent.46.desc.a
 	}
 	desc = { #科技不发达
 		trigger = {
-			
+			NOT = {
+				has_technology = EOE_afferent_nerve_stimulation
+			}
 		}
 		text = eevent.46.desc.b
 	}
@@ -3330,17 +3332,19 @@ country_event = { #刷晶体了
 	}
 	option= {
 		allow = {
-			has_resource = { type = rare_crystals amount > 5000 }
+			has_resource = { type = rare_crystals amount > 8000 }
 		}
 		name = eevent.46.c #我们应该喂它们晶体。科技不发达也可以喂水晶
 		add_resource = {
-			rare_crystals = -5000
+			rare_crystals = -8000
 		}
 		country_event = {
 			id = eevent.50 days = 480
 		}
 	}
-	
+	option= {
+		name = eevent.46.d #还是算了吧，这太危险了
+	}
 }
 
 #打爆后检测
@@ -3368,6 +3372,9 @@ country_event = {
 	}
 	option = {
 		name = "eevent.48.a"
+		add_resource = {
+			rare_crystals = 2000
+		}
 		from = {
 			create_ambient_object = {
 				type = small_debris_object
@@ -3447,7 +3454,7 @@ country_event = { #喂饱了，那么所有水晶舰队归你了
 		clear_global_event_target = EOE_crystal_asteroid
 	}
 	option = {
-		name = eevent.49.a
+		name = eevent.50.a
 		owner = {
 			add_research_option = tech_EOE_Minior
 		}
@@ -3490,13 +3497,33 @@ country_event = { #一开始科技不足，现在科技够了触发的事件
 			id = eevent.50 days = 480
 		}
 	}
+	option= {
+		name = eevent.46.d #太危险了	
+	}
 }
 
 fleet_event = { #极端情况下，如果被别人做了这个异常，那么进入星系的时候还是会弹窗
-	id = eevent.51
+	id = eevent.52
 	is_triggered_only = yes
-	title = eevent.51.name
-	desc = eevent.51.desc
+	title = eevent.52.name
+	desc = { #科技发达
+		trigger = {
+			owner = {
+				has_technology = EOE_afferent_nerve_stimulation
+			}
+		}
+		text = eevent.52.desc.a
+	}
+	desc = { #科技不发达
+		trigger = {
+			NOT = {
+				owner = {
+					has_technology = EOE_afferent_nerve_stimulation
+				}
+			}
+		}
+		text = eevent.52.desc.b
+	}
 	picture = GFX_evt_astral_rift_crystal_1
 	show_sound = event_crystal_ship
 	trigger = {
@@ -3548,19 +3575,22 @@ fleet_event = { #极端情况下，如果被别人做了这个异常，那么进
 	option= {
 		allow = {
 			owner = {
-				has_resource = { type = rare_crystals amount > 5000 }
+				has_resource = { type = rare_crystals amount > 8000 }
 			}
 			
 		}
 		name = eevent.46.c #我们应该喂它们晶体。科技不发达也可以喂水晶
 		owner = {
 			add_resource = {
-				rare_crystals = -5000
+				rare_crystals = -8000
 			}
 			country_event = {
 				id = eevent.50 days = 480
 			}
 		}
 		
+	}
+	option= {
+		name = eevent.46.d #太危险了	
 	}
 }

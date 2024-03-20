@@ -60,6 +60,7 @@ civic_EOE_evolution_planning = {
 	}
 	modifier = {
 		pop_EOE_evolution_planning_effect_mult = 1
+		official_initial_skill = 2
 	}
 	pickable_at_start = yes 
 	modification = no
