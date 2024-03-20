@@ -42,7 +42,8 @@ d_EOE_ringworld_Ancient_ruins_2 = {
 	planet_modifier = { 
 		planet_max_districts_add = -1
 		planet_housing_add = -5
-		job_artisan_add = -2
+		job_artisan_add = -3
+		job_catalytic_technician_add = -3
 		job_foundry_add = -3
 	}
 	resources = {
@@ -76,6 +77,7 @@ d_EOE_ringworld_Broken_tunnel_1 = {
 		
 	planet_modifier = { 
 		planet_max_districts_add = -1
+		job_enforcer_add = -2
 	}
 	resources = {
 		category = deposit_blockers
@@ -164,6 +166,9 @@ d_EOE_ringworld_Broken_tunnel_3 = {
 		cost = {
 			energy = 500
 		}
+	}
+	blocker_swap_types = {
+		d_EOE_ringworld_ancient_tech_district_1
 	}
 	on_cleared = {
 		owner = {

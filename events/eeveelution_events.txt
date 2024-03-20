@@ -1865,45 +1865,26 @@ country_event = { #环开开局布置
 			clear_blockers = yes
 			remove_all_districts = yes
 			while = {
-				count = 31
+				count = 27
 				hidden_effect = {
 					create_pop = { 	species = owner_main_species }
 				}
 			}
-			add_building = building_capital
-			add_building = building_research_lab_1
-			add_building = building_bureaucratic_1
-			add_building =  building_commercial_zone
-			add_district = district_rw_farming
-			add_district = district_rw_city
-			add_district = district_rw_industrial
+			EOE_shatterring_start_buildings = yes
 			add_deposit = d_EOE_arcane_generator
 			add_deposit = d_EOE_ringworld_Ancient_ruins_1
 			add_deposit = d_EOE_ringworld_Ancient_ruins_2
 			add_deposit = d_EOE_ringworld_Broken_tunnel_2
 			add_deposit = d_EOE_ringworld_Broken_tunnel_3
 			add_deposit = d_EOE_ringworld_Broken_tunnel_1
-			# add_district = district_mining_uncapped
-			# add_district = district_mining_uncapped
-			# add_district = district_mining_uncapped
-			# add_district = district_farming_uncapped
-			# add_district = district_farming_uncapped
-			# add_district = district_srw_commercial
-			# add_district = district_srw_commercial
-			# add_district = district_srw_commercial
-			# add_district = district_city
-			# add_district = district_city
-			# add_district = district_city
-			# add_building = building_commercial_zone
-			# add_deposit = d_decrepit_dwellings
-			# add_deposit = d_segment_rubble_1
-			# add_deposit = d_segment_rubble_2
-			# add_deposit = d_segment_rubble_3
-			# add_deposit = d_segment_rubble_4
-			# add_deposit = d_EOE_ringworld_Broken_tunnel_1 
-			# add_deposit = d_EOE_ringworld_Broken_tunnel_2 
-			# add_deposit = d_EOE_ringworld_Broken_tunnel_3 
-			add_deposit = d_EOE_ringworld_ancient_tech_district
+			if = {
+				limit = { 
+					root = {
+						has_valid_civic = civic_relentless_industrialists
+					}
+				}
+				add_building = building_coordinated_fulfillment_center_1
+			}
 			 add_deposit = d_EOE_ringworld_Refuge_City
 			
 
