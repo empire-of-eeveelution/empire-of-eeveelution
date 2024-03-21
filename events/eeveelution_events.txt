@@ -1865,45 +1865,26 @@ country_event = { #环开开局布置
 			clear_blockers = yes
 			remove_all_districts = yes
 			while = {
-				count = 31
+				count = 27
 				hidden_effect = {
 					create_pop = { 	species = owner_main_species }
 				}
 			}
-			add_building = building_capital
-			add_building = building_research_lab_1
-			add_building = building_bureaucratic_1
-			add_building =  building_commercial_zone
-			add_district = district_rw_farming
-			add_district = district_rw_city
-			add_district = district_rw_industrial
+			EOE_shatterring_start_buildings = yes
 			add_deposit = d_EOE_arcane_generator
 			add_deposit = d_EOE_ringworld_Ancient_ruins_1
 			add_deposit = d_EOE_ringworld_Ancient_ruins_2
 			add_deposit = d_EOE_ringworld_Broken_tunnel_2
 			add_deposit = d_EOE_ringworld_Broken_tunnel_3
 			add_deposit = d_EOE_ringworld_Broken_tunnel_1
-			# add_district = district_mining_uncapped
-			# add_district = district_mining_uncapped
-			# add_district = district_mining_uncapped
-			# add_district = district_farming_uncapped
-			# add_district = district_farming_uncapped
-			# add_district = district_srw_commercial
-			# add_district = district_srw_commercial
-			# add_district = district_srw_commercial
-			# add_district = district_city
-			# add_district = district_city
-			# add_district = district_city
-			# add_building = building_commercial_zone
-			# add_deposit = d_decrepit_dwellings
-			# add_deposit = d_segment_rubble_1
-			# add_deposit = d_segment_rubble_2
-			# add_deposit = d_segment_rubble_3
-			# add_deposit = d_segment_rubble_4
-			# add_deposit = d_EOE_ringworld_Broken_tunnel_1 
-			# add_deposit = d_EOE_ringworld_Broken_tunnel_2 
-			# add_deposit = d_EOE_ringworld_Broken_tunnel_3 
-			add_deposit = d_EOE_ringworld_ancient_tech_district
+			if = {
+				limit = { 
+					root = {
+						has_valid_civic = civic_relentless_industrialists
+					}
+				}
+				add_building = building_coordinated_fulfillment_center_1
+			}
 			 add_deposit = d_EOE_ringworld_Refuge_City
 			
 
@@ -3203,6 +3184,9 @@ ship_event = { #完成异常现象
 	picture = GFX_evt_crystal_kraken
 	show_sound = event_crystal_ship
 	immediate = {
+		from = {
+			save_global_event_target_as = EOE_crystal_asteroid
+		}
 		create_country = {
 			name = "NAME_EOE_Crystal"
 			type = EOE_crystal
@@ -3223,56 +3207,16 @@ ship_event = { #完成异常现象
 				}
 			}
 			effect = {
-				save_event_target_as = EOE_crystal_country
+				save_global_event_target_as = EOE_crystal_country
 				establish_communications_no_message = root.owner
-			}
-		}
-	}
-	option = {
-		name = eevent.45.a
-		from = {
-			set_deposit = d_rare_crystals_1
-			save_global_event_target_as = EOE_crystal_asteroid
-			solar_system = {
-				set_star_flag = EOE_minior_system
-			}
-		}
-		owner = {
-			country_event = {
-				id = eevent.46 days = 360
-			}
-		}
-	}
-}
-
-country_event = { #刷晶体了
-	id = eevent.46
-	title = eevent.46.name
-	desc = { #科技发达
-		trigger = {
-			has_technology = EOE_afferent_nerve_stimulation
-		}
-		text = eevent.46.desc.a
-	}
-	desc = { #科技不发达
-		trigger = {
-			NOT = {
-				has_technology = EOE_afferent_nerve_stimulation
-			}
-		}
-		text = eevent.46.desc.b
-	}
-	is_triggered_only = yes
-	picture = GFX_evt_astral_rift_crystal_1
-	show_sound = event_crystal_ship
-	immediate = {
-		set_country_flag = EOE_country_meet_minior
-		event_target:EOE_crystal_asteroid = {
-			event_target:EOE_crystal_country = {
+				give_technology = {
+					tech = tech_EOE_Minior
+					tech = tech_EOE_Mew
+				}
 				create_fleet = {
 					name = "NAME_Ruby_Stack"
 					effect = {
-						set_owner = event_target:EOE_crystal_country
+						set_owner = prev
 						while = {
 							count = 7
 							create_ship = {
@@ -3295,22 +3239,57 @@ country_event = { #刷晶体了
 							}
 						}
 						create_ship = {
-							name = ""
+							name = "Z"
 							design = "NAME_EOE_CRYSTALSHIP"
 							effect = {
 								save_global_event_target_as = EOE_minior_ship
 							}
 						}
 						save_global_event_target_as = EOE_minior_fleet
-						set_location = PREVPREV
+						set_location = event_target:EOE_crystal_asteroid
 						set_fleet_stance = passive
-						set_aggro_range_measure_from = self
-						set_aggro_range = 150
 					}
 				}
 			}
 		}
 	}
+	option = {
+		name = eevent.45.a
+		from = {
+			set_deposit = d_rare_crystals_1
+			solar_system = {
+				set_star_flag = EOE_minior_system
+			}
+		}
+		owner = {
+			set_country_flag = EOE_country_meet_minior
+			country_event = {
+				id = eevent.46 days = 360
+			}
+		}
+	}
+}
+
+country_event = { #晶体的观察报告
+	id = eevent.46
+	title = eevent.46.name
+	desc = { #科技发达
+		trigger = {
+			has_technology = EOE_afferent_nerve_stimulation
+		}
+		text = eevent.46.desc.a
+	}
+	desc = { #科技不发达
+		trigger = {
+			NOT = {
+				has_technology = EOE_afferent_nerve_stimulation
+			}
+		}
+		text = eevent.46.desc.b
+	}
+	is_triggered_only = yes
+	picture = GFX_evt_astral_rift_crystal_1
+	show_sound = event_crystal_ship
 	option = {
 		name = eevent.46.a #发动攻击尝试捕获。
 		allow = {

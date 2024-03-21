@@ -467,6 +467,6 @@ ship_design = {
 		required_component = MINIOR_BIO_REACTOR
 		required_component = MINIOR_COMPUTER
 		required_component = MINIOR_SENSOR
-		required_component = MINIOR_JUMP_DRIVE
+		#required_component = BIO_DRIVE
 		required_component = MINIOR_THRUSTER
 }

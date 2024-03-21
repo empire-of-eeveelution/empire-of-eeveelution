@@ -56,7 +56,7 @@ EOE_crystal = {
 		enabled = no
 	}
 	faction = {
-		hostile = yes
+		hostile = no
 		needs_border_access = no
 		generate_borders = no
 		needs_colony = no

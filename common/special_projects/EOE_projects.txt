@@ -465,7 +465,7 @@ special_project = { #抓小陨星
 
 	on_success = { 
 		ship_event = {
-			id = EOE_branch.56
+			id = eevent.49
 		}
 	}
 }
