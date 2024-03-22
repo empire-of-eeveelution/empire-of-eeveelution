@@ -36,6 +36,7 @@ on_entering_system_fleet = {
 	events = {
 		eevent.142
 		eevent.143
+		eevent.53 #我必须强刷小陨星
 		#eevent.144
 	}
 }

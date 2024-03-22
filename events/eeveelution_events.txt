@@ -3574,17 +3574,32 @@ fleet_event = { #极端情况下，如果被别人做了这个异常，那么进
 	}
 }
 
-country_event = { #尝试刷小陨星事件
+fleet_event = { #尝试刷小陨星事件
 	id = eevent.53
 	is_triggered_only = yes
 	hide_window = yes
-	immediate = {
-		closest_system = {
-			limit = {
-				any_system_planet = {
-					is_asteroid = yes
-				}
+	trigger = {
+		owner = {
+			OR = {
+				owner_main_species = { has_trait = trait_EOE_Inheritors }
+				has_origin = origin_lotus_hezi_start
 			}
+			is_ai = no
+			NOT = {
+				has_country_flag = EOE_spawned_minion_anomaly
+			}
+		}
+		from = {
+			any_system_planet = {
+				is_asteroid = yes
+			}
+		}
+	}
+	immediate = {
+		owner = {
+			set_country_flag = EOE_spawned_minion_anomaly
+		}
+		from = {
 			random_system_planet = {
 				limit = {
 					is_asteroid = yes
