@@ -64,6 +64,9 @@ on_modification_complete = {
 		 leadereevent.70 #义飞的三个领袖特质
 		leadereevent.71
 		leadereevent.72
+		leadereevent.73 #1级
+		leadereevent.74 #4级
+		leadereevent.75 #8级
 		# leadereevent.2003 #冰
 		# leadereevent.2004 #雷
 		# leadereevent.2005 #光
@@ -76,5 +79,7 @@ on_leader_level_up = {
 	events = {
 		leadereevent.2001 #4级发特质
 		leadereevent.2002 #8级发特质
+		leadereevent.74 #4级
+		leadereevent.75 #8级
 	}
 }
