@@ -39,6 +39,9 @@ on_leader_spawned = {
 		leadereevent.61	#月 迁 引 擎
 		# leadereevent.62	#虫群仙布
 		leadereevent.2000 #1级发特质
+		leadereevent.70 #义飞的三个领袖特质
+		leadereevent.71
+		leadereevent.72
 		# leadereevent.2001 #火
 		# leadereevent.2002 #水
 		# leadereevent.2003 #冰
@@ -58,6 +61,9 @@ on_modification_complete = {
 		leadereevent.2000 #1级发特质
 		 leadereevent.2001 #4级发特质
 		 leadereevent.2002 #8级发特质
+		 leadereevent.70 #义飞的三个领袖特质
+		leadereevent.71
+		leadereevent.72
 		# leadereevent.2003 #冰
 		# leadereevent.2004 #雷
 		# leadereevent.2005 #光

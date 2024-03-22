@@ -173,7 +173,7 @@ EOE_Reshiram = {
 
 
 EOE_minior = {
-	entity = luozima_entity
+	entity = EOE_minior_entity
 	formation_priority = 1
 	is_space_object = yes
 	graphical_culture = no

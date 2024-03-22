@@ -260,3 +260,86 @@ leader_trait_scientist_electric_type_1 = { #电系科学家
 
 
 
+leader_trait_scientist_fly_type = {
+	icon = "gfx/interface/icons/EeveelutionTypes/fly_type.png"
+
+	triggered_fleet_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = scientist
+		}
+		ship_disengage_chance_mult = 0.5
+		ship_speed_mult = 0.2
+		ship_emergency_ftl_mult = -0.30
+		ship_evasion_add = 20
+		fleet_mia_time_mult = -0.5
+		ship_ftl_jumpdrive_range_mult = 0.25
+		ship_jumpdrive_cooldown_mult = -0.6
+	}
+
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+}
+
+leader_trait_scientist_rock_type = {
+	icon = "gfx/interface/icons/EeveelutionTypes/rock_type.png"
+	triggered_fleet_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = scientist
+		}
+		ship_archaeological_site_excavation_speed_mult = 0.5
+		ship_archaeological_site_clues_add = 2
+	}
+	councilor_modifier = {
+		category_archaeostudies_research_speed_mult = 0.3
+		ship_archaeological_site_clues_add = 1
+	}
+
+
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+}
+
+leader_trait_scientist_dragon_type = {     
+	icon = "gfx/interface/icons/EeveelutionTypes/dragon_type.png"
+	councilor_modifier = {
+		all_technology_research_speed = 0.1
+		planet_researchers_upkeep_mult = 0.05
+	}
+	self_modifier = {
+		leader_lifespan_add = 20
+		species_leader_exp_gain = 0.15
+		leader_trait_selection_options_add = 1
+		leader_skill_levels = 1
+		negative_traits_leader = -1
+		leaders_upkeep_mult = 1
+	}
+
+	leader_class = { scientist }
+	initial = no 
+	randomized = no
+}
+
+
+leader_trait_scientist_steel_type = { #钢系科学家
+	icon = "gfx/interface/icons/EeveelutionTypes/steel_type.png"
+	planet_modifier = {
+		planet_jobs_physics_research_produces_mult = 0.15
+		planet_jobs_society_research_produces_mult = 0.15
+		planet_jobs_engineering_research_produces_mult = 0.15
+		planet_researchers_upkeep_mult = 0.05
+	}
+	sector_modifier = {
+		planet_jobs_physics_research_produces_mult = 0.075
+		planet_jobs_society_research_produces_mult = 0.075
+		planet_jobs_engineering_research_produces_mult = 0.075
+		planet_researchers_upkeep_mult = 0.025
+	}
+
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+}

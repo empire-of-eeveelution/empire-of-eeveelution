@@ -3573,3 +3573,27 @@ fleet_event = { #极端情况下，如果被别人做了这个异常，那么进
 		name = eevent.46.d #太危险了	
 	}
 }
+
+country_event = { #尝试刷小陨星事件
+	id = eevent.53
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		closest_system = {
+			limit = {
+				any_system_planet = {
+					is_asteroid = yes
+				}
+			}
+			random_system_planet = {
+				limit = {
+					is_asteroid = yes
+				}
+				add_anomaly = {
+					category = EOE_wierd_crystals
+				}
+			}
+		}
+	} 
+
+}

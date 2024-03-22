@@ -398,6 +398,7 @@ trait_grass_type_mega_evolution = {
 		planet_pops_food_upkeep_mult = -0.50
 		planet_jobs_food_produces_mult = 0.25
 		pop_growth_speed = 0.10
+		planet_pop_assembly_mult = 0.1
 		army_defense_damage_mult = 0.5
 		
 	}
@@ -448,10 +449,10 @@ trait_water_type_mega_evolution = {
 	allowed_archetypes = { POKEMON}
 	modifier = {
 		leader_lifespan_add = 20
-		pop_growth_speed = 0.20
+		pop_growth_speed = 0.2
+		planet_pop_assembly_mult = 0.2
 		planet_jobs_society_research_produces_mult = 0.15
 		army_health = 0.25
-		
 	}
 	slave_cost = {
 		energy = 50
@@ -699,3 +700,218 @@ trait_fairy_type_mega_evolution_swarm = {
 #	}
 #	
 #}
+trait_steel_type_mega_evolution = {
+	cost = 4
+	potential_crossbreeding_chance = 0.5
+	icon = "gfx/interface/icons/EeveelutionTypes/steel_type.png"
+	initial = no
+	randomized = no
+	improves_leaders = yes
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_merge_add = {
+		can_remove_cybernetic_traits = yes
+	}
+	allowed_archetypes = { POKEMON }
+	modifier = {
+	    leader_lifespan_add = 15
+		pop_environment_tolerance = 0.3
+		planet_jobs_alloys_produces_mult = 0.15
+		army_damage_mult = 0.15
+		army_health = 0.15
+		pop_growth_speed = -0.1
+	}
+
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_rock_type_mega_evolution = {
+	cost = 4
+	potential_crossbreeding_chance = 0.5
+	icon = "gfx/interface/icons/EeveelutionTypes/rock_type.png"
+	initial = no
+	randomized = no
+	improves_leaders = yes
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_merge_add = {
+		can_remove_cybernetic_traits = yes
+	}
+	allowed_archetypes = { POKEMON }
+	modifier = {
+	    leader_lifespan_add = 15
+		pop_environment_tolerance = 0.1
+		planet_jobs_minerals_produces_mult = 0.2
+		planet_jobs_exotic_gases_produces_mult = 0.2
+		planet_jobs_rare_crystals_produces_mult = 0.2
+		planet_jobs_volatile_motes_produces_mult = 0.2
+		army_health = 0.15
+	}
+
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_ground_type_mega_evolution = {
+	cost = 4
+	potential_crossbreeding_chance = 0.5
+	icon = "gfx/interface/icons/EeveelutionTypes/ground_type.png"
+	initial = no
+	randomized = no
+	improves_leaders = yes
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_merge_add = {
+		can_remove_cybernetic_traits = yes
+	}
+	allowed_archetypes = { POKEMON }
+	modifier = {
+	    leader_lifespan_add = 15
+		pop_environment_tolerance = 0.1
+		planet_jobs_food_produces_mult = 0.3
+	}
+
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_fly_type_mega_evolution = {
+	cost = 4
+	potential_crossbreeding_chance = 0.5
+	icon = "gfx/interface/icons/EeveelutionTypes/fly_type.png"
+	initial = no
+	randomized = no
+	improves_leaders = yes
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_merge_add = {
+		can_remove_cybernetic_traits = yes
+	}
+	allowed_archetypes = { POKEMON }
+	modifier = {
+		pop_job_trade_mult = 0.3
+		pop_growth_from_immigration = 1
+		pop_resettlement_cost_mult = -0.50
+		species_empire_size_mult = -0.3
+	}
+
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_fight_type_mega_evolution = {
+	cost = 4
+	potential_crossbreeding_chance = 0.5
+	icon = "gfx/interface/icons/EeveelutionTypes/fight_type.png"
+	initial = no
+	randomized = no
+	improves_leaders = yes
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_merge_add = {
+		can_remove_cybernetic_traits = yes
+	}
+	allowed_archetypes = { POKEMON }
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.25
+		planet_jobs_worker_produces_mult = 0.1
+		planet_jobs_slave_produces_mult = 0.15
+	}
+
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_posion_type_mega_evolution = {
+	cost = 4
+	potential_crossbreeding_chance = 0.5
+	icon = "gfx/interface/icons/EeveelutionTypes/poison_type.png"
+	initial = no
+	randomized = no
+	improves_leaders = yes
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_merge_add = {
+		can_remove_cybernetic_traits = yes
+	}
+	allowed_archetypes = { POKEMON }
+	modifier = {
+		planet_jobs_physics_research_produces_mult = 0.3
+		planet_jobs_society_research_produces_mult = 0.3
+		planet_jobs_engineering_research_produces_mult = 0.3
+		pop_happiness = 0.2
+		planet_crime_mult = 0.1
+		planet_jobs_unity_produces_mult = -0.1
+		species_empire_size_mult = 0.1
+	}
+
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_dragon_type_mega_evolution = {
+	cost = 4
+	potential_crossbreeding_chance = 0.5
+	icon = "gfx/interface/icons/EeveelutionTypes/dragon_type.png"
+	initial = no
+	randomized = no
+	improves_leaders = yes
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_merge_add = {
+		can_remove_cybernetic_traits = yes
+	}
+	allowed_archetypes = { POKEMON }
+	modifier = {
+		planet_jobs_produces_mult = 0.1
+		planet_pops_food_upkeep_mult = 0.2
+		planet_pops_consumer_goods_upkeep_mult = 0.2
+		planet_pop_assembly_mult = -0.1
+		pop_growth_speed = -0.1
+	}
+	slave_cost = {
+		energy = 50
+	}
+
+}
+
+trait_bug_type_mega_evolution = {
+	cost = 4
+	potential_crossbreeding_chance = 0.5
+	icon = "gfx/interface/icons/EeveelutionTypes/bug_type.png"
+	initial = no
+	randomized = no
+	improves_leaders = yes
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_merge_add = {
+		can_remove_cybernetic_traits = yes
+	}
+	allowed_archetypes = { POKEMON }
+	modifier = {
+		leader_lifespan_add = -30
+		pop_growth_speed = 0.3
+		planet_pop_assembly_mult = 0.3
+		species_empire_size_mult = -0.3
+	}
+	slave_cost = {
+		energy = 50
+	}
+
+}
+

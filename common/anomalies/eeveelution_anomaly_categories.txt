@@ -99,7 +99,7 @@ EOE_wierd_crystals = {
 	level = 2
 	spawn_chance = {
 		modifier = {
-			add = 3
+			add = 0
 			is_asteroid = yes
 			has_any_strategic_resource = no
 		}

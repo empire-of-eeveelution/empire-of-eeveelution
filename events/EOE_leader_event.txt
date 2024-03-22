@@ -5777,6 +5777,7 @@ country_event = {
 # 	}
 # }
 
+
 country_event = {   #一级随机上特质
 	id = leadereevent.2000
 	hide_window = yes
@@ -10012,3 +10013,1257 @@ planet_event = {
 # 	}
 # }
 
+##地系总督
+country_event = {
+	id = leadereevent.70
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		any_owned_pop = {
+			has_trait = trait_ground_type_mega_evolution
+		}
+	}
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				leader_class = official
+				NOT = {
+					has_trait = leader_trait_governor_ground_type
+				}
+			}
+			add_trait = leader_trait_governor_ground_type
+		}
+		every_pool_leader = {
+			limit = {
+				leader_class = official
+				NOT = {
+					has_trait = leader_trait_governor_ground_type
+				}
+			}
+			add_trait = leader_trait_governor_ground_type
+		}
+	}
+}
+
+#龙系科学家
+country_event = {
+	id = leadereevent.71
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		any_owned_pop = {
+			has_trait = trait_dragon_type_mega_evolution
+		}
+	}
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				NOR = {
+					has_trait = leader_trait_scientist_dragon_type
+				}
+			}
+			if = {
+				limit = {
+					leader_class = scientist
+				}
+				add_trait = leader_trait_scientist_dragon_type
+			}
+		}
+		every_pool_leader = {
+			limit = {
+				NOR = {
+					has_trait = leader_trait_scientist_dragon_type
+				}
+			}
+			if = {
+				limit = {
+					leader_class = scientist
+				}
+				add_trait = leader_trait_scientist_dragon_type
+			}
+		}
+	}
+}
+
+#月 迁 引 擎 飞 行 系 款
+country_event = {
+	id = leadereevent.72
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		any_owned_pop = {
+			has_trait = trait_fly_type_mega_evolution
+		}
+	}
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				NOT = {
+					has_trait = leader_trait_commander_fly_type
+				}
+			}
+			if = {
+				limit = {
+					leader_class = commander
+				}
+				add_trait = leader_trait_commander_fly_type
+			}
+		}
+		every_pool_leader = {
+			limit = {
+				NOT = {
+					has_trait = leader_trait_commander_fly_type
+				}
+			}
+			if = {
+				limit = {
+					leader_class = commander
+				}
+				add_trait = leader_trait_commander_fly_type
+			}
+		}
+	}
+}
+
+country_event = {   #一级随机上特质
+	id = leadereevent.73
+	hide_window = yes
+	is_triggered_only = yes
+	# fire_only_once = yes
+	trigger = {
+		owner_main_species = {
+			has_trait = trait_directed_evolution
+		}
+		has_active_tradition = tr_cybernetics_integrated_anatomy
+		from = {
+			NOT = {
+				has_leader_flag = EOE_LV1_leader_trait_gived
+			}
+		}
+	}
+	immediate = {
+		every_owned_leader = {
+		if = {
+			limit = {
+				leader_class = scientist
+				NOT = {
+					has_leader_flag = EOE_LV1_leader_trait_gived
+				}
+			}
+			random_list = {
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+						has_trait = leader_trait_scientist_fly_type
+						NOT= {
+							owner = {any_owned_pop = {has_trait = trait_fly_type_mega_evolution}}
+						}
+					}
+					}
+					add_trait = leader_trait_scientist_fly_type
+					set_leader_flag = EOE_LV1_leader_trait_gived
+						
+			}
+			1 ={ 
+				modifier = {
+					factor = 0
+					OR = {
+						has_trait = leader_trait_scientist_rock_type
+					NOT= {
+						owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+					}
+					}
+					
+				}
+				add_trait = leader_trait_scientist_rock_type
+				set_leader_flag = EOE_LV1_leader_trait_gived
+					
+		}
+		1 ={ 
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = leader_trait_scientist_steel_type
+					NOT= {
+						owner = {any_owned_pop = {has_trait = trait_steel_type_mega_evolution}}
+					}
+				}
+				
+			}
+			add_trait = leader_trait_scientist_steel_type
+			set_leader_flag = EOE_LV1_leader_trait_gived
+				
+	}
+
+			}
+		}
+		else_if ={
+			limit = {
+				leader_class = commander
+				NOT = {
+					has_leader_flag = EOE_LV1_leader_trait_gived
+				}
+			}
+			random_list = {
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_commander_fight_type
+						NOT= {
+							owner = {any_owned_pop = { has_trait = trait_fight_type_mega_evolution }}
+						}
+						}
+						
+					}
+					add_trait = leader_trait_commander_fight_type
+					set_leader_flag = EOE_LV1_leader_trait_gived
+					
+				
+			}
+			1 ={ 
+				modifier = {
+					factor = 0
+					OR = {
+						has_trait = leader_trait_commander_rock_type
+					NOT= {
+						owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+					}
+				}
+					
+				}
+				add_trait = leader_trait_commander_rock_type
+				set_leader_flag = EOE_LV1_leader_trait_gived
+				
+		}
+		1 ={ 
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = leader_trait_commander_bug_type
+					NOT= {
+						owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+					}
+				}
+				
+			}
+			add_trait = leader_trait_commander_bug_type
+			set_leader_flag = EOE_LV1_leader_trait_gived
+			
+	}
+			
+
+
+			}
+			
+		}
+		else_if ={
+			limit = {
+				leader_class = official
+				NOT = {
+					has_leader_flag = EOE_LV1_leader_trait_gived
+				}
+			}
+			random_list = {
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_governor_dragon_type
+						NOT= {
+							owner = {any_owned_pop = { has_trait = trait_dragon_type_mega_evolution }}
+						}
+						}
+						
+					}
+					add_trait = leader_trait_governor_dragon_type
+					set_leader_flag = EOE_LV1_leader_trait_gived
+						
+				
+			}
+			1 ={ 
+				modifier = {
+					factor = 0
+					OR = {
+						has_trait = leader_trait_governor_poison_type
+						NOT= {
+							owner = {any_owned_pop = {has_trait = trait_poison_type_mega_evolution}}
+						}
+					}
+					
+				}
+					add_trait = leader_trait_governor_poison_type
+					set_leader_flag = EOE_LV1_leader_trait_gived
+					
+		}
+		1 ={ 
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = leader_trait_governor_bug_type
+				NOT= {
+					owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+				}
+				}
+				
+			}
+				add_trait = leader_trait_governor_bug_type
+				set_leader_flag = EOE_LV1_leader_trait_gived
+			
+	}
+
+			}
+			
+		}
+
+
+	}
+		every_pool_leader = {
+			if = {
+				limit = {
+					leader_class = scientist
+					NOT = {
+						has_leader_flag = EOE_LV1_leader_trait_gived
+					}
+				}
+				random_list = {
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+							has_trait = leader_trait_scientist_fly_type
+							NOT= {
+								owner = {any_owned_pop = {has_trait = trait_fly_type_mega_evolution}}
+							}
+						}
+						}
+						add_trait = leader_trait_scientist_fly_type
+						set_leader_flag = EOE_LV1_leader_trait_gived
+							
+				}
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_scientist_rock_type
+						NOT= {
+							owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+						}
+						}
+						
+					}
+					add_trait = leader_trait_scientist_rock_type
+					set_leader_flag = EOE_LV1_leader_trait_gived
+						
+			}
+			1 ={ 
+				modifier = {
+					factor = 0
+					OR = {
+						has_trait = leader_trait_scientist_steel_type
+						NOT= {
+							owner = {any_owned_pop = {has_trait = trait_steel_type_mega_evolution}}
+						}
+					}
+					
+				}
+				add_trait = leader_trait_scientist_steel_type
+				set_leader_flag = EOE_LV1_leader_trait_gived
+					
+		}
+	
+				}
+			}
+			else_if ={
+				limit = {
+					leader_class = commander
+					NOT = {
+						has_leader_flag = EOE_LV1_leader_trait_gived
+					}
+				}
+				random_list = {
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_commander_fight_type
+							NOT= {
+								owner = {any_owned_pop = { has_trait = trait_fight_type_mega_evolution }}
+							}
+							}
+							
+						}
+						add_trait = leader_trait_commander_fight_type
+						set_leader_flag = EOE_LV1_leader_trait_gived
+						
+					
+				}
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_commander_rock_type
+						NOT= {
+							owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+						}
+					}
+						
+					}
+					add_trait = leader_trait_commander_rock_type
+					set_leader_flag = EOE_LV1_leader_trait_gived
+					
+			}
+			1 ={ 
+				modifier = {
+					factor = 0
+					OR = {
+						has_trait = leader_trait_commander_bug_type
+						NOT= {
+							owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+						}
+					}
+					
+				}
+				add_trait = leader_trait_commander_bug_type
+				set_leader_flag = EOE_LV1_leader_trait_gived
+				
+		}
+
+	
+				}
+				
+			}
+			else_if ={
+				limit = {
+					leader_class = official
+					NOT = {
+						has_leader_flag = EOE_LV1_leader_trait_gived
+					}
+				}
+				random_list = {
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_dragon_type
+							NOT= {
+								owner = {any_owned_pop = { has_trait = trait_dragon_type_mega_evolution }}
+							}
+							}
+							
+						}
+						add_trait = leader_trait_governor_dragon_type
+						set_leader_flag = EOE_LV1_leader_trait_gived
+							
+					
+				}
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_governor_poison_type
+							NOT= {
+								owner = {any_owned_pop = {has_trait = trait_poison_type_mega_evolution}}
+							}
+						}
+						
+					}
+						add_trait = leader_trait_governor_poison_type
+						set_leader_flag = EOE_LV1_leader_trait_gived
+						
+			}
+			1 ={ 
+				modifier = {
+					factor = 0
+					OR = {
+						has_trait = leader_trait_governor_bug_type
+					NOT= {
+						owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+					}
+					}
+					
+				}
+					add_trait = leader_trait_governor_bug_type
+					set_leader_flag = EOE_LV1_leader_trait_gived
+				
+		}
+	
+				}
+				
+			}
+	
+	
+			
+			
+		}
+
+		
+	}
+}
+
+
+country_event = {   #4级随机上特质
+	id = leadereevent.74
+	hide_window = yes
+	is_triggered_only = yes
+	# fire_only_once = yes
+	trigger = {
+		owner_main_species = {
+			has_trait = trait_directed_evolution
+		}
+		has_active_tradition = tr_cybernetics_integrated_anatomy
+		from = {
+			NOT = {
+				has_leader_flag = EOE_LV4_leader_trait_gived
+			}
+			has_level > 3
+		}
+	}
+	immediate = {
+		every_owned_leader = {
+		if = {
+			limit = {
+				leader_class = scientist
+				NOT = {
+				has_leader_flag = EOE_LV4_leader_trait_gived
+			}
+			has_level > 3
+			}
+			random_list = {
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+						has_trait = leader_trait_scientist_fly_type
+						NOT= {
+							owner = {any_owned_pop = {has_trait = trait_fly_type_mega_evolution}}
+						}
+					}
+					}
+					add_trait = leader_trait_scientist_fly_type
+					set_leader_flag = EOE_LV4_leader_trait_gived
+						
+			}
+			1 ={ 
+				modifier = {
+					factor = 0
+					OR = {
+						has_trait = leader_trait_scientist_rock_type
+					NOT= {
+						owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+					}
+					}
+					
+				}
+				add_trait = leader_trait_scientist_rock_type
+				set_leader_flag = EOE_LV4_leader_trait_gived
+					
+		}
+		1 ={ 
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = leader_trait_scientist_steel_type
+					NOT= {
+						owner = {any_owned_pop = {has_trait = trait_steel_type_mega_evolution}}
+					}
+				}
+				
+			}
+			add_trait = leader_trait_scientist_steel_type
+			set_leader_flag = EOE_LV4_leader_trait_gived
+				
+	}
+
+			}
+		}
+		else_if ={
+			limit = {
+				leader_class = commander
+				NOT = {
+				has_leader_flag = EOE_LV4_leader_trait_gived
+			}
+			has_level > 3
+			}
+			random_list = {
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_commander_fight_type
+						NOT= {
+							owner = {any_owned_pop = {has_trait = trait_fight_type_mega_evolution }}
+						}
+						}
+						
+					}
+					add_trait = leader_trait_commander_fight_type
+					set_leader_flag = EOE_LV4_leader_trait_gived
+					
+				
+			}
+			1 ={ 
+				modifier = {
+					factor = 0
+					OR = {
+						has_trait = leader_trait_commander_rock_type
+					NOT= {
+						owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+					}
+				}
+					
+				}
+				add_trait = leader_trait_commander_rock_type
+				set_leader_flag = EOE_LV4_leader_trait_gived
+				
+		}
+		1 ={ 
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = leader_trait_commander_bug_type
+					NOT= {
+						owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+					}
+				}
+				
+			}
+			add_trait = leader_trait_commander_bug_type
+			set_leader_flag = EOE_LV4_leader_trait_gived
+			
+	}
+
+
+			}
+			
+		}
+		else_if ={
+			limit = {
+				leader_class = official
+				NOT = {
+				has_leader_flag = EOE_LV4_leader_trait_gived
+			}
+			has_level > 3
+			}
+			random_list = {
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_governor_dragon_type
+						NOT= {
+							owner = {any_owned_pop = { has_trait = trait_dragon_type_mega_evolution }}
+						}
+						}
+						
+					}
+					add_trait = leader_trait_governor_dragon_type
+					set_leader_flag = EOE_LV4_leader_trait_gived
+						
+				
+			}
+			1 ={ 
+				modifier = {
+					factor = 0
+					OR = {
+						has_trait = leader_trait_governor_poison_type
+						NOT= {
+							owner = {any_owned_pop = {has_trait = trait_poison_type_mega_evolution}}
+						}
+					}
+					
+				}
+					add_trait = leader_trait_governor_poison_type
+					set_leader_flag = EOE_LV4_leader_trait_gived
+					
+		}
+		1 ={ 
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = leader_trait_governor_bug_type
+				NOT= {
+					owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+				}
+				}
+				
+			}
+				add_trait = leader_trait_governor_bug_type
+				set_leader_flag = EOE_LV4_leader_trait_gived
+			
+	}
+
+			}
+			
+		}
+
+
+	}
+		every_pool_leader = {
+			if = {
+				limit = {
+					leader_class = scientist
+					NOT = {
+					has_leader_flag = EOE_LV4_leader_trait_gived
+				}
+				has_level > 3
+				}
+				random_list = {
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+							has_trait = leader_trait_scientist_fly_type
+							NOT= {
+								owner = {any_owned_pop = {has_trait = trait_fly_type_mega_evolution}}
+							}
+						}
+						}
+						add_trait = leader_trait_scientist_fly_type
+						set_leader_flag = EOE_LV4_leader_trait_gived
+							
+				}
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_scientist_rock_type
+						NOT= {
+							owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+						}
+						}
+						
+					}
+					add_trait = leader_trait_scientist_rock_type
+					set_leader_flag = EOE_LV4_leader_trait_gived
+						
+			}
+			1 ={ 
+				modifier = {
+					factor = 0
+					OR = {
+						has_trait = leader_trait_scientist_steel_type
+						NOT= {
+							owner = {any_owned_pop = {has_trait = trait_steel_type_mega_evolution}}
+						}
+					}
+					
+				}
+				add_trait = leader_trait_scientist_steel_type
+				set_leader_flag = EOE_LV4_leader_trait_gived
+					
+		}
+	
+				}
+			}
+			else_if ={
+				limit = {
+					leader_class = commander
+					NOT = {
+					has_leader_flag = EOE_LV4_leader_trait_gived
+				}
+				has_level > 3
+				}
+				random_list = {
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_commander_fight_type
+							NOT= {
+								owner = {any_owned_pop = { has_trait = trait_fight_type_mega_evolution }}
+							}
+							}
+							
+						}
+						add_trait = leader_trait_commander_fight_type
+						set_leader_flag = EOE_LV4_leader_trait_gived
+						
+					
+				}
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_commander_rock_type
+						NOT= {
+							owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+						}
+					}
+						
+					}
+					add_trait = leader_trait_commander_rock_type
+					set_leader_flag = EOE_LV4_leader_trait_gived
+					
+			}
+			1 ={ 
+				modifier = {
+					factor = 0
+					OR = {
+						has_trait = leader_trait_commander_bug_type
+						NOT= {
+							owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+						}
+					}
+					
+				}
+				add_trait = leader_trait_commander_bug_type
+				set_leader_flag = EOE_LV4_leader_trait_gived
+				
+		}
+
+	
+				}
+				
+			}
+			else_if ={
+				limit = {
+					leader_class = official
+					NOT = {
+					has_leader_flag = EOE_LV4_leader_trait_gived
+				}
+				has_level > 3
+				}
+				random_list = {
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_dragon_type
+							NOT= {
+								owner = {any_owned_pop = { has_trait = trait_dragon_type_mega_evolution }}
+							}
+							}
+							
+						}
+						add_trait = leader_trait_governor_dragon_type
+						set_leader_flag = EOE_LV4_leader_trait_gived
+							
+					
+				}
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_governor_poison_type
+							NOT= {
+								owner = {any_owned_pop = {has_trait = trait_poison_type_mega_evolution}}
+							}
+						}
+						
+					}
+						add_trait = leader_trait_governor_poison_type
+						set_leader_flag = EOE_LV4_leader_trait_gived
+						
+			}
+			1 ={ 
+				modifier = {
+					factor = 0
+					OR = {
+						has_trait = leader_trait_governor_bug_type
+					NOT= {
+						owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+					}
+					}
+					
+				}
+					add_trait = leader_trait_governor_bug_type
+					set_leader_flag = EOE_LV4_leader_trait_gived
+				
+		}
+	
+				}
+				
+			}
+	
+	
+				
+		}
+
+		
+	}
+}
+
+
+country_event = {   #8级随机上特质
+	id = leadereevent.75
+	hide_window = yes
+	is_triggered_only = yes
+	# fire_only_once = yes
+	trigger = {
+		owner_main_species = {
+			has_trait = trait_directed_evolution
+		}
+		has_active_tradition = tr_cybernetics_integrated_anatomy
+		from = {
+			NOT = {
+				has_leader_flag = EOE_LV8_leader_trait_gived
+			}
+			has_level > 7
+		}
+	}
+	immediate = {
+		every_owned_leader = {
+		if = {
+			limit = {
+				leader_class = scientist
+				NOT = {
+				has_leader_flag = EOE_LV8_leader_trait_gived
+			}
+			has_level > 7
+			}
+			random_list = {
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+						has_trait = leader_trait_scientist_fly_type
+						NOT= {
+							owner = {any_owned_pop = {has_trait = trait_fly_type_mega_evolution}}
+						}
+					}
+					}
+					add_trait = leader_trait_scientist_fly_type
+					set_leader_flag = EOE_LV8_leader_trait_gived
+						
+			}
+			1 ={ 
+				modifier = {
+					factor = 0
+					OR = {
+						has_trait = leader_trait_scientist_rock_type
+					NOT= {
+						owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+					}
+					}
+					
+				}
+				add_trait = leader_trait_scientist_rock_type
+				set_leader_flag = EOE_LV8_leader_trait_gived
+					
+		}
+		1 ={ 
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = leader_trait_scientist_steel_type
+					NOT= {
+						owner = {any_owned_pop = {has_trait = trait_steel_type_mega_evolution}}
+					}
+				}
+				
+			}
+			add_trait = leader_trait_scientist_steel_type
+			set_leader_flag = EOE_LV8_leader_trait_gived
+				
+	}
+
+			}
+		}
+		else_if ={
+			limit = {
+				leader_class = commander
+				NOT = {
+				has_leader_flag = EOE_LV8_leader_trait_gived
+			}
+			has_level > 7
+			}
+			random_list = {
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_commander_fight_type
+						NOT= {
+							owner = {any_owned_pop = {has_trait = trait_fight_type_mega_evolution }}
+						}
+						}
+						
+					}
+					add_trait = leader_trait_commander_fight_type
+					set_leader_flag = EOE_LV8_leader_trait_gived
+					
+				
+			}
+			1 ={ 
+				modifier = {
+					factor = 0
+					OR = {
+						has_trait = leader_trait_commander_rock_type
+					NOT= {
+						owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+					}
+				}
+					
+				}
+				add_trait = leader_trait_commander_rock_type
+				set_leader_flag = EOE_LV8_leader_trait_gived
+				
+		}
+		1 ={ 
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = leader_trait_commander_bug_type
+					NOT= {
+						owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+					}
+				}
+				
+			}
+			add_trait = leader_trait_commander_bug_type
+			set_leader_flag = EOE_LV8_leader_trait_gived
+			
+	}
+
+
+			}
+			
+		}
+		else_if ={
+			limit = {
+				leader_class = official
+				NOT = {
+				has_leader_flag = EOE_LV8_leader_trait_gived
+			}
+			has_level > 7
+			}
+			random_list = {
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_governor_dragon_type
+						NOT= {
+							owner = {any_owned_pop = { has_trait = trait_dragon_type_mega_evolution }}
+						}
+						}
+						
+					}
+					add_trait = leader_trait_governor_dragon_type
+					set_leader_flag = EOE_LV8_leader_trait_gived
+						
+				
+			}
+			1 ={ 
+				modifier = {
+					factor = 0
+					OR = {
+						has_trait = leader_trait_governor_poison_type
+						NOT= {
+							owner = {any_owned_pop = {has_trait = trait_poison_type_mega_evolution}}
+						}
+					}
+					
+				}
+					add_trait = leader_trait_governor_poison_type
+					set_leader_flag = EOE_LV8_leader_trait_gived
+					
+		}
+		1 ={ 
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = leader_trait_governor_bug_type
+				NOT= {
+					owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+				}
+				}
+				
+			}
+				add_trait = leader_trait_governor_bug_type
+				set_leader_flag = EOE_LV8_leader_trait_gived
+			
+	}
+
+			}
+			
+		}
+
+
+	}
+		every_pool_leader = {
+			if = {
+				limit = {
+					leader_class = scientist
+					NOT = {
+					has_leader_flag = EOE_LV8_leader_trait_gived
+				}
+				has_level > 7
+				}
+				random_list = {
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+							has_trait = leader_trait_scientist_fly_type
+							NOT= {
+								owner = {any_owned_pop = {has_trait = trait_fly_type_mega_evolution}}
+							}
+						}
+						}
+						add_trait = leader_trait_scientist_fly_type
+						set_leader_flag = EOE_LV8_leader_trait_gived
+							
+				}
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_scientist_rock_type
+						NOT= {
+							owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+						}
+						}
+						
+					}
+					add_trait = leader_trait_scientist_rock_type
+					set_leader_flag = EOE_LV8_leader_trait_gived
+						
+			}
+			1 ={ 
+				modifier = {
+					factor = 0
+					OR = {
+						has_trait = leader_trait_scientist_steel_type
+						NOT= {
+							owner = {any_owned_pop = {has_trait = trait_steel_type_mega_evolution}}
+						}
+					}
+					
+				}
+				add_trait = leader_trait_scientist_steel_type
+				set_leader_flag = EOE_LV8_leader_trait_gived
+					
+		}
+	
+				}
+			}
+			else_if ={
+				limit = {
+					leader_class = commander
+					NOT = {
+					has_leader_flag = EOE_LV8_leader_trait_gived
+				}
+				has_level > 7
+				}
+				random_list = {
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_commander_fight_type
+							NOT= {
+								owner = {any_owned_pop = { has_trait = trait_fight_type_mega_evolution }}
+							}
+							}
+							
+						}
+						add_trait = leader_trait_commander_fight_type
+						set_leader_flag = EOE_LV8_leader_trait_gived
+						
+					
+				}
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_commander_rock_type
+						NOT= {
+							owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+						}
+					}
+						
+					}
+					add_trait = leader_trait_commander_rock_type
+					set_leader_flag = EOE_LV8_leader_trait_gived
+					
+			}
+			1 ={ 
+				modifier = {
+					factor = 0
+					OR = {
+						has_trait = leader_trait_commander_bug_type
+						NOT= {
+							owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+						}
+					}
+					
+				}
+				add_trait = leader_trait_commander_bug_type
+				set_leader_flag = EOE_LV8_leader_trait_gived
+				
+		}
+
+	
+				}
+				
+			}
+			else_if ={
+				limit = {
+					leader_class = official
+					NOT = {
+					has_leader_flag = EOE_LV8_leader_trait_gived
+				}
+				has_level > 7
+				}
+				random_list = {
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_dragon_type
+							NOT= {
+								owner = {any_owned_pop = { has_trait = trait_dragon_type_mega_evolution }}
+							}
+							}
+							
+						}
+						add_trait = leader_trait_governor_dragon_type
+						set_leader_flag = EOE_LV8_leader_trait_gived
+							
+					
+				}
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_governor_poison_type
+							NOT= {
+								owner = {any_owned_pop = {has_trait = trait_poison_type_mega_evolution}}
+							}
+						}
+						
+					}
+						add_trait = leader_trait_governor_poison_type
+						set_leader_flag = EOE_LV8_leader_trait_gived
+						
+			}
+			1 ={ 
+				modifier = {
+					factor = 0
+					OR = {
+						has_trait = leader_trait_governor_bug_type
+					NOT= {
+						owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+					}
+					}
+					
+				}
+					add_trait = leader_trait_governor_bug_type
+					set_leader_flag = EOE_LV8_leader_trait_gived
+				
+		}
+	
+				}
+				
+			}
+	
+	
+				
+		}
+
+		
+	}
+}
