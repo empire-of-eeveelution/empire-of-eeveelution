@@ -7,8 +7,11 @@ tech_EOE_bullet_seed = {
 	weight = 0
 	potential = {
 		has_country_flag = EOE_tech7_1
-		any_owned_pop = {
-			has_trait = trait_EOE_Inheritors
+		any_owned_pop = { 
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
 		}
 		
 	}
@@ -22,8 +25,11 @@ tech_EOE_razor_leaf = {
 	weight = 0
 	potential = {
 		has_country_flag = EOE_tech7_2
-		any_owned_pop = {
-			has_trait = trait_EOE_Inheritors
+		any_owned_pop = { 
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
 		}
 	}
 }
@@ -36,8 +42,11 @@ tech_EOE_radioactive_acid = {
 	weight = 0
 	potential = {
 		has_country_flag = EOE_tech9_2
-		any_owned_pop = {
-			has_trait = trait_EOE_Inheritors
+		any_owned_pop = { 
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
 		}
 	}
 }

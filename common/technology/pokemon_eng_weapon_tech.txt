@@ -9,9 +9,11 @@ tech_EOE_fire_vampire = {
 	potential = {
 		has_country_flag = EOE_fire_vampire_appeared
 		is_ai = no
-		OR = {
-			any_owned_pop = { has_trait = trait_EOE_Inheritors }
-			has_origin = origin_lotus_hezi_start
+		any_owned_pop = { 
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
 		}
 		
 	}
@@ -29,9 +31,11 @@ tech_EOE_double_edge = {
 	potential = {
 		has_country_flag = EOE_tech7_3
 		is_ai = no
-		OR = {
-			any_owned_pop = { has_trait = trait_EOE_Inheritors }
-			has_origin = origin_lotus_hezi_start
+		any_owned_pop = { 
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
 		}
 	}
 }
@@ -45,9 +49,11 @@ tech_EOE_flare_blitz = {
 	potential = {
 		has_country_flag = EOE_tech7_4
 		is_ai = no
-		OR = {
-			any_owned_pop = { has_trait = trait_EOE_Inheritors }
-			has_origin = origin_lotus_hezi_start
+		any_owned_pop = { 
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
 		}
 	}
 }

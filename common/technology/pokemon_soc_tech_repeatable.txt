@@ -96,6 +96,6 @@ tech_endless_evolution_2 = {
 		description_parameters = {
 			POINTS = 1
 		}
-		ROBOT_species_trait_points_add = 1
+		POKEMON_species_trait_points_add= 1
 	}
 }

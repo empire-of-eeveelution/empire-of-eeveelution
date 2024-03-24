@@ -3294,6 +3294,9 @@ ship_event = { #错误解答2，只要核子在核子就会阻止
 	option = {
 		name = "EOE_branch.43.a"
 		custom_gui = "enclave_curator_option"
+		abort_special_project = {
+			type = EOE_cthugha_6
+		}
 		enable_special_project = {
 			name = EOE_cthugha_puzzle
 			location = event_target:EOE_cthugha_planet
