@@ -48,3 +48,54 @@ tech_endless_evolution = {
 		POKEMON_species_trait_points_add = 1
 	}
 }
+
+
+
+
+tech_endless_evolution_2 = {
+	area = engineering
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { industry }
+	levels = 60
+	prerequisites = {  }
+	icon = tech_gene_tailoring
+	weight = @repeatableTechWeight
+	
+	potential = {
+		has_tradition = tr_cybernetics_finish
+	}
+	weight_modifier = {
+		factor = @repatableTechFactor
+	    modifier = {
+			factor = 0
+			NOT = { 
+				any_owned_pop = {
+				pop_has_trait = trait_directed_evolution
+			}
+			}
+			}
+		
+	
+	}
+	
+	ai_weight = {
+		factor = 10
+	}
+	
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	modifier = {
+		description = tech_endless_evolution_2
+		description_parameters = {
+			POINTS = 1
+		}
+		ROBOT_species_trait_points_add = 1
+	}
+}

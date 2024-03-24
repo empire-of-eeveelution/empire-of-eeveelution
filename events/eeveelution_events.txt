@@ -3002,108 +3002,117 @@ country_event = {   #######给加决斗者岗位的地块
 country_event = {
 	id = eevent.1002
 	hide_window = yes
-	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {  
 		has_technology = tech_gene_tailoring
+		NOT = {
+			has_technology = EOE_tech_gene_tailoring
+		}
 	}
 
 	immediate = {
 		give_technology = {
-		tech = EOE_tech_gene_tailoring
-		message = no
-	}
-		
+			tech = EOE_tech_gene_tailoring
+			message = no
+		}	
 	} 
 }
 
 country_event = {
 	id = eevent.1003
 	hide_window = yes
-	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {  
 		has_technology = tech_gene_expressions
+		NOT = {
+			has_technology = EOE_tech_gene_expressions
+		}
 	}
 
 	immediate = {
 		give_technology = {
-		tech = EOE_tech_gene_expressions
-		message = no
-	}
-		
+			tech = EOE_tech_gene_expressions
+			message = no
+		}	
 	} 
 }
 
 country_event = {
 	id = eevent.1004
 	hide_window = yes
-	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {  
 		has_tradition = tr_genetics_creation
+		NOT = {
+			has_technology = EOE_tech_tr_genetics_creation
+		}
 	}
 
 	immediate = {
 		give_technology = {
-		tech = EOE_tech_tr_genetics_creation
-		message = no
-	}
-		
+			tech = EOE_tech_tr_genetics_creation
+			message = no
+		}
 	} 
 }
 
 country_event = {
 	id = eevent.1005
 	hide_window = yes
-	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {  
 		has_tradition = tr_genetics_adopt
+		NOT = {
+			has_technology = EOE_tech_tr_genetics_adopt
+		}
 	}
 
 	immediate = {
 		give_technology = {
-		tech = EOE_tech_tr_genetics_adopt
-		message = no
-	}
-		
+			tech = EOE_tech_tr_genetics_adopt
+			message = no
+		}		
 	} 
 }
 
 country_event = {
 	id = eevent.1006
 	hide_window = yes
-	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {  
 		has_tradition = tr_genetics_finish
+		NOT = {
+			has_technology = EOE_tech_tr_genetics_finish
+		}
 	}
 
 	immediate = {
 		give_technology = {
-		tech = EOE_tech_tr_genetics_finish
-		message = no
-	}
-		
+			tech = EOE_tech_tr_genetics_finish
+			message = no
+		}		
 	} 
 }
 
 country_event = {
 	id = eevent.1007
 	hide_window = yes
-	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {  
-		has_tradition = tr_genetics_enhanced_expression
+		OR = {
+			has_tradition = tr_genetics_enhanced_expression
+			has_tradition = tr_cybernetics_integrated_anatomy
+		}
+		NOT = {
+			has_technology = EOE_tech_tr_genetics_enhanced_expression
+		}
 	}
 
 	immediate = {
 		give_technology = {
-		tech = EOE_tech_tr_genetics_enhanced_expression
-		message = no
-	}
-		
+			tech = EOE_tech_tr_genetics_enhanced_expression
+			message = no
+		}	
 	} 
 }
 

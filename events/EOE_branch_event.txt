@@ -4289,13 +4289,17 @@ event = {  #见鬼——伊布专属事件
 				has_country_flag = eoe_country_lotus #让核子灵能军团也能过这个事件
 			}
 		}
-		NOT = { has_global_flag = EOE_ghost_started }
+		NOT = { has_country_flag = EOE_ghost_started }
 	}
 	immediate = {
-		set_global_flag = EOE_ghost_started
+		set_country_flag = EOE_ghost_started
 		random_country = {
 			limit = {
-				has_country_flag = eoe_country
+				OR = {
+					has_country_flag = eoe_country
+					has_country_flag = eoe_country_lotus
+				}
+				
 				is_ai = no
 				any_owned_planet = {
 					is_colony = yes
