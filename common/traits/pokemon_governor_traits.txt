@@ -284,5 +284,125 @@ leader_trait_governor_water_type_1 = { #水系帝国代表
 #			}
 #			}
 #}
-
+leader_trait_governor_ground_type = { #地面系总督
+	icon = "gfx/interface/icons/EeveelutionTypes/ground_type.png"
+	planet_modifier = {
+		planet_buildings_cost_mult = -0.2
+		planet_districts_cost_mult = -0.2
+		planet_building_build_speed_mult = 0.2
+		deposit_blockers_time_cost_mult = -0.25
+		deposit_blockers_cost_mult = -0.25
+		
+	}
+	sector_modifier = {
+		planet_buildings_cost_mult = -0.1
+		planet_districts_cost_mult = -0.1
+		planet_building_build_speed_mult = 0.1
+		deposit_blockers_time_cost_mult = -0.125
+		deposit_blockers_cost_mult = -0.125
+	}
+	leader_class = { official }
+	initial = no
+	randomized = no
+}
 					
+
+leader_trait_governor_poison_type = { #毒系总督
+	icon = "gfx/interface/icons/EeveelutionTypes/poison_type.png"
+	planet_modifier = {
+		planet_jobs_consumer_goods_produces_mult = 0.2
+		planet_jobs_alloys_produces_mult = 0.2
+		pop_habitability = -0.1
+	}
+	sector_modifier = {
+		planet_jobs_consumer_goods_produces_mult = 0.1
+		planet_jobs_alloys_produces_mult = 0.1
+		pop_habitability = -0.05
+	}
+	
+
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+}
+
+
+leader_trait_governor_bug_type = { #虫系内阁
+	triggered_councilor_modifier = {
+		potential = {
+			trait_is_gestalt_check = no
+		}
+		empire_size_mult = -0.1
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			trait_is_gestalt_check = yes
+		}
+		empire_size_mult = -0.2
+	}
+
+	icon = "gfx/interface/icons/EeveelutionTypes/bug_type.png"
+	
+	councilor_trait = yes
+	initial = no
+	randomized = no
+	leader_class = { official }
+}
+
+leader_trait_governor_dragon_type = { #龙系，抄的水系
+
+	icon = "gfx/interface/icons/EeveelutionTypes/dragon_type.png"
+	councilor_modifier = {
+		envoys_add = 1
+		diplo_weight_mult = 0.2
+		country_councilor_influence_produces_add = 0.5
+		country_trust_cap_add = 25
+		monthly_loyalty_from_subjects = 0.5
+	}
+	galcom_modifier = {
+		#战争规则
+		resolution_category_rulesofwar_vote_strength_mult = 0.3
+		#防卫私有化
+		resolution_category_defenseprivatization_vote_strength_mult = 0.3
+		#星系间指令
+		resolution_category_intergalacticdirective_vote_strength_mult = 0.3 
+		#制裁法案
+		resolution_category_sanctions_commerce_industry_vote_strength_mult = 0.3
+		resolution_category_sanctions_politics_culture_vote_strength_mult = 0.3
+		resolution_category_sanctions_environment_technology_vote_strength_mult = 0.3
+		resolution_category_sanctions_defense_war_vote_strength_mult = 0.3
+		#星系改革
+		resolution_category_market_vote_strength_mult = 0.3
+		resolution_category_galacticreforms_vote_strength_mult = 0.3
+		resolution_category_declare_crisis_vote_strength_mult = 0.3
+		resolution_category_galactic_focus_vote_strength_mult = 0.3
+	}
+	triggered_galcom_modifier = {
+		potential = {
+			has_galactic_custodian = yes
+		}
+		resolution_category_term_limits_vote_strength_mult = 0.3
+		resolution_category_custodian_reforms_vote_strength_mult = 0.3
+		resolution_category_galactic_institutions_vote_strength_mult = 0.3
+	}
+	triggered_galcom_modifier = {
+		potential = {
+			has_galactic_emperor = yes
+		}
+		resolution_category_imperial_council_vote_strength_mult = 0.3
+		resolution_category_imperial_reforms_vote_strength_mult = 0.3
+		resolution_category_emperor_imperial_institutions_vote_strength_mult = 0.3
+		resolution_category_foreign_relations_vote_strength_mult = 0.3
+	}
+	federation_modifier = { #联邦加成
+		federation_experience_add = 1.00
+		federation_join_malus_mult = -0.15
+		cohesion_ethics_penalty_mult = -0.15
+		federation_naval_cap_contribution_mult = 0.15
+		federation_fleet_cap_add = 25
+	}
+	councilor_trait = yes
+	initial = no
+	randomized = no
+	leader_class = { official }
+}

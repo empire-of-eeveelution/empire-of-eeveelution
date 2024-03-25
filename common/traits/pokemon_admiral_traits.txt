@@ -200,5 +200,82 @@ leader_trait_admiral_fairy_type_1 = { #仙系战略家
 	
 
 	
+leader_trait_commander_fly_type = {
+
+	icon = "gfx/interface/icons/EeveelutionTypes/fly_type.png"
+	fleet_modifier = {
+		ship_speed_mult = 0.15
+		ship_evasion_add = 10
+		ship_ftl_jumpdrive_range_mult = 0.25
+		ship_jumpdrive_cooldown_mult = -0.6
+		ship_disengage_chance_mult = 0.5
+		ship_emergency_ftl_mult = -0.30
+		fleet_mia_time_mult = -0.5
+
+	}
+	# triggered_fleet_modifier = {
+	# 	# potential = { has_first_contact_dlc = yes }
+	# 	ship_cloaking_strength_add = 1
+	# }
+	leader_class = { commander }
+	initial = no
+	randomized = no
+}
 
 
+leader_trait_commander_fight_type = { 
+
+	icon = "gfx/interface/icons/EeveelutionTypes/fight_type.png"
+	councilor_trait = yes
+	councilor_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_weapon_damage = 0.15
+		ship_weapon_range_mult = 0.15
+	}
+
+	leader_class = { commander }
+	initial = no
+	randomized = no
+
+}
+
+leader_trait_commander_rock_type = {
+
+	icon = "gfx/interface/icons/EeveelutionTypes/rock_type.png"
+	fleet_modifier = {
+		ship_hull_mult = 0.15
+		ship_armor_mult = 0.15
+		# ship_shield_mult = 0.2
+		ship_hull_regen_add_perc = 0.02
+		ship_armor_regen_add_perc = 0.02
+		# ship_shield_regen_add_perc = 0.01
+	}
+
+	army_modifier = {
+		army_health = 0.25
+	}
+	
+	leader_class = { commander }
+	initial = no
+	randomized = no
+			
+}
+
+leader_trait_commander_bug_type = {
+	icon = "gfx/interface/icons/EeveelutionTypes/bug_type.png"
+	planet_modifier = {
+		pop_defense_armies_add = 2
+		armies_time_cost_mult = -0.4
+		armies_cost_mult = -0.4
+	}
+	sector_modifier = {
+		pop_defense_armies_add = 1
+		armies_time_cost_mult = -0.2
+		armies_cost_mult = -0.2
+		starbase_shipyard_build_speed_mult = 0.25
+		starbase_shipyard_build_cost_mult = -0.15
+	}
+	leader_class = { official }
+	initial = no
+	randomized = no
+}

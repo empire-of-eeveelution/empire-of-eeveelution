@@ -9014,11 +9014,17 @@ ship_event = {
 				}
 				EOE_battle_big_rewards = yes
 				EOE_battle_big_rewards = yes
+				EOE_battle_big_rewards = yes
+				EOE_battle_medium_rewards = yes
+				EOE_battle_medium_rewards = yes
 				EOE_battle_medium_rewards = yes
 			}
 			else = {
 				EOE_battle_medium_rewards = yes
 				EOE_battle_medium_rewards = yes
+				EOE_battle_medium_rewards = yes
+				EOE_battle_medium_rewards = yes
+				EOE_battle_small_rewards = yes
 				EOE_battle_small_rewards = yes
 			}
 		}
@@ -9127,10 +9133,12 @@ ship_event = {
 					is_scrappy_mod_used = yes
 				}
 				EOE_battle_medium_rewards = yes
+				EOE_battle_medium_rewards = yes
 				EOE_battle_big_rewards = yes
 				EOE_battle_small_rewards = yes
 			}
 			else = {
+				EOE_battle_medium_rewards = yes
 				EOE_battle_small_rewards = yes
 				EOE_battle_small_rewards = yes
 				EOE_battle_small_rewards = yes

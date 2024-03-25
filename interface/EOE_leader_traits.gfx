@@ -13,7 +13,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/traits/GFX_trait_lotus_hezi_network.dds"			
 	}
 	spriteType = {
-		name = "GFX_leader_trait_grass_type"
-		texturefile = "gfx/interface/icons/EeveelutionTypes/grass_type.png"
+		name = "GFX_leader_trait_lotus_okra"
+		texturefile = "gfx/interface/icons/traits/GFX_leader_trait_lotus_okra.dds"
 	}
 }

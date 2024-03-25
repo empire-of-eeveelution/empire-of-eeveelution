@@ -13,7 +13,10 @@ tech_EOE_energy_torpedoes_1 = {
 			NOT = {
 				owner = {
 					any_owned_leader = {
-						is_councilor = yes
+						OR = {
+							is_ruler = yes
+							is_councilor = yes
+						}
 						has_leader_flag = EOE_leader_hezi
 					}
 				}
@@ -23,19 +26,31 @@ tech_EOE_energy_torpedoes_1 = {
 			factor = 100
 			owner = {
 				any_owned_leader = {
-					is_councilor = yes
+					OR = {
+						is_ruler = yes
+						is_councilor = yes
+					}
 					has_leader_flag = EOE_leader_hezi
 				}
 			}
 		}	
-
-		
 	}
 	potential = {
 		is_ai = no
-		has_country_flag = leadereevent6_has_happened
-		any_owned_pop = {
-			has_trait = trait_EOE_Inheritors
+		OR = {
+			owner = {
+				any_owned_leader = {
+					has_leader_flag = EOE_leader_hezi
+				}
+			}
+			has_country_flag = leadereevent6_has_happened
+		}
+		
+		any_owned_pop = { 
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
 		}
 	}
 	
@@ -53,8 +68,11 @@ tech_EOE_energy_torpedoes_2 = {
 	prerequisites = { "tech_dark_matter_power_core" "tech_EOE_energy_torpedoes_1" }
 	weight = 15
 	potential = {
-		any_owned_pop = {
-			has_trait = trait_EOE_Inheritors
+		any_owned_pop = { 
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
 		}
 	}
 	
@@ -62,21 +80,29 @@ tech_EOE_energy_torpedoes_2 = {
 		modifier = {
 			factor = 0
 			NOT = {
-				research_leader = {
-					area = physics
-					has_leader_flag = EOE_leader_hezi
+				owner = {
+					any_owned_leader = {
+						OR = {
+							is_ruler = yes
+							is_councilor = yes
+						}
+						has_leader_flag = EOE_leader_hezi
+					}
 				}
 			}
 		}	
 		modifier = {
 			factor = 100
-				research_leader = {
-					area = physics
+			owner = {
+				any_owned_leader = {
+					OR = {
+						is_ruler = yes
+						is_councilor = yes
+					}
 					has_leader_flag = EOE_leader_hezi
 				}
+			}
 		}	
-
-		
 	}
 	
 	ai_weight = {
@@ -100,16 +126,6 @@ tech_EOE_energy_torpedoes_2 = {
 				has_global_flag = EOE_tempest_digged
 		}
 	}
-		modifier = {
-			factor = 1.25
-			AND = {
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_expertise_particles"
-				}
-				has_global_flag = EOE_tempest_digged
-		}
-	}
 
 	}
 }
@@ -122,8 +138,11 @@ tech_EOE_thunder_bolt = {
 	weight = 0
 	potential = {
 		has_country_flag = EOE_tech7_9
-		any_owned_pop = {
-			has_trait = trait_EOE_Inheritors
+		any_owned_pop = { 
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
 		}
 	}
 }
@@ -136,8 +155,11 @@ tech_EOE_aurora_beam = {
 	weight = 0
 	potential = {
 		has_country_flag = EOE_tech7_8
-		any_owned_pop = {
-			has_trait = trait_EOE_Inheritors
+		any_owned_pop = { 
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
 		}
 	}
 }
@@ -150,8 +172,11 @@ tech_EOE_swift = {
 	weight = 0
 	potential = {
 		has_country_flag = EOE_tech7_7
-		any_owned_pop = {
-			has_trait = trait_EOE_Inheritors
+		any_owned_pop = { 
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
 		}
 	}
 }
@@ -164,8 +189,11 @@ tech_EOE_fairy_star = {
 	weight = 0
 	potential = {
 		has_country_flag = EOE_tech7_6
-		any_owned_pop = {
-			has_trait = trait_EOE_Inheritors
+		any_owned_pop = { 
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
 		}
 	}
 }
@@ -189,8 +217,11 @@ tech_EOE_nuclear_star = {
 	weight = 0
 	potential = {
 		has_country_flag = EOE_tech9_1
-		any_owned_pop = {
-			has_trait = trait_EOE_Inheritors
+		any_owned_pop = { 
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
 		}
 	}
 }
@@ -204,8 +235,11 @@ tech_EOE_fairy_beam = {
 	weight = 0
 	potential = {
 		has_country_flag = EOE_tech9_3
-		any_owned_pop = {
-			has_trait = trait_EOE_Inheritors
+		any_owned_pop = { 
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
 		}
 	}
 }
@@ -218,8 +252,11 @@ tech_EOE_nuclear_beam = {
 	weight = 0
 	potential = {
 		has_country_flag = EOE_tech9_4
-		any_owned_pop = {
-			has_trait = trait_EOE_Inheritors
+		any_owned_pop = { 
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
 		}
 	}
 }
@@ -232,8 +269,11 @@ tech_EOE_evolite = {
 	weight = 0
 	potential = {
 		has_country_flag = EOE_tech9_5
-		any_owned_pop = {
-			has_trait = trait_EOE_Inheritors
+		any_owned_pop = { 
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
 		}
 	}
 }
@@ -246,8 +286,11 @@ tech_EOE_calm_mind = {
 	weight = 0
 	potential = {
 		has_country_flag = EOE_tech7_5
-		any_owned_pop = {
-			has_trait = trait_EOE_Inheritors
+		any_owned_pop = { 
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
 		}
 	}
 }
