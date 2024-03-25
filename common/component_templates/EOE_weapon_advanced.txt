@@ -19,8 +19,8 @@ weapon_component_template = {
 		max = 1040
 	}
 	windup = {
-		min = 1
-		max = 19
+		min = 50
+		max = 95
 	}
 	total_fire_time = 150
 	range = 150
@@ -69,8 +69,8 @@ weapon_component_template = {
 		max = 1560
 	}
 	windup = {
-		min = 1
-		max = 19
+		min = 50
+		max = 95
 	}
 	total_fire_time = 150
 	range = 150
