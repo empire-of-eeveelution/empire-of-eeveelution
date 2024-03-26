@@ -49,3 +49,45 @@
  EOE_branch.155.name:0"光辉大神？"
  EOE_branch.155.desc:0"之前剩下的纳米机械在那块地面脱落行星而形成的坑内有了新发现：一个漆黑的实体出现在坑底，根据之前获取的古文明记录，这个实体的外表与古文明所记录的“光辉大神”极为相似，但是其漆黑令布完全想象不出来这个实体能与“光辉”搭上边。\n不过根据探测，这个实体虽然已经一动不动，却仍有吸收能量的现象发生，也许我们可以通过注入能量来“唤醒”？"
  EOE_branch.155.a:0"不妨一试"
+
+
+
+
+
+
+
+
+
+#######################################################
+ EOE_light_that_burns_the_sky:0 "焚天灭世炽光爆"
+ EOE_light_that_burns_the_sky_small:0 "焚天灭世炽光爆"
+ EOE_prismatic_laser:0 "棱镜镭射"
+ EOE_meteor_drive:0 "流星闪冲"
+ EOE_moongeist_beam:0 "暗影之光"
+ EOE_photon_geyser:0 "光子喷涌"
+ PLANET_KILLER_NECROZMA:0 "灭世之光"
+ EOE_necrozma_normal:0 "光龙"
+ NAME_EOE_necrozma_smallship:0 "奈克洛兹玛"
+ NAME_EOE_necrozma_ship:0 "$NAME_EOE_necrozma_smallship$"
+ NAME_EOE_necrozma_smallship_hostile:0 "$EOE_necrozma_normal$"
+ NAME_EOE_necrozma_ship_hostile:0 "$EOE_necrozma_normal$"
+ EOE_NECROZMA_AURA:0 "电磁障碍"
+ EOE_necrozma_aura:0 "不狡猾光环"
+ EOE_necrozma_aur_a:0 "自然回复"
+ EOE_necrozma_aur_b:0 "不狡猾光环"
+ EOE_NECROZMA_AURA_2:0 "自然回复"
+ EOE_NECROZMA_BIO_DETECTOR:0 "生物传感器"
+ PLANET_KILLER_NECROZMA_ACTION:0 "§R毁灭§!"
+ FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_NECROZMA:0 "摧毁目标"
+ bombardment_EOE_purify:0 "吸收电磁波"
+ bombardment_EOE_purify_desc:4 "§Y化为光芒吧§!\n-对§Y陆军§!造成§M末日级§!伤害\n-对§Y星球§!造成§M末日级§!伤害\n-将会轰炸不设防的星球\n-极为高效地§R消灭§!人口"
+
+ EOE_branch.69.name: "神秘的超新星"
+ EOE_branch.69.desc: "我们收到了来自§H[destroyed_system.GetName]§!星系的十分古怪的亚空间遥测信号。如果我们的读数正确，那么该星系的首星在一瞬间变成了超新星，产生了极具毁灭性的效应。所有的行星被粉碎，任何在这个恒星系出现的星舰和空间站都被摧毁。恒星本身发生了坍缩，变成了一个黑洞。\n\n未经证实的报告指明，这场毁天灭地的灾难仅有一个幸存者——那是属于§H[crisis_country.GetName]§!的某种体型庞大的实体……"
+ EOE_branch.69.a: "他们在暗中计划着什么？"
+ EOE_branch.70.name: "恒星系被毁"
+ EOE_branch.70.desc: "整个§H[destroyed_system.GetName]§!星系被彻底地摧毁了！一艘属于§H[crisis_country.GetName]§!的体型庞大的舰船停驻在了星系的首星上方，然后以某种方式引发了一场只能称之为超新星爆炸的事件，彻底地摧毁了这个恒星系的其他部分。恒星本体坍缩成了一个黑洞。\n\n只有[crisis_country.GetSpeciesName]的实体，显然他们称其为“§H奈克洛兹玛§!”，在这场灾厄中幸存了下来。事情已经证据确凿，[crisis_country.GetName]现在拥有了彻底摧毁一整个恒星系的技术和手段。"
+ EOE_branch.70.a: "这改变了一切……"
+ EOE_branch.71.name: "星系的毁灭"
+ EOE_branch.71.desc: "来自§H[destroyed_system.GetName]§!的遥测数据表明，这个恒星系的首星在一瞬间发生了超新星爆炸。极其猛烈的冲击波摧毁了这个恒星系内的所有事物，恒星本体坍缩成了一个黑洞。\n\n然而§H[crisis_country.GetName]§!使用的似乎并不是我们熟悉的焚天神兵科技，而是一种被称为“§H奈克洛兹玛§!”的古怪实体。"
+ EOE_branch.71.a: "无论如何，他们必须被正法。"

@@ -1,0 +1,506 @@
+ship_design = { #光龙，小号，给玩家
+	name = "NAME_EOE_necrozma_smallship"
+	ship_size = EOE_necrozma_normal
+
+	section = {
+		template = luozima
+		slot = "mid"
+		
+		component = {
+			slot = "EOE_fire_fire"
+			template = "PLANET_KILLER_NECROZMA"
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_01"
+			template = "EOE_light_that_burns_the_sky_small"
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_02"
+			template = "EOE_prismatic_laser"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_03"
+			template = "EOE_prismatic_laser"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_04"
+			template = "EOE_moongeist_beam"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_05"
+			template = "EOE_moongeist_beam"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_06"
+			template = "EOE_moongeist_beam"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_07"
+			template = "EOE_meteor_drive"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_08"
+			template = "EOE_meteor_drive"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_09"
+			template = "EOE_meteor_drive"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_01"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_02"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_03"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_04"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_05"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_06"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_07"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_08"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_09"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_10"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_11"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_12"
+			template = "EOE_photon_geyser"
+
+		}
+		
+	}
+	required_component = "EOE_CTHUGHA_DRIVE"
+	required_component = "EOE_NECROZMA_BIO_DETECTOR"
+	required_component = "EOE_THRUSTER_CTHUGHA"
+	required_component = "COMBAT_COMPUTER_ARTILLERY_PRECOG"
+	required_component = "EOE_Emergency_Recall"
+	required_component = "Naive_Mint"
+	required_component = "EOE_NECROZMA_AURA"
+	required_component = "EOE_NECROZMA_AURA_2"
+}
+ship_design = { #光龙，大号，给玩家
+	name = "NAME_EOE_necrozma_ship"
+	ship_size = EOE_necrozma_normal
+
+	section = {
+		template = luozima
+		slot = "mid"
+		
+		component = {
+			slot = "EOE_fire_fire"
+			template = "PLANET_KILLER_NECROZMA"
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_01"
+			template = "EOE_light_that_burns_the_sky"
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_02"
+			template = "EOE_prismatic_laser"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_03"
+			template = "EOE_prismatic_laser"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_04"
+			template = "EOE_moongeist_beam"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_05"
+			template = "EOE_moongeist_beam"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_06"
+			template = "EOE_moongeist_beam"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_07"
+			template = "EOE_meteor_drive"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_08"
+			template = "EOE_meteor_drive"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_09"
+			template = "EOE_meteor_drive"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_01"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_02"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_03"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_04"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_05"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_06"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_07"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_08"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_09"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_10"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_11"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_12"
+			template = "EOE_photon_geyser"
+
+		}
+		
+	}
+	required_component = "EOE_CTHUGHA_DRIVE"
+	required_component = "EOE_NECROZMA_BIO_DETECTOR"
+	required_component = "EOE_THRUSTER_CTHUGHA"
+	required_component = "COMBAT_COMPUTER_ARTILLERY_PRECOG"
+	required_component = "EOE_Emergency_Recall"
+	required_component = "Naive_Mint"
+	required_component = "EOE_NECROZMA_AURA"
+	required_component = "EOE_NECROZMA_AURA_2"
+}
+ship_design = { #光龙，小号，boss
+	name = "NAME_EOE_necrozma_smallship_hostile"
+	ship_size = EOE_necrozma_normal
+
+	section = {
+		template = luozima
+		slot = "mid"
+		
+		component = {
+			slot = "EOE_fire_fire"
+			template = "PLANET_KILLER_NECROZMA"
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_01"
+			template = "EOE_light_that_burns_the_sky_small"
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_02"
+			template = "EOE_prismatic_laser"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_03"
+			template = "EOE_prismatic_laser"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_04"
+			template = "EOE_moongeist_beam"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_05"
+			template = "EOE_moongeist_beam"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_06"
+			template = "EOE_moongeist_beam"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_07"
+			template = "EOE_meteor_drive"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_08"
+			template = "EOE_meteor_drive"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_09"
+			template = "EOE_meteor_drive"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_01"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_02"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_03"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_04"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_05"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_06"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_07"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_08"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_09"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_10"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_11"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_12"
+			template = "EOE_photon_geyser"
+
+		}
+		
+	}
+	required_component = "EOE_CTHUGHA_DRIVE"
+	required_component = "EOE_NECROZMA_BIO_DETECTOR"
+	required_component = "EOE_THRUSTER_CTHUGHA"
+	required_component = "COMBAT_COMPUTER_ARTILLERY_PRECOG"
+	required_component = "EOE_Emergency_Recall"
+	required_component = "Naive_Mint"
+	required_component = "EOE_NECROZMA_AURA"
+}
+ship_design = { #光龙，大号，boss
+	name = "NAME_EOE_necrozma_ship_hostile"
+	ship_size = EOE_necrozma_normal
+
+	section = {
+		template = luozima
+		slot = "mid"
+		
+		component = {
+			slot = "EOE_fire_fire"
+			template = "PLANET_KILLER_NECROZMA"
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_01"
+			template = "EOE_light_that_burns_the_sky"
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_02"
+			template = "EOE_prismatic_laser"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_03"
+			template = "EOE_prismatic_laser"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_04"
+			template = "EOE_moongeist_beam"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_05"
+			template = "EOE_moongeist_beam"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_06"
+			template = "EOE_moongeist_beam"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_07"
+			template = "EOE_meteor_drive"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_08"
+			template = "EOE_meteor_drive"
+
+		}
+		component = {
+			slot = "EOE_LARGE_GUN_09"
+			template = "EOE_meteor_drive"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_01"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_02"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_03"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_04"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_05"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_06"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_07"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_08"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_09"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_10"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_11"
+			template = "EOE_photon_geyser"
+
+		}
+		component = {
+			slot = "EOE_POINT_DEFENCE_12"
+			template = "EOE_photon_geyser"
+
+		}
+		
+	}
+	required_component = "EOE_CTHUGHA_DRIVE"
+	required_component = "EOE_NECROZMA_BIO_DETECTOR"
+	required_component = "EOE_THRUSTER_CTHUGHA"
+	required_component = "COMBAT_COMPUTER_ARTILLERY_PRECOG"
+	required_component = "EOE_Emergency_Recall"
+	required_component = "Naive_Mint"
+	required_component = "EOE_NECROZMA_AURA"
+}

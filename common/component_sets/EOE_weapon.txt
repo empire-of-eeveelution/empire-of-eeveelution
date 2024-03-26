@@ -112,3 +112,33 @@ component_set = {
 	icon = "GFX_EOE_evolite"
 	icon_frame = 1	
 }
+component_set = {
+	key = "EOE_light_that_burns_the_sky"
+	
+	icon = "GFX_EOE_light_that_burns_the_sky"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_prismatic_laser"
+	
+	icon = "GFX_EOE_prismatic_laser"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_meteor_drive"
+	
+	icon = "GFX_EOE_meteor_drive"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_moongeist_beam"
+	
+	icon = "GFX_EOE_moongeist_beam"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EOE_photon_geyser"
+	
+	icon = "GFX_EOE_photon_geyser"
+	icon_frame = 1	
+}

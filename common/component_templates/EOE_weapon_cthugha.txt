@@ -224,9 +224,10 @@ utility_component_template = {
 		
 		damage_per_day = {
 			damage = {
-				min = 400
-				max = 600
+				min = 66
+				max = 66
 			}
+			accuracy = 1
 		}
 
 		modifier = {

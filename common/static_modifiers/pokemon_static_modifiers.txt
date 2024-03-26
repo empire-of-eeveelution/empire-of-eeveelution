@@ -160,3 +160,9 @@ astral_rift_damage_to_crisis = {
 	damage_vs_country_type_extradimensional_2_mult = 0.5
 	damage_vs_country_type_extradimensional_3_mult = 0.5
 }
+
+EOE_ship_test_effect = {
+	ship_hull_mult = 30
+	ship_shield_mult = 30
+	ship_armor_mult = 30
+}

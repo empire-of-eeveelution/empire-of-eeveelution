@@ -1,33 +1,34 @@
 weapon_component_template = {
-	key = "EOE_light_that_burns_the_sky_nm"
+	key = "EOE_light_that_burns_the_sky"
 	size = titanic
 
 	type = instant
 	
-	#icon = "GFX_EOE_light_that_burns_the_sky"
+	icon = "GFX_EOE_light_that_burns_the_sky"
 	icon_frame = 1
 	power = -99999
 	hidden = yes
-	#component_set = "EOE_nuclear_beam"
-	#projectile_gfx = "tachyon_lance"
+	component_set = "EOE_light_that_burns_the_sky"
+	projectile_gfx = "titan_laser"
+	prio_projectile = yes
 	tags = { weapon_type_energy weapon_type_kinetic }
 	ai_tags = { weapon_role_anti_hull }
 	ai_tag_weight = 2
 	damage = {
-		min = 134217728
-		max = 134217728
+		min = 114514
+		max = 1919810
 	}
 	windup = {
-		min = 1200
-		max = 6000
+		min = 1
+		max = 9
 	}
-	total_fire_time = 160
-	range = 300
+	total_fire_time = 900
+	range = 350
 	accuracy = 1
 	tracking = 1
-	hull_damage = 3.0
-	armor_penetration = 1
-	shield_penetration = 1
+	armor_penetration = 0.5
+	shield_penetration = 0.5
+	size_damage_factor = 20
 
 
 	ai_weight = {
@@ -35,181 +36,37 @@ weapon_component_template = {
 	}
 }
 
-weapon_component_template = {
-	key = "EOE_prismatic_laser"
-	size = titanic
-
-	type = instant
-	
-	#icon = "GFX_EOE_light_that_burns_the_sky"
-	icon_frame = 1
-	power = -9999
-	hidden = yes
-	#component_set = "EOE_nuclear_beam"
-	#projectile_gfx = "tachyon_lance"
-	tags = { weapon_type_energy }
-	ai_tags = { weapon_role_anti_hull }
-	ai_tag_weight = 2
-	damage = {
-		min = 32768
-		max = 65536
-	}
-	windup = {
-		min = 100
-		max = 300
-	}
-	total_fire_time = 20
-	range = 300
-	accuracy = 1
-	tracking = 1
-	hull_damage = 2.0
-	shield_damage = 1.0
-	armor_damage = 2.0
-
-
-	ai_weight = {
-		weight = 2
-	}
-}
-
-weapon_component_template = {
-	key = "EOE_meteor_drive"
-	size = extra_large
-
-	type = instant
-	
-	#icon = "GFX_EOE_light_that_burns_the_sky"
-	icon_frame = 1
-	power = -9999
-	hidden = yes
-	#component_set = "EOE_nuclear_beam"
-	#projectile_gfx = "tachyon_lance"
-	tags = { weapon_type_kinetic }
-	ai_tags = { weapon_role_anti_hull }
-	ai_tag_weight = 2
-	damage = {
-		min = 16384
-		max = 32768
-	}
-	windup = {
-		min = 100
-		max = 300
-	}
-	total_fire_time = 20
-	range = 275
-	accuracy = 1
-	tracking = 0.3
-	hull_damage = 1.5
-	shield_damage = 1.5
-	armor_damage = 1.0
-
-
-	ai_weight = {
-		weight = 2
-	}
-}
-weapon_component_template = {
-	key = "EOE_moongeist_beam"
-	size = extra_large
-
-	type = instant
-	
-	#icon = "GFX_EOE_light_that_burns_the_sky"
-	icon_frame = 1
-	power = -9999
-	hidden = yes
-	#component_set = "EOE_nuclear_beam"
-	#projectile_gfx = "tachyon_lance"
-	tags = { weapon_type_energy }
-	ai_tags = { weapon_role_anti_hull }
-	ai_tag_weight = 2
-	damage = {
-		min = 16384
-		max = 32768
-	}
-	windup = {
-		min = 100
-		max = 300
-	}
-	total_fire_time = 20
-	range = 275
-	accuracy = 1
-	tracking = 0.3
-	hull_damage = 1.5
-	shield_damage = 1.0
-	armor_damage = 1.5
-
-
-	ai_weight = {
-		weight = 2
-	}
-}
-weapon_component_template = {
-	key = "EOE_photon_geyser"
-	size = point_defence
-
-	type = instant
-	
-	#icon = "GFX_EOE_light_that_burns_the_sky"
-	icon_frame = 1
-	power = -9999
-	hidden = yes
-	#component_set = "EOE_nuclear_beam"
-	#projectile_gfx = "tachyon_lance"
-	tags = { weapon_type_energy weapon_type_point_defense }
-	ai_tags = { weapon_role_anti_hull }
-	ai_tag_weight = 2
-	damage = {
-		min = 512
-		max = 1024
-	}
-	windup = {
-		min = 10
-		max = 30
-	}
-	total_fire_time = 10
-	range = 250
-	accuracy = 1
-	tracking = 1
-	hull_damage = 1.5
-	shield_damage = 1.5
-	armor_damage = 1.5
-
-
-	ai_weight = {
-		weight = 2
-	}
-}
 weapon_component_template = {
 	key = "EOE_light_that_burns_the_sky_small"
 	size = titanic
 
 	type = instant
 	
-	#icon = "GFX_EOE_light_that_burns_the_sky"
+	icon = "GFX_EOE_light_that_burns_the_sky"
 	icon_frame = 1
 	power = -9999
 	hidden = yes
-	#component_set = "EOE_nuclear_beam"
-	#projectile_gfx = "tachyon_lance"
+	component_set = "EOE_light_that_burns_the_sky"
+	prio_projectile = yes
+	projectile_gfx = "titan_laser"
 	tags = { weapon_type_energy weapon_type_kinetic }
 	ai_tags = { weapon_role_anti_hull }
 	ai_tag_weight = 2
 	damage = {
-		min = 262144
-		max = 524288
+		min = 11451
+		max = 51411
 	}
 	windup = {
-		min = 1200
-		max = 6000
+		min = 1
+		max = 9
 	}
-	total_fire_time = 160
-	range = 300
+	total_fire_time = 520
+	range = 350
 	accuracy = 1
 	tracking = 1
-	hull_damage = 3.0
-	armor_penetration = 1
-	shield_penetration = 1
+	armor_penetration = 0.5
+	shield_penetration = 0.5
+	size_damage_factor = 20
 
 
 	ai_weight = {
@@ -217,36 +74,38 @@ weapon_component_template = {
 	}
 }
 
+
+
 weapon_component_template = {
 	key = "EOE_prismatic_laser"
 	size = titanic
 
 	type = instant
 	
-	#icon = "GFX_EOE_light_that_burns_the_sky"
+	icon = "GFX_EOE_prismatic_laser"
 	icon_frame = 1
 	power = -9999
 	hidden = yes
-	#component_set = "EOE_nuclear_beam"
-	#projectile_gfx = "tachyon_lance"
+	component_set = "EOE_prismatic_laser"
+	projectile_gfx = "tachyon_lance"
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_anti_hull }
 	ai_tag_weight = 2
 	damage = {
-		min = 8192
-		max = 16384
+		min = 4096
+		max = 25525
 	}
 	windup = {
-		min = 100
-		max = 300
+		min = 60
+		max = 120
 	}
-	total_fire_time = 70
+	total_fire_time = 180
 	range = 300
-	accuracy = 1
-	tracking = 1
-	hull_damage = 2.0
-	shield_damage = 1.0
-	armor_damage = 2.0
+	accuracy = 0.9
+	tracking = 0.5
+	armor_penetration = 0.5
+	shield_penetration = 0.5
+	size_damage_factor = 4
 
 
 	ai_weight = {
@@ -260,30 +119,28 @@ weapon_component_template = {
 
 	type = instant
 	
-	#icon = "GFX_EOE_light_that_burns_the_sky"
+	icon = "GFX_EOE_meteor_drive"
 	icon_frame = 1
 	power = -9999
 	hidden = yes
-	#component_set = "EOE_nuclear_beam"
-	#projectile_gfx = "tachyon_lance"
+	component_set = "EOE_meteor_drive"
+	projectile_gfx = "tachyon_lance"
 	tags = { weapon_type_kinetic }
 	ai_tags = { weapon_role_anti_hull }
 	ai_tag_weight = 2
 	damage = {
-		min = 1024
-		max = 2048
+		min = 1145
+		max = 1451
 	}
 	windup = {
 		min = 10
-		max = 30
+		max = 20
 	}
-	total_fire_time = 20
+	total_fire_time = 15
 	range = 275
 	accuracy = 1
 	tracking = 0.3
-	hull_damage = 1.5
-	shield_damage = 1.5
-	armor_damage = 1.0
+	shield_penetration = 1
 
 
 	ai_weight = {
@@ -296,31 +153,28 @@ weapon_component_template = {
 
 	type = instant
 	
-	#icon = "GFX_EOE_light_that_burns_the_sky"
+	icon = "GFX_EOE_moongeist_beam"
 	icon_frame = 1
 	power = -9999
 	hidden = yes
-	#component_set = "EOE_nuclear_beam"
-	#projectile_gfx = "tachyon_lance"
+	component_set = "EOE_moongeist_beam"
+	projectile_gfx = "tachyon_lance"
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_anti_hull }
 	ai_tag_weight = 2
 	damage = {
-		min = 1024
-		max = 2048
+		min = 1145
+		max = 1451
 	}
 	windup = {
 		min = 10
-		max = 30
+		max = 20
 	}
-	total_fire_time = 20
+	total_fire_time = 15
 	range = 275
 	accuracy = 1
 	tracking = 0.3
-	hull_damage = 1.5
-	shield_damage = 1.0
-	armor_damage = 1.5
-
+	armor_penetration = 1
 
 	ai_weight = {
 		weight = 2
@@ -332,33 +186,125 @@ weapon_component_template = {
 
 	type = instant
 	
-	#icon = "GFX_EOE_light_that_burns_the_sky"
+	icon = "GFX_EOE_photon_geyser"
 	icon_frame = 1
 	power = -9999
 	hidden = yes
-	#component_set = "EOE_nuclear_beam"
-	#projectile_gfx = "tachyon_lance"
-	tags = { weapon_type_energy weapon_type_point_defense }
+	component_set = "EOE_photon_geyser"
+	projectile_gfx = "tachyon_lance"
+	tags = { weapon_type_energy weapon_type_point_defense weapon_type_kinetic }
 	ai_tags = { weapon_role_anti_hull }
 	ai_tag_weight = 2
 	damage = {
-		min = 256
-		max = 512
+		min = 64
+		max = 96
 	}
 	windup = {
-		min = 10
-		max = 20
+		min = 2
+		max = 2
 	}
-	total_fire_time = 10
-	range = 250
+	total_fire_time = 2
+	range = 200
 	accuracy = 1
 	tracking = 1
-	hull_damage = 1.5
-	shield_damage = 1.5
-	armor_damage = 1.5
 
-
+	point_defence_targets = { "missile" "strike_craft" }
 	ai_weight = {
 		weight = 2
 	}
+}
+
+utility_component_template = {
+	key = "EOE_NECROZMA_AURA"
+	size = medium
+	icon = GFX_ship_part_aura_shield_dampener
+	icon_frame = 1
+	power = 0
+	hidden = yes
+	
+	component_set = "ship_aura_components"
+	# friendly_aura = {
+	# 	name = "EOE_necrozma_aur_b"
+	# 	system_wide = yes
+	# 	stack_info = { 
+	# 		id = EOE_necrozma_aur_b
+	# 		priority = 1
+	# 	}
+	# 	modifier = {
+	# 		ship_hull_mult = -0.25
+	# 		ship_shield_mult = -0.25
+	# 		ship_armor_mult = -0.25
+	# 	}
+	# }
+	hostile_aura = {
+		name = "EOE_necrozma_aura"
+		system_wide = yes
+		apply_on = ships
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = EOE_necrozma_aura
+			priority = 1
+		}
+
+		modifier = {
+			ship_accuracy_add = -25
+			ship_shield_hardening_add = -1
+			ship_armor_hardening_add = -1
+			ship_hull_mult = -0.25
+			ship_shield_mult = -0.75
+			ship_armor_mult = -0.75
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+utility_component_template = {
+	key = "EOE_NECROZMA_AURA_2"
+	size = medium
+	icon = GFX_ship_part_aura_shield_dampener
+	icon_frame = 1
+	power = 0
+	hidden = yes
+	
+	component_set = "ship_aura_components"
+
+	friendly_aura = {
+		name = "EOE_necrozma_aur_a"
+		stack_info = { 
+			id = EOE_necrozma_aur_a
+			priority = 1
+		}
+		modifier = {
+			ship_hull_regen_add_static = 20000
+			ship_armor_regen_add_static = 5000
+			ship_shield_regen_add_static = 5000
+		}
+	}
+}
+
+utility_component_template = {
+	key = "EOE_NECROZMA_BIO_DETECTOR"
+	hidden = yes
+	size = small
+	icon = "GFX_ship_part_aura_snare"
+	icon_frame = 1
+	power = 0
+	
+	sensor_range = 8
+	hyperlane_range = 16
+
+	modifier = {
+		ship_cloaking_detection_add = 10
+	}
+
+	component_set = "sensor_components"
 }

@@ -126,3 +126,26 @@ weapon_component_template = { # the pokeball
 # 		tech_EOE_Reshiram
 # 	}
 # }
+weapon_component_template = { # 光龙的恰星系
+	key = "PLANET_KILLER_NECROZMA"
+	size = planet_killer
+	type = planet_killer
+	use_ship_kill_target = no
+
+	hidden = yes
+
+	windup = { min = 30 max = 30 }
+	total_fire_time = 30
+
+	icon = GFX_ship_part_nanobot_diffuser
+	icon_frame = 1
+
+	size_restriction = { EOE_necrozma_normal }
+	component_set = "PLANET_KILLER_EOE"
+
+	planet_destruction_gfx = "god_ray_gfx"
+
+	ai_weight = {
+		factor = 0
+	}
+}

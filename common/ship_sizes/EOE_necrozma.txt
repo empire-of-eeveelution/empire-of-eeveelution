@@ -1,27 +1,24 @@
 EOE_necrozma_normal = {
+	entity = luozima_entity
 	is_space_object = yes
 	graphical_culture = no
-	can_be_inspected = no
+	can_be_inspected = yes
 	max_speed = 100
 	acceleration = 0.6
 	rotation_speed = 0.50
-	collision_radius = 200
+	collision_radius = 50
 	modifier = {
-		ship_shield_add = 25000000
-		ship_armor_add = 25000000
-		ship_hull_regen_add_static = 5000000
-		ship_armor_regen_add_static = 2500000
-		ship_shield_regen_add_static = 2500000
+		ship_shield_add = 1000000
+		ship_armor_add = 1000000
 	}
-	max_hitpoints = 50000000
+	max_hitpoints = 5000000
 	combat_size_multiplier = 50
 	size_multiplier = 50
-	fleet_slot_size = 31
+	fleet_slot_size = 50
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 0
 	is_space_station = no
-	icon_frame = 5
-	text_icon = military_size_space_creature
+	icon = EOE_ship_size_military_16
 	
 	class = shipclass_military
 	is_designable = no
@@ -29,39 +26,8 @@ EOE_necrozma_normal = {
 	required_component_set = "sensor_components"
 	required_component_set = "thruster_components"
 	required_component_set = "combat_computers"
+	required_component_set = "pokemon_mint"
+	required_component_set = "ship_aura_components"
 	required_component_set = "ship_aura_components"
 }
 
-EOE_necrozma_small = {
-	is_space_object = yes
-	graphical_culture = no
-	can_be_inspected = no
-	max_speed = 100
-	acceleration = 0.6
-	rotation_speed = 0.50
-	collision_radius = 200
-	modifier = {
-		ship_shield_add = 500000
-		ship_armor_add = 500000
-		ship_hull_regen_add_static = 100000
-		ship_armor_regen_add_static = 50000
-		ship_shield_regen_add_static = 50000
-	}
-	max_hitpoints = 1000000
-	combat_size_multiplier = 50
-	size_multiplier = 50
-	fleet_slot_size = 31
-	section_slots = { "mid" = { locator = "part1" } }
-	num_target_locators = 0
-	is_space_station = no
-	icon_frame = 5
-	text_icon = military_size_space_creature
-	
-	class = shipclass_military
-	is_designable = no
-	required_component_set = "ftl_components"
-	required_component_set = "sensor_components"
-	required_component_set = "thruster_components"
-	required_component_set = "combat_computers"
-	required_component_set = "ship_aura_components"
-}

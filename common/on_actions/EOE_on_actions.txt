@@ -86,6 +86,18 @@ on_destroy_planet_with_PLANET_KILLER_FIRE_EOE_SMALL = {
 		eevent.39
 	}
 }
+on_destroy_planet_with_PLANET_KILLER_NECROZMA = {
+	events = {
+		crisis.4550
+		awareness.150 # Planet cracker used OR planet terraformed, chance to gain 20 awareness.
+	}
+}
+
+on_destroy_planet_with_PLANET_KILLER_NECROZMA_queued = {
+	events = {
+		fircon.5035 #Solarpunk Planet queued
+	}
+}
 
 on_leader_death = {
 	events = {

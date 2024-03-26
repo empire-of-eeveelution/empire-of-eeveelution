@@ -470,3 +470,4 @@ ship_design = {
 		#required_component = BIO_DRIVE
 		required_component = MINIOR_THRUSTER
 }
+

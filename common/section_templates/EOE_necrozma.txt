@@ -1,0 +1,143 @@
+ship_section_template = {
+	key = "luozima"
+	entity = "luozima_entity"
+	ship_size = EOE_necrozma_normal
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	
+	component_slot = {
+		name = "EOE_fire_fire"
+		template = "invisible_planet_killer_fixed"
+		locatorname = "EOE_fire_fire_fire"
+	}
+	component_slot = {
+		name = "EOE_LARGE_GUN_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "Ban_shen_EOE_laser_gun_01"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "EOE_LARGE_GUN_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "Ban_shen_EOE_laser_gun_02"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "EOE_LARGE_GUN_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "Ban_shen_EOE_laser_gun_03"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "EOE_LARGE_GUN_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "Ban_shen_EOE_laser_gun_04"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "EOE_LARGE_GUN_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "Ban_shen_EOE_laser_gun_05"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "EOE_LARGE_GUN_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "Ban_shen_EOE_laser_gun_01"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name ="EOE_LARGE_GUN_07"
+		template = "invisible_extra_large_fixed"
+		locatorname = "Ban_shen_EOE_laser_gun_02"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name ="EOE_LARGE_GUN_08"
+		template = "invisible_extra_large_fixed"
+		locatorname = "Ban_shen_EOE_laser_gun_03"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name ="EOE_LARGE_GUN_09"
+		template = "invisible_extra_large_fixed"
+		locatorname = "Ban_shen_EOE_laser_gun_04"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "EOE_POINT_DEFENCE_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "EOE_fire_vampire_scraft_05_l"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "EOE_POINT_DEFENCE_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "EOE_fire_vampire_scraft_06_l"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "EOE_POINT_DEFENCE_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "EOE_fire_vampire_scraft_07_l"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "EOE_POINT_DEFENCE_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "EOE_fire_vampire_scraft_08_l"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "EOE_POINT_DEFENCE_05"
+		template = "invisible_point_defence_turret"
+		locatorname = "EOE_fire_vampire_scraft_09_l"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "EOE_POINT_DEFENCE_06"
+		template = "invisible_point_defence_turret"
+		locatorname = "EOE_fire_vampire_scraft_10_l"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "EOE_POINT_DEFENCE_07"
+		template = "invisible_point_defence_turret"
+		locatorname = "EOE_fire_vampire_scraft_11_l"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "EOE_POINT_DEFENCE_08"
+		template = "invisible_point_defence_turret"
+		locatorname = "EOE_fire_vampire_scraft_12_l"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "EOE_POINT_DEFENCE_09"
+		template = "invisible_point_defence_turret"
+		locatorname = "EOE_fire_vampire_scraft_13_l"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "EOE_POINT_DEFENCE_10"
+		template = "invisible_point_defence_turret"
+		locatorname = "EOE_fire_vampire_scraft_14_l"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "EOE_POINT_DEFENCE_11"
+		template = "invisible_point_defence_turret"
+		locatorname = "EOE_fire_vampire_scraft_15_l"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "EOE_POINT_DEFENCE_12"
+		template = "invisible_point_defence_turret"
+		locatorname = "EOE_fire_vampire_scraft_16_l"
+		is_side_slot = yes
+	}
+	
+
+	aux_utility_slots = 2
+}

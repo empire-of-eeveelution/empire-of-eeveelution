@@ -309,6 +309,8 @@ NAME_Bailong:0"莱希拉姆"
  EOE_cthugha_lance:0 "Ah'lw'nafh fm'latghor"
  EOE_cthugha_lancet:0 "Ah'lw'nafh fm'latghor"
  EOE_cthugha_lance_s:0 "Ah'lw'nafh fm'latghor"
- EOE_CTHUGHA_DRIVE:0 ""
- EOE_THRUSTER_CTHUGHA:0 ""
- EOE_CTHUGHA_AURA:0 ""
+ EOE_CTHUGHA_DRIVE:0 "位面穿梭器官"
+ EOE_THRUSTER_CTHUGHA:0 "维度推进"
+ EOE_CTHUGHA_AURA:0 "活火光环"
+
+

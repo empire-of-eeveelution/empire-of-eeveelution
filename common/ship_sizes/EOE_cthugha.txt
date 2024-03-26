@@ -1,8 +1,8 @@
 EOE_cthugha_1_sz = {
-	entity = "BailongTest_entity "
+	entity = "BailongTest_entity"
 	is_space_object = yes
 	graphical_culture = no
-	can_be_inspected = no
+	can_be_inspected = yes
 	max_speed = 100
 	acceleration = 0.6
 	rotation_speed = 0.50
@@ -17,8 +17,7 @@ EOE_cthugha_1_sz = {
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 0
 	is_space_station = no
-	icon_frame = 5
-	text_icon = military_size_space_creature
+	icon = ship_size_space_monster
 	
 	class = shipclass_military
 	is_designable = no

@@ -105,4 +105,47 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_OKRA_CORE.dds"			
 		legacy_lazy_load = no
 	}
-}
+	spriteType = {
+		name = "GFX_EOE_light_that_burns_the_sky"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_light_that_burns_the_sky.dds"			
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EOE_meteor_drive"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_meteor_drive.dds"			
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EOE_moongeist_beam"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_moongeist_beam.dds"			
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EOE_prismatic_laser"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_prismatic_laser.dds"			
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EOE_photon_geyser"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_photon_geyser.dds"			
+		legacy_lazy_load = no
+	}
+	spriteType = { #四个都是光龙图标，慢慢画
+		name = "GFX_text_EOE_ship_size_military_16"
+		texturefile = "gfx/interface/icons/text_icons/icon_text_EOE_military_size_16.dds"
+	}
+	spriteType = { 
+		name = "GFX_EOE_ship_size_military_16"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_necrozma_ship_size.dds"
+	}
+	spriteType = { #画不来这个，暂时借用原版怪物
+		name = "GFX_EOE_ship_size_military_16_top"
+		sprite_sheet_sprite_type = "GFX_ship_sizes_top"
+		default_frame = 12
+	}
+	spriteType = {
+		name = "GFX_EOE_ship_size_military_16_top_damaged"
+		sprite_sheet_sprite_type = "GFX_ship_sizes_top_damaged"
+		default_frame = 12
+	}
+}	
