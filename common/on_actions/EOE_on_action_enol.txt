@@ -12,7 +12,7 @@ on_mid_game_pulse = {
 
 on_leader_death = {
 	events = {
-		EOE_ghost.14  #感情
+		EOE_ghost.14  #感情火花
 	}
 }
 
@@ -31,14 +31,15 @@ on_entering_system_first_time = {
 		leadereevent.64 #北落师门星在核子处显示的条件
 	}
 }
-on_entering_system_fleet = {
+on_survey_planet = {
 	events = {
-		EOE_branch.150 #电磁波紊乱星系
+		EOE_branch.158 #触发究极大都会相关
 	}
 }
 
 on_monthly_pulse_country = {
 	events = {
 		eevent.44 #月检同化
+		EOE_branch.159 #月检防止土著提升时代
 	}
 }

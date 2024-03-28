@@ -7,3 +7,13 @@ EOE_test_rift = {
 		standard_astral_rift_on_roll_failed = yes
 	}
 }
+
+EOE_ultra_system_rift = {
+	name = EOE_ultra_system_rift.name
+	randomized = no
+	flags = { EOE_ultra_rift }
+	
+	on_roll_failed = {
+		standard_astral_rift_on_roll_failed = yes
+	}
+}
