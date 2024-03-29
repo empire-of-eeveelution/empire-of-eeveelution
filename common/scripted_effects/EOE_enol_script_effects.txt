@@ -802,7 +802,7 @@ destroy_star_system_necrozma = {
 		fire_on_action = { on_action = on_destroy_star_system }
 	}
 	set_star_flag = star_cracked
-	set_star_class = sc_black_hole
+	set_star_class = sc_black_drawf
 	every_system_ambient_object = {
 		limit = {
 			# Preserve Unbidden crisis effects
@@ -827,7 +827,7 @@ destroy_star_system_necrozma = {
 				angle = random
 			}
 		}
-		change_pc = pc_black_hole
+		change_pc = pc_black_drawf
 	}
 	# Handle Contingency Machine Worlds
 	every_system_planet = {
@@ -883,7 +883,8 @@ destroy_star_system_necrozma = {
 				change_pc = pc_ringworld_habitable_damaged
 			}
 			else = {
-				change_pc = pc_shattered
+				change_pc = pc_EOE_nolight
+				set_planet_size = 4
 			}
 		}
 		else_if = {
@@ -902,7 +903,8 @@ destroy_star_system_necrozma = {
 			change_pc = pc_ringworld_seam_damaged
 		}
 		else = {
-			change_pc = pc_shattered
+			change_pc = pc_EOE_nolight
+			set_planet_size = 4
 		}
 	}
 	every_system_planet = {
@@ -964,6 +966,24 @@ destroy_star_system_necrozma = {
 				distance = 0
 				angle = random
 			}
+		}
+	}
+}
+
+
+EOE_create_ultra_system = {
+	no_scope = {
+		spawn_system = {
+			min_distance = 563
+			max_distance = 563
+			min_orientation_angle = 90
+			max_orientation_angle = 180
+			initializer = EOE_ultra_system
+			hyperlane = no
+		}
+		last_created_system = {
+			save_global_event_target_as = EOE_ultra_space_system
+			isolate_system = yes
 		}
 	}
 }

@@ -333,7 +333,6 @@ special_project = { #调查电磁混乱
 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
 	tech_department = physics_technology
 	on_success = {
-		country_event = { id = EOE_branch.152 }
 		set_country_flag = EOE_searched_electromagnetic_chaotic
 	}
 }

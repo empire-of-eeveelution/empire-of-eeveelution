@@ -22,7 +22,7 @@ country_event ={
 				OR = {
 					owner_main_species = { has_trait = trait_EOE_Inheritors }
 					has_origin = origin_lotus_hezi_start
-								}
+				}
 				is_ai = no
 			}
 			country_event = {
@@ -46,9 +46,12 @@ country_event ={
 
 			else_if= {
 				limit = { 
-					owner_main_species = {has_trait = trait_EOE_Inheritors}
-						  is_ai = no
-						}
+					OR = {
+						has_origin = origin_lotus_hezi_start
+						owner_main_species = {has_trait = trait_EOE_Inheritors}
+					}
+					is_ai = no
+				}
 				set_country_flag = eoe_country
 				set_country_flag = maybe_has_hezi
 				country_event = { id = eevent.7 days = 1800  random = 180 }  #缸中之脑
@@ -2936,6 +2939,18 @@ country_event = {   #######给加决斗者岗位的地块
 		}
 		event_target:wild_eeveelution_planet = {
 			add_deposit = d_EOE_Pokemon_Jingjichang
+			hidden_effect = {
+				if = {
+					limit = { 
+						owner = {
+							is_ai = no
+						}
+					}
+					planet_event = {
+						id = EOE_branch.146 days = 3600
+					}
+				}
+			}
 		}
 		
 	}

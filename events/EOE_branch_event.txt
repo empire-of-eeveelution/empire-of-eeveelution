@@ -5939,7 +5939,7 @@ ship_event = { #第六次随机时收钱
 
 #############################
 #Z晶和究极空间
-country_event = {  
+planet_event = {  
 	id = EOE_branch.146
 	is_triggered_only = yes
 	title = EOE_branch.146.name
@@ -5949,23 +5949,8 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = "EOE_branch.146.a" #立即着手调查
-		hidden_effect = {
-			random_planet_within_border = {
-				limit = {
-					is_colony = no
-					has_anomaly = no
-					OR = {
-						is_planet_class = pc_barren
-						is_planet_class = pc_barren_cold
-						is_planet_class = pc_frozen 
-					}
-					NOT = { exists = archaeological_site }
-					NOT = { has_planet_flag = suppress_archaeological_sites }
-				}
-				save_event_target_as = EOE_z_site
-				create_archaeological_site = site_EOE_eevium_z 
-			}
-		}
+		save_event_target_as = EOE_z_site
+		create_archaeological_site = site_EOE_eevium_z 
 	} 
 }
 #考古
@@ -6043,6 +6028,8 @@ fleet_event = {  #考古
 		}
 	} 
 }
+
+
 #信号
 country_event = {  
 	id = EOE_branch.149
@@ -6055,257 +6042,729 @@ country_event = {
 	option = {
 		name = "EOE_branch.149.a" 
 		country_event = {
-			id = EOE_branch.148
+			id = EOE_branch.142 days = 1800
 		}
 	} 
 }
-#有了虫洞操作才可以构造通道
+#星界裂隙
+#奇怪的信号似乎来自于一处星界裂隙。
 country_event = {
-	id = EOE_branch.148
-	hide_window = yes
+	id = EOE_branch.142
 	is_triggered_only = yes
+	title = EOE_branch.142.name
+	desc = EOE_branch.142.desc
+	picture = GFX_evt_astral_rift
+	show_sound = ap_rift_event_0_astral_wonder
 	immediate = {
-		if = {
-			limit = { 
-				NOT = {
-					has_technology = tech_wormhole_stabilization
-				}
+		set_country_flag = EOE_spawn_ultra_rift
+		random_system_within_border = {
+			limit = {
+				can_spawn_astral_rift = yes
 			}
-			country_event = {
-				id = EOE_branch.148 days = 1800
+			owner = {
+				set_country_flag = EOE_spawn_ultra_rift_success
+			}
+			save_event_target_as = EOE_ultra_rift_system
+			spawn_astral_rift = {
+				id = EOE_ultra_system_rift
+				random_pos = yes
+				orbit_angle = 360
 			}
 		}
-		else = {
-			country_event = {
-				id = EOE_branch.147 days = 1800
+	}
+	option = {
+		name = "EOE_branch.142.a"
+	}
+}
+
+astral_rift_event = {			
+	id = EOE_branch.148
+	title = EOE_branch.148.name
+	desc = EOE_branch.148.desc
+	picture = GFX_evt_EOE_no_video_feed
+	show_sound = "event_yellow_alert"
+	difficulty = 0
+	astral_rift = yes
+
+	is_triggered_only = yes
+	immediate = {
+		explorer = {
+			enable_special_project = {
+				name = EOE_search_electromagnetic_chaotic
+			}
+		}
+	}
+	option = {
+		name = EOE_branch.148.a
+		allow = {
+			explorer = {
+				has_country_flag = EOE_searched_electromagnetic_chaotic
+			}
+			fail_text = {
+				text = EOE_branch.148.a.failtext
+			}
+		}
+		set_next_astral_rift_event = { id = EOE_branch.147 }
+	}
+
+	after = {
+		explorer = {
+			astral_thread_small_reward = yes
+		}
+	}
+}
+astral_rift_event = {			
+	id = EOE_branch.147
+	title = EOE_branch.147.name
+	desc = EOE_branch.147.desc
+	picture = GFX_evt_EOE_nolight_sky
+	show_sound = event_default
+	difficulty = 2
+	astral_rift = yes
+
+	is_triggered_only = yes
+	option = {
+		name = EOE_branch.147.a 
+		set_next_astral_rift_event = { id = EOE_branch.150 }
+	}
+	option = {
+		name = EOE_branch.147.b
+		set_next_astral_rift_event = { id = EOE_branch.151 }
+	}
+	option = {
+		name = EOE_branch.147.c
+		set_next_astral_rift_event = { id = EOE_branch.152 }
+	}
+
+	after = {
+		explorer = {
+			add_resource = {
+				physics_research = 100000
+			}
+			astral_thread_small_reward = yes
+		}
+	}
+}
+
+astral_rift_event = {			
+	id = EOE_branch.150
+	title = EOE_branch.150.name
+	desc = EOE_branch.150.desc
+	picture = GFX_evt_EOE_ultra_ocean
+	show_sound = event_default
+	difficulty = 4
+	astral_rift = yes
+
+	is_triggered_only = yes
+	option = {
+		name = EOE_branch.150.a 
+		set_next_astral_rift_event = { id = EOE_branch.153 }
+	}
+	after = {
+		explorer = {
+			astral_thread_small_reward = yes
+		}
+	}
+}
+astral_rift_event = {			
+	id = EOE_branch.151
+	title = EOE_branch.151.name
+	desc = EOE_branch.151.desc
+	picture = GFX_evt_EOE_ultra_jungle
+	show_sound = event_default
+	difficulty = 4
+	astral_rift = yes
+
+	is_triggered_only = yes
+	option = {
+		name = EOE_branch.151.a 
+		set_next_astral_rift_event = { id = EOE_branch.154 }
+	}
+	after = {
+		explorer = {
+			astral_thread_small_reward = yes
+		}
+	}
+}
+astral_rift_event = {			
+	id = EOE_branch.152
+	title = EOE_branch.152.name
+	desc = EOE_branch.152.desc
+	picture = GFX_evt_EOE_ultra_building
+	show_sound = event_default
+	difficulty = 3
+	astral_rift = yes
+
+	is_triggered_only = yes
+	option = {
+		name = EOE_branch.152.a 
+		set_next_astral_rift_event = { id = EOE_branch.155 }
+	}
+	after = {
+		explorer = {
+			astral_thread_small_reward = yes
+		}
+	}
+}
+astral_rift_event = {			
+	id = EOE_branch.153
+	title = EOE_branch.153.name
+	desc = EOE_branch.153.desc
+	picture = GFX_evt_EOE_ultra_ocean
+	show_sound = event_space_amoeba
+	difficulty = 1
+	astral_rift = yes
+
+	is_triggered_only = yes
+	option = {
+		name = EOE_branch.153.a 
+		set_next_astral_rift_event = { id = EOE_branch.156 }
+	}
+	after = {
+		explorer = {
+			astral_thread_small_reward = yes
+		}
+	}
+}
+astral_rift_event = {			
+	id = EOE_branch.154
+	title = EOE_branch.154.name
+	desc = EOE_branch.154.desc
+	picture = GFX_evt_EOE_ultra_jungle
+	show_sound = event_alien_nature
+	difficulty = 1
+	astral_rift = yes
+
+	is_triggered_only = yes
+	option = {
+		name = EOE_branch.154.a 
+		set_next_astral_rift_event = { id = EOE_branch.156 }
+	}
+	after = {
+		explorer = {
+			astral_thread_small_reward = yes
+		}
+	}
+}
+astral_rift_event = {			
+	id = EOE_branch.155
+	title = EOE_branch.155.name
+	desc = EOE_branch.155.desc
+	picture = GFX_evt_EOE_ultra_building
+	show_sound = event_construction
+	difficulty = 1
+	astral_rift = yes
+
+	is_triggered_only = yes
+	option = {
+		name = EOE_branch.155.a 
+		set_next_astral_rift_event = { id = EOE_branch.156 }
+	}
+	after = {
+		explorer = {
+			astral_thread_small_reward = yes
+		}
+	}
+}
+
+#究极大都会
+astral_rift_event = {			
+	id = EOE_branch.156
+	title = EOE_branch.156.name
+	desc = EOE_branch.156.desc
+	picture = GFX_evt_EOE_ultra_megalopolis
+	show_sound = event_dig_site
+	difficulty = 4
+	astral_rift = yes
+
+	is_triggered_only = yes
+	option = {
+		name = EOE_branch.156.a 
+		set_next_astral_rift_event = { id = EOE_branch.159 }
+	}
+	after = {
+		explorer = {
+			astral_thread_small_reward = yes
+		}
+	}
+}
+#再补充一页事件，说明究极空间人的生活
+#究极大都会
+astral_rift_event = {			
+	id = EOE_branch.159
+	title = EOE_branch.159.name
+	desc = EOE_branch.159.desc
+	picture = GFX_evt_EOE_ultra_megalopolis
+	show_sound = event_pre_ftl_civilization
+	difficulty = 1
+	astral_rift = yes
+
+	is_triggered_only = yes
+	option = {
+		name = EOE_branch.159.a 
+		set_next_astral_rift_event = { id = EOE_branch.157 }
+	}
+	after = {
+		explorer = {
+			astral_thread_small_reward = yes
+		}
+	}
+}
+
+#准备建设虫洞
+astral_rift_event = {
+	id = EOE_branch.157
+	is_triggered_only = yes
+	title = EOE_branch.157.name
+	desc = EOE_branch.157.desc
+	picture = GFX_evt_excavation_team
+	show_sound = event_activating_unknown_technology
+	difficulty = 1
+	astral_rift = yes
+	immediate = {
+		
+		explorer = {
+			random_system_within_border = {
+				limit = {
+					NOR = {
+						has_star_flag = EOE_screening
+						has_natural_wormhole = yes
+					}
+				}
+				if = {
+					limit = { 
+						exists = this
+					}
+					save_event_target_as = EOE_wormsystem_1
+					set_star_flag = EOE_screening
+				}
+			}
+			random_system_within_border = {
+				limit = {
+					NOR = {
+						has_star_flag = EOE_screening
+						has_natural_wormhole = yes
+					}
+				}
+				if = {
+					limit = { 
+						exists = this
+					}
+					save_event_target_as = EOE_wormsystem_2
+					set_star_flag = EOE_screening
+				}
+			}
+			random_system_within_border = {
+				limit = {
+					NOR = {
+						has_star_flag = EOE_screening
+						has_natural_wormhole = yes
+					}
+				}
+				if = {
+					limit = { 
+						exists = this
+					}
+					save_event_target_as = EOE_wormsystem_3
+					set_star_flag = EOE_screening
+				}
+			}
+			random_system_within_border = {
+				limit = {
+					NOR = {
+						has_star_flag = EOE_screening
+						has_natural_wormhole = yes
+					}
+				}
+				if = {
+					limit = { 
+						exists = this
+					}
+					save_event_target_as = EOE_wormsystem_4
+					set_star_flag = EOE_screening
+				}
 			}
 		}
 		
 	}
-}
-#解析信号
-country_event = {
-	id = EOE_branch.147
-	title = EOE_branch.147.name
-	desc = EOE_branch.147.desc
-	is_triggered_only = yes
-	picture = GFX_evt_mysterious_signal
-	show_sound = event_mystic_reveal
 	option = {
-		name = EOE_branch.147.a
-		hidden_effect = {
-			no_scope = {
-				spawn_system = {
-					min_distance = 563
-					max_distance = 563
-					min_orientation_angle = 90
-					max_orientation_angle = 180
-					initializer = EOE_ultra_system
-					hyperlane = no
-				}
+		name = EOE_branch.157.a
+		trigger = {
+			exists = event_target:EOE_wormsystem_4
+		}
+		EOE_create_ultra_system = yes
+		event_target:EOE_wormsystem_4 = {
+			spawn_natural_wormhole = {
+				bypass_type = wormhole
+				random_pos = no
+				orbit_angle = 207
 			}
-			random_system = {
-				limit = {
-					has_star_flag = ultra_space_system
-				}
-				save_event_target_as = EOE_ultra_space_system
-				isolate_system = yes
-			}
-			capital_scope.solar_system = {
+			event_target:EOE_ultra_space_system = {
 				spawn_natural_wormhole = {
 					bypass_type = wormhole
 					random_pos = no
-					orbit_angle = 207
-				}
-				event_target:EOE_ultra_space_system = {
-					spawn_natural_wormhole = {
-						bypass_type = wormhole
-						random_pos = no
-						orbit_angle = 159
-					}
-					link_wormholes = prev
-				}
+					orbit_angle = 159
+			 	}
+				link_wormholes = prev
 			}
 		}
+		finish_astral_rift = yes
 	}
 	option = {
-		name = EOE_branch.147.b
-		add_resource = {
-			influence = 100
+		name = EOE_branch.157.a
+		trigger = {
+			exists = event_target:EOE_wormsystem_1
+		}
+		EOE_create_ultra_system = yes
+		event_target:EOE_wormsystem_1 = {
+			spawn_natural_wormhole = {
+				bypass_type = wormhole
+				random_pos = no
+				orbit_angle = 207
+			}
+			event_target:EOE_ultra_space_system = {
+				spawn_natural_wormhole = {
+					bypass_type = wormhole
+					random_pos = no
+					orbit_angle = 159
+			 	}
+				link_wormholes = prev
+			}
+		}
+		finish_astral_rift = yes
+	}
+	option = {
+		name = EOE_branch.157.a
+		trigger = {
+			exists = event_target:EOE_wormsystem_2
+		}
+		EOE_create_ultra_system = yes
+		event_target:EOE_wormsystem_2 = {
+			spawn_natural_wormhole = {
+				bypass_type = wormhole
+				random_pos = no
+				orbit_angle = 207
+			}
+			event_target:EOE_ultra_space_system = {
+				spawn_natural_wormhole = {
+					bypass_type = wormhole
+					random_pos = no
+					orbit_angle = 159
+			 	}
+				link_wormholes = prev
+			}
+		}
+		finish_astral_rift = yes
+	}
+	option = {
+		name = EOE_branch.157.a
+		trigger = {
+			exists = event_target:EOE_wormsystem_3
+		}
+		EOE_create_ultra_system = yes
+		event_target:EOE_wormsystem_3 = {
+			spawn_natural_wormhole = {
+				bypass_type = wormhole
+				random_pos = no
+				orbit_angle = 207
+			}
+			event_target:EOE_ultra_space_system = {
+				spawn_natural_wormhole = {
+					bypass_type = wormhole
+					random_pos = no
+					orbit_angle = 159
+			 	}
+				link_wormholes = prev
+			}
+		}
+		finish_astral_rift = yes
+	}
+	option = {
+		name = EOE_branch.157.e #别调查惹,到此为止
+		astral_thread_large_reward = yes
+		small_artifact_reward = yes
+		leader = {
+			add_experience = 1000
+		}
+		explorer = {
+			add_resource = {
+				physics_research = 1000000
+				society_research = 1000000
+				engineering_research = 1000000
+				influence = 100
+			}
+		}	
+		finish_astral_rift = yes
+	}
+	after = {
+		explorer = {
+			set_country_flag = EOE_ultra_rift_finished
+			astral_thread_small_reward = yes
 		}
 	}
 }
-#进入电磁故障区域发生的事件
-fleet_event = {  
-	id = EOE_branch.150
+
+
+ship_event = {
+	id = EOE_branch.158
+	title = EOE_branch.158.name
+	desc = EOE_branch.158.desc
+	picture = GFX_evt_EOE_ultra_megalopolis
+	show_sound = event_default
 	is_triggered_only = yes
-	hide_window = yes
 	trigger = {
+		owner = {
+			has_country_flag = EOE_ultra_rift_finished
+			NOT = {
+				has_country_flag = EOE_surveyed_megalopolis
+			}
+		}
 		from = {
-			has_star_flag = EOE_electromagnetic_suppress
+			has_planet_flag = EOE_ultra_home_planet
 		}
 	}
-	immediate = {
-		#其他国家。都默认不会发生舰队暴毙
-		if = { 
-			limit = {
-				owner = {
-					is_country_type = default
-				}
-			}
+	option = {
+		name = EOE_branch.158.a
+		hidden_effect = {
 			owner = {
-				if = {
-					limit = { 
-						NOT = { has_country_flag = EOE_has_known_electromagnetic_chaotic }
-					}
-					country_event = {
-						id = EOE_branch.151
-					}
-					set_country_flag = EOE_has_known_electromagnetic_chaotic
-				}
+				set_country_flag = EOE_surveyed_megalopolis
 			}
-			if = {
-				limit = {
-					owner = {
-						has_country_flag = EOE_has_known_electromagnetic_chaotic
-						NOT = { has_technology = tech_boson_photon_field_generator }
-					}
-				}
-				destroy_fleet = this
-			}
-		} 
-		#但是其他国家不研究一定吃debuff
-		else = {
-			
 		}
-	} 
-}
-country_event = {
-	id = EOE_branch.151
-	is_triggered_only = yes
-	title = EOE_branch.151.name #失联
-	desc = EOE_branch.151.desc #进去的所有船都失联了
-	picture = GFX_evt_EOE_no_video_feed
-	show_sound = event_default
-	immediate = {
 		from = {
-			save_event_target_as = EOE_destroyed_fleet
-		}
-		fromfrom = {
-			save_event_target_as = EOE_first_access_electromagnetic_chaotic_system
-		}
-	}
-	option = {
-		name = EOE_branch.151.a #开展一个特殊项目研究对策
-		enable_special_project = {
-			name = EOE_search_electromagnetic_chaotic
-			owner = this
-		}
-		hidden_effect = {
-			destroy_fleet = event_target:EOE_destroyed_fleet
-		}
-	}
-	# after = {
-	# 	destroy_fleet = event_target:EOE_destroyed_fleet
-	# }
-}
-country_event = {
-	id = EOE_branch.152
-	is_triggered_only = yes
-	title = EOE_branch.152.name #成功
-	desc = EOE_branch.152.desc #成功研发应对之策
-	picture = GFX_evt_EOE_no_video_feed
-	show_sound = event_default
-	immediate = {
-		give_technology = { tech = EOE_boson_photon_field message = no } #给进入必须的科技
-	}
-	option = {
-		name = EOE_branch.152.a #祝贺研究组，现在该进去仔细研究了
-		hidden_effect = {
-			event_target:necrozma_archaeological_sites = { create_archaeological_site = site_necrozma_systeam }
+			create_archaeological_site = site_necrozma_system
 		}
 	}
 }
-fleet_event = { 
-	id = EOE_branch.153
+
+#反复重置时代
+event = {
+	id = EOE_branch.159
+	hide_window = yes
 	is_triggered_only = yes
-	title = EOE_branch.153.name
-	desc = EOE_branch.153.desc #纳米探测机投放
-	picture = GFX_evt_alien_ruins
-	show_sound = "event_dig_site"
-	archaeology = yes
 
-	immediate = {
-		from = { set_site_progress_locked = yes }
-	}
-
-	after = { 
-		from = { set_site_progress_locked = no } 
-	}
-	
-	option = {
-		name = "EOE_branch.153.a" #继续探索
-		small_artifact_reward = yes
-	} 
-}
-fleet_event = { 
-	id = EOE_branch.154
-	is_triggered_only = yes
-	title = EOE_branch.154.name
-	desc = EOE_branch.154.desc #古文明记录
-	picture = GFX_evt_alien_ruins
-	show_sound = "event_dig_site"
-	archaeology = yes
-
-	immediate = {
-		from = { set_site_progress_locked = yes }
-	}
-
-	after = { 
-		from = { set_site_progress_locked = no } 
-	}
-	
-	option = {
-		name = "EOE_branch.154.a" #继续探索
-		add_resource = {
-			rare_crystals = 500
-		}
-		small_artifact_reward = yes
-	} 
-}
-fleet_event = { 
-	id = EOE_branch.155
-	is_triggered_only = yes
-	title = EOE_branch.155.name
-	desc = EOE_branch.155.desc #清理完了研究所的废墟
-	picture = GFX_evt_alien_ruins
-	show_sound = "event_dig_site"
-	archaeology = yes
-
-	immediate = {
-		from = { set_site_progress_locked = yes }
-	}
-
-	after = { 
-		from = { set_site_progress_locked = no } 
-	}
-	
-	option = {
-		name = "EOE_branch.155.a" #继续探索
-		medium_artifact_reward = yes
-		hidden_effect = {
-			spawn_megastructure = {
-				type = luozima_0
-				planet = necrozma_archaeological_sites
-				coords_from = this
-				orbit_distance = 10
-				orbit_angle = 0
+	trigger = {
+		any_country = {
+			is_country_type = primitive
+			OR = {
+				has_country_flag = ultra_space_age
 			}
+			has_country_flag = atomic_age
 		}
+	}
+
+	immediate = {
+		every_country = {
+			limit = {
+				is_country_type = primitive
+				OR = {
+					has_country_flag = ultra_space_age
+				}
+				has_country_flag = atomic_age
+			}
+			remove_country_flag = atomic_age
+			set_country_flag = machine_age
+			set_pre_ftl_age = machine_age
+		}
+	}
+}
+
+fleet_event = { 
+	id = EOE_branch.160
+	is_triggered_only = yes
+	title = EOE_branch.160.name
+	desc = EOE_branch.160.desc #清理完了研究所的废墟
+	picture = GFX_evt_alien_ruins
+	show_sound = "event_dig_site"
+	archaeology = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = "EOE_branch.160.a" #继续探索
+		small_artifact_reward = yes
 	} 
 }
 
 
+
+# #进入电磁故障区域发生的事件
+# fleet_event = {  
+# 	id = EOE_branch.150
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		from = {
+# 			has_star_flag = EOE_electromagnetic_suppress
+# 		}
+# 	}
+# 	immediate = {
+# 		#其他国家。都默认不会发生舰队暴毙
+# 		if = { 
+# 			limit = {
+# 				owner = {
+# 					is_country_type = default
+# 				}
+# 			}
+# 			owner = {
+# 				if = {
+# 					limit = { 
+# 						NOT = { has_country_flag = EOE_has_known_electromagnetic_chaotic }
+# 					}
+# 					country_event = {
+# 						id = EOE_branch.151
+# 					}
+# 					set_country_flag = EOE_has_known_electromagnetic_chaotic
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					owner = {
+# 						has_country_flag = EOE_has_known_electromagnetic_chaotic
+# 						NOT = { has_technology = tech_boson_photon_field_generator }
+# 					}
+# 				}
+# 				destroy_fleet = this
+# 			}
+# 		} 
+# 		#但是其他国家不研究一定吃debuff
+# 		else = {
+			
+# 		}
+# 	} 
+# }
+# country_event = {
+# 	id = EOE_branch.151
+# 	is_triggered_only = yes
+# 	title = EOE_branch.151.name #失联
+# 	desc = EOE_branch.151.desc #进去的所有船都失联了
+# 	picture = GFX_evt_EOE_no_video_feed
+# 	show_sound = event_default
+# 	immediate = {
+# 		from = {
+# 			save_event_target_as = EOE_destroyed_fleet
+# 		}
+# 		fromfrom = {
+# 			save_event_target_as = EOE_first_access_electromagnetic_chaotic_system
+# 		}
+# 	}
+# 	option = {
+# 		name = EOE_branch.151.a #开展一个特殊项目研究对策
+# 		enable_special_project = {
+# 			name = EOE_search_electromagnetic_chaotic
+# 			owner = this
+# 		}
+# 		hidden_effect = {
+# 			destroy_fleet = event_target:EOE_destroyed_fleet
+# 		}
+# 	}
+# 	# after = {
+# 	# 	destroy_fleet = event_target:EOE_destroyed_fleet
+# 	# }
+# }
+# country_event = {
+# 	id = EOE_branch.152
+# 	is_triggered_only = yes
+# 	title = EOE_branch.152.name #成功
+# 	desc = EOE_branch.152.desc #成功研发应对之策
+# 	picture = GFX_evt_EOE_no_video_feed
+# 	show_sound = event_default
+# 	immediate = {
+# 		give_technology = { tech = EOE_boson_photon_field message = no } #给进入必须的科技
+# 	}
+# 	option = {
+# 		name = EOE_branch.152.a #祝贺研究组，现在该进去仔细研究了
+# 		hidden_effect = {
+# 			event_target:necrozma_archaeological_sites = { create_archaeological_site = site_necrozma_systeam }
+# 		}
+# 	}
+# }
+# fleet_event = { 
+# 	id = EOE_branch.153
+# 	is_triggered_only = yes
+# 	title = EOE_branch.153.name
+# 	desc = EOE_branch.153.desc #纳米探测机投放
+# 	picture = GFX_evt_alien_ruins
+# 	show_sound = "event_dig_site"
+# 	archaeology = yes
+
+# 	immediate = {
+# 		from = { set_site_progress_locked = yes }
+# 	}
+
+# 	after = { 
+# 		from = { set_site_progress_locked = no } 
+# 	}
+	
+# 	option = {
+# 		name = "EOE_branch.153.a" #继续探索
+# 		small_artifact_reward = yes
+# 	} 
+# }
+# fleet_event = { 
+# 	id = EOE_branch.154
+# 	is_triggered_only = yes
+# 	title = EOE_branch.154.name
+# 	desc = EOE_branch.154.desc #古文明记录
+# 	picture = GFX_evt_alien_ruins
+# 	show_sound = "event_dig_site"
+# 	archaeology = yes
+
+# 	immediate = {
+# 		from = { set_site_progress_locked = yes }
+# 	}
+
+# 	after = { 
+# 		from = { set_site_progress_locked = no } 
+# 	}
+	
+# 	option = {
+# 		name = "EOE_branch.154.a" #继续探索
+# 		add_resource = {
+# 			rare_crystals = 500
+# 		}
+# 		small_artifact_reward = yes
+# 	} 
+# }
+# fleet_event = { 
+# 	id = EOE_branch.155
+# 	is_triggered_only = yes
+# 	title = EOE_branch.155.name
+# 	desc = EOE_branch.155.desc #清理完了研究所的废墟
+# 	picture = GFX_evt_alien_ruins
+# 	show_sound = "event_dig_site"
+# 	archaeology = yes
+
+# 	immediate = {
+# 		from = { set_site_progress_locked = yes }
+# 	}
+
+# 	after = { 
+# 		from = { set_site_progress_locked = no } 
+# 	}
+	
+# 	option = {
+# 		name = "EOE_branch.155.a" #继续探索
+# 		medium_artifact_reward = yes
+# 		hidden_effect = {
+# 			spawn_megastructure = {
+# 				type = luozima_0
+# 				planet = necrozma_archaeological_sites
+# 				coords_from = this
+# 				orbit_distance = 10
+# 				orbit_angle = 0
+# 			}
+# 		}
+# 	} 
+# }
+
+
+#重新编写炸星系事件。大失败
 planet_event = {
 	id = EOE_branch.68
 	hide_window = yes

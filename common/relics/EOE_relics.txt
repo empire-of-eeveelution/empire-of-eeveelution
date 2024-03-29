@@ -84,7 +84,7 @@ r_EOE_eevium_z = {
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			country_event = {
-				id = EOE_branch.142 days = 180
+				id = EOE_branch.149 days = 180
 			}
 			add_modifier = {
 				modifier = "relic_activation_cooldown"

@@ -80,5 +80,32 @@ spriteTypes = {
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes		
 	}
-	
+	spriteType = {
+		name = "GFX_evt_EOE_nolight_sky"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_nolight_sky.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+
+	spriteType = {
+		name = "GFX_evt_EOE_ultra_building"
+		textureFile = "gfx/event_pictures/GFX_evt_EOE_ultra_building.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_ultra_ocean"
+		textureFile = "gfx/event_pictures/GFX_evt_EOE_ultra_ocean.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_ultra_jungle"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_ultra_jungle.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_ultra_megalopolis"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_ultra_megalopolis.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
 }
