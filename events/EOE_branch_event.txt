@@ -6873,9 +6873,60 @@ fleet_event = {
 	option = {
 		name = "EOE_branch.166.a" #接通通讯		
 		small_artifact_reward = yes
+		owner = {
+			country_event = {
+				id = EOE_branch.167
+			}
+		}
 	} 
 }
-
+#通讯事件
+country_event = {
+	id = EOE_branch.167
+	is_triggered_only = yes
+	title = EOE_branch.167.name
+	desc = EOE_branch.167.desc 
+	diplomatic = yes
+	custom_gui = "enclave_curator_window"
+	picture_event_data = {
+		room = enclave_curator_room
+		portrait = EOEHezi_test
+	}
+	option = {
+		name = EOE_branch.167.a #你是什么？
+		response_text = EOE_branch.167.a.reply
+	}
+	option = {
+		name = EOE_branch.167.b #你们以前的宇宙经历了什么？
+		response_text = EOE_branch.167.b.reply
+	}
+	option = {
+		name = EOE_branch.167.c #为什么究极空间会变成如今这样？
+		response_text = EOE_branch.167.c.reply
+	}
+	option = {
+		name = EOE_branch.167.d #能修吗？
+		response_text = EOE_branch.167.d.reply
+	}
+	option = {
+		name = EOE_branch.167.e #接下来你有什么打算？
+		response_text = EOE_branch.167.e.reply
+	}
+	option = {
+		name = EOE_branch.167.f #可以支援我们的科学研究吗？
+		response_text = EOE_branch.167.f.reply
+		add_modifier = {
+			modifier = EOE_necrozma_research days = -1
+		}
+	}
+	option = {
+		name = EOE_branch.167.g #我们需要你的力量
+		response_text = EOE_branch.167.g.reply
+	}
+	option = {
+		name = EOE_branch.167.h #结束通讯
+	}
+}
 
 # #进入电磁故障区域发生的事件
 # fleet_event = {  
