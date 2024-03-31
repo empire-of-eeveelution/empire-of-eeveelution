@@ -37,7 +37,7 @@ EOE_mew = {
 	resources = {
 		category = ships
 		upkeep = {
-			food = 0.4
+			energy = 500
 		}
 	}
 	

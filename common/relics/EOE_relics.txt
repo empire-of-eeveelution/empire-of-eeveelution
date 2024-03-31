@@ -52,7 +52,7 @@ r_EOE_warp_gate = {
 
 r_EOE_eevium_z = {
 	activation_duration = 3600
-	portrait = "GFX_relic_dragon_trophy"
+	portrait = "GFX_relic_EOE_eevium_z"
 	sound = "relic_activation_ether_drake_trophy"
 
 	resources = {
@@ -89,6 +89,55 @@ r_EOE_eevium_z = {
 			add_modifier = {
 				modifier = "relic_activation_cooldown"
 				days = 3600
+			}
+		}
+	}
+
+	# Possible check for activation
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_relic_no_cooldown"
+			NOT = { has_modifier = relic_activation_cooldown }
+		}
+	}
+}
+
+r_EOE_necrozma_z = {
+	activation_duration = 1800
+	portrait = "GFX_relic_EOE_necrozma_z"
+	sound = "relic_activation_ether_drake_trophy"
+
+	resources = {
+		category = relics
+		# Activation cost
+		cost = {
+			energy = 100000
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+		country_physics_research_produces_mult = 0.1
+		#
+	}
+
+	score = 1000
+
+	active_effect = {
+		custom_tooltip = relic_triumph_cooldown
+		hidden_effect = {
+			country_event = {
+				id = EOE_branch.168
+			}
+			add_modifier = {
+				modifier = "relic_activation_cooldown"
+				days = 1800
 			}
 		}
 	}

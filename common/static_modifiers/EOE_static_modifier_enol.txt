@@ -146,7 +146,7 @@ EOE_pop_unemploy = {
 }
 
 EOE_necrozma_research = {
-    country_physics_research_produces_mult = 0.15
-    country_society_research_produces_mult = 0.15
-    country_engineering_research_produces_mult = 0.15
+    country_physics_research_cost_mult = -0.15
+    country_society_research_cost_mult = -0.15
+    country_engineering_research_cost_mult = -0.15
 }

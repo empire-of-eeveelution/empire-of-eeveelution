@@ -108,4 +108,16 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/GFX_evt_EOE_ultra_megalopolis.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 	}
+
+	spriteType = {
+		name = "GFX_evt_EOE_ultra_necrozma"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_ultra_necrozma.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_EOE_necrozma"
+		texturefile = "gfx/event_pictures/GFX_evt_EOE_necrozma.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	
 }
