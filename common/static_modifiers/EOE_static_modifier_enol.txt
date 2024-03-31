@@ -144,3 +144,9 @@ EOE_pop_unemploy = {
     icon_frame = 1
     icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds"
 }
+
+EOE_necrozma_research = {
+    country_physics_research_produces_mult = 0.15
+    country_society_research_produces_mult = 0.15
+    country_engineering_research_produces_mult = 0.15
+}

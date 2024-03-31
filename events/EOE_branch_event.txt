@@ -6572,7 +6572,7 @@ fleet_event = {
 	id = EOE_branch.160
 	is_triggered_only = yes
 	title = EOE_branch.160.name
-	desc = EOE_branch.160.desc #清理完了研究所的废墟
+	desc = EOE_branch.160.desc 
 	picture = GFX_evt_alien_ruins
 	show_sound = "event_dig_site"
 	archaeology = yes
@@ -6590,8 +6590,343 @@ fleet_event = {
 		small_artifact_reward = yes
 	} 
 }
+fleet_event = { 
+	id = EOE_branch.161
+	is_triggered_only = yes
+	title = EOE_branch.161.name
+	desc = EOE_branch.161.desc 
+	picture = GFX_evt_alien_ruins
+	show_sound = "event_dig_site"
+	archaeology = yes
 
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
 
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = "EOE_branch.161.a" #继续探索
+		small_artifact_reward = yes
+	} 
+}
+fleet_event = { 
+	id = EOE_branch.162
+	is_triggered_only = yes
+	title = EOE_branch.162.name
+	desc = EOE_branch.162.desc 
+	picture = GFX_evt_alien_ruins
+	show_sound = "event_dig_site"
+	archaeology = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = "EOE_branch.162.a" #继续探索
+		small_artifact_reward = yes
+	} 
+}
+fleet_event = { 
+	id = EOE_branch.163
+	is_triggered_only = yes
+	title = EOE_branch.163.name
+	desc = EOE_branch.163.desc 
+	picture = GFX_evt_alien_ruins
+	show_sound = "event_dig_site"
+	archaeology = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+	}
+	
+	option = {
+		name = "EOE_branch.163.a" #继续探索
+		small_artifact_reward = yes
+	} 
+}
+fleet_event = { 
+	id = EOE_branch.164
+	is_triggered_only = yes
+	title = EOE_branch.164.name
+	desc = EOE_branch.164.desc 
+	picture = GFX_evt_alien_ruins
+	show_sound = "event_dig_site"
+	archaeology = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+		owner = {
+			country_event = {
+				id = EOE_branch.165 days = 30
+			}
+		}
+	}
+	
+	option = {
+		name = "EOE_branch.164.a" #继续探索
+		small_artifact_reward = yes
+	} 
+}
+#光龙召唤
+country_event = {
+	id = EOE_branch.165
+	is_triggered_only = yes
+	title = EOE_branch.165.name
+	desc = EOE_branch.165.desc 
+	picture = GFX_evt_alien_ruins
+	show_sound = "event_dig_site"
+	
+	immediate = {
+		create_country = {
+			name = "NAME_EOE_necrozma"
+			type = guardian_EOE_cthugha
+			flag = {
+				icon = {
+					category = "zoological"
+					file = "flag_zoological_5.dds"
+				}
+				background= {
+					category = "backgrounds"
+					file = "00_solid.dds"
+				}
+				colors={
+					"yellow"
+					"yellow"
+					"null"
+					"null"
+				}
+			}
+		}
+		if = {
+			limit = {
+				is_scrappy_mod_used = yes
+			}
+			last_created_country = {
+				set_country_flag = EOE_necrozma_country
+				save_global_event_target_as = EOE_necrozma_country
+				create_fleet = {
+					name = "NAME_EOE_Necrozma_2"
+					settings = {
+						spawn_debris = no
+						is_boss = no
+					}
+					effect = {
+						set_owner = event_target:EOE_necrozma_country
+						create_ship = {
+							name = "NAME_EOE_Necrozma_3"
+							design = NAME_EOE_necrozma_ship_hostile
+							effect = {
+								set_ship_flag = EOE_necrozma_ship
+								set_disable_at_health = 0.05
+							}
+						}
+						save_global_event_target_as = EOE_necrozma_fleet
+						set_fleet_flag = EOE_necrozma_fleet
+						set_location = event_target:EOE_ultra_home_planet
+						set_fleet_stance = aggressive
+						set_aggro_range_measure_from = self
+						set_aggro_range = 500
+						
+						
+					}
+					
+				}
+			}
+		}
+		else = {
+			last_created_country = {
+				set_country_flag = EOE_necrozma_country
+				save_global_event_target_as = EOE_necrozma_country
+				create_fleet = {
+					name = "NAME_EOE_Necrozma_2_small"
+					settings = {
+						spawn_debris = no
+						is_boss = yes
+					}
+					effect = {
+						set_owner = event_target:EOE_necrozma_country
+						create_ship = {
+							name = "NAME_EOE_Necrozma_3_small"
+							design = NAME_EOE_necrozma_smallship_hostile
+							effect = {
+								set_ship_flag = EOE_necrozma_ship
+								set_disable_at_health = 0.05
+							}
+						}
+						save_global_event_target_as = EOE_necrozma_fleet
+						set_fleet_flag = EOE_necrozma_fleet
+						set_location = event_target:EOE_ultra_home_planet
+						set_fleet_stance = aggressive
+						set_aggro_range_measure_from = self
+						set_aggro_range = 500
+						
+						
+					}
+					
+				}
+			}
+		}
+		
+	}
+	
+	option = {
+		name = "EOE_branch.165.a" 
+		event_target:EOE_ultra_home_planet = {
+			add_planet_devastation = 50
+			while = {
+				count = 5
+				kill_pop = yes
+			}
+		}
+	} 
+}
+
+fleet_event = { 
+	id = EOE_branch.166
+	is_triggered_only = yes
+	title = EOE_branch.166.name
+	desc = EOE_branch.166.desc 
+	picture = GFX_evt_alien_ruins
+	show_sound = "event_dig_site"
+	archaeology = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = { 
+		from = { set_site_progress_locked = no } 
+		event_target:EOE_necrozma_country = {
+			every_owned_fleet = {
+				delete_fleet = this
+			}
+		}
+		event_target:EOE_ultra_country = {
+			if = {
+				limit = {
+					is_scrappy_mod_used = yes
+				}
+				create_fleet = {
+					name = "NAME_EOE_Necrozma_2"
+					settings = {
+						spawn_debris = no
+						is_boss = yes
+					}
+					effect = {
+						set_owner = event_target:EOE_necrozma_country
+						create_ship = {
+							name = "NAME_EOE_Necrozma_3"
+							design = NAME_EOE_necrozma_ship
+							effect = {
+								set_ship_flag = EOE_necrozma_ship
+							}
+						}
+						save_global_event_target_as = EOE_necrozma_fleet
+						set_fleet_flag = EOE_necrozma_fleet
+						set_location = event_target:EOE_ultra_home_planet					
+					}
+					
+				}
+			}
+			else = {
+				create_fleet = {
+					name = "NAME_EOE_Necrozma_2_small"
+					settings = {
+						spawn_debris = no
+						is_boss = yes
+					}
+					effect = {
+						set_owner = event_target:EOE_necrozma_country
+						create_ship = {
+							name = "NAME_EOE_Necrozma_3_small"
+							design = NAME_EOE_necrozma_smallship
+							effect = {
+								set_ship_flag = EOE_necrozma_ship
+							}
+						}
+						save_global_event_target_as = EOE_necrozma_fleet
+						set_fleet_flag = EOE_necrozma_fleet
+						set_location = event_target:EOE_ultra_home_planet
+					}
+					
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EOE_branch.166.a" #接通通讯		
+		small_artifact_reward = yes
+		owner = {
+			country_event = {
+				id = EOE_branch.167
+			}
+		}
+	} 
+}
+#通讯事件
+country_event = {
+	id = EOE_branch.167
+	is_triggered_only = yes
+	title = EOE_branch.167.name
+	desc = EOE_branch.167.desc 
+	diplomatic = yes
+	custom_gui = "enclave_curator_window"
+	picture_event_data = {
+		room = enclave_curator_room
+		portrait = EOEHezi_test
+	}
+	option = {
+		name = EOE_branch.167.a #你是什么？
+		response_text = EOE_branch.167.a.reply
+	}
+	option = {
+		name = EOE_branch.167.b #你们以前的宇宙经历了什么？
+		response_text = EOE_branch.167.b.reply
+	}
+	option = {
+		name = EOE_branch.167.c #为什么究极空间会变成如今这样？
+		response_text = EOE_branch.167.c.reply
+	}
+	option = {
+		name = EOE_branch.167.d #能修吗？
+		response_text = EOE_branch.167.d.reply
+	}
+	option = {
+		name = EOE_branch.167.e #接下来你有什么打算？
+		response_text = EOE_branch.167.e.reply
+	}
+	option = {
+		name = EOE_branch.167.f #可以支援我们的科学研究吗？
+		response_text = EOE_branch.167.f.reply
+		add_modifier = {
+			modifier = EOE_necrozma_research days = -1
+		}
+	}
+	option = {
+		name = EOE_branch.167.g #我们需要你的力量
+		response_text = EOE_branch.167.g.reply
+	}
+	option = {
+		name = EOE_branch.167.h #结束通讯
+	}
+}
 
 # #进入电磁故障区域发生的事件
 # fleet_event = {  
