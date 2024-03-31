@@ -8495,6 +8495,23 @@ country_event = {
 			}
 		}
 	}
+	option = {
+		name = leadereevent.1000.e
+		trigger = {
+			any_system_within_border = {
+				any_system_planet = {
+					has_planet_flag = EOE_try_to_spawn_z_site
+				}
+			}	
+			NOT = {
+				has_country_flag = has_z_site
+			}
+		}
+		set_country_flag = has_z_site
+		event_target:wild_eeveelution_planet = {
+			create_archaeological_site = site_EOE_eevium_z
+		}
+	}
 	# option = {
 	# 	#买大师球
 	# 	name = leadereevent.27.g
@@ -9377,7 +9394,35 @@ country_event = {
 		name = leadereevent.29.b
 	}
 }
-
+#Z纯晶研究所
+country_event = {
+	id = leadereevent.1005
+	is_triggered_only = yes
+	title = leadereevent.1005.name
+	desc = leadereevent.1005.desc
+	diplomatic = yes
+	custom_gui = "enclave_curator_window"
+	picture_event_data = {
+		room = enclave_curator_room
+		portrait = EOEHezi_test
+	}
+	option = {
+		# Back
+		name = leadereevent.31.d
+		custom_gui = "enclave_curator_option"
+		hidden_effect = {
+			remove_country_flag = EOE_databank_diplomacy_engaged
+			country_event = {
+				id = leadereevent.57
+			}
+		}
+	}
+	option = {
+		# exit
+		custom_gui = "enclave_curator_option"
+		name = leadereevent.29.b
+	}
+}
 # #大师球
 # country_event = {
 # 	id = leadereevent.63

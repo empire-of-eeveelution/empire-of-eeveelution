@@ -372,6 +372,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/relics/GFX_relic_EOE_Warp_gate.png"
 		legacy_lazy_load = no
 	}
+	SpriteType = {
+		name = "GFX_relic_EOE_eevium_z"
+		texturefile = "gfx/interface/icons/relics/GFX_EOE_eevium_z.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_relic_EOE_necrozma_z"
+		texturefile = "gfx/interface/icons/relics/GFX_EOE_necrozma_z.png"
+		legacy_lazy_load = no
+	}
 	##地块
 	SpriteType = {
 		name = "EOE_district_rw_science"

@@ -5946,11 +5946,20 @@ planet_event = {
 	desc = EOE_branch.146.desc #调查到了研究Z晶的gf研究所位置
 	picture = GFX_evt_alien_ruins
 	show_sound = event_default_04
-	fire_only_once = yes
+	immediate = {
+		set_planet_flag = EOE_try_to_spawn_z_site
+	}
 	option = {
 		name = "EOE_branch.146.a" #立即着手调查
-		save_event_target_as = EOE_z_site
-		create_archaeological_site = site_EOE_eevium_z 
+		if = {
+			limit = { 
+				owner = {
+					is_ai = no
+				}
+			}
+			save_event_target_as = EOE_z_site
+			create_archaeological_site = site_EOE_eevium_z 
+		}
 	} 
 }
 #考古
@@ -5964,10 +5973,16 @@ fleet_event = {
 	archaeology = yes
 
 	immediate = {
+		owner = {
+			set_country_flag = has_z_site
+		}
 		from = { set_site_progress_locked = yes }
 	}
 
 	after = { 
+		owner = {
+			set_country_flag = has_z_site
+		}
 		from = { set_site_progress_locked = no } 
 	}
 	
@@ -6573,8 +6588,8 @@ fleet_event = {
 	is_triggered_only = yes
 	title = EOE_branch.160.name
 	desc = EOE_branch.160.desc 
-	picture = GFX_evt_alien_ruins
-	show_sound = "event_dig_site"
+	picture = GFX_evt_EOE_ultra_necrozma
+	show_sound = event_mystic_reveal_light
 	archaeology = yes
 
 	immediate = {
@@ -6595,8 +6610,8 @@ fleet_event = {
 	is_triggered_only = yes
 	title = EOE_branch.161.name
 	desc = EOE_branch.161.desc 
-	picture = GFX_evt_alien_ruins
-	show_sound = "event_dig_site"
+	picture = GFX_evt_astral_rift_vortex
+	show_sound = event_scanner
 	archaeology = yes
 
 	immediate = {
@@ -6617,8 +6632,8 @@ fleet_event = {
 	is_triggered_only = yes
 	title = EOE_branch.162.name
 	desc = EOE_branch.162.desc 
-	picture = GFX_evt_alien_ruins
-	show_sound = "event_dig_site"
+	picture = GFX_evt_EOE_necrozma
+	show_sound = event_activating_unknown_technology
 	archaeology = yes
 
 	immediate = {
@@ -6639,8 +6654,8 @@ fleet_event = {
 	is_triggered_only = yes
 	title = EOE_branch.163.name
 	desc = EOE_branch.163.desc 
-	picture = GFX_evt_alien_ruins
-	show_sound = "event_dig_site"
+	picture = GFX_evt_EOE_necrozma
+	show_sound = event_yellow_alert
 	archaeology = yes
 
 	immediate = {
@@ -6661,8 +6676,8 @@ fleet_event = {
 	is_triggered_only = yes
 	title = EOE_branch.164.name
 	desc = EOE_branch.164.desc 
-	picture = GFX_evt_alien_ruins
-	show_sound = "event_dig_site"
+	picture = GFX_evt_decryption
+	show_sound = event_yellow_alert
 	archaeology = yes
 
 	immediate = {
@@ -6689,8 +6704,8 @@ country_event = {
 	is_triggered_only = yes
 	title = EOE_branch.165.name
 	desc = EOE_branch.165.desc 
-	picture = GFX_evt_alien_ruins
-	show_sound = "event_dig_site"
+	picture = GFX_evt_EOE_ultra_necrozma
+	show_sound = event_red_alert
 	
 	immediate = {
 		create_country = {
@@ -6802,12 +6817,35 @@ fleet_event = {
 	is_triggered_only = yes
 	title = EOE_branch.166.name
 	desc = EOE_branch.166.desc 
-	picture = GFX_evt_alien_ruins
-	show_sound = "event_dig_site"
+	picture = GFX_evt_EOE_ultra_necrozma
+	show_sound = event_sensor_ping
 	archaeology = yes
 
 	immediate = {
 		from = { set_site_progress_locked = yes }
+		create_country = {
+			name = "NAME_EOE_Crystal_z"
+			type = EOE_crystal
+			flag = {
+				icon = {
+					category = "zoological"
+					file = "flag_zoological_1.dds"
+				}
+				background= {
+					category = "backgrounds"
+					file = "00_solid.dds"
+				}
+				colors={
+					"black"
+					"black"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				save_global_event_target_as = EOE_crystal_z_country
+			}
+		}
 	}
 
 	after = { 
@@ -6817,7 +6855,8 @@ fleet_event = {
 				delete_fleet = this
 			}
 		}
-		event_target:EOE_ultra_country = {
+		
+		event_target:EOE_crystal_z_country = {
 			if = {
 				limit = {
 					is_scrappy_mod_used = yes
@@ -6829,13 +6868,16 @@ fleet_event = {
 						is_boss = yes
 					}
 					effect = {
-						set_owner = event_target:EOE_necrozma_country
+						set_owner = event_target:EOE_crystal_z_country
 						create_ship = {
 							name = "NAME_EOE_Necrozma_3"
 							design = NAME_EOE_necrozma_ship
 							effect = {
 								set_ship_flag = EOE_necrozma_ship
 							}
+						}
+						add_modifier = {
+							modifier = EOE_crisisfive
 						}
 						save_global_event_target_as = EOE_necrozma_fleet
 						set_fleet_flag = EOE_necrozma_fleet
@@ -6852,13 +6894,16 @@ fleet_event = {
 						is_boss = yes
 					}
 					effect = {
-						set_owner = event_target:EOE_necrozma_country
+						set_owner = event_target:EOE_crystal_z_country
 						create_ship = {
 							name = "NAME_EOE_Necrozma_3_small"
 							design = NAME_EOE_necrozma_smallship
 							effect = {
 								set_ship_flag = EOE_necrozma_ship
-							}
+							}	
+						}
+						add_modifier = {
+							modifier = EOE_crisisfive
 						}
 						save_global_event_target_as = EOE_necrozma_fleet
 						set_fleet_flag = EOE_necrozma_fleet
@@ -6889,8 +6934,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "enclave_curator_window"
 	picture_event_data = {
-		room = enclave_curator_room
-		portrait = EOEHezi_test
+		room = EOE_necrozma_room
 	}
 	option = {
 		name = EOE_branch.167.a #你是什么？
@@ -6927,7 +6971,61 @@ country_event = {
 		name = EOE_branch.167.h #结束通讯
 	}
 }
-
+#交换舰队所属
+country_event = {
+	id = EOE_branch.168
+	is_triggered_only = yes
+	title = EOE_branch.168.name
+	desc = EOE_branch.168.desc 
+	diplomatic = yes
+	custom_gui = "enclave_curator_window"
+	picture_event_data = {
+		room = EOE_necrozma_room
+	}
+	immediate = {
+		event_target:EOE_necrozma_fleet = {
+			set_owner = root
+		}
+		country_event = {
+			id = EOE_branch.169 days = 1800
+		}
+	}
+	option = {
+		name = EOE_branch.168.a #结束通讯
+	}
+}
+country_event = {
+	id = EOE_branch.169
+	is_triggered_only = yes
+	title = EOE_branch.169.name
+	desc = EOE_branch.169.desc 
+	diplomatic = yes
+	custom_gui = "enclave_curator_window"
+	picture_event_data = {
+		room = EOE_necrozma_room
+	}
+	immediate = {
+		event_target:EOE_necrozma_fleet = {
+			set_owner = event_target:EOE_crystal_z_country
+			queue_actions = {
+				repeat = {
+					find_closest_system = {
+						trigger = {
+							id = necrozma.1
+							has_star_flag = ultra_space_system
+						}
+						found_system = {
+							move_to = this
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = EOE_branch.169.a #结束通讯
+	}
+}
 # #进入电磁故障区域发生的事件
 # fleet_event = {  
 # 	id = EOE_branch.150

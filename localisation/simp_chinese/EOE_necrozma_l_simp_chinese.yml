@@ -133,13 +133,18 @@
  EOE_branch.167.f:0 "可以支援我们的科学研究吗？"
  EOE_branch.167.f.reply:0 "当然。作为外来者的我，对于你们的宇宙的规则把握，终究不如你们。开展科研合作，会对你我都有益处。"
  EOE_branch.167.g:0 "我们需要你的力量。"
- EOE_branch.167.g.reply:0 "没有问题。只要你们不认为我太虚弱了的话。"
+ EOE_branch.167.g.reply:0 "没有问题。只不过，在物理规则修复完成之前，我可能仍然需要规则稳定化设备才能干涉你们的宇宙。"
  EOE_branch.167.h:0 "结束通讯"
 
  EOE_necrozma_research:0 "奈克洛兹玛的科技援助"
  EOE_necrozma_research_desc:0 "奈克洛兹玛曾是极为发达的物种，他们对科学技术有着独到的见解。"
 
-
+ EOE_branch.168.name:0 "奈克洛兹玛"
+ EOE_branch.168.desc:0 "检测到稳定器已激活。接下来的五年内，我将听从你的命令。"
+ EOE_branch.168.a:0 "结束通讯"
+ EOE_branch.169.name:0 "奈克洛兹玛"
+ EOE_branch.169.desc:0 "检测到稳定器已失效。需要我的时候，可以再次启动稳定器。"
+ EOE_branch.169.a:0 "结束通讯"
 
 
 
