@@ -6424,6 +6424,9 @@ astral_rift_event = {
 			}
 		}
 		finish_astral_rift = yes
+		# country_event = {
+		# 	id = EOE_branch.1571
+		# }
 	}
 	option = {
 		name = EOE_branch.157.a
@@ -6518,6 +6521,53 @@ astral_rift_event = {
 		}
 	}
 }
+
+# country_event = {
+# 	id = EOE_branch.1571
+# 	is_triggered_only = yes
+# 	title = EOE_branch.1571.name
+# 	desc = EOE_branch.1571.desc 
+# 	diplomatic = yes
+# 	custom_gui = "enclave_curator_window"
+# 	picture_event_data = {
+# 		room = EOE_necrozma_room
+# 	}
+# 	option = {
+# 		name = EOE_branch.1571.a #你是什么？
+# 		response_text = EOE_branch.1571.a.reply
+# 	}
+# 	option = {
+# 		name = EOE_branch.1571.b #你们以前的宇宙经历了什么？
+# 		response_text = EOE_branch.1571.b.reply
+# 	}
+# 	option = {
+# 		name = EOE_branch.1571.c #为什么究极空间会变成如今这样？
+# 		response_text = EOE_branch.1571.c.reply
+# 	}
+# 	option = {
+# 		name = EOE_branch.1571.d #能修吗？
+# 		response_text = EOE_branch.1571.d.reply
+# 	}
+# 	option = {
+# 		name = EOE_branch.1571.e #接下来你有什么打算？
+# 		response_text = EOE_branch.1571.e.reply
+# 	}
+# 	option = {
+# 		name = EOE_branch.1571.f #可以支援我们的科学研究吗？
+# 		response_text = EOE_branch.1571.f.reply
+# 		add_modifier = {
+# 			modifier = EOE_necrozma_research days = -1
+# 		}
+# 	}
+# 	option = {
+# 		name = EOE_branch.167.g #我们需要你的力量
+# 		response_text = EOE_branch.167.g.reply
+# 	}
+# 	option = {
+# 		name = EOE_branch.167.h #结束通讯
+# 	}
+# }
+
 
 
 ship_event = {
