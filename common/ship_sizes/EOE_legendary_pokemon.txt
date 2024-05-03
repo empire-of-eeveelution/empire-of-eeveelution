@@ -37,7 +37,7 @@ EOE_mew = {
 	resources = {
 		category = ships
 		upkeep = {
-			energy = 500
+			food = 0.5                   #energy = 500 奇怪，打开游戏一看每月负电18K，原来维护是多少记不得了随便写一个吧（
 		}
 	}
 	
