@@ -580,7 +580,9 @@ EOE_shatterring_start_buildings = {
 		limit = {
 			owner = { is_regular_empire = yes }
 		}
-
+		add_modifier = {
+			modifier = EOE_pop_unemploy days = 60
+		}
 		# 21 - 2 = 19 jobs
 		add_district = district_rw_farming #11农民
 		add_district = district_rw_city #3职员,2执法,但是两个执法被我砍到障碍里去了

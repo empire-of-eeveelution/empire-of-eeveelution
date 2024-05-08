@@ -36,7 +36,7 @@ EOE_shroud_food = {
 }
 EOE_composer_of_strands = {
 	pop_growth_speed = 0.30
-	leader_age = 50
+	leader_lifespan_add = 50
 }
 
 EOE_eater_of_worlds = {

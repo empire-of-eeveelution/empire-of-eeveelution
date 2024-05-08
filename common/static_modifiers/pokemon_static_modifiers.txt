@@ -98,18 +98,6 @@ EOE_broken_habitat = {
 
 
 
-EOE_building_team = { #宝可工程队
-	icon = "gfx/interface/icons/planet_modifiers/pm_medieval_alien_civilization.dds"
-	icon_frame = 1
-	planet_building_build_speed_mult = 1
-}
-
-EOE_blocker_clear_team = { #宝可清障队
-	icon = "gfx/interface/icons/planet_modifiers/pm_mastery_of_nature.dds"
-	icon_frame = 1
-	planet_clear_blocker_speed_mult = 100
-	deposit_blockers_cost_mult = -0.75
-}
 
 EOE_pokeball_catched = {
 	ships_upkeep_mult = -100

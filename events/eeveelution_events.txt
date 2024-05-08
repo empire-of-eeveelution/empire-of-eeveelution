@@ -2939,11 +2939,11 @@ country_event = {   #######给加决斗者岗位的地块
 		}
 		event_target:wild_eeveelution_planet = {
 			add_deposit = d_EOE_Pokemon_Jingjichang
-			hidden_effect = {
-				planet_event = {
-					id = EOE_branch.146 days = 3600
-				}
-			}
+			# hidden_effect = {
+			# 	planet_event = {
+			# 		id = EOE_branch.146 days = 3600
+			# 	}
+			# }
 		}
 		
 	}
