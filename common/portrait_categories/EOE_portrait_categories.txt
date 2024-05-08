@@ -5,6 +5,7 @@ categories_Eeveelutions = {
         Eeveelutions
     }
 }
+#不可做初始物种
 #Othermons = {
 #    name = Othermons
 #
