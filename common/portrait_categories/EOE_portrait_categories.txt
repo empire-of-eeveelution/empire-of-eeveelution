@@ -5,14 +5,14 @@ categories_Eeveelutions = {
         Eeveelutions
     }
 }
-#categories_Othermons = {
+#Othermons = {
 #    name = Othermons
 #
 #    sets = {
 #        Othermons
 #    }
 #}
-#categories_Steelmons = {
+#Steelmons = {
 #    name = Steelmons
 #
 #    sets = {
