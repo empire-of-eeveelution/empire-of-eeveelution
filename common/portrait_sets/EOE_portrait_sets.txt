@@ -1,0 +1,40 @@
+Eeveelutions = {
+    species_class = Eeveelutions
+
+    portraits = {
+        "Eeveelutions"
+    }
+
+    # These should not be used for randomly generated species
+    non_randomized_portraits = {
+        "Eeveelutions"
+    }
+}
+Othermons = {
+    species_class = Othermons
+
+    conditional_portraits = {
+        portraits = {
+            "Othermons"
+        }
+    }
+
+    # These should not be used for randomly generated species
+    non_randomized_portraits = {
+        "Othermons"
+    }
+}
+Steelmons = {
+    species_class = Steelmons
+
+    conditional_portraits = {
+        portraits = {
+            "Steelmons"
+        }
+    }
+
+    # These should not be used for randomly generated species
+    non_randomized_portraits = {
+        "Steelmons"
+    }
+}

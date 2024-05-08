@@ -1,0 +1,21 @@
+categories_Eeveelutions = {
+    name = Eeveelutions
+
+    sets = {
+        Eeveelutions
+    }
+}
+#categories_Othermons = {
+#    name = Othermons
+#
+#    sets = {
+#        Othermons
+#    }
+#}
+#categories_Steelmons = {
+#    name = Steelmons
+#
+#    sets = {
+#        Steelmons
+#    }
+#}
