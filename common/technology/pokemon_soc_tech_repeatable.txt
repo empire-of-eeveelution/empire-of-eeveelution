@@ -41,7 +41,7 @@ tech_endless_evolution = {
 	}
 	
 	modifier = {
-		description = tech_gene_expressions_modifier_desc
+		description = tech_endless_evolution_modifier_desc
 		description_parameters = {
 			POINTS = 1
 		}
@@ -92,7 +92,7 @@ tech_endless_evolution_2 = {
 	}
 	
 	modifier = {
-		description = tech_endless_evolution_2
+		description = tech_endless_evolution_2_modifier_desc
 		description_parameters = {
 			POINTS = 1
 		}

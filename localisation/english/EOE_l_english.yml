@@ -28,6 +28,7 @@ gov_EOE_plutocratic_oligarchy_desc:0 "$gov_plutocratic_oligarchy_desc$"
 
 tech_endless_evolution:0"Endless Evolution"
 tech_endless_evolution_desc:0"With a deeper understanding of genes, we will eventually stimulate all our potential."
+tech_endless_evolution_modifier_desc:0"$species_trait_points_add$: $POINTS|0=+$"
 tech_mega_evolution:0"Mega Evolution"
 tech_mega_evolution_desc:0"Born out of our ancestors millions of years ago, our psionic biotechnology has surpassed our creators. The study of the nature of genes and psionics will bring us endless possibilities."
 tech_mega_evolution_modifier_desc:0"$species_trait_points_add$: $POINTS|0=+$\nGene modification project cost:§G-25%§!"

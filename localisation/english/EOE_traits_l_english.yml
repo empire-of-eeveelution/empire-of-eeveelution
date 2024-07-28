@@ -408,3 +408,4 @@ leader_trait_admiral_fairy_type_1_desc:0"This leader is the principal of a milit
 
 tech_endless_evolution_2:0 "Infinity Optimization"
 tech_endless_evolution_2_desc:0 "Testing"
+tech_endless_evolution_2_modifier_desc:0"$species_trait_points_add$: $POINTS|0=+$"
