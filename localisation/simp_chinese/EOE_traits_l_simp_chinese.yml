@@ -390,3 +390,4 @@ leader_trait_admiral_fairy_type_1_desc:0"这位领袖是一所军校的校长，
 
 tech_endless_evolution_2:0 "无穷优化"
 tech_endless_evolution_2_desc:0 "测试"
+tech_endless_evolution_2_modifier_desc:0"$species_trait_points_add$: $POINTS|0=+$"

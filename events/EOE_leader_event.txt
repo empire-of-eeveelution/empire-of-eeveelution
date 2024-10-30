@@ -5914,7 +5914,14 @@ country_event = {   #一级随机上特质
 						OR = {
 							has_trait = leader_trait_admiral_fairy_type_1
 							NOT= {
-								owner = {any_owned_pop = {has_trait = trait_fairy_type_mega_evolution}}
+								owner = {
+									any_owned_pop = {
+									OR = {
+									has_trait = trait_fairy_type_mega_evolution 
+									has_trait = trait_fairy_type_mega_evolution_swarm 
+								}
+							}
+						}
 							}
 						}
 
@@ -6111,7 +6118,14 @@ country_event = {   #一级随机上特质
 							OR = {
 								has_trait = leader_trait_admiral_fairy_type_1
 								NOT= {
-									owner = {any_owned_pop = {has_trait = trait_fairy_type_mega_evolution}}
+									owner = {
+									any_owned_pop = {
+									OR = {
+									has_trait = trait_fairy_type_mega_evolution 
+									has_trait = trait_fairy_type_mega_evolution_swarm 
+								}
+							}
+						}
 								}
 							}
 
@@ -6335,7 +6349,14 @@ country_event = {   #4级随机上特质
 						OR = {
 							has_trait = leader_trait_admiral_fairy_type_1
 							NOT= {
-								owner = {any_owned_pop = {has_trait = trait_fairy_type_mega_evolution}}
+								owner = {
+									any_owned_pop = {
+									OR = {
+									has_trait = trait_fairy_type_mega_evolution 
+									has_trait = trait_fairy_type_mega_evolution_swarm 
+								}
+							}
+						}
 							}
 						}
 
@@ -6534,7 +6555,14 @@ country_event = {   #4级随机上特质
 							OR = {
 								has_trait = leader_trait_admiral_fairy_type_1
 								NOT= {
-									owner = {any_owned_pop = {has_trait = trait_fairy_type_mega_evolution}}
+									owner = {
+									any_owned_pop = {
+									OR = {
+									has_trait = trait_fairy_type_mega_evolution 
+									has_trait = trait_fairy_type_mega_evolution_swarm 
+								}
+							}
+						}
 								}
 							}
 
@@ -6758,7 +6786,14 @@ country_event = {   #8级随机上特质
 						OR = {
 							has_trait = leader_trait_admiral_fairy_type_1
 							NOT= {
-								owner = {any_owned_pop = {has_trait = trait_fairy_type_mega_evolution}}
+								owner = {
+									any_owned_pop = {
+									OR = {
+									has_trait = trait_fairy_type_mega_evolution 
+									has_trait = trait_fairy_type_mega_evolution_swarm 
+								}
+							}
+						}
 							}
 						}
 
@@ -6957,8 +6992,16 @@ country_event = {   #8级随机上特质
 							OR = {
 								has_trait = leader_trait_admiral_fairy_type_1
 								NOT= {
-									owner = {any_owned_pop = {has_trait = trait_fairy_type_mega_evolution}}
+									owner = {
+									any_owned_pop = {
+									OR = {
+									has_trait = trait_fairy_type_mega_evolution 
+									has_trait = trait_fairy_type_mega_evolution_swarm 
 								}
+							}
+						}
+								}
+								
 							}
 
 						}
