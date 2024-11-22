@@ -6295,7 +6295,7 @@ astral_rift_event = {
 	is_triggered_only = yes
 	option = {
 		name = EOE_branch.156.a 
-		set_next_astral_rift_event = { id = EOE_branch.159 }
+		set_next_astral_rift_event = { id = EOE_branch.1591 }
 	}
 	after = {
 		explorer = {
@@ -6306,9 +6306,9 @@ astral_rift_event = {
 #再补充一页事件，说明究极空间人的生活
 #究极大都会
 astral_rift_event = {			
-	id = EOE_branch.159
-	title = EOE_branch.159.name
-	desc = EOE_branch.159.desc
+	id = EOE_branch.1591
+	title = EOE_branch.1591.name
+	desc = EOE_branch.1591.desc
 	picture = GFX_evt_EOE_ultra_megalopolis
 	show_sound = event_pre_ftl_civilization
 	difficulty = 1
@@ -6316,7 +6316,7 @@ astral_rift_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = EOE_branch.159.a 
+		name = EOE_branch.1591.a 
 		set_next_astral_rift_event = { id = EOE_branch.157 }
 	}
 	after = {
