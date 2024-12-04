@@ -5628,17 +5628,17 @@ ship_event = { #其他第三次，正常抓个鬼
 			}
 		}
 	}
-	option = {
-		name = EOE_branch.130.b
-		custom_tooltip = EOE_branch.130.b.tooltip #继续使用传送门
-		owner = {
-			enable_special_project = {
-				name = EOE_enter_portal_4
-				location = event_target:EOE_ghost_planet
-				owner = this
-			}
-		}
-	}
+	# option = {
+	# 	name = EOE_branch.130.b
+	# 	custom_tooltip = EOE_branch.130.b.tooltip #继续使用传送门
+	# 	owner = {
+	# 		enable_special_project = {
+	# 			name = EOE_enter_portal_4
+	# 			location = event_target:EOE_ghost_planet
+	# 			owner = this
+	# 		}
+	# 	}
+	# }
 } 
 ship_event = { #第二次的随机，结尾事件
 	id = EOE_branch.134
