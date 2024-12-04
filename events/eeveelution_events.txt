@@ -1403,25 +1403,39 @@ country_event = {
 	
 	immediate = {
 		random_planet_within_border = {
-			limit = {
-				OR = {
-					is_planet_class = pc_continental
-					is_planet_class = pc_tropical
-					is_planet_class = pc_ocean
-					is_planet_class = pc_arctic
-					is_planet_class = pc_arid
-					is_planet_class = pc_tundra
-					is_planet_class = pc_alpine
-					is_planet_class = pc_savannah
-					is_planet_class = pc_desert
-					is_planet_class = pc_gaia
-					is_planet_class = pc_relic
-					
+			if = {
+				limit = {
+					OR = {
+						is_planet_class = pc_continental
+						is_planet_class = pc_tropical
+						is_planet_class = pc_ocean
+						is_planet_class = pc_arctic
+						is_planet_class = pc_arid
+						is_planet_class = pc_tundra
+						is_planet_class = pc_alpine
+						is_planet_class = pc_savannah
+						is_planet_class = pc_desert
+						is_planet_class = pc_gaia
+						is_planet_class = pc_relic
+						
+						
+					}
+					NOT = { exists = archaeological_site }
+					NOT = { has_planet_flag = suppress_archaeological_sites }
 				}
-				NOT = { exists = archaeological_site }
-				NOT = { has_planet_flag = suppress_archaeological_sites }
+				save_event_target_as = EOE_Dimension_Ark
+
 			}
-			save_event_target_as = EOE_Dimension_Ark
+			else_if = {
+				limit = {
+					NOT = { exists = archaeological_site }
+				NOT = { has_planet_flag = suppress_archaeological_sites }
+			 }
+
+			 save_event_target_as = EOE_Dimension_Ark
+
+			}
+			
 		}
 	}
 
