@@ -307,7 +307,7 @@ trait_pokeball_adaptability = {
 trait_natural_psionic_warrior = {
 	cost = 0
 	potential_crossbreeding_chance = 1.00
-	icon = "gfx/interface/icons/traits/EOET5.dds"
+	icon = "gfx/interface/icons/traits/EOET5.png"
 	
 	improves_leaders = no
 	initial = yes
