@@ -26,8 +26,11 @@ EOE_MEW_Whirlpool_DESC:0"The psionic power emitted by this organ can cause sever
 EOE_MEW_Aura_Sphere:0 "Aura Sphere"
 EOE_MEW_Aura_Sphere_DESC:0 "Developed based on the Pokémon move of the same name, this organ is capable of firing psychic missiles with tracking capabilities at extremely high speeds, making it suitable for intercepting incoming small, high-speed targets. \n§TYou can also cultivate these organs on your battleship and use them as ship components. §!"
 
+# EOE_MEW_Sky_Attack:0 "Sky attack"
+# EOE_MEW_Sky_Attack_DESC:0 "Developed based on the Pokémon move of the same name,This organ can produce particle clusters in the shape of flying birds, which can disable shield systems through destructive resonance. \n§TYou can also cultivate these organs on your battleship and use them as ship components. §!"
+
 EOE_MEW_Sky_Attack:0 "Sky attack"
-EOE_MEW_Sky_Attack_DESC:0 "Developed based on the Pokémon move of the same name,This organ can produce particle clusters in the shape of flying birds, which can disable shield systems through destructive resonance. \n§TYou can also cultivate these organs on your battleship and use them as ship components. §!"
+EOE_MEW_Sky_Attack_DESC:0 "Developed based on the Pokémon move of the same name, This bird shaped explosive symbiote use psi energies to force itself through the very fabric of reality, and break through enemy air defense with rapid short distance jumps."
 
 EOE_Draco_Meteor:0 "Draco Meteor"
 EOE_Draco_Meteor_DESC:0" Based on the eponymous Pokémon move, this organ generates tightly packed high-energy neutrons and accelerates them to near-light speed, and the relativistic effect gives the projectile a huge mass that makes space-time tremble. \n§TYou can also cultivate these organs on a battleship and use them as ship components. §!"

@@ -274,17 +274,60 @@ weapon_component_template = { #小 精神冲击
 	}	
 }
 
-weapon_component_template = { #神鸟猛击
+# weapon_component_template = { #神鸟猛击
+# 	key = "EOE_MEW_Sky_Attack" #Mew Torpedo
+# 	size = torpedo
+	
+# 	icon = "GFX_EOE_sky_attack" 
+# 	icon_frame = 1
+# 	type = instant #Essentially a neutron launcher but in reverse.
+	
+# 	damage = { min = 130 max = 195 }
+# 	windup = { min = 20 max = 140 }
+# 	total_fire_time = 130
+# 	min_range = 0
+# 	# firing_arc = 30
+# 	range = 50
+# 	accuracy = 1
+# 	tracking = 0.1
+# 	power = -70
+# 	armor_damage = 1.5
+# 	shield_penetration = 1
+# 	size_damage_factor = 1.0
+
+# 	resources = {
+# 		category = pokemon_ships
+# 		cost = {
+# 			food = 50
+# 			alloys = 5
+# 		}
+# 		upkeep = {
+# 			food = 0.1
+# 		}
+# 	}
+
+# 	prerequisites = { "tech_EOE_Mew_weapon" }
+# 	component_set = "EOE_MEW_Sky_Attack"
+# 	projectile_gfx = "neutron_torpedoes" #again, a placeholder untill we get something better.
+# 	tags = { weapon_type_explosive weapon_type_kinetic }
+# 	ai_tags = { weapon_role_artillery artillery artillery_stealth  }
+# 	ai_weight = {
+# 		weight = 3
+# 	}
+# }
+
+
+weapon_component_template = { #勇鸟猛击       尝试做成高突防能力的三级鱼雷，保留之前的，先测试下平衡
 	key = "EOE_MEW_Sky_Attack" #Mew Torpedo
 	size = torpedo
 	
 	icon = "GFX_EOE_sky_attack" 
 	icon_frame = 1
-	type = instant #Essentially a neutron launcher but in reverse.
+	type = missile 
 	
-	damage = { min = 130 max = 195 }
-	windup = { min = 20 max = 140 }
-	total_fire_time = 130
+	damage = { min = 169 max = 254 }
+	windup = { min = 1 max = 14 }
+	total_fire_time = 200
 	min_range = 0
 	# firing_arc = 30
 	range = 50
@@ -294,6 +337,11 @@ weapon_component_template = { #神鸟猛击
 	armor_damage = 1.5
 	shield_penetration = 1
 	size_damage_factor = 1.0
+	missile_speed = 55
+	missile_evasion = 0.9
+	missile_health = 10
+	missile_armor = 10
+	missile_retarget_range = 100
 
 	resources = {
 		category = pokemon_ships
@@ -305,16 +353,17 @@ weapon_component_template = { #神鸟猛击
 			food = 0.1
 		}
 	}
-
+	size_restriction = { EOE_mew }
 	prerequisites = { "tech_EOE_Mew_weapon" }
 	component_set = "EOE_MEW_Sky_Attack"
-	projectile_gfx = "neutron_torpedoes" #again, a placeholder untill we get something better.
-	tags = { weapon_type_explosive weapon_type_kinetic }
+	projectile_gfx = "scourge_missile" #again, a placeholder untill we get something better.
+	tags = { weapon_type_explosive weapon_type_kinetic g_slot}
 	ai_tags = { weapon_role_artillery artillery artillery_stealth  }
 	ai_weight = {
 		weight = 3
 	}
 }
+
 
 
 weapon_component_template = { #大自爆
