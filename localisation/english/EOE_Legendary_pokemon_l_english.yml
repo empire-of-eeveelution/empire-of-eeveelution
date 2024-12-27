@@ -21,7 +21,7 @@ EOE_MEW_Psyshock_large:0 "Behemoth Psyshock"
 EOE_MEW_Psyshock_DESC:0 "Developed based on the eponymous Pokémon move , this organ can convert psionic into kinetic energy and blast enemy ships without the need for work mass. Pokemon's directional psionic attack is suitable for sniping small high-speed targets at a long distance, but it is difficult to cause effective damage to large ships. \n§TYou can also cultivate these organs on your battleship and use them as ship components. §!"
 
 EOE_MEW_Whirlpool:0"Muddy Whirlpool"
-EOE_MEW_Whirlpool_DESC:0"The psionic power emitted by this organ can cause severe disturbance to the subspace and interfere with the enemy's FTL engine and shield system."
+EOE_MEW_Whirlpool_DESC:0"The psionic power emitted by this organ can cause severe disturbance to the subspace and interfere with the enemy's FTL engine and aiming system."
 
 EOE_MEW_Aura_Sphere:0 "Aura Sphere"
 EOE_MEW_Aura_Sphere_DESC:0 "Developed based on the Pokémon move of the same name, this organ is capable of firing psychic missiles with tracking capabilities at extremely high speeds, making it suitable for intercepting incoming small, high-speed targets. \n§TYou can also cultivate these organs on your battleship and use them as ship components. §!"
@@ -65,7 +65,9 @@ MEW_JUMP_DRIVE_DESC:1 "This organ uses the psionic of Mews to interrupt the spac
 MEW_THRUSTER:0 "Mew type thruster"
 MEW_THRUSTER_DESC:1 "Similar to the \"Force\" used by eevees to operate tools, this organ converts psionic into kinetic energy, giving Mew excellent mobility."
 MEW_COMPUTER:0 "Mew type thinking core"
-MEW_COMPUTER_DESC:1 "Mew's complex brain allows it to handle rapidly changing battlefield situations, and its intellectual personality is limited to the level of 12-year-old eevees. \n Some soldiers report that some Mews also imitate the behavior of Latias, changing into the appearance of young women to have a free meal in the mess hall."
+MEW_COMPUTER_DESC:1 "Mew's complex brain allows it to handle rapidly changing battlefield situations, and its intellectual personality is same as normal crew. \n Some soldiers report that some Mews also imitate the behavior of Latias, changing into the appearance of young women to have a free meal in the mess hall."
+MEW_COMPUTER_ARTILLERY:0"Mew type thinking core"
+MEW_COMPUTER_ARTILLERY_DESC:1"Mew's complex brain allows it to handle rapidly changing battlefield situations, and its intellectual personality is same as normal crew. \n Some soldiers report that some Mews also imitate the behavior of Latias, changing into the appearance of young women to have a free meal in the mess hall."
 MEW_SENSOR:0 "Mew Mind Sensor"
 MEW_SENSOR_DESC:1 "This organ allows the Mew to peer into the projection of the real world in the shroud, where all activities in the vicinity of tens of light years are nowhere to hide under the gaze from another dimension."
 ######## latias

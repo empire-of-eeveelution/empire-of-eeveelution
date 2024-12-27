@@ -84,6 +84,8 @@ EOE_mental_assault = {
 	icon = EOE_mental_assault
 	modifier = {
 		empire_size_penalty_mult = -0.1
+		country_capture_amount_add = 1
+		country_capture_chance_add = 0.1
 	}
 	potential = { 
 		OR = {
@@ -113,6 +115,8 @@ EOE_mental_storm = {
 	icon = EOE_mental_storm
 	modifier = {
 		empire_size_penalty_mult = -0.25
+		country_capture_amount_add = 1
+		country_capture_chance_add = 0.15
 	}
 	prereqfor_desc = {
 		ship = {
@@ -168,6 +172,10 @@ EOE_Membrane_warp_mapping = {
 			desc = EOE_Membrane_warp_mapping_effect_desc
 		}
 	}
+	modifier = {
+		country_capture_amount_add = 1
+		country_capture_chance_add = 0.1
+	}
 	potential = { 
 		OR = {
 			any_owned_pop = { has_trait = trait_pokeball_adaptability has_trait = trait_EOE_Inheritors }
@@ -196,6 +204,10 @@ EOE_Membrane_fold = {
 			title = EOE_Membrane_fold_effect
 			desc = EOE_Membrane_fold_effect_desc
 		}
+	}
+	modifier = {
+		country_capture_amount_add = 1
+		country_capture_chance_add = 0.1
 	}
 	potential = { 
 		OR = {

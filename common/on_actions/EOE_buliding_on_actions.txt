@@ -7,9 +7,11 @@ on_game_start_country = {
 		EOEbuliding.5
 		EOEbuliding.6
 		EOEbuliding.9
+		EOEbuliding.1001
+		EOEbuliding.1002
 		EOEbuliding.16
-		EOEbuliding.18
-		EOEbuliding.19
+		# EOEbuliding.18
+		# EOEbuliding.19
 		EOE_building.1 #计划进化国策的初始化
 		}
 }
@@ -68,6 +70,8 @@ on_post_government_changed = {
 		EOEbuliding.5
 		EOEbuliding.6
 		EOEbuliding.9
+		EOEbuliding.1001
+		EOEbuliding.1002
 	}
 }
 # on_monthly_pulse = {

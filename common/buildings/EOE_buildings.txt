@@ -58,7 +58,7 @@ building_hive_node_EOE = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_domination_synaptic_extensions
+				has_active_tradition = tr_domination_synaptic_extensions
 			}
 		}
 		modifier = {
@@ -165,7 +165,7 @@ building_hive_cluster_EOE = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_domination_synaptic_extensions
+				has_active_tradition = tr_domination_synaptic_extensions
 			}
 		}
 		modifier = {
@@ -272,7 +272,7 @@ building_hive_confluence_EOE = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_domination_synaptic_extensions
+				has_active_tradition = tr_domination_synaptic_extensions
 			}
 		}
 		modifier = {
@@ -548,5 +548,145 @@ building_EOE_evolution_planning_office = {
 
 	show_tech_unlock_if = {
 		is_regular_empire = yes
+	}
+}
+
+
+
+building_fe_administration_hive_EOE_1 = {
+	base_buildtime = @b2_time
+	can_build = no
+	can_demolish = yes
+	icon = building_fe_administration_hive_1
+
+	category = unity
+
+	potential = {
+		exists = owner
+		owner = {
+			is_hive_empire = yes
+		}
+		owner = {
+			OR = {
+				is_fallen_empire = yes
+				has_technology = tech_fe_administration_1
+			}
+		}
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = penal_colony
+		}
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_hive_empire = no }
+	}
+
+	convert_to = {
+		building_fe_administration_1
+		building_fe_temple_1
+		building_fe_administration_machine_1
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = @b3_minerals
+			rare_crystals = @fe_sr_cost
+		}
+		upkeep = {
+			rare_crystals = 2
+			alloys = @b2_alloy_upkeep
+			energy = 15
+		}
+	}
+
+	planet_modifier = {
+		job_EOE_synapse_drone_add = @fe_jobs
+	}
+
+	upgrades = {
+		building_fe_administration_hive_EOE_2
+	}
+
+	triggered_desc = {
+		text = job_synapse_drone_effect_desc
+	}
+
+	show_in_tech = tech_fe_administration_1
+
+	show_tech_unlock_if = {
+		is_hive_empire = yes
+	}
+}
+
+building_fe_administration_hive_EOE_2 = {
+	base_buildtime = @b2_time
+	can_build = no
+	icon = building_fe_administration_hive_2
+
+	category = unity
+
+	potential = {
+		exists = owner
+		owner = {
+			is_hive_empire = yes
+		}
+		owner = {
+			OR = {
+				is_fallen_empire = yes
+				has_technology = tech_fe_administration_2
+			}
+		}
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = penal_colony
+		}
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_hive_empire = no
+		}
+	}
+
+	convert_to = {
+		building_fe_administration_2
+		building_fe_temple_2
+		building_fe_administration_machine_2
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = @b3_minerals
+		}
+		upkeep = {
+			rare_crystals = 2
+			alloys = @b2_alloy_upkeep
+			energy = 15
+		}
+		produces = {
+			unity = 20
+		}
+	}
+
+	planet_modifier = {
+		job_EOE_synapse_drone_add = @fe2_jobs
+		pop_housing_usage_mult = -0.1
+	}
+
+	triggered_desc = {
+		text = job_synapse_drone_effect_desc
+	}
+
+	show_in_tech = tech_fe_administration_2
+
+	show_tech_unlock_if = {
+		is_hive_empire = yes
 	}
 }

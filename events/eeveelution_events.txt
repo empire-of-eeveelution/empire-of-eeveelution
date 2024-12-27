@@ -3059,62 +3059,62 @@ country_event = {
 	} 
 }
 
-country_event = {
-	id = eevent.1004
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {  
-		has_tradition = tr_genetics_creation
-		NOT = {
-			has_technology = EOE_tech_tr_genetics_creation
-		}
-	}
+# country_event = {
+# 	id = eevent.1004
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	trigger = {  
+# 		has_tradition = tr_genetics_creation
+# 		NOT = {
+# 			has_technology = EOE_tech_tr_genetics_creation
+# 		}
+# 	}
 
-	immediate = {
-		give_technology = {
-			tech = EOE_tech_tr_genetics_creation
-			message = no
-		}
-	} 
-}
+# 	immediate = {
+# 		give_technology = {
+# 			tech = EOE_tech_tr_genetics_creation
+# 			message = no
+# 		}
+# 	} 
+# }
 
-country_event = {
-	id = eevent.1005
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {  
-		has_tradition = tr_genetics_adopt
-		NOT = {
-			has_technology = EOE_tech_tr_genetics_adopt
-		}
-	}
+# country_event = {
+# 	id = eevent.1005
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	trigger = {  
+# 		has_tradition = tr_genetics_adopt
+# 		NOT = {
+# 			has_technology = EOE_tech_tr_genetics_adopt
+# 		}
+# 	}
 
-	immediate = {
-		give_technology = {
-			tech = EOE_tech_tr_genetics_adopt
-			message = no
-		}		
-	} 
-}
+# 	immediate = {
+# 		give_technology = {
+# 			tech = EOE_tech_tr_genetics_adopt
+# 			message = no
+# 		}		
+# 	} 
+# }
 
-country_event = {
-	id = eevent.1006
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {  
-		has_tradition = tr_genetics_finish
-		NOT = {
-			has_technology = EOE_tech_tr_genetics_finish
-		}
-	}
+# country_event = {
+# 	id = eevent.1006
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	trigger = {  
+# 		has_tradition = tr_genetics_finish
+# 		NOT = {
+# 			has_technology = EOE_tech_tr_genetics_finish
+# 		}
+# 	}
 
-	immediate = {
-		give_technology = {
-			tech = EOE_tech_tr_genetics_finish
-			message = no
-		}		
-	} 
-}
+# 	immediate = {
+# 		give_technology = {
+# 			tech = EOE_tech_tr_genetics_finish
+# 			message = no
+# 		}		
+# 	} 
+# }
 
 country_event = {
 	id = eevent.1007

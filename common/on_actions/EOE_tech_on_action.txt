@@ -11,25 +11,25 @@ on_tech_increased = {
 	}
 }
 
-on_monthly_pulse_country ={
-	events = {
+# on_monthly_pulse_country ={
+# 	events = {
 		
-		eevent.1004
-	}
-}
+# 		eevent.1004
+# 	}
+# }
 
-on_ascension_perk_picked = {
-	events = {
+# on_ascension_perk_picked = {
+# 	events = {
 		
-		eevent.1006
-	}
-}
+# 		eevent.1006
+# 	}
+# }
 
 on_tradition_picked = {
 	events = {
-		eevent.1004
-		eevent.1005
-		eevent.1006
+		# eevent.1004
+		# eevent.1005
+		# eevent.1006
 		eevent.1007
 	}
 }

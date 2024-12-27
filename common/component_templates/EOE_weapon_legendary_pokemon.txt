@@ -1009,6 +1009,34 @@ ai_weight = {
 		weight = 0
 	}}
 
+	utility_component_template = {  #梦幻 炮击电脑
+	key = "MEW_COMPUTER_ARTILLERY"
+	size = small
+	icon = "GFX_EOE_MEW_COMPUTER"
+	icon_frame = 1
+	power = -5
+	resources = {
+		category = pokemon_ships
+		cost = {
+			food = 20
+			alloys = 5
+		}
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.2
+		ship_weapon_range_mult = 0.2
+		ship_tracking_add = 15
+	}
+	ship_behavior = "artillery"
+	#prerequisites = { "tech_EOE_Mew" }
+	class_restriction = { shipclass_military }
+	size_restriction = { EOE_mew}
+	component_set = "combat_computers"
+
+ai_weight = {
+		weight = 0
+	}}
+
 utility_component_template = {   #梦幻  雷达
 	key = "MEW_SENSOR"
 	size = medium
@@ -1472,10 +1500,10 @@ utility_component_template = {
 		}
 		
 		modifier = {
-			ship_disengage_opportunities_add = -2
+			ship_disengage_opportunities_add = -1
 			ship_emergency_ftl_min_days_mult = 1
 			ship_disengage_chance_mult = -1
-			ship_tracking_add = -20
+			ship_tracking_add = -15
 		}
 		
 		graphics = {
