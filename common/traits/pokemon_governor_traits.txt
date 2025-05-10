@@ -252,7 +252,7 @@ leader_trait_governor_water_type_1 = { #水系帝国代表
 # 	selectable_weight = 2000
 #     leader_potential_add = {
 # 	from = {
-# 				any_owned_pop = {
+# 				any_owned_pop_species = {
 # 				pop_has_trait = trait_dark_type_mega_evolution_swarm
 # 			}
 # 			}
@@ -278,7 +278,7 @@ leader_trait_governor_water_type_1 = { #水系帝国代表
 #	selectable_weight = 2000
 #    leader_potential_add = {
 #	from = {
-#				any_owned_pop = {
+#				any_owned_pop_species = {
 #				pop_has_trait = trait_grass_type_mega_evolution
 #			}
 #			}

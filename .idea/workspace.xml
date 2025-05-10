@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="466fb39f-5700-450f-9f42-8c7299091cf8" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/empire-of-eeveelution.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/decisions/EOE_decisions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/decisions/EOE_decisions.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/scripted_effects/EOE_brave_troop_script_effects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/scripted_effects/EOE_brave_troop_script_effects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/scripted_effects/EOE_enol_script_effects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/scripted_effects/EOE_enol_script_effects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/scripted_triggers/scripted_triggers_pokemon.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/scripted_triggers/scripted_triggers_pokemon.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/technology/EOE_pokeball_tech.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/technology/EOE_pokeball_tech.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/technology/EOE_psichic_hive.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/technology/EOE_psichic_hive.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/technology/Pokemon_phys_weapon_tech.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/technology/Pokemon_phys_weapon_tech.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/technology/pokemon_eng_weapon_tech.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/technology/pokemon_eng_weapon_tech.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/technology/pokemon_soc_tech.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/technology/pokemon_soc_tech.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/technology/pokemon_soc_tech_repeatable.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/technology/pokemon_soc_tech_repeatable.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/technology/pokemon_soc_weapon_tech.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/technology/pokemon_soc_weapon_tech.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/traits/pokemon_admiral_traits.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/traits/pokemon_admiral_traits.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/traits/pokemon_governor_traits.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/traits/pokemon_governor_traits.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/traits/pokemon_scientist_traits.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/traits/pokemon_scientist_traits.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/EOE_branch_event.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/EOE_branch_event.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/EOE_building_event.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/EOE_building_event.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/EOE_event_triggers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/EOE_event_triggers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/EOE_ghost_random_event.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/EOE_ghost_random_event.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/EOE_hidden_additional_traits_events.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/EOE_hidden_additional_traits_events.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/EOE_leader_event.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/EOE_leader_event.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/EOE_swarm_traits.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/EOE_swarm_traits.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/eeveelution_events.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/eeveelution_events.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/hidden_pokemon_traits_remove_events.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/hidden_pokemon_traits_remove_events.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;empire-of-eeveelution&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:empire-of-eeveelution/empire-of-eeveelution.git&quot;,
+    &quot;accountId&quot;: &quot;7056d2c2-6bc6-4535-b76b-9b4d913418ec&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2wg4nBb4dWjxe43TOFqiUhBgPgC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/SteamLibrary/steamapps/common/Stellaris&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="466fb39f-5700-450f-9f42-8c7299091cf8" name="更改" comment="" />
+      <created>1746450048374</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746450048374</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="蜂群国策兼容文灾建筑并优化性能，水系草系物种特质适配现版本，精灵球科技提供重力陷阱加成，无光星球不能作为初始球出现（随机的AI会无光开，然后崩掉）" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+</project>

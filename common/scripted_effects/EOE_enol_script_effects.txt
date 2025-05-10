@@ -415,7 +415,7 @@ EOE_nolight_deposit = {
 #留个样板罢了，其实根本没用到
 EOE_assimilation_effect = {
 	optimize_memory
-	random_owned_pop = {
+	random_owned_pop_group = {
 		limit = {
 			has_citizenship_type = {
 				type = EOE_citizenship_assimilation

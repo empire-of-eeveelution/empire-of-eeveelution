@@ -24,7 +24,7 @@ tech_precognition_interface_EOE = {
 		factor = 0
 	}
 	potential = {
-		any_owned_pop = {
+		any_owned_pop_species = {
 			has_trait = trait_EOE_Inheritors
 		}
 	}
@@ -57,7 +57,7 @@ tech_psi_jump_drive_1_EOE = {
 		}
 	}
 	potential = {
-		any_owned_pop = {
+		any_owned_pop_species = {
 			has_trait = trait_EOE_Inheritors
 		}
 	}
@@ -79,7 +79,7 @@ tech_psionic_barrier_EOE = {
 	is_reverse_engineerable = no
 	icon = tech_psionic_barrier
 	potential = {
-		any_owned_pop = {
+		any_owned_pop_species = {
 			has_trait = trait_EOE_Inheritors
 		}
 	}
@@ -99,7 +99,7 @@ tech_psionic_shield_EOE = {
 	weight = 0
 	is_reverse_engineerable = no
 	potential = {
-		any_owned_pop = {
+		any_owned_pop_species = {
 			has_trait = trait_EOE_Inheritors
 		}
 	}

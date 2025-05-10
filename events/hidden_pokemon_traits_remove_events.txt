@@ -16,7 +16,7 @@ event = {
         every_country = {
             limit = {
 				has_country_flag = flag_trait_fairy_type_mega_evolution
-				NOT = { any_owned_pop = {    has_trait = trait_fairy_type_mega_evolution     }       }
+				NOT = { any_owned_pop_species = {    has_trait = trait_fairy_type_mega_evolution     }       }
             }
             remove_modifier =  wear_trait_fairy_type_mega_evolution
 			remove_country_flag = flag_trait_fairy_type_mega_evolution

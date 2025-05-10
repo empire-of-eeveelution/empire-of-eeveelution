@@ -237,7 +237,7 @@ leader_trait_scientist_electric_type_1 = { #电系科学家
 #			has_trait = leader_trait_scientist_electric_type_Energy_Mastery_1
 #		}
 #	from = {
-#				any_owned_pop = {
+#				any_owned_pop_species = {
 #				pop_has_trait = trait_electric_type_mega_evolution
 #			}
 #			}

@@ -9,7 +9,7 @@ country_event = {
 			}		
 	}
 	immediate = {
-		every_owned_pop = {
+		every_owned_pop_group = {
 			if = {
 				limit = { 
 				has_trait = trait_ice_type_mega_evolution
@@ -41,7 +41,7 @@ country_event = {
 			}		
 	}
 	immediate = {
-		every_owned_pop = {
+		every_owned_pop_group = {
 			if = {
 				limit = { 
 				has_trait = trait_dark_type_mega_evolution
@@ -71,7 +71,7 @@ country_event = {
 			}		
 	}
 	immediate = {
-		every_owned_pop = {
+		every_owned_pop_group = {
 			if = {
 				limit = { 
 				has_trait = trait_fairy_type_mega_evolution

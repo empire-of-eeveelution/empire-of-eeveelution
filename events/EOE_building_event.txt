@@ -674,7 +674,7 @@ country_event = {
 				while = {
 					count = 4
 					hidden_effect = {
-						random_owned_pop = {
+						random_owned_pop_group = {
 							kill_pop = yes
 						}
 					}
@@ -711,10 +711,10 @@ country_event = {
 		}
 		else = {
 			capital_scope = {
-				random_owned_pop = {
+				random_owned_pop_group = {
 					kill_pop = yes
 				}
-				random_owned_pop = {
+				random_owned_pop_group = {
 					kill_pop = yes
 				}
 				create_pop = {

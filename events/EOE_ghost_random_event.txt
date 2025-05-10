@@ -10882,7 +10882,7 @@ planet_event = {
 		}
 	}
 	immediate = {
-		every_owned_pop = {
+		every_owned_pop_group = {
 			kill_pop = yes
 		}
 		change_pc = pc_shrouded

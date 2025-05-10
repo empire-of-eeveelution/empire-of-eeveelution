@@ -17,7 +17,7 @@ country_event = {
 				limit = {
 					has_leader_flag = EOE_leader_okra
 					owner = {
-						any_owned_pop = {
+						any_owned_pop_species = {
 							has_trait = trait_psychic_type_mega_evolution
 						}
 					}
@@ -28,7 +28,7 @@ country_event = {
 				limit = {
 					has_leader_flag = EOE_leader_hezi
 					owner = {
-						any_owned_pop = {
+						any_owned_pop_species = {
 							has_trait = trait_psychic_type_mega_evolution
 						}
 					}
@@ -5507,7 +5507,7 @@ country_event = {
 		name = leadereevent.86.a
 		trigger = {
 			NOT = {
-				any_owned_pop = {
+				any_owned_pop_species = {
 					has_trait = trait_psychic_type_mega_evolution
 				}
 			}
@@ -5521,7 +5521,7 @@ country_event = {
 	option = {
 		name = leadereevent.86.a
 		trigger = {
-			any_owned_pop = {
+			any_owned_pop_species = {
 				has_trait = trait_psychic_type_mega_evolution
 			}
 		}
@@ -5630,10 +5630,10 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		OR = {
-			any_owned_pop = {
+			any_owned_pop_species = {
 				has_trait = trait_fairy_type_mega_evolution
 			}
-			any_owned_pop = {
+			any_owned_pop_species = {
 				has_trait = trait_fairy_type_mega_evolution_swarm
 			}
 		}
@@ -5666,7 +5666,7 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		any_owned_pop = {
+		any_owned_pop_species = {
 			has_trait = trait_psychic_type_mega_evolution
 		}
 	}
@@ -5707,10 +5707,10 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		OR = {
-			any_owned_pop = {
+			any_owned_pop_species = {
 				has_trait = trait_dark_type_mega_evolution
 			}
-			any_owned_pop = {
+			any_owned_pop_species = {
 				has_trait = trait_dark_type_mega_evolution_swarm
 			}
 		}
@@ -5751,7 +5751,7 @@ country_event = {
 # 	hide_window = yes
 # 	is_triggered_only = yes
 # 	trigger = {
-# 		any_owned_pop = {
+# 		any_owned_pop_species = {
 # 			has_trait = trait_fairy_type_mega_evolution_swarm
 # 		}
 # 	}
@@ -5810,7 +5810,7 @@ country_event = {   #一级随机上特质
 						OR = {
 						has_trait = leader_trait_scientist_water_type_1
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_water_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
 						}
 					}
 					}
@@ -5824,7 +5824,7 @@ country_event = {   #一级随机上特质
 					OR = {
 						has_trait = leader_trait_scientist_dark_type_night_owl_1
 					NOT= {
-						owner = {any_owned_pop = {OR ={
+						owner = {any_owned_pop_species = {OR ={
 							has_trait = trait_dark_type_mega_evolution
 							has_trait = trait_dark_type_mega_evolution_swarm
 						}}}
@@ -5842,7 +5842,7 @@ country_event = {   #一级随机上特质
 				OR = {
 					has_trait = leader_trait_scientist_electric_type_1
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_electric_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
 					}
 				}
 				
@@ -5868,7 +5868,7 @@ country_event = {   #一级随机上特质
 						OR = {
 							has_trait = leader_trait_ice_type_Directed_molecular_activation_1
 						NOT= {
-							owner = {any_owned_pop = {OR ={
+							owner = {any_owned_pop_species = {OR ={
 								has_trait = trait_ice_type_mega_evolution
 								has_trait = trait_ice_type_mega_evolution_swarm
 							}}}
@@ -5887,7 +5887,7 @@ country_event = {   #一级随机上特质
 					OR = {
 						has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_fire_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
 					}
 				}
 					
@@ -5902,7 +5902,7 @@ country_event = {   #一级随机上特质
 				OR = {
 					has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_grass_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
 					}
 				}
 				
@@ -5918,7 +5918,7 @@ country_event = {   #一级随机上特质
 							has_trait = leader_trait_admiral_fairy_type_1
 							NOT= {
 								owner = {
-									any_owned_pop = {
+									any_owned_pop_species = {
 									OR = {
 									has_trait = trait_fairy_type_mega_evolution 
 									has_trait = trait_fairy_type_mega_evolution_swarm 
@@ -5952,7 +5952,7 @@ country_event = {   #一级随机上特质
 						OR = {
 							has_trait = leader_trait_governor_ice_type_nano_builder_1
 						NOT= {
-							owner = {any_owned_pop = {OR ={
+							owner = {any_owned_pop_species = {OR ={
 								has_trait = trait_ice_type_mega_evolution
 								has_trait = trait_ice_type_mega_evolution_swarm
 							}}}
@@ -5971,7 +5971,7 @@ country_event = {   #一级随机上特质
 					OR = {
 						has_trait = leader_trait_governor_dark_type_necessary_evil_1
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_dark_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
 						}
 					}
 					
@@ -5986,7 +5986,7 @@ country_event = {   #一级随机上特质
 				OR = {
 					has_trait = leader_trait_governor_water_type_1
 				NOT= {
-					owner = {any_owned_pop = {has_trait = trait_water_type_mega_evolution}}
+					owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
 				}
 				}
 				
@@ -6017,7 +6017,7 @@ country_event = {   #一级随机上特质
 							OR = {
 							has_trait = leader_trait_scientist_water_type_1
 							NOT= {
-								owner = {any_owned_pop = {has_trait = trait_water_type_mega_evolution}}
+								owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
 							}
 						}
 						}
@@ -6031,7 +6031,7 @@ country_event = {   #一级随机上特质
 						OR = {
 							has_trait = leader_trait_scientist_dark_type_night_owl_1
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_dark_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
 						}
 						}
 						
@@ -6046,7 +6046,7 @@ country_event = {   #一级随机上特质
 					OR = {
 						has_trait = leader_trait_scientist_electric_type_1
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_electric_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
 						}
 					}
 					
@@ -6072,7 +6072,7 @@ country_event = {   #一级随机上特质
 							OR = {
 								has_trait = leader_trait_ice_type_Directed_molecular_activation_1
 							NOT= {
-								owner = {any_owned_pop = {OR ={
+								owner = {any_owned_pop_species = {OR ={
 								has_trait = trait_ice_type_mega_evolution
 								has_trait = trait_ice_type_mega_evolution_swarm
 							}}}
@@ -6091,7 +6091,7 @@ country_event = {   #一级随机上特质
 						OR = {
 							has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_fire_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
 						}
 					}
 						
@@ -6106,7 +6106,7 @@ country_event = {   #一级随机上特质
 					OR = {
 						has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_grass_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
 						}
 					}
 					
@@ -6122,7 +6122,7 @@ country_event = {   #一级随机上特质
 								has_trait = leader_trait_admiral_fairy_type_1
 								NOT= {
 									owner = {
-									any_owned_pop = {
+									any_owned_pop_species = {
 									OR = {
 									has_trait = trait_fairy_type_mega_evolution 
 									has_trait = trait_fairy_type_mega_evolution_swarm 
@@ -6155,7 +6155,7 @@ country_event = {   #一级随机上特质
 							OR = {
 								has_trait = leader_trait_governor_ice_type_nano_builder_1
 							NOT= {
-								owner = {any_owned_pop = {OR ={
+								owner = {any_owned_pop_species = {OR ={
 								has_trait = trait_ice_type_mega_evolution
 								has_trait = trait_ice_type_mega_evolution_swarm
 							}}}
@@ -6174,7 +6174,7 @@ country_event = {   #一级随机上特质
 						OR = {
 							has_trait = leader_trait_governor_dark_type_necessary_evil_1
 							NOT= {
-								owner = {any_owned_pop = {has_trait = trait_dark_type_mega_evolution}}
+								owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
 							}
 						}
 						
@@ -6189,7 +6189,7 @@ country_event = {   #一级随机上特质
 					OR = {
 						has_trait = leader_trait_governor_water_type_1
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_water_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
 					}
 					}
 					
@@ -6247,7 +6247,7 @@ country_event = {   #4级随机上特质
 						OR = {
 						has_trait = leader_trait_scientist_water_type_1
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_water_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
 						}
 					}
 					}
@@ -6261,7 +6261,7 @@ country_event = {   #4级随机上特质
 					OR = {
 						has_trait = leader_trait_scientist_dark_type_night_owl_1
 					NOT= {
-						owner = {any_owned_pop = {OR ={
+						owner = {any_owned_pop_species = {OR ={
 							has_trait = trait_dark_type_mega_evolution
 							has_trait = trait_dark_type_mega_evolution_swarm
 						}}}
@@ -6279,7 +6279,7 @@ country_event = {   #4级随机上特质
 				OR = {
 					has_trait = leader_trait_scientist_electric_type_1
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_electric_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
 					}
 				}
 				
@@ -6306,7 +6306,7 @@ country_event = {   #4级随机上特质
 						OR = {
 							has_trait = leader_trait_ice_type_Directed_molecular_activation_1
 						NOT= {
-							owner = {any_owned_pop = {OR ={
+							owner = {any_owned_pop_species = {OR ={
 								has_trait = trait_ice_type_mega_evolution
 								has_trait = trait_ice_type_mega_evolution_swarm
 							}}}
@@ -6325,7 +6325,7 @@ country_event = {   #4级随机上特质
 					OR = {
 						has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_fire_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
 					}
 				}
 					
@@ -6340,7 +6340,7 @@ country_event = {   #4级随机上特质
 				OR = {
 					has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_grass_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
 					}
 				}
 				
@@ -6356,7 +6356,7 @@ country_event = {   #4级随机上特质
 							has_trait = leader_trait_admiral_fairy_type_1
 							NOT= {
 								owner = {
-									any_owned_pop = {
+									any_owned_pop_species = {
 									OR = {
 									has_trait = trait_fairy_type_mega_evolution 
 									has_trait = trait_fairy_type_mega_evolution_swarm 
@@ -6390,7 +6390,7 @@ country_event = {   #4级随机上特质
 						OR = {
 							has_trait = leader_trait_governor_ice_type_nano_builder_1
 						NOT= {
-							owner = {any_owned_pop = {OR ={
+							owner = {any_owned_pop_species = {OR ={
 								has_trait = trait_ice_type_mega_evolution
 								has_trait = trait_ice_type_mega_evolution_swarm
 							}}}
@@ -6409,7 +6409,7 @@ country_event = {   #4级随机上特质
 					OR = {
 						has_trait = leader_trait_governor_dark_type_necessary_evil_1
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_dark_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
 						}
 					}
 					
@@ -6424,7 +6424,7 @@ country_event = {   #4级随机上特质
 				OR = {
 					has_trait = leader_trait_governor_water_type_1
 				NOT= {
-					owner = {any_owned_pop = {has_trait = trait_water_type_mega_evolution}}
+					owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
 				}
 				}
 				
@@ -6456,7 +6456,7 @@ country_event = {   #4级随机上特质
 							OR = {
 							has_trait = leader_trait_scientist_water_type_1
 							NOT= {
-								owner = {any_owned_pop = {has_trait = trait_water_type_mega_evolution}}
+								owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
 							}
 						}
 						}
@@ -6470,7 +6470,7 @@ country_event = {   #4级随机上特质
 						OR = {
 							has_trait = leader_trait_scientist_dark_type_night_owl_1
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_dark_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
 						}
 						}
 						
@@ -6485,7 +6485,7 @@ country_event = {   #4级随机上特质
 					OR = {
 						has_trait = leader_trait_scientist_electric_type_1
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_electric_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
 						}
 					}
 					
@@ -6512,7 +6512,7 @@ country_event = {   #4级随机上特质
 							OR = {
 								has_trait = leader_trait_ice_type_Directed_molecular_activation_1
 							NOT= {
-								owner = {any_owned_pop = {OR ={
+								owner = {any_owned_pop_species = {OR ={
 								has_trait = trait_ice_type_mega_evolution
 								has_trait = trait_ice_type_mega_evolution_swarm
 							}}}
@@ -6531,7 +6531,7 @@ country_event = {   #4级随机上特质
 						OR = {
 							has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_fire_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
 						}
 					}
 						
@@ -6546,7 +6546,7 @@ country_event = {   #4级随机上特质
 					OR = {
 						has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_grass_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
 						}
 					}
 					
@@ -6562,7 +6562,7 @@ country_event = {   #4级随机上特质
 								has_trait = leader_trait_admiral_fairy_type_1
 								NOT= {
 									owner = {
-									any_owned_pop = {
+									any_owned_pop_species = {
 									OR = {
 									has_trait = trait_fairy_type_mega_evolution 
 									has_trait = trait_fairy_type_mega_evolution_swarm 
@@ -6596,7 +6596,7 @@ country_event = {   #4级随机上特质
 							OR = {
 								has_trait = leader_trait_governor_ice_type_nano_builder_1
 							NOT= {
-								owner = {any_owned_pop = {OR ={
+								owner = {any_owned_pop_species = {OR ={
 								has_trait = trait_ice_type_mega_evolution
 								has_trait = trait_ice_type_mega_evolution_swarm
 							}}}
@@ -6615,7 +6615,7 @@ country_event = {   #4级随机上特质
 						OR = {
 							has_trait = leader_trait_governor_dark_type_necessary_evil_1
 							NOT= {
-								owner = {any_owned_pop = {has_trait = trait_dark_type_mega_evolution}}
+								owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
 							}
 						}
 						
@@ -6630,7 +6630,7 @@ country_event = {   #4级随机上特质
 					OR = {
 						has_trait = leader_trait_governor_water_type_1
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_water_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
 					}
 					}
 					
@@ -6687,7 +6687,7 @@ country_event = {   #8级随机上特质
 						OR = {
 						has_trait = leader_trait_scientist_water_type_1
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_water_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
 						}
 					}
 					}
@@ -6701,7 +6701,7 @@ country_event = {   #8级随机上特质
 					OR = {
 						has_trait = leader_trait_scientist_dark_type_night_owl_1
 					NOT= {
-						owner = {any_owned_pop = {OR ={
+						owner = {any_owned_pop_species = {OR ={
 							has_trait = trait_dark_type_mega_evolution
 							has_trait = trait_dark_type_mega_evolution_swarm
 						}}}
@@ -6719,7 +6719,7 @@ country_event = {   #8级随机上特质
 				OR = {
 					has_trait = leader_trait_scientist_electric_type_1
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_electric_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
 					}
 				}
 				
@@ -6746,7 +6746,7 @@ country_event = {   #8级随机上特质
 						OR = {
 							has_trait = leader_trait_ice_type_Directed_molecular_activation_1
 						NOT= {
-							owner = {any_owned_pop = {OR ={
+							owner = {any_owned_pop_species = {OR ={
 								has_trait = trait_ice_type_mega_evolution
 								has_trait = trait_ice_type_mega_evolution_swarm
 							}}}
@@ -6765,7 +6765,7 @@ country_event = {   #8级随机上特质
 					OR = {
 						has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_fire_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
 					}
 				}
 					
@@ -6780,7 +6780,7 @@ country_event = {   #8级随机上特质
 				OR = {
 					has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_grass_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
 					}
 				}
 				
@@ -6796,7 +6796,7 @@ country_event = {   #8级随机上特质
 							has_trait = leader_trait_admiral_fairy_type_1
 							NOT= {
 								owner = {
-									any_owned_pop = {
+									any_owned_pop_species = {
 									OR = {
 									has_trait = trait_fairy_type_mega_evolution 
 									has_trait = trait_fairy_type_mega_evolution_swarm 
@@ -6830,7 +6830,7 @@ country_event = {   #8级随机上特质
 						OR = {
 							has_trait = leader_trait_governor_ice_type_nano_builder_1
 						NOT= {
-							owner = {any_owned_pop = {OR ={
+							owner = {any_owned_pop_species = {OR ={
 								has_trait = trait_ice_type_mega_evolution
 								has_trait = trait_ice_type_mega_evolution_swarm
 							}}}
@@ -6849,7 +6849,7 @@ country_event = {   #8级随机上特质
 					OR = {
 						has_trait = leader_trait_governor_dark_type_necessary_evil_1
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_dark_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
 						}
 					}
 					
@@ -6864,7 +6864,7 @@ country_event = {   #8级随机上特质
 				OR = {
 					has_trait = leader_trait_governor_water_type_1
 				NOT= {
-					owner = {any_owned_pop = {has_trait = trait_water_type_mega_evolution}}
+					owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
 				}
 				}
 				
@@ -6896,7 +6896,7 @@ country_event = {   #8级随机上特质
 							OR = {
 							has_trait = leader_trait_scientist_water_type_1
 							NOT= {
-								owner = {any_owned_pop = {has_trait = trait_water_type_mega_evolution}}
+								owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
 							}
 						}
 						}
@@ -6910,7 +6910,7 @@ country_event = {   #8级随机上特质
 						OR = {
 							has_trait = leader_trait_scientist_dark_type_night_owl_1
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_dark_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
 						}
 						}
 						
@@ -6925,7 +6925,7 @@ country_event = {   #8级随机上特质
 					OR = {
 						has_trait = leader_trait_scientist_electric_type_1
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_electric_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
 						}
 					}
 					
@@ -6952,7 +6952,7 @@ country_event = {   #8级随机上特质
 							OR = {
 								has_trait = leader_trait_ice_type_Directed_molecular_activation_1
 							NOT= {
-								owner = {any_owned_pop = {OR ={
+								owner = {any_owned_pop_species = {OR ={
 								has_trait = trait_ice_type_mega_evolution
 								has_trait = trait_ice_type_mega_evolution_swarm
 							}}}
@@ -6971,7 +6971,7 @@ country_event = {   #8级随机上特质
 						OR = {
 							has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_fire_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
 						}
 					}
 						
@@ -6986,7 +6986,7 @@ country_event = {   #8级随机上特质
 					OR = {
 						has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_grass_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
 						}
 					}
 					
@@ -7002,7 +7002,7 @@ country_event = {   #8级随机上特质
 								has_trait = leader_trait_admiral_fairy_type_1
 								NOT= {
 									owner = {
-									any_owned_pop = {
+									any_owned_pop_species = {
 									OR = {
 									has_trait = trait_fairy_type_mega_evolution 
 									has_trait = trait_fairy_type_mega_evolution_swarm 
@@ -7037,7 +7037,7 @@ country_event = {   #8级随机上特质
 							OR = {
 								has_trait = leader_trait_governor_ice_type_nano_builder_1
 							NOT= {
-								owner = {any_owned_pop = {OR ={
+								owner = {any_owned_pop_species = {OR ={
 								has_trait = trait_ice_type_mega_evolution
 								has_trait = trait_ice_type_mega_evolution_swarm
 							}}}
@@ -7056,7 +7056,7 @@ country_event = {   #8级随机上特质
 						OR = {
 							has_trait = leader_trait_governor_dark_type_necessary_evil_1
 							NOT= {
-								owner = {any_owned_pop = {has_trait = trait_dark_type_mega_evolution}}
+								owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
 							}
 						}
 						
@@ -7071,7 +7071,7 @@ country_event = {   #8级随机上特质
 					OR = {
 						has_trait = leader_trait_governor_water_type_1
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_water_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
 					}
 					}
 					
@@ -7099,13 +7099,13 @@ country_event = {   #8级随机上特质
 # 	is_triggered_only = yes
 # 	# fire_only_once = yes
 # 	# trigger = {
-# 	# 	any_owned_pop = {
+# 	# 	any_owned_pop_species = {
 # 	# 		has_trait = trait_grass_type_mega_evolution
 # 	# 	}
 # 	# }
 # 	immediate = {
 # 		if = {
-# 			limit = { any_owned_pop = {	has_trait = trait_grass_type_mega_evolution	 }	}
+# 			limit = { any_owned_pop_species = {	has_trait = trait_grass_type_mega_evolution	 }	}
 # 			every_owned_leader = {
 # 				limit = {
 # 					leader_class = governor
@@ -7177,7 +7177,7 @@ country_event = {   #8级随机上特质
 # 		}
 
 # 		if = {
-# 			limit = {any_owned_pop = {	has_trait = trait_fire_type_mega_evolution	} }
+# 			limit = {any_owned_pop_species = {	has_trait = trait_fire_type_mega_evolution	} }
 # 			every_owned_leader = {
 # 				limit = {
 # 					leader_class = scientist
@@ -7249,7 +7249,7 @@ country_event = {   #8级随机上特质
 # 		}
 
 # 		if = {
-# 			limit = { any_owned_pop = {	has_trait = trait_water_type_mega_evolution	}}
+# 			limit = { any_owned_pop_species = {	has_trait = trait_water_type_mega_evolution	}}
 # 			every_owned_leader = {
 # 				limit = {
 # 					leader_class = scientist
@@ -7320,7 +7320,7 @@ country_event = {   #8级随机上特质
 	
 # 		}
 # 		if = {
-# 			limit = { any_owned_pop = {	has_trait = trait_ice_type_mega_evolution	} }
+# 			limit = { any_owned_pop_species = {	has_trait = trait_ice_type_mega_evolution	} }
 # 			every_owned_leader = {
 # 				limit = {
 # 					leader_class = scientist
@@ -7425,7 +7425,7 @@ country_event = {   #8级随机上特质
 	
 # 		}
 # 		if = {
-# 			limit = {any_owned_pop = {	has_trait = trait_electric_type_mega_evolution	} }
+# 			limit = {any_owned_pop_species = {	has_trait = trait_electric_type_mega_evolution	} }
 # 			every_owned_leader = {
 # 				limit = {
 # 					leader_class = scientist
@@ -7530,7 +7530,7 @@ country_event = {   #8级随机上特质
 	
 # 		}
 # 		if = {
-# 			limit = {any_owned_pop = {	has_trait = trait_psychic_type_mega_evolution	} }
+# 			limit = {any_owned_pop_species = {	has_trait = trait_psychic_type_mega_evolution	} }
 # 			every_owned_leader = {
 # 				limit = {
 # 					leader_class = admiral
@@ -7568,7 +7568,7 @@ country_event = {   #8级随机上特质
 # 		}
 
 # 		if = {
-# 			limit = {any_owned_pop = {	has_trait = trait_dark_type_mega_evolution	} }
+# 			limit = {any_owned_pop_species = {	has_trait = trait_dark_type_mega_evolution	} }
 # 			every_owned_leader = {
 # 				limit = {
 # 					leader_class = scientist
@@ -7720,7 +7720,7 @@ country_event = {   #8级随机上特质
 	
 # 		}
 # 		if = {
-# 			limit = {any_owned_pop = {	has_trait = trait_fairy_type_mega_evolution	} }
+# 			limit = {any_owned_pop_species = {	has_trait = trait_fairy_type_mega_evolution	} }
 # 			every_owned_leader = {
 # 				limit = {
 # 					leader_class = general
@@ -7767,7 +7767,7 @@ country_event = {   #8级随机上特质
 # 	is_triggered_only = yes
 # 	# fire_only_once = yes
 # 	trigger = {
-# 		any_owned_pop = {
+# 		any_owned_pop_species = {
 # 			has_trait = trait_fire_type_mega_evolution
 # 		}
 # 	}
@@ -7848,7 +7848,7 @@ country_event = {   #8级随机上特质
 # 	hide_window = yes
 # 	is_triggered_only = yes
 # 	trigger = {
-# 		any_owned_pop = {
+# 		any_owned_pop_species = {
 # 			has_trait = trait_water_type_mega_evolution
 # 		}
 # 	}
@@ -7929,7 +7929,7 @@ country_event = {   #8级随机上特质
 # 	hide_window = yes
 # 	is_triggered_only = yes
 # 	trigger = {
-# 		any_owned_pop = {
+# 		any_owned_pop_species = {
 # 			has_trait = trait_ice_type_mega_evolution
 # 		}
 # 	}
@@ -8045,7 +8045,7 @@ country_event = {   #8级随机上特质
 # 	hide_window = yes
 # 	is_triggered_only = yes
 # 	trigger = {
-# 		any_owned_pop = {
+# 		any_owned_pop_species = {
 # 			has_trait = trait_electric_type_mega_evolution
 # 		}
 # 	}
@@ -8162,7 +8162,7 @@ country_event = {   #8级随机上特质
 # 	hide_window = yes
 # 	is_triggered_only = yes
 # 	trigger = {
-# 		any_owned_pop = {
+# 		any_owned_pop_species = {
 # 			has_trait = trait_psychic_type_mega_evolution
 # 		}
 # 	}
@@ -8213,7 +8213,7 @@ country_event = {   #8级随机上特质
 # 	hide_window = yes
 # 	is_triggered_only = yes
 # 	trigger = {
-# 		any_owned_pop = {
+# 		any_owned_pop_species = {
 # 			has_trait = trait_dark_type_mega_evolution
 # 		}
 # 	}
@@ -8377,7 +8377,7 @@ country_event = {   #8级随机上特质
 # 	hide_window = yes
 # 	is_triggered_only = yes
 # 	trigger = {
-# 		any_owned_pop = {
+# 		any_owned_pop_species = {
 # 			has_trait = trait_fairy_type_mega_evolution
 # 		}
 # 	}
@@ -9798,7 +9798,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				any_owned_pop = {
+				any_owned_pop_species = {
 					pop_has_trait = trait_dark_type_mega_evolution
 				}
 			}
@@ -9808,7 +9808,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				any_owned_pop = {
+				any_owned_pop_species = {
 					pop_has_trait = trait_ice_type_mega_evolution
 				}
 			}
@@ -9818,7 +9818,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				any_owned_pop = {
+				any_owned_pop_species = {
 					pop_has_trait = trait_electric_type_mega_evolution
 				}
 			}
@@ -9828,7 +9828,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				any_owned_pop = {
+				any_owned_pop_species = {
 					pop_has_trait = trait_psychic_type_mega_evolution
 				}
 			}
@@ -9838,7 +9838,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				any_owned_pop = {
+				any_owned_pop_species = {
 					pop_has_trait = trait_water_type_mega_evolution
 				}
 			}
@@ -9848,7 +9848,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				any_owned_pop = {
+				any_owned_pop_species = {
 					pop_has_trait = trait_fire_type_mega_evolution
 				}
 			}
@@ -10116,7 +10116,7 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		any_owned_pop = {
+		any_owned_pop_species = {
 			has_trait = trait_ground_type_mega_evolution
 		}
 	}
@@ -10148,7 +10148,7 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		any_owned_pop = {
+		any_owned_pop_species = {
 			has_trait = trait_dragon_type_mega_evolution
 		}
 	}
@@ -10188,7 +10188,7 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		any_owned_pop = {
+		any_owned_pop_species = {
 			has_trait = trait_fly_type_mega_evolution
 		}
 	}
@@ -10254,7 +10254,7 @@ country_event = {   #一级随机上特质
 						OR = {
 						has_trait = leader_trait_scientist_fly_type
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_fly_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_fly_type_mega_evolution}}
 						}
 					}
 					}
@@ -10268,7 +10268,7 @@ country_event = {   #一级随机上特质
 					OR = {
 						has_trait = leader_trait_scientist_rock_type
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_rock_type_mega_evolution}}
 					}
 					}
 					
@@ -10283,7 +10283,7 @@ country_event = {   #一级随机上特质
 				OR = {
 					has_trait = leader_trait_scientist_steel_type
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_steel_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_steel_type_mega_evolution}}
 					}
 				}
 				
@@ -10309,7 +10309,7 @@ country_event = {   #一级随机上特质
 						OR = {
 							has_trait = leader_trait_commander_fight_type
 						NOT= {
-							owner = {any_owned_pop = { has_trait = trait_fight_type_mega_evolution }}
+							owner = {any_owned_pop_species = { has_trait = trait_fight_type_mega_evolution }}
 						}
 						}
 						
@@ -10325,7 +10325,7 @@ country_event = {   #一级随机上特质
 					OR = {
 						has_trait = leader_trait_commander_rock_type
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_rock_type_mega_evolution}}
 					}
 				}
 					
@@ -10340,7 +10340,7 @@ country_event = {   #一级随机上特质
 				OR = {
 					has_trait = leader_trait_commander_bug_type
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_bug_type_mega_evolution}}
 					}
 				}
 				
@@ -10369,7 +10369,7 @@ country_event = {   #一级随机上特质
 						OR = {
 							has_trait = leader_trait_governor_dragon_type
 						NOT= {
-							owner = {any_owned_pop = { has_trait = trait_dragon_type_mega_evolution }}
+							owner = {any_owned_pop_species = { has_trait = trait_dragon_type_mega_evolution }}
 						}
 						}
 						
@@ -10385,7 +10385,7 @@ country_event = {   #一级随机上特质
 					OR = {
 						has_trait = leader_trait_governor_poison_type
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_poison_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_poison_type_mega_evolution}}
 						}
 					}
 					
@@ -10400,7 +10400,7 @@ country_event = {   #一级随机上特质
 				OR = {
 					has_trait = leader_trait_governor_bug_type
 				NOT= {
-					owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+					owner = {any_owned_pop_species = {has_trait = trait_bug_type_mega_evolution}}
 				}
 				}
 				
@@ -10431,7 +10431,7 @@ country_event = {   #一级随机上特质
 							OR = {
 							has_trait = leader_trait_scientist_fly_type
 							NOT= {
-								owner = {any_owned_pop = {has_trait = trait_fly_type_mega_evolution}}
+								owner = {any_owned_pop_species = {has_trait = trait_fly_type_mega_evolution}}
 							}
 						}
 						}
@@ -10445,7 +10445,7 @@ country_event = {   #一级随机上特质
 						OR = {
 							has_trait = leader_trait_scientist_rock_type
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_rock_type_mega_evolution}}
 						}
 						}
 						
@@ -10460,7 +10460,7 @@ country_event = {   #一级随机上特质
 					OR = {
 						has_trait = leader_trait_scientist_steel_type
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_steel_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_steel_type_mega_evolution}}
 						}
 					}
 					
@@ -10486,7 +10486,7 @@ country_event = {   #一级随机上特质
 							OR = {
 								has_trait = leader_trait_commander_fight_type
 							NOT= {
-								owner = {any_owned_pop = { has_trait = trait_fight_type_mega_evolution }}
+								owner = {any_owned_pop_species = { has_trait = trait_fight_type_mega_evolution }}
 							}
 							}
 							
@@ -10502,7 +10502,7 @@ country_event = {   #一级随机上特质
 						OR = {
 							has_trait = leader_trait_commander_rock_type
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_rock_type_mega_evolution}}
 						}
 					}
 						
@@ -10517,7 +10517,7 @@ country_event = {   #一级随机上特质
 					OR = {
 						has_trait = leader_trait_commander_bug_type
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_bug_type_mega_evolution}}
 						}
 					}
 					
@@ -10545,7 +10545,7 @@ country_event = {   #一级随机上特质
 							OR = {
 								has_trait = leader_trait_governor_dragon_type
 							NOT= {
-								owner = {any_owned_pop = { has_trait = trait_dragon_type_mega_evolution }}
+								owner = {any_owned_pop_species = { has_trait = trait_dragon_type_mega_evolution }}
 							}
 							}
 							
@@ -10561,7 +10561,7 @@ country_event = {   #一级随机上特质
 						OR = {
 							has_trait = leader_trait_governor_poison_type
 							NOT= {
-								owner = {any_owned_pop = {has_trait = trait_poison_type_mega_evolution}}
+								owner = {any_owned_pop_species = {has_trait = trait_poison_type_mega_evolution}}
 							}
 						}
 						
@@ -10576,7 +10576,7 @@ country_event = {   #一级随机上特质
 					OR = {
 						has_trait = leader_trait_governor_bug_type
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_bug_type_mega_evolution}}
 					}
 					}
 					
@@ -10634,7 +10634,7 @@ country_event = {   #4级随机上特质
 						OR = {
 						has_trait = leader_trait_scientist_fly_type
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_fly_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_fly_type_mega_evolution}}
 						}
 					}
 					}
@@ -10648,7 +10648,7 @@ country_event = {   #4级随机上特质
 					OR = {
 						has_trait = leader_trait_scientist_rock_type
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_rock_type_mega_evolution}}
 					}
 					}
 					
@@ -10663,7 +10663,7 @@ country_event = {   #4级随机上特质
 				OR = {
 					has_trait = leader_trait_scientist_steel_type
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_steel_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_steel_type_mega_evolution}}
 					}
 				}
 				
@@ -10690,7 +10690,7 @@ country_event = {   #4级随机上特质
 						OR = {
 							has_trait = leader_trait_commander_fight_type
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_fight_type_mega_evolution }}
+							owner = {any_owned_pop_species = {has_trait = trait_fight_type_mega_evolution }}
 						}
 						}
 						
@@ -10706,7 +10706,7 @@ country_event = {   #4级随机上特质
 					OR = {
 						has_trait = leader_trait_commander_rock_type
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_rock_type_mega_evolution}}
 					}
 				}
 					
@@ -10721,7 +10721,7 @@ country_event = {   #4级随机上特质
 				OR = {
 					has_trait = leader_trait_commander_bug_type
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_bug_type_mega_evolution}}
 					}
 				}
 				
@@ -10750,7 +10750,7 @@ country_event = {   #4级随机上特质
 						OR = {
 							has_trait = leader_trait_governor_dragon_type
 						NOT= {
-							owner = {any_owned_pop = { has_trait = trait_dragon_type_mega_evolution }}
+							owner = {any_owned_pop_species = { has_trait = trait_dragon_type_mega_evolution }}
 						}
 						}
 						
@@ -10766,7 +10766,7 @@ country_event = {   #4级随机上特质
 					OR = {
 						has_trait = leader_trait_governor_poison_type
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_poison_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_poison_type_mega_evolution}}
 						}
 					}
 					
@@ -10781,7 +10781,7 @@ country_event = {   #4级随机上特质
 				OR = {
 					has_trait = leader_trait_governor_bug_type
 				NOT= {
-					owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+					owner = {any_owned_pop_species = {has_trait = trait_bug_type_mega_evolution}}
 				}
 				}
 				
@@ -10813,7 +10813,7 @@ country_event = {   #4级随机上特质
 							OR = {
 							has_trait = leader_trait_scientist_fly_type
 							NOT= {
-								owner = {any_owned_pop = {has_trait = trait_fly_type_mega_evolution}}
+								owner = {any_owned_pop_species = {has_trait = trait_fly_type_mega_evolution}}
 							}
 						}
 						}
@@ -10827,7 +10827,7 @@ country_event = {   #4级随机上特质
 						OR = {
 							has_trait = leader_trait_scientist_rock_type
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_rock_type_mega_evolution}}
 						}
 						}
 						
@@ -10842,7 +10842,7 @@ country_event = {   #4级随机上特质
 					OR = {
 						has_trait = leader_trait_scientist_steel_type
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_steel_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_steel_type_mega_evolution}}
 						}
 					}
 					
@@ -10869,7 +10869,7 @@ country_event = {   #4级随机上特质
 							OR = {
 								has_trait = leader_trait_commander_fight_type
 							NOT= {
-								owner = {any_owned_pop = { has_trait = trait_fight_type_mega_evolution }}
+								owner = {any_owned_pop_species = { has_trait = trait_fight_type_mega_evolution }}
 							}
 							}
 							
@@ -10885,7 +10885,7 @@ country_event = {   #4级随机上特质
 						OR = {
 							has_trait = leader_trait_commander_rock_type
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_rock_type_mega_evolution}}
 						}
 					}
 						
@@ -10900,7 +10900,7 @@ country_event = {   #4级随机上特质
 					OR = {
 						has_trait = leader_trait_commander_bug_type
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_bug_type_mega_evolution}}
 						}
 					}
 					
@@ -10929,7 +10929,7 @@ country_event = {   #4级随机上特质
 							OR = {
 								has_trait = leader_trait_governor_dragon_type
 							NOT= {
-								owner = {any_owned_pop = { has_trait = trait_dragon_type_mega_evolution }}
+								owner = {any_owned_pop_species = { has_trait = trait_dragon_type_mega_evolution }}
 							}
 							}
 							
@@ -10945,7 +10945,7 @@ country_event = {   #4级随机上特质
 						OR = {
 							has_trait = leader_trait_governor_poison_type
 							NOT= {
-								owner = {any_owned_pop = {has_trait = trait_poison_type_mega_evolution}}
+								owner = {any_owned_pop_species = {has_trait = trait_poison_type_mega_evolution}}
 							}
 						}
 						
@@ -10960,7 +10960,7 @@ country_event = {   #4级随机上特质
 					OR = {
 						has_trait = leader_trait_governor_bug_type
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_bug_type_mega_evolution}}
 					}
 					}
 					
@@ -11017,7 +11017,7 @@ country_event = {   #8级随机上特质
 						OR = {
 						has_trait = leader_trait_scientist_fly_type
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_fly_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_fly_type_mega_evolution}}
 						}
 					}
 					}
@@ -11031,7 +11031,7 @@ country_event = {   #8级随机上特质
 					OR = {
 						has_trait = leader_trait_scientist_rock_type
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_rock_type_mega_evolution}}
 					}
 					}
 					
@@ -11046,7 +11046,7 @@ country_event = {   #8级随机上特质
 				OR = {
 					has_trait = leader_trait_scientist_steel_type
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_steel_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_steel_type_mega_evolution}}
 					}
 				}
 				
@@ -11073,7 +11073,7 @@ country_event = {   #8级随机上特质
 						OR = {
 							has_trait = leader_trait_commander_fight_type
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_fight_type_mega_evolution }}
+							owner = {any_owned_pop_species = {has_trait = trait_fight_type_mega_evolution }}
 						}
 						}
 						
@@ -11089,7 +11089,7 @@ country_event = {   #8级随机上特质
 					OR = {
 						has_trait = leader_trait_commander_rock_type
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_rock_type_mega_evolution}}
 					}
 				}
 					
@@ -11104,7 +11104,7 @@ country_event = {   #8级随机上特质
 				OR = {
 					has_trait = leader_trait_commander_bug_type
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_bug_type_mega_evolution}}
 					}
 				}
 				
@@ -11133,7 +11133,7 @@ country_event = {   #8级随机上特质
 						OR = {
 							has_trait = leader_trait_governor_dragon_type
 						NOT= {
-							owner = {any_owned_pop = { has_trait = trait_dragon_type_mega_evolution }}
+							owner = {any_owned_pop_species = { has_trait = trait_dragon_type_mega_evolution }}
 						}
 						}
 						
@@ -11149,7 +11149,7 @@ country_event = {   #8级随机上特质
 					OR = {
 						has_trait = leader_trait_governor_poison_type
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_poison_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_poison_type_mega_evolution}}
 						}
 					}
 					
@@ -11164,7 +11164,7 @@ country_event = {   #8级随机上特质
 				OR = {
 					has_trait = leader_trait_governor_bug_type
 				NOT= {
-					owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+					owner = {any_owned_pop_species = {has_trait = trait_bug_type_mega_evolution}}
 				}
 				}
 				
@@ -11196,7 +11196,7 @@ country_event = {   #8级随机上特质
 							OR = {
 							has_trait = leader_trait_scientist_fly_type
 							NOT= {
-								owner = {any_owned_pop = {has_trait = trait_fly_type_mega_evolution}}
+								owner = {any_owned_pop_species = {has_trait = trait_fly_type_mega_evolution}}
 							}
 						}
 						}
@@ -11210,7 +11210,7 @@ country_event = {   #8级随机上特质
 						OR = {
 							has_trait = leader_trait_scientist_rock_type
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_rock_type_mega_evolution}}
 						}
 						}
 						
@@ -11225,7 +11225,7 @@ country_event = {   #8级随机上特质
 					OR = {
 						has_trait = leader_trait_scientist_steel_type
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_steel_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_steel_type_mega_evolution}}
 						}
 					}
 					
@@ -11252,7 +11252,7 @@ country_event = {   #8级随机上特质
 							OR = {
 								has_trait = leader_trait_commander_fight_type
 							NOT= {
-								owner = {any_owned_pop = { has_trait = trait_fight_type_mega_evolution }}
+								owner = {any_owned_pop_species = { has_trait = trait_fight_type_mega_evolution }}
 							}
 							}
 							
@@ -11268,7 +11268,7 @@ country_event = {   #8级随机上特质
 						OR = {
 							has_trait = leader_trait_commander_rock_type
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_rock_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_rock_type_mega_evolution}}
 						}
 					}
 						
@@ -11283,7 +11283,7 @@ country_event = {   #8级随机上特质
 					OR = {
 						has_trait = leader_trait_commander_bug_type
 						NOT= {
-							owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+							owner = {any_owned_pop_species = {has_trait = trait_bug_type_mega_evolution}}
 						}
 					}
 					
@@ -11312,7 +11312,7 @@ country_event = {   #8级随机上特质
 							OR = {
 								has_trait = leader_trait_governor_dragon_type
 							NOT= {
-								owner = {any_owned_pop = { has_trait = trait_dragon_type_mega_evolution }}
+								owner = {any_owned_pop_species = { has_trait = trait_dragon_type_mega_evolution }}
 							}
 							}
 							
@@ -11328,7 +11328,7 @@ country_event = {   #8级随机上特质
 						OR = {
 							has_trait = leader_trait_governor_poison_type
 							NOT= {
-								owner = {any_owned_pop = {has_trait = trait_poison_type_mega_evolution}}
+								owner = {any_owned_pop_species = {has_trait = trait_poison_type_mega_evolution}}
 							}
 						}
 						
@@ -11343,7 +11343,7 @@ country_event = {   #8级随机上特质
 					OR = {
 						has_trait = leader_trait_governor_bug_type
 					NOT= {
-						owner = {any_owned_pop = {has_trait = trait_bug_type_mega_evolution}}
+						owner = {any_owned_pop_species = {has_trait = trait_bug_type_mega_evolution}}
 					}
 					}
 					

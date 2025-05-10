@@ -2305,7 +2305,7 @@ ship_event = { #辐射清理完成
 		trigger = {
 			owner = {
 				OR = {
-					any_owned_pop = {
+					any_owned_pop_species = {
 						has_trait = trait_EOE_Inheritors
 					}
 					has_origin = origin_lotus_hezi_start
@@ -2319,7 +2319,7 @@ ship_event = { #辐射清理完成
 		trigger = {
 			owner = {
 				NOR = {
-					any_owned_pop = {
+					any_owned_pop_species = {
 						has_trait = trait_EOE_Inheritors
 					}
 					has_origin = origin_lotus_hezi_start
@@ -2899,7 +2899,7 @@ ship_event = { #谜团的解答
 				OR = {
 					has_ethic = ethic_spiritualist
 					has_ethic = ethic_fanatic_spiritualist
-					any_owned_pop = { has_trait = trait_natural_psionic_warrior }
+					any_owned_pop_species = { has_trait = trait_natural_psionic_warrior }
 				}
 			}
 		}
@@ -2911,7 +2911,7 @@ ship_event = { #谜团的解答
 			NOR = {
 				has_ethic = ethic_spiritualist
 				has_ethic = ethic_fanatic_spiritualist
-				any_owned_pop = { has_trait = trait_natural_psionic_warrior }
+				any_owned_pop_species = { has_trait = trait_natural_psionic_warrior }
 				}
 			}
 		}
@@ -3544,7 +3544,7 @@ ship_event = { #召唤出了古神
 												#event_target:EOE_ghost_planet_planet = this
 												effect = {
 													id = EOE.cthugha.2
-													every_owned_pop = {
+													every_owned_pop_group = {
 														kill_pop = yes
 													}
 													save_event_target_as = EOE_cthugha_burned_planet_oh_no
@@ -3644,7 +3644,7 @@ ship_event = { #召唤出了古神
 												#event_target:EOE_ghost_planet_planet = this
 												effect = {
 													id = EOE.cthugha.2
-													every_owned_pop = {
+													every_owned_pop_group = {
 														kill_pop = yes
 													}
 													save_event_target_as = EOE_cthugha_burned_planet_oh_no

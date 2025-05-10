@@ -30,7 +30,7 @@ tech_mega_evolution = {
 	    modifier = {
 			factor = 0
 			NOT = { 
-				any_owned_pop = {
+				any_owned_pop_species = {
 				pop_has_trait = trait_directed_evolution
 			}
 			}
@@ -62,7 +62,7 @@ tech_Gender_Balance = {
 	}
 
 	potential = {
-		any_owned_pop = {
+		any_owned_pop_species = {
 			pop_has_trait = trait_directed_evolution
 		}
 	}
@@ -71,7 +71,7 @@ tech_Gender_Balance = {
 	    modifier = {
 			factor = 0
 			NOT = { 
-				any_owned_pop = {
+				any_owned_pop_species = {
 				pop_has_trait = trait_directed_evolution
 			}
 			}
@@ -101,7 +101,7 @@ tech_Gender_Balance = {
 # 	}
 
 # 	potential = {
-# 		any_owned_pop = {
+# 		any_owned_pop_species = {
 # 			pop_has_trait = trait_directed_evolution
 # 		}
 # 	}
@@ -149,8 +149,8 @@ tech_EOE_Mew_weapon = {
 		}
 		has_ascension_perk = ap_mega_evolution_EOE
 		OR = {
-			any_owned_pop = { has_trait = trait_EOE_Inheritors }
-			any_owned_pop = { has_trait = trait_transfur_eevee }
+			any_owned_pop_species = { has_trait = trait_EOE_Inheritors }
+			any_owned_pop_species = { has_trait = trait_transfur_eevee }
 			has_origin = origin_lotus_hezi_start
 		}
 		is_ai = no
@@ -200,8 +200,8 @@ tech_EOE_Mew_armor = {
 		}
 		has_ascension_perk = ap_mega_evolution_EOE
 		OR = {
-			any_owned_pop = { has_trait = trait_EOE_Inheritors }
-			any_owned_pop = { has_trait = trait_transfur_eevee }
+			any_owned_pop_species = { has_trait = trait_EOE_Inheritors }
+			any_owned_pop_species = { has_trait = trait_transfur_eevee }
 			has_origin = origin_lotus_hezi_start
 		}
 		is_ai = no
@@ -253,8 +253,8 @@ tech_EOE_Mew = {
 		}
 		has_ascension_perk = ap_mega_evolution_EOE
 		OR = {
-			any_owned_pop = { has_trait = trait_EOE_Inheritors }
-			any_owned_pop = { has_trait = trait_transfur_eevee }
+			any_owned_pop_species = { has_trait = trait_EOE_Inheritors }
+			any_owned_pop_species = { has_trait = trait_transfur_eevee }
 			has_origin = origin_lotus_hezi_start
 		}
 		is_ai = no
@@ -300,8 +300,8 @@ tech_EOE_Latias_weapon = {
 		}
 		has_ascension_perk = ap_mega_evolution_EOE
 		OR = {
-			any_owned_pop = { has_trait = trait_EOE_Inheritors }
-			any_owned_pop = { has_trait = trait_transfur_eevee }
+			any_owned_pop_species = { has_trait = trait_EOE_Inheritors }
+			any_owned_pop_species = { has_trait = trait_transfur_eevee }
 			has_origin = origin_lotus_hezi_start
 		}
 		is_ai = no
@@ -351,8 +351,8 @@ tech_EOE_Latias_armor = {
 		}
 		has_ascension_perk = ap_mega_evolution_EOE
 		OR = {
-			any_owned_pop = { has_trait = trait_EOE_Inheritors }
-			any_owned_pop = { has_trait = trait_transfur_eevee }
+			any_owned_pop_species = { has_trait = trait_EOE_Inheritors }
+			any_owned_pop_species = { has_trait = trait_transfur_eevee }
 			has_origin = origin_lotus_hezi_start
 		}
 		is_ai = no
@@ -408,8 +408,8 @@ tech_EOE_Latias = {
 		}
 		has_ascension_perk = ap_mega_evolution_EOE
 		OR = {
-			any_owned_pop = { has_trait = trait_EOE_Inheritors }
-			any_owned_pop = { has_trait = trait_transfur_eevee }
+			any_owned_pop_species = { has_trait = trait_EOE_Inheritors }
+			any_owned_pop_species = { has_trait = trait_transfur_eevee }
 			has_origin = origin_lotus_hezi_start
 		}
 		is_ai = no
@@ -456,8 +456,8 @@ tech_EOE_Reshiram_weapon = {
 		}
 		has_ascension_perk = ap_mega_evolution_EOE
 		OR = {
-			any_owned_pop = { has_trait = trait_EOE_Inheritors }
-			any_owned_pop = { has_trait = trait_transfur_eevee }
+			any_owned_pop_species = { has_trait = trait_EOE_Inheritors }
+			any_owned_pop_species = { has_trait = trait_transfur_eevee }
 			has_origin = origin_lotus_hezi_start
 		}
 		is_ai = no
@@ -507,8 +507,8 @@ tech_EOE_Reshiram_armor = {
 		}
 		has_ascension_perk = ap_mega_evolution_EOE
 		OR = {
-			any_owned_pop = { has_trait = trait_EOE_Inheritors }
-			any_owned_pop = { has_trait = trait_transfur_eevee }
+			any_owned_pop_species = { has_trait = trait_EOE_Inheritors }
+			any_owned_pop_species = { has_trait = trait_transfur_eevee }
 			has_origin = origin_lotus_hezi_start
 		}
 		is_ai = no
@@ -566,8 +566,8 @@ tech_EOE_Reshiram = {
 		}
 		has_ascension_perk = ap_mega_evolution_EOE
 		OR = {
-			any_owned_pop = { has_trait = trait_EOE_Inheritors }
-			any_owned_pop = { has_trait = trait_transfur_eevee }
+			any_owned_pop_species = { has_trait = trait_EOE_Inheritors }
+			any_owned_pop_species = { has_trait = trait_transfur_eevee }
 			has_origin = origin_lotus_hezi_start
 		}
 		is_ai = no
@@ -602,8 +602,8 @@ tech_EOE_Reshiram = {
 # 			is_species_class = Eeveelutions
 # 		}
 # 		OR = {
-# 			any_owned_pop = { has_trait = trait_EOE_Inheritors }
-# 			any_owned_pop = { has_trait = trait_transfur_eevee }
+# 			any_owned_pop_species = { has_trait = trait_EOE_Inheritors }
+# 			any_owned_pop_species = { has_trait = trait_transfur_eevee }
 # 			has_origin = origin_lotus_hezi_start
 # 		}
 # 		is_ai = no
@@ -638,8 +638,8 @@ tech_EOE_Minior = {
 		}
 		#has_ascension_perk = ap_mega_evolution_EOE
 		OR = {
-			any_owned_pop = { has_trait = trait_EOE_Inheritors }
-			any_owned_pop = { has_trait = trait_transfur_eevee }
+			any_owned_pop_species = { has_trait = trait_EOE_Inheritors }
+			any_owned_pop_species = { has_trait = trait_transfur_eevee }
 			has_origin = origin_lotus_hezi_start
 		}
 		is_ai = no

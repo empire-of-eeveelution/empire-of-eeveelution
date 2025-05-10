@@ -20,7 +20,7 @@ tech_endless_evolution = {
 	    modifier = {
 			factor = 0
 			NOT = { 
-				any_owned_pop = {
+				any_owned_pop_species = {
 				pop_has_trait = trait_directed_evolution
 			}
 			}
@@ -71,7 +71,7 @@ tech_endless_evolution_2 = {
 	    modifier = {
 			factor = 0
 			NOT = { 
-				any_owned_pop = {
+				any_owned_pop_species = {
 				pop_has_trait = trait_directed_evolution
 			}
 			}
