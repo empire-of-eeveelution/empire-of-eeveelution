@@ -5,35 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="466fb39f-5700-450f-9f42-8c7299091cf8" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/empire-of-eeveelution.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/decisions/EOE_decisions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/decisions/EOE_decisions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/scripted_effects/EOE_brave_troop_script_effects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/scripted_effects/EOE_brave_troop_script_effects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/scripted_effects/EOE_enol_script_effects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/scripted_effects/EOE_enol_script_effects.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/scripted_triggers/scripted_triggers_pokemon.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/scripted_triggers/scripted_triggers_pokemon.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/technology/EOE_pokeball_tech.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/technology/EOE_pokeball_tech.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/technology/EOE_psichic_hive.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/technology/EOE_psichic_hive.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/technology/Pokemon_phys_weapon_tech.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/technology/Pokemon_phys_weapon_tech.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/technology/pokemon_eng_weapon_tech.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/technology/pokemon_eng_weapon_tech.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/technology/pokemon_soc_tech.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/technology/pokemon_soc_tech.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/technology/pokemon_soc_tech_repeatable.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/technology/pokemon_soc_tech_repeatable.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/technology/pokemon_soc_weapon_tech.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/technology/pokemon_soc_weapon_tech.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/traits/pokemon_admiral_traits.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/traits/pokemon_admiral_traits.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/traits/pokemon_governor_traits.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/traits/pokemon_governor_traits.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/traits/pokemon_scientist_traits.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/traits/pokemon_scientist_traits.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events/EOE_branch_event.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/EOE_branch_event.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events/EOE_building_event.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/EOE_building_event.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events/EOE_event_triggers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/EOE_event_triggers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events/EOE_ghost_random_event.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/EOE_ghost_random_event.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events/EOE_hidden_additional_traits_events.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/EOE_hidden_additional_traits_events.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events/EOE_leader_event.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/EOE_leader_event.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events/EOE_swarm_traits.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/EOE_swarm_traits.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events/eeveelution_events.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/eeveelution_events.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events/hidden_pokemon_traits_remove_events.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/hidden_pokemon_traits_remove_events.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

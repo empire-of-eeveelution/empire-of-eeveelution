@@ -584,9 +584,27 @@ EOE_shatterring_start_buildings = {
 			modifier = EOE_pop_unemploy days = 60
 		}
 		# 21 - 2 = 19 jobs
-		add_district = district_rw_farming #11农民
-		add_district = district_rw_city #3职员,2执法,但是两个执法被我砍到障碍里去了
-		add_district = district_rw_industrial #2工匠3冶金
+		add_district = district_rw_city#3职员,2执法,但是两个执法被我砍到障碍里去了
+		add_district = district_rw_urban_1
+		add_district = district_rw_urban_2
+		add_zone = {
+			district = district_rw_city
+			zone = zone_industrial
+			zone_slot = slot_rw_urban_01
+			replace = yes
+		}
+		add_zone = {
+			district = district_rw_urban_1
+			zone = zone_rw_energy
+			zone_slot = slot_rw_urban_01
+			replace = yes
+		}
+		add_zone = {
+			district = district_rw_urban_2
+			zone = zone_rw_food
+			zone_slot = slot_rw_urban_01
+			replace = yes
+		}
 		#暂时没有适配岩石系宝可梦捏
 		#开局一般是28个人
 
