@@ -1,11 +1,12 @@
 ﻿l_english:
 trait_EOE_Inheritors:0"Inheritors"
-trait_EOE_Inheritors_desc:0"§LThis species was created by the ancient super civilization, they inherited the creator's heritage.§!\n§TThis trait is the switch of all events and ascension perk in this MOD. Select this trait to experience the story and Pokemon combat units.§!\n§RIt contains unbalanced content, please make sure to use other powerful MODs§!"
+trait_EOE_Inheritors_desc:0"§LThis species was created by the ancient super civilization, they inherited the creator's heritage.§!\n§TThis trait is the switch of all events and ascension perk in this MOD. Select this trait to experience the story and Pokemon combat units.§!\n§RIt contains unbalanced content, please increase game difficulty or use other powerful MODs§!"
 trait_directed_evolution:0"Directed Evolution"
 trait_directed_evolution_desc:0"§LThis species can choose its own way of gene expression to adapt to different environments.§!\n§TThis initial trait is also the switch of Eeveelution's advanced traits and repetable technology.If you choose this trait, you can unlock §YMega Evolution traits§! after have §Y$tr_genetics_creation$§! tradition and use repetable technologies to get enough §Y trait points§!.§！"
 trait_directed_evolution.tooltip:0"Habitability：§G+20%§!"
 trait_pokeball_adaptability:0"Pokeball Adaptability"
 trait_pokeball_adaptability_desc:0"§TThis species can rest in a sub space dormancy chamber called pokeball to save a lot of living space.This kind of dormancy chamber was originally produced by the advanced civilization that created pokemons and used to store their living toys. §!§LRecently, Eeveelutions have understood and repaired the production line of these dormancy chambers. But millions of years of non directional variation make them not adapt to living in pokeballs, which is not comfortable for them today. They need new technology to improve their adaptability to living in pokeballs.§!"
+trait_pokeball_adaptability_effect: "Pop Housing Usage: §G-10%§!\n    — Employed Pop Upkeep: §G-5%§!\n    — Unemployed and ['concept_denizen'] Pop Upkeep: §G-75%§!\n    — Unemployed and ['concept_denizen'] Pop Housing Usage: §G-75%§!"
 trait_extremely_cute:0"Extremely Cute"
 trait_extremely_cute_desc:0"§LThe appearance of this species has been carefully designed to appeal to most creatures.§!"
 TRAIT_CUTE_EFFECT:0 "Ruler Opinion Impact: §G+50§!" 
