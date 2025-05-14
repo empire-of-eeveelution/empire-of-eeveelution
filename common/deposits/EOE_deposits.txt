@@ -9,6 +9,7 @@ d_EOE_ringworld_Ancient_ruins_1 = {
 	planet_modifier = { 
 		planet_max_districts_add = -1
 		planet_housing_add = -5
+		job_clerk_add = -300
 	}
 	resources = {
 		category = deposit_blockers
@@ -42,9 +43,10 @@ d_EOE_ringworld_Ancient_ruins_2 = {
 	planet_modifier = { 
 		planet_max_districts_add = -1
 		planet_housing_add = -5
-		job_artisan_add = -3
-		job_catalytic_technician_add = -3
-		job_foundry_add = -3
+		job_artisan_add = -300
+		job_catalytic_technician_add = -300
+		job_foundry_add = -300
+		job_clerk_add = -300
 	}
 	resources = {
 		category = deposit_blockers
@@ -77,7 +79,9 @@ d_EOE_ringworld_Broken_tunnel_1 = {
 		
 	planet_modifier = { 
 		planet_max_districts_add = -1
-		job_enforcer_add = -2
+		job_enforcer_add = -200
+		job_technician_add = -200
+		job_clerk_add = -100
 	}
 	resources = {
 		category = deposit_blockers
@@ -119,6 +123,7 @@ d_EOE_ringworld_Broken_tunnel_2 = {
 		
 	planet_modifier = { 
 		planet_max_districts_add = -1
+		job_clerk_add = -100
 	}
 	resources = {
 		category = deposit_blockers
@@ -160,6 +165,7 @@ d_EOE_ringworld_Broken_tunnel_3 = {
 		
 	planet_modifier = { 
 		planet_max_districts_add = -1
+		job_clerk_add = -100
 	}
 	resources = {
 		category = deposit_blockers
@@ -262,7 +268,9 @@ d_EOE_ringworld_ancient_tech_district = {
 	potential = { always = no }
 	
 	planet_modifier = {
-		job_researcher_add = 2
+		job_physicist_add = 67
+		job_biologist_add = 67
+		job_engineer_add = 67
 		planet_researchers_produces_mult = 0.05
 	}
 	
@@ -276,7 +284,9 @@ d_EOE_ringworld_ancient_tech_district_1 = {
 	potential = { always = no }
 	
 	planet_modifier = {
-		job_researcher_add = 2
+		job_physicist_add = 67
+		job_biologist_add = 67
+		job_engineer_add = 67
 		planet_researchers_produces_mult = 0.05
 	}
 	
@@ -292,9 +302,9 @@ d_EOE_ringworld_Refuge_City= {
 	potential = { always = no }
 	
 	planet_modifier = {
-		job_farmer_add = 1
-		job_artisan_add = 1
-		planet_housing_add = 2
+		job_farmer_add = 100
+		job_artisan_add = 100
+		planet_housing_add = 200
 		planet_jobs_unity_produces_mult = 0.1
 		
 	}
@@ -312,7 +322,7 @@ d_EOE_wild_eeveelution_habitat = {
 		
 	planet_modifier = { 
 		planet_max_districts_add = -3
-		job_culture_worker_add = 2
+		job_culture_worker_add = 200
 		planet_jobs_society_research_produces_mult = 0.1
 	}
 	resources = {
@@ -336,7 +346,7 @@ d_EOE_wild_eeveelution_reserve = {
 	
 	planet_modifier = {
 		planet_max_districts_add = -1
-		job_culture_worker_add = 3
+		job_culture_worker_add = 300
 		planet_jobs_society_research_produces_mult = 0.15
 	}
 	
@@ -350,8 +360,8 @@ d_EOE_PC_center_building_hive_capital = {
 	potential = { always = no }
 	
 	planet_modifier = {
-		job_synapse_drone_add = -2
-		job_EOE_synapse_drone_add = 2
+		job_synapse_drone_add = -200
+		job_EOE_synapse_drone_add = 200
 	}
 	
 }
@@ -364,8 +374,8 @@ d_EOE_PC_center_building_hive_major_capital = {
 	potential = { always = no }
 	
 	planet_modifier = {
-		job_synapse_drone_add = -3
-		job_EOE_synapse_drone_add = 3
+		job_synapse_drone_add = -300
+		job_EOE_synapse_drone_add = 300
 	}
 	
 }
@@ -378,8 +388,8 @@ d_EOE_PC_center_building_imperial_hive_capital = {
 	potential = { always = no }
 	
 	planet_modifier = {
-		job_synapse_drone_add = -5
-		job_EOE_synapse_drone_add = 5
+		job_synapse_drone_add = -500
+		job_EOE_synapse_drone_add = 500
 	}
 	
 }
@@ -392,8 +402,8 @@ d_EOE_PC_center_building_hab_capital = {
 	potential = { always = no }
 	
 	planet_modifier = {
-		job_synapse_drone_add = -2
-		job_EOE_synapse_drone_add = 2
+		job_synapse_drone_add = -200
+		job_EOE_synapse_drone_add = 200
 	}
 	
 }
@@ -406,8 +416,8 @@ d_EOE_PC_center_building_hab_major_capital = {
 	potential = { always = no }
 	
 	planet_modifier = {
-		job_synapse_drone_add = -3
-		job_EOE_synapse_drone_add = 3
+		job_synapse_drone_add = -300
+		job_EOE_synapse_drone_add = 300
 	}
 	
 }
@@ -420,7 +430,9 @@ d_EOE_protoss_relic = {
 	potential = { always = no }
 	
 	planet_modifier = {
-		job_researcher_add = 2
+		job_physicist_add = 67
+		job_biologist_add = 67
+		job_engineer_add = 67
 		planet_researchers_produces_mult = 0.1
 	}
 	
@@ -435,7 +447,7 @@ d_EOE_scientific_faith_1 = {
 	potential = { always = no }
 	
 	planet_modifier = {
-    	job_politician_add= -1
+    	job_politician_add= -100
 	}
 	
 }
@@ -447,7 +459,7 @@ d_EOE_scientific_faith_1_a = {
 	potential = { always = no }
 	
 	planet_modifier = {
-    	job_head_researcher_add = 1
+    	job_head_researcher_add = 100
 	}
 	
 }
@@ -460,7 +472,7 @@ d_EOE_scientific_faith_2 = {
 	potential = { always = no }
 	
 	planet_modifier = {
-		job_politician_add = -2
+		job_politician_add = -200
     	
 	}
 	
@@ -475,7 +487,7 @@ d_EOE_scientific_faith_2_a = {
 	
 	planet_modifier = {
 		
-    	job_head_researcher_add = 2
+    	job_head_researcher_add = 200
 	}
 	
 }
@@ -488,7 +500,7 @@ d_EOE_scientific_faith_3 = {
 	potential = { always = no }
 	
 	planet_modifier = {
-		job_politician_add = -3
+		job_politician_add = -300
     	
 	}
 	
@@ -503,7 +515,7 @@ d_EOE_scientific_faith_3_a = {
 	
 	planet_modifier = {
 		
-    	job_head_researcher_add = 3
+    	job_head_researcher_add = 300
 	}
 	
 }
@@ -517,7 +529,7 @@ d_EOE_Pokemon_Jingjichang = {
 	
 	planet_modifier = {
 		
-    	job_duelist_add = 3
+    	job_duelist_add = 300
 	}
 	
 }

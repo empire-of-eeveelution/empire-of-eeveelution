@@ -605,10 +605,14 @@ EOE_shatterring_start_buildings = {
 			zone_slot = slot_rw_urban_01
 			replace = yes
 		}
+		create_pop_group = {
+			size = 880
+		}
 		#暂时没有适配岩石系宝可梦捏
 		#开局一般是28个人
 
 		#下面3+2+2+2=9 9+19=28 哦不，简直完美
+		#水布醒醒，新版本了，不完美了，默认开局4.8K人口，得多刷点人口了
 		# 3 jobs
 		add_building = building_capital #2政客1执法
 
