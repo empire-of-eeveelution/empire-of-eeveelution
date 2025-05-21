@@ -333,11 +333,12 @@ building_EOE_trainer_department = {
 	}
 	
 	planet_modifier = {
-		job_EOE_trainer_add = 1
-		planet_housing_add = 5
-		planet_amenities_add = 5
+		job_EOE_trainer_add = 100
+		planet_housing_add = 500
+		planet_amenities_add = 500
 		planet_max_buildings_add = @buildings_t2
-		planet_max_branch_office_buildings_add = 1
+		# planet_max_branch_office_buildings_add = 1
+		planet_district_orbital_mining_add = 10
 	}
 
 	resources = {

@@ -197,7 +197,7 @@ EOE_synapse_drone = {
 }
 
 EOE_trainer = {
-	category = specialist
+	category = ruler
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_capital
 	clothes_texture_index = 1
@@ -227,7 +227,7 @@ EOE_trainer = {
 		potential = {
 			always = yes
 		}
-		planet_amenities_add = 10
+		planet_amenities_add = 1000
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 

@@ -43,8 +43,9 @@ trait_EOE_alloy_structure = {
 	allowed_archetypes = { MACHINE }
 
 	modifier = {
-		planet_miners_alloys_produces_add = 1
-		planet_miners_minerals_upkeep_add = 1.5
+		# planet_miners_alloys_produces_add = 0.01
+		# planet_miners_minerals_upkeep_add = 0.015
+		pop_environment_tolerance = 1
 		# pop_category_workers_minerals_upkeep_add = 1
 		# pop_category_workers_energy_upkeep_add = -1
 		# pop_category_slave_minerals_upkeep_add = 1
@@ -54,6 +55,25 @@ trait_EOE_alloy_structure = {
 		# pop_category_rulers_minerals_upkeep_add = 1
 		# pop_category_rulers_energy_upkeep_add = -1
 	}
+	custom_tooltip = TRAIT_EOE_alloy_structure_EFFECT
+	resources = {
+		category = planet_pops
+		produces = {
+			trigger = {
+				is_slave_or_better = yes
+			}
+			alloys = 1
+			# mult = value:lithoid_trait_mult
+		}
+		upkeep = {
+			trigger = {
+				is_slave_or_better = yes
+			}
+			minerals = 1.5
+			# mult = value:lithoid_trait_mult
+		}
+	}
+
 	slave_cost = {
 		energy = 1500
 	}
