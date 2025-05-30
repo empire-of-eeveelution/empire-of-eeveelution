@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="466fb39f-5700-450f-9f42-8c7299091cf8" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/interface/EOE_standrd_gui.gui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/deposits/EOE_deposits.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/deposits/EOE_deposits.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/scripted_effects/EOE_enol_script_effects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/scripted_effects/EOE_enol_script_effects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/edicts/EOE_pokemon_edicts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/edicts/EOE_pokemon_edicts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/technology/pokemon_soc_tech_repeatable.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/technology/pokemon_soc_tech_repeatable.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/EOEjifei3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/EOEjifei3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localisation/simp_chinese/EOE_l_simp_chinese.yml" beforeDir="false" afterPath="$PROJECT_DIR$/localisation/simp_chinese/EOE_l_simp_chinese.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +37,9 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2wg4nBb4dWjxe43TOFqiUhBgPgC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -44,7 +50,8 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/SteamLibrary/steamapps/common/Stellaris&quot;
+    &quot;last_opened_file_path&quot;: &quot;E:/SteamLibrary/steamapps/common/Stellaris&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
@@ -60,6 +67,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="蜂群国策兼容文灾建筑并优化性能，水系草系物种特质适配现版本，精灵球科技提供重力陷阱加成，无光星球不能作为初始球出现（随机的AI会无光开，然后崩掉）" />
+    <MESSAGE value="Merge branch 'main' of github.com:empire-of-eeveelution/empire-of-eeveelution" />
     <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>

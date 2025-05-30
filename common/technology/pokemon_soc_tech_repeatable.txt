@@ -7,13 +7,19 @@ tech_endless_evolution = {
 	cost_per_level = @repeatableTechLevelCost
 	tier = @repeatableTechTier
 	category = { biology }
-	levels = 60
+	levels = -1
 	prerequisites = {  }
 	icon = tech_gene_tailoring
 	weight = @repeatableTechWeight
 	
 	potential = {
-		has_tradition = tr_genetics_finish
+		or = {
+			has_tradition = tr_cloning_finish
+			has_tradition = tr_mutation_finish
+			has_tradition = tr_purity_finish
+			has_tradition = tr_genetics_finish
+		}
+		NOT = { has_country_flag = disabled_endless_evolution }
 	}
 	weight_modifier = {
 		factor = @repatableTechFactor
@@ -21,7 +27,7 @@ tech_endless_evolution = {
 			factor = 0
 			NOT = { 
 				any_owned_pop_species = {
-				pop_has_trait = trait_directed_evolution
+				has_trait = trait_directed_evolution
 			}
 			}
 			}

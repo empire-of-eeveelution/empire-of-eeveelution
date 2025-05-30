@@ -10,3 +10,35 @@ EOE_breed_pokemons = {
 	effect = { country_event = { id = EOEbuliding.30 } }
 	ai_weight = { weight = 0 }
 }
+EOE_switch_endless_evolution1 = {
+	icon = "GFX_breed_pokemon"
+	length = 0
+	potential = {
+		or = {
+			has_tradition = tr_cloning_finish
+			has_tradition = tr_mutation_finish
+			has_tradition = tr_purity_finish
+			has_tradition = tr_genetics_finish
+		}
+		has_country_flag = disabled_endless_evolution
+	}
+	effect = {
+		country_event = { id = EOEjifei3.2 }
+	}
+}
+EOE_switch_endless_evolution2 = {
+	icon = "GFX_breed_pokemon"
+	length = 0
+	potential = {
+		or = {
+			has_tradition = tr_cloning_finish
+			has_tradition = tr_mutation_finish
+			has_tradition = tr_purity_finish
+			has_tradition = tr_genetics_finish
+		}
+		NOT = { has_country_flag = disabled_endless_evolution }
+	}
+	effect = {
+		country_event = { id = EOEjifei3.3 }
+	}
+}

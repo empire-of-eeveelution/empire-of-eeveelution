@@ -31,11 +31,41 @@
 
 	is_triggered_only = yes
 
-	option = {
-		name = EXCELLENT
-	}
+	# option = {
+	# 	name = EXCELLENT
+	# }
 
 }
+ country_event = {
+	 id = EOEjifei3.2
+	 hide_window = yes
+	 is_triggered_only = yes
+	 immediate = {
+		 if = {
+			 limit = {
+				 root = {
+					 has_country_flag = disabled_endless_evolution
+				 }
+			 }
+			 remove_country_flag = disabled_endless_evolution
+		 }
+	 }
+ }
+ country_event = {
+	 id = EOEjifei3.3
+	 hide_window = yes
+	 is_triggered_only = yes
+	 immediate = {
+		 if = {
+			 limit = {
+				 root = {
+					 NOT = { has_country_flag = disabled_endless_evolution }
+				 }
+			 }
+			 set_country_flag = disabled_endless_evolution
+		 }
+	 }
+ }
 # country_event = {
 # 	id = EOEjifei3.1
 # 	title = "EOEjifei3.1.name"                                 ########################################################
