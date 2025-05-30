@@ -13,26 +13,21 @@ tech_endless_evolution = {
 	weight = @repeatableTechWeight
 	
 	potential = {
-		or = {
+		OR = {
 			has_tradition = tr_cloning_finish
-			has_tradition = tr_mutation_finish
 			has_tradition = tr_purity_finish
+			has_tradition = tr_mutation_finish
 			has_tradition = tr_genetics_finish
 		}
-		NOT = { has_country_flag = disabled_endless_evolution }
 	}
 	weight_modifier = {
 		factor = @repatableTechFactor
 	    modifier = {
 			factor = 0
 			NOT = { 
-				any_owned_pop_species = {
-				has_trait = trait_directed_evolution
+				owner_main_species = { has_trait = trait_directed_evolution }
 			}
 			}
-			}
-		
-	
 	}
 	
 	ai_weight = {
