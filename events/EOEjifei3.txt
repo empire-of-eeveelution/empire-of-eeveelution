@@ -36,34 +36,50 @@
 	# }
 
 }
+ # country_event = {
+	#  id = EOEjifei3.2
+	#  hide_window = yes
+	#  is_triggered_only = yes
+	#  immediate = {
+	# 	 if = {
+	# 		 limit = {
+	# 			 root = {
+	# 				 has_country_flag = disabled_endless_evolution
+	# 			 }
+	# 		 }
+	# 		 remove_country_flag = disabled_endless_evolution
+	# 	 }
+	#  }
+ # }
+ # country_event = {
+	#  id = EOEjifei3.3
+	#  hide_window = yes
+	#  is_triggered_only = yes
+	#  immediate = {
+	# 	 if = {
+	# 		 limit = {
+	# 			 root = {
+	# 				 NOT = { has_country_flag = disabled_endless_evolution }
+	# 			 }
+	# 		 }
+	# 		 set_country_flag = disabled_endless_evolution
+	# 	 }
+	#  }
+ # }
  country_event = {
-	 id = EOEjifei3.2
+	 id = EOEjifei3.4
 	 hide_window = yes
 	 is_triggered_only = yes
-	 immediate = {
-		 if = {
-			 limit = {
-				 root = {
-					 has_country_flag = disabled_endless_evolution
-				 }
-			 }
-			 remove_country_flag = disabled_endless_evolution
+	 trigger = {
+		 OR = {
+			 has_tradition = tr_cloning_finish
+			 has_tradition = tr_mutation_finish
+			 has_tradition = tr_purity_finish
+			 has_tradition = tr_genetics_finish
 		 }
 	 }
- }
- country_event = {
-	 id = EOEjifei3.3
-	 hide_window = yes
-	 is_triggered_only = yes
 	 immediate = {
-		 if = {
-			 limit = {
-				 root = {
-					 NOT = { has_country_flag = disabled_endless_evolution }
-				 }
-			 }
-			 set_country_flag = disabled_endless_evolution
-		 }
+		 start_situation = { type = situation_endless_evolution target = this }
 	 }
  }
 # country_event = {

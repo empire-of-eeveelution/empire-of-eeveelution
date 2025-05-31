@@ -10,7 +10,7 @@ tech_endless_evolution = {
 	levels = -1
 	prerequisites = {  }
 	icon = tech_gene_tailoring
-	weight = @repeatableTechWeight
+	weight = -10000
 	
 	potential = {
 		or = {

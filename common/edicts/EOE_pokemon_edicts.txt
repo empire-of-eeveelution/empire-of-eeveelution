@@ -26,19 +26,19 @@ EOE_switch_endless_evolution1 = {
 		country_event = { id = EOEjifei3.2 }
 	}
 }
-EOE_switch_endless_evolution2 = {
-	icon = "GFX_breed_pokemon"
-	length = 0
-	potential = {
-		or = {
-			has_tradition = tr_cloning_finish
-			has_tradition = tr_mutation_finish
-			has_tradition = tr_purity_finish
-			has_tradition = tr_genetics_finish
-		}
-		NOT = { has_country_flag = disabled_endless_evolution }
-	}
-	effect = {
-		country_event = { id = EOEjifei3.3 }
-	}
-}
+# EOE_switch_endless_evolution2 = {
+# 	icon = "GFX_breed_pokemon"
+# 	length = 0
+# 	potential = {
+# 		or = {
+# 			has_tradition = tr_cloning_finish
+# 			has_tradition = tr_mutation_finish
+# 			has_tradition = tr_purity_finish
+# 			has_tradition = tr_genetics_finish
+# 		}
+# 		NOT = { has_country_flag = disabled_endless_evolution }
+# 	}
+# 	effect = {
+# 		country_event = { id = EOEjifei3.3 }
+# 	}
+# }

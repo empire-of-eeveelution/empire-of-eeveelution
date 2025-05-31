@@ -108,6 +108,7 @@ on_leader_death = {
 on_tradition_picked = {
 	events = {
 		EOE_building.4
+		EOEjifei3.4
 	}
 }
 
