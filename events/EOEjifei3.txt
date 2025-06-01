@@ -77,7 +77,7 @@
 			 has_tradition = tr_purity_finish
 			 has_tradition = tr_genetics_finish
 		 }
-		 has_country_flag = EOE_genetics_finish
+		 NOT = { has_country_flag = EOE_genetics_finish }
 	 }
 	 immediate = {
 		 set_country_flag = EOE_genetics_finish
