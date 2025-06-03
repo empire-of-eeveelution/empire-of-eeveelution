@@ -22,7 +22,7 @@ tech_endless_evolution = {
 		NOT = { has_country_flag = disabled_endless_evolution }
 	}
 	weight_modifier = {
-		factor = @repatableTechFactor
+		factor = 0
 	    modifier = {
 			factor = 0
 			NOT = { 
@@ -39,7 +39,7 @@ tech_endless_evolution = {
 		repeatable
 	}
 	mod_weight_if_group_picked = {
-		repeatable = 0.01
+		repeatable = 0
 	}
 	
 	modifier = {

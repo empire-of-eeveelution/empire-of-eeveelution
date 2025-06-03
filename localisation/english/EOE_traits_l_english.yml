@@ -410,3 +410,13 @@ leader_trait_admiral_fairy_type_1_desc:0"This leader is the principal of a milit
 tech_endless_evolution_2:0 "Infinity Optimization"
 tech_endless_evolution_2_desc:0 "Testing"
 tech_endless_evolution_2_modifier_desc:0"$species_trait_points_add$: $POINTS|0=+$"
+
+ endless_evolution_do_nothing:0"Maintaining the process of endless evolution"
+ endless_evolution_normal:0"This approach gains 1 pokemon trait point every 24 months on average"
+ endless_evolution_do_evolution:0"Invest additional resources to promote endless evolution"
+ endless_evolution_do_it:0"This approach gains 1 pokemon trait point every 12 months on average"
+ endless_evolution_do_research:0"Shifting focus to sociological research"
+ endless_evolution_research:0"This approach gains 1 pokemon trait point every 40 months on average"
+ situation_endless_evolution:0"endless evolution"
+ situation_endless_evolution_desc:0"As we complete our own genetic ascension, we are gradually able to unlock the full potential of the genome given by the Creator within us, but how should we deal with this phenomenon?"
+ endless_evolution_complete:0"pokemon species trait points§G+1§!"
