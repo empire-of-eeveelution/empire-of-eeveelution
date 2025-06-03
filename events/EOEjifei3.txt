@@ -78,6 +78,7 @@
 			 has_tradition = tr_genetics_finish
 		 }
 		 NOT = { has_country_flag = EOE_genetics_finish }
+		 any_owned_pop_species = { is_archetype = POKEMON }
 	 }
 	 immediate = {
 		 set_country_flag = EOE_genetics_finish

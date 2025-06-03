@@ -25,7 +25,7 @@ situation_endless_evolution = {
     on_progress_complete = {
         owner = {
             hidden_effect = {
-                give_technology = { tech = tech_endless_evolution }
+                give_technology = { tech = tech_endless_evolution message = no }
                 start_situation = { type = situation_endless_evolution target = this }
                 destroy_situation = root
             }
