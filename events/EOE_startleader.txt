@@ -188,7 +188,7 @@ country_event = {
 	option = {
 		name = eoestartleader.3.b
 		last_created_leader = {
-			add_trait = leader_trait_EOE_Organic_Machine_Intelligence
+			add_trait = { trait = leader_trait_EOE_Organic_Machine_Intelligence }
 			set_leader_flag = EOE_startleader_organic_machine
 		}
 		hidden_effect = {
@@ -213,8 +213,8 @@ country_event = {
 			has_country_flag = EOE_startleader_scientist
 		}
 		last_created_leader = {
-			add_trait = leader_trait_scientist_dark_type_night_owl_1
-			add_trait = subclass_scientist_explorer
+			add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
+			add_trait = { trait = subclass_scientist_explorer }
 			set_leader_flag = EOE_startleader_psychic
 			change_leader_portrait = EOE038
 		}
@@ -229,8 +229,8 @@ country_event = {
 			has_country_flag = EOE_startleader_scientist
 		}
 		last_created_leader = {
-			add_trait = leader_trait_scientist_dark_type_night_owl_1
-			add_trait = subclass_scientist_scholar
+			add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
+			add_trait = { trait = subclass_scientist_scholar }
 			set_leader_flag = EOE_startleader_dark
 			change_leader_portrait = EOE063
 		}
@@ -245,8 +245,8 @@ country_event = {
 			has_country_flag = EOE_startleader_scientist
 		}
 		last_created_leader = {
-			add_trait = leader_trait_scientist_electric_type_1
-			add_trait = subclass_scientist_governor
+			add_trait = { trait = leader_trait_scientist_electric_type_1 }
+			add_trait = { trait = subclass_scientist_governor }
 			set_leader_flag = EOE_startleader_electric
 			change_leader_portrait = EOE040
 		}
@@ -261,8 +261,8 @@ country_event = {
 			has_country_flag = EOE_startleader_scientist
 		}
 		last_created_leader = {
-			add_trait = leader_trait_scientist_water_type_1
-			add_trait = subclass_scientist_councilor
+			add_trait = { trait = leader_trait_scientist_water_type_1 }
+			add_trait = { trait = subclass_scientist_councilor }
 			set_leader_flag = EOE_startleader_ice
 			change_leader_portrait = EOE081
 		}
@@ -287,8 +287,8 @@ country_event = {
 			has_country_flag = EOE_startleader_commander
 		}
 		last_created_leader = {
-			add_trait = leader_trait_ice_type_Directed_molecular_activation_1
-			add_trait = subclass_commander_admiral
+			add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
+			add_trait = { trait = subclass_commander_admiral }
 			set_leader_flag = EOE_startleader_ice
 			change_leader_portrait = EOE081
 		}
@@ -313,8 +313,8 @@ country_event = {
 			has_country_flag = EOE_startleader_commander
 		}
 		last_created_leader = {
-			add_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
-			add_trait = subclass_commander_general
+			add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
+			add_trait = { trait = subclass_commander_general }
 			set_leader_flag = EOE_startleader_fire
 			change_leader_portrait = EOE030
 		}
@@ -329,8 +329,8 @@ country_event = {
 			has_country_flag = EOE_startleader_commander
 		}
 		last_created_leader = {
-			add_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
-			add_trait = subclass_commander_governor
+			add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
+			add_trait = { trait = subclass_commander_governor }
 			set_leader_flag = EOE_startleader_grass
 			change_leader_portrait = EOE101
 		}
@@ -345,8 +345,8 @@ country_event = {
 			has_country_flag = EOE_startleader_commander
 		}
 		last_created_leader = {
-			add_trait = leader_trait_admiral_fairy_type_1
-			add_trait = subclass_commander_councilor
+			add_trait = { trait = leader_trait_admiral_fairy_type_1 }
+			add_trait = { trait = subclass_commander_councilor }
 			set_leader_flag = EOE_startleader_fairy
 			change_leader_portrait = EOE019
 		}
@@ -361,8 +361,8 @@ country_event = {
 			has_country_flag = EOE_startleader_official
 		}
 		last_created_leader = {
-			add_trait = leader_trait_governor_water_type_1
-			add_trait = subclass_official_delegate
+			add_trait = { trait = leader_trait_governor_water_type_1 }
+			add_trait = { trait = subclass_official_delegate }
 			set_leader_flag = EOE_startleader_water
 			change_leader_portrait = EOE043
 		}
@@ -377,8 +377,8 @@ country_event = {
 			has_country_flag = EOE_startleader_official
 		}
 		last_created_leader = {
-			add_trait = leader_trait_governor_ice_type_nano_builder_1
-			add_trait = subclass_official_governor
+			add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
+			add_trait = { trait = subclass_official_governor }
 			set_leader_flag = EOE_startleader_ice
 			change_leader_portrait = EOE081
 		}
@@ -403,8 +403,8 @@ country_event = {
 			has_country_flag = EOE_startleader_official
 		}
 		last_created_leader = {
-			add_trait = leader_trait_governor_dark_type_necessary_evil_1
-			add_trait = subclass_official_diplomacy_councilor
+			add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
+			add_trait = { trait = subclass_official_diplomacy_councilor }
 			set_leader_flag = EOE_startleader_dark
 			change_leader_portrait = EOE063
 		}
@@ -419,8 +419,8 @@ country_event = {
 			has_country_flag = EOE_startleader_official
 		}
 		last_created_leader = {
-			add_trait = leader_trait_governor_dark_type_necessary_evil_1
-			add_trait = subclass_official_economy_councilor
+			add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
+			add_trait = { trait = subclass_official_economy_councilor }
 			set_leader_flag = EOE_startleader_fairy
 			change_leader_portrait = EOE019
 		}
@@ -600,7 +600,7 @@ country_event = {
 				limit = {
 					has_leader_flag = EOE_leader_elena
 				}
-				add_trait = leader_trait_paranoid
+				add_trait = { trait = leader_trait_paranoid }
 			}
 		}
 	}
@@ -679,7 +679,7 @@ country_event = {
 						has_leader_flag = EOE_leader_elena
 					}
 					remove_trait = leader_trait_paranoid
-					add_trait = leader_trait_adaptable
+					add_trait = { trait = leader_trait_adaptable }
 				}
 			}
 		}
@@ -697,8 +697,8 @@ country_event = {
 	option = {
 		name = eoestartleader.15.a
 		last_created_leader = {
-			add_trait = leader_trait_water_type_Organic_Symbiont_1
-			add_trait = leader_trait_scientist_water_type_Gene_Mastery_1
+			add_trait = { trait = leader_trait_water_type_Organic_Symbiont_1 }
+			add_trait = { trait = leader_trait_scientist_water_type_Gene_Mastery_1 }
 			change_leader_portrait = EOE043
 			set_leader_flag = EOE_startleader_water
 		}
@@ -706,9 +706,9 @@ country_event = {
 	option = {
 		name = eoestartleader.15.b
 		last_created_leader = {
-			add_trait = leader_trait_electric_type_Fundamental_Force_Interference_1
-			add_trait = leader_trait_electric_type_Tesla_Commander_1
-			add_trait = leader_trait_scientist_electric_type_Energy_Mastery_1
+			add_trait = { trait = leader_trait_electric_type_Fundamental_Force_Interference_1 }
+			add_trait = { trait = leader_trait_electric_type_Tesla_Commander_1 }
+			add_trait = { trait = leader_trait_scientist_electric_type_Energy_Mastery_1 }
 			change_leader_portrait = EOE040
 			set_leader_flag = EOE_startleader_electric
 		}
@@ -716,8 +716,8 @@ country_event = {
 	option = {
 		name = eoestartleader.15.c
 		last_created_leader = {
-			add_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
-			add_trait = leader_trait_scientist_fire_type_reacter_calibration_1
+			add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
+			add_trait = { trait = leader_trait_scientist_fire_type_reacter_calibration_1 }
 			change_leader_portrait = EOE030
 			set_leader_flag = EOE_startleader_fire
 		}
@@ -725,8 +725,8 @@ country_event = {
 	option = {
 		name = eoestartleader.15.d
 		last_created_leader = {
-			add_trait = leader_trait_psychic_type_Psionic_detection_battle_system_1
-			add_trait = leader_trait_scientist_psychic_type_psionic_benefits_1
+			add_trait = { trait = leader_trait_psychic_type_Psionic_detection_battle_system_1 }
+			add_trait = { trait = leader_trait_scientist_psychic_type_psionic_benefits_1 }
 			change_leader_portrait = EOE038
 			set_leader_flag = EOE_startleader_psychic
 		}
@@ -734,10 +734,10 @@ country_event = {
 	option = {
 		name = eoestartleader.15.e
 		last_created_leader = {
-			add_trait = leader_trait_dark_type_Void_Stutter_1
-			add_trait = leader_trait_dark_type_Dark_Templar_1
-			add_trait = leader_trait_governor_dark_type_necessary_evil_1
-			add_trait = leader_trait_scientist_dark_type_night_owl_1
+			add_trait = { trait = leader_trait_dark_type_Void_Stutter_1 }
+			add_trait = { trait = leader_trait_dark_type_Dark_Templar_1 }
+			add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
+			add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
 			change_leader_portrait = EOE063
 			set_leader_flag = EOE_startleader_dark
 		}
@@ -745,8 +745,8 @@ country_event = {
 	option = {
 		name = eoestartleader.15.f
 		last_created_leader = {
-			add_trait = leader_trait_grass_type_Production_Construction_Corps_1
-			add_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+			add_trait = { trait = leader_trait_grass_type_Production_Construction_Corps_1 }
+			add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
 			change_leader_portrait = EOE101
 			set_leader_flag = EOE_startleader_grass
 		}
@@ -754,9 +754,9 @@ country_event = {
 	option = {
 		name = eoestartleader.15.g
 		last_created_leader = {
-			add_trait = leader_trait_ice_type_Directed_molecular_activation_1
-			add_trait = leader_trait_governor_ice_type_nano_builder_1
-			add_trait = leader_trait_scientist_ice_type_Particle_Mastery_1
+			add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
+			add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
+			add_trait = { trait = leader_trait_scientist_ice_type_Particle_Mastery_1 }
 			change_leader_portrait = EOE081
 			set_leader_flag = EOE_startleader_ice
 		}
@@ -764,8 +764,8 @@ country_event = {
 	option = {
 		name = eoestartleader.15.h
 		last_created_leader = {
-			add_trait = leader_trait_fairy_type_Shared_glory_1
-			add_trait = leader_trait_governor_fairy_type_Empathy_network_1
+			add_trait = { trait = leader_trait_fairy_type_Shared_glory_1 }
+			add_trait = { trait = leader_trait_governor_fairy_type_Empathy_network_1 }
 			change_leader_portrait = EOE019
 			set_leader_flag = EOE_startleader_fairy
 		}

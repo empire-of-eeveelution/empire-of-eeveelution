@@ -426,7 +426,7 @@ ship_event = {
 		name = eevent.16.a
 		trigger = { owner = {NOT = { has_ethic = ethic_gestalt_consciousness } } }
 		leader = {
-			add_trait = leader_trait_carefree
+			add_trait = { trait = leader_trait_carefree }
 		}
 		owner = {
 				country_event = { id = eevent.13 }

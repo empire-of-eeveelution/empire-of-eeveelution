@@ -1847,7 +1847,7 @@ ship_event = { #炎精事故-有事发生-策展人，秋葵，埃琳娜
 	show_sound = "event_burning_city"
 	immediate = {
 		root.leader = {
-			add_trait = leader_trait_EOE_burned #-40有点多，最好自己写一个烧伤-20
+			add_trait = { trait = leader_trait_EOE_burned } #-40有点多，最好自己写一个烧伤-20
 		}
 	}
 
@@ -1899,7 +1899,7 @@ ship_event = { #炎精事故-有事发生-普通
 	show_sound = "event_burning_city"
 	immediate = {
 		fleet.leader = {
-			add_trait = leader_trait_maimed 
+			add_trait = { trait = leader_trait_maimed }
 		}
 	}
 	option = {
@@ -1980,7 +1980,7 @@ ship_event = { #炎精事故-有事发生-石头和机械
 	show_sound = "event_burning_city"
 	immediate = {
 		fleet.leader = {
-			add_trait = leader_trait_EOE_burned_2
+			add_trait = { trait = leader_trait_EOE_burned_2 }
 		}
 		hidden_effect = {
 			root.leader = { unassign_leader = this }			
@@ -2201,7 +2201,7 @@ ship_event = { #辐射事故-有事发生-策展人，秋葵，埃琳娜，死�
 	show_sound = "event_red_alert"
 	immediate = {
 		fleet.leader = {
-			add_trait = leader_trait_EOE_radioactiveburned #辐射烧伤-20
+			add_trait = { trait = leader_trait_EOE_radioactiveburned } #辐射烧伤-20
 		}
 		hidden_effect = {
 			root.leader = { unassign_leader = this }			
@@ -2678,7 +2678,7 @@ ship_event = { #机器人sc成功
 	show_sound = "event_whispering"
 	immediate = {
 		leader = {
-			add_trait = leader_trait_traumatized
+			add_trait = { trait = leader_trait_traumatized }
 		}
 	}
 	option = {
@@ -2695,7 +2695,7 @@ ship_event = { #普通人sc成功
 	show_sound = "event_whispering"
 	immediate = {
 		leader = {
-			add_trait = leader_trait_traumatized
+			add_trait = { trait = leader_trait_traumatized }
 		}
 	}
 	option = {

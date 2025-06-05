@@ -12,8 +12,8 @@ add_eeveelution_leader_trait = {
 				any_owned_pop_species = { has_trait = trait_psychic_type_mega_evolution }
 			}
 		}
-		add_trait = leader_trait_scientist_psychic_type_psionic_benefits_scienceship
-		add_trait = leader_trait_scientist_psychic_type_psionic_benefits
+		add_trait = { trait = leader_trait_scientist_psychic_type_psionic_benefits_scienceship }
+		add_trait = { trait = leader_trait_scientist_psychic_type_psionic_benefits }
 	}
 	if = {
 		limit = {
@@ -27,7 +27,7 @@ add_eeveelution_leader_trait = {
 				}
 			}
 		}
-		add_trait = leader_trait_scientist_ice_type_Particle_Mastery
+		add_trait = { trait = leader_trait_scientist_ice_type_Particle_Mastery }
 	}
 	if = {
 		limit = {
@@ -41,7 +41,7 @@ add_eeveelution_leader_trait = {
 				}
 			}
 		}
-		add_trait = leader_trait_scientist_dark_type_night_owl
+		add_trait = { trait = leader_trait_scientist_dark_type_night_owl }
 	}
 	if = {
 		limit = {
@@ -50,7 +50,7 @@ add_eeveelution_leader_trait = {
 				any_owned_pop_species = { has_trait = trait_water_type_mega_evolution }
 			}
 		}
-		add_trait = leader_trait_scientist_water_type_Gene_Mastery
+		add_trait = { trait = leader_trait_scientist_water_type_Gene_Mastery }
 	}
 	if = {
 		limit = {
@@ -59,7 +59,7 @@ add_eeveelution_leader_trait = {
 				any_owned_pop_species = { has_trait = trait_electric_type_mega_evolution }
 			}
 		}
-		add_trait = leader_trait_scientist_electric_type_Energy_Mastery
+		add_trait = { trait = leader_trait_scientist_electric_type_Energy_Mastery }
 	}
 	if = {
 		limit = {
@@ -68,7 +68,7 @@ add_eeveelution_leader_trait = {
 				any_owned_pop_species = { has_trait = trait_fire_type_mega_evolution }
 			}
 		}
-		add_trait = leader_trait_scientist_fire_type_reacter_calibration
+		add_trait = { trait = leader_trait_scientist_fire_type_reacter_calibration }
 	}
 	if = {
 		limit = {
@@ -79,7 +79,7 @@ add_eeveelution_leader_trait = {
 				}
 			}
 		}
-		add_trait = leader_trait_EOE_governor_psionic
+		add_trait = { trait = leader_trait_EOE_governor_psionic }
 	}
 	if = {
 		limit = {
@@ -90,7 +90,7 @@ add_eeveelution_leader_trait = {
 				}
 			}
 		}
-		add_trait = leader_trait_governor_fairy_type_Cloud_brain_services
+		add_trait = { trait = leader_trait_governor_fairy_type_Cloud_brain_services }
 	}
 	if = {
 		limit = {
@@ -101,7 +101,7 @@ add_eeveelution_leader_trait = {
 				}
 			}
 		}
-		add_trait = leader_trait_governor_fairy_type_Cloud_brain_services
+		add_trait = { trait = leader_trait_governor_fairy_type_Cloud_brain_services }
 	}
 	if = {
 		limit = {
@@ -112,7 +112,7 @@ add_eeveelution_leader_trait = {
 				}
 			}
 		}
-		add_trait = leader_trait_governor_dark_type_necessary_evil
+		add_trait = { trait = leader_trait_governor_dark_type_necessary_evil }
 	}
 	if = {
 		limit = {
@@ -123,7 +123,7 @@ add_eeveelution_leader_trait = {
 				}
 			}
 		}
-		add_trait = leader_trait_governor_dark_type_Self_cognition_control
+		add_trait = { trait = leader_trait_governor_dark_type_Self_cognition_control }
 	}
 	if = {
 		limit = {
@@ -137,7 +137,7 @@ add_eeveelution_leader_trait = {
 				}
 			}
 		}
-		add_trait = leader_trait_governor_ice_type_nano_builder
+		add_trait = { trait = leader_trait_governor_ice_type_nano_builder }
 	}
 	if = {
 		limit = {
@@ -148,7 +148,7 @@ add_eeveelution_leader_trait = {
 				}
 			}
 		}
-		add_trait = leader_trait_governor_grass_type_Plants_vs_Aliens
+		add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens }
 	}
 	if = {
 		limit = {
@@ -159,7 +159,7 @@ add_eeveelution_leader_trait = {
 				}
 			}
 		}
-		add_trait = leader_trait_EOE_general_psionic
+		add_trait = { trait = leader_trait_EOE_general_psionic }
 	}
 	if = {
 		limit = {
@@ -170,7 +170,7 @@ add_eeveelution_leader_trait = {
 				}
 			}
 		}
-		add_trait = leader_trait_EOE_general_psionic
+		add_trait = { trait = leader_trait_EOE_general_psionic }
 	}
 	if = {
 		limit = {
@@ -184,7 +184,7 @@ add_eeveelution_leader_trait = {
 				}
 			}
 		}
-		add_trait = leader_trait_dark_type_Dark_Templar
+		add_trait = { trait = leader_trait_dark_type_Dark_Templar }
 	}
 	if = {
 		limit = {
@@ -195,7 +195,7 @@ add_eeveelution_leader_trait = {
 				}
 			}
 		}
-		add_trait = leader_trait_electric_type_Tesla_Commander
+		add_trait = { trait = leader_trait_electric_type_Tesla_Commander }
 	}
 	if = {
 		limit = {
@@ -206,7 +206,7 @@ add_eeveelution_leader_trait = {
 				}
 			}
 		}
-		add_trait = leader_trait_grass_type_Production_Construction_Corps
+		add_trait = { trait = leader_trait_grass_type_Production_Construction_Corps }
 	}
 	if = {
 		limit = {
@@ -220,7 +220,7 @@ add_eeveelution_leader_trait = {
 				}
 			}
 		}
-		add_trait = leader_trait_fairy_type_Shared_glory
+		add_trait = { trait = leader_trait_fairy_type_Shared_glory }
 	}
 	if = {
 		limit = {
@@ -231,7 +231,7 @@ add_eeveelution_leader_trait = {
 				}
 			}
 		}
-		add_trait = leader_trait_psychic_type_Psionic_detection_battle_system
+		add_trait = { trait = leader_trait_psychic_type_Psionic_detection_battle_system }
 	}
 	if = {
 		limit = {
@@ -245,7 +245,7 @@ add_eeveelution_leader_trait = {
 				}
 			}
 		}
-		add_trait = leader_trait_dark_type_Void_Stutter
+		add_trait = { trait = leader_trait_dark_type_Void_Stutter }
 	}
 	if = {
 		limit = {
@@ -259,7 +259,7 @@ add_eeveelution_leader_trait = {
 				}
 			}
 		}
-		add_trait = leader_trait_ice_type_Directed_molecular_activation
+		add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation }
 	}
 	if = {
 		limit = {
@@ -270,7 +270,7 @@ add_eeveelution_leader_trait = {
 				}
 			}
 		}
-		add_trait = leader_trait_electric_type_Fundamental_Force_Interference
+		add_trait = { trait = leader_trait_electric_type_Fundamental_Force_Interference }
 	}
 	if = {
 		limit = {
@@ -281,7 +281,7 @@ add_eeveelution_leader_trait = {
 				}
 			}
 		}
-		add_trait = leader_trait_fire_type_Instantaneous_entropy_increase
+		add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase }
 	}
 	if = {
 		limit = {
@@ -292,6 +292,6 @@ add_eeveelution_leader_trait = {
 				}
 			}
 		}
-		add_trait = leader_trait_water_type_Organic_Symbiont
+		add_trait = { trait = leader_trait_water_type_Organic_Symbiont }
 	}
 }

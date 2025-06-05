@@ -1553,7 +1553,7 @@ ship_event = {
 	option = {
 		name = EOE_ghost.17.a
 		root.leader = {
-			add_trait = leader_trait_carefree
+			add_trait = { trait = leader_trait_carefree }
 		}
 		owner = {
 			add_resource = {
@@ -1568,7 +1568,7 @@ ship_event = {
 				limit = {
 					is_councilor_type = councilor_research
 				}
-				add_trait = leader_trait_carefree
+				add_trait = { trait = leader_trait_carefree }
 			}
 		}
 	}
@@ -1692,14 +1692,14 @@ ship_event = {
 			}
 		}
 		root.leader = {
-			add_trait = leader_trait_maimed
+			add_trait = { trait = leader_trait_maimed }
 		}
 		owner = {
 			every_owned_leader = {
 				limit = {
 					is_councilor_type = councilor_research
 				}
-				add_trait = leader_trait_maimed
+				add_trait = { trait = leader_trait_maimed }
 			}
 			add_modifier = {
 				modifier = EOE_psionic_psychology
@@ -2502,14 +2502,14 @@ ship_event = {
 	option = {
 		name = EOE_ghost.29.a
 		root.leader = {
-			add_trait = leader_trait_expertise_psionics
+			add_trait = { trait = leader_trait_expertise_psionics }
 		}
 		owner = {
 			every_owned_leader = {
 				limit = {
 					is_councilor_type = councilor_research
 				}
-				add_trait = leader_trait_expertise_psionics
+				add_trait = { trait = leader_trait_expertise_psionics }
 			}
 		}
 	}

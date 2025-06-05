@@ -22,7 +22,7 @@ country_event = {
 						}
 					}
 				}
-				add_trait = leader_trait_scientist_psychic_type_psionic_benefits_1
+				add_trait = { trait = leader_trait_scientist_psychic_type_psionic_benefits_1 }
 			}
 			if = {
 				limit = {
@@ -33,7 +33,7 @@ country_event = {
 						}
 					}
 				}
-				add_trait = leader_trait_scientist_psychic_type_psionic_benefits_1
+				add_trait = { trait = leader_trait_scientist_psychic_type_psionic_benefits_1 }
 			}
 			# if = {
 			# 	limit = {
@@ -5433,7 +5433,7 @@ country_event = {
 				limit = {
 					has_leader_flag = EOE_leader_elena
 				}
-				add_trait = leader_trait_maniacal
+				add_trait = { trait = leader_trait_maniacal }
 			}
 		}
 	}
@@ -5614,7 +5614,7 @@ country_event = {
 				has_leader_flag = EOE_leader_hezi
 			}
 			remove_trait = leader_trait_scientist_nuclear_type
-			add_trait = leader_trait_scientist_nuclear_type_cured
+			add_trait = { trait = leader_trait_scientist_nuclear_type_cured }
 		}
 		add_modifier = {
 			modifier = EOE_mother_computer
@@ -5646,7 +5646,7 @@ country_event = {
 					has_trait = leader_trait_governor_fairy_type_Empathy_network_1
 				}
 			}
-			add_trait = leader_trait_governor_fairy_type_Empathy_network_1
+			add_trait = { trait = leader_trait_governor_fairy_type_Empathy_network_1 }
 		}
 		every_pool_leader = {
 			limit = {
@@ -5655,7 +5655,7 @@ country_event = {
 					has_trait = leader_trait_governor_fairy_type_Empathy_network_1
 				}
 			}
-			add_trait = leader_trait_governor_fairy_type_Empathy_network_1
+			add_trait = { trait = leader_trait_governor_fairy_type_Empathy_network_1 }
 		}
 	}
 }
@@ -5681,7 +5681,7 @@ country_event = {
 				limit = {
 					leader_class = scientist
 				}
-				add_trait = leader_trait_scientist_psychic_type_psionic_benefits_1
+				add_trait = { trait = leader_trait_scientist_psychic_type_psionic_benefits_1 }
 			}
 		}
 		every_pool_leader = {
@@ -5694,7 +5694,7 @@ country_event = {
 				limit = {
 					leader_class = scientist
 				}
-				add_trait = leader_trait_scientist_psychic_type_psionic_benefits_1
+				add_trait = { trait = leader_trait_scientist_psychic_type_psionic_benefits_1 }
 			}
 		}
 	}
@@ -5726,7 +5726,7 @@ country_event = {
 				limit = {
 					leader_class = commander
 				}
-				add_trait = leader_trait_dark_type_Void_Stutter_1
+				add_trait = { trait = leader_trait_dark_type_Void_Stutter_1 }
 			}
 		}
 		every_pool_leader = {
@@ -5739,7 +5739,7 @@ country_event = {
 				limit = {
 					leader_class = commander
 				}
-				add_trait = leader_trait_dark_type_Void_Stutter_1
+				add_trait = { trait = leader_trait_dark_type_Void_Stutter_1 }
 			}
 		}
 	}
@@ -5814,7 +5814,7 @@ country_event = {   #一级随机上特质
 						}
 					}
 					}
-					add_trait = leader_trait_scientist_water_type_1
+					add_trait = { trait = leader_trait_scientist_water_type_1 }
 					set_leader_flag = EOE_LV1_leader_trait_gived
 						
 			}
@@ -5832,7 +5832,7 @@ country_event = {   #一级随机上特质
 					}
 					
 				}
-				add_trait = leader_trait_scientist_dark_type_night_owl_1
+				add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
 				set_leader_flag = EOE_LV1_leader_trait_gived
 					
 		}
@@ -5847,7 +5847,7 @@ country_event = {   #一级随机上特质
 				}
 				
 			}
-			add_trait = leader_trait_scientist_electric_type_1
+			add_trait = { trait = leader_trait_scientist_electric_type_1 }
 			set_leader_flag = EOE_LV1_leader_trait_gived
 				
 	}
@@ -5876,7 +5876,7 @@ country_event = {   #一级随机上特质
 						}
 						
 					}
-					add_trait = leader_trait_ice_type_Directed_molecular_activation_1
+					add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
 					set_leader_flag = EOE_LV1_leader_trait_gived
 					
 				
@@ -5892,7 +5892,7 @@ country_event = {   #一级随机上特质
 				}
 					
 				}
-				add_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+				add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
 				set_leader_flag = EOE_LV1_leader_trait_gived
 				
 		}
@@ -5907,7 +5907,7 @@ country_event = {   #一级随机上特质
 				}
 				
 			}
-			add_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+			add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
 			set_leader_flag = EOE_LV1_leader_trait_gived
 			
 	}
@@ -5929,7 +5929,7 @@ country_event = {   #一级随机上特质
 						}
 
 					}
-					add_trait = leader_trait_admiral_fairy_type_1
+					add_trait = { trait = leader_trait_admiral_fairy_type_1 }
 					set_leader_flag = EOE_LV1_leader_trait_gived
 
 				}
@@ -5960,7 +5960,7 @@ country_event = {   #一级随机上特质
 						}
 						
 					}
-					add_trait = leader_trait_governor_ice_type_nano_builder_1
+					add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
 					set_leader_flag = EOE_LV1_leader_trait_gived
 						
 				
@@ -5976,7 +5976,7 @@ country_event = {   #一级随机上特质
 					}
 					
 				}
-					add_trait = leader_trait_governor_dark_type_necessary_evil_1
+					add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
 					set_leader_flag = EOE_LV1_leader_trait_gived
 					
 		}
@@ -5991,7 +5991,7 @@ country_event = {   #一级随机上特质
 				}
 				
 			}
-				add_trait = leader_trait_governor_water_type_1
+				add_trait = { trait = leader_trait_governor_water_type_1 }
 				set_leader_flag = EOE_LV1_leader_trait_gived
 			
 	}
@@ -6021,7 +6021,7 @@ country_event = {   #一级随机上特质
 							}
 						}
 						}
-						add_trait = leader_trait_scientist_water_type_1
+						add_trait = { trait = leader_trait_scientist_water_type_1 }
 						set_leader_flag = EOE_LV1_leader_trait_gived
 							
 				}
@@ -6036,7 +6036,7 @@ country_event = {   #一级随机上特质
 						}
 						
 					}
-					add_trait = leader_trait_scientist_dark_type_night_owl_1
+					add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
 					set_leader_flag = EOE_LV1_leader_trait_gived
 						
 			}
@@ -6051,7 +6051,7 @@ country_event = {   #一级随机上特质
 					}
 					
 				}
-				add_trait = leader_trait_scientist_electric_type_1
+				add_trait = { trait = leader_trait_scientist_electric_type_1 }
 				set_leader_flag = EOE_LV1_leader_trait_gived
 					
 		}
@@ -6080,7 +6080,7 @@ country_event = {   #一级随机上特质
 							}
 							
 						}
-						add_trait = leader_trait_ice_type_Directed_molecular_activation_1
+						add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
 						set_leader_flag = EOE_LV1_leader_trait_gived
 						
 					
@@ -6096,7 +6096,7 @@ country_event = {   #一级随机上特质
 					}
 						
 					}
-					add_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+					add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
 					set_leader_flag = EOE_LV1_leader_trait_gived
 					
 			}
@@ -6111,7 +6111,7 @@ country_event = {   #一级随机上特质
 					}
 					
 				}
-				add_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+				add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
 				set_leader_flag = EOE_LV1_leader_trait_gived
 				
 		}
@@ -6133,7 +6133,7 @@ country_event = {   #一级随机上特质
 							}
 
 						}
-						add_trait = leader_trait_admiral_fairy_type_1
+						add_trait = { trait = leader_trait_admiral_fairy_type_1 }
 						set_leader_flag = EOE_LV1_leader_trait_gived
 
 					}
@@ -6163,7 +6163,7 @@ country_event = {   #一级随机上特质
 							}
 							
 						}
-						add_trait = leader_trait_governor_ice_type_nano_builder_1
+						add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
 						set_leader_flag = EOE_LV1_leader_trait_gived
 							
 					
@@ -6179,7 +6179,7 @@ country_event = {   #一级随机上特质
 						}
 						
 					}
-						add_trait = leader_trait_governor_dark_type_necessary_evil_1
+						add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
 						set_leader_flag = EOE_LV1_leader_trait_gived
 						
 			}
@@ -6194,7 +6194,7 @@ country_event = {   #一级随机上特质
 					}
 					
 				}
-					add_trait = leader_trait_governor_water_type_1
+					add_trait = { trait = leader_trait_governor_water_type_1 }
 					set_leader_flag = EOE_LV1_leader_trait_gived
 				
 		}
@@ -6251,7 +6251,7 @@ country_event = {   #4级随机上特质
 						}
 					}
 					}
-					add_trait = leader_trait_scientist_water_type_1
+					add_trait = { trait = leader_trait_scientist_water_type_1 }
 					set_leader_flag = EOE_LV4_leader_trait_gived
 						
 			}
@@ -6269,7 +6269,7 @@ country_event = {   #4级随机上特质
 					}
 					
 				}
-				add_trait = leader_trait_scientist_dark_type_night_owl_1
+				add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
 				set_leader_flag = EOE_LV4_leader_trait_gived
 					
 		}
@@ -6284,7 +6284,7 @@ country_event = {   #4级随机上特质
 				}
 				
 			}
-			add_trait = leader_trait_scientist_electric_type_1
+			add_trait = { trait = leader_trait_scientist_electric_type_1 }
 			set_leader_flag = EOE_LV4_leader_trait_gived
 				
 	}
@@ -6314,7 +6314,7 @@ country_event = {   #4级随机上特质
 						}
 						
 					}
-					add_trait = leader_trait_ice_type_Directed_molecular_activation_1
+					add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
 					set_leader_flag = EOE_LV4_leader_trait_gived
 					
 				
@@ -6330,7 +6330,7 @@ country_event = {   #4级随机上特质
 				}
 					
 				}
-				add_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+				add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
 				set_leader_flag = EOE_LV4_leader_trait_gived
 				
 		}
@@ -6345,7 +6345,7 @@ country_event = {   #4级随机上特质
 				}
 				
 			}
-			add_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+			add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
 			set_leader_flag = EOE_LV4_leader_trait_gived
 			
 	}
@@ -6367,7 +6367,7 @@ country_event = {   #4级随机上特质
 						}
 
 					}
-					add_trait = leader_trait_admiral_fairy_type_1
+					add_trait = { trait = leader_trait_admiral_fairy_type_1 }
 					set_leader_flag = EOE_LV4_leader_trait_gived
 
 				}
@@ -6398,7 +6398,7 @@ country_event = {   #4级随机上特质
 						}
 						
 					}
-					add_trait = leader_trait_governor_ice_type_nano_builder_1
+					add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
 					set_leader_flag = EOE_LV4_leader_trait_gived
 						
 				
@@ -6414,7 +6414,7 @@ country_event = {   #4级随机上特质
 					}
 					
 				}
-					add_trait = leader_trait_governor_dark_type_necessary_evil_1
+					add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
 					set_leader_flag = EOE_LV4_leader_trait_gived
 					
 		}
@@ -6429,7 +6429,7 @@ country_event = {   #4级随机上特质
 				}
 				
 			}
-				add_trait = leader_trait_governor_water_type_1
+				add_trait = { trait = leader_trait_governor_water_type_1 }
 				set_leader_flag = EOE_LV4_leader_trait_gived
 			
 	}
@@ -6460,7 +6460,7 @@ country_event = {   #4级随机上特质
 							}
 						}
 						}
-						add_trait = leader_trait_scientist_water_type_1
+						add_trait = { trait = leader_trait_scientist_water_type_1 }
 						set_leader_flag = EOE_LV4_leader_trait_gived
 							
 				}
@@ -6475,7 +6475,7 @@ country_event = {   #4级随机上特质
 						}
 						
 					}
-					add_trait = leader_trait_scientist_dark_type_night_owl_1
+					add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
 					set_leader_flag = EOE_LV4_leader_trait_gived
 						
 			}
@@ -6490,7 +6490,7 @@ country_event = {   #4级随机上特质
 					}
 					
 				}
-				add_trait = leader_trait_scientist_electric_type_1
+				add_trait = { trait = leader_trait_scientist_electric_type_1 }
 				set_leader_flag = EOE_LV4_leader_trait_gived
 					
 		}
@@ -6520,7 +6520,7 @@ country_event = {   #4级随机上特质
 							}
 							
 						}
-						add_trait = leader_trait_ice_type_Directed_molecular_activation_1
+						add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
 						set_leader_flag = EOE_LV4_leader_trait_gived
 						
 					
@@ -6536,7 +6536,7 @@ country_event = {   #4级随机上特质
 					}
 						
 					}
-					add_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+					add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
 					set_leader_flag = EOE_LV4_leader_trait_gived
 					
 			}
@@ -6551,7 +6551,7 @@ country_event = {   #4级随机上特质
 					}
 					
 				}
-				add_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+				add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
 				set_leader_flag = EOE_LV4_leader_trait_gived
 				
 		}
@@ -6573,7 +6573,7 @@ country_event = {   #4级随机上特质
 							}
 
 						}
-						add_trait = leader_trait_admiral_fairy_type_1
+						add_trait = { trait = leader_trait_admiral_fairy_type_1 }
 						set_leader_flag = EOE_LV4_leader_trait_gived
 
 					}
@@ -6604,7 +6604,7 @@ country_event = {   #4级随机上特质
 							}
 							
 						}
-						add_trait = leader_trait_governor_ice_type_nano_builder_1
+						add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
 						set_leader_flag = EOE_LV4_leader_trait_gived
 							
 					
@@ -6620,7 +6620,7 @@ country_event = {   #4级随机上特质
 						}
 						
 					}
-						add_trait = leader_trait_governor_dark_type_necessary_evil_1
+						add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
 						set_leader_flag = EOE_LV4_leader_trait_gived
 						
 			}
@@ -6635,7 +6635,7 @@ country_event = {   #4级随机上特质
 					}
 					
 				}
-					add_trait = leader_trait_governor_water_type_1
+					add_trait = { trait = leader_trait_governor_water_type_1 }
 					set_leader_flag = EOE_LV4_leader_trait_gived
 				
 		}
@@ -6691,7 +6691,7 @@ country_event = {   #8级随机上特质
 						}
 					}
 					}
-					add_trait = leader_trait_scientist_water_type_1
+					add_trait = { trait = leader_trait_scientist_water_type_1 }
 					set_leader_flag = EOE_LV8_leader_trait_gived
 						
 			}
@@ -6709,7 +6709,7 @@ country_event = {   #8级随机上特质
 					}
 					
 				}
-				add_trait = leader_trait_scientist_dark_type_night_owl_1
+				add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
 				set_leader_flag = EOE_LV8_leader_trait_gived
 					
 		}
@@ -6724,7 +6724,7 @@ country_event = {   #8级随机上特质
 				}
 				
 			}
-			add_trait = leader_trait_scientist_electric_type_1
+			add_trait = { trait = leader_trait_scientist_electric_type_1 }
 			set_leader_flag = EOE_LV8_leader_trait_gived
 				
 	}
@@ -6754,7 +6754,7 @@ country_event = {   #8级随机上特质
 						}
 						
 					}
-					add_trait = leader_trait_ice_type_Directed_molecular_activation_1
+					add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
 					set_leader_flag = EOE_LV8_leader_trait_gived
 					
 				
@@ -6770,7 +6770,7 @@ country_event = {   #8级随机上特质
 				}
 					
 				}
-				add_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+				add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
 				set_leader_flag = EOE_LV8_leader_trait_gived
 				
 		}
@@ -6785,7 +6785,7 @@ country_event = {   #8级随机上特质
 				}
 				
 			}
-			add_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+			add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
 			set_leader_flag = EOE_LV8_leader_trait_gived
 			
 	}
@@ -6807,7 +6807,7 @@ country_event = {   #8级随机上特质
 						}
 
 					}
-					add_trait = leader_trait_admiral_fairy_type_1
+					add_trait = { trait = leader_trait_admiral_fairy_type_1 }
 					set_leader_flag = EOE_LV8_leader_trait_gived
 
 				}
@@ -6838,7 +6838,7 @@ country_event = {   #8级随机上特质
 						}
 						
 					}
-					add_trait = leader_trait_governor_ice_type_nano_builder_1
+					add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
 					set_leader_flag = EOE_LV8_leader_trait_gived
 						
 				
@@ -6854,7 +6854,7 @@ country_event = {   #8级随机上特质
 					}
 					
 				}
-					add_trait = leader_trait_governor_dark_type_necessary_evil_1
+					add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
 					set_leader_flag = EOE_LV8_leader_trait_gived
 					
 		}
@@ -6869,7 +6869,7 @@ country_event = {   #8级随机上特质
 				}
 				
 			}
-				add_trait = leader_trait_governor_water_type_1
+				add_trait = { trait = leader_trait_governor_water_type_1 }
 				set_leader_flag = EOE_LV8_leader_trait_gived
 			
 	}
@@ -6900,7 +6900,7 @@ country_event = {   #8级随机上特质
 							}
 						}
 						}
-						add_trait = leader_trait_scientist_water_type_1
+						add_trait = { trait = leader_trait_scientist_water_type_1 }
 						set_leader_flag = EOE_LV8_leader_trait_gived
 							
 				}
@@ -6915,7 +6915,7 @@ country_event = {   #8级随机上特质
 						}
 						
 					}
-					add_trait = leader_trait_scientist_dark_type_night_owl_1
+					add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
 					set_leader_flag = EOE_LV8_leader_trait_gived
 						
 			}
@@ -6930,7 +6930,7 @@ country_event = {   #8级随机上特质
 					}
 					
 				}
-				add_trait = leader_trait_scientist_electric_type_1
+				add_trait = { trait = leader_trait_scientist_electric_type_1 }
 				set_leader_flag = EOE_LV8_leader_trait_gived
 					
 		}
@@ -6960,7 +6960,7 @@ country_event = {   #8级随机上特质
 							}
 							
 						}
-						add_trait = leader_trait_ice_type_Directed_molecular_activation_1
+						add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
 						set_leader_flag = EOE_LV8_leader_trait_gived
 						
 					
@@ -6976,7 +6976,7 @@ country_event = {   #8级随机上特质
 					}
 						
 					}
-					add_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+					add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
 					set_leader_flag = EOE_LV8_leader_trait_gived
 					
 			}
@@ -6991,7 +6991,7 @@ country_event = {   #8级随机上特质
 					}
 					
 				}
-				add_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+				add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
 				set_leader_flag = EOE_LV8_leader_trait_gived
 				
 		}
@@ -7014,7 +7014,7 @@ country_event = {   #8级随机上特质
 							}
 
 						}
-						add_trait = leader_trait_admiral_fairy_type_1
+						add_trait = { trait = leader_trait_admiral_fairy_type_1 }
 						set_leader_flag = EOE_LV8_leader_trait_gived
 
 					}
@@ -7045,7 +7045,7 @@ country_event = {   #8级随机上特质
 							}
 							
 						}
-						add_trait = leader_trait_governor_ice_type_nano_builder_1
+						add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
 						set_leader_flag = EOE_LV8_leader_trait_gived
 							
 					
@@ -7061,7 +7061,7 @@ country_event = {   #8级随机上特质
 						}
 						
 					}
-						add_trait = leader_trait_governor_dark_type_necessary_evil_1
+						add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
 						set_leader_flag = EOE_LV8_leader_trait_gived
 						
 			}
@@ -7076,7 +7076,7 @@ country_event = {   #8级随机上特质
 					}
 					
 				}
-					add_trait = leader_trait_governor_water_type_1
+					add_trait = { trait = leader_trait_governor_water_type_1 }
 					set_leader_flag = EOE_LV8_leader_trait_gived
 				
 		}
@@ -7117,7 +7117,7 @@ country_event = {   #8级随机上特质
 # 				random_list = {
 # 					75 ={ set_leader_flag =grass_trait_gived }
 # 					25 ={
-# 						add_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+# 						add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
 # 						set_leader_flag =grass_trait_gived
 # 					}
 # 				}
@@ -7133,7 +7133,7 @@ country_event = {   #8级随机上特质
 # 				random_list = {
 # 					75 ={ set_leader_flag =grass_trait_gived }
 # 					25 ={
-# 						add_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+# 						add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
 # 						set_leader_flag =grass_trait_gived
 # 					}
 # 				}
@@ -7223,7 +7223,7 @@ country_event = {   #8级随机上特质
 # 				random_list = {
 # 					75 ={ set_leader_flag =fire_trait_gived }
 # 					25 ={
-# 						add_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+# 						add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
 # 						set_leader_flag =fire_trait_gived
 # 					}
 # 				}
@@ -7239,7 +7239,7 @@ country_event = {   #8级随机上特质
 # 				random_list = {
 # 					75 ={ set_leader_flag =fire_trait_gived }
 # 					25 ={
-# 						add_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+# 						add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
 # 						set_leader_flag =fire_trait_gived
 # 					}
 # 				}
@@ -7366,7 +7366,7 @@ country_event = {   #8级随机上特质
 # 				random_list = {
 # 					75 ={ set_leader_flag = ice_trait_gived }
 # 					25 ={
-# 						add_trait = leader_trait_ice_type_Directed_molecular_activation_1
+# 						add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
 # 						set_leader_flag = ice_trait_gived
 # 					}
 # 				}
@@ -7382,7 +7382,7 @@ country_event = {   #8级随机上特质
 # 				random_list = {
 # 					75 ={ set_leader_flag = ice_trait_gived }
 # 					25 ={
-# 						add_trait = leader_trait_ice_type_Directed_molecular_activation_1
+# 						add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
 # 						set_leader_flag = ice_trait_gived
 # 					}
 # 				}
@@ -7400,7 +7400,7 @@ country_event = {   #8级随机上特质
 # 				random_list = {
 # 					75 ={ set_leader_flag = ice_trait_gived }
 # 					25 ={
-# 						add_trait = leader_trait_governor_ice_type_nano_builder_1
+# 						add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
 # 						set_leader_flag = ice_trait_gived
 # 					}
 # 				}
@@ -7416,7 +7416,7 @@ country_event = {   #8级随机上特质
 # 				random_list = {
 # 					75 ={ set_leader_flag = ice_trait_gived }
 # 					25 ={
-# 						add_trait = leader_trait_governor_ice_type_nano_builder_1
+# 						add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
 # 						set_leader_flag = ice_trait_gived
 # 					}
 # 				}
@@ -7580,7 +7580,7 @@ country_event = {   #8级随机上特质
 # 				random_list = {
 # 					75 ={ set_leader_flag = dark_trait_gived }
 # 					25 ={
-# 						add_trait = leader_trait_scientist_dark_type_night_owl_1
+# 						add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
 # 						set_leader_flag = dark_trait_gived
 # 					}
 # 				}
@@ -7596,7 +7596,7 @@ country_event = {   #8级随机上特质
 # 				random_list = {
 # 					75 ={ set_leader_flag = dark_trait_gived }
 # 					25 ={
-# 						add_trait = leader_trait_scientist_dark_type_night_owl_1
+# 						add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
 # 						set_leader_flag = dark_trait_gived
 # 					}
 # 				}
@@ -7617,7 +7617,7 @@ country_event = {   #8级随机上特质
 # 				random_list = {
 # 					75 ={ set_leader_flag = dark_trait_gived }
 # 					25 ={
-# 						add_trait = leader_trait_governor_dark_type_necessary_evil_1
+# 						add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
 # 						set_leader_flag = dark_trait_gived
 # 					}
 # 				}
@@ -7636,7 +7636,7 @@ country_event = {   #8级随机上特质
 # 				random_list = {
 # 					75 ={ set_leader_flag = dark_trait_gived }
 # 					25 ={
-# 						add_trait = leader_trait_governor_dark_type_necessary_evil_1
+# 						add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
 # 						set_leader_flag = dark_trait_gived
 # 					}
 # 				}
@@ -7817,7 +7817,7 @@ country_event = {   #8级随机上特质
 # 			random_list = {
 # 				75 ={ set_leader_flag =fire_trait_gived }
 # 				25 ={
-# 					add_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+# 					add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
 # 					set_leader_flag =fire_trait_gived
 # 				}
 # 			}
@@ -7833,7 +7833,7 @@ country_event = {   #8级随机上特质
 # 			random_list = {
 # 				75 ={ set_leader_flag =fire_trait_gived }
 # 				25 ={
-# 					add_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+# 					add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
 # 					set_leader_flag =fire_trait_gived
 # 				}
 # 			}
@@ -7979,7 +7979,7 @@ country_event = {   #8级随机上特质
 # 			random_list = {
 # 				75 ={ set_leader_flag = ice_trait_gived }
 # 				25 ={
-# 					add_trait = leader_trait_ice_type_Directed_molecular_activation_1
+# 					add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
 # 					set_leader_flag = ice_trait_gived
 # 				}
 # 			}
@@ -7995,7 +7995,7 @@ country_event = {   #8级随机上特质
 # 			random_list = {
 # 				75 ={ set_leader_flag = ice_trait_gived }
 # 				25 ={
-# 					add_trait = leader_trait_ice_type_Directed_molecular_activation_1
+# 					add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
 # 					set_leader_flag = ice_trait_gived
 # 				}
 # 			}
@@ -8013,7 +8013,7 @@ country_event = {   #8级随机上特质
 # 			random_list = {
 # 				75 ={ set_leader_flag = ice_trait_gived }
 # 				25 ={
-# 					add_trait = leader_trait_governor_ice_type_nano_builder_1
+# 					add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
 # 					set_leader_flag = ice_trait_gived
 # 				}
 # 			}
@@ -8029,7 +8029,7 @@ country_event = {   #8级随机上特质
 # 			random_list = {
 # 				75 ={ set_leader_flag = ice_trait_gived }
 # 				25 ={
-# 					add_trait = leader_trait_governor_ice_type_nano_builder_1
+# 					add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
 # 					set_leader_flag = ice_trait_gived
 # 				}
 # 			}
@@ -8229,7 +8229,7 @@ country_event = {   #8级随机上特质
 # 			random_list = {
 # 				75 ={ set_leader_flag = dark_trait_gived }
 # 				25 ={
-# 					add_trait = leader_trait_scientist_dark_type_night_owl_1
+# 					add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
 # 					set_leader_flag = dark_trait_gived
 # 				}
 # 			}
@@ -8245,7 +8245,7 @@ country_event = {   #8级随机上特质
 # 			random_list = {
 # 				75 ={ set_leader_flag = dark_trait_gived }
 # 				25 ={
-# 					add_trait = leader_trait_scientist_dark_type_night_owl_1
+# 					add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
 # 					set_leader_flag = dark_trait_gived
 # 				}
 # 			}
@@ -8266,7 +8266,7 @@ country_event = {   #8级随机上特质
 # 			random_list = {
 # 				75 ={ set_leader_flag = dark_trait_gived }
 # 				25 ={
-# 					add_trait = leader_trait_governor_dark_type_necessary_evil_1
+# 					add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
 # 					set_leader_flag = dark_trait_gived
 # 				}
 # 			}
@@ -8285,7 +8285,7 @@ country_event = {   #8级随机上特质
 # 			random_list = {
 # 				75 ={ set_leader_flag = dark_trait_gived }
 # 				25 ={
-# 					add_trait = leader_trait_governor_dark_type_necessary_evil_1
+# 					add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
 # 					set_leader_flag = dark_trait_gived
 # 				}
 # 			}
@@ -9803,7 +9803,7 @@ country_event = {
 				}
 			}
 			last_created_leader = {
-				add_trait = leader_trait_dark_type_Void_Stutter_1
+				add_trait = { trait = leader_trait_dark_type_Void_Stutter_1 }
 			}
 		}
 		if = {
@@ -9813,7 +9813,7 @@ country_event = {
 				}
 			}
 			last_created_leader = {
-				add_trait = leader_trait_ice_type_Directed_molecular_activation_1
+				add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
 			}
 		}
 		if = {
@@ -9823,7 +9823,7 @@ country_event = {
 				}
 			}
 			last_created_leader = {
-				add_trait = leader_trait_electric_type_Fundamental_Force_Interference_1
+				add_trait = { trait = leader_trait_electric_type_Fundamental_Force_Interference_1 }
 			}
 		}
 		if = {
@@ -9833,7 +9833,7 @@ country_event = {
 				}
 			}
 			last_created_leader = {
-				add_trait = leader_trait_psychic_type_Psionic_detection_battle_system_1
+				add_trait = { trait = leader_trait_psychic_type_Psionic_detection_battle_system_1 }
 			}
 		}
 		if = {
@@ -9843,7 +9843,7 @@ country_event = {
 				}
 			}
 			last_created_leader = {
-				add_trait = leader_trait_water_type_Organic_Symbiont_1
+				add_trait = { trait = leader_trait_water_type_Organic_Symbiont_1 }
 			}
 		}
 		if = {
@@ -9853,7 +9853,7 @@ country_event = {
 				}
 			}
 			last_created_leader = {
-				add_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+				add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
 			}
 		}
 	}
@@ -10128,7 +10128,7 @@ country_event = {
 					has_trait = leader_trait_governor_ground_type
 				}
 			}
-			add_trait = leader_trait_governor_ground_type
+			add_trait = { trait = leader_trait_governor_ground_type }
 		}
 		every_pool_leader = {
 			limit = {
@@ -10137,7 +10137,7 @@ country_event = {
 					has_trait = leader_trait_governor_ground_type
 				}
 			}
-			add_trait = leader_trait_governor_ground_type
+			add_trait = { trait = leader_trait_governor_ground_type }
 		}
 	}
 }
@@ -10163,7 +10163,7 @@ country_event = {
 				limit = {
 					leader_class = scientist
 				}
-				add_trait = leader_trait_scientist_dragon_type
+				add_trait = { trait = leader_trait_scientist_dragon_type }
 			}
 		}
 		every_pool_leader = {
@@ -10176,7 +10176,7 @@ country_event = {
 				limit = {
 					leader_class = scientist
 				}
-				add_trait = leader_trait_scientist_dragon_type
+				add_trait = { trait = leader_trait_scientist_dragon_type }
 			}
 		}
 	}
@@ -10203,7 +10203,7 @@ country_event = {
 				limit = {
 					leader_class = commander
 				}
-				add_trait = leader_trait_commander_fly_type
+				add_trait = { trait = leader_trait_commander_fly_type }
 			}
 		}
 		every_pool_leader = {
@@ -10216,7 +10216,7 @@ country_event = {
 				limit = {
 					leader_class = commander
 				}
-				add_trait = leader_trait_commander_fly_type
+				add_trait = { trait = leader_trait_commander_fly_type }
 			}
 		}
 	}
@@ -10258,7 +10258,7 @@ country_event = {   #一级随机上特质
 						}
 					}
 					}
-					add_trait = leader_trait_scientist_fly_type
+					add_trait = { trait = leader_trait_scientist_fly_type }
 					set_leader_flag = EOE_LV1_leader_trait_gived
 						
 			}
@@ -10273,7 +10273,7 @@ country_event = {   #一级随机上特质
 					}
 					
 				}
-				add_trait = leader_trait_scientist_rock_type
+				add_trait = { trait = leader_trait_scientist_rock_type }
 				set_leader_flag = EOE_LV1_leader_trait_gived
 					
 		}
@@ -10288,7 +10288,7 @@ country_event = {   #一级随机上特质
 				}
 				
 			}
-			add_trait = leader_trait_scientist_steel_type
+			add_trait = { trait = leader_trait_scientist_steel_type }
 			set_leader_flag = EOE_LV1_leader_trait_gived
 				
 	}
@@ -10314,7 +10314,7 @@ country_event = {   #一级随机上特质
 						}
 						
 					}
-					add_trait = leader_trait_commander_fight_type
+					add_trait = { trait = leader_trait_commander_fight_type }
 					set_leader_flag = EOE_LV1_leader_trait_gived
 					
 				
@@ -10330,7 +10330,7 @@ country_event = {   #一级随机上特质
 				}
 					
 				}
-				add_trait = leader_trait_commander_rock_type
+				add_trait = { trait = leader_trait_commander_rock_type }
 				set_leader_flag = EOE_LV1_leader_trait_gived
 				
 		}
@@ -10345,7 +10345,7 @@ country_event = {   #一级随机上特质
 				}
 				
 			}
-			add_trait = leader_trait_commander_bug_type
+			add_trait = { trait = leader_trait_commander_bug_type }
 			set_leader_flag = EOE_LV1_leader_trait_gived
 			
 	}
@@ -10374,7 +10374,7 @@ country_event = {   #一级随机上特质
 						}
 						
 					}
-					add_trait = leader_trait_governor_dragon_type
+					add_trait = { trait = leader_trait_governor_dragon_type }
 					set_leader_flag = EOE_LV1_leader_trait_gived
 						
 				
@@ -10390,7 +10390,7 @@ country_event = {   #一级随机上特质
 					}
 					
 				}
-					add_trait = leader_trait_governor_poison_type
+					add_trait = { trait = leader_trait_governor_poison_type }
 					set_leader_flag = EOE_LV1_leader_trait_gived
 					
 		}
@@ -10405,7 +10405,7 @@ country_event = {   #一级随机上特质
 				}
 				
 			}
-				add_trait = leader_trait_governor_bug_type
+				add_trait = { trait = leader_trait_governor_bug_type }
 				set_leader_flag = EOE_LV1_leader_trait_gived
 			
 	}
@@ -10435,7 +10435,7 @@ country_event = {   #一级随机上特质
 							}
 						}
 						}
-						add_trait = leader_trait_scientist_fly_type
+						add_trait = { trait = leader_trait_scientist_fly_type }
 						set_leader_flag = EOE_LV1_leader_trait_gived
 							
 				}
@@ -10450,7 +10450,7 @@ country_event = {   #一级随机上特质
 						}
 						
 					}
-					add_trait = leader_trait_scientist_rock_type
+					add_trait = { trait = leader_trait_scientist_rock_type }
 					set_leader_flag = EOE_LV1_leader_trait_gived
 						
 			}
@@ -10465,7 +10465,7 @@ country_event = {   #一级随机上特质
 					}
 					
 				}
-				add_trait = leader_trait_scientist_steel_type
+				add_trait = { trait = leader_trait_scientist_steel_type }
 				set_leader_flag = EOE_LV1_leader_trait_gived
 					
 		}
@@ -10491,7 +10491,7 @@ country_event = {   #一级随机上特质
 							}
 							
 						}
-						add_trait = leader_trait_commander_fight_type
+						add_trait = { trait = leader_trait_commander_fight_type }
 						set_leader_flag = EOE_LV1_leader_trait_gived
 						
 					
@@ -10507,7 +10507,7 @@ country_event = {   #一级随机上特质
 					}
 						
 					}
-					add_trait = leader_trait_commander_rock_type
+					add_trait = { trait = leader_trait_commander_rock_type }
 					set_leader_flag = EOE_LV1_leader_trait_gived
 					
 			}
@@ -10522,7 +10522,7 @@ country_event = {   #一级随机上特质
 					}
 					
 				}
-				add_trait = leader_trait_commander_bug_type
+				add_trait = { trait = leader_trait_commander_bug_type }
 				set_leader_flag = EOE_LV1_leader_trait_gived
 				
 		}
@@ -10550,7 +10550,7 @@ country_event = {   #一级随机上特质
 							}
 							
 						}
-						add_trait = leader_trait_governor_dragon_type
+						add_trait = { trait = leader_trait_governor_dragon_type }
 						set_leader_flag = EOE_LV1_leader_trait_gived
 							
 					
@@ -10566,7 +10566,7 @@ country_event = {   #一级随机上特质
 						}
 						
 					}
-						add_trait = leader_trait_governor_poison_type
+						add_trait = { trait = leader_trait_governor_poison_type }
 						set_leader_flag = EOE_LV1_leader_trait_gived
 						
 			}
@@ -10581,7 +10581,7 @@ country_event = {   #一级随机上特质
 					}
 					
 				}
-					add_trait = leader_trait_governor_bug_type
+					add_trait = { trait = leader_trait_governor_bug_type }
 					set_leader_flag = EOE_LV1_leader_trait_gived
 				
 		}
@@ -10638,7 +10638,7 @@ country_event = {   #4级随机上特质
 						}
 					}
 					}
-					add_trait = leader_trait_scientist_fly_type
+					add_trait = { trait = leader_trait_scientist_fly_type }
 					set_leader_flag = EOE_LV4_leader_trait_gived
 						
 			}
@@ -10653,7 +10653,7 @@ country_event = {   #4级随机上特质
 					}
 					
 				}
-				add_trait = leader_trait_scientist_rock_type
+				add_trait = { trait = leader_trait_scientist_rock_type }
 				set_leader_flag = EOE_LV4_leader_trait_gived
 					
 		}
@@ -10668,7 +10668,7 @@ country_event = {   #4级随机上特质
 				}
 				
 			}
-			add_trait = leader_trait_scientist_steel_type
+			add_trait = { trait = leader_trait_scientist_steel_type }
 			set_leader_flag = EOE_LV4_leader_trait_gived
 				
 	}
@@ -10695,7 +10695,7 @@ country_event = {   #4级随机上特质
 						}
 						
 					}
-					add_trait = leader_trait_commander_fight_type
+					add_trait = { trait = leader_trait_commander_fight_type }
 					set_leader_flag = EOE_LV4_leader_trait_gived
 					
 				
@@ -10711,7 +10711,7 @@ country_event = {   #4级随机上特质
 				}
 					
 				}
-				add_trait = leader_trait_commander_rock_type
+				add_trait = { trait = leader_trait_commander_rock_type }
 				set_leader_flag = EOE_LV4_leader_trait_gived
 				
 		}
@@ -10726,7 +10726,7 @@ country_event = {   #4级随机上特质
 				}
 				
 			}
-			add_trait = leader_trait_commander_bug_type
+			add_trait = { trait = leader_trait_commander_bug_type }
 			set_leader_flag = EOE_LV4_leader_trait_gived
 			
 	}
@@ -10755,7 +10755,7 @@ country_event = {   #4级随机上特质
 						}
 						
 					}
-					add_trait = leader_trait_governor_dragon_type
+					add_trait = { trait = leader_trait_governor_dragon_type }
 					set_leader_flag = EOE_LV4_leader_trait_gived
 						
 				
@@ -10771,7 +10771,7 @@ country_event = {   #4级随机上特质
 					}
 					
 				}
-					add_trait = leader_trait_governor_poison_type
+					add_trait = { trait = leader_trait_governor_poison_type }
 					set_leader_flag = EOE_LV4_leader_trait_gived
 					
 		}
@@ -10786,7 +10786,7 @@ country_event = {   #4级随机上特质
 				}
 				
 			}
-				add_trait = leader_trait_governor_bug_type
+				add_trait = { trait = leader_trait_governor_bug_type }
 				set_leader_flag = EOE_LV4_leader_trait_gived
 			
 	}
@@ -10817,7 +10817,7 @@ country_event = {   #4级随机上特质
 							}
 						}
 						}
-						add_trait = leader_trait_scientist_fly_type
+						add_trait = { trait = leader_trait_scientist_fly_type }
 						set_leader_flag = EOE_LV4_leader_trait_gived
 							
 				}
@@ -10832,7 +10832,7 @@ country_event = {   #4级随机上特质
 						}
 						
 					}
-					add_trait = leader_trait_scientist_rock_type
+					add_trait = { trait = leader_trait_scientist_rock_type }
 					set_leader_flag = EOE_LV4_leader_trait_gived
 						
 			}
@@ -10847,7 +10847,7 @@ country_event = {   #4级随机上特质
 					}
 					
 				}
-				add_trait = leader_trait_scientist_steel_type
+				add_trait = { trait = leader_trait_scientist_steel_type }
 				set_leader_flag = EOE_LV4_leader_trait_gived
 					
 		}
@@ -10874,7 +10874,7 @@ country_event = {   #4级随机上特质
 							}
 							
 						}
-						add_trait = leader_trait_commander_fight_type
+						add_trait = { trait = leader_trait_commander_fight_type }
 						set_leader_flag = EOE_LV4_leader_trait_gived
 						
 					
@@ -10890,7 +10890,7 @@ country_event = {   #4级随机上特质
 					}
 						
 					}
-					add_trait = leader_trait_commander_rock_type
+					add_trait = { trait = leader_trait_commander_rock_type }
 					set_leader_flag = EOE_LV4_leader_trait_gived
 					
 			}
@@ -10905,7 +10905,7 @@ country_event = {   #4级随机上特质
 					}
 					
 				}
-				add_trait = leader_trait_commander_bug_type
+				add_trait = { trait = leader_trait_commander_bug_type }
 				set_leader_flag = EOE_LV4_leader_trait_gived
 				
 		}
@@ -10934,7 +10934,7 @@ country_event = {   #4级随机上特质
 							}
 							
 						}
-						add_trait = leader_trait_governor_dragon_type
+						add_trait = { trait = leader_trait_governor_dragon_type }
 						set_leader_flag = EOE_LV4_leader_trait_gived
 							
 					
@@ -10950,7 +10950,7 @@ country_event = {   #4级随机上特质
 						}
 						
 					}
-						add_trait = leader_trait_governor_poison_type
+						add_trait = { trait = leader_trait_governor_poison_type }
 						set_leader_flag = EOE_LV4_leader_trait_gived
 						
 			}
@@ -10965,7 +10965,7 @@ country_event = {   #4级随机上特质
 					}
 					
 				}
-					add_trait = leader_trait_governor_bug_type
+					add_trait = { trait = leader_trait_governor_bug_type }
 					set_leader_flag = EOE_LV4_leader_trait_gived
 				
 		}
@@ -11021,7 +11021,7 @@ country_event = {   #8级随机上特质
 						}
 					}
 					}
-					add_trait = leader_trait_scientist_fly_type
+					add_trait = { trait = leader_trait_scientist_fly_type }
 					set_leader_flag = EOE_LV8_leader_trait_gived
 						
 			}
@@ -11036,7 +11036,7 @@ country_event = {   #8级随机上特质
 					}
 					
 				}
-				add_trait = leader_trait_scientist_rock_type
+				add_trait = { trait = leader_trait_scientist_rock_type }
 				set_leader_flag = EOE_LV8_leader_trait_gived
 					
 		}
@@ -11051,7 +11051,7 @@ country_event = {   #8级随机上特质
 				}
 				
 			}
-			add_trait = leader_trait_scientist_steel_type
+			add_trait = { trait = leader_trait_scientist_steel_type }
 			set_leader_flag = EOE_LV8_leader_trait_gived
 				
 	}
@@ -11078,7 +11078,7 @@ country_event = {   #8级随机上特质
 						}
 						
 					}
-					add_trait = leader_trait_commander_fight_type
+					add_trait = { trait = leader_trait_commander_fight_type }
 					set_leader_flag = EOE_LV8_leader_trait_gived
 					
 				
@@ -11094,7 +11094,7 @@ country_event = {   #8级随机上特质
 				}
 					
 				}
-				add_trait = leader_trait_commander_rock_type
+				add_trait = { trait = leader_trait_commander_rock_type }
 				set_leader_flag = EOE_LV8_leader_trait_gived
 				
 		}
@@ -11109,7 +11109,7 @@ country_event = {   #8级随机上特质
 				}
 				
 			}
-			add_trait = leader_trait_commander_bug_type
+			add_trait = { trait = leader_trait_commander_bug_type }
 			set_leader_flag = EOE_LV8_leader_trait_gived
 			
 	}
@@ -11138,7 +11138,7 @@ country_event = {   #8级随机上特质
 						}
 						
 					}
-					add_trait = leader_trait_governor_dragon_type
+					add_trait = { trait = leader_trait_governor_dragon_type }
 					set_leader_flag = EOE_LV8_leader_trait_gived
 						
 				
@@ -11154,7 +11154,7 @@ country_event = {   #8级随机上特质
 					}
 					
 				}
-					add_trait = leader_trait_governor_poison_type
+					add_trait = { trait = leader_trait_governor_poison_type }
 					set_leader_flag = EOE_LV8_leader_trait_gived
 					
 		}
@@ -11169,7 +11169,7 @@ country_event = {   #8级随机上特质
 				}
 				
 			}
-				add_trait = leader_trait_governor_bug_type
+				add_trait = { trait = leader_trait_governor_bug_type }
 				set_leader_flag = EOE_LV8_leader_trait_gived
 			
 	}
@@ -11200,7 +11200,7 @@ country_event = {   #8级随机上特质
 							}
 						}
 						}
-						add_trait = leader_trait_scientist_fly_type
+						add_trait = { trait = leader_trait_scientist_fly_type }
 						set_leader_flag = EOE_LV8_leader_trait_gived
 							
 				}
@@ -11215,7 +11215,7 @@ country_event = {   #8级随机上特质
 						}
 						
 					}
-					add_trait = leader_trait_scientist_rock_type
+					add_trait = { trait = leader_trait_scientist_rock_type }
 					set_leader_flag = EOE_LV8_leader_trait_gived
 						
 			}
@@ -11230,7 +11230,7 @@ country_event = {   #8级随机上特质
 					}
 					
 				}
-				add_trait = leader_trait_scientist_steel_type
+				add_trait = { trait = leader_trait_scientist_steel_type }
 				set_leader_flag = EOE_LV8_leader_trait_gived
 					
 		}
@@ -11257,7 +11257,7 @@ country_event = {   #8级随机上特质
 							}
 							
 						}
-						add_trait = leader_trait_commander_fight_type
+						add_trait = { trait = leader_trait_commander_fight_type }
 						set_leader_flag = EOE_LV8_leader_trait_gived
 						
 					
@@ -11273,7 +11273,7 @@ country_event = {   #8级随机上特质
 					}
 						
 					}
-					add_trait = leader_trait_commander_rock_type
+					add_trait = { trait = leader_trait_commander_rock_type }
 					set_leader_flag = EOE_LV8_leader_trait_gived
 					
 			}
@@ -11288,7 +11288,7 @@ country_event = {   #8级随机上特质
 					}
 					
 				}
-				add_trait = leader_trait_commander_bug_type
+				add_trait = { trait = leader_trait_commander_bug_type }
 				set_leader_flag = EOE_LV8_leader_trait_gived
 				
 		}
@@ -11317,7 +11317,7 @@ country_event = {   #8级随机上特质
 							}
 							
 						}
-						add_trait = leader_trait_governor_dragon_type
+						add_trait = { trait = leader_trait_governor_dragon_type }
 						set_leader_flag = EOE_LV8_leader_trait_gived
 							
 					
@@ -11333,7 +11333,7 @@ country_event = {   #8级随机上特质
 						}
 						
 					}
-						add_trait = leader_trait_governor_poison_type
+						add_trait = { trait = leader_trait_governor_poison_type }
 						set_leader_flag = EOE_LV8_leader_trait_gived
 						
 			}
@@ -11348,7 +11348,7 @@ country_event = {   #8级随机上特质
 					}
 					
 				}
-					add_trait = leader_trait_governor_bug_type
+					add_trait = { trait = leader_trait_governor_bug_type }
 					set_leader_flag = EOE_LV8_leader_trait_gived
 				
 		}
