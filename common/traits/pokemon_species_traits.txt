@@ -47,6 +47,8 @@ trait_directed_evolution = {
 	
 	modifier = {
 		pop_environment_tolerance = 0.2
+		BIOLOGICAL_species_trait_picks_add = 20
+		POKEMON_species_trait_picks_add = 20
 	}
 
 	triggered_pop_modifier = {
@@ -81,7 +83,7 @@ trait_directed_evolution = {
 				has_planet_flag = EOE_evoplan_grass
 			}
 		}
-		planet_jobs_food_produces_mult = 0.15
+		farmer_jobs_bonus_workforce_mult = 0.15
 		mult = modifier:pop_EOE_evolution_planning_effect_mult
 	}
 	triggered_pop_modifier = {
@@ -410,9 +412,9 @@ trait_grass_type_mega_evolution = {
 	allowed_archetypes = { POKEMON}
 	modifier = {
 		planet_pops_food_upkeep_mult = -0.50
-		planet_jobs_food_produces_mult = 0.25
-		pop_growth_speed = 0.10
-		planet_pop_assembly_organic_mult = 0.1
+		farmer_jobs_bonus_workforce_mult = 0.25
+		logistic_growth_mult = 0.10
+		bonus_pop_growth_mult = 0.1
 		army_defense_damage_mult = 0.5
 		
 	}
@@ -436,9 +438,9 @@ trait_fire_type_mega_evolution = {
 	}
 	allowed_archetypes = { POKEMON}
 	modifier = {
-		planet_metallurgists_produces_mult = 0.15
-		planet_jobs_minerals_produces_mult = 0.3
-		army_damage_mult = 0.25
+		technician_jobs_bonus_workforce_mult = 0.3
+		miner_jobs_bonus_workforce_mult = 0.4
+		army_damage_mult = 0.3
 		
 	}
 	slave_cost = {
@@ -463,9 +465,10 @@ trait_water_type_mega_evolution = {
 	allowed_archetypes = { POKEMON}
 	modifier = {
 		leader_lifespan_add = 20
-		pop_growth_speed = 0.2
-		planet_pop_assembly_organic_mult = 0.2
-		planet_jobs_society_research_produces_mult = 0.15
+		logistic_growth_mult = 0.2
+		# pop_growth_speed = 0.2
+		bonus_pop_growth_mult = 0.2
+		biologist_jobs_bonus_workforce_mult = 0.2
 		army_health = 0.25
 	}
 	slave_cost = {
@@ -488,9 +491,10 @@ trait_electric_type_mega_evolution = {
 	}
 	allowed_archetypes = { POKEMON}
 	modifier = {
-		planet_jobs_energy_produces_mult = 0.35
-		army_damage_mult = 0.3
-		planet_jobs_physics_research_produces_mult = 0.2
+		technician_jobs_bonus_workforce_mult = 0.6
+		physicist_jobs_bonus_workforce_mult = 0.3
+		army_damage_mult = 0.4
+		
 		
 	}
 	slave_cost = {
@@ -513,9 +517,7 @@ trait_psychic_type_mega_evolution = {
 	}
 	allowed_archetypes = { POKEMON}
 	modifier = {
-		planet_jobs_physics_research_produces_mult = 0.2
-		planet_jobs_society_research_produces_mult = 0.2
-		planet_jobs_engineering_research_produces_mult = 0.2
+		researcher_jobs_bonus_workforce_mult = 0.3
 		species_leader_exp_gain = 0.2
 		negative_leader_traits_species = -1
 		leader_skill_levels = 2
@@ -543,10 +545,11 @@ trait_dark_type_mega_evolution = {
 	
 	modifier = {
 		pop_government_ethic_attraction = 0.50
-		planet_jobs_unity_produces_mult = 0.20
-		planet_jobs_specialist_produces_mult = 0.05
-		planet_jobs_worker_produces_mult = 0.1
-		planet_jobs_slave_produces_mult = 0.15
+		bureaucrat_jobs_bonus_workforce_mult = 0.3
+		trader_jobs_bonus_workforce_mult = 0.3
+		# planet_jobs_specialist_produces_mult = 0.05
+		# planet_jobs_worker_produces_mult = 0.1
+		# planet_jobs_slave_produces_mult = 0.15
 
 		
 	}
@@ -571,9 +574,11 @@ trait_dark_type_mega_evolution_swarm = {
 	allowed_archetypes = { POKEMON}
 	
 	modifier = {
-		planet_jobs_unity_produces_mult = 0.20
-		planet_jobs_complex_drone_produces_mult = 0.05
-		planet_jobs_simple_drone_produces_mult = 0.1
+		bureaucrat_jobs_bonus_workforce_mult = 0.3
+		trader_jobs_bonus_workforce_mult = 0.3
+		# planet_jobs_unity_produces_mult = 0.20
+		# planet_jobs_complex_drone_produces_mult = 0.05
+		# planet_jobs_simple_drone_produces_mult = 0.1
 		pop_amenities_usage_no_happiness_mult = -0.25
 		
 	}
@@ -599,11 +604,12 @@ trait_ice_type_mega_evolution = {
 	opposites = { trait_ice_type_mega_evolution_swarm }
 	
 	modifier = {
-		planet_jobs_consumer_goods_produces_mult = 0.15
-		planet_jobs_engineering_research_produces_mult = 0.15
-		planet_jobs_rare_crystals_produces_mult = 0.20
-		planet_jobs_exotic_gases_produces_mult = 0.20
-		planet_jobs_volatile_motes_produces_mult = 0.20
+		foundry_jobs_bonus_workforce_mult = 0.3
+		artisan_jobs_bonus_workforce_mult = 0.3
+		engineer_jobs_bonus_workforce_mult = 0.15
+		# planet_jobs_rare_crystals_produces_mult = 0.20
+		# planet_jobs_exotic_gases_produces_mult = 0.20
+		# planet_jobs_volatile_motes_produces_mult = 0.20
 		
 	}
 	slave_cost = {
@@ -628,11 +634,13 @@ trait_ice_type_mega_evolution_swarm = {
 	allowed_archetypes = { POKEMON}
 	
 	modifier = {
-		planet_jobs_minerals_produces_mult = 0.25
-		planet_jobs_engineering_research_produces_mult = 0.15
-		planet_jobs_rare_crystals_produces_mult = 0.20
-		planet_jobs_exotic_gases_produces_mult = 0.20
-		planet_jobs_volatile_motes_produces_mult = 0.20
+		foundry_jobs_bonus_workforce_mult = 0.3
+		artisan_jobs_bonus_workforce_mult = 0.15
+		miner_jobs_bonus_workforce_mult = 0.3
+		engineer_jobs_bonus_workforce_mult = 0.15
+		# planet_jobs_rare_crystals_produces_mult = 0.20
+		# planet_jobs_exotic_gases_produces_mult = 0.20
+		# planet_jobs_volatile_motes_produces_mult = 0.20
 		
 	}
 	slave_cost = {
@@ -658,8 +666,8 @@ trait_fairy_type_mega_evolution = {
 	}
 
 	modifier = {
-	    species_empire_size_mult = -0.45
-		pop_growth_from_immigration = 0.50
+	    species_empire_size_mult = -0.4
+		# pop_growth_from_immigration = 0.50
 		pop_resettlement_cost_mult = -0.50
 		
 		
@@ -788,7 +796,7 @@ trait_ground_type_mega_evolution = {
 	modifier = {
 	    leader_lifespan_add = 15
 		pop_environment_tolerance = 0.1
-		planet_jobs_food_produces_mult = 0.3
+		farmer_jobs_bonus_workforce_mult = 0.3
 	}
 
 	slave_cost = {

@@ -14,4 +14,21 @@ POKEMON = {
 	inherit_traits_from = { BIOLOGICAL } 
 	species_trait_points = 2
 	species_max_traits = 20
+	resources = {
+		category = planet_pops
+		# Regular food, mineral and energy upkeep.
+		inline_script = "pop_resources/regular_upkeep"
+		# Resource production from other sources
+		inline_script = "pop_resources/pop_misc_production"
+		produces = {
+			trigger = {
+				exists = planet
+				planet = {
+					has_modifier = astralnomical_interest_modifier
+				}
+				is_enslaved = no
+			}
+			physics_research = 1
+		}
+	}
 }

@@ -92,6 +92,8 @@ leader_trait_governor_ice_type_nano_builder_1_desc:0"这位领袖可以协调建
 
 leader_trait_governor_grass_type_Plants_vs_Aliens_1:0"草木皆兵"
 leader_trait_governor_grass_type_Plants_vs_Aliens_1_desc:0"这位总督可以组织公民在闲暇时用草系灵能对星球上的本土物种进行军事化改造。当外星侵略者登陆星球时，他们要面对的不仅是我们的防御部队，还有一整个狂怒的生物圈"
+#  concept_leader_trait_governor_grass_type_Plants_vs_Aliens_1: "草木皆兵"
+#  concept_leader_trait_governor_grass_type_Plants_vs_Aliens_1_desc: "农业岗位包括：$TABBED_NEW_LINE$—[farmer.GetNamePlural]$TABBED_NEW_LINE$—[agri_drone.GetNamePlural]"
 
 leader_trait_governor_water_type_1:0"水水超可爱"
 leader_trait_governor_water_type_1_desc:0"嘿各位，你知道在所有的神奇寶貝中，水伊布是最適合进行星际外交的嗎？ 不只是因為他們是卵生的哺乳神奇寶貝..."

@@ -48,7 +48,6 @@ leader_trait_dark_type_Void_Stutter_1 = {
 	initial = no
 	randomized = no
 }
-	    
 
 
 
@@ -96,7 +95,7 @@ leader_trait_governor_grass_type_Plants_vs_Aliens_1 = { #草系指挥官
 
 	icon = "gfx/interface/icons/EeveelutionTypes/grass_type.png"
 	councilor_modifier = {
-		planet_jobs_food_produces_mult = 0.1
+		farmer_jobs_bonus_workforce_mult = 0.1
 	}
 	army_modifier = {
 		armies_upkeep_mult = -0.40
