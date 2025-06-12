@@ -1839,7 +1839,13 @@ country_event = { #环开开局布置
 	immediate = {
 		set_country_flag = starting_event #防止刷出奇怪的原版开局事件，虽然也不会有亚光速探测器、邪教徒和科学家失踪事件了
 		add_resource = {
+			energy = 200
+			minerals = 200
 			food = 200
+			consumer_goods = 200
+			alloys = 200
+			trade = 200
+			influence = 100
 		}
 		if = {
 			limit = { 

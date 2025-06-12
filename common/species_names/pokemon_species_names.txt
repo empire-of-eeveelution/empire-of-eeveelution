@@ -84,7 +84,7 @@
 		name_list = "MAM3"
 	}
 	aiur = {
-		language = "l_simp_chinese"
+		# language = "l_simp_chinese"
 		name = "Eeveelution"
 		plural = "Eeveelution"
 		home_planet = "Aiur"
@@ -92,7 +92,7 @@
 		name_list = "MAM3"
 	}
 	shakuras = {
-		language = "l_simp_chinese"
+		# language = "l_simp_chinese"
 		name = "Eeveelution"
 		plural = "Eeveelution"
 		home_planet = "Shakuras"

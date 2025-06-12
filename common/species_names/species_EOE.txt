@@ -1,0 +1,14 @@
+# Generated species derive their names from here
+
+### HUMANOIDS
+
+# Eeveelutions =  {
+# 	Eeveelutions =  {
+# 		name = SPEC_Eeveelutions
+# 		plural = SPEC_Eeveelutions_pl
+# 		home_planet = SPEC_Eeveelutions_planet
+# 		home_system = SPEC_Eeveelutions_system
+# 		name_list =  "HUM1"
+# 	}
+# }
+

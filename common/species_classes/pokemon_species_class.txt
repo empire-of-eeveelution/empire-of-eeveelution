@@ -16,9 +16,9 @@
 
 "Steelmons" = {
 	archetype = MACHINE
-	playable = {
-		always = yes
-	}
+	# playable = {
+	# 	always = yes
+	# }
 	randomized = {
 		always = no
 	}
@@ -40,7 +40,7 @@
 	}
 	leader_age_min = 2
 	leader_age_max = 10
-	graphical_culture = pokemon_01
+	# graphical_culture = pokemon_01
 	move_pop_sound_effect = "robot_pops_move"
 }
 
@@ -66,7 +66,7 @@
 	}
 	leader_age_min = 2
 	leader_age_max = 10
-	graphical_culture = pokemon_01
+	# graphical_culture = pokemon_01
 	move_pop_sound_effect = "moving_pop_confirmation"
 }
 
@@ -82,6 +82,6 @@
 	portraits = {
 		"Eeveelutions"
 	}
-	graphical_culture = pokemon_01
+	graphical_culture = mammalian_01
 	move_pop_sound_effect = "moving_pop_confirmation"
 }
