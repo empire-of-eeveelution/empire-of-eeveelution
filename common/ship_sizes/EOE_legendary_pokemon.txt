@@ -54,7 +54,7 @@ EOE_mew = {
 	ai_ship_data = {
 		
 	}
-	
+	available_to_everyone = yes
 }
 
 EOE_Latias = {
@@ -110,7 +110,7 @@ EOE_Latias = {
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
 	required_component_set = "pokemon_mint"
-	
+	available_to_everyone = yes
 }
 
 EOE_Reshiram = {
@@ -168,7 +168,7 @@ EOE_Reshiram = {
 	required_component_set = "combat_computers"
 	required_component_set = "pokemon_mint"
 	#required_component_set = "BAILONG_PLANET_KILLER"
-	
+	available_to_everyone = yes
 }
 
 
@@ -228,5 +228,5 @@ EOE_minior = {
 	ai_ship_data = {
 		
 	}
-	
+	available_to_everyone = yes
 }

@@ -38,4 +38,5 @@ EOE_masterball = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "ftl_components_masterball"
+	available_to_everyone = yes
 }

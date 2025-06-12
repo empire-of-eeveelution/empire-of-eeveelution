@@ -1,10 +1,16 @@
 ﻿l_simp_chinese:
 ##################################宝可梦本体
 EOE_mew:0"梦幻"
+EOE_mew_plural:0"梦幻"
+EOE_mew_cap:0"梦幻"
 SHIP_GRAPHICS_EOE_MEW_DESC:0 "这种体长约10米的太空战生物以同名宝可梦为蓝本制造，模块化设计使其可以兼容不同的器官配置。梦幻强大的变化与隐身能力使其可以吸收大量伤害。"
 EOE_Latias:0"拉帝亚斯"
+EOE_Latias_plural:0"拉帝亚斯"
+EOE_Latias_cap:0"拉帝亚斯"
 SHIP_GRAPHICS_EOE_LATIAS_DESC:0 "这种约有护卫舰大小的太空战生物以同名宝可梦为蓝本制造，模块化设计使其可以兼容不同的器官配置。拉帝亚斯被设计为远程火力平台，几乎全身的灵能都用来供给她们的主要攻击器官。"
 EOE_Reshiram:0"莱希拉姆"
+EOE_Reshiram_plural:0"莱希拉姆"
+EOE_Reshiram_cap:0"莱希拉姆"
 SHIP_GRAPHICS_EOE_RESHIRAM_DESC:0 "这种太空巨兽以同名宝可梦为蓝本制造，模块化设计使其可以兼容不同的器官配置。莱希拉姆兼顾火力与防护，还能搭载大规模杀伤性武器。"
 EOE_Minior:0"小陨星"
 EOE_minior:0"小陨星"

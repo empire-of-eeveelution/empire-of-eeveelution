@@ -2,10 +2,16 @@
 
 ################################## legendary Pokémon  舰船名与简介
 EOE_mew:0 "Mew"
+EOE_mew_plural:0 "Mew"
+EOE_mew_cap:0"Mew"
 SHIP_GRAPHICS_EOE_MEW_DESC:0 "This space warfare creature with a body length of about 10 meters is manufactured based on the eponymous Pokémon, and its modular design makes it compatible with different organ configurations. The Mew's powerful shifting and stealth capabilities allow it to absorb large amounts of damage."
 EOE_Latias:0 "Latias"
+EOE_Latias_plural:0 "Latias"
+EOE_Latias_cap:0"Latias"
 SHIP_GRAPHICS_EOE_LATIAS_DESC:0 "This approximately corvette sized space warfare creature is built on the model of the eponymous Pokémon, and its modular design allows it to be compatible with different organ configurations. Latias are designed as long-range fire platforms, with almost all of their body's psionic used to supply their primary attack organ."
 EOE_Reshiram:0 "Reshiram"
+EOE_Reshiram_plural:0 "Reshiram"
+EOE_Reshiram_cap:0"Reshiram"
 SHIP_GRAPHICS_EOE_RESHIRAM_DESC:0 "This space behemoth is manufactured based on the eponymous Pokémon, and its modular design makes it compatible with different organ configurations. With a balance of firepower and protection, the Reshiram is also capable of carrying weapons of mass destruction."
 ################################ weapons   武器
 EOE_MEW_Psychic:0 "Psychic"
