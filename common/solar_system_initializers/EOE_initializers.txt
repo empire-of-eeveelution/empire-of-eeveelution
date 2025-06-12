@@ -26,155 +26,249 @@ protoss_shattered_ring_start = {
 			orbit_distance = 45
 		}
 	}
+#原来的
+	# class = "sc_b"
 
-	class = "sc_b"
+	# planet = {
+	# 	class = star
+	# 	orbit_distance = 0
+	# 	orbit_angle = 0
+	# 	size = { min = 25 max = 30 }
+	# }
 
-	planet = {
-		class = star
-		orbit_distance = 0
-		orbit_angle = 0
-		size = { min = 25 max = 30 }
-	}
+	# change_orbit = 45
 
-	change_orbit = 45
+	# planet = {
+	# 	class = "pc_ringworld_seam"
+	# 	name = "NAME_Ring_Section"
+	# 	orbit_angle = 240
+	# 	orbit_distance = 0
+	# }
 
-	planet = {
-		class = "pc_ringworld_seam"
-		name = "NAME_Ring_Section"
-		orbit_angle = 240
-		orbit_distance = 0
-	}
+	# planet = {
+	# 	class = "pc_ringworld_habitable"
+	# 	orbit_angle = 30
+	# 	orbit_distance = 0
+	# 	deposit_blockers = none
+	# 	modifiers = none
+	# 	starting_planet = yes
+	# 	flags = { ignore_startup_effect megastructure }
+	# 	init_effect = {
+	# 		prevent_anomaly = yes
+	# 		set_planet_flag = EOE_start_ring
+	# 		set_planet_flag = special_start_planet
+	# 	}
+	# }
 
-	planet = {
-		class = "pc_ringworld_habitable"
-		orbit_angle = 30
-		orbit_distance = 0
-		deposit_blockers = none
-		modifiers = none
-		starting_planet = yes
-		flags = { ignore_startup_effect megastructure }
-		init_effect = {
-			prevent_anomaly = yes
-			set_planet_flag = EOE_start_ring
-			set_planet_flag = special_start_planet
-		}
-	}
+	# planet = {
+	# 	class = "pc_ringworld_tech"
+	# 	name = "NAME_Ring_Section"
+	# 	orbit_angle = 30
+	# 	orbit_distance = 0
+	# }
 
-	planet = {
-		class = "pc_ringworld_tech"
-		name = "NAME_Ring_Section"
-		orbit_angle = 30
-		orbit_distance = 0
-	}
+	# planet = {
+	# 	class = "pc_ringworld_tech_damaged"
+	# 	name = "NAME_Ring_Section"
+	# 	orbit_angle = 120
+	# 	orbit_distance = 0
+	# }
 
-	planet = {
-		class = "pc_ringworld_tech_damaged"
-		name = "NAME_Ring_Section"
-		orbit_angle = 120
-		orbit_distance = 0
-	}
+	# planet = {
+	# 	class = "pc_ringworld_seam_damaged"
+	# 	name = "Irreparable Damage"
+	# 	orbit_angle = 30
+	# 	orbit_distance = 0
+	# 	flags = { ignore_startup_effect starting_mining_target starting_deposit }
 
-	planet = {
-		class = "pc_ringworld_seam_damaged"
-		name = "Irreparable Damage"
-		orbit_angle = 30
-		orbit_distance = 0
-		flags = { ignore_startup_effect starting_mining_target starting_deposit }
+	# 	init_effect = {
+	# 		create_ambient_object = {
+	# 			type = "medium_debris_01_object"
+	# 			entity_offset_height = -15
+	# 			location = this
+	# 		}
+	# 		last_created_ambient_object = {
+	# 			set_location = {
+	# 				target = prev
+	# 				distance = 0
+	# 				angle = 0
+	# 			}
+	# 		}
+	# 		set_deposit = d_engineering_5
+	# 		set_planet_flag = starting_research_target
+	# 		set_planet_flag = starting_deposit
+	# 	}
+	# }
 
-		init_effect = {
-			create_ambient_object = {
-				type = "medium_debris_01_object"
-				entity_offset_height = -15
-				location = this
-			}
-			last_created_ambient_object = {
-				set_location = {
-					target = prev
-					distance = 0
-					angle = 0
-				}
-			}
-			set_deposit = d_engineering_5
-			set_planet_flag = starting_research_target
-			set_planet_flag = starting_deposit
-		}
-	}
-
-	planet = {
-		class = "pc_shattered_2"
-		name = "The Interloper"
-		orbit_distance = -5
-		orbit_angle = 0
-		size = 5
-		has_ring = no
-		flags = { ignore_startup_effect starting_deposit starting_mining_target}
-		init_effect = {
-			set_deposit = d_minerals_10
-			set_planet_flag = EOE_interloper
-			save_global_event_target_as = EOE_the_interloper
+	# planet = {
+	# 	class = "pc_shattered_2"
+	# 	name = "The Interloper"
+	# 	orbit_distance = -5
+	# 	orbit_angle = 0
+	# 	size = 5
+	# 	has_ring = no
+	# 	flags = { ignore_startup_effect starting_deposit starting_mining_target}
+	# 	init_effect = {
+	# 		set_deposit = d_minerals_10
+	# 		set_planet_flag = EOE_interloper
+	# 		save_global_event_target_as = EOE_the_interloper
 			
-		}
+	# 	}
 
 
 
-		moon = {
-			name = "Space mining station"
-			class = pc_habitat
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = 5
-			size = 4
-			# starting_planet = yes
-			flags = {
-				megastructure habitat	
-			}
-			deposit_blockers = none
-			init_effect = {
-				# set_owner = root.owner
-				create_ambient_object = {
-					type = "medium_debris_01_object"
-					location = this
-				}
-				last_created_ambient_object = {
-					set_location = {
-						target = prev
-						distance = 35
-						angle = 90
-					}
-				}
-				create_ambient_object = {
-					type = "medium_debris_02_object"
-					location = this
-				}
-				last_created_ambient_object = {
-					set_location = {
-						target = prev
-						distance = 3
-						angle = 270
-					}
-				}
-			}
-		}
-	}
+	# 	moon = {
+	# 		name = "Space mining station"
+	# 		class = pc_habitat
+	# 		orbit_angle = { min = 90 max = 270 }
+	# 		orbit_distance = 5
+	# 		size = 4
+	# 		# starting_planet = yes
+	# 		flags = {
+	# 			megastructure habitat	
+	# 		}
+	# 		deposit_blockers = none
+	# 		init_effect = {
+	# 			# set_owner = root.owner
+	# 			create_ambient_object = {
+	# 				type = "medium_debris_01_object"
+	# 				location = this
+	# 			}
+	# 			last_created_ambient_object = {
+	# 				set_location = {
+	# 					target = prev
+	# 					distance = 35
+	# 					angle = 90
+	# 				}
+	# 			}
+	# 			create_ambient_object = {
+	# 				type = "medium_debris_02_object"
+	# 				location = this
+	# 			}
+	# 			last_created_ambient_object = {
+	# 				set_location = {
+	# 					target = prev
+	# 					distance = 3
+	# 					angle = 270
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
 	
 
-	planet = {
-		class = "pc_ringworld_tech_damaged"
-		name = "NAME_Ring_Section"
-		orbit_angle = 30
-		orbit_distance = 5
+	# planet = {
+	# 	class = "pc_ringworld_tech_damaged"
+	# 	name = "NAME_Ring_Section"
+	# 	orbit_angle = 30
+	# 	orbit_distance = 5
+	# }
+
+	# change_orbit = 55
+#############################################换成4.0版的
+class = "sc_g"
+planet = {
+	class = star
+	orbit_distance = 0
+	orbit_angle = 0
+}
+
+change_orbit = 45
+
+planet = {
+	class = "pc_ringworld_tech"
+	name = "NAME_Ring_Section"
+	orbit_angle = 240
+	orbit_distance = 0
+}
+
+planet = {
+	class = "pc_ringworld_seam"
+	name = "NAME_Ring_Section"
+	orbit_angle = 30
+	orbit_distance = 0
+}
+
+planet = {
+	class = "pc_shattered_ring_habitable"
+	orbit_angle = 30
+	orbit_distance = 0
+	deposit_blockers = none
+	modifiers = none
+	starting_planet = yes
+	flags = { ignore_startup_effect megastructure }
+	init_effect = {
+		prevent_anomaly = yes
+		set_planet_flag = EOE_start_ring
+		set_planet_flag = special_start_planet
+		generate_start_buildings_and_districts = yes
+			# generate_start_pops = yes
 	}
+}
 
-	change_orbit = 55
+planet = {
+	class = "pc_ringworld_tech_damaged"
+	name = "NAME_Ring_Section"
+	orbit_angle = 120
+	orbit_distance = 0
+}
 
+planet = {
+	class = "pc_ringworld_seam_damaged"
+	name = "NAME_Irreparable_Damage"
+	orbit_angle = 30
+	orbit_distance = 0
+	flags = { ignore_startup_effect starting_mining_target starting_deposit reperable_damage }
+
+	init_effect = {
+		create_ambient_object = {
+			type = "medium_debris_01_object"
+			entity_offset_height = -15
+			location = this
+		}
+		last_created_ambient_object = {
+			set_location = {
+				target = prev
+				distance = 0
+				angle = 0
+			}
+			set_ambient_object_flag = interloper_damage
+		}
+		set_deposit = d_engineering_5
+		set_planet_flag = starting_research_target
+		set_planet_flag = starting_deposit
+	}
+}
+
+planet = {
+	class = "pc_shattered_2"
+	name = "NAME_The_Interloper"
+	orbit_distance = -5
+	orbit_angle = 0
+	size = 5
+	has_ring = no
+	flags = { ignore_startup_effect starting_mining_target starting_deposit interloper }
+	init_effect = {
+		set_deposit = d_minerals_10
+	}
+}
+
+planet = {
+	class = "pc_ringworld_seam_damaged"
+	name = "NAME_Ring_Section"
+	orbit_angle = 30
+	orbit_distance = 5
+}
+###########################################
 	planet = {
 		count = { min = 1 max = 1 }
 		class = pc_asteroid
-		orbit_distance = 0
+		orbit_distance = 25
 		orbit_angle = { min = 90 max = 270 }
 	}
 	planet = {
 		class = pc_asteroid
-		orbit_distance = 0
+		orbit_distance = 20
 		orbit_angle = { min = 0 max = 90 }
 		flags = { ignore_startup_effect starting_mining_target starting_deposit}
 		init_effect = {
@@ -184,7 +278,7 @@ protoss_shattered_ring_start = {
 	}
 	planet = {
 		class = pc_asteroid
-		orbit_distance = 0
+		orbit_distance = 20
 		orbit_angle = { min = 90 max = 180 }
 		flags = { ignore_startup_effect starting_mining_target starting_deposit}
 		init_effect = {
@@ -194,7 +288,7 @@ protoss_shattered_ring_start = {
 	}
 	planet = {
 		class = pc_asteroid
-		orbit_distance = 0
+		orbit_distance = 20
 		orbit_angle = { min = 180 max = 270 }
 		flags = { ignore_startup_effect starting_mining_target starting_deposit}
 		init_effect = {
@@ -214,7 +308,7 @@ protoss_shattered_ring_start = {
 	}
 
 	
-	change_orbit = 45
+	change_orbit = 50
 
 	planet = {
 		class = pc_gas_giant

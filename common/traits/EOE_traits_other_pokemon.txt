@@ -84,11 +84,14 @@ trait_EOE_miner_robot = {
 	initial = yes
 	randomized = no
 	allowed_archetypes = { MACHINE }
-
+	tags = { positive pop_output mineral }
 	modifier = {
-		planet_miners_produces_mult = 0.1
-		planet_farmers_produces_mult = -0.5
-		planet_technician_produces_mult = -0.5
+		miner_jobs_bonus_workforce_mult = 0.3
+		# planet_jobs_minerals_produces_mult = 0.3
+		farmer_jobs_bonus_workforce_mult = -0.2
+		# planet_jobs_food_produces_mult = -0.3
+		technician_jobs_bonus_workforce_mult = -0.2
+		# planet_jobs_energy_produces_mult = -0.3
 		species_empire_size_mult = -0.8
 	}
 	

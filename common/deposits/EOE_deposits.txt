@@ -8,8 +8,8 @@ d_EOE_ringworld_Ancient_ruins_1 = {
 		
 	planet_modifier = { 
 		planet_max_districts_add = -1
-		planet_housing_add = -5
-		job_clerk_add = -300
+		planet_housing_add = -300
+		#job_clerk_add = -300
 	}
 	resources = {
 		category = deposit_blockers
@@ -20,13 +20,13 @@ d_EOE_ringworld_Ancient_ruins_1 = {
 	on_cleared = {
 		random_list = {
 			33 = {
-				owner = { add_resource = { minor_artifacts = 1 } }
+				owner = { add_resource = { minor_artifacts = 10 } }
 			}
 			33 = {
-				owner = { add_resource = { minor_artifacts = 3 } }
+				owner = { add_resource = { minor_artifacts = 30 } }
 			}
 			33 = {
-				owner = { add_resource = { minor_artifacts = 5 } }
+				owner = { add_resource = { minor_artifacts = 50 } }
 			}
 		}
 	}
@@ -42,11 +42,11 @@ d_EOE_ringworld_Ancient_ruins_2 = {
 		
 	planet_modifier = { 
 		planet_max_districts_add = -1
-		planet_housing_add = -5
-		job_artisan_add = -300
-		job_catalytic_technician_add = -300
-		job_foundry_add = -300
-		job_clerk_add = -300
+		planet_housing_add = -300
+		# job_artisan_add = -300
+		# job_catalytic_technician_add = -300
+		# job_foundry_add = -300
+		# job_clerk_add = -300
 	}
 	resources = {
 		category = deposit_blockers
@@ -57,13 +57,13 @@ d_EOE_ringworld_Ancient_ruins_2 = {
 	on_cleared = {
 		random_list = {
 			33 = {
-				owner = { add_resource = { minor_artifacts = 1 } }
+				owner = { add_resource = { minor_artifacts = 10 } }
 			}
 			33 = {
-				owner = { add_resource = { minor_artifacts = 3 } }
+				owner = { add_resource = { minor_artifacts = 30 } }
 			}
 			33 = {
-				owner = { add_resource = { minor_artifacts = 5 } }
+				owner = { add_resource = { minor_artifacts = 50 } }
 			}
 		}
 	}
@@ -79,9 +79,9 @@ d_EOE_ringworld_Broken_tunnel_1 = {
 		
 	planet_modifier = { 
 		planet_max_districts_add = -1
-		job_enforcer_add = -200
-		job_technician_add = -200
-		job_clerk_add = -100
+		# job_enforcer_add = -200
+		# job_technician_add = -200
+		# job_clerk_add = -100
 	}
 	resources = {
 		category = deposit_blockers
@@ -101,13 +101,13 @@ d_EOE_ringworld_Broken_tunnel_1 = {
 		}
 		random_list = {
 			33 = {
-				owner = { add_resource = { minor_artifacts = 1 } }
+				owner = { add_resource = { minor_artifacts = 10 } }
 			}
 			33 = {
-				owner = { add_resource = { minor_artifacts = 3 } }
+				owner = { add_resource = { minor_artifacts = 30 } }
 			}
 			33 = {
-				owner = { add_resource = { minor_artifacts = 5 } }
+				owner = { add_resource = { minor_artifacts = 50 } }
 			}
 		}
 	}
@@ -123,7 +123,7 @@ d_EOE_ringworld_Broken_tunnel_2 = {
 		
 	planet_modifier = { 
 		planet_max_districts_add = -1
-		job_clerk_add = -100
+		# job_clerk_add = -100
 	}
 	resources = {
 		category = deposit_blockers
@@ -143,13 +143,13 @@ d_EOE_ringworld_Broken_tunnel_2 = {
 		}
 		random_list = {
 			33 = {
-				owner = { add_resource = { minor_artifacts = 1 } }
+				owner = { add_resource = { minor_artifacts = 10 } }
 			}
 			33 = {
-				owner = { add_resource = { minor_artifacts = 3 } }
+				owner = { add_resource = { minor_artifacts = 30 } }
 			}
 			33 = {
-				owner = { add_resource = { minor_artifacts = 5 } }
+				owner = { add_resource = { minor_artifacts = 50 } }
 			}
 		}
 	}
@@ -165,7 +165,7 @@ d_EOE_ringworld_Broken_tunnel_3 = {
 		
 	planet_modifier = { 
 		planet_max_districts_add = -1
-		job_clerk_add = -100
+		# job_clerk_add = -100
 	}
 	resources = {
 		category = deposit_blockers
@@ -185,13 +185,13 @@ d_EOE_ringworld_Broken_tunnel_3 = {
 		}
 		random_list = {
 			33 = {
-				owner = { add_resource = { minor_artifacts = 1 } }
+				owner = { add_resource = { minor_artifacts = 10 } }
 			}
 			33 = {
-				owner = { add_resource = { minor_artifacts = 3 } }
+				owner = { add_resource = { minor_artifacts = 30 } }
 			}
 			33 = {
-				owner = { add_resource = { minor_artifacts = 5 } }
+				owner = { add_resource = { minor_artifacts = 50 } }
 			}
 		}
 	}
@@ -303,7 +303,7 @@ d_EOE_ringworld_Refuge_City= {
 	
 	planet_modifier = {
 		job_farmer_add = 100
-		job_artisan_add = 100
+		job_artisan_add = 50
 		planet_housing_add = 200
 		planet_jobs_unity_produces_mult = 0.1
 		

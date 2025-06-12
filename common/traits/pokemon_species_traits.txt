@@ -47,8 +47,8 @@ trait_directed_evolution = {
 	
 	modifier = {
 		pop_environment_tolerance = 0.2
-		BIOLOGICAL_species_trait_picks_add = 20
-		POKEMON_species_trait_picks_add = 20
+		# BIOLOGICAL_species_trait_picks_add = 20
+		# POKEMON_species_trait_picks_add = 20
 	}
 
 	triggered_pop_modifier = {
@@ -344,8 +344,8 @@ trait_natural_psionic_warrior = {
 		Othermons
 	}
 	modifier = {
-		army_damage_mult = 0.2
-		planet_jobs_worker_produces_mult = 0.025
+		army_damage_mult = 0.20
+		worker_and_simple_drone_cat_bonus_workforce_mult = 0.025
 		
 	}
 }

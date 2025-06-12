@@ -666,61 +666,61 @@ country_event = {
 		last_created_species = {
 			save_global_event_target_as = EOE_steelmons
 		}
-		if = {
-			limit = {
-				has_origin = origin_protoss_shattered_ring
-			}
+		# if = {
+		# 	limit = {
+		# 		has_origin = origin_protoss_shattered_ring
+		# 	}
+		# 	capital_scope = {
+		# 		while = {
+		# 			count = 4
+		# 			hidden_effect = {
+		# 				random_owned_pop_group = {
+		# 					kill_pop = yes
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# 	capital_scope.solar_system = {
+		# 		random_system_planet = {
+		# 			limit = {
+		# 				is_planet_class = pc_habitat
+		# 			}
+		# 			add_district = district_hab_mining
+		# 			remove_building = building_hab_capital
+		# 			add_building = building_EOE_trainer_department
+		# 			set_owner = root
+		# 			add_modifier = {
+		# 				modifier = EOE_broken_habitat
+		# 				days = -1
+		# 			}
+		# 			create_pop = {
+		# 				species = owner_main_species
+		# 			}
+		# 			create_pop = {
+		# 				species = last_created_species
+		# 			}
+		# 			create_pop = {
+		# 				species = last_created_species
+		# 			}
+		# 			create_pop = {
+		# 				species = last_created_species
+		# 			}
+		# 			add_district = district_hab_mining
+		# 			add_district = district_hab_mining
+		# 			add_district = district_hab_mining
+		# 			remove_building = building_hab_capital
+		# 			add_building = building_EOE_trainer_department
+		# 		}
+		# 	}
+		# }
+		#else = {
 			capital_scope = {
-				while = {
-					count = 4
-					hidden_effect = {
-						random_owned_pop_group = {
-							kill_pop = yes
-						}
-					}
-				}
-			}
-			capital_scope.solar_system = {
-				random_system_planet = {
-					limit = {
-						is_planet_class = pc_habitat
-					}
-					add_district = district_hab_mining
-					remove_building = building_hab_capital
-					add_building = building_EOE_trainer_department
-					set_owner = root
-					add_modifier = {
-						modifier = EOE_broken_habitat
-						days = -1
-					}
-					create_pop = {
-						species = owner_main_species
-					}
-					create_pop = {
-						species = last_created_species
-					}
-					create_pop = {
-						species = last_created_species
-					}
-					create_pop = {
-						species = last_created_species
-					}
-					add_district = district_hab_mining
-					add_district = district_hab_mining
-					add_district = district_hab_mining
-					remove_building = building_hab_capital
-					add_building = building_EOE_trainer_department
-				}
-			}
-		}
-		else = {
-			capital_scope = {
-				random_owned_pop_group = {
-					kill_pop = yes
-				}
-				random_owned_pop_group = {
-					kill_pop = yes
-				}
+				# random_owned_pop_group = {
+				# 	kill_pop = yes
+				# }
+				# random_owned_pop_group = {
+				# 	kill_pop = yes
+				# }
 				create_pop = {
 					species = last_created_species
 				}
@@ -728,7 +728,7 @@ country_event = {
 					species = last_created_species
 				}
 			}
-		}
+		#}
 	}
 }
 

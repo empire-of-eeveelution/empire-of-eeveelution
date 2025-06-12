@@ -725,7 +725,7 @@ EOE_shatterring_start_buildings = {
 				
 			}
 			else = {
-				add_building = building_commercial_zone
+				add_building = building_holo_theatres #building_commercial_zone换成现在原版的了
 			}
 		}
 	}

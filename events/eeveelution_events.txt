@@ -1879,15 +1879,29 @@ country_event = { #环开开局布置
 				has_planet_flag = EOE_start_ring
 			}
 			set_owner = root
-			clear_blockers = yes
-			remove_all_districts = yes
+			# clear_blockers = yes
+			# remove_all_districts = yes
 			while = {
-				count = 27
+				count = 47
 				hidden_effect = {
 					create_pop = { 	species = owner_main_species }
 				}
 			}
 			EOE_shatterring_start_buildings = yes
+			add_zone = {
+				district = district_city
+				zone = zone_research_unity
+				zone_slot = 1
+			}
+			add_zone = {
+				district = district_city
+				zone = zone_industrial
+				zone_slot = 2
+			}
+			add_building = {
+				building = building_factory_1
+				zone = zone_industrial
+			}
 			add_deposit = d_EOE_arcane_generator
 			add_deposit = d_EOE_ringworld_Ancient_ruins_1
 			add_deposit = d_EOE_ringworld_Ancient_ruins_2
@@ -1903,11 +1917,45 @@ country_event = { #环开开局布置
 				add_building = building_coordinated_fulfillment_center_1
 			}
 			 add_deposit = d_EOE_ringworld_Refuge_City
-			
 
 		}
 		country_event = {
 			id = EOE_building.1 #这个是计划进化初始化给建筑
+		}
+		######20256月12日添加，与原版环开的给宜居星球一致
+		if = {
+			limit = { num_guaranteed_colonies >= 2 }
+			capital_scope = {
+				solar_system = {
+					every_megastructure = {
+						limit = {
+							exists = owner
+							owner = { has_origin = origin_protoss_shattered_ring }
+							is_megastructure_type = ring_world_ruined
+						}
+						remove_megastructure = this
+					}
+					spawn_shattered_ring_guaranteed_1_effect = yes
+					spawn_shattered_ring_guaranteed_2_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = { num_guaranteed_colonies >= 1 }
+			capital_scope = {
+				solar_system = {
+					random_megastructure = {
+						limit = {
+							exists = owner
+							owner = { has_origin = origin_protoss_shattered_ring }
+							is_megastructure_type = ring_world_ruined
+							has_megastructure_flag = guaranteed_1
+						}
+						remove_megastructure = this
+					}
+					spawn_shattered_ring_guaranteed_1_effect = yes
+				}
+			}
 		}
 	}
 	
