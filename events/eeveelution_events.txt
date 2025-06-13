@@ -3075,43 +3075,43 @@ country_event = {   #######给加决斗者岗位的地块
 # 	} 
 # }
 
-country_event = {
-	id = eevent.1002
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {  
-		has_technology = tech_gene_tailoring
-		NOT = {
-			has_technology = EOE_tech_gene_tailoring
-		}
-	}
+# country_event = {
+# 	id = eevent.1002
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	trigger = {  
+# 		has_technology = tech_gene_tailoring
+# 		NOT = {
+# 			has_technology = EOE_tech_gene_tailoring
+# 		}
+# 	}
 
-	immediate = {
-		give_technology = {
-			tech = EOE_tech_gene_tailoring
-			message = no
-		}	
-	} 
-}
+# 	immediate = {
+# 		give_technology = {
+# 			tech = EOE_tech_gene_tailoring
+# 			message = no
+# 		}	
+# 	} 
+# }
 
-country_event = {
-	id = eevent.1003
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {  
-		has_technology = tech_gene_expressions
-		NOT = {
-			has_technology = EOE_tech_gene_expressions
-		}
-	}
+# country_event = {
+# 	id = eevent.1003
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	trigger = {  
+# 		has_technology = tech_gene_expressions
+# 		NOT = {
+# 			has_technology = EOE_tech_gene_expressions
+# 		}
+# 	}
 
-	immediate = {
-		give_technology = {
-			tech = EOE_tech_gene_expressions
-			message = no
-		}	
-	} 
-}
+# 	immediate = {
+# 		give_technology = {
+# 			tech = EOE_tech_gene_expressions
+# 			message = no
+# 		}	
+# 	} 
+# }
 
 # country_event = {
 # 	id = eevent.1004
@@ -3170,27 +3170,27 @@ country_event = {
 # 	} 
 # }
 
-country_event = {
-	id = eevent.1007
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {  
-		OR = {
-			has_tradition = tr_genetics_enhanced_expression
-			has_tradition = tr_cybernetics_integrated_anatomy
-		}
-		NOT = {
-			has_technology = EOE_tech_tr_genetics_enhanced_expression
-		}
-	}
+# country_event = {
+# 	id = eevent.1007
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	trigger = {  
+# 		OR = {
+# 			has_tradition = tr_genetics_enhanced_expression
+# 			has_tradition = tr_cybernetics_integrated_anatomy
+# 		}
+# 		NOT = {
+# 			has_technology = EOE_tech_tr_genetics_enhanced_expression
+# 		}
+# 	}
 
-	immediate = {
-		give_technology = {
-			tech = EOE_tech_tr_genetics_enhanced_expression
-			message = no
-		}	
-	} 
-}
+# 	immediate = {
+# 		give_technology = {
+# 			tech = EOE_tech_tr_genetics_enhanced_expression
+# 			message = no
+# 		}	
+# 	} 
+# }
 
 
 

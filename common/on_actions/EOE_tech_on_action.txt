@@ -4,8 +4,8 @@ on_tech_increased = {
 		eevent.4
 		eevent.5
 		eevent.345
-		eevent.1002
-		eevent.1003
+		# eevent.1002
+		# eevent.1003
 
 
 	}
@@ -25,11 +25,11 @@ on_tech_increased = {
 # 	}
 # }
 
-on_tradition_picked = {
-	events = {
-		# eevent.1004
-		# eevent.1005
-		# eevent.1006
-		eevent.1007
-	}
-}
+# on_tradition_picked = {
+# 	events = {
+# 		# eevent.1004
+# 		# eevent.1005
+# 		# eevent.1006
+# 		eevent.1007
+# 	}
+# }
