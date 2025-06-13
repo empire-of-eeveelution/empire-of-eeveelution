@@ -5,7 +5,7 @@ country_event ={   #创造者坟
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = { 
-		any_owned_pop_species = {
+		owner_main_species = {
 			has_trait = trait_EOE_Inheritors
 		}
 		num_ascension_perks > 1
@@ -22,7 +22,7 @@ country_event ={
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = { 
-		any_owned_pop_species = {
+		owner_main_species = {
 			has_trait = trait_EOE_Inheritors
 		}
 		has_technology = EOE_mental_assault

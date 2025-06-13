@@ -75,7 +75,8 @@ trait_EOE_ultra_cute = {
 		always = no
 	}
 
-	allowed_archetypes = { POKEMON }
+	allowed_archetypes = { BIOLOGICAL  }
+	species_class = { Eeveelutions }
 	custom_tooltip =  TRAIT_ULTRA_CUTE_EFFECT
 }
 #感情火花

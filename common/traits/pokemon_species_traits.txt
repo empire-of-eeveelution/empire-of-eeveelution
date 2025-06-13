@@ -17,7 +17,8 @@ trait_EOE_Inheritors = {
 		always = no
 	}
 
-	allowed_archetypes = { POKEMON}
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 
 }
 
@@ -43,7 +44,8 @@ trait_directed_evolution = {
 		always = no
 	}
 	#custom_tooltip = trait_directed_evolution.tooltip
-	allowed_archetypes = { POKEMON}
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 	
 	modifier = {
 		pop_environment_tolerance = 0.2
@@ -269,7 +271,7 @@ trait_pokeball_adaptability = {
 	species_possible_merge_add = {
 		always = no
 	}
-	allowed_archetypes = { POKEMON BIOLOGICAL MACHINE }
+	allowed_archetypes = { BIOLOGICAL MACHINE }
 	species_class = {
 		Steelmons
 		Eeveelutions
@@ -313,7 +315,7 @@ trait_pokeball_adaptability = {
 # 		always = no
 # 	}
 
-# 	allowed_archetypes = { POKEMON}
+# 	allowed_archetypes = { BIOLOGICAL }
 
 # 	modifier = {
 # 		pop_growth_speed = 0.20
@@ -337,7 +339,7 @@ trait_natural_psionic_warrior = {
 	species_possible_merge_add = {
 		always = no
 	}
-	allowed_archetypes = { POKEMON BIOLOGICAL MACHINE }
+	allowed_archetypes = { BIOLOGICAL MACHINE }
 	species_class = {
 		Steelmons
 		Eeveelutions
@@ -368,7 +370,8 @@ trait_extremely_cute = {
 		always = no
 	}
 
-	allowed_archetypes = { POKEMON}
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 	custom_tooltip =  TRAIT_CUTE_EFFECT
 }
 
@@ -385,7 +388,8 @@ trait_normal_type_mega_evolution = {
 	species_possible_remove = {
 		can_remove_beneficial_genetic_traits = yes
 	}
-	allowed_archetypes = { POKEMON}
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 	modifier = {
 		pop_environment_tolerance = 1
 		
@@ -409,7 +413,8 @@ trait_grass_type_mega_evolution = {
 	species_possible_remove = {
 		can_remove_beneficial_genetic_traits = yes
 	}
-	allowed_archetypes = { POKEMON}
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 	modifier = {
 		planet_pops_food_upkeep_mult = -0.50
 		farmer_jobs_bonus_workforce_mult = 0.25
@@ -436,7 +441,8 @@ trait_fire_type_mega_evolution = {
 	species_possible_remove = {
 		can_remove_beneficial_genetic_traits = yes
 	}
-	allowed_archetypes = { POKEMON}
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 	modifier = {
 		technician_jobs_bonus_workforce_mult = 0.3
 		miner_jobs_bonus_workforce_mult = 0.4
@@ -462,7 +468,8 @@ trait_water_type_mega_evolution = {
 	species_possible_remove = {
 		can_remove_beneficial_genetic_traits = yes
 	}
-	allowed_archetypes = { POKEMON}
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 	modifier = {
 		leader_lifespan_add = 20
 		logistic_growth_mult = 0.2
@@ -489,7 +496,8 @@ trait_electric_type_mega_evolution = {
 	species_possible_remove = {
 		can_remove_beneficial_genetic_traits = yes
 	}
-	allowed_archetypes = { POKEMON}
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 	modifier = {
 		technician_jobs_bonus_workforce_mult = 0.6
 		physicist_jobs_bonus_workforce_mult = 0.3
@@ -515,7 +523,8 @@ trait_psychic_type_mega_evolution = {
 	species_possible_remove = {
 		can_remove_beneficial_genetic_traits = yes
 	}
-	allowed_archetypes = { POKEMON}
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 	modifier = {
 		researcher_jobs_bonus_workforce_mult = 0.3
 		species_leader_exp_gain = 0.2
@@ -540,7 +549,8 @@ trait_dark_type_mega_evolution = {
 	species_possible_remove = {
 		can_remove_beneficial_genetic_traits = yes
 	}
-	allowed_archetypes = { POKEMON}
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 	opposites = { trait_dark_type_mega_evolution_swarm }
 	
 	modifier = {
@@ -571,7 +581,8 @@ trait_dark_type_mega_evolution_swarm = {
 	species_possible_merge_add = {
 		always = no
 	}
-	allowed_archetypes = { POKEMON}
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 	
 	modifier = {
 		bureaucrat_jobs_bonus_workforce_mult = 0.3
@@ -600,7 +611,8 @@ trait_ice_type_mega_evolution = {
 	species_possible_remove = {
 		can_remove_beneficial_genetic_traits = yes
 	}
-	allowed_archetypes = { POKEMON}
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 	opposites = { trait_ice_type_mega_evolution_swarm }
 	
 	modifier = {
@@ -631,7 +643,8 @@ trait_ice_type_mega_evolution_swarm = {
 	species_possible_merge_add = {
 		always = no
 	}
-	allowed_archetypes = { POKEMON}
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 	
 	modifier = {
 		foundry_jobs_bonus_workforce_mult = 0.3
@@ -656,7 +669,8 @@ trait_fairy_type_mega_evolution = {
 	randomized = no
 	improves_leaders = yes
 	advanced_trait = yes
-	allowed_archetypes = { POKEMON}
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 	opposites = { trait_fairy_type_mega_evolution_swarm }
 	species_potential_add = {
 		can_do_advanced_gene_modding = yes
@@ -694,7 +708,8 @@ trait_fairy_type_mega_evolution_swarm = {
 	species_possible_merge_add = {
 		always = no
 	}
-	allowed_archetypes = { POKEMON}
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 	modifier = {
 	    species_empire_size_mult = -0.50
 		pop_resettlement_cost_mult = -0.50
@@ -715,7 +730,7 @@ trait_fairy_type_mega_evolution_swarm = {
 #	initial = no
 #	randomized = no
 #	advanced_trait = yes
-#	allowed_archetypes = { POKEMON}
+#	allowed_archetypes = { BIOLOGICAL }
 #	modifier = {
 #		planet_jobs_physics_research_produces_mult = 0.20
 #		pc_nuked_habitability = 1.0
@@ -735,7 +750,8 @@ trait_steel_type_mega_evolution = {
 	species_possible_merge_add = {
 		can_remove_cybernetic_traits = yes
 	}
-	allowed_archetypes = { POKEMON }
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 	modifier = {
 	    leader_lifespan_add = 15
 		pop_environment_tolerance = 0.3
@@ -763,8 +779,8 @@ trait_rock_type_mega_evolution = {
 	species_possible_merge_add = {
 		can_remove_cybernetic_traits = yes
 	}
-	allowed_archetypes = { POKEMON }
-	modifier = {
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 	    leader_lifespan_add = 15
 		pop_environment_tolerance = 0.1
 		planet_jobs_minerals_produces_mult = 0.2
@@ -792,7 +808,8 @@ trait_ground_type_mega_evolution = {
 	species_possible_merge_add = {
 		can_remove_cybernetic_traits = yes
 	}
-	allowed_archetypes = { POKEMON }
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 	modifier = {
 	    leader_lifespan_add = 15
 		pop_environment_tolerance = 0.1
@@ -817,7 +834,8 @@ trait_fly_type_mega_evolution = {
 	species_possible_merge_add = {
 		can_remove_cybernetic_traits = yes
 	}
-	allowed_archetypes = { POKEMON }
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 	modifier = {
 		pop_job_trade_mult = 0.3
 		pop_growth_from_immigration = 1
@@ -843,7 +861,8 @@ trait_fight_type_mega_evolution = {
 	species_possible_merge_add = {
 		can_remove_cybernetic_traits = yes
 	}
-	allowed_archetypes = { POKEMON }
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 	modifier = {
 		planet_jobs_unity_produces_mult = 0.25
 		planet_jobs_worker_produces_mult = 0.1
@@ -868,7 +887,8 @@ trait_posion_type_mega_evolution = {
 	species_possible_merge_add = {
 		can_remove_cybernetic_traits = yes
 	}
-	allowed_archetypes = { POKEMON }
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 	modifier = {
 		planet_jobs_physics_research_produces_mult = 0.3
 		planet_jobs_society_research_produces_mult = 0.3
@@ -897,7 +917,8 @@ trait_dragon_type_mega_evolution = {
 	species_possible_merge_add = {
 		can_remove_cybernetic_traits = yes
 	}
-	allowed_archetypes = { POKEMON }
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 	modifier = {
 		planet_jobs_produces_mult = 0.1
 		planet_pops_food_upkeep_mult = 0.2
@@ -924,7 +945,8 @@ trait_bug_type_mega_evolution = {
 	species_possible_merge_add = {
 		can_remove_cybernetic_traits = yes
 	}
-	allowed_archetypes = { POKEMON }
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { Eeveelutions }
 	modifier = {
 		leader_lifespan_add = -30
 		pop_growth_speed = 0.3

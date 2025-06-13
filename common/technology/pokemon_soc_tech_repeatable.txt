@@ -47,7 +47,7 @@ tech_endless_evolution = {
 		description_parameters = {
 			POINTS = 1
 		}
-		POKEMON_species_trait_points_add = 1
+		BIOLOGICAL_species_trait_points_add = 1
 	}
 }
 
@@ -73,8 +73,8 @@ tech_endless_evolution_2 = {
 	    modifier = {
 			factor = 0
 			NOT = { 
-				any_owned_pop_species = {
-				pop_has_trait = trait_directed_evolution
+				owner_main_species = {
+				has_trait = trait_directed_evolution
 			}
 			}
 			}
@@ -98,6 +98,6 @@ tech_endless_evolution_2 = {
 		description_parameters = {
 			POINTS = 1
 		}
-		POKEMON_species_trait_points_add= 1
+		BIOLOGICAL_species_trait_points_add= 1
 	}
 }

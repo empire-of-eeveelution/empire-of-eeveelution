@@ -22,8 +22,11 @@
 # 伊布同化者
 civic_eeveelutions_assimilator = { 
 	potential = {
-		species_archetype = {
-			value = POKEMON
+		# species_archetype = {
+		# 	value = POKEMON
+		# }
+		species_class = {
+			value = Eeveelutions
 		}
 	 }
 	possible = { 
@@ -74,6 +77,9 @@ civic_EOE_steel_type_trainer = {
 	pickable_at_start = yes
 	modification = no
 	potential = {
+		species_class = {
+			value = Eeveelutions
+		}
 		origin = {
 			NOR = {
 				value = origin_EOE_pokemon_trainer
@@ -136,8 +142,11 @@ civic_EOE_steel_type_trainer = {
 ###########外置型突触
 civic_external_synapse = { 
 	potential = {
-		species_archetype = {
-			value = POKEMON
+		# species_archetype = {
+		# 	value = POKEMON
+		# }
+		species_class = {
+			value = Eeveelutions
 		}
 		ethics = {  
 				 value = ethic_gestalt_consciousness

@@ -9799,7 +9799,7 @@ country_event = {
 		if = {
 			limit = {
 				any_owned_pop_species = {
-					pop_has_trait = trait_dark_type_mega_evolution
+					has_trait = trait_dark_type_mega_evolution
 				}
 			}
 			last_created_leader = {
@@ -9809,7 +9809,7 @@ country_event = {
 		if = {
 			limit = {
 				any_owned_pop_species = {
-					pop_has_trait = trait_ice_type_mega_evolution
+					has_trait = trait_ice_type_mega_evolution
 				}
 			}
 			last_created_leader = {
@@ -9819,7 +9819,7 @@ country_event = {
 		if = {
 			limit = {
 				any_owned_pop_species = {
-					pop_has_trait = trait_electric_type_mega_evolution
+					has_trait = trait_electric_type_mega_evolution
 				}
 			}
 			last_created_leader = {
@@ -9829,7 +9829,7 @@ country_event = {
 		if = {
 			limit = {
 				any_owned_pop_species = {
-					pop_has_trait = trait_psychic_type_mega_evolution
+					has_trait = trait_psychic_type_mega_evolution
 				}
 			}
 			last_created_leader = {
@@ -9839,7 +9839,7 @@ country_event = {
 		if = {
 			limit = {
 				any_owned_pop_species = {
-					pop_has_trait = trait_water_type_mega_evolution
+					has_trait = trait_water_type_mega_evolution
 				}
 			}
 			last_created_leader = {
@@ -9849,7 +9849,7 @@ country_event = {
 		if = {
 			limit = {
 				any_owned_pop_species = {
-					pop_has_trait = trait_fire_type_mega_evolution
+					has_trait = trait_fire_type_mega_evolution
 				}
 			}
 			last_created_leader = {

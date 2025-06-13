@@ -71,7 +71,7 @@
 }
 
 "Eeveelutions" = {
-	archetype = POKEMON
+	archetype = BIOLOGICAL
 	possible = {
 		authority = {
 			NOT = {

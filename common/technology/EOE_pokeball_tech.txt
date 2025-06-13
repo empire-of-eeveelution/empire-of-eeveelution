@@ -15,7 +15,7 @@ EOE_afferent_nerve_stimulation = {
 			pop_happiness = 0.05
 			empire_size_pops_mult = -0.1
 	}
-	potential = { any_owned_pop_species = { has_trait = trait_pokeball_adaptability } }
+	potential = { owner_main_species = { has_trait = trait_pokeball_adaptability }  }
 
 	ai_weight = {
 		factor = 0
@@ -39,7 +39,7 @@ EOE_dopamine_stimulation = {
 			empire_size_pops_mult = -0.1
 	}
 
-	potential = { any_owned_pop_species = { has_trait = trait_pokeball_adaptability } }
+	potential = { owner_main_species = { has_trait = trait_pokeball_adaptability } }
 	
 	ai_weight = {
 		factor = 0
@@ -65,7 +65,7 @@ EOE_virtual_paradise = {
 			planet_crime_mult = 0.03
 	}
 
-	potential = { any_owned_pop_species = { has_trait = trait_pokeball_adaptability } }
+	potential = { owner_main_species = { has_trait = trait_pokeball_adaptability } }
 	ai_weight = {
 		factor = 0
 		
@@ -89,7 +89,7 @@ EOE_mental_assault = {
 	}
 	potential = { 
 		OR = {
-			any_owned_pop_species = { has_trait = trait_pokeball_adaptability has_trait = trait_EOE_Inheritors }
+			owner_main_species = { has_trait = trait_pokeball_adaptability has_trait = trait_EOE_Inheritors }
 			has_origin = origin_lotus_hezi_start
 		}
 	 }
@@ -126,7 +126,7 @@ EOE_mental_storm = {
 	}
 	potential = { 
 		OR = {
-			any_owned_pop_species = { has_trait = trait_pokeball_adaptability has_trait = trait_EOE_Inheritors }
+			owner_main_species = { has_trait = trait_pokeball_adaptability has_trait = trait_EOE_Inheritors }
 			has_origin = origin_lotus_hezi_start
 		}
 	 }
@@ -136,24 +136,7 @@ EOE_mental_storm = {
 	}
 }
 
-# EOE_mental_omega = {
-# 	cost = 20000
-# 	area = society
-# 	category = { psionics }
-# 	tier = 5
-# 	weight = 0
-# 	is_rare = yes
-# 	icon = EOE_mental_omega
-# 	modifier = {
-# 		empire_size_penalty_mult = -0.3
-# 	}
-# 	potential = { any_owned_pop_species = { has_trait = trait_pokeball_adaptability has_trait = trait_EOE_Inheritors } }
 
-# 	ai_weight = {
-# 		factor = 0
-		
-# 	}
-# }
 
 EOE_Membrane_warp_mapping = {
 	cost = 5000
@@ -178,7 +161,7 @@ EOE_Membrane_warp_mapping = {
 	}
 	potential = { 
 		OR = {
-			any_owned_pop_species = { has_trait = trait_pokeball_adaptability has_trait = trait_EOE_Inheritors }
+			owner_main_species = { has_trait = trait_pokeball_adaptability has_trait = trait_EOE_Inheritors }
 			has_origin = origin_lotus_hezi_start
 		}
 	 }
@@ -211,7 +194,7 @@ EOE_Membrane_fold = {
 	}
 	potential = { 
 		OR = {
-			any_owned_pop_species = { has_trait = trait_pokeball_adaptability has_trait = trait_EOE_Inheritors }
+			owner_main_species = { has_trait = trait_pokeball_adaptability has_trait = trait_EOE_Inheritors }
 			has_origin = origin_lotus_hezi_start
 		}
 	 }

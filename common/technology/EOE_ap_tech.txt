@@ -11,7 +11,7 @@
 # 		description_parameters = {
 # 			POINTS = 7
 # 		}
-# 		POKEMON_species_trait_points_add = 7
+# 		BIOLOGICAL_species_trait_points_add = 7
 # 	}
 
 # 	potential = {
@@ -36,7 +36,7 @@
 # 		description_parameters = {
 # 			POINTS = 3
 # 		}
-# 		POKEMON_species_trait_points_add = 3
+# 		BIOLOGICAL_species_trait_points_add = 3
 # 	}
 
 # 	potential = {
@@ -61,7 +61,7 @@ EOE_tech_gene_tailoring = {
 		description_parameters = {
 			POINTS = 1
 		}
-		POKEMON_species_trait_points_add = 1
+		BIOLOGICAL_species_trait_points_add = 1
 	}
 
 	potential = {
@@ -86,7 +86,7 @@ EOE_tech_gene_expressions = {
 		description_parameters = {
 			POINTS = 1
 		}
-		POKEMON_species_trait_points_add = 1
+		BIOLOGICAL_species_trait_points_add = 1
 	}
 
 	potential = {
@@ -111,7 +111,7 @@ EOE_tech_gene_expressions = {
 # 		description_parameters = {
 # 			POINTS = 2
 # 		}
-# 		POKEMON_species_trait_points_add = 2
+# 		BIOLOGICAL_species_trait_points_add = 2
 # 	}
 
 # 	potential = {
@@ -136,7 +136,7 @@ EOE_tech_gene_expressions = {
 # 		description_parameters = {
 # 			POINTS = 2
 # 		}
-# 		POKEMON_species_trait_points_add = 2
+# 		BIOLOGICAL_species_trait_points_add = 2
 # 	}
 
 # 	potential = {
@@ -161,7 +161,7 @@ EOE_tech_gene_expressions = {
 # 		description_parameters = {
 # 			POINTS = 2
 # 		}
-# 		POKEMON_species_trait_points_add = 2
+# 		BIOLOGICAL_species_trait_points_add = 2
 # 	}
 
 # 	potential = {
@@ -183,7 +183,7 @@ EOE_tech_tr_genetics_enhanced_expression = {
 
 	modifier = {
 		description = EOE_tech_tr_genetics_enhanced_expression_desc
-		POKEMON_species_trait_points_add = 6
+		BIOLOGICAL_species_trait_points_add = 6
 		POKEMON_species_trait_picks_add = 2
 	}
 

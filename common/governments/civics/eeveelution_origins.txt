@@ -9,9 +9,9 @@ origin_protoss_shattered_ring = {
 	#non_colonizable_planet_class_neighbor = yes
 
 	possible = {
-		species_archetype = {
-			value = POKEMON
-		}
+		# species_archetype = {
+		# 	value = POKEMON
+		# }
 		#ethics = { NOT = { value = ethic_gestalt_consciousness }}
 	}
 

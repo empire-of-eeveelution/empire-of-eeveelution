@@ -1,22 +1,22 @@
-is_organic_species = { #如果其他mod也改了这个，会引起冲突（比如说伊布不消耗食物）
-	species = {
-		OR = {
-			is_archetype = BIOLOGICAL # original trigger did not include pre-sapient classes
-			is_archetype = LITHOID
-			is_archetype = POKEMON
-		}		
-	}
-}
+# is_organic_species = { #如果其他mod也改了这个，会引起冲突（比如说伊布不消耗食物）
+# 	species = {
+# 		OR = {
+# 			is_archetype = BIOLOGICAL # original trigger did not include pre-sapient classes
+# 			is_archetype = LITHOID
+# 			is_archetype = POKEMON
+# 		}		
+# 	}
+# }
 
-has_food_upkeep = {
-	species = {
-		OR = {
-			is_archetype = BIOLOGICAL # original trigger did not include pre-sapient classes
-			is_archetype = POKEMON
-		}
-	}
-	NOT = { has_trait = trait_voidling }
-}
+# has_food_upkeep = {
+# 	species = {
+# 		OR = {
+# 			is_archetype = BIOLOGICAL # original trigger did not include pre-sapient classes
+# 			is_archetype = POKEMON
+# 		}
+# 	}
+# 	NOT = { has_trait = trait_voidling }
+# }
 
 
 can_destroy_planet_with_PLANET_KILLER_EOE = {

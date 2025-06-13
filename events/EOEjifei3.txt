@@ -29,8 +29,7 @@
 	}
 	
 
-	is_triggered_only = yes
-
+	
 	# option = {
 	# 	name = EXCELLENT
 	# }
@@ -78,7 +77,10 @@
 			 has_tradition = tr_genetics_finish
 		 }
 		 NOT = { has_country_flag = EOE_genetics_finish }
-		 any_owned_pop_species = { is_archetype = POKEMON }
+#any_owned_pop_species = { is_archetype = POKEMON }
+		owner_main_species = {
+			has_trait = "trait_directed_evolution"	
+		}
 	 }
 	 immediate = {
 		 set_country_flag = EOE_genetics_finish
