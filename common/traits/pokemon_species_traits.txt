@@ -51,6 +51,7 @@ trait_directed_evolution = {
 		pop_environment_tolerance = 0.2
 		# BIOLOGICAL_species_trait_picks_add = 20
 		# POKEMON_species_trait_picks_add = 20
+		BIOLOGICAL_species_trait_picks_add = 20
 	}
 
 	triggered_pop_modifier = {
