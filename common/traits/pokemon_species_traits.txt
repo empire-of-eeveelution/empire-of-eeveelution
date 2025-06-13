@@ -98,7 +98,7 @@ trait_directed_evolution = {
 				has_planet_flag = EOE_evoplan_electric
 			}
 		}
-		planet_jobs_energy_produces_mult = 0.15
+		technician_jobs_bonus_workforce_mult = 0.15
 		mult = modifier:pop_EOE_evolution_planning_effect_mult
 	}
 	triggered_pop_modifier = {
@@ -111,7 +111,7 @@ trait_directed_evolution = {
 				has_planet_flag = EOE_evoplan_fire
 			}
 		}
-		planet_jobs_alloys_produces_mult = 0.1
+		foundry_jobs_bonus_workforce_mult = 0.1
 		mult = modifier:pop_EOE_evolution_planning_effect_mult
 	}
 	triggered_pop_modifier = {
@@ -137,9 +137,7 @@ trait_directed_evolution = {
 				has_planet_flag = EOE_evoplan_psychic
 			}
 		}
-		planet_jobs_physics_research_produces_mult = 0.1
-		planet_jobs_society_research_produces_mult = 0.1
-		planet_jobs_engineering_research_produces_mult = 0.1
+		researcher_jobs_bonus_workforce_mult = 0.1
 		mult = modifier:pop_EOE_evolution_planning_effect_mult
 	}
 	triggered_pop_modifier = {
@@ -152,7 +150,7 @@ trait_directed_evolution = {
 				has_planet_flag = EOE_evoplan_dark
 			}
 		}
-		planet_jobs_minerals_produces_mult = 0.15
+		miner_jobs_bonus_workforce_mult = 0.15
 		mult = modifier:pop_EOE_evolution_planning_effect_mult
 	}
 	triggered_pop_modifier = {
@@ -165,7 +163,7 @@ trait_directed_evolution = {
 				has_planet_flag = EOE_evoplan_ice
 			}
 		}
-		planet_jobs_consumer_goods_produces_mult = 0.1
+		artisan_jobs_bonus_workforce_mult = 0.1
 		mult = modifier:pop_EOE_evolution_planning_effect_mult
 	}
 	triggered_pop_modifier = {
@@ -178,7 +176,7 @@ trait_directed_evolution = {
 				has_planet_flag = EOE_evoplan_fairy
 			}
 		}
-		planet_jobs_unity_produces_mult = 0.1
+		bureaucrat_jobs_bonus_workforce_mult = 0.1
 		mult = modifier:pop_EOE_evolution_planning_effect_mult
 	}
 	triggered_pop_modifier = {
