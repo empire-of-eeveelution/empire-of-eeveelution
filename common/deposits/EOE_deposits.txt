@@ -352,75 +352,119 @@ d_EOE_wild_eeveelution_reserve = {
 	
 }
 
+#####################外置突触新机制2025年6月13日 
 d_EOE_PC_center_building_hive_capital = {
 	is_for_colonizable = yes
 	icon = d_EOE_PC_center_building_hive_capital
 	category = deposit_cat_rare
 
 	potential = { always = no }
-	
-	planet_modifier = {
-		job_synapse_drone_add = -200
-		job_EOE_synapse_drone_add = 200
+
+	custom_tooltip = d_EOE_PC_center_building_hive_capital_custom_tooltip
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				has_civic = civic_external_synapse
+			}
+		}
+		planet_amenities_no_happiness_add = 250
+		mult = value:EOE_trainer_drone_amenity_output
 	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				has_civic = civic_external_synapse
+			}
+		}
+		planet_crime_no_happiness_add = -5
+		mult = value:EOE_trainer_drone_amenity_output
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			alloys = 0.2
+			mult = value:EOE_trainer_drone_amenity_output
+		}
+	}
+
+	# triggered_planet_modifier = {  还是把加成和消耗写在一起吧
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 	}
+	# 	job_physicist_add = 100
+	# 	job_physicist_per_pop = 0.04 # 1 per 25
+	# 	planet_physicists_consumer_goods_upkeep_add = 3
+	# }
+	
+	
+	# planet_modifier = { 以前的效果
+	# 	planet_coordinator_exotic_gases_produces_add = 1
+	# 	planet_coordinator_exotic_gases_produces_add = 1
+	# 	# job_synapse_drone_add = -200
+	# 	# job_EOE_synapse_drone_add = 200
+	# }
 	
 }
 
-d_EOE_PC_center_building_hive_major_capital = {
-	is_for_colonizable = yes
-	icon = d_EOE_PC_center_building_hive_capital
-	category = deposit_cat_rare
+# d_EOE_PC_center_building_hive_major_capital = {
+# 	is_for_colonizable = yes
+# 	icon = d_EOE_PC_center_building_hive_capital
+# 	category = deposit_cat_rare
 
-	potential = { always = no }
+# 	potential = { always = no }
 	
-	planet_modifier = {
-		job_synapse_drone_add = -300
-		job_EOE_synapse_drone_add = 300
-	}
+# 	planet_modifier = {
+# 		job_synapse_drone_add = -300
+# 		job_EOE_synapse_drone_add = 300
+# 	}
 	
-}
+# }
 
-d_EOE_PC_center_building_imperial_hive_capital = {
-	is_for_colonizable = yes
-	icon = d_EOE_PC_center_building_hive_capital
-	category = deposit_cat_rare
+# d_EOE_PC_center_building_imperial_hive_capital = {
+# 	is_for_colonizable = yes
+# 	icon = d_EOE_PC_center_building_hive_capital
+# 	category = deposit_cat_rare
 
-	potential = { always = no }
+# 	potential = { always = no }
 	
-	planet_modifier = {
-		job_synapse_drone_add = -500
-		job_EOE_synapse_drone_add = 500
-	}
+# 	planet_modifier = {
+# 		job_synapse_drone_add = -500
+# 		job_EOE_synapse_drone_add = 500
+# 	}
 	
-}
+# }
 
-d_EOE_PC_center_building_hab_capital = {
-	is_for_colonizable = yes
-	icon = d_EOE_PC_center_building_hive_capital
-	category = deposit_cat_rare
+# d_EOE_PC_center_building_hab_capital = {
+# 	is_for_colonizable = yes
+# 	icon = d_EOE_PC_center_building_hive_capital
+# 	category = deposit_cat_rare
 
-	potential = { always = no }
+# 	potential = { always = no }
 	
-	planet_modifier = {
-		job_synapse_drone_add = -200
-		job_EOE_synapse_drone_add = 200
-	}
+# 	planet_modifier = {
+# 		job_synapse_drone_add = -200
+# 		job_EOE_synapse_drone_add = 200
+# 	}
 	
-}
+# }
 
-d_EOE_PC_center_building_hab_major_capital = {
-	is_for_colonizable = yes
-	icon = d_EOE_PC_center_building_hive_capital
-	category = deposit_cat_rare
+# d_EOE_PC_center_building_hab_major_capital = {
+# 	is_for_colonizable = yes
+# 	icon = d_EOE_PC_center_building_hive_capital
+# 	category = deposit_cat_rare
 
-	potential = { always = no }
+# 	potential = { always = no }
 	
-	planet_modifier = {
-		job_synapse_drone_add = -300
-		job_EOE_synapse_drone_add = 300
-	}
+# 	planet_modifier = {
+# 		job_synapse_drone_add = -300
+# 		job_EOE_synapse_drone_add = 300
+# 	}
 	
-}
+# }
 
 d_EOE_protoss_relic = {
 	is_for_colonizable = yes

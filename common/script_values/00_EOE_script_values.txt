@@ -5,3 +5,32 @@ EOE_protoss_shipbuild_three = {
 	}
 	mult = 3
 }
+
+##############检测星球上突触子个体数量，2025年6月13日新版的机制，推了之前的屎山
+EOE_trainer_drone_amenity_output = {
+	base = 0
+	complex_trigger_modifier = {
+		trigger = num_assigned_jobs
+		trigger_scope = planet
+		parameters = {
+			job = coordinator
+		}
+		mode = add
+		mult = 0.01
+	}
+	#mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+}
+
+# EOE_trainer_drone_crime_output = { #暂时用不上，就只检测数量不吃加成了吧，方便玩家对账
+# 	base = 0
+# 	complex_trigger_modifier = {
+# 		trigger = num_assigned_jobs
+# 		trigger_scope = planet
+# 		parameters = {
+# 			job = coordinator
+# 		}
+# 		mode = add
+# 		mult = 0.01
+# 	}
+# }
+############################################

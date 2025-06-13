@@ -513,7 +513,7 @@ bombardment_catch_swarm_2_desc:4 "The fleet will create tiny wormholes in orwbit
 #########################################蜂群伊布
 civic_external_synapse:0"External Synapse"
 civic_external_synapse_desc:0"Eeveelutions was not originally a creature with Gestalt consciousness. They use the technology of ancient super civilization to connect the mind in order to control the drones. Synapse drones equipped with a large number of pokeballs will play the role of trainers. The drones in the ball can maintain the connection with the swarm without consuming any supplies."
-civic_external_synapse_effects:0"Allow to use §YCatch§! bombardment stances\n§YSynapse Drones§! prodece §G6§!£amenities_no_happiness£§YAmenities§!\n§YSynapse Drones§! reduce §G5§!£crime£§YDeviancy§!\n§YSynapse Drones§! consume §R0.2§!£alloys£Alloys"
+civic_external_synapse_effects:0"Allow to use §YCatch§! bombardment stances\nProdece §G250§!£amenities_no_happiness£§YAmenities§! per 100 [synapse_drone.GetIcon]§Y[synapse_drone.GetNamePlural]§!\nReduce §G5§!£crime£§YDeviancy§! per 100 [synapse_drone.GetIcon]§Y[synapse_drone.GetNamePlural]§!\nConsume §R0.2§!£alloys£Alloys per 100 [synapse_drone.GetIcon]§Y[synapse_drone.GetNamePlural]§!"
  building_hive_node_EOE:0 "Synaptic Nodes"
  building_hive_node_EOE_desc:1 "A center of massive, macroscopic synapses, these nodes, tended to and assisted by specialized drones, receive and transmit the will of the Hive."
  building_hive_cluster_EOE:0 "Synaptic Clusters"

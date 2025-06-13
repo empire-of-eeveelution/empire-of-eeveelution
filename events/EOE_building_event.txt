@@ -1,245 +1,245 @@
 namespace = EOEbuliding
-planet_event = {
-	id = EOEbuliding.0
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		owner = {
-			has_civic = civic_external_synapse
-		}
-	}
-	immediate = {
-		this = {
-			planet_event = {
-				id = EOEbuliding.101
-			}
-			planet_event = {
-				id = EOEbuliding.102
-			}
-			planet_event = {
-				id = EOEbuliding.103
-			}
-			planet_event = {
-				id = EOEbuliding.104
-			}
-			planet_event = {
-				id = EOEbuliding.105
-			}
-			planet_event = {
-				id = EOEbuliding.106
-			}
-			planet_event = {
-				id = EOEbuliding.109
-			}
-			planet_event = {
-				id = EOEbuliding.10001
-			}
-			planet_event = {
-				id = EOEbuliding.10002
-			}
-		}
-	}
-}
+# planet_event = {
+# 	id = EOEbuliding.0
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		owner = {
+# 			has_civic = civic_external_synapse
+# 		}
+# 	}
+# 	immediate = {
+# 		this = {
+# 			# planet_event = {
+# 			# 	id = EOEbuliding.101
+# 			# }
+# 			# planet_event = {
+# 			# 	id = EOEbuliding.102
+# 			# }
+# 			# planet_event = {
+# 			# 	id = EOEbuliding.103
+# 			# }
+# 			planet_event = {
+# 				id = EOEbuliding.104
+# 			}
+# 			# planet_event = {
+# 			# 	id = EOEbuliding.105
+# 			# }
+# 			# planet_event = {
+# 			# 	id = EOEbuliding.106
+# 			# }
+# 			# planet_event = {
+# 			# 	id = EOEbuliding.109
+# 			# }
+# 			# planet_event = {
+# 			# 	id = EOEbuliding.10001
+# 			# }
+# 			# planet_event = {
+# 			# 	id = EOEbuliding.10002
+# 			# }
+# 		}
+# 	}
+# }
 
-country_event = {
-	id = EOEbuliding.1
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		owner = {
-			has_civic = civic_external_synapse
-		}
-	}
-	immediate = {
-		every_owned_planet = {
-			limit = {
-				has_building = building_hive_node
-			}
-			remove_building = building_hive_node
-			add_building = building_hive_node_EOE
-		}
-	}
-}
+# country_event = {
+# 	id = EOEbuliding.1
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		owner = {
+# 			has_civic = civic_external_synapse
+# 		}
+# 	}
+# 	immediate = {
+# 		every_owned_planet = {
+# 			limit = {
+# 				has_building = building_hive_node
+# 			}
+# 			remove_building = building_hive_node
+# 			add_building = building_hive_node_EOE
+# 		}
+# 	}
+# }
 
-planet_event = {
-	id = EOEbuliding.101
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		owner = {
-			has_civic = civic_external_synapse
-		}
-	}
-	immediate = {
-		if = {
-			limit = {
-				has_building = building_hive_node
-			}
-			remove_building = building_hive_node
-			add_building = building_hive_node_EOE
-		}
-	}
-}
+# planet_event = {
+# 	id = EOEbuliding.101
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		owner = {
+# 			has_civic = civic_external_synapse
+# 		}
+# 	}
+# 	immediate = {
+# 		if = {
+# 			limit = {
+# 				has_building = building_hive_node
+# 			}
+# 			remove_building = building_hive_node
+# 			add_building = building_hive_node_EOE
+# 		}
+# 	}
+# }
 
-country_event = {
-	id = EOEbuliding.2
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		owner = {
-			has_civic = civic_external_synapse
-		}
-	}
-	immediate = {
-		every_owned_planet = {
-			limit = {
-				has_building = building_hive_cluster
-			}
-			remove_building = building_hive_cluster
-			add_building = building_hive_cluster_EOE
-		}
-	}
-}
+# country_event = {
+# 	id = EOEbuliding.2
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		owner = {
+# 			has_civic = civic_external_synapse
+# 		}
+# 	}
+# 	immediate = {
+# 		every_owned_planet = {
+# 			limit = {
+# 				has_building = building_hive_cluster
+# 			}
+# 			remove_building = building_hive_cluster
+# 			add_building = building_hive_cluster_EOE
+# 		}
+# 	}
+# }
 
-planet_event = {
-	id = EOEbuliding.102
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		owner = {
-			has_civic = civic_external_synapse
-		}
-	}
-	immediate = {
-		if = {
-			limit = {
-				has_building = building_hive_cluster
-			}
-			remove_building = building_hive_cluster
-			add_building = building_hive_cluster_EOE
-		}
-	}
-}
+# planet_event = {
+# 	id = EOEbuliding.102
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		owner = {
+# 			has_civic = civic_external_synapse
+# 		}
+# 	}
+# 	immediate = {
+# 		if = {
+# 			limit = {
+# 				has_building = building_hive_cluster
+# 			}
+# 			remove_building = building_hive_cluster
+# 			add_building = building_hive_cluster_EOE
+# 		}
+# 	}
+# }
 
-country_event = {
-	id = EOEbuliding.3
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		owner = {
-			has_civic = civic_external_synapse
-		}
-	}
-	immediate = {
-		every_owned_planet = {
-			limit = {
-				has_building = building_hive_confluence
-			}
-			remove_building = building_hive_confluence
-			add_building = building_hive_confluence_EOE
-		}
-	}
-}
+# country_event = {
+# 	id = EOEbuliding.3
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		owner = {
+# 			has_civic = civic_external_synapse
+# 		}
+# 	}
+# 	immediate = {
+# 		every_owned_planet = {
+# 			limit = {
+# 				has_building = building_hive_confluence
+# 			}
+# 			remove_building = building_hive_confluence
+# 			add_building = building_hive_confluence_EOE
+# 		}
+# 	}
+# }
 
-planet_event = {
-	id = EOEbuliding.103
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		owner = {
-			has_civic = civic_external_synapse
-		}
-	}
-	immediate = {
-		if = {
-			limit = {
-				has_building = building_hive_confluence
-			}
-			remove_building = building_hive_confluence
-			add_building = building_hive_confluence_EOE
-		}
-	}
-}
+# planet_event = {
+# 	id = EOEbuliding.103
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		owner = {
+# 			has_civic = civic_external_synapse
+# 		}
+# 	}
+# 	immediate = {
+# 		if = {
+# 			limit = {
+# 				has_building = building_hive_confluence
+# 			}
+# 			remove_building = building_hive_confluence
+# 			add_building = building_hive_confluence_EOE
+# 		}
+# 	}
+# }
 
-country_event = {
-	id = EOEbuliding.1001
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		owner = {
-			has_civic = civic_external_synapse
-		}
-	}
-	immediate = {
-		every_owned_planet = {
-			limit = {
-				has_building = building_fe_administration_hive_1
-			}
-			remove_building = building_fe_administration_hive_1
-			add_building = building_fe_administration_hive_EOE_1
-		}
-	}
-}
+# country_event = {
+# 	id = EOEbuliding.1001
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		owner = {
+# 			has_civic = civic_external_synapse
+# 		}
+# 	}
+# 	immediate = {
+# 		every_owned_planet = {
+# 			limit = {
+# 				has_building = building_fe_administration_hive_1
+# 			}
+# 			remove_building = building_fe_administration_hive_1
+# 			add_building = building_fe_administration_hive_EOE_1
+# 		}
+# 	}
+# }
 
-planet_event = {
-	id = EOEbuliding.10001
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		owner = {
-			has_civic = civic_external_synapse
-		}
-	}
-	immediate = {
-		if = {
-			limit = {
-				has_building = building_fe_administration_hive_1
-			}
-			remove_building = building_fe_administration_hive_1
-			add_building = building_fe_administration_hive_EOE_1
-		}
-	}
-}
+# planet_event = {
+# 	id = EOEbuliding.10001
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		owner = {
+# 			has_civic = civic_external_synapse
+# 		}
+# 	}
+# 	immediate = {
+# 		if = {
+# 			limit = {
+# 				has_building = building_fe_administration_hive_1
+# 			}
+# 			remove_building = building_fe_administration_hive_1
+# 			add_building = building_fe_administration_hive_EOE_1
+# 		}
+# 	}
+# }
 
-country_event = {
-	id = EOEbuliding.1002
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		owner = {
-			has_civic = civic_external_synapse
-		}
-	}
-	immediate = {
-		every_owned_planet = {
-			limit = {
-				has_building = building_fe_administration_hive_2
-			}
-			remove_building = building_fe_administration_hive_2
-			add_building = building_fe_administration_hive_EOE_2
-		}
-	}
-}
+# country_event = {
+# 	id = EOEbuliding.1002
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		owner = {
+# 			has_civic = civic_external_synapse
+# 		}
+# 	}
+# 	immediate = {
+# 		every_owned_planet = {
+# 			limit = {
+# 				has_building = building_fe_administration_hive_2
+# 			}
+# 			remove_building = building_fe_administration_hive_2
+# 			add_building = building_fe_administration_hive_EOE_2
+# 		}
+# 	}
+# }
 
-planet_event = {
-	id = EOEbuliding.10002
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		owner = {
-			has_civic = civic_external_synapse
-		}
-	}
-	immediate = {
-		if = {
-			limit = {
-				has_building = building_fe_administration_hive_2
-			}
-			remove_building = building_fe_administration_hive_2
-			add_building = building_fe_administration_hive_EOE_2
-		}
-	}
-}
+# planet_event = {
+# 	id = EOEbuliding.10002
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		owner = {
+# 			has_civic = civic_external_synapse
+# 		}
+# 	}
+# 	immediate = {
+# 		if = {
+# 			limit = {
+# 				has_building = building_fe_administration_hive_2
+# 			}
+# 			remove_building = building_fe_administration_hive_2
+# 			add_building = building_fe_administration_hive_EOE_2
+# 		}
+# 	}
+# }
 
 country_event = {
 	id = EOEbuliding.4
@@ -253,10 +253,11 @@ country_event = {
 	immediate = {
 		every_owned_planet = {
 			limit = {
-				OR = {
-					has_building = building_hive_capital
-					has_building = building_hab_capital
-				}
+				# OR = {
+				# 	has_building = building_hive_capital
+				# 	has_building = building_hab_capital
+				# }
+				is_colony = yes
 				NOT = {
 					has_deposit = d_EOE_PC_center_building_hive_capital
 				}
@@ -278,10 +279,11 @@ planet_event = {
 	immediate = {
 		if = {
 			limit = {
-				OR = {
-					has_building = building_hive_capital
-					has_building = building_hab_capital
-				}
+				# OR = {
+				# 	has_building = building_hive_capital
+				# 	has_building = building_hab_capital
+				# }
+				is_colony = yes
 				NOT = {
 					has_deposit = d_EOE_PC_center_building_hive_capital
 				}
@@ -297,22 +299,16 @@ country_event = {
 	hide_window = yes
 	trigger = {
 		owner = {
-			has_civic = civic_external_synapse
+			NOT = {has_civic = civic_external_synapse}
 		}
 	}
 	immediate = {
 		every_owned_planet = {
 			limit = {
-				OR = {
-					has_building = building_hive_major_capital
-					has_building = building_hab_major_capital
-				}
-				NOT = {
-					has_deposit = d_EOE_PC_center_building_hive_major_capital
-				}
+				is_colony = yes
+				has_deposit = d_EOE_PC_center_building_hive_capital
 			}
 			remove_deposit = d_EOE_PC_center_building_hive_capital
-			add_deposit = d_EOE_PC_center_building_hive_major_capital
 		}
 	}
 }
@@ -323,113 +319,159 @@ planet_event = {
 	hide_window = yes
 	trigger = {
 		owner = {
-			has_civic = civic_external_synapse
+			NOT = {has_civic = civic_external_synapse}
 		}
 	}
 	immediate = {
 		if = {
 			limit = {
-				OR = {
-					has_building = building_hive_major_capital
-					has_building = building_hab_major_capital
-				}
-				NOT = {
-					has_deposit = d_EOE_PC_center_building_hive_major_capital
-				}
+				is_colony = yes
+				has_deposit = d_EOE_PC_center_building_hive_capital
 			}
 			remove_deposit = d_EOE_PC_center_building_hive_capital
-			add_deposit = d_EOE_PC_center_building_hive_major_capital
 		}
 	}
 }
 
-country_event = {
-	id = EOEbuliding.6
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		owner = {
-			has_civic = civic_external_synapse
-		}
-	}
-	immediate = {
-		every_owned_planet = {
-			limit = {
-				has_building = building_imperial_hive_capital
-				NOT = {
-					has_deposit = d_EOE_PC_center_building_imperial_hive_capital
-				}
-			}
-			remove_deposit = d_EOE_PC_center_building_hive_capital
-			remove_deposit = d_EOE_PC_center_building_hive_major_capital
-			add_deposit = d_EOE_PC_center_building_imperial_hive_capital
-		}
-	}
-}
+# country_event = {
+# 	id = EOEbuliding.5
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		owner = {
+# 			has_civic = civic_external_synapse
+# 		}
+# 	}
+# 	immediate = {
+# 		every_owned_planet = {
+# 			limit = {
+# 				OR = {
+# 					has_building = building_hive_major_capital
+# 					has_building = building_hab_major_capital
+# 				}
+# 				NOT = {
+# 					has_deposit = d_EOE_PC_center_building_hive_major_capital
+# 				}
+# 			}
+# 			remove_deposit = d_EOE_PC_center_building_hive_capital
+# 			add_deposit = d_EOE_PC_center_building_hive_major_capital
+# 		}
+# 	}
+# }
 
-planet_event = {
-	id = EOEbuliding.106
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		owner = {
-			has_civic = civic_external_synapse
-		}
-	}
-	immediate = {
-		if = {
-			limit = {
-				has_building = building_imperial_hive_capital
-				NOT = {
-					has_deposit = d_EOE_PC_center_building_imperial_hive_capital
-				}
-			}
-			remove_deposit = d_EOE_PC_center_building_hive_capital
-			remove_deposit = d_EOE_PC_center_building_hive_major_capital
-			add_deposit = d_EOE_PC_center_building_imperial_hive_capital
-		}
-	}
-}
+# planet_event = {
+# 	id = EOEbuliding.105
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		owner = {
+# 			has_civic = civic_external_synapse
+# 		}
+# 	}
+# 	immediate = {
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					has_building = building_hive_major_capital
+# 					has_building = building_hab_major_capital
+# 				}
+# 				NOT = {
+# 					has_deposit = d_EOE_PC_center_building_hive_major_capital
+# 				}
+# 			}
+# 			remove_deposit = d_EOE_PC_center_building_hive_capital
+# 			add_deposit = d_EOE_PC_center_building_hive_major_capital
+# 		}
+# 	}
+# }
 
-country_event = {
-	id = EOEbuliding.9
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		owner = {
-			has_civic = civic_external_synapse
-		}
-	}
-	immediate = {
-		every_owned_planet = {
-			limit = {
-				has_district = district_rw_hive
-			}
-			remove_district = district_rw_hive
-			add_district = district_rw_hive_EOE
-		}
-	}
-}
+# country_event = {
+# 	id = EOEbuliding.6
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		owner = {
+# 			has_civic = civic_external_synapse
+# 		}
+# 	}
+# 	immediate = {
+# 		every_owned_planet = {
+# 			limit = {
+# 				has_building = building_imperial_hive_capital
+# 				NOT = {
+# 					has_deposit = d_EOE_PC_center_building_imperial_hive_capital
+# 				}
+# 			}
+# 			remove_deposit = d_EOE_PC_center_building_hive_capital
+# 			remove_deposit = d_EOE_PC_center_building_hive_major_capital
+# 			add_deposit = d_EOE_PC_center_building_imperial_hive_capital
+# 		}
+# 	}
+# }
 
-planet_event = {
-	id = EOEbuliding.109
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		owner = {
-			has_civic = civic_external_synapse
-		}
-	}
-	immediate = {
-		if = {
-			limit = {
-				has_district = district_rw_hive
-			}
-			remove_district = district_rw_hive
-			add_district = district_rw_hive_EOE
-		}
-	}
-}
+# planet_event = {
+# 	id = EOEbuliding.106
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		owner = {
+# 			has_civic = civic_external_synapse
+# 		}
+# 	}
+# 	immediate = {
+# 		if = {
+# 			limit = {
+# 				has_building = building_imperial_hive_capital
+# 				NOT = {
+# 					has_deposit = d_EOE_PC_center_building_imperial_hive_capital
+# 				}
+# 			}
+# 			remove_deposit = d_EOE_PC_center_building_hive_capital
+# 			remove_deposit = d_EOE_PC_center_building_hive_major_capital
+# 			add_deposit = d_EOE_PC_center_building_imperial_hive_capital
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	id = EOEbuliding.9
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		owner = {
+# 			has_civic = civic_external_synapse
+# 		}
+# 	}
+# 	immediate = {
+# 		every_owned_planet = {
+# 			limit = {
+# 				has_district = district_rw_hive
+# 			}
+# 			remove_district = district_rw_hive
+# 			add_district = district_rw_hive_EOE
+# 		}
+# 	}
+# }
+
+# planet_event = {
+# 	id = EOEbuliding.109
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		owner = {
+# 			has_civic = civic_external_synapse
+# 		}
+# 	}
+# 	immediate = {
+# 		if = {
+# 			limit = {
+# 				has_district = district_rw_hive
+# 			}
+# 			remove_district = district_rw_hive
+# 			add_district = district_rw_hive_EOE
+# 		}
+# 	}
+# }
 
 event = {
 	id = EOEbuliding.11

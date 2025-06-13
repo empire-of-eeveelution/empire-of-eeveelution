@@ -484,7 +484,7 @@ bombardment_catch_swarm_2_desc:4 "舰队将在轨道上制造微型虫洞，直�
 #########################################蜂群伊布
 civic_external_synapse:0"外置型突触"
 civic_external_synapse_desc:0"伊布最初并不是拥有格式塔意识的生物。它们使用远古超级文明的技术连接心智以实现对子个体的控制。装备了大量精灵球的突触工蜂将扮演训练师的角色，被收入球中的子个体能在不消耗任何补给的情况下保持与虫群的连接。"
-civic_external_synapse_effects:0"允许使用§Y捕捉式§!轨道轰炸姿态\n§Y突触工蜂§!产出§G6§!£amenities_no_happiness£§Y舒适度§!\n§Y突触工蜂§!降低§G5§!£crime£§Y反常度§!\n§Y突触工蜂§!消耗§R0.2§!£alloys£合金"
+civic_external_synapse_effects:0"允许使用§Y捕捉式§!轨道轰炸姿态\n每100[synapse_drone.GetIcon]§Y[synapse_drone.GetNamePlural]§!产出§G250§!£amenities_no_happiness£§Y舒适度§!\n每100[synapse_drone.GetIcon]§Y[synapse_drone.GetNamePlural]§!降低§G5§!£crime£§Y反常度§!\n每100[synapse_drone.GetIcon]§Y[synapse_drone.GetNamePlural]§!消耗§R0.2§!£alloys£合金"
  building_hive_node_EOE:0 "突触节点"
  building_hive_node_EOE_desc:1 "这个巨型宏观突触中心的各个节点在专业工蜂的辅助下负责接收并发送主脑的意志。"
  building_hive_cluster_EOE:0 "突触群"

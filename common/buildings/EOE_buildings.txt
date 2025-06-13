@@ -1,319 +1,319 @@
-@buildings_t1 = 1
-@buildings_t2 = 2
-@buildings_t3 = 3
-@buildings_t4 = 4
+# @buildings_t1 = 1
+# @buildings_t2 = 2
+# @buildings_t3 = 3
+# @buildings_t4 = 4
 
-building_hive_node_EOE = {
-	base_buildtime = @b1_time
-	can_build = no
-	category = unity
-	icon = building_hive_node
+# building_hive_node_EOE = {
+# 	base_buildtime = @b1_time
+# 	can_build = no
+# 	category = unity
+# 	icon = building_hive_node
 
-	potential = {
-		exists = owner
-		building_relaxed_basic_income_check = yes
-		owner = {
-			is_hive_empire = yes
-		}
-	}
+# 	potential = {
+# 		exists = owner
+# 		# building_relaxed_basic_income_check = yes
+# 		owner = {
+# 			is_hive_empire = yes
+# 		}
+# 	}
 
-	destroy_trigger = {
-		exists = owner
-		OR = {
-			owner = { is_hive_empire = no }
-		}
-	}
+# 	destroy_trigger = {
+# 		exists = owner
+# 		OR = {
+# 			owner = { is_hive_empire = no }
+# 		}
+# 	}
 
-	convert_to = {
-		building_temple
-		building_simulation_1
-		building_autochthon_monument
-		building_corporate_monument
-	}
+# 	convert_to = {
+# 		building_temple
+# 		building_simulation_1
+# 		building_autochthon_monument
+# 		building_corporate_monument
+# 	}
 
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = @b1_minerals
-		}
-		upkeep = {
-			energy = @b1_upkeep
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = synaptic_reinforcement
-				}
-			}
-			energy = 2
-		}
-	}
+# 	resources = {
+# 		category = planet_buildings
+# 		cost = {
+# 			minerals = @b1_minerals
+# 		}
+# 		upkeep = {
+# 			energy = @b1_upkeep
+# 		}
+# 		upkeep = {
+# 			trigger = {
+# 				exists = owner
+# 				owner = {
+# 					has_edict = synaptic_reinforcement
+# 				}
+# 			}
+# 			energy = 2
+# 		}
+# 	}
 
-	planet_modifier = {
-		job_EOE_synapse_drone_add = @b1_jobs
-	}
+# 	planet_modifier = {
+# 		job_EOE_synapse_drone_add = @b1_jobs
+# 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_active_tradition = tr_domination_synaptic_extensions
-			}
-		}
-		modifier = {
-			planet_housing_add = 2
-		}
-	}
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = {
+# 				has_active_tradition = tr_domination_synaptic_extensions
+# 			}
+# 		}
+# 		modifier = {
+# 			planet_housing_add = 2
+# 		}
+# 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_edict = synaptic_reinforcement
-			}
-		}
-		job_maintenance_drone_add = 1
-	}
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = {
+# 				has_edict = synaptic_reinforcement
+# 			}
+# 		}
+# 		job_maintenance_drone_add = 1
+# 	}
 
-	prerequisites = {
-		"tech_hive_node"
-	}
+# 	prerequisites = {
+# 		"tech_hive_node"
+# 	}
 
-	upgrades = {
-		building_hive_cluster
-	}
+# 	# upgrades = {
+# 	# 	building_hive_cluster
+# 	# }
 
-	triggered_desc = {
-		text = job_synapse_drone_effect_desc
-	}
+# 	triggered_desc = {
+# 		text = job_synapse_drone_effect_desc
+# 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_edict = synaptic_reinforcement
-			}
-		}
-		text = job_maintenance_drone_effect_desc
-	}
+# 	triggered_desc = {
+# 		trigger = {
+# 			exists = owner
+# 			owner = {
+# 				has_edict = synaptic_reinforcement
+# 			}
+# 		}
+# 		text = job_maintenance_drone_effect_desc
+# 	}
 
-	on_queued = {
-		planet = {
-			set_timed_planet_flag = { flag = recent_admin_building_built days = 720 }
-		}
-	}
-}
+# 	on_queued = {
+# 		planet = {
+# 			set_timed_planet_flag = { flag = recent_admin_building_built days = 720 }
+# 		}
+# 	}
+# }
 
-building_hive_cluster_EOE = {
-	base_buildtime = @b2_time
-	can_build = no
+# building_hive_cluster_EOE = {
+# 	base_buildtime = @b2_time
+# 	can_build = no
 
-	category = unity
-	icon = building_hive_cluster
+# 	category = unity
+# 	icon = building_hive_cluster
 
-	potential = {
-		exists = owner
-		owner = {
-			is_hive_empire = yes
-		}
-	}
+# 	potential = {
+# 		exists = owner
+# 		owner = {
+# 			is_hive_empire = yes
+# 		}
+# 	}
 
-	allow = {
-		has_upgraded_capital = yes
-		buildings_upgrade_allow = yes
-	}
+# 	allow = {
+# 		has_upgraded_capital = yes
+# 		buildings_upgrade_allow = yes
+# 	}
 
-	destroy_trigger = {
-		exists = owner
-		owner = { is_hive_empire = no }
-	}
+# 	destroy_trigger = {
+# 		exists = owner
+# 		owner = { is_hive_empire = no }
+# 	}
 
-	convert_to = {
-		building_holotemple
-		building_simulation_2
-		building_heritage_site
-		building_corporate_site
-	}
+# 	convert_to = {
+# 		building_holotemple
+# 		building_simulation_2
+# 		building_heritage_site
+# 		building_corporate_site
+# 	}
 
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = @b2_minerals
-			exotic_gases = @b2_rare_cost
-		}
-		upkeep = {
-			energy = @b2_upkeep
-			exotic_gases = @b2_rare_upkeep
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = synaptic_reinforcement
-				}
-			}
-			energy = 2
-		}
-	}
+# 	resources = {
+# 		category = planet_buildings
+# 		cost = {
+# 			minerals = @b2_minerals
+# 			exotic_gases = @b2_rare_cost
+# 		}
+# 		upkeep = {
+# 			energy = @b2_upkeep
+# 			exotic_gases = @b2_rare_upkeep
+# 		}
+# 		upkeep = {
+# 			trigger = {
+# 				exists = owner
+# 				owner = {
+# 					has_edict = synaptic_reinforcement
+# 				}
+# 			}
+# 			energy = 2
+# 		}
+# 	}
 
-	planet_modifier = {
-		job_EOE_synapse_drone_add = @b2_jobs
-	}
+# 	planet_modifier = {
+# 		job_EOE_synapse_drone_add = @b2_jobs
+# 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_active_tradition = tr_domination_synaptic_extensions
-			}
-		}
-		modifier = {
-			planet_housing_add = 2
-		}
-	}
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = {
+# 				has_active_tradition = tr_domination_synaptic_extensions
+# 			}
+# 		}
+# 		modifier = {
+# 			planet_housing_add = 2
+# 		}
+# 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_edict = synaptic_reinforcement
-			}
-		}
-		job_maintenance_drone_add = 1
-	}
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = {
+# 				has_edict = synaptic_reinforcement
+# 			}
+# 		}
+# 		job_maintenance_drone_add = 1
+# 	}
 
-	prerequisites = {
-		"tech_hive_cluster"
-	}
+# 	prerequisites = {
+# 		"tech_hive_cluster"
+# 	}
 
-	upgrades = {
-		building_hive_confluence
-	}
+# 	upgrades = {
+# 		building_hive_confluence
+# 	}
 
-	triggered_desc = {
-		text = job_synapse_drone_effect_desc
-	}
+# 	triggered_desc = {
+# 		text = job_synapse_drone_effect_desc
+# 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_edict = synaptic_reinforcement
-			}
-		}
-		text = job_maintenance_drone_effect_desc
-	}
+# 	triggered_desc = {
+# 		trigger = {
+# 			exists = owner
+# 			owner = {
+# 				has_edict = synaptic_reinforcement
+# 			}
+# 		}
+# 		text = job_maintenance_drone_effect_desc
+# 	}
 
-	on_queued = {
-		planet = {
-			set_timed_planet_flag = { flag = recent_admin_building_built days = 720 }
-		}
-	}
-}
+# 	on_queued = {
+# 		planet = {
+# 			set_timed_planet_flag = { flag = recent_admin_building_built days = 720 }
+# 		}
+# 	}
+# }
 
-building_hive_confluence_EOE = {
-	base_buildtime = @b3_time
-	can_build = no
+# building_hive_confluence_EOE = {
+# 	base_buildtime = @b3_time
+# 	can_build = no
 
-	category = unity
-	icon = building_hive_confluence
-	potential = {
-		exists = owner
-		owner = {
-			is_hive_empire = yes
-		}
-	}
+# 	category = unity
+# 	icon = building_hive_confluence
+# 	potential = {
+# 		exists = owner
+# 		owner = {
+# 			is_hive_empire = yes
+# 		}
+# 	}
 
-	allow = {
-		has_major_upgraded_capital = yes
-		buildings_upgrade_allow = yes
-	}
+# 	allow = {
+# 		has_major_upgraded_capital = yes
+# 		buildings_upgrade_allow = yes
+# 	}
 
-	destroy_trigger = {
-		exists = owner
-		owner = { is_hive_empire = no }
-		buildings_no_exotic_gases = yes
-	}
+# 	destroy_trigger = {
+# 		exists = owner
+# 		owner = { is_hive_empire = no }
+# 		buildings_no_exotic_gases = yes
+# 	}
 
-	convert_to = {
-		building_sacred_nexus
-		building_system_conflux
-		building_hypercomms_forum
-		building_corporate_forum
-	}
+# 	convert_to = {
+# 		building_sacred_nexus
+# 		building_system_conflux
+# 		building_hypercomms_forum
+# 		building_corporate_forum
+# 	}
 
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = @b3_minerals
-			exotic_gases = @b3_rare_cost
-		}
-		upkeep = {
-			energy = @b3_upkeep
-			exotic_gases = @b3_rare_upkeep
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = synaptic_reinforcement
-				}
-			}
-			energy = 2
-		}
-	}
+# 	resources = {
+# 		category = planet_buildings
+# 		cost = {
+# 			minerals = @b3_minerals
+# 			exotic_gases = @b3_rare_cost
+# 		}
+# 		upkeep = {
+# 			energy = @b3_upkeep
+# 			exotic_gases = @b3_rare_upkeep
+# 		}
+# 		upkeep = {
+# 			trigger = {
+# 				exists = owner
+# 				owner = {
+# 					has_edict = synaptic_reinforcement
+# 				}
+# 			}
+# 			energy = 2
+# 		}
+# 	}
 
-	planet_modifier = {
-		job_EOE_synapse_drone_add = @b3_jobs
-	}
+# 	planet_modifier = {
+# 		job_EOE_synapse_drone_add = @b3_jobs
+# 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_active_tradition = tr_domination_synaptic_extensions
-			}
-		}
-		modifier = {
-			planet_housing_add = 2
-		}
-	}
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = {
+# 				has_active_tradition = tr_domination_synaptic_extensions
+# 			}
+# 		}
+# 		modifier = {
+# 			planet_housing_add = 2
+# 		}
+# 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_edict = synaptic_reinforcement
-			}
-		}
-		job_maintenance_drone_add = 1
-	}
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = {
+# 				has_edict = synaptic_reinforcement
+# 			}
+# 		}
+# 		job_maintenance_drone_add = 1
+# 	}
 
-	prerequisites = {
-		"tech_hive_confluence"
-	}
+# 	prerequisites = {
+# 		"tech_hive_confluence"
+# 	}
 
-	triggered_desc = {
-		text = job_synapse_drone_effect_desc
-	}
+# 	triggered_desc = {
+# 		text = job_synapse_drone_effect_desc
+# 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_edict = synaptic_reinforcement
-			}
-		}
-		text = job_maintenance_drone_effect_desc
-	}
+# 	triggered_desc = {
+# 		trigger = {
+# 			exists = owner
+# 			owner = {
+# 				has_edict = synaptic_reinforcement
+# 			}
+# 		}
+# 		text = job_maintenance_drone_effect_desc
+# 	}
 
-	on_queued = {
-		planet = {
-			set_timed_planet_flag = { flag = recent_admin_building_built days = 720 }
-		}
-	}
-}
+# 	on_queued = {
+# 		planet = {
+# 			set_timed_planet_flag = { flag = recent_admin_building_built days = 720 }
+# 		}
+# 	}
+# }
 
 building_EOE_trainer_department = {
 	capital = yes
@@ -554,140 +554,140 @@ building_EOE_evolution_planning_office = {
 
 
 
-building_fe_administration_hive_EOE_1 = {
-	base_buildtime = @b2_time
-	can_build = no
-	can_demolish = yes
-	icon = building_fe_administration_hive_1
+# building_fe_administration_hive_EOE_1 = {
+# 	base_buildtime = @b2_time
+# 	can_build = no
+# 	can_demolish = yes
+# 	icon = building_fe_administration_hive_1
 
-	category = unity
+# 	category = unity
 
-	potential = {
-		exists = owner
-		owner = {
-			is_hive_empire = yes
-		}
-		owner = {
-			OR = {
-				is_fallen_empire = yes
-				has_technology = tech_fe_administration_1
-			}
-		}
-		NOR = {
-			has_modifier = resort_colony
-			has_modifier = slave_colony
-			has_modifier = penal_colony
-		}
-	}
+# 	potential = {
+# 		exists = owner
+# 		owner = {
+# 			is_hive_empire = yes
+# 		}
+# 		owner = {
+# 			OR = {
+# 				is_fallen_empire = yes
+# 				has_technology = tech_fe_administration_1
+# 			}
+# 		}
+# 		NOR = {
+# 			has_modifier = resort_colony
+# 			has_modifier = slave_colony
+# 			has_modifier = penal_colony
+# 		}
+# 	}
 
-	destroy_trigger = {
-		exists = owner
-		owner = { is_hive_empire = no }
-	}
+# 	destroy_trigger = {
+# 		exists = owner
+# 		owner = { is_hive_empire = no }
+# 	}
 
-	convert_to = {
-		building_fe_administration_1
-		building_fe_temple_1
-		building_fe_administration_machine_1
-	}
+# 	convert_to = {
+# 		building_fe_administration_1
+# 		building_fe_temple_1
+# 		building_fe_administration_machine_1
+# 	}
 
-	resources = {
-		category = planet_buildings
-		cost = {
-			alloys = @b3_minerals
-			rare_crystals = @fe_sr_cost
-		}
-		upkeep = {
-			rare_crystals = 2
-			alloys = @b2_alloy_upkeep
-			energy = 15
-		}
-	}
+# 	resources = {
+# 		category = planet_buildings
+# 		cost = {
+# 			alloys = @b3_minerals
+# 			rare_crystals = @fe_sr_cost
+# 		}
+# 		upkeep = {
+# 			rare_crystals = 2
+# 			alloys = @b2_alloy_upkeep
+# 			energy = 15
+# 		}
+# 	}
 
-	planet_modifier = {
-		job_EOE_synapse_drone_add = @fe_jobs
-	}
+# 	planet_modifier = {
+# 		job_EOE_synapse_drone_add = @fe_jobs
+# 	}
 
-	upgrades = {
-		building_fe_administration_hive_EOE_2
-	}
+# 	upgrades = {
+# 		building_fe_administration_hive_EOE_2
+# 	}
 
-	triggered_desc = {
-		text = job_synapse_drone_effect_desc
-	}
+# 	triggered_desc = {
+# 		text = job_synapse_drone_effect_desc
+# 	}
 
-	show_in_tech = tech_fe_administration_1
+# 	show_in_tech = tech_fe_administration_1
 
-	show_tech_unlock_if = {
-		is_hive_empire = yes
-	}
-}
+# 	show_tech_unlock_if = {
+# 		is_hive_empire = yes
+# 	}
+# }
 
-building_fe_administration_hive_EOE_2 = {
-	base_buildtime = @b2_time
-	can_build = no
-	icon = building_fe_administration_hive_2
+# building_fe_administration_hive_EOE_2 = {
+# 	base_buildtime = @b2_time
+# 	can_build = no
+# 	icon = building_fe_administration_hive_2
 
-	category = unity
+# 	category = unity
 
-	potential = {
-		exists = owner
-		owner = {
-			is_hive_empire = yes
-		}
-		owner = {
-			OR = {
-				is_fallen_empire = yes
-				has_technology = tech_fe_administration_2
-			}
-		}
-		NOR = {
-			has_modifier = resort_colony
-			has_modifier = slave_colony
-			has_modifier = penal_colony
-		}
-	}
+# 	potential = {
+# 		exists = owner
+# 		owner = {
+# 			is_hive_empire = yes
+# 		}
+# 		owner = {
+# 			OR = {
+# 				is_fallen_empire = yes
+# 				has_technology = tech_fe_administration_2
+# 			}
+# 		}
+# 		NOR = {
+# 			has_modifier = resort_colony
+# 			has_modifier = slave_colony
+# 			has_modifier = penal_colony
+# 		}
+# 	}
 
-	destroy_trigger = {
-		exists = owner
-		owner = {
-			is_hive_empire = no
-		}
-	}
+# 	destroy_trigger = {
+# 		exists = owner
+# 		owner = {
+# 			is_hive_empire = no
+# 		}
+# 	}
 
-	convert_to = {
-		building_fe_administration_2
-		building_fe_temple_2
-		building_fe_administration_machine_2
-	}
+# 	convert_to = {
+# 		building_fe_administration_2
+# 		building_fe_temple_2
+# 		building_fe_administration_machine_2
+# 	}
 
-	resources = {
-		category = planet_buildings
-		cost = {
-			alloys = @b3_minerals
-		}
-		upkeep = {
-			rare_crystals = 2
-			alloys = @b2_alloy_upkeep
-			energy = 15
-		}
-		produces = {
-			unity = 20
-		}
-	}
+# 	resources = {
+# 		category = planet_buildings
+# 		cost = {
+# 			alloys = @b3_minerals
+# 		}
+# 		upkeep = {
+# 			rare_crystals = 2
+# 			alloys = @b2_alloy_upkeep
+# 			energy = 15
+# 		}
+# 		produces = {
+# 			unity = 20
+# 		}
+# 	}
 
-	planet_modifier = {
-		job_EOE_synapse_drone_add = @fe2_jobs
-		pop_housing_usage_mult = -0.1
-	}
+# 	planet_modifier = {
+# 		job_EOE_synapse_drone_add = @fe2_jobs
+# 		pop_housing_usage_mult = -0.1
+# 	}
 
-	triggered_desc = {
-		text = job_synapse_drone_effect_desc
-	}
+# 	triggered_desc = {
+# 		text = job_synapse_drone_effect_desc
+# 	}
 
-	show_in_tech = tech_fe_administration_2
+# 	show_in_tech = tech_fe_administration_2
 
-	show_tech_unlock_if = {
-		is_hive_empire = yes
-	}
-}
+# 	show_tech_unlock_if = {
+# 		is_hive_empire = yes
+# 	}
+# }
