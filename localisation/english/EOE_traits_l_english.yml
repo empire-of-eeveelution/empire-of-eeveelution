@@ -414,7 +414,7 @@ tech_endless_evolution_2_modifier_desc:0"$species_trait_points_add$: $POINTS|0=+
  endless_evolution_do_nothing:0"Maintaining the process of endless evolution"
  endless_evolution_normal:0"This approach gains 0.5 situation progress per month"
  endless_evolution_do_evolution:0"Invest additional resources to promote endless evolution"
- endless_evolution_do_it:0"This approach gains 1.5 situation progress per month"
+ endless_evolution_do_it:0"This approach extra gains [root.soc_research_produce] situation progress per month\n§RThe shift in research focus will make other society projects more difficult！§!"
  endless_evolution_do_research:0"Shifting focus to sociological research"
  endless_evolution_research:0"This approach gains 0.1 situation progress per month"
  situation_endless_evolution:0"endless evolution"

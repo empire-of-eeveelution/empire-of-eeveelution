@@ -21,6 +21,13 @@ EOE_trainer_drone_amenity_output = {
 	#mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 }
 
+EOE_soc_research_produce = {
+	base = 0
+	modifier = {
+		add = soc_research_produce
+	}
+}
+
 # EOE_trainer_drone_crime_output = { #暂时用不上，就只检测数量不吃加成了吧，方便玩家对账
 # 	base = 0
 # 	complex_trigger_modifier = {
