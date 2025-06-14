@@ -35,7 +35,7 @@ situation_endless_evolution = {
                 }
                 divide_variable  = {
                     which = soc_research_produce
-                    value = 25000
+                    value = 4166
                 }
                 divide_variable  = {
                     which = soc_research_produce
