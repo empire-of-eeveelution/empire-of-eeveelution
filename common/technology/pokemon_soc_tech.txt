@@ -13,7 +13,7 @@ tech_mega_evolution = {
 		description_parameters = {
 			POINTS = 4
 		}
-		BIOLOGICAL_species_trait_points_add = 4
+		# BIOLOGICAL_species_trait_points_add = 4
 		modify_species_cost_mult = -0.25
 	}
 

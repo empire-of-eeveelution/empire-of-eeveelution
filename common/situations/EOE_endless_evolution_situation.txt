@@ -41,7 +41,7 @@ situation_endless_evolution = {
         }
     }
     monthly_progress = {
-        base = 1
+        base = 0.5
         modifier = {
             add = 1
             desc = endless_evolution_do_evolution
@@ -51,6 +51,10 @@ situation_endless_evolution = {
             add = -0.4
             desc = endless_evolution_do_research
             current_situation_approach = endless_evolution_do_research
+        }
+        modifier = {
+            add = 0.5
+            desc = endless_evolution_has_technology
         }
     }
     approach = {
