@@ -28,6 +28,19 @@ situation_endless_evolution = {
                 give_technology = { tech = tech_endless_evolution message = no }
                 start_situation = { type = situation_endless_evolution target = this }
                 destroy_situation = root
+                export_resource_income_to_variable  = { resource = society_research variable = soc_research_produce }
+                get_galaxy_setup_value = {
+                    which = soc_research_produce_magnification
+                    setting = tech_costs_scale
+                }
+                divide_variable  = {
+                    which = soc_research_produce
+                    value = 4166
+                }
+                divide_variable  = {
+                    which = soc_research_produce
+                    value = soc_research_produce_magnification
+                }
             }
             custom_tooltip = endless_evolution_complete
         }
@@ -41,17 +54,29 @@ situation_endless_evolution = {
         }
     }
     monthly_progress = {
-        base = 1
+        base = 0.5
         modifier = {
-            add = 1
+            add = 0.5
+            desc = endless_evolution_has_technology
+        }
+        modifier = {
+            mult = owner.value:EOE_soc_research_produce
             desc = endless_evolution_do_evolution
             current_situation_approach = endless_evolution_do_evolution
         }
         modifier = {
-            add = -0.4
+            factor = 0
             desc = endless_evolution_do_research
             current_situation_approach = endless_evolution_do_research
         }
+    }
+    triggered_modifier = {
+        potential = {
+            current_situation_approach = endless_evolution_do_evolution
+            current_situation_approach = endless_evolution_do_nothing
+        }
+        country_society_tech_research_speed = @genetic_situation_society_tech_research_speed_mult
+        category_biology_research_speed_mult = @genetic_situation_biology_research_speed_mult
     }
     approach = {
         name = endless_evolution_do_nothing
@@ -76,8 +101,8 @@ situation_endless_evolution = {
         on_select = {
             custom_tooltip = endless_evolution_do_it
         }
-        resources = {
-            upkeep = { society_research = 500 }
+        modifier = {
+            country_society_research_produces_mult = -0.5
         }
         ai_weight = {
             base = 0
@@ -90,6 +115,10 @@ situation_endless_evolution = {
         default = yes
         on_select = {
             custom_tooltip = endless_evolution_research
+        }
+        modifier = {
+            country_society_tech_research_speed = 0.25
+            country_food_produces_mult = 0.05
         }
         resources = {
             produces = { society_research = 500 }

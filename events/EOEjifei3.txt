@@ -84,6 +84,27 @@
 	 }
 	 immediate = {
 		 set_country_flag = EOE_genetics_finish
+		 set_variable = {
+			 which = soc_research_produce
+			 value = 0
+		 }
+		 set_variable = {
+			 which = soc_research_produce_magnification
+			 value = 0
+		 }
+		 export_resource_income_to_variable  = { resource = society_research variable = soc_research_produce }
+		 get_galaxy_setup_value = {
+			 which = soc_research_produce_magnification
+			 setting = tech_costs_scale
+		 }
+		 divide_variable  = {
+			 which = soc_research_produce
+			 value = 4166
+		 }
+		 divide_variable  = {
+			 which = soc_research_produce
+			 value = soc_research_produce_magnification
+		 }
 		 start_situation = { type = situation_endless_evolution target = this }
 	 }
  }
