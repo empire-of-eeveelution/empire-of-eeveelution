@@ -65,7 +65,7 @@ situation_endless_evolution = {
             current_situation_approach = endless_evolution_do_evolution
         }
         modifier = {
-            add = -0.4
+            factor = 0
             desc = endless_evolution_do_research
             current_situation_approach = endless_evolution_do_research
         }
@@ -73,6 +73,7 @@ situation_endless_evolution = {
     triggered_modifier = {
         potential = {
             current_situation_approach = endless_evolution_do_evolution
+            current_situation_approach = endless_evolution_do_nothing
         }
         country_society_tech_research_speed = @genetic_situation_society_tech_research_speed_mult
         category_biology_research_speed_mult = @genetic_situation_biology_research_speed_mult
@@ -114,6 +115,10 @@ situation_endless_evolution = {
         default = yes
         on_select = {
             custom_tooltip = endless_evolution_research
+        }
+        modifier = {
+            country_society_tech_research_speed = 0.25
+            country_food_produces_mult = 0.05
         }
         resources = {
             produces = { society_research = 500 }
