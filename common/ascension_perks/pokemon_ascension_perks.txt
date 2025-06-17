@@ -18,7 +18,8 @@ ap_mega_evolution_EOE = {
 				has_tradition = tr_cloning_finish
 				has_tradition = tr_purity_finish
 				has_tradition = tr_mutation_finish
-				has_tradition = tr_genetics_finish
+				has_tradition = tr_genetics_finish 
+				has_tradition = tr_psionics_finish
 			}
 		}
 		}

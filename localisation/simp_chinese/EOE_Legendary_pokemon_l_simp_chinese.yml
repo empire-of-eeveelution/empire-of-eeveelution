@@ -173,7 +173,8 @@ ap_mega_evolution_EOE_desc:0"精神与物质，意识与肉身，曾被认为是
 requires_technology_tech_afterglow_of_the_old_days:0 "$TRIGGER_FAIL$需要£society£§Y$tech_afterglow_of_the_old_days$§!科技。"
 requires_technology_tech_mega_evolution:0 "$TRIGGER_FAIL$需要£society£§Y$tech_mega_evolution$§!科技。"
 ap_mega_evolution_EOE_modifier_desc:1 "$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$：$COST_MULT|%0=-$\n§H解锁舰船类型：§! 灵能生物战斗单位\n建造舰船消耗的£food£食物§G-20%§!"
-requires_ap_evolutionary_mastery:0"$TRIGGER_FAIL$需要§Y$tr_genetics_finish$§!或§Y$tr_synthetics_finish$§!或§Y$tr_cybernetics_finish$§!或§Y$tr_psionics_finish$§!。"
+requires_ap_evolutionary_mastery:0"$TRIGGER_FAIL$需要§Y$tr_genetics_finish$§!或§Y$tr_cloning_finish$§!或§Y$tr_purity_finish$§!或§Y$tr_mutation_finish$§!或§Y$tr_psionics_finish$§!。"
+#requires_ap_evolutionary_mastery1:0"$TRIGGER_FAIL$需要§Y$tr_genetics_finish$§!或§Y$tr_synthetics_finish$§!或§Y$tr_cybernetics_finish$§!或§Y$tr_psionics_finish$§!。"
 EOEjifei3.11451.name:0"超级进化"
 EOEjifei3.11451.desc:0"当那些所谓“唯物主义者”对确实存在的灵能视而不见，唯心主义者认为自己的小脑瓜就是万物之源时，我们已彻底理解了意识与肉身的联系，用血肉与钢铁铸造威震寰宇的现世之神灵。\n在完成武器及护盾科技的研究后解锁对应的灵能生物战斗单位科技。\n§Y拉帝亚斯§!的所需科技将在§Y梦幻§!研究完成后有概率出现。\n§Y莱希拉姆§!的所需科技将在§Y拉帝亚斯§!研究完成后有概率出现。"
 

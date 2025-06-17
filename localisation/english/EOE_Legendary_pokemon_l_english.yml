@@ -150,7 +150,8 @@ ap_mega_evolution_EOE_desc:0 "Spirit and matter, consciousness and flesh, once t
 requires_technology_tech_afterglow_of_the_old_days:0 "$TRIGGER_FAIL$ requires £society£§Y$tech_afterglow_of_the_old_days$§!."
 requires_technology_tech_mega_evolution:0 "$TRIGGER_FAIL$ requires£society£§Y$tech_mega_evolution$§!."
 ap_mega_evolution_EOE_modifier_desc:1"$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: $COST_MULT|%0=-$\n§H Unlocked ship types:§! Psychic creature combat units .\n £food£ food consuming of ship building:§G-20%§!"
-requires_ap_evolutionary_mastery:0"$TRIGGER_FAIL$ Requires §Y$tr_genetics_finish$§! or §Y$tr_synthetics_finish$§! or §Y$tr_cybernetics_finish$§! or §Y$tr_psionics_finish$§! ."
+requires_ap_evolutionary_mastery:0"$TRIGGER_FAIL$ Requires §Y$tr_genetics_finish$§! or §Y$tr_cloning_finish$§! or §Y$tr_purity_finish$§! or §Y$tr_mutation_finish$§! or §Y$tr_psionics_finish$§! ."
+#requires_ap_evolutionary_mastery1:0"$TRIGGER_FAIL$ Requires §Y$tr_genetics_finish$§! or §Y$tr_synthetics_finish$§! or §Y$tr_cybernetics_finish$§! or §Y$tr_psionics_finish$§! ."
 EOEjifei3.11451.name:0"MEGA Evolution"
 EOEjifei3.11451.desc:0"When the so-called \"materialists\" turn a blind eye to the real existence of psionics, and those spiritualist believe that their little brain is the source of everything, we have thoroughly understood the connection between consciousness and the physical body, to build the living god with flesh and steel.\nUnlock the corresponding psionic biological combat unit technology after completing the research on weapons and shield technology.\n§YLatias§! technology has a chance to appear after §YMew§! research is completed.\n§YReshiram§! technology has a chance to appear after §YLatias§! research is completed."
 
