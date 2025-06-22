@@ -81,20 +81,20 @@ EOE_ancient_puzzle= {
 	damage_vs_country_type_guardian_EOE_cthugha_mult = 1
 }
 
-EOE_broken_habitat = {
-    icon_frame = 3
-    icon = "gfx/interface/icons/planet_modifiers/pm_city_ruins.dds"
-	pop_growth_speed = -1
-    pop_environment_tolerance = -0.2
-	# planet_max_districts_add = -2
-	planet_district_hab_housing_build_speed_mult = -1
-	planet_district_hab_energy_build_speed_mult = -1
-	planet_district_hab_industrial_build_speed_mult = -1
-	planet_district_hab_science_build_speed_mult = -1
-	planet_district_hab_commercial_build_speed_mult = -1
-	planet_district_hab_cultural_build_speed_mult = -1
+# EOE_broken_habitat = {
+#     icon_frame = 3
+#     icon = "gfx/interface/icons/planet_modifiers/pm_city_ruins.dds"
+# 	logistic_growth_mult = -1
+#     pop_environment_tolerance = -0.2
+# 	# planet_max_districts_add = -2
+# 	planet_district_hab_housing_build_speed_mult = -1
+# 	planet_district_hab_energy_build_speed_mult = -1
+# 	planet_district_hab_industrial_build_speed_mult = -1
+# 	planet_district_hab_science_build_speed_mult = -1
+# 	planet_district_hab_commercial_build_speed_mult = -1
+# 	planet_district_hab_cultural_build_speed_mult = -1
 
-}
+# }
 
 
 
@@ -134,7 +134,7 @@ EOE_pokemon_produce_cooldown_modifier = {
 EOE_OKRA_effect = {
     icon_frame = 1
     icon = "gfx/interface/icons/planet_modifiers/EOE_pokemon_produce_cooldown_modifier.dds"
-	pop_growth_speed = 0.25
+	logistic_growth_mult = 0.25
 	planet_amenities_mult = 0.25
     planet_jobs_society_research_produces_mult = 0.2
 	planet_jobs_produces_mult = 0.1

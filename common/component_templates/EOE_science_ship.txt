@@ -134,6 +134,56 @@ ai_weight = {
 # ai_weight = {
 # 		weight = 0
 # 	}}
+
+#旧的按钮不能用了先注释掉20250622
+# utility_component_template = { # the okra terraform
+# 	key = "SHIP_EOE_OKRA_TERRAFORM"
+# 	size = large
+
+# 	icon = GFX_ship_part_nanobot_diffuser
+# 	icon_frame = 1
+
+# 	size_restriction = { EOE_okra_ship }
+# 	#component_set = "PLANET_KILLER_EOE"
+
+# 	scripted_action_possible = {
+# 		is_terraforming = no
+# 		NOT = { has_planet_flag = EOE_okra_effect_exist }
+# 		is_colony = yes
+# 		exists = event_target:EOE_okra
+# 		exists = space_owner
+# 		space_owner = {
+# 			is_same_value = event_target:EOE_okra.owner
+# 		}
+# 		event_target:EOE_okra_ship = {
+# 			leader = {
+# 				is_same_value = event_target:EOE_okra
+# 			}
+# 		}
+# 	}
+
+# 	scripted_action_button_possible = {
+# 		owner = {
+# 			has_resource = { type = energy amount >= 5000 }
+# 		}
+# 	}
+
+# 	scripted_action_finished = {
+# 		has_planet_flag = EOE_okra_effect_exist
+# 	}
+
+# 	scripted_action_name = on_eoe_okra_target_planet_reached
+# 	scripted_action_tooltip = eoe_okra_ship_button
+# 	scripted_action_icon = GFX_fleet_order_button_transfix_terraformation_nucleus_action
+# 	scripted_action_on_cancel = on_eoe_okra_action_cancel
+# 	scripted_action_activity_key = eoe_okra_action_activity_key
+
+# 	ai_weight = {
+# 		factor = 0
+# 	}
+# }
+
+####尝试修复按钮20250622
 utility_component_template = { # the okra terraform
 	key = "SHIP_EOE_OKRA_TERRAFORM"
 	size = large
@@ -144,37 +194,43 @@ utility_component_template = { # the okra terraform
 	size_restriction = { EOE_okra_ship }
 	#component_set = "PLANET_KILLER_EOE"
 
-	scripted_action_possible = {
-		is_terraforming = no
-		NOT = { has_planet_flag = EOE_okra_effect_exist }
-		is_colony = yes
-		exists = event_target:EOE_okra
-		exists = space_owner
-		space_owner = {
-			is_same_value = event_target:EOE_okra.owner
+
+	scripted_action = {
+		scope = planet
+
+		possible = {
+			is_terraforming = no
+			NOT = { has_planet_flag = EOE_okra_effect_exist }
+			is_colony = yes
+			exists = event_target:EOE_okra
+			exists = space_owner
+			space_owner = {
+				is_same_value = event_target:EOE_okra.owner
+			}
+			event_target:EOE_okra_ship = {
+				leader = {
+					is_same_value = event_target:EOE_okra
+				}
+					}
 		}
-		event_target:EOE_okra_ship = {
-			leader = {
-				is_same_value = event_target:EOE_okra
+
+		button_clickable = {
+			owner = {
+				has_resource = { type = energy amount >= 5000 }
 			}
 		}
-	}
 
-	scripted_action_button_possible = {
-		owner = {
-			has_resource = { type = energy amount >= 5000 }
+		finished = {
+			has_planet_flag = EOE_okra_effect_exist
 		}
-	}
 
-	scripted_action_finished = {
-		has_planet_flag = EOE_okra_effect_exist
+		name = on_eoe_okra_target_planet_reached
+		tooltip = eoe_okra_ship_button
+		icon = GFX_fleet_order_button_transfix_terraformation_nucleus_action
+		icon_selected = GFX_fleet_order_button_transfix_terraformation_nucleus_selected
+		on_cancel = on_eoe_okra_action_cancel
+		activity_key = eoe_okra_action_activity_key
 	}
-
-	scripted_action_name = on_eoe_okra_target_planet_reached
-	scripted_action_tooltip = eoe_okra_ship_button
-	scripted_action_icon = GFX_fleet_order_button_transfix_terraformation_nucleus_action
-	scripted_action_on_cancel = on_eoe_okra_action_cancel
-	scripted_action_activity_key = eoe_okra_action_activity_key
 
 	ai_weight = {
 		factor = 0

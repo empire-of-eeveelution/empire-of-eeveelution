@@ -1307,9 +1307,9 @@ utility_component_template = {  #白龙  电脑
 		ship_fire_rate_mult = 0.25
 		ship_weapon_range_mult = 0.3
 		ship_tracking_add = 15
-		ship_engagement_range_mult = 1.0
+		# ship_engagement_range_mult = 1.0
 	}
-	ship_behavior = "carrier"
+	ship_behavior = "artillery"
 	#prerequisites = { "tech_EOE_Reshiram" }
 	class_restriction = { shipclass_military }
 	size_restriction = { EOE_Reshiram}
