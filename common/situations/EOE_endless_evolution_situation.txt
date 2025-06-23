@@ -82,7 +82,6 @@ situation_endless_evolution = {
         name = endless_evolution_do_nothing
         icon = GFX_situation_approach_this_is_fine
         icon_background = GFX_situation_approach_bg_yellow
-        default = yes
         on_select = {
             custom_tooltip = endless_evolution_normal
         }
