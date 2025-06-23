@@ -626,7 +626,7 @@ councilor_external_synapse_desc:1 "$TITLE$是我们管理子个体的部位"
  edict_EOE_switch_endless_evolution2:0 "切换无限进化循环科技启用状态"
  edict_EOE_switch_endless_evolution2_desc:0 "使用此法令以转换无限进化循环科技启用状态\n§G目前为启用状态§!"
 ############################2025年5月31日添加
- endless_evolution_do_nothing:0"小规模研究"*/*-
+ endless_evolution_do_nothing:0"适当研究"*/*-
  endless_evolution_normal:0"该方案每月获得§G1000§!局势进展，若拥有§Y$ap_mega_evolution_EOE$§!则翻倍"
  endless_evolution_do_evolution:0"举国之力研究"
  endless_evolution_do_it:0"该方案每月获得§G1000§!局势进展，若拥有§Y$ap_mega_evolution_EOE$§!则翻倍\n基于£society£社会学产出，每月额外获得§G[root.owner.soc_research_produce]§!局势进展\n§Y将50%社会学研究投入此项目§!"
