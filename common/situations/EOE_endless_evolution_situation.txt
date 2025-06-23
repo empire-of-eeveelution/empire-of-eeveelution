@@ -56,11 +56,11 @@ situation_endless_evolution = {
     monthly_progress = {
         base = 0.5
         modifier = {
-            add = 0.5
+            mult = 2
             desc = endless_evolution_has_technology
         }
         modifier = {
-            mult = owner.value:EOE_soc_research_produce
+            add = owner.value:EOE_soc_research_produce
             desc = endless_evolution_do_evolution
             current_situation_approach = endless_evolution_do_evolution
         }
@@ -103,10 +103,6 @@ situation_endless_evolution = {
         }
         modifier = {
             country_society_research_produces_mult = -0.5
-        }
-        allow = {
-            hidden_trigger = { owner = { check_variable = { value = soc_research_produce which > 1.0 } } }
-            custom_tooltip = EOE_not_enough_soc_produce
         }
         ai_weight = {
             base = 0
