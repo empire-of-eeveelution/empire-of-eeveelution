@@ -8,6 +8,24 @@ situation_endless_evolution = {
 
     on_start = {
         set_situation_flag = endless_evolution
+        if = {
+			limit = {
+				owner = { has_country_flag = endless_evolution_do_nothing_flag }
+			}
+			set_situation_approach = endless_evolution_do_nothing
+		}
+		else_if = {
+			limit = {
+				owner = { has_country_flag = endless_evolution_do_evolution_flag }
+			}
+			set_situation_approach = endless_evolution_do_evolution
+		}
+		else_if = {
+			limit = {
+				owner = { has_country_flag = endless_evolution_do_research_flag }
+			}
+			set_situation_approach = endless_evolution_do_research
+		}
     }
     on_abort = {
         owner = {
@@ -86,8 +104,14 @@ situation_endless_evolution = {
         name = endless_evolution_do_nothing
         icon = GFX_situation_approach_this_is_fine
         icon_background = GFX_situation_approach_bg_yellow
+        default = yes
         on_select = {
             custom_tooltip = endless_evolution_normal
+            owner = {
+				remove_country_flag = endless_evolution_do_evolution_flag
+				remove_country_flag = endless_evolution_do_research_flag
+				set_country_flag = endless_evolution_do_nothing_flag
+			}
         }
         resources = {
             upkeep = { consumer_goods = 50 }
@@ -100,9 +124,13 @@ situation_endless_evolution = {
         name = endless_evolution_do_evolution
         icon = GFX_situation_approach_this_is_fine
         icon_background = GFX_situation_approach_bg_green
-        default = yes
         on_select = {
             custom_tooltip = endless_evolution_do_it
+            owner = {
+				remove_country_flag = endless_evolution_do_nothing_flag
+				remove_country_flag = endless_evolution_do_research_flag
+				set_country_flag = endless_evolution_do_evolution_flag
+			}
         }
         modifier = {
             country_society_research_produces_mult = -0.5
@@ -123,9 +151,13 @@ situation_endless_evolution = {
         name = endless_evolution_do_research
         icon = GFX_situation_approach_this_is_fine
         icon_background = GFX_situation_approach_bg_red
-        default = yes
         on_select = {
             custom_tooltip = endless_evolution_research
+            owner = {
+				remove_country_flag = endless_evolution_do_nothing_flag
+				remove_country_flag = endless_evolution_do_evolution_flag
+				set_country_flag = endless_evolution_do_research_flag
+			}
         }
         modifier = {
             country_society_tech_research_speed = 0.1
