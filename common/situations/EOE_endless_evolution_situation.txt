@@ -1,10 +1,10 @@
 situation_endless_evolution = {
     picture = GFX_evt_EOE_cthugha_calling
     category = positive
-    fail_icon = GFX_situation_outcome_meh
-    fail_icon_frame = GFX_situation_outcome_frame_green
-    complete_icon = GFX_situation_outcome_bankrupcy
-    complete_icon_frame = GFX_situation_outcome_frame_red
+    # fail_icon = GFX_situation_outcome_meh
+    # fail_icon_frame = GFX_situation_outcome_frame_green
+    complete_icon = GFX_situation_outcome_ascension
+    complete_icon_frame = GFX_situation_outcome_frame_green
 
     on_start = {
         set_situation_flag = endless_evolution
@@ -19,7 +19,7 @@ situation_endless_evolution = {
         endless_evolution_stage = {
             icon = GFX_situation_stage_1
             icon_background = GFX_situation_stage_frame_green
-            end = 24
+            end = 50000 #24
         }
     }
     on_progress_complete = {
@@ -33,10 +33,10 @@ situation_endless_evolution = {
                     which = soc_research_produce_magnification
                     setting = tech_costs_scale
                 }
-                divide_variable  = {
-                    which = soc_research_produce
-                    value = 4166
-                }
+                # divide_variable  = {
+                #     which = soc_research_produce
+                #     value = 1 #4166
+                # }
                 divide_variable  = {
                     which = soc_research_produce
                     value = soc_research_produce_magnification
@@ -54,9 +54,13 @@ situation_endless_evolution = {
         }
     }
     monthly_progress = {
-        base = 0.5
+        base = 1000 #0.5
         modifier = {
             mult = 2
+            owner = {
+                    has_ascension_perk = ap_mega_evolution_EOE
+					# has_technology = tech_mega_evolution
+			}
             desc = endless_evolution_has_technology
         }
         modifier = {
@@ -86,7 +90,7 @@ situation_endless_evolution = {
             custom_tooltip = endless_evolution_normal
         }
         resources = {
-            upkeep = { society_research = 0 }
+            upkeep = { consumer_goods = 50 }
         }
         ai_weight = {
             base = 1
@@ -102,6 +106,9 @@ situation_endless_evolution = {
         }
         modifier = {
             country_society_research_produces_mult = -0.5
+        }
+        resources = {
+            upkeep = { consumer_goods = 50 }
         }
         ai_weight = {
             base = 0
@@ -121,11 +128,13 @@ situation_endless_evolution = {
             custom_tooltip = endless_evolution_research
         }
         modifier = {
-            country_society_tech_research_speed = 0.25
+            country_society_tech_research_speed = 0.1
             country_food_produces_mult = 0.05
+            # country_society_research_produces_mult = 0.1
         }
         resources = {
-            produces = { society_research = 500 }
+            produces = { trade = 50 }
+            produces = { society_research = 50 }
         }
         ai_weight = {
             base = 0

@@ -99,7 +99,7 @@
 		 }
 		 divide_variable  = {
 			 which = soc_research_produce
-			 value = 4166
+			 value = 1 #4166
 		 }
 		 divide_variable  = {
 			 which = soc_research_produce
@@ -143,7 +143,7 @@
 			 }
 			 divide_variable = {
 				 which = soc_research_produce
-				 value = 4166
+				 value = 1 #4166
 			 }
 			 divide_variable = {
 				 which = soc_research_produce
