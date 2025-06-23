@@ -7,6 +7,7 @@
     <list default="true" id="466fb39f-5700-450f-9f42-8c7299091cf8" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/situations/EOE_endless_evolution_situation.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/situations/EOE_endless_evolution_situation.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/EOEjifei3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/EOEjifei3.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/localisation/english/EOE_traits_l_english.yml" beforeDir="false" afterPath="$PROJECT_DIR$/localisation/english/EOE_traits_l_english.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/localisation/simp_chinese/EOE_l_simp_chinese.yml" beforeDir="false" afterPath="$PROJECT_DIR$/localisation/simp_chinese/EOE_l_simp_chinese.yml" afterDir="false" />
     </list>

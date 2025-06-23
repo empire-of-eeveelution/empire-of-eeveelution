@@ -96,7 +96,7 @@ situation_endless_evolution = {
     approach = {
         name = endless_evolution_do_evolution
         icon = GFX_situation_approach_this_is_fine
-        icon_background = GFX_situation_approach_bg_yellow
+        icon_background = GFX_situation_approach_bg_green
         default = yes
         on_select = {
             custom_tooltip = endless_evolution_do_it
@@ -104,14 +104,23 @@ situation_endless_evolution = {
         modifier = {
             country_society_research_produces_mult = -0.5
         }
+        allow = {
+            hidden_trigger = { owner = { check_variable = { value = soc_research_produce which > 1.0 } } }
+            custom_tooltip = EOE_not_enough_soc_produce
+        }
         ai_weight = {
             base = 0
+        }
+    }
+    on_monthly = {
+        events = {
+            EOEjifei3.5
         }
     }
     approach = {
         name = endless_evolution_do_research
         icon = GFX_situation_approach_this_is_fine
-        icon_background = GFX_situation_approach_bg_yellow
+        icon_background = GFX_situation_approach_bg_red
         default = yes
         on_select = {
             custom_tooltip = endless_evolution_research

@@ -108,6 +108,51 @@
 		 start_situation = { type = situation_endless_evolution target = this }
 	 }
  }
+ situation_event = {
+	 id = EOEjifei3.5
+	 hide_window = yes
+	 is_triggered_only = yes
+	 trigger = {
+		 owner = {
+			 OR = {
+				 has_tradition = tr_cloning_finish
+				 has_tradition = tr_mutation_finish
+				 has_tradition = tr_purity_finish
+				 has_tradition = tr_genetics_finish
+			 }
+			 NOT = { has_country_flag = EOE_genetics_finish }
+			 #any_owned_pop_species = { is_archetype = POKEMON }
+		 }
+		 owner_main_species = {
+			 has_trait = "trait_directed_evolution"
+		 }
+	 }
+	 immediate = {
+		 owner = {
+			 set_variable = {
+				 which = soc_research_produce
+				 value = 0
+			 }
+			 set_variable = {
+				 which = soc_research_produce_magnification
+				 value = 0
+			 }
+			 export_resource_income_to_variable = { resource = society_research variable = soc_research_produce }
+			 get_galaxy_setup_value = {
+				 which = soc_research_produce_magnification
+				 setting = tech_costs_scale
+			 }
+			 divide_variable = {
+				 which = soc_research_produce
+				 value = 4166
+			 }
+			 divide_variable = {
+				 which = soc_research_produce
+				 value = soc_research_produce_magnification
+			 }
+		 }
+	 }
+ }
 # country_event = {
 # 	id = EOEjifei3.1
 # 	title = "EOEjifei3.1.name"                                 ########################################################

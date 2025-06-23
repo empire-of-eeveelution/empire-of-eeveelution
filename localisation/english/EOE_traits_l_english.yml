@@ -424,3 +424,4 @@ tech_endless_evolution_2_modifier_desc:0"$species_trait_points_add$: $POINTS|0=+
  concept_tech_endless_evolution:0"$tech_endless_evolution$"
  concept_tech_endless_evolution_desc:0"-$endless_evolution_complete$\n$tech_endless_evolution_desc$"
  endless_evolution_complete:0"bio species trait points§G+1§!"
+ EOE_not_enough_soc_produce:0"Insufficient society research produce to enable this option.You need at least §R4166 divide this bureau's research multiplier§! of society produce to enable this option."
