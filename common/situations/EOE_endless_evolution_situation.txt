@@ -60,6 +60,10 @@ situation_endless_evolution = {
                     value = soc_research_produce_magnification
                 }
             }
+            #########################################新领袖特质发放机制，太麻烦了之后有空再写
+            # country_event = {
+            #     id = EOEjifei3.20
+            # }
             custom_tooltip = endless_evolution_complete
         }
     }

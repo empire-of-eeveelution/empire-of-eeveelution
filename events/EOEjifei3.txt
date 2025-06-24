@@ -236,3 +236,326 @@
 # 		}
 		
 # 	}
+
+
+
+
+#########################################新领袖特质发放机制，太麻烦了之后有空再写
+# country_event = {
+# 	id = EOEjifei3.20
+# 	title = "EOEjifei3.20.name"
+# 	desc = "EOEjifei3.20.desc"
+# 	picture = GFX_evt_EOE_mega_evolution
+# 	show_sound = event_evolution_mastery
+
+# 	is_triggered_only = yes
+
+
+# 	option = {
+# 		name = EOEjifei3.20.a
+# 		owner = {
+# 				country_event = { id = EOEjifei3.21 }
+# 			}
+# 	}
+
+# 	option = {
+# 		name = EOEjifei3.20.b
+# 		owner = {
+# 				country_event = { id = EOEjifei3.22 }
+# 			}
+# 	}
+
+# 	option = {
+# 		name = EOEjifei3.20.c
+# 		owner = {
+# 				country_event = { id = EOEjifei3.23 }
+# 			}
+# 	}
+
+# }
+
+# country_event = {
+# 	id = EOEjifei3.21
+# 	title = "EOEjifei3.21.name"
+# 	desc = "EOEjifei3.21.desc"
+# 	picture = GFX_evt_EOE_mega_evolution
+# 	show_sound = event_evolution_mastery
+
+# 	is_triggered_only = yes
+
+
+# 	########妖精
+# 	option = {
+# 		name = EOEjifei3.21.fairy.1
+
+# 		trigger = { 
+# 			owner = {
+# 				NOR = { 
+# 					has_country_flag = EOE_Officer_1_trait_picked_fairy
+# 					has_country_flag = EOE_Officer_1_trait_picked_ice
+# 					has_country_flag = EOE_Officer_1_trait_picked_dark
+# 					has_country_flag = EOE_Officer_1_trait_picked_water
+# 				} 
+# 			} 
+# 		}
+# 		hidden_effect = {
+# 			set_country_flag = EOE_Officer_1_trait_picked_fairy
+# 		}
+		
+# 	}
+
+# 	option = {
+# 		name = EOEjifei3.21.fairy.2
+
+# 		trigger = { 
+# 			owner = {
+# 				OR = {
+# 					has_country_flag = EOE_Officer_1_trait_picked_ice
+# 					has_country_flag = EOE_Officer_1_trait_picked_dark
+# 					has_country_flag = EOE_Officer_1_trait_picked_water
+# 				}
+# 				NOR = { 
+# 					has_country_flag = EOE_Officer_1_trait_picked_fairy
+# 					has_country_flag = EOE_Officer_2_trait_picked_fairy
+# 					has_country_flag = EOE_Officer_3_trait_picked_fairy
+# 					has_country_flag = EOE_Officer_4_trait_picked_fairy
+# 					has_country_flag = EOE_Officer_2_trait_picked_ice
+# 					has_country_flag = EOE_Officer_2_trait_picked_dark
+# 					has_country_flag = EOE_Officer_2_trait_picked_water
+# 				} 
+# 			} 
+# 		}
+# 		hidden_effect = {
+# 			set_country_flag = EOE_Officer_2_trait_picked_fairy
+# 		}
+		
+# 	}
+
+# 	option = {
+# 		name = EOEjifei3.21.fairy.3
+
+# 		trigger = { 
+# 			owner = {
+# 				OR = {
+# 					has_country_flag = EOE_Officer_2_trait_picked_ice
+# 					has_country_flag = EOE_Officer_2_trait_picked_dark
+# 					has_country_flag = EOE_Officer_2_trait_picked_water
+# 				}
+# 				NOR = { 
+# 					has_country_flag = EOE_Officer_1_trait_picked_fairy
+# 					has_country_flag = EOE_Officer_2_trait_picked_fairy
+# 					has_country_flag = EOE_Officer_3_trait_picked_fairy
+# 					has_country_flag = EOE_Officer_4_trait_picked_fairy
+# 					has_country_flag = EOE_Officer_3_trait_picked_ice
+# 					has_country_flag = EOE_Officer_3_trait_picked_dark
+# 					has_country_flag = EOE_Officer_3_trait_picked_water
+# 				} 
+# 			} 
+# 		}
+# 		hidden_effect = {
+# 			set_country_flag = EOE_Officer_3_trait_picked_fairy
+# 		}
+		
+# 	}
+
+# 	option = {
+# 		name = EOEjifei3.21.fairy.4
+
+# 		trigger = { 
+# 			owner = {
+# 				OR = {
+# 					has_country_flag = EOE_Officer_3_trait_picked_ice
+# 					has_country_flag = EOE_Officer_3_trait_picked_dark
+# 					has_country_flag = EOE_Officer_3_trait_picked_water
+# 				}
+# 				NOR = { 
+# 					has_country_flag = EOE_Officer_1_trait_picked_fairy
+# 					has_country_flag = EOE_Officer_2_trait_picked_fairy
+# 					has_country_flag = EOE_Officer_3_trait_picked_fairy
+# 					has_country_flag = EOE_Officer_4_trait_picked_fairy
+# 					has_country_flag = EOE_Officer_4_trait_picked_ice
+# 					has_country_flag = EOE_Officer_4_trait_picked_dark
+# 					has_country_flag = EOE_Officer_4_trait_picked_water
+# 				} 
+# 			} 
+# 		}
+# 		hidden_effect = {
+# 			set_country_flag = EOE_Officer_4_trait_picked_fairy
+# 		}
+		
+# 	}
+
+
+
+# 	# hidden_effect = {
+# 	# 	owner = {
+# 	# 		if = {
+# 	# 			limit = { 
+# 	# 				NOR =  {
+# 	# 					has_country_flag = EOE_Officer_1_trait_picked
+# 	# 					has_country_flag = EOE_Officer_2_trait_picked
+# 	# 					has_country_flag = EOE_Officer_3_trait_picked
+# 	# 					has_country_flag = EOE_Officer_4_trait_picked
+# 	# 				}
+# 	# 			}
+# 	# 			set_country_flag = EOE_Officer_1_trait_picked
+# 	# 			set_country_flag = EOE_Officer_1_trait_picked_fairy
+# 	# 		}
+# 	# 		else_if = {
+# 	# 			limit = { 
+# 	# 					has_country_flag = EOE_Officer_1_trait_picked
+# 	# 					NOR =  {
+# 	# 						# has_country_flag = EOE_Officer_1_trait_picked
+# 	# 						has_country_flag = EOE_Officer_2_trait_picked
+# 	# 						has_country_flag = EOE_Officer_3_trait_picked
+# 	# 						has_country_flag = EOE_Officer_4_trait_picked
+# 	# 					}					
+# 	# 				}
+# 	# 			set_country_flag = EOE_Officer_2_trait_picked
+# 	# 			set_country_flag = EOE_Officer_2_trait_picked_fairy
+# 	# 		}
+# 	# 		else_if = {
+# 	# 			limit = { 					
+# 	# 					has_country_flag = EOE_Officer_1_trait_picked
+# 	# 					has_country_flag = EOE_Officer_2_trait_picked
+# 	# 					NOR =  {
+# 	# 						# has_country_flag = EOE_Officer_1_trait_picked
+# 	# 						# has_country_flag = EOE_Officer_2_trait_picked
+# 	# 						has_country_flag = EOE_Officer_3_trait_picked
+# 	# 						has_country_flag = EOE_Officer_4_trait_picked
+# 	# 					}
+# 	# 				}
+# 	# 			set_country_flag = EOE_Officer_3_trait_picked
+# 	# 			set_country_flag = EOE_Officer_3_trait_picked_fairy
+# 	# 		}
+# 	# 		else_if = {
+# 	# 			limit = { 
+# 	# 					has_country_flag = EOE_Officer_1_trait_picked
+# 	# 					has_country_flag = EOE_Officer_2_trait_picked
+# 	# 					has_country_flag = EOE_Officer_3_trait_picked
+# 	# 					NOR =  {
+# 	# 						# has_country_flag = EOE_Officer_1_trait_picked
+# 	# 						# has_country_flag = EOE_Officer_2_trait_picked
+# 	# 						# has_country_flag = EOE_Officer_3_trait_picked
+# 	# 						has_country_flag = EOE_Officer_4_trait_picked
+# 	# 					}
+# 	# 				}
+# 	# 			set_country_flag = EOE_Officer_4_trait_picked
+# 	# 			set_country_flag = EOE_Officer_4_trait_picked_fairy
+# 	# 		}
+			
+# 	# 	}
+# 	# }
+
+# 	# option = {
+# 	# 	name = EOEjifei3.21.ice
+
+# 	# 	trigger = { 
+# 	# 		owner = {
+# 	# 			NOR = { 
+# 	# 			has_country_flag = EOE_Officer_1_trait_picked_ice
+# 	# 			has_country_flag = EOE_Officer_2_trait_picked_ice
+# 	# 			has_country_flag = EOE_Officer_3_trait_picked_ice
+# 	# 			has_country_flag = EOE_Officer_4_trait_picked_ice 
+# 	# 			} 
+# 	# 		} 
+# 	# 	}
+
+# 	# 	hidden_effect = {
+# 	# 		owner = {
+# 	# 			if = {
+# 	# 				limit = { 
+# 	# 					NOR =  {
+# 	# 						has_country_flag = EOE_Officer_1_trait_picked
+# 	# 						has_country_flag = EOE_Officer_2_trait_picked
+# 	# 						has_country_flag = EOE_Officer_3_trait_picked
+# 	# 						has_country_flag = EOE_Officer_4_trait_picked
+# 	# 					}
+# 	# 				}
+# 	# 				set_country_flag = EOE_Officer_1_trait_picked
+# 	# 				set_country_flag = EOE_Officer_1_trait_picked_ice
+# 	# 			}
+# 	# 			else_if = {
+# 	# 				limit = { 
+# 	# 						has_country_flag = EOE_Officer_1_trait_picked
+# 	# 						NOR =  {
+# 	# 							# has_country_flag = EOE_Officer_1_trait_picked
+# 	# 							has_country_flag = EOE_Officer_2_trait_picked
+# 	# 							has_country_flag = EOE_Officer_3_trait_picked
+# 	# 							has_country_flag = EOE_Officer_4_trait_picked
+# 	# 						}					
+# 	# 					}
+# 	# 				set_country_flag = EOE_Officer_2_trait_picked
+# 	# 				set_country_flag = EOE_Officer_2_trait_picked_ice
+# 	# 			}
+# 	# 			else_if = {
+# 	# 				limit = { 					
+# 	# 						has_country_flag = EOE_Officer_1_trait_picked
+# 	# 						has_country_flag = EOE_Officer_2_trait_picked
+# 	# 						NOR =  {
+# 	# 							# has_country_flag = EOE_Officer_1_trait_picked
+# 	# 							# has_country_flag = EOE_Officer_2_trait_picked
+# 	# 							has_country_flag = EOE_Officer_3_trait_picked
+# 	# 							has_country_flag = EOE_Officer_4_trait_picked
+# 	# 						}
+# 	# 					}
+# 	# 				set_country_flag = EOE_Officer_3_trait_picked
+# 	# 				set_country_flag = EOE_Officer_3_trait_picked_ice
+# 	# 			}
+# 	# 			else_if = {
+# 	# 				limit = { 
+# 	# 						has_country_flag = EOE_Officer_1_trait_picked
+# 	# 						has_country_flag = EOE_Officer_2_trait_picked
+# 	# 						has_country_flag = EOE_Officer_3_trait_picked
+# 	# 						NOR =  {
+# 	# 							# has_country_flag = EOE_Officer_1_trait_picked
+# 	# 							# has_country_flag = EOE_Officer_2_trait_picked
+# 	# 							# has_country_flag = EOE_Officer_3_trait_picked
+# 	# 							has_country_flag = EOE_Officer_4_trait_picked
+# 	# 						}
+# 	# 					}
+# 	# 				set_country_flag = EOE_Officer_4_trait_picked
+# 	# 				set_country_flag = EOE_Officer_4_trait_picked_ice
+# 	# 			}
+				
+# 	# 		}
+# 	# 	}
+		
+# 	# }
+
+
+# }
+
+# country_event = {
+# 	id = EOEjifei3.22
+# 	title = "EOEjifei3.22.name"
+# 	desc = "EOEjifei3.22.desc"
+# 	picture = GFX_evt_EOE_mega_evolution
+# 	show_sound = event_evolution_mastery
+
+# 	is_triggered_only = yes
+
+
+# 	option = {
+# 		name = EOEjifei3.20.a
+	
+# 	}
+
+# }
+
+# country_event = {
+# 	id = EOEjifei3.23
+# 	title = "EOEjifei3.23.name"
+# 	desc = "EOEjifei3.23.desc"
+# 	picture = GFX_evt_EOE_mega_evolution
+# 	show_sound = event_evolution_mastery
+
+# 	is_triggered_only = yes
+
+
+# 	option = {
+# 		name = EOEjifei3.20.a
+
+# 	}
+
+# }

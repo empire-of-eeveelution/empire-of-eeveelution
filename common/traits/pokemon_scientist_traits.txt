@@ -202,7 +202,7 @@ leader_trait_scientist_electric_type_1 = { #电系科学家
 		planet_jobs_energy_produces_mult = 0.075
 	}
 	councilor_modifier = {
-		planet_researchers_upkeep_mult = -0.05
+		planet_researchers_upkeep_mult = -0.1
 	}
 	
 
