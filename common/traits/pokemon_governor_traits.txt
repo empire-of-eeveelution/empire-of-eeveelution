@@ -86,7 +86,7 @@ leader_trait_governor_ice_type_nano_builder_1 = {
 	sector_modifier = {
 		planet_buildings_cost_mult = -0.075
 		planet_districts_cost_mult = -0.075
-		planet_building_build_speed_mult = 0.75
+		planet_building_build_speed_mult = 0.075
 		starbase_shipyard_build_speed_mult = 0.25
 		starbase_shipyard_build_cost_mult = -0.15
 	}
