@@ -390,9 +390,8 @@ trait_normal_type_mega_evolution = {
 	allowed_archetypes = { BIOLOGICAL }
 	species_class = { Eeveelutions }
 	modifier = {
-		pop_environment_tolerance = 1
-		
-		
+		habitability_ceil_add = 1
+		habitability_floor_add = 1
 	}
 	slave_cost = {
 		energy = 50
