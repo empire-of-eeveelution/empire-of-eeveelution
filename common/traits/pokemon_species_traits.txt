@@ -48,7 +48,7 @@ trait_directed_evolution = {
 	species_class = { Eeveelutions }
 	
 	modifier = {
-		pop_environment_tolerance = 0.2
+		pop_environment_tolerance = 0.1
 		# BIOLOGICAL_species_trait_picks_add = 20
 		# POKEMON_species_trait_picks_add = 20
 		BIOLOGICAL_species_trait_picks_add = 20
@@ -375,7 +375,7 @@ trait_extremely_cute = {
 }
 
 trait_normal_type_mega_evolution = {
-	cost = 0
+	cost = 4
 	potential_crossbreeding_chance = 0.5
 	icon = "gfx/interface/icons/EeveelutionTypes/normal_type.png"
 	initial = no
@@ -390,7 +390,8 @@ trait_normal_type_mega_evolution = {
 	allowed_archetypes = { BIOLOGICAL }
 	species_class = { Eeveelutions }
 	modifier = {
-		pop_environment_tolerance = 1
+		pop_environment_tolerance = 0.4
+		habitability_floor_add = 0.5
 		
 		
 	}
