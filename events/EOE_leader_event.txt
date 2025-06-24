@@ -5629,6 +5629,9 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
+		owner_main_species = {
+			has_trait = trait_directed_evolution
+		}
 		OR = {
 			any_owned_pop_species = {
 				has_trait = trait_fairy_type_mega_evolution
@@ -5666,6 +5669,9 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
+		owner_main_species = {
+			has_trait = trait_directed_evolution
+		}
 		any_owned_pop_species = {
 			has_trait = trait_psychic_type_mega_evolution
 		}
@@ -5706,6 +5712,9 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
+		owner_main_species = {
+			has_trait = trait_directed_evolution
+		}
 		OR = {
 			any_owned_pop_species = {
 				has_trait = trait_dark_type_mega_evolution
@@ -5787,7 +5796,6 @@ country_event = {   #一级随机上特质
 		owner_main_species = {
 			has_trait = trait_directed_evolution
 		}
-		has_active_tradition = tr_genetics_creation
 		from = {
 			NOT = {
 				has_leader_flag = EOE_LV1_leader_trait_gived
@@ -6222,7 +6230,7 @@ country_event = {   #4级随机上特质
 		owner_main_species = {
 			has_trait = trait_directed_evolution
 		}
-		has_active_tradition = tr_genetics_creation
+		# has_active_tradition = tr_genetics_creation
 		from = {
 			NOT = {
 				has_leader_flag = EOE_LV4_leader_trait_gived
@@ -6662,7 +6670,7 @@ country_event = {   #8级随机上特质
 		owner_main_species = {
 			has_trait = trait_directed_evolution
 		}
-		has_active_tradition = tr_genetics_creation
+		# has_active_tradition = tr_genetics_creation
 		from = {
 			NOT = {
 				has_leader_flag = EOE_LV8_leader_trait_gived
