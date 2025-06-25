@@ -45,6 +45,7 @@ PLANET_KILLER_EOE_ACTION:0 "捕捉"
 PLANET_KILLER_EOE_DESC:0 "这种超级武器能一击控制星球上所有智慧生物的心智"
 FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_EOE:0 "正在准备捕捉$PLANET|Y$"
 MESSAGE_DESC_FOR_PLANET_KILLER_EOE:0 "被捕获"
+no_catchable_pops: "§R$TRIGGER_FAIL$目标星球上没有任何居民适合被心灵控制§!"
 
 #opinion modifier
 triggered_eoe_opinion_of_eoe:0"同为伊布国家"

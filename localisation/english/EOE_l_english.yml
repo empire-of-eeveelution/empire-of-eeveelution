@@ -79,6 +79,7 @@ PLANET_KILLER_EOE_ACTION:0 "Catch"
 PLANET_KILLER_EOE_DESC:0 "This super weapon can control the minds of all intelligent creatures on the entire planet in one strike."
 FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_EOE:0 "Prepare to catch $PLANET|Y$"
 MESSAGE_DESC_FOR_PLANET_KILLER_EOE:0 "was catched by"
+no_catchable_pops:0 "§R$TRIGGER_FAIL$Target does not house any Pops suitable for mind control§!"
 
 #opinion_modifier
 triggered_opinion_trait_extremely_cute:0"Extremely Cute"

@@ -1720,7 +1720,7 @@ planet_event = {
 		every_owned_pop_group = {
 			limit = {
 				OR = {
-					has_trait = trait_hive_mind
+					# has_trait = trait_hive_mind
 					has_trait = trait_mechanical
 					has_trait = trait_machine_unit
 				}
