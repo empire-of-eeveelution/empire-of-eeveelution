@@ -544,12 +544,12 @@ weapon_component_template = { #T槽 青炎
 		max = 91
 		}
 	total_fire_time = 180
-	range = 200
+	range = 250
 	accuracy = 0.85
 	tracking = 0.3
 	hull_damage = 1.5
 	shield_damage = 1
-	armor_damage = 1.25
+	armor_damage = 1.5
 	shield_penetration = 0
 	armor_penetration = 0
 	size_restriction = { EOE_Reshiram }
