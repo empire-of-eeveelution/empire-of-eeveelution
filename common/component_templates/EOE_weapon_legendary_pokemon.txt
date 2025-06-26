@@ -536,14 +536,14 @@ weapon_component_template = { #T槽 青炎
 
 	power = -300
 	damage = {
-		min = 191
-		max = 9180
+		min = 998 #191   ##数值回调，高攻速能打小船
+		max = 1345 #9180
 	}
 	windup = {
 		min = 1
-		max = 91
+		max = 21 #91
 		}
-	total_fire_time = 180
+	total_fire_time = 45 #180
 	range = 250
 	accuracy = 0.85
 	tracking = 0.3
