@@ -95,25 +95,35 @@ leader_trait_governor_grass_type_Plants_vs_Aliens_1 = { #草系指挥官
 
 	icon = "gfx/interface/icons/EeveelutionTypes/grass_type.png"
 	councilor_modifier = {
-		farmer_jobs_bonus_workforce_mult = 0.1
+		planet_jobs_food_produces_mult = 0.15
+		ships_upkeep_mult = -0.1
 	}
 	army_modifier = {
-		armies_upkeep_mult = -0.40
+		armies_upkeep_mult = -0.5
+		army_health = 0.3
 	}
 	fleet_modifier = {
-		ships_upkeep_mult = -0.3
+		#ship_steal_defeated_ship_chance = 0.1 #寄生种子？ 但以前的心控武器太烦了，总是弄出来一堆小船要手动解散
+		ships_upkeep_mult = -0.4
 	}
+	# ship_modifier = {  #吸血效果，做成部件吧
+	# 	component_lifesteal_add = 1
+	# }
 	planet_modifier = {
-		pop_defense_armies_add = 2
-		planet_soldiers_energy_produces_add = 3
-		planet_soldiers_minerals_produces_add = 3
-		planet_soldiers_food_produces_add = 3
+		planet_defense_armies_add = 16
+		planet_orbital_bombardment_damage = -0.2
+		# pop_defense_armies_add = 2
+		# planet_soldiers_energy_produces_add = 3
+		# planet_soldiers_minerals_produces_add = 3
+		planet_soldiers_food_produces_add = 4
 	}
 	sector_modifier = {
-		pop_defense_armies_add = 1
-		planet_soldiers_energy_produces_add = 1.5
-		planet_soldiers_minerals_produces_add = 1.5
-		planet_soldiers_food_produces_add = 1.5
+		planet_defense_armies_add = 8
+		planet_orbital_bombardment_damage = -0.1
+		# pop_defense_armies_add = 1
+		# planet_soldiers_energy_produces_add = 1.5
+		# planet_soldiers_minerals_produces_add = 1.5
+		planet_soldiers_food_produces_add = 2
 	}
 
 	leader_class = { commander }
@@ -136,10 +146,20 @@ leader_trait_admiral_fairy_type_1 = { #仙系战略家
 
 	triggered_fleet_modifier = {
 		potential = {
+			NOT = {
+				has_ethic = ethic_gestalt_consciousness
+			}
+		}
+		command_limit_add = 50
+		# ship_fire_rate_mult = 0.1
+	}
+
+	triggered_fleet_modifier = {
+		potential = {
 			has_ethic = ethic_gestalt_consciousness
 		}
 		command_limit_add = 100
-		ship_fire_rate_mult = 0.2
+		# ship_fire_rate_mult = 0.2
 	}
 
 	leader_class = { commander }
