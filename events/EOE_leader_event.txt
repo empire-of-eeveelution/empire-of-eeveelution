@@ -5904,21 +5904,7 @@ country_event = {   #一级随机上特质
 				set_leader_flag = EOE_LV1_leader_trait_gived
 				
 		}
-		1 ={ 
-			modifier = {
-				factor = 0
-				OR = {
-					has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
-					NOT= {
-						owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
-					}
-				}
-				
-			}
-			add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
-			set_leader_flag = EOE_LV1_leader_trait_gived
-			
-	}
+
 				1 ={
 					modifier = {
 						factor = 0
@@ -5958,6 +5944,21 @@ country_event = {   #一级随机上特质
 					modifier = {
 						factor = 0
 						OR = {
+							has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+							}
+						}
+						
+					}
+					add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
+					set_leader_flag = EOE_LV1_leader_trait_gived
+					
+			}
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
 							has_trait = leader_trait_governor_ice_type_nano_builder_1
 						NOT= {
 							owner = {any_owned_pop_species = {OR ={
@@ -5973,21 +5974,21 @@ country_event = {   #一级随机上特质
 						
 				
 			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_governor_dark_type_necessary_evil_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
-						}
-					}
+		# 	1 ={ 
+		# 		modifier = {
+		# 			factor = 0
+		# 			OR = {
+		# 				has_trait = leader_trait_governor_dark_type_necessary_evil_1
+		# 				NOT= {
+		# 					owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
+		# 				}
+		# 			}
 					
-				}
-					add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
-					set_leader_flag = EOE_LV1_leader_trait_gived
+		# 		}
+		# 			add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
+		# 			set_leader_flag = EOE_LV1_leader_trait_gived
 					
-		}
+		# }
 		1 ={ 
 			modifier = {
 				factor = 0
@@ -6108,21 +6109,7 @@ country_event = {   #一级随机上特质
 					set_leader_flag = EOE_LV1_leader_trait_gived
 					
 			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
-						}
-					}
-					
-				}
-				add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
-				set_leader_flag = EOE_LV1_leader_trait_gived
-				
-		}
+
 					1 ={
 						modifier = {
 							factor = 0
@@ -6161,6 +6148,21 @@ country_event = {   #一级随机上特质
 						modifier = {
 							factor = 0
 							OR = {
+								has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+								}
+							}
+							
+						}
+						add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
+						set_leader_flag = EOE_LV1_leader_trait_gived
+						
+				}
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
 								has_trait = leader_trait_governor_ice_type_nano_builder_1
 							NOT= {
 								owner = {any_owned_pop_species = {OR ={
@@ -6176,21 +6178,21 @@ country_event = {   #一级随机上特质
 							
 					
 				}
-				1 ={ 
-					modifier = {
-						factor = 0
-						OR = {
-							has_trait = leader_trait_governor_dark_type_necessary_evil_1
-							NOT= {
-								owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
-							}
-						}
+			# 	1 ={ 
+			# 		modifier = {
+			# 			factor = 0
+			# 			OR = {
+			# 				has_trait = leader_trait_governor_dark_type_necessary_evil_1
+			# 				NOT= {
+			# 					owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
+			# 				}
+			# 			}
 						
-					}
-						add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
-						set_leader_flag = EOE_LV1_leader_trait_gived
+			# 		}
+			# 			add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
+			# 			set_leader_flag = EOE_LV1_leader_trait_gived
 						
-			}
+			# }
 			1 ={ 
 				modifier = {
 					factor = 0
@@ -6342,21 +6344,8 @@ country_event = {   #4级随机上特质
 				set_leader_flag = EOE_LV4_leader_trait_gived
 				
 		}
-		1 ={ 
-			modifier = {
-				factor = 0
-				OR = {
-					has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
-					NOT= {
-						owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
-					}
-				}
-				
-			}
-			add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
-			set_leader_flag = EOE_LV4_leader_trait_gived
-			
-	}
+
+
 				1 ={
 					modifier = {
 						factor = 0
@@ -6396,6 +6385,21 @@ country_event = {   #4级随机上特质
 					modifier = {
 						factor = 0
 						OR = {
+							has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+							}
+						}
+						
+					}
+					add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
+					set_leader_flag = EOE_LV4_leader_trait_gived
+					
+			}
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
 							has_trait = leader_trait_governor_ice_type_nano_builder_1
 						NOT= {
 							owner = {any_owned_pop_species = {OR ={
@@ -6411,21 +6415,21 @@ country_event = {   #4级随机上特质
 						
 				
 			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_governor_dark_type_necessary_evil_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
-						}
-					}
+		# 	1 ={ 
+		# 		modifier = {
+		# 			factor = 0
+		# 			OR = {
+		# 				has_trait = leader_trait_governor_dark_type_necessary_evil_1
+		# 				NOT= {
+		# 					owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
+		# 				}
+		# 			}
 					
-				}
-					add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
-					set_leader_flag = EOE_LV4_leader_trait_gived
+		# 		}
+		# 			add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
+		# 			set_leader_flag = EOE_LV4_leader_trait_gived
 					
-		}
+		# }
 		1 ={ 
 			modifier = {
 				factor = 0
@@ -6548,21 +6552,7 @@ country_event = {   #4级随机上特质
 					set_leader_flag = EOE_LV4_leader_trait_gived
 					
 			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
-						}
-					}
-					
-				}
-				add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
-				set_leader_flag = EOE_LV4_leader_trait_gived
-				
-		}
+
 					1 ={
 						modifier = {
 							factor = 0
@@ -6602,6 +6592,21 @@ country_event = {   #4级随机上特质
 						modifier = {
 							factor = 0
 							OR = {
+								has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+								}
+							}
+							
+						}
+						add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
+						set_leader_flag = EOE_LV4_leader_trait_gived
+						
+				}
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
 								has_trait = leader_trait_governor_ice_type_nano_builder_1
 							NOT= {
 								owner = {any_owned_pop_species = {OR ={
@@ -6617,21 +6622,21 @@ country_event = {   #4级随机上特质
 							
 					
 				}
-				1 ={ 
-					modifier = {
-						factor = 0
-						OR = {
-							has_trait = leader_trait_governor_dark_type_necessary_evil_1
-							NOT= {
-								owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
-							}
-						}
+			# 	1 ={ 
+			# 		modifier = {
+			# 			factor = 0
+			# 			OR = {
+			# 				has_trait = leader_trait_governor_dark_type_necessary_evil_1
+			# 				NOT= {
+			# 					owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
+			# 				}
+			# 			}
 						
-					}
-						add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
-						set_leader_flag = EOE_LV4_leader_trait_gived
+			# 		}
+			# 			add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
+			# 			set_leader_flag = EOE_LV4_leader_trait_gived
 						
-			}
+			# }
 			1 ={ 
 				modifier = {
 					factor = 0
@@ -6782,21 +6787,7 @@ country_event = {   #8级随机上特质
 				set_leader_flag = EOE_LV8_leader_trait_gived
 				
 		}
-		1 ={ 
-			modifier = {
-				factor = 0
-				OR = {
-					has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
-					NOT= {
-						owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
-					}
-				}
-				
-			}
-			add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
-			set_leader_flag = EOE_LV8_leader_trait_gived
-			
-	}
+
 				1 ={
 					modifier = {
 						factor = 0
@@ -6836,6 +6827,21 @@ country_event = {   #8级随机上特质
 					modifier = {
 						factor = 0
 						OR = {
+							has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+							}
+						}
+						
+					}
+					add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
+					set_leader_flag = EOE_LV8_leader_trait_gived
+					
+			}
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
 							has_trait = leader_trait_governor_ice_type_nano_builder_1
 						NOT= {
 							owner = {any_owned_pop_species = {OR ={
@@ -6851,21 +6857,21 @@ country_event = {   #8级随机上特质
 						
 				
 			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_governor_dark_type_necessary_evil_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
-						}
-					}
+		# 	1 ={ 
+		# 		modifier = {
+		# 			factor = 0
+		# 			OR = {
+		# 				has_trait = leader_trait_governor_dark_type_necessary_evil_1
+		# 				NOT= {
+		# 					owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
+		# 				}
+		# 			}
 					
-				}
-					add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
-					set_leader_flag = EOE_LV8_leader_trait_gived
+		# 		}
+		# 			add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
+		# 			set_leader_flag = EOE_LV8_leader_trait_gived
 					
-		}
+		# }
 		1 ={ 
 			modifier = {
 				factor = 0
@@ -6988,21 +6994,7 @@ country_event = {   #8级随机上特质
 					set_leader_flag = EOE_LV8_leader_trait_gived
 					
 			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
-						}
-					}
-					
-				}
-				add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
-				set_leader_flag = EOE_LV8_leader_trait_gived
-				
-		}
+
 					1 ={
 						modifier = {
 							factor = 0
@@ -7043,6 +7035,21 @@ country_event = {   #8级随机上特质
 						modifier = {
 							factor = 0
 							OR = {
+								has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+								}
+							}
+							
+						}
+						add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
+						set_leader_flag = EOE_LV8_leader_trait_gived
+						
+				}
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
 								has_trait = leader_trait_governor_ice_type_nano_builder_1
 							NOT= {
 								owner = {any_owned_pop_species = {OR ={
@@ -7058,21 +7065,21 @@ country_event = {   #8级随机上特质
 							
 					
 				}
-				1 ={ 
-					modifier = {
-						factor = 0
-						OR = {
-							has_trait = leader_trait_governor_dark_type_necessary_evil_1
-							NOT= {
-								owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
-							}
-						}
+			# 	1 ={ 
+			# 		modifier = {
+			# 			factor = 0
+			# 			OR = {
+			# 				has_trait = leader_trait_governor_dark_type_necessary_evil_1
+			# 				NOT= {
+			# 					owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
+			# 				}
+			# 			}
 						
-					}
-						add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
-						set_leader_flag = EOE_LV8_leader_trait_gived
+			# 		}
+			# 			add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
+			# 			set_leader_flag = EOE_LV8_leader_trait_gived
 						
-			}
+			# }
 			1 ={ 
 				modifier = {
 					factor = 0

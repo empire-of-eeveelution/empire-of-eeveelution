@@ -27,7 +27,7 @@ leader_trait_EOE_admiral_Bailong = {
 }
 
 
-leader_trait_dark_type_Void_Stutter_1 = {
+leader_trait_dark_type_Void_Stutter_1 = {  #恶系指挥官
 
 	icon = "gfx/interface/icons/EeveelutionTypes/dark_type.png"
 	fleet_modifier = {
@@ -51,7 +51,7 @@ leader_trait_dark_type_Void_Stutter_1 = {
 
 
 
-leader_trait_ice_type_Directed_molecular_activation_1 = {
+leader_trait_ice_type_Directed_molecular_activation_1 = {  #冰系指挥官
 
 	icon = "gfx/interface/icons/EeveelutionTypes/ice_type.png"
 	fleet_modifier = {
@@ -75,7 +75,7 @@ leader_trait_ice_type_Directed_molecular_activation_1 = {
 
 
 
-leader_trait_fire_type_Instantaneous_entropy_increase_1 = {
+leader_trait_fire_type_Instantaneous_entropy_increase_1 = {  #火系指挥官
 
 	icon = "gfx/interface/icons/EeveelutionTypes/fire_type.png"
 	fleet_modifier = {
@@ -91,7 +91,7 @@ leader_trait_fire_type_Instantaneous_entropy_increase_1 = {
 
 }
 
-leader_trait_governor_grass_type_Plants_vs_Aliens_1 = { #草系指挥官
+leader_trait_governor_grass_type_Plants_vs_Aliens_1 = { #草系指挥官改回总督
 
 	icon = "gfx/interface/icons/EeveelutionTypes/grass_type.png"
 	councilor_modifier = {
@@ -131,6 +131,7 @@ leader_trait_governor_grass_type_Plants_vs_Aliens_1 = { #草系指挥官
 	randomized = no
 
 }
+
 leader_trait_admiral_fairy_type_1 = { #仙系战略家
 
 	icon = "gfx/interface/icons/EeveelutionTypes/fairy_type.png"
@@ -138,8 +139,8 @@ leader_trait_admiral_fairy_type_1 = { #仙系战略家
 	councilor_modifier = {
 		# ship_fire_rate_mult = 0.1
 		commander_exp_gain = 0.2
-		#commander_initial_skill = 2
-		ship_starting_experience_add = 100
+		# commander_initial_skill = 1
+		ship_starting_experience_add = 200
 		starbase_shipyard_build_speed_mult = 0.10
 		starbase_shipyard_build_cost_mult = -0.05
 	}

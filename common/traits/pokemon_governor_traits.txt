@@ -36,6 +36,7 @@ leader_trait_governor_fairy_type_Empathy_network_1 = {
 	icon = "gfx/interface/icons/EeveelutionTypes/fairy_type.png"
 	councilor_modifier = {
 		official_exp_gain = 0.2
+		council_agenda_progress_speed = 0.10
 	}
 	planet_modifier = {
 		planet_stability_add = 15
@@ -79,12 +80,12 @@ leader_trait_governor_ice_type_nano_builder_1 = {
 	icon = "gfx/interface/icons/EeveelutionTypes/ice_type.png"
 	councilor_modifier = {
 		starbase_shipyard_build_speed_mult = 0.25
-		starbase_shipyard_build_cost_mult = -0.15
+		starbase_shipyard_build_cost_mult = -0.1
 	}
 	sector_modifier = {
 			planet_buildings_cost_mult = -0.15
 			planet_districts_cost_mult = -0.15
-			planet_building_build_speed_mult = 0.15
+			planet_building_build_speed_mult = 0.25
 		}
 
 	# planet_modifier = {
@@ -105,10 +106,54 @@ leader_trait_governor_ice_type_nano_builder_1 = {
 	randomized = no
 }
 
+leader_trait_governor_grass_type_Plants_vs_Aliens_1 = { #草系指挥官改回总督
 
+	icon = "gfx/interface/icons/EeveelutionTypes/grass_type.png"
+	councilor_modifier = {
+		planet_jobs_food_produces_mult = 0.15
+		terraform_speed_mult = 0.33
+		ships_upkeep_mult = -0.1
+	}
+	# army_modifier = {
+	# 	armies_upkeep_mult = -0.5
+	# 	army_health = 0.3
+	# }
+	# fleet_modifier = {
+	# 	#ship_steal_defeated_ship_chance = 0.1 #寄生种子？ 但以前的心控武器太烦了，总是弄出来一堆老破小船要手动解散
+	# 	ships_upkeep_mult = -0.4
+	# }
+	# # ship_modifier = {  #吸血效果，领袖得用事件做，做成部件吧
+	# # 	component_lifesteal_add = 1
+	# # }
+	planet_modifier = {
+		planet_defense_armies_add = 32
+		planet_orbital_bombardment_damage = -0.2
+		planet_clear_blocker_speed_mult = 0.35
+		planet_pops_food_upkeep_mult = -0.2 #人口食物消耗
+		# pop_defense_armies_add = 2
+		# planet_soldiers_energy_produces_add = 3
+		# planet_soldiers_minerals_produces_add = 3
+		planet_soldiers_food_produces_add = 4
+	}
+	sector_modifier = {
+		planet_defense_armies_add = 24
+		planet_orbital_bombardment_damage = -0.15
+		planet_clear_blocker_speed_mult = 0.2
+		planet_pops_food_upkeep_mult = -0.15 #人口食物消耗
+		# pop_defense_armies_add = 1
+		# planet_soldiers_energy_produces_add = 1.5
+		# planet_soldiers_minerals_produces_add = 1.5
+		planet_soldiers_food_produces_add = 3
+	}
 
+	leader_class = { official }
+	initial = no
+	randomized = no
 
-leader_trait_governor_dark_type_necessary_evil_1 = {
+}
+
+######################################################
+leader_trait_governor_dark_type_necessary_evil_1 = { #恶系总督，准备删了，先在发特质里面禁用，等下个档再删20250627
 	triggered_councilor_modifier = {
 		potential = {
 			trait_is_gestalt_check = no
@@ -129,59 +174,71 @@ leader_trait_governor_dark_type_necessary_evil_1 = {
 	randomized = no
 	leader_class = { official }
 }
+#################################################
 
 leader_trait_governor_water_type_1 = { #水系帝国代表
 
 	icon = "gfx/interface/icons/EeveelutionTypes/water_type.png"
 	councilor_modifier = {
 		envoys_add = 1
-		diplo_weight_mult = 0.2
-		country_councilor_influence_produces_add = 0.5
-		country_trust_cap_add = 25
+		# diplo_weight_mult = 0.2
+		country_councilor_influence_produces_add = 1
+		country_trust_growth = 0.25
+		# country_trust_cap_add = 25
 		monthly_loyalty_from_subjects = 0.5
 	}
-	galcom_modifier = {
-		#战争规则
-		resolution_category_rulesofwar_vote_strength_mult = 0.3
-		#防卫私有化
-		resolution_category_defenseprivatization_vote_strength_mult = 0.3
-		#星系间指令
-		resolution_category_intergalacticdirective_vote_strength_mult = 0.3 
-		#制裁法案
-		resolution_category_sanctions_commerce_industry_vote_strength_mult = 0.3
-		resolution_category_sanctions_politics_culture_vote_strength_mult = 0.3
-		resolution_category_sanctions_environment_technology_vote_strength_mult = 0.3
-		resolution_category_sanctions_defense_war_vote_strength_mult = 0.3
-		#星系改革
-		resolution_category_market_vote_strength_mult = 0.3
-		resolution_category_galacticreforms_vote_strength_mult = 0.3
-		resolution_category_declare_crisis_vote_strength_mult = 0.3
-		resolution_category_galactic_focus_vote_strength_mult = 0.3
+	sector_modifier = {
+		# planet_jobs_society_research_produces_mult = 0.2
+		pop_job_amenities_mult = 0.1
+		logistic_growth_mult = 0.1
 	}
-	triggered_galcom_modifier = {
-		potential = {
-			has_galactic_custodian = yes
-		}
-		resolution_category_term_limits_vote_strength_mult = 0.3
-		resolution_category_custodian_reforms_vote_strength_mult = 0.3
-		resolution_category_galactic_institutions_vote_strength_mult = 0.3
-	}
-	triggered_galcom_modifier = {
-		potential = {
-			has_galactic_emperor = yes
-		}
-		resolution_category_imperial_council_vote_strength_mult = 0.3
-		resolution_category_imperial_reforms_vote_strength_mult = 0.3
-		resolution_category_emperor_imperial_institutions_vote_strength_mult = 0.3
-		resolution_category_foreign_relations_vote_strength_mult = 0.3
-	}
-	federation_modifier = { #联邦加成
-		federation_experience_add = 1.00
-		federation_join_malus_mult = -0.15
-		cohesion_ethics_penalty_mult = -0.15
-		federation_naval_cap_contribution_mult = 0.15
-		federation_fleet_cap_add = 25
-	}
+	# sector_modifier = {
+	# 	# planet_jobs_society_research_produces_mult = 0.1
+	# 	pop_job_amenities_mult = 0.05
+	# 	logistic_growth_mult = 0.05
+	# }
+	# galcom_modifier = {
+	# 	#战争规则
+	# 	resolution_category_rulesofwar_vote_strength_mult = 0.3
+	# 	#防卫私有化
+	# 	resolution_category_defenseprivatization_vote_strength_mult = 0.3
+	# 	#星系间指令
+	# 	resolution_category_intergalacticdirective_vote_strength_mult = 0.3 
+	# 	#制裁法案
+	# 	resolution_category_sanctions_commerce_industry_vote_strength_mult = 0.3
+	# 	resolution_category_sanctions_politics_culture_vote_strength_mult = 0.3
+	# 	resolution_category_sanctions_environment_technology_vote_strength_mult = 0.3
+	# 	resolution_category_sanctions_defense_war_vote_strength_mult = 0.3
+	# 	#星系改革
+	# 	resolution_category_market_vote_strength_mult = 0.3
+	# 	resolution_category_galacticreforms_vote_strength_mult = 0.3
+	# 	resolution_category_declare_crisis_vote_strength_mult = 0.3
+	# 	resolution_category_galactic_focus_vote_strength_mult = 0.3
+	# }
+	# triggered_galcom_modifier = {
+	# 	potential = {
+	# 		has_galactic_custodian = yes
+	# 	}
+	# 	resolution_category_term_limits_vote_strength_mult = 0.3
+	# 	resolution_category_custodian_reforms_vote_strength_mult = 0.3
+	# 	resolution_category_galactic_institutions_vote_strength_mult = 0.3
+	# }
+	# triggered_galcom_modifier = {
+	# 	potential = {
+	# 		has_galactic_emperor = yes
+	# 	}
+	# 	resolution_category_imperial_council_vote_strength_mult = 0.3
+	# 	resolution_category_imperial_reforms_vote_strength_mult = 0.3
+	# 	resolution_category_emperor_imperial_institutions_vote_strength_mult = 0.3
+	# 	resolution_category_foreign_relations_vote_strength_mult = 0.3
+	# }
+	# federation_modifier = { #联邦加成
+	# 	federation_experience_add = 1.00
+	# 	federation_join_malus_mult = -0.15
+	# 	cohesion_ethics_penalty_mult = -0.15
+	# 	federation_naval_cap_contribution_mult = 0.15
+	# 	federation_fleet_cap_add = 25
+	# }
 	councilor_trait = yes
 	initial = no
 	randomized = no
