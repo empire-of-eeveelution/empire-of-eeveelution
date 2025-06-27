@@ -148,15 +148,11 @@ leader_trait_scientist_dark_type_night_owl_1 = {
 			leader_class = scientist
 		}
 	}
-	triggered_fleet_modifier = {
-		potential = {
-			is_ruler = no
-			leader_class = scientist
-		}
+	modifier = {
 		ship_disengage_chance_mult = 0.5
 		ship_speed_mult = 0.2
-		ship_emergency_ftl_mult = -0.30
-		ship_evasion_add = 20
+		# ship_emergency_ftl_mult = -0.30
+		# ship_evasion_add = 20
 		fleet_mia_time_mult = -0.5
 		ship_ftl_jumpdrive_range_mult = 0.25
 		ship_jumpdrive_cooldown_mult = -0.6
@@ -164,6 +160,22 @@ leader_trait_scientist_dark_type_night_owl_1 = {
 		ship_archaeological_site_clues_add = 2
 		ship_cloaking_strength_add = 2
 	}
+	# triggered_fleet_modifier = {
+	# 	potential = {
+	# 		is_ruler = no
+	# 		leader_class = scientist
+	# 	}
+	# 	# ship_disengage_chance_mult = 0.5
+	# 	# # ship_speed_mult = 0.2
+	# 	# ship_emergency_ftl_mult = -0.30
+	# 	# ship_evasion_add = 20
+	# 	fleet_mia_time_mult = -0.5
+	# 	ship_ftl_jumpdrive_range_mult = 0.25
+	# 	ship_jumpdrive_cooldown_mult = -0.6
+	# 	ship_archaeological_site_excavation_speed_mult = 0.5
+	# 	ship_archaeological_site_clues_add = 2
+	# 	ship_cloaking_strength_add = 2
+	# }
 	# triggered_modifier = {
 	# 	potential = { has_first_contact_dlc = yes }
 	# 	ship_cloaking_strength_add = 2
