@@ -405,4 +405,40 @@ spriteTypes = {
 		name = "GFX_breed_pokemon"
 		textureFile = "gfx/interface/icons/GFX_breed_pokemon.dds"
 	}
+	spriteType = {
+		name = "GFX_normal_type"
+		textureFile = "gfx/interface/icons/EeveelutionTypes/normal_type.png"
+	}
+	spriteType = {
+		name = "GFX_grass_type"
+		textureFile = "gfx/interface/icons/EeveelutionTypes/grass_type.png"
+	}
+	spriteType = {
+		name = "GFX_fire_type"
+		textureFile = "gfx/interface/icons/EeveelutionTypes/fire_type.png"
+	}
+	spriteType = {
+		name = "GFX_water_type"
+		textureFile = "gfx/interface/icons/EeveelutionTypes/water_type.png"
+	}
+	spriteType = {
+		name = "GFX_electric_type"
+		textureFile = "gfx/interface/icons/EeveelutionTypes/electric_type.png"
+	}
+	spriteType = {
+		name = "GFX_psychic_type"
+		textureFile = "gfx/interface/icons/EeveelutionTypes/psychic_type.png"
+	}
+	spriteType = {
+		name = "GFX_dark_type"
+		textureFile = "gfx/interface/icons/EeveelutionTypes/dark_type.png"
+	}
+	spriteType = {
+		name = "GFX_ice_type"
+		textureFile = "gfx/interface/icons/EeveelutionTypes/ice_type.png"
+	}
+	spriteType = {
+		name = "GFX_fairy_type"
+		textureFile = "gfx/interface/icons/EeveelutionTypes/fairy_type.png"
+	}
 }

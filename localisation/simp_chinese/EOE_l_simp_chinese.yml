@@ -644,3 +644,55 @@ councilor_external_synapse_desc:1 "$TITLE$是我们管理子个体的部位"
  #EOE_not_enough_soc_produce:0"社会学研究产出不足，无法启用该方案\n你至少需要§R4166/本局科研倍数§!的社会学产出才能启用该方案"
  endless_evolution_stage:0"无限进化：正在研究"
  endless_evolution_complete:0"$species_trait_points_add$: §G+1§!"
+
+################################20250701添加
+edict_EOE_edict_leader_trait_dark_type_Void_Stutter_1_pick:0"§Y$commander$§!优先选择§Y$leader_trait_dark_type_Void_Stutter_1$§!"
+edict_EOE_edict_leader_trait_dark_type_Void_Stutter_1_pick_desc:0"优先对§Y$commander$§!进行恶系基因强化"
+EOE_edict_leader_trait_dark_type_Void_Stutter_1_pick_tooltip:0"将§Y$commander$§!获得§Y$leader_trait_dark_type_Void_Stutter_1$§!特质的概率提高§G10§!倍"
+
+# COMMANDER特质法令
+edict_EOE_edict_leader_trait_ice_type_Directed_molecular_activation_1_pick:0 "§Y$commander$§!优先选择§Y$leader_trait_ice_type_Directed_molecular_activation_1$§!"
+edict_EOE_edict_leader_trait_ice_type_Directed_molecular_activation_1_pick_desc:0 "优先对§Y$commander$§!进行冰系基因强化"
+EOE_edict_leader_trait_ice_type_Directed_molecular_activation_1_pick_tooltip:0 "将§Y$commander$§!获得§Y$leader_trait_ice_type_Directed_molecular_activation_1$§!特质的概率提高§G10§!倍"
+
+edict_EOE_edict_leader_trait_fire_type_Instantaneous_entropy_increase_1_pick:0 "§Y$commander$§!优先选择§Y$leader_trait_fire_type_Instantaneous_entropy_increase_1$§!"
+edict_EOE_edict_leader_trait_fire_type_Instantaneous_entropy_increase_1_pick_desc:0 "优先对§Y$commander$§!进行火系基因强化"
+EOE_edict_leader_trait_fire_type_Instantaneous_entropy_increase_1_pick_tooltip:0 "将§Y$commander$§!获得§Y$leader_trait_fire_type_Instantaneous_entropy_increase_1$§!特质的概率提高§G10§!倍"
+
+edict_EOE_edict_leader_trait_admiral_fairy_type_1_pick:0 "§Y$commander$§!优先选择§Y$leader_trait_admiral_fairy_type_1$§!"
+edict_EOE_edict_leader_trait_admiral_fairy_type_1_pick_desc:0 "优先对§Y$commander$§!进行仙子系基因强化"
+EOE_edict_leader_trait_admiral_fairy_type_1_pick_tooltip:0 "将§Y$commander$§!获得§Y$leader_trait_admiral_fairy_type_1$§!特质的概率提高§G10§!倍"
+
+# SCIENTIST特质法令
+edict_EOE_edict_leader_trait_scientist_psychic_type_psionic_benefits_1_pick:0 "§Y$scientist$§!优先选择§Y$leader_trait_scientist_psychic_type_psionic_benefits_1$§!"
+edict_EOE_edict_leader_trait_scientist_psychic_type_psionic_benefits_1_pick_desc:0 "优先对§Y$scientist$§!进行超能系基因强化"
+EOE_edict_leader_trait_scientist_psychic_type_psionic_benefits_1_pick_tooltip:0 "将§Y$scientist$§!获得§Y$leader_trait_scientist_psychic_type_psionic_benefits_1$§!特质的概率提高§G10§!倍"
+
+edict_EOE_edict_leader_trait_scientist_water_type_1_pick:0 "§Y$scientist$§!优先选择§Y$leader_trait_scientist_water_type_1$§!"
+edict_EOE_edict_leader_trait_scientist_water_type_1_pick_desc:0 "优先对§Y$scientist$§!进行水系基因强化"
+EOE_edict_leader_trait_scientist_water_type_1_pick_tooltip:0 "将§Y$scientist$§!获得§Y$leader_trait_scientist_water_type_1$§!特质的概率提高§G10§!倍"
+
+edict_EOE_edict_leader_trait_scientist_dark_type_night_owl_1_pick:0 "§Y$scientist$§!优先选择§Y$leader_trait_scientist_dark_type_night_owl_1$§!"
+edict_EOE_edict_leader_trait_scientist_dark_type_night_owl_1_pick_desc:0 "优先对§Y$scientist$§!进行恶系基因强化"
+EOE_edict_leader_trait_scientist_dark_type_night_owl_1_pick_tooltip:0 "将§Y$scientist$§!获得§Y$leader_trait_scientist_dark_type_night_owl_1$§!特质的概率提高§G10§!倍"
+
+edict_EOE_edict_leader_trait_scientist_electric_type_1_pick:0 "§Y$scientist$§!优先选择§Y$leader_trait_scientist_electric_type_1$§!"
+edict_EOE_edict_leader_trait_scientist_electric_type_1_pick_desc:0 "优先对§Y$scientist$§!进行电系基因强化"
+EOE_edict_leader_trait_scientist_electric_type_1_pick_tooltip:0 "将§Y$scientist$§!获得§Y$leader_trait_scientist_electric_type_1$§!特质的概率提高§G10§!倍"
+
+# OFFICIAL特质法令
+edict_EOE_edict_leader_trait_governor_fairy_type_Empathy_network_1_pick:0 "§Y$governor$§!优先选择§Y$leader_trait_governor_fairy_type_Empathy_network_1$§!"
+edict_EOE_edict_leader_trait_governor_fairy_type_Empathy_network_1_pick_desc:0 "优先对§Y$governor$§!进行仙子系基因强化"
+EOE_edict_leader_trait_governor_fairy_type_Empathy_network_1_pick_tooltip:0 "将§Y$governor$§!获得§Y$leader_trait_governor_fairy_type_Empathy_network_1$§!特质的概率提高§G10§!倍"
+
+edict_EOE_edict_leader_trait_governor_ice_type_nano_builder_1_pick:0 "§Y$governor$§!优先选择§Y$leader_trait_governor_ice_type_nano_builder_1$§!"
+edict_EOE_edict_leader_trait_governor_ice_type_nano_builder_1_pick_desc:0 "优先对§Y$governor$§!进行冰系基因强化"
+EOE_edict_leader_trait_governor_ice_type_nano_builder_1_pick_tooltip:0 "将§Y$governor$§!获得§Y$leader_trait_governor_ice_type_nano_builder_1$§!特质的概率提高§G10§!倍"
+
+edict_EOE_edict_leader_trait_governor_grass_type_Plants_vs_Aliens_1_pick:0 "§Y$governor$§!优先选择§Y$leader_trait_governor_grass_type_Plants_vs_Aliens_1$§!"
+edict_EOE_edict_leader_trait_governor_grass_type_Plants_vs_Aliens_1_pick_desc:0 "优先对§Y$governor$§!进行草系基因强化"
+EOE_edict_leader_trait_governor_grass_type_Plants_vs_Aliens_1_pick_tooltip:0 "将§Y$governor$§!获得§Y$leader_trait_governor_grass_type_Plants_vs_Aliens_1$§!特质的概率提高§G10§!倍"
+
+edict_EOE_edict_leader_trait_governor_water_type_1_pick:0 "§Y$governor$§!优先选择§Y$leader_trait_governor_water_type_1$§!"
+edict_EOE_edict_leader_trait_governor_water_type_1_pick_desc:0 "优先对§Y$governor$§!进行水系基因强化"
+EOE_edict_leader_trait_governor_water_type_1_pick_tooltip:0 "将§Y$governor$§!获得§Y$leader_trait_governor_water_type_1$§!特质的概率提高§G10§!倍"

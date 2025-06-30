@@ -42,3 +42,483 @@ EOE_switch_endless_evolution1 = {
 # 		country_event = { id = EOEjifei3.3 }
 # 	}
 # }
+#########################选择领袖特质概率
+EOE_edict_leader_trait_dark_type_Void_Stutter_1_pick = {  #恶系指挥官
+	length = -1
+	icon = "GFX_dark_type"
+
+	resources = {
+		category = edicts
+		cost = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		AND = {
+			owner_main_species = {
+				has_trait = trait_directed_evolution
+			}
+			OR = {
+				has_tradition = tr_cloning_adopt
+				has_tradition = tr_purity_adopt
+				has_tradition = tr_mutation_adopt
+				has_tradition = tr_genetics_adopt
+				has_tradition = tr_psionics_adopt
+			}
+		}
+	}
+
+	modifier = {
+		custom_tooltip = EOE_edict_leader_trait_dark_type_Void_Stutter_1_pick_tooltip
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+EOE_edict_leader_trait_ice_type_Directed_molecular_activation_1_pick = {  #冰系指挥官
+	length = -1
+	icon = "GFX_ice_type"
+
+	resources = {
+		category = edicts
+		cost = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		AND = {
+			owner_main_species = {
+				has_trait = trait_directed_evolution
+			}
+			OR = {
+				has_tradition = tr_cloning_adopt
+				has_tradition = tr_purity_adopt
+				has_tradition = tr_mutation_adopt
+				has_tradition = tr_genetics_adopt
+				has_tradition = tr_psionics_adopt
+			}
+		}
+	}
+
+	modifier = {
+		custom_tooltip = EOE_edict_leader_trait_ice_type_Directed_molecular_activation_1_pick_tooltip
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+EOE_edict_leader_trait_fire_type_Instantaneous_entropy_increase_1_pick = {  #火系指挥官
+	length = -1
+	icon = "GFX_fire_type"
+
+	resources = {
+		category = edicts
+		cost = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		AND = {
+			owner_main_species = {
+				has_trait = trait_directed_evolution
+			}
+			OR = {
+				has_tradition = tr_cloning_adopt
+				has_tradition = tr_purity_adopt
+				has_tradition = tr_mutation_adopt
+				has_tradition = tr_genetics_adopt
+				has_tradition = tr_psionics_adopt
+			}
+		}
+	}
+
+	modifier = {
+		custom_tooltip = EOE_edict_leader_trait_fire_type_Instantaneous_entropy_increase_1_pick_tooltip
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+EOE_edict_leader_trait_admiral_fairy_type_1_pick = {  #仙系指挥官
+	length = -1
+	icon = "GFX_fairy_type"
+
+	resources = {
+		category = edicts
+		cost = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		AND = {
+			owner_main_species = {
+				has_trait = trait_directed_evolution
+			}
+			OR = {
+				has_tradition = tr_cloning_adopt
+				has_tradition = tr_purity_adopt
+				has_tradition = tr_mutation_adopt
+				has_tradition = tr_genetics_adopt
+				has_tradition = tr_psionics_adopt
+			}
+		}
+	}
+
+	modifier = {
+		custom_tooltip = EOE_edict_leader_trait_admiral_fairy_type_1_pick_tooltip
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+EOE_edict_leader_trait_scientist_psychic_type_psionic_benefits_1_pick = {  #超能力系科学家
+	length = -1
+	icon = "GFX_psychic_type"
+
+	resources = {
+		category = edicts
+		cost = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		AND = {
+			owner_main_species = {
+				has_trait = trait_directed_evolution
+			}
+			OR = {
+				has_tradition = tr_cloning_adopt
+				has_tradition = tr_purity_adopt
+				has_tradition = tr_mutation_adopt
+				has_tradition = tr_genetics_adopt
+				has_tradition = tr_psionics_adopt
+			}
+		}
+	}
+
+	modifier = {
+		custom_tooltip = EOE_edict_leader_trait_scientist_psychic_type_psionic_benefits_1_pick_tooltip
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+EOE_edict_leader_trait_scientist_water_type_1_pick = {  #水系科学家
+	length = -1
+	icon = "GFX_water_type"
+
+	resources = {
+		category = edicts
+		cost = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		AND = {
+			owner_main_species = {
+				has_trait = trait_directed_evolution
+			}
+			OR = {
+				has_tradition = tr_cloning_adopt
+				has_tradition = tr_purity_adopt
+				has_tradition = tr_mutation_adopt
+				has_tradition = tr_genetics_adopt
+				has_tradition = tr_psionics_adopt
+			}
+		}
+	}
+
+	modifier = {
+		custom_tooltip = EOE_edict_leader_trait_scientist_water_type_1_pick_tooltip
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+EOE_edict_leader_trait_scientist_dark_type_night_owl_1_pick = {  #恶系科学家
+	length = -1
+	icon = "GFX_dark_type"
+
+	resources = {
+		category = edicts
+		cost = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		AND = {
+			owner_main_species = {
+				has_trait = trait_directed_evolution
+			}
+			OR = {
+				has_tradition = tr_cloning_adopt
+				has_tradition = tr_purity_adopt
+				has_tradition = tr_mutation_adopt
+				has_tradition = tr_genetics_adopt
+				has_tradition = tr_psionics_adopt
+			}
+		}
+	}
+
+	modifier = {
+		custom_tooltip = EOE_edict_leader_trait_scientist_dark_type_night_owl_1_pick_tooltip
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+EOE_edict_leader_trait_scientist_electric_type_1_pick = {  #电系科学家
+	length = -1
+	icon = "GFX_electric_type"
+
+	resources = {
+		category = edicts
+		cost = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		AND = {
+			owner_main_species = {
+				has_trait = trait_directed_evolution
+			}
+			OR = {
+				has_tradition = tr_cloning_adopt
+				has_tradition = tr_purity_adopt
+				has_tradition = tr_mutation_adopt
+				has_tradition = tr_genetics_adopt
+				has_tradition = tr_psionics_adopt
+			}
+		}
+	}
+
+	modifier = {
+		custom_tooltip = EOE_edict_leader_trait_scientist_electric_type_1_pick_tooltip
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+EOE_edict_leader_trait_governor_fairy_type_Empathy_network_1_pick = {  #仙系总督
+	length = -1
+	icon = "GFX_fairy_type"
+
+	resources = {
+		category = edicts
+		cost = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		AND = {
+			owner_main_species = {
+				has_trait = trait_directed_evolution
+			}
+			OR = {
+				has_tradition = tr_cloning_adopt
+				has_tradition = tr_purity_adopt
+				has_tradition = tr_mutation_adopt
+				has_tradition = tr_genetics_adopt
+				has_tradition = tr_psionics_adopt
+			}
+		}
+	}
+
+	modifier = {
+		custom_tooltip = EOE_edict_leader_trait_governor_fairy_type_Empathy_network_1_pick_tooltip
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+EOE_edict_leader_trait_governor_ice_type_nano_builder_1_pick = {  #冰系总督
+	length = -1
+	icon = "GFX_ice_type"
+
+	resources = {
+		category = edicts
+		cost = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		AND = {
+			owner_main_species = {
+				has_trait = trait_directed_evolution
+			}
+			OR = {
+				has_tradition = tr_cloning_adopt
+				has_tradition = tr_purity_adopt
+				has_tradition = tr_mutation_adopt
+				has_tradition = tr_genetics_adopt
+				has_tradition = tr_psionics_adopt
+			}
+		}
+	}
+
+	modifier = {
+		custom_tooltip = EOE_edict_leader_trait_governor_ice_type_nano_builder_1_pick_tooltip
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+EOE_edict_leader_trait_governor_grass_type_Plants_vs_Aliens_1_pick = {  #草系总督
+	length = -1
+	icon = "GFX_grass_type"
+
+	resources = {
+		category = edicts
+		cost = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		AND = {
+			owner_main_species = {
+				has_trait = trait_directed_evolution
+			}
+			OR = {
+				has_tradition = tr_cloning_adopt
+				has_tradition = tr_purity_adopt
+				has_tradition = tr_mutation_adopt
+				has_tradition = tr_genetics_adopt
+				has_tradition = tr_psionics_adopt
+			}
+		}
+	}
+
+	modifier = {
+		custom_tooltip = EOE_edict_leader_trait_governor_grass_type_Plants_vs_Aliens_1_pick_tooltip
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+EOE_edict_leader_trait_governor_water_type_1_pick = {  #水系总督
+	length = -1
+	icon = "GFX_water_type"
+
+	resources = {
+		category = edicts
+		cost = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = 10
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		AND = {
+			owner_main_species = {
+				has_trait = trait_directed_evolution
+			}
+			OR = {
+				has_tradition = tr_cloning_adopt
+				has_tradition = tr_purity_adopt
+				has_tradition = tr_mutation_adopt
+				has_tradition = tr_genetics_adopt
+				has_tradition = tr_psionics_adopt
+			}
+		}
+	}
+
+	modifier = {
+		custom_tooltip = EOE_edict_leader_trait_governor_water_type_1_pick_tooltip
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

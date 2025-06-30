@@ -20,10 +20,10 @@ add_eeveelution_leader_trait = {
 			leader_class = scientist
 			owner = {
 				any_owned_pop_species = {
-					OR = {
+					# OR ={
 						has_trait = trait_ice_type_mega_evolution
-						has_trait = trait_ice_type_mega_evolution_swarm
-					}
+						# has_trait = trait_ice_type_mega_evolution_swarm
+					# }
 				}
 			}
 		}
@@ -34,10 +34,10 @@ add_eeveelution_leader_trait = {
 			leader_class = scientist
 			owner = {
 				any_owned_pop_species = {
-					OR = {
+					# OR ={
 						has_trait = trait_dark_type_mega_evolution
-						has_trait = trait_dark_type_mega_evolution_swarm
-					}
+						# has_trait = trait_dark_type_mega_evolution_swarm
+					# }
 				}
 			}
 		}
@@ -86,7 +86,7 @@ add_eeveelution_leader_trait = {
 			leader_class = governor
 			owner = {
 				any_owned_pop_species = {
-					has_trait = trait_fairy_type_mega_evolution_swarm
+					has_trait = trait_fairy_type_mega_evolution
 				}
 			}
 		}
@@ -97,7 +97,7 @@ add_eeveelution_leader_trait = {
 			leader_class = governor
 			owner = {
 				any_owned_pop_species = {
-					has_trait = trait_fairy_type_mega_evolution_swarm
+					has_trait = trait_fairy_type_mega_evolution
 				}
 			}
 		}
@@ -119,7 +119,7 @@ add_eeveelution_leader_trait = {
 			leader_class = governor
 			owner = {
 				any_owned_pop_species = {
-					has_trait = trait_dark_type_mega_evolution_swarm
+					has_trait = trait_dark_type_mega_evolution
 				}
 			}
 		}
@@ -130,10 +130,10 @@ add_eeveelution_leader_trait = {
 			leader_class = governor
 			owner = {
 				any_owned_pop_species = {
-					OR = {
+					# OR ={
 						has_trait = trait_ice_type_mega_evolution
-						has_trait = trait_ice_type_mega_evolution_swarm
-					}
+						# has_trait = trait_ice_type_mega_evolution_swarm
+					# }
 				}
 			}
 		}
@@ -177,10 +177,10 @@ add_eeveelution_leader_trait = {
 			leader_class = general
 			owner = {
 				any_owned_pop_species = {
-					OR = {
+					# OR ={
 						has_trait = trait_dark_type_mega_evolution
-						has_trait = trait_dark_type_mega_evolution_swarm
-					}
+						# has_trait = trait_dark_type_mega_evolution_swarm
+					# }
 				}
 			}
 		}
@@ -213,10 +213,7 @@ add_eeveelution_leader_trait = {
 			leader_class = general
 			owner = {
 				any_owned_pop_species = {
-					OR = {
 						has_trait = trait_fairy_type_mega_evolution
-						has_trait = trait_fairy_type_mega_evolution_swarm
-					}
 				}
 			}
 		}
@@ -238,10 +235,10 @@ add_eeveelution_leader_trait = {
 			leader_class = admiral
 			owner = {
 				any_owned_pop_species = {
-					OR = {
+					# OR ={
 						has_trait = trait_dark_type_mega_evolution
-						has_trait = trait_dark_type_mega_evolution_swarm
-					}
+						# has_trait = trait_dark_type_mega_evolution_swarm
+					# }
 				}
 			}
 		}
@@ -252,10 +249,10 @@ add_eeveelution_leader_trait = {
 			leader_class = admiral
 			owner = {
 				any_owned_pop_species = {
-					OR = {
+					# OR ={
 						has_trait = trait_ice_type_mega_evolution
-						has_trait = trait_ice_type_mega_evolution_swarm
-					}
+						# has_trait = trait_ice_type_mega_evolution_swarm
+					# }
 				}
 			}
 		}

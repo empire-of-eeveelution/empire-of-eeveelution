@@ -93,7 +93,7 @@
 # }
 
 
-leader_trait_scientist_psychic_type_psionic_benefits_1 = {     #####超能系科学家修改  还没测试
+leader_trait_scientist_psychic_type_psionic_benefits_1 = {     #####超能系科学家
 	icon = "gfx/interface/icons/EeveelutionTypes/psychic_type.png"
 	councilor_modifier = {
 		all_technology_research_speed = 0.15

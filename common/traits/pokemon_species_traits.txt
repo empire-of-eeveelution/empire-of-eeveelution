@@ -444,9 +444,9 @@ trait_fire_type_mega_evolution = {
 	allowed_archetypes = { BIOLOGICAL }
 	species_class = { Eeveelutions }
 	modifier = {
-		technician_jobs_bonus_workforce_mult = 0.3
+		technician_jobs_bonus_workforce_mult = 0.4
 		miner_jobs_bonus_workforce_mult = 0.4
-		army_damage_mult = 0.3
+		army_damage_mult = 0.4
 		
 	}
 	slave_cost = {
@@ -500,7 +500,7 @@ trait_electric_type_mega_evolution = {
 	species_class = { Eeveelutions }
 	modifier = {
 		technician_jobs_bonus_workforce_mult = 0.6
-		physicist_jobs_bonus_workforce_mult = 0.3
+		physicist_jobs_bonus_workforce_mult = 0.2
 		army_damage_mult = 0.4
 		
 		
@@ -551,52 +551,73 @@ trait_dark_type_mega_evolution = {
 	}
 	allowed_archetypes = { BIOLOGICAL }
 	species_class = { Eeveelutions }
-	opposites = { trait_dark_type_mega_evolution_swarm }
+	# opposites = { trait_dark_type_mega_evolution_swarm }
 	
 	modifier = {
-		pop_government_ethic_attraction = 0.50
 		bureaucrat_jobs_bonus_workforce_mult = 0.3
 		trader_jobs_bonus_workforce_mult = 0.3
+		enforcer_jobs_bonus_workforce_mult = 0.3
 		# planet_jobs_specialist_produces_mult = 0.05
 		# planet_jobs_worker_produces_mult = 0.1
-		# planet_jobs_slave_produces_mult = 0.15
-
-		
-	}
-	slave_cost = {
-		energy = 50
-	}
-}
-trait_dark_type_mega_evolution_swarm = {
-	cost = 4
-	potential_crossbreeding_chance = 0.5
-	icon = "gfx/interface/icons/EeveelutionTypes/dark_type.png"
-	initial = no
-	randomized = no
-	advanced_trait = yes
-	species_potential_add = {
-		always = no
+		# planet_jobs_slave_produces_mult = 0.15	
 	}
 
-	species_possible_merge_add = {
-		always = no
+	triggered_species_modifier = {
+		potential = {
+			exists = from
+			from = {
+				NOT = {
+					has_ethic = ethic_gestalt_consciousness
+				}
+			}
+		}
+		pop_government_ethic_attraction = 0.50
 	}
-	allowed_archetypes = { BIOLOGICAL }
-	species_class = { Eeveelutions }
-	
-	modifier = {
-		bureaucrat_jobs_bonus_workforce_mult = 0.3
-		trader_jobs_bonus_workforce_mult = 0.3
-		# planet_jobs_unity_produces_mult = 0.20
-		# planet_jobs_complex_drone_produces_mult = 0.05
-		# planet_jobs_simple_drone_produces_mult = 0.1
+
+	triggered_species_modifier = {
+		potential = {
+			exists = from
+			from = {
+				has_ethic = ethic_gestalt_consciousness
+			}
+		}
 		pop_amenities_usage_no_happiness_mult = -0.25
-		
 	}
+
 	slave_cost = {
 		energy = 50
 	}
 }
+# 0 = {
+# 	cost = 4
+# 	potential_crossbreeding_chance = 0.5
+# 	icon = "gfx/interface/icons/EeveelutionTypes/dark_type.png"
+# 	initial = no
+# 	randomized = no
+# 	advanced_trait = yes
+# 	species_potential_add = {
+# 		always = no
+# 	}
+
+# 	species_possible_merge_add = {
+# 		always = no
+# 	}
+# 	allowed_archetypes = { BIOLOGICAL }
+# 	species_class = { Eeveelutions }
+	
+# 	modifier = {
+# 		bureaucrat_jobs_bonus_workforce_mult = 0.3
+# 		trader_jobs_bonus_workforce_mult = 0.3
+# 		# planet_jobs_unity_produces_mult = 0.20
+# 		# planet_jobs_complex_drone_produces_mult = 0.05
+# 		# planet_jobs_simple_drone_produces_mult = 0.1
+# 		pop_amenities_usage_no_happiness_mult = -0.25
+		
+# 	}
+# 	slave_cost = {
+# 		energy = 50
+# 	}
+# }
 
 trait_ice_type_mega_evolution = {
 	cost = 4
@@ -613,9 +634,10 @@ trait_ice_type_mega_evolution = {
 	}
 	allowed_archetypes = { BIOLOGICAL }
 	species_class = { Eeveelutions }
-	opposites = { trait_ice_type_mega_evolution_swarm }
+	# opposites = { trait_ice_type_mega_evolution_swarm }
 	
 	modifier = {
+		# foundry_jobs_bonus_workforce_mult = 0.3
 		foundry_jobs_bonus_workforce_mult = 0.3
 		artisan_jobs_bonus_workforce_mult = 0.3
 		engineer_jobs_bonus_workforce_mult = 0.15
@@ -624,42 +646,94 @@ trait_ice_type_mega_evolution = {
 		# planet_jobs_volatile_motes_produces_mult = 0.20
 		
 	}
-	slave_cost = {
-		energy = 50
-	}
-}
 
-trait_ice_type_mega_evolution_swarm = {
-	cost = 4
-	potential_crossbreeding_chance = 0.5
-	icon = "gfx/interface/icons/EeveelutionTypes/ice_type.png"
-	initial = no
-	randomized = no
-	advanced_trait = yes
-	species_potential_add = {
-		always = no
-	}
+	# triggered_pop_group_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			country_uses_consumer_goods = yes
+	# 		}
+	# 	}
+	# 	foundry_jobs_bonus_workforce_mult = 0.3
+	# 	artisan_jobs_bonus_workforce_mult = 0.3
+	# 	engineer_jobs_bonus_workforce_mult = 0.15
+	# }
 
-	species_possible_merge_add = {
-		always = no
-	}
-	allowed_archetypes = { BIOLOGICAL }
-	species_class = { Eeveelutions }
-	
-	modifier = {
-		foundry_jobs_bonus_workforce_mult = 0.3
-		artisan_jobs_bonus_workforce_mult = 0.15
+	# triggered_pop_group_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			country_uses_consumer_goods = no
+	# 		}
+	# 	}
+	# 	foundry_jobs_bonus_workforce_mult = 0.4
+	# 	engineer_jobs_bonus_workforce_mult = 0.15
+	# }
+
+	# triggered_species_modifier = {
+	# 	potential = {
+	# 		exists = from
+	# 		from = {
+	# 			country_uses_consumer_goods = yes
+	# 			# NOT = {
+	# 			# 	has_ethic = ethic_gestalt_consciousness
+	# 			# }
+	# 		}
+	# 	}
+	# 	# foundry_jobs_bonus_workforce_mult = 0.3
+	# 	artisan_jobs_bonus_workforce_mult = 0.3
+	# 	# engineer_jobs_bonus_workforce_mult = 0.15
+	# }
+
+	triggered_species_modifier = {
+		potential = {
+			exists = from
+			from = {
+				country_uses_consumer_goods = no
+				# has_ethic = ethic_gestalt_consciousness
+			}
+		}
+		# foundry_jobs_bonus_workforce_mult = 0.3
+		# artisan_jobs_bonus_workforce_mult = 0.15
 		miner_jobs_bonus_workforce_mult = 0.3
-		engineer_jobs_bonus_workforce_mult = 0.15
-		# planet_jobs_rare_crystals_produces_mult = 0.20
-		# planet_jobs_exotic_gases_produces_mult = 0.20
-		# planet_jobs_volatile_motes_produces_mult = 0.20
-		
+		# engineer_jobs_bonus_workforce_mult = 0.15
 	}
 	slave_cost = {
 		energy = 50
 	}
 }
+
+# trait_ice_type_mega_evolution_swarm = {
+# 	cost = 4
+# 	potential_crossbreeding_chance = 0.5
+# 	icon = "gfx/interface/icons/EeveelutionTypes/ice_type.png"
+# 	initial = no
+# 	randomized = no
+# 	advanced_trait = yes
+# 	species_potential_add = {
+# 		always = no
+# 	}
+
+# 	species_possible_merge_add = {
+# 		always = no
+# 	}
+# 	allowed_archetypes = { BIOLOGICAL }
+# 	species_class = { Eeveelutions }
+	
+# 	modifier = {
+# 		foundry_jobs_bonus_workforce_mult = 0.3
+# 		artisan_jobs_bonus_workforce_mult = 0.15
+# 		miner_jobs_bonus_workforce_mult = 0.3
+# 		engineer_jobs_bonus_workforce_mult = 0.15
+# 		# planet_jobs_rare_crystals_produces_mult = 0.20
+# 		# planet_jobs_exotic_gases_produces_mult = 0.20
+# 		# planet_jobs_volatile_motes_produces_mult = 0.20
+		
+# 	}
+# 	slave_cost = {
+# 		energy = 50
+# 	}
+# }
 
 trait_fairy_type_mega_evolution = {
 	cost = 4
@@ -671,7 +745,7 @@ trait_fairy_type_mega_evolution = {
 	advanced_trait = yes
 	allowed_archetypes = { BIOLOGICAL }
 	species_class = { Eeveelutions }
-	opposites = { trait_fairy_type_mega_evolution_swarm }
+	# opposites = { trait_fairy_type_mega_evolution_swarm }
 	species_potential_add = {
 		can_do_advanced_gene_modding = yes
 	}
@@ -693,35 +767,33 @@ trait_fairy_type_mega_evolution = {
 	
 }
 
-trait_fairy_type_mega_evolution_swarm = {
-	cost = 4
-	potential_crossbreeding_chance = 0.5
-	icon = "gfx/interface/icons/EeveelutionTypes/fairy_type.png"
-	initial = no
-	randomized = no
-	improves_leaders = yes
-	advanced_trait = yes
-	species_potential_add = {
-		always = no
-	}
+# trait_fairy_type_mega_evolution_swarm = {
+# 	cost = 4
+# 	potential_crossbreeding_chance = 0.5
+# 	icon = "gfx/interface/icons/EeveelutionTypes/fairy_type.png"
+# 	initial = no
+# 	randomized = no
+# 	improves_leaders = yes
+# 	advanced_trait = yes
+# 	species_potential_add = {
+# 		always = no
+# 	}
 	
-	species_possible_merge_add = {
-		always = no
-	}
-	allowed_archetypes = { BIOLOGICAL }
-	species_class = { Eeveelutions }
-	modifier = {
-	    species_empire_size_mult = -0.50
-		pop_resettlement_cost_mult = -0.50
-		
-		
-	}
+# 	species_possible_merge_add = {
+# 		always = no
+# 	}
+# 	allowed_archetypes = { BIOLOGICAL }
+# 	species_class = { Eeveelutions }
+# 	modifier = {
+# 	    species_empire_size_mult = -0.50
+# 		pop_resettlement_cost_mult = -0.50	
+# 	}
 
-	slave_cost = {
-		energy = 50
-	}
+# 	slave_cost = {
+# 		energy = 50
+# 	}
 	
-}
+# }
 
 #trait_nuclear_type_mega_evolution = {
 #	cost = 4

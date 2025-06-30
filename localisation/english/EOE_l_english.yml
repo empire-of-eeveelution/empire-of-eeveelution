@@ -644,3 +644,52 @@ concept_ap_mega_EOE_desc:0 "-$ap_mega_evolution_EOE_modifier_desc$\n$ap_mega_evo
 #EOE_not_enough_soc_produce:0 "Insufficient Sociology Research output to enable this approach.\nRequires at least §R4166 / Current Research Multiplier§! Sociology Research output."
 endless_evolution_stage:0 "Endless Evolution: Researching"
 endless_evolution_complete:0 "$species_trait_points_add$: §G+1§!"
+
+######################20250701添加：
+edict_EOE_edict_leader_trait_dark_type_Void_Stutter_1_pick:0 "§Y$commander$§! prioritizes §Y$leader_trait_dark_type_Void_Stutter_1$§!"
+edict_EOE_edict_leader_trait_dark_type_Void_Stutter_1_pick_desc:0 "Prioritize Dark-type enhancement for §Y$commander$§!"
+EOE_edict_leader_trait_dark_type_Void_Stutter_1_pick_tooltip:0 "Increases probability of §Y$commander$§! gaining §Y$leader_trait_dark_type_Void_Stutter_1$§! trait by §G10§!x"
+
+edict_EOE_edict_leader_trait_ice_type_Directed_molecular_activation_1_pick:0 "§Y$commander$§! prioritizes §Y$leader_trait_ice_type_Directed_molecular_activation_1$§!"
+edict_EOE_edict_leader_trait_ice_type_Directed_molecular_activation_1_pick_desc:0 "Prioritize Ice-type enhancement for §Y$commander$§!"
+EOE_edict_leader_trait_ice_type_Directed_molecular_activation_1_pick_tooltip:0 "Increases probability of §Y$commander$§! gaining §Y$leader_trait_ice_type_Directed_molecular_activation_1$§! trait by §G10§!x"
+
+edict_EOE_edict_leader_trait_fire_type_Instantaneous_entropy_increase_1_pick:0 "§Y$commander$§! prioritizes §Y$leader_trait_fire_type_Instantaneous_entropy_increase_1$§!"
+edict_EOE_edict_leader_trait_fire_type_Instantaneous_entropy_increase_1_pick_desc:0 "Prioritize Fire-type enhancement for §Y$commander$§!"
+EOE_edict_leader_trait_fire_type_Instantaneous_entropy_increase_1_pick_tooltip:0 "Increases probability of §Y$commander$§! gaining §Y$leader_trait_fire_type_Instantaneous_entropy_increase_1$§! trait by §G10§!x"
+
+edict_EOE_edict_leader_trait_admiral_fairy_type_1_pick:0 "§Y$commander$§! prioritizes §Y$leader_trait_admiral_fairy_type_1$§!"
+edict_EOE_edict_leader_trait_admiral_fairy_type_1_pick_desc:0 "Prioritize Fairy-type enhancement for §Y$commander$§!"
+EOE_edict_leader_trait_admiral_fairy_type_1_pick_tooltip:0 "Increases probability of §Y$commander$§! gaining §Y$leader_trait_admiral_fairy_type_1$§! trait by §G10§!x"
+
+edict_EOE_edict_leader_trait_scientist_psychic_type_psionic_benefits_1_pick:0 "§Y$scientist$§! prioritizes §Y$leader_trait_scientist_psychic_type_psionic_benefits_1$§!"
+edict_EOE_edict_leader_trait_scientist_psychic_type_psionic_benefits_1_pick_desc:0 "Prioritize Psychic-type enhancement for §Y$scientist$§!"
+EOE_edict_leader_trait_scientist_psychic_type_psionic_benefits_1_pick_tooltip:0 "Increases probability of §Y$scientist$§! gaining §Y$leader_trait_scientist_psychic_type_psionic_benefits_1$§! trait by §G10§!x"
+
+edict_EOE_edict_leader_trait_scientist_water_type_1_pick:0 "§Y$scientist$§! prioritizes §Y$leader_trait_scientist_water_type_1$§!"
+edict_EOE_edict_leader_trait_scientist_water_type_1_pick_desc:0 "Prioritize Water-type enhancement for §Y$scientist$§!"
+EOE_edict_leader_trait_scientist_water_type_1_pick_tooltip:0 "Increases probability of §Y$scientist$§! gaining §Y$leader_trait_scientist_water_type_1$§! trait by §G10§!x"
+
+edict_EOE_edict_leader_trait_scientist_dark_type_night_owl_1_pick:0 "§Y$scientist$§! prioritizes §Y$leader_trait_scientist_dark_type_night_owl_1$§!"
+edict_EOE_edict_leader_trait_scientist_dark_type_night_owl_1_pick_desc:0 "Prioritize Dark-type enhancement for §Y$scientist$§!"
+EOE_edict_leader_trait_scientist_dark_type_night_owl_1_pick_tooltip:0 "Increases probability of §Y$scientist$§! gaining §Y$leader_trait_scientist_dark_type_night_owl_1$§! trait by §G10§!x"
+
+edict_EOE_edict_leader_trait_scientist_electric_type_1_pick:0 "§Y$scientist$§! prioritizes §Y$leader_trait_scientist_electric_type_1$§!"
+edict_EOE_edict_leader_trait_scientist_electric_type_1_pick_desc:0 "Prioritize Electric-type enhancement for §Y$scientist$§!"
+EOE_edict_leader_trait_scientist_electric_type_1_pick_tooltip:0 "Increases probability of §Y$scientist$§! gaining §Y$leader_trait_scientist_electric_type_1$§! trait by §G10§!x"
+
+edict_EOE_edict_leader_trait_governor_fairy_type_Empathy_network_1_pick:0 "§Y$governor$§! prioritizes §Y$leader_trait_governor_fairy_type_Empathy_network_1$§!"
+edict_EOE_edict_leader_trait_governor_fairy_type_Empathy_network_1_pick_desc:0 "Prioritize Fairy-type enhancement for §Y$governor$§!"
+EOE_edict_leader_trait_governor_fairy_type_Empathy_network_1_pick_tooltip:0 "Increases probability of §Y$governor$§! gaining §Y$leader_trait_governor_fairy_type_Empathy_network_1$§! trait by §G10§!x"
+
+edict_EOE_edict_leader_trait_governor_ice_type_nano_builder_1_pick:0 "§Y$governor$§! prioritizes §Y$leader_trait_governor_ice_type_nano_builder_1$§!"
+edict_EOE_edict_leader_trait_governor_ice_type_nano_builder_1_pick_desc:0 "Prioritize Ice-type enhancement for §Y$governor$§!"
+EOE_edict_leader_trait_governor_ice_type_nano_builder_1_pick_tooltip:0 "Increases probability of §Y$governor$§! gaining §Y$leader_trait_governor_ice_type_nano_builder_1$§! trait by §G10§!x"
+
+edict_EOE_edict_leader_trait_governor_grass_type_Plants_vs_Aliens_1_pick:0 "§Y$governor$§! prioritizes §Y$leader_trait_governor_grass_type_Plants_vs_Aliens_1$§!"
+edict_EOE_edict_leader_trait_governor_grass_type_Plants_vs_Aliens_1_pick_desc:0 "Prioritize Grass-type enhancement for §Y$governor$§!"
+EOE_edict_leader_trait_governor_grass_type_Plants_vs_Aliens_1_pick_tooltip:0 "Increases probability of §Y$governor$§! gaining §Y$leader_trait_governor_grass_type_Plants_vs_Aliens_1$§! trait by §G10§!x"
+
+edict_EOE_edict_leader_trait_governor_water_type_1_pick:0 "§Y$governor$§! prioritizes §Y$leader_trait_governor_water_type_1$§!"
+edict_EOE_edict_leader_trait_governor_water_type_1_pick_desc:0 "Prioritize Water-type enhancement for §Y$governor$§!"
+EOE_edict_leader_trait_governor_water_type_1_pick_tooltip:0 "Increases probability of §Y$governor$§! gaining §Y$leader_trait_governor_water_type_1$§! trait by §G10§!x"
