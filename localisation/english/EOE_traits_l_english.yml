@@ -21,37 +21,47 @@ trait_natural_psionic_warrior_desc:"§LThis species was originally designed to c
 
 trait_normal_type_mega_evolution:0"Normal type mega evolution"
 trait_normal_type_mega_evolution_desc:0"After a thorough understanding of how young Eeveelutions \"evolved\" to choose its own way of gene expression with the changes of the outside world, and to transform the whole body cells in a short time to change its own phenotype, we can combine this \"evolution\" principle with Glandular Acclimation technology , so that we can transform ourselves in a very short time to adapt to the alien environment\ In just a few days, evolution will achieve the same effect as millions of years of natural selection, and every alien planet will become our comfortable and pleasant home star\n  §R  FLESH IS NOT WEAK § "
-
+#草
 trait_grass_type_mega_evolution:0"Grass type mega evolution"
-trait_grass_type_mega_evolution_desc:0"The special genes of Leafeon are reprogrammed to create super traits and applied to all Eeveelutions. The ability of photosynthesis from Leafeon has been greatly enhanced, we can use extremely efficient photosynthesis to produce nutrients sufficient to sustain most of our life activities. Sunlight and air will become our new food sources. Our ability to catalyze crops with grass psionic powers has also been greatly enhanced, and hunger will always be history. §!"
+trait_grass_type_mega_evolution_desc:0"The special genes of Leafeon are reprogrammed to create superior traits to all Eeveelutions. The ability of photosynthesis from Leafeon has been greatly enhanced, we can use extremely efficient photosynthesis to produce nutrients sufficient to sustain most of our life activities. Sunlight and air will become our new food sources. Our psionic abilities to catalyze plant growth are likewise augmented, ensuring hunger vanishes forever into history. \n§T Individuals demonstrating exceptional psionic talents will be prioritized for leadership roles. Newly recruited leaders§Y have a chance§! to gain the trait upon§Y leveling up§!: ['concept_leader_trait_governor_grass_type_Plants_vs_Aliens_1']§!"
+
+
 #水
-trait_water_type_mega_evolution:0"Water type mega evolution"
-trait_water_type_mega_evolution_desc:0"The special genes of Vaporeon are reprogrammed to create super traits and applied to all Eeveelutions.  Just as the original ocean gave birth to the first self replicating organic molecule, our evolved body allows us to taste and analyze genes directly, and interfere with the growth and division of cells with our mind. The mysteries of life will no longer be mysterious, and flesh will become playthings for us to shape.§! "
+trait_water_type_mega_evolution:0 "Water-Type Mega Evolution"
+trait_water_type_mega_evolution_desc:0 "The special genes of Vaporeon are reprogrammed to create superior traits and applied to all Eeveelutions. Much like primordial oceans birthed the first self-replicating molecules, our evolved physiology enables direct genetic analysis and conscious manipulation of cellular division. Life's mysteries are laid bare as flesh becomes our sculpting medium.\n§T Individuals demonstrating exceptional psionic talents will be prioritized for leadership roles. Newly recruited leaders§Y have a chance§! to gain traits upon§Y leveling up§!: ['concept_leader_trait_scientist_water_type_1'], ['concept_leader_trait_governor_water_type_1']§!"
+
 
 #火
 trait_fire_type_mega_evolution:0"Fire type mega evolution"
-trait_fire_type_mega_evolution_desc:0"The special genes of Flareon are reprogrammed to create super traits and applied to all Eeveelutions. From the first bonfire of he wild times to the first fission reactor of the atomic age...... We harness wilder and wilder energies to maintain our low entropy. Now, as our bodies evolve, we can manipulate enthalpy and entropy at will to keep the flame of civilization alive. §!"
+trait_fire_type_mega_evolution_desc:0"The special genes of Flareon are reprogrammed to create superior traits and applied to all Eeveelutions. From primal campfires to atomic reactors, we've harnessed fiercer and fiercer energies to maintain low-entropy states. Now, our mastery over enthalpy and entropy grants dominion over civilization's eternal flame.\n§T Individuals demonstrating exceptional psionic talents will be prioritized for leadership roles. Newly recruited leaders§Y have a chance§! to gain the trait upon§Y leveling up§!: ['concept_leader_trait_fire_type_Instantaneous_entropy_increase_1']§!"
+
+
 #电
 trait_electric_type_mega_evolution:0"Electric type mega evolution "
-trait_electric_type_mega_evolution_desc:0"The special genes of Jolteon are reprogrammed to create super traits and applied to all Eeveelutions.  With the evolution of our body, we can directly interfere with the electromagnetic force of the four fundamental forces. The rushing energy in the power grid will obey our mind just like our body, and the interference of the fundamental force law can also let us directly disintegrate the enemy's body from the level of material structure.  §!"
+trait_electric_type_mega_evolution_desc:0"The special genes of Jolteon are reprogrammed to create superior traits and applied to all Eeveelutions.  Our evolved form manipulates electromagnetic forces of the four fundamental forces with ease. Power grids bend to our will, and the interference of the fundamental force law can also let us directly disintegrate the enemy's body from the level of material structure.  \n§T Individuals demonstrating exceptional psionic talents will be prioritized for leadership roles. Newly recruited leaders§Y have a chance§! to gain the trait upon§Y leveling up§!: ['concept_leader_trait_scientist_electric_type_1']§!"
+
+
 #月
 trait_dark_type_mega_evolution:0"Dark type mega evolution "
-trait_dark_type_mega_evolution_desc:0" The special genes of Umbreon are reprogrammed to create super traits and applied to all Eeveelutions. Dark type psionic allows us to shield against the influence of ​the Shroud, or to subtly manipulate the subconscious through its tides. Not only can we safely traverse ​the Subspace​ using ​Geller Fields, but we can also directly bake unwavering belief in ​Managed Democracy​ into the psyche of our citizens. \n §! \nIf you have §YGestalt Consciousness§!, The bonus to the production position will be replaced by +§G15%§!§YComplex Drone§!output, +§G25%§!§YMenial Drone§output, -§G25%§!£amenities_no_happiness£§Yamenities§!usage."
-trait_dark_type_mega_evolution_swarm:0"Dark type mega evolution "
-trait_dark_type_mega_evolution_swarm_desc:0" The special genes of Umbreon are reprogrammed to create super traits and applied to all Eeveelutions. Dark type psionics allow us to shield against the Shroud's influence, or manipulate consciousness through Shroud interference. We can enhance drone autonomy without compromising control, and leverage the shadow cast by the Hive Mind to safely traverse subspace.  §! "
+trait_dark_type_mega_evolution_desc:0" The special genes of Umbreon are reprogrammed to create superior traits and applied to all Eeveelutions. Dark type psionic allows us to shield against the influence of ​the Shroud, or to subtly manipulate the subconscious through its tides. Not only can we safely traverse ​the Subspace​ using ​Geller Fields, but we can also directly bake unwavering belief in ​Managed Democracy​ into the psyche of our citizens. \n§T Individuals demonstrating exceptional psionic talents will be prioritized for leadership roles. Newly recruited leaders§Y have a chance§! to gain traits upon§Y leveling up§!: ['concept_leader_trait_dark_type_Void_Stutter_1'], ['concept_leader_trait_scientist_dark_type_night_owl_1']§!"
+
+
 #光
 trait_psychic_type_mega_evolution:0"Psychic type mega evolution "
-trait_psychic_type_mega_evolution_desc:0"The special genes of Espeon are reprogrammed to create super traits and applied to all Eeveelutions. Psionics are simply a form of matter and energy. By fully understanding the relationship between brain activity and consciousness, we can better understand this objective fact and use it carefully to help us discover the truth of the universe. §!"
+trait_psychic_type_mega_evolution_desc:0"The special genes of Espeon are reprogrammed to create superior traits and applied to all Eeveelutions. Psionics are simply a form of matter and energy. By fully understanding the relationship between brain activity and consciousness, we can better understand this objective fact and use it to help us discover the truth of the universe. \n§T Individuals demonstrating exceptional psionic talents will be prioritized for leadership roles. Newly recruited leaders§Y have a chance§! to gain the trait upon§Y leveling up§!: ['concept_leader_trait_scientist_psychic_type_psionic_benefits_1']§!"
+
+
 #冰
 trait_ice_type_mega_evolution:0"Ice type mega evolution "
-trait_ice_type_mega_evolution_desc:0"The special genes of Glaceon are reprogrammed to create super traits and applied to all Eeveelutions . Now, we're not limited to only manipulating the motion of molecules to freeze things. We manipulate microscopic particles at will, and all regular matter is shaped by us freely.  §!\nIf you have §YGestalt Consciousness§!, The bonus to §YConsumer goods§! output will be replaced by +§G40%§!§YMinerals§!output"
-trait_ice_type_mega_evolution_swarm:0"Ice type mega evolution "
-trait_ice_type_mega_evolution_swarm_desc:0"The special genes of Glaceon are reprogrammed to create super traits and applied to all Eeveelutions . Now, we're not limited to only manipulating the motion of molecules to freeze things. We manipulate microscopic particles at will, and all regular matter is shaped by us freely.§!"
+trait_ice_type_mega_evolution_desc:0"The special genes of Glaceon are reprogrammed to create superior traits and applied to all Eeveelutions . Now, we're not limited to only manipulating the motion of molecules to freeze things. We command microscopic particles and all regular matter is shaped by at will. \n§T Individuals demonstrating exceptional psionic talents will be prioritized for leadership roles. Newly recruited leaders§Y have a chance§! to gain traits upon§Y leveling up§!: ['concept_leader_trait_ice_type_Directed_molecular_activation_1'], ['concept_leader_trait_governor_ice_type_nano_builder_1']§!"
+
+
+
 #仙
 trait_fairy_type_mega_evolution:0"Fairy type mega evolution "
-trait_fairy_type_mega_evolution_desc:0"The special genes of Sylveon are reprogrammed to create super traits and applied to all Eeveelutions . As our bodies have evolved, we can connect our thoughts to others to share our feelings and thoughts. Increased ability to communicate information and empathize allows our society to function in a more efficient and stable manner.  \n §T  Get modifier 'Cute Charm': Monthly Influence: +1, Trust Growth: +25% when when any population has this trait. §!"
-trait_fairy_type_mega_evolution_swarm:0"Fairy type mega evolution "
-trait_fairy_type_mega_evolution_swarm_desc:0"The special genes of Sylveon are reprogrammed to create super traits and applied to all Eeveelutions . As our bodies have evolved, we can use the telepathic ability of Sylveon to connect the mind of drones and improve the efficiency of the swarm. \n §T Get modifier 'Cute Charm': Monthly Influence: +1, Trust Growth: +25% when any population has this trait.§!"
+trait_fairy_type_mega_evolution_desc:0"The special genes of Sylveon are reprogrammed to create superior traits and applied to all Eeveelutions . Evolved physiologies enable psychic bonds for emotion and thought sharing. Increased ability to communicate information and empathize allows our society to function in a more efficient and stable manner.  \n §T  Get modifier 'Cute Charm': Monthly Influence: +1, Trust Growth: +25% when when any population has this trait. §! \n§T While populations possess this trait, gain modifier [§YEnchanting Physiology§!]: +1 Monthly Influence, +25% Diplomatic Trust.\n§T Individuals demonstrating exceptional psionic talents will be prioritized for leadership roles. Newly recruited leaders§Y have a chance§! to gain traits upon§Y leveling up§!: ['concept_leader_trait_admiral_fairy_type_1'], ['concept_leader_trait_governor_fairy_type_Empathy_network_1']§!""
+
+
 
 
 #leader trait
@@ -67,301 +77,82 @@ leader_trait_EOE_scientist_psionic:0 "Natural psionics"
 leader_trait_EOE_scientist_psionic_desc:0 "When this leader manipulate instrument equipped with psionic system, it is as easy as manipulating his own limbs."
 
 
-
-
-
-
+############################指挥官
+#冰
 leader_trait_ice_type_Directed_molecular_activation_1:0"Directed molecular activation "
 leader_trait_ice_type_Directed_molecular_activation_1_desc:0"This leader can coordinate the crew's use of ice type  psionic powers to directly activate molecules, strengthen the ship's structure, or repair damage quickly."
-
-leader_trait_scientist_dark_type_night_owl_1:0"Mind anchor" 
-leader_trait_scientist_dark_type_night_owl_1_desc:0"Using the spiritual shackles of dark type to anchor the mind to reality, this leader can safely immerse himself in the embrace of subspace, chasing truth in the remnants and whispers of the past."
-
-
-
+concept_leader_trait_ice_type_Directed_molecular_activation_1: "$leader_trait_ice_type_Directed_molecular_activation_1$"
+concept_leader_trait_ice_type_Directed_molecular_activation_1_desc: "$FLEET_EFFECTS_TXT$:$NEW_LINE$  —$MOD_SHIP_HULL_MULT$§G+25%§!$NEW_LINE$  —$MOD_SHIP_ARMOR_MULT$§G+15%§!$NEW_LINE$  —$MOD_SHIP_ARMOR_HARDENING_ADD$§G+20%§!$NEW_LINE$  —$MOD_SHIP_HULL_REGEN_ADD_PERC$§G+2%§!$NEW_LINE$  —$MOD_SHIP_ARMOR_REGEN_ADD_PERC$§G+2%§!$NEW_LINE$$ARMY_EFFECTS_TXT$$NEW_LINE$  —$MOD_ARMY_HEALTH$§G+25%§!"
+#恶
 leader_trait_dark_type_Void_Stutter_1:0"Void Navigate"
 leader_trait_dark_type_Void_Stutter_1_desc:0"Dark type psionic powers can allow warships to shuttle between the material universe and the Shroud, protecting the minds of crew members from being devoured by the demons in Shroud."
-leader_trait_dark_type_Void_Stutter_2:0"Void Navigate"
-leader_trait_dark_type_Void_Stutter_2_desc:0"This leader can coordinate the crew's use of dark type psionic powers to interfere with the space-time structures around the fleet, improving the ship's seaworthiness."
-leader_trait_dark_type_Void_Stutter_3:0"Void Navigate"
-leader_trait_dark_type_Void_Stutter_3_desc:0"This leader can coordinate the crew's use of dark type psionic powers to interfere with the space-time structures around the fleet, improving the ship's seaworthiness."
-leader_trait_dark_type_Void_Stutter_4:0"Void Navigate"
-leader_trait_dark_type_Void_Stutter_4_desc:0"This leader can coordinate the crew's use of dark type psionic powers to interfere with the space-time structures around the fleet, improving the ship's seaworthiness."
-leader_trait_dark_type_Void_Stutter_5:0"Void Navigate"
-leader_trait_dark_type_Void_Stutter_5_desc:0"This leader can coordinate the crew's use of dark type psionic powers to interfere with the space-time structures around the fleet, improving the ship's seaworthiness."
-
-
-
-leader_trait_water_type_Organic_Symbiont_1:0"Organic Symbiont"
-leader_trait_water_type_Organic_Symbiont_1_desc:0"This leader can coordinate the crew to use water type psionic power to create and maintain the organic organization symbiotic with the ship, so that the warship can turn into a giant in steel, gain strong self-healing ability and maintain itself."
-leader_trait_water_type_Organic_Symbiont_2:0"Organic Symbiont"
-leader_trait_water_type_Organic_Symbiont_2_desc:0"This leader can coordinate the crew to use water type psionic power to create and maintain the organic organization symbiotic with the ship, so that the warship can turn into a giant in steel, gain strong self-healing ability and maintain itself."
-leader_trait_water_type_Organic_Symbiont_3:0"Organic Symbiont"
-leader_trait_water_type_Organic_Symbiont_3_desc:0"This leader can coordinate the crew to use water type psionic power to create and maintain the organic organization symbiotic with the ship, so that the warship can turn into a giant in steel, gain strong self-healing ability and maintain itself."
-leader_trait_water_type_Organic_Symbiont_4:0"Organic Symbiont"
-leader_trait_water_type_Organic_Symbiont_4_desc:0"This leader can coordinate the crew to use water type psionic power to create and maintain the organic organization symbiotic with the ship, so that the warship can turn into a giant in steel, gain strong self-healing ability and maintain itself."
-leader_trait_water_type_Organic_Symbiont_5:0"Organic Symbiont"
-leader_trait_water_type_Organic_Symbiont_5_desc:0"This leader can coordinate the crew to use water type psionic power to create and maintain the organic organization symbiotic with the ship, so that the warship can turn into a giant in steel, gain strong self-healing ability and maintain itself."
-leader_trait_electric_type_Fundamental_Force_Interference_1:0"Fundamental Force Interference"
-leader_trait_electric_type_Fundamental_Force_Interference_1_desc:0"This leader can coordinate the crew to strengthen the weapon system of the warship by using the electric type psionic power, so that the weapon can temporarily interfere with the electromagnetic force or even strong interaction force in the hit area when it hits the enemy ship. No matter how strong the structure is, it will lose its foundation of existence under such interference and turn into powder under our artillery fire."
-leader_trait_electric_type_Fundamental_Force_Interference_2:0"Fundamental Force Interference"
-leader_trait_electric_type_Fundamental_Force_Interference_2_desc:0"This leader can coordinate the crew to strengthen the weapon system of the warship by using the electric type psionic power, so that the weapon can temporarily interfere with the electromagnetic force or even strong interaction force in the hit area when it hits the enemy ship. No matter how strong the structure is, it will lose its foundation of existence under such interference and turn into powder under our artillery fire."
-leader_trait_electric_type_Fundamental_Force_Interference_3:0"Fundamental Force Interference"
-leader_trait_electric_type_Fundamental_Force_Interference_3_desc:0"This leader can coordinate the crew to strengthen the weapon system of the warship by using the electric type psionic power, so that the weapon can temporarily interfere with the electromagnetic force or even strong interaction force in the hit area when it hits the enemy ship. No matter how strong the structure is, it will lose its foundation of existence under such interference and turn into powder under our artillery fire."
-leader_trait_electric_type_Fundamental_Force_Interference_4:0"Fundamental Force Interference"
-leader_trait_electric_type_Fundamental_Force_Interference_4_desc:0"This leader can coordinate the crew to strengthen the weapon system of the warship by using the electric type psionic power, so that the weapon can temporarily interfere with the electromagnetic force or even strong interaction force in the hit area when it hits the enemy ship. No matter how strong the structure is, it will lose its foundation of existence under such interference and turn into powder under our artillery fire."
-leader_trait_electric_type_Fundamental_Force_Interference_5:0"Fundamental Force Interference"
-leader_trait_electric_type_Fundamental_Force_Interference_5_desc:0"This leader can coordinate the crew to strengthen the weapon system of the warship by using the electric type psionic power, so that the weapon can temporarily interfere with the electromagnetic force or even strong interaction force in the hit area when it hits the enemy ship. No matter how strong the structure is, it will lose its foundation of existence under such interference and turn into powder under our artillery fire."
-leader_trait_governor_grass_type_Plants_vs_Aliens_1:0"Plants vs Aliens"
-leader_trait_governor_grass_type_Plants_vs_Aliens_2:0"Plants vs Aliens"
-leader_trait_governor_grass_type_Plants_vs_Aliens_3:0"Plants vs Aliens"
-leader_trait_governor_grass_type_Plants_vs_Aliens_4:0"Plants vs Aliens"
-leader_trait_governor_grass_type_Plants_vs_Aliens_5:0"Plants vs Aliens"
-leader_trait_governor_grass_type_Plants_vs_Aliens_1_desc:0"The governor can organize citizens to militarize native species on the planet with grass type psionic powers in their spare time. When alien invaders land on the planet, they have to face not only our defense forces, but also a whole angry biosphere"
-leader_trait_governor_grass_type_Plants_vs_Aliens_2_desc:0"The governor can organize citizens to militarize native species on the planet with grass type psionic powers in their spare time. When alien invaders land on the planet, they have to face not only our defense forces, but also a whole angry biosphere"
-leader_trait_governor_grass_type_Plants_vs_Aliens_3_desc:0"The governor can organize citizens to militarize native species on the planet with grass type psionic powers in their spare time. When alien invaders land on the planet, they have to face not only our defense forces, but also a whole angry biosphere"
-leader_trait_governor_grass_type_Plants_vs_Aliens_4_desc:0"The governor can organize citizens to militarize native species on the planet with grass type psionic powers in their spare time. When alien invaders land on the planet, they have to face not only our defense forces, but also a whole angry biosphere"
-leader_trait_governor_grass_type_Plants_vs_Aliens_5_desc:0"The governor can organize citizens to militarize native species on the planet with grass type psionic powers in their spare time. When alien invaders land on the planet, they have to face not only our defense forces, but also a whole angry biosphere"
-
-
-
-leader_trait_ice_type_Directed_molecular_activation_b:0"Directed molecular activation "
-leader_trait_ice_type_Directed_molecular_activation_b_desc:0"This leader can coordinate the crew's use of ice type  psionic powers to directly activate molecules, strengthen the ship's structure, or repair damage quickly."
-leader_trait_ice_type_Directed_molecular_activation_c:0"Directed molecular activation "
-leader_trait_ice_type_Directed_molecular_activation_c_desc:0"This leader can coordinate the crew's use of ice type  psionic powers to directly activate molecules, strengthen the ship's structure, or repair damage quickly."
-leader_trait_ice_type_Directed_molecular_activation_d:0"Directed molecular activation "
-leader_trait_ice_type_Directed_molecular_activation_d_desc:0"This leader can coordinate the crew's use of ice type  psionic powers to directly activate molecules, strengthen the ship's structure, or repair damage quickly."
-leader_trait_ice_type_Directed_molecular_activation_e:0"Directed molecular activation "
-leader_trait_ice_type_Directed_molecular_activation_e_desc:0"This leader can coordinate the crew's use of ice type  psionic powers to directly activate molecules, strengthen the ship's structure, or repair damage quickly."
-
-leader_trait_psychic_type_Psionic_detection_battle_system_1:0"Psionic detection-battle system" 
-leader_trait_psychic_type_Psionic_detection_battle_system_1_desc:0"This leader can coordinate the crew's use of psionic power to enhance the ship's shield and sensor systems."
-leader_trait_psychic_type_Psionic_detection_battle_system_2:0"Psionic detection-battle system" 
-leader_trait_psychic_type_Psionic_detection_battle_system_2_desc:0"This leader can coordinate the crew's use of psionic power to enhance the ship's shield and sensor systems."
-leader_trait_psychic_type_Psionic_detection_battle_system_3:0"Psionic detection-battle system" 
-leader_trait_psychic_type_Psionic_detection_battle_system_3_desc:0"This leader can coordinate the crew's use of psionic power to enhance the ship's shield and sensor systems."
-leader_trait_psychic_type_Psionic_detection_battle_system_4:0"Psionic detection-battle system" 
-leader_trait_psychic_type_Psionic_detection_battle_system_4_desc:0"This leader can coordinate the crew's use of psionic power to enhance the ship's shield and sensor systems."
-leader_trait_psychic_type_Psionic_detection_battle_system_5:0"Psionic detection-battle system" 
-leader_trait_psychic_type_Psionic_detection_battle_system_5_desc:0"This leader can coordinate the crew's use of psionic power to enhance the ship's shield and sensor systems."
-
+concept_leader_trait_dark_type_Void_Stutter_1: "$leader_trait_dark_type_Void_Stutter_1$"
+concept_leader_trait_dark_type_Void_Stutter_1_desc: "$FLEET_EFFECTS_TXT$:$NEW_LINE$  —$MOD_SHIP_SPEED_MULT$§G+15%§!$NEW_LINE$  —$MOD_SHIP_EVASION_ADD$§G+10§!$NEW_LINE$  —$MOD_SHIP_FTL_JUMPDRIVE_RANGE_MULT$§G+25%§!$NEW_LINE$  —$MOD_SHIP_JUMPDRIVE_COOLDOWN_MULT$§G-60%§!$NEW_LINE$  —$MOD_SHIP_DISENGAGE_CHANCE_MULT$§G+50%§!$NEW_LINE$  —$MOD_SHIP_EMERGENCY_FTL$§G-30%§!$NEW_LINE$  —$MOD_FLEET_MIA_TIME_MULT$§G-50%§!"
+#火
 leader_trait_fire_type_Instantaneous_entropy_increase_1:0"Instantaneous entropy increase" 
 leader_trait_fire_type_Instantaneous_entropy_increase_1_desc:0"This leader can coordinate the crew's use of fire type  psionic powers to strengthen the ship's weapon systems and unleash chaos and destruction on the enemy."
-leader_trait_fire_type_Instantaneous_entropy_increase_2:0"Instantaneous entropy increase" 
-leader_trait_fire_type_Instantaneous_entropy_increase_2_desc:0"This leader can coordinate the crew's use of fire type  psionic powers to strengthen the ship's weapon systems and unleash chaos and destruction on the enemy."
-leader_trait_fire_type_Instantaneous_entropy_increase_3:0"Instantaneous entropy increase" 
-leader_trait_fire_type_Instantaneous_entropy_increase_3_desc:0"This leader can coordinate the crew's use of fire type  psionic powers to strengthen the ship's weapon systems and unleash chaos and destruction on the enemy."
-leader_trait_fire_type_Instantaneous_entropy_increase_4:0"Instantaneous entropy increase" 
-leader_trait_fire_type_Instantaneous_entropy_increase_4_desc:0"This leader can coordinate the crew's use of fire type  psionic powers to strengthen the ship's weapon systems and unleash chaos and destruction on the enemy."
-leader_trait_fire_type_Instantaneous_entropy_increase_5:0"Instantaneous entropy increase" 
-leader_trait_fire_type_Instantaneous_entropy_increase_5_desc:0"This leader can coordinate the crew's use of fire type  psionic powers to strengthen the ship's weapon systems and unleash chaos and destruction on the enemy."
+concept_leader_trait_fire_type_Instantaneous_entropy_increase_1: "$leader_trait_fire_type_Instantaneous_entropy_increase_1$"
+concept_leader_trait_fire_type_Instantaneous_entropy_increase_1_desc: "$FLEET_EFFECTS_TXT$:$NEW_LINE$  —$MOD_SHIP_WEAPON_DAMAGE$§G+20%§!$NEW_LINE$  —$MOD_SHIP_ORBITAL_BOMBARDMENT_MULT$§G+50%§!$NEW_LINE$$ARMY_EFFECTS_TXT$$NEW_LINE$  —$MOD_ARMY_DAMAGE_MULT$§G+25%§!"
 
+#仙
+leader_trait_admiral_fairy_type_1:0"Ideological transport" 
+leader_trait_admiral_fairy_type_1_desc:0"This leader is the principal of a military academy, the direct exchange of ideas at the spiritual level enables this leader to efficiently train his students" 
+concept_leader_trait_admiral_fairy_type_1: "$leader_trait_admiral_fairy_type_1$"
+concept_leader_trait_admiral_fairy_type_1_desc: "$FLEET_EFFECTS_TXT$:\n  —$MOD_COMMAND_LIMIT_ADD$§G+80§!\n$EMPIRE_EFFECTS_TXT$\n  —$mod_commander_exp_gain$§G+20%§!$NEW_LINE$  —$MOD_SHIP_STARTING_EXPERIENCE_ADD$§G+200§!$NEW_LINE$  —$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$§G+10%§!$NEW_LINE$  —$MOD_STARBASE_SHIPYARD_BUILD_COST_MULT$§G-5%§!"
+#############################科学家
+#恶
+leader_trait_scientist_dark_type_night_owl_1:0"Mind anchor" 
+leader_trait_scientist_dark_type_night_owl_1_desc:0"Using the spiritual shackles of dark type to anchor the mind to reality, this leader can safely immerse himself in the embrace of subspace, chasing truth in the remnants and whispers of the past."
+concept_leader_trait_scientist_dark_type_night_owl_1: "$leader_trait_scientist_dark_type_night_owl_1$"
+concept_leader_trait_scientist_dark_type_night_owl_1_desc: "$FLEET_EFFECTS_TXT$:$NEW_LINE$  —$MOD_SHIP_DISENGAGE_CHANCE_MULT$§G+50%§!$NEW_LINE$  —$MOD_SHIP_SPEED_MULT$§G+20%§!$NEW_LINE$  —$MOD_FLEET_MIA_TIME_MULT$§G-50%§!$NEW_LINE$  —$MOD_SHIP_FTL_JUMPDRIVE_RANGE_MULT$§G+25%§!$NEW_LINE$  —$MOD_SHIP_JUMPDRIVE_COOLDOWN_MULT$§G-60%§!$NEW_LINE$$SCIENCE_SHIP_EFFECTS_TXT$$NEW_LINE$  —$MOD_SHIP_ARCHAEOLOGICAL_SITE_EXCAVATION_SPEED_MULT$§G+50%§!$NEW_LINE$  —$MOD_SHIP_ARCHAEOLOGICAL_SITE_CLUES_ADD$§G+2§!$NEW_LINE$  —$MOD_SHIP_CLOAKING_STRENGTH_ADD$§G+2§!$NEW_LINE$$EMPIRE_EFFECTS_TXT$$NEW_LINE$  —$mod_category_archaeostudies_research_speed_mult$§G+30%§!"
+#超
 leader_trait_scientist_psychic_type_psionic_benefits_1:0"Deep brain domain development"
 leader_trait_scientist_psychic_type_psionic_benefits_1_desc:0"From the beginning of the history of the Eeveelution civilization, we have been trying to understand our innate magical abilities. We have established many absurd theories or attributed everything to the gods. Now, a thorough understanding of brain activity and the essence of consciousness allows us to optimize our brains to the extreme in a nearly reprogramming way, and the obstacles to truth have now become a smooth road."
-leader_trait_scientist_psychic_type_psionic_benefits_2:0"Psionic Benefits " 
-leader_trait_scientist_psychic_type_psionic_benefits_2_desc:0"This scientist's psionic gifts gave him/her an almost prophetic sense, greatly increasing the speed of his/her research."
-leader_trait_scientist_psychic_type_psionic_benefits_3:0"Psionic Benefits " 
-leader_trait_scientist_psychic_type_psionic_benefits_3_desc:0"This scientist's psionic gifts gave him/her an almost prophetic sense, greatly increasing the speed of his/her research."
-leader_trait_scientist_psychic_type_psionic_benefits_4:0"Psionic Benefits " 
-leader_trait_scientist_psychic_type_psionic_benefits_4_desc:0"This scientist's psionic gifts gave him/her an almost prophetic sense, greatly increasing the speed of his/her research."
-leader_trait_scientist_psychic_type_psionic_benefits_5:0"Psionic Benefits " 
-leader_trait_scientist_psychic_type_psionic_benefits_5_desc:0"This scientist's psionic gifts gave him/her an almost prophetic sense, greatly increasing the speed of his/her research."
-
-leader_trait_scientist_ice_type_Particle_Mastery_1:0"Particle Mastery " 
-leader_trait_scientist_ice_type_Particle_Mastery_1_desc:0"This scientist's mastery of microscopic particles could dramatically speed up his/her research in related fields."
-leader_trait_scientist_ice_type_Particle_Mastery_2:0"Particle Mastery " 
-leader_trait_scientist_ice_type_Particle_Mastery_2_desc:0"This scientist's mastery of microscopic particles could dramatically speed up his/her research in related fields."
-leader_trait_scientist_ice_type_Particle_Mastery_3:0"Particle Mastery " 
-leader_trait_scientist_ice_type_Particle_Mastery_3_desc:0"This scientist's mastery of microscopic particles could dramatically speed up his/her research in related fields."
-leader_trait_scientist_ice_type_Particle_Mastery_4:0"Particle Mastery " 
-leader_trait_scientist_ice_type_Particle_Mastery_4_desc:0"This scientist's mastery of microscopic particles could dramatically speed up his/her research in related fields."
-leader_trait_scientist_ice_type_Particle_Mastery_5:0"Particle Mastery " 
-leader_trait_scientist_ice_type_Particle_Mastery_5_desc:0"This scientist's mastery of microscopic particles could dramatically speed up his/her research in related fields."
-
-
-leader_trait_scientist_dark_type_night_owl_2:0"night owl" 
-leader_trait_scientist_dark_type_night_owl_2_desc:0"Yes, staying up late is bad for your health. While this restless zeal has accelerated his/her research, not even our most advanced medical technology can reverse this scientist's thinning head fur."
-leader_trait_scientist_dark_type_night_owl_3:0"night owl" 
-leader_trait_scientist_dark_type_night_owl_3_desc:0"Yes, staying up late is bad for your health. While this restless zeal has accelerated his/her research, not even our most advanced medical technology can reverse this scientist's thinning head fur."
-leader_trait_scientist_dark_type_night_owl_4:0"night owl" 
-leader_trait_scientist_dark_type_night_owl_4_desc:0"Yes, staying up late is bad for your health. While this restless zeal has accelerated his/her research, not even our most advanced medical technology can reverse this scientist's thinning head fur."
-leader_trait_scientist_dark_type_night_owl_5:0"night owl" 
-leader_trait_scientist_dark_type_night_owl_5_desc:0"Yes, staying up late is bad for your health. While this restless zeal has accelerated his/her research, not even our most advanced medical technology can reverse this scientist's thinning head fur."
-
-
+concept_leader_trait_scientist_psychic_type_psionic_benefits_1: "$leader_trait_scientist_psychic_type_psionic_benefits_1$"
+concept_leader_trait_scientist_psychic_type_psionic_benefits_1_desc: "$EMPIRE_EFFECTS_TXT$:$NEW_LINE$  —$RESEARCH_EFFICIENCY$§G+15%§!$NEW_LINE$$THIS_LEADER_TXT$$NEW_LINE$  —$MOD_LEADER_SPECIES_EXP_GAIN$§G+20%§!$NEW_LINE$$SCIENCE_SHIP_EFFECTS_TXT$$NEW_LINE$  —$MOD_SHIP_SCIENCE_SURVEY_SPEED$§G+25%§!$NEW_LINE$  —$MOD_SHIP_ANOMALY_RESEARCH_SPEED$§G+25%§!"
+#水
 leader_trait_scientist_water_type_1:0"Professor of Genetic Medicine"
 leader_trait_scientist_water_type_1_desc:0"The medical system established by this leader has greatly improved the local medical level."
+concept_leader_trait_scientist_water_type_1: "$leader_trait_scientist_water_type_1$"
+concept_leader_trait_scientist_water_type_1_desc: "$EMPIRE_EFFECTS_TXT$:$NEW_LINE$  —$mod_category_biology_research_speed_mult$§G+20%§!$NEW_LINE$  —$mod_category_biology_draw_chance_mult$§G+35%§!$NEW_LINE$  —$MOD_LEADER_LIFESPAN_ADD$§G+10§!$NEW_LINE$$PLANET_EFFECTS_TXT$$NEW_LINE$  —$mod_planet_jobs_society_research_produces_mult$§G+20%§!$NEW_LINE$  —$mod_pop_job_amenities_mult$§G+10%§!$NEW_LINE$  —$MOD_LOGISTIC_GROWTH_MULT$§G+20%§!$NEW_LINE$$SECTOR_EFFECTS_TXT$$NEW_LINE$  —$mod_planet_jobs_society_research_produces_mult$§G+10%§!$NEW_LINE$  —$mod_pop_job_amenities_mult$§G+5%§!$NEW_LINE$  —$MOD_LOGISTIC_GROWTH_MULT$§G+10%§!"
 
-leader_trait_scientist_water_type_Gene_Mastery_1:0"Gene Mastery" 
-leader_trait_scientist_water_type_Gene_Mastery_1_desc:0"The scientist's ability to control the gene could greatly speed up his/her research in related fields."
-leader_trait_scientist_water_type_Gene_Mastery_2:0"Gene Mastery" 
-leader_trait_scientist_water_type_Gene_Mastery_2_desc:0"The scientist's ability to control the gene could greatly speed up his/her research in related fields."
-leader_trait_scientist_water_type_Gene_Mastery_3:0"Gene Mastery" 
-leader_trait_scientist_water_type_Gene_Mastery_3_desc:0"The scientist's ability to control the gene could greatly speed up his/her research in related fields."
-leader_trait_scientist_water_type_Gene_Mastery_4:0"Gene Mastery" 
-leader_trait_scientist_water_type_Gene_Mastery_4_desc:0"The scientist's ability to control the gene could greatly speed up his/her research in related fields."
-leader_trait_scientist_water_type_Gene_Mastery_5:0"Gene Mastery" 
-leader_trait_scientist_water_type_Gene_Mastery_5_desc:0"The scientist's ability to control the gene could greatly speed up his/her research in related fields."
-
-
+#电
 leader_trait_scientist_electric_type_1:0"Ideal experimental conditions"
 leader_trait_scientist_electric_type_1_desc:0"The interference in fundamental forces allowed this leader to turn various experimental conditions that only existed in ideals into reality."
+concept_leader_trait_scientist_electric_type_1: "$leader_trait_scientist_electric_type_1$"
+concept_leader_trait_scientist_electric_type_1_desc: "$SECTOR_EFFECTS_TXT$:$NEW_LINE$  —$mod_planet_jobs_physics_research_produces_mult$§G+7.5%§!$NEW_LINE$  —$mod_planet_jobs_society_research_produces_mult$§G+7.5%§!$NEW_LINE$  —$mod_planet_jobs_engineering_research_produces_mult$§G+7.5%§!$NEW_LINE$  —$mod_planet_researchers_upkeep_mult$§G-7.5%§!$NEW_LINE$  —$mod_planet_jobs_energy_produces_mult$§G+7.5%§!$NEW_LINE$$EMPIRE_EFFECTS_TXT$$NEW_LINE$  —$mod_planet_researchers_upkeep_mult$§G-10%§!"
 
 
-
-leader_trait_scientist_electric_type_Energy_Mastery_1:0"Energy Mastery" 
-leader_trait_scientist_electric_type_Energy_Mastery_1_desc:0"The scientist's precise manipulation of energy could dramatically speed up his/her research in related fields."
-leader_trait_scientist_electric_type_Energy_Mastery_2:0"Energy Mastery" 
-leader_trait_scientist_electric_type_Energy_Mastery_2_desc:0"The scientist's precise manipulation of energy could dramatically speed up his/her research in related fields."
-leader_trait_scientist_electric_type_Energy_Mastery_3:0"Energy Mastery" 
-leader_trait_scientist_electric_type_Energy_Mastery_3_desc:0"The scientist's precise manipulation of energy could dramatically speed up his/her research in related fields."
-leader_trait_scientist_electric_type_Energy_Mastery_4:0"Energy Mastery" 
-leader_trait_scientist_electric_type_Energy_Mastery_4_desc:0"The scientist's precise manipulation of energy could dramatically speed up his/her research in related fields."
-leader_trait_scientist_electric_type_Energy_Mastery_5:0"Energy Mastery" 
-leader_trait_scientist_electric_type_Energy_Mastery_5_desc:0"The scientist's precise manipulation of energy could dramatically speed up his/her research in related fields."
-
-leader_trait_scientist_fire_type_reacter_calibration_1:0"reacter calibration" 
-leader_trait_scientist_fire_type_reacter_calibration_1_desc:0"This scientist can directly sense and manipulate high-energy reactions, dramatically increasing the speed of his/her research in related fields."
-leader_trait_scientist_fire_type_reacter_calibration_2:0"reacter calibration" 
-leader_trait_scientist_fire_type_reacter_calibration_2_desc:0"This scientist can directly sense and manipulate high-energy reactions, dramatically increasing the speed of his/her research in related fields."
-leader_trait_scientist_fire_type_reacter_calibration_3:0"reacter calibration" 
-leader_trait_scientist_fire_type_reacter_calibration_3_desc:0"This scientist can directly sense and manipulate high-energy reactions, dramatically increasing the speed of his/her research in related fields."
-leader_trait_scientist_fire_type_reacter_calibration_4:0"reacter calibration" 
-leader_trait_scientist_fire_type_reacter_calibration_4_desc:0"This scientist can directly sense and manipulate high-energy reactions, dramatically increasing the speed of his/her research in related fields."
-leader_trait_scientist_fire_type_reacter_calibration_5:0"reacter calibration" 
-leader_trait_scientist_fire_type_reacter_calibration_5_desc:0"This scientist can directly sense and manipulate high-energy reactions, dramatically increasing the speed of his/her research in related fields."
-
-leader_trait_dark_type_Dark_Templar_1:0"Dark Templar" 
-leader_trait_dark_type_Dark_Templar_1_desc:0"This general can lead the army using dark type psionic power to create full band invisible force fields,  annihilate the enemy without a trace. "
-leader_trait_dark_type_Dark_Templar_2:0"Dark Templar" 
-leader_trait_dark_type_Dark_Templar_2_desc:0"This general can lead the army using dark type psionic power to create full band invisible force fields,  annihilate the enemy without a trace. "
-leader_trait_dark_type_Dark_Templar_3:0"Dark Templar" 
-leader_trait_dark_type_Dark_Templar_3_desc:0"This general can lead the army using dark type psionic power to create full band invisible force fields,  annihilate the enemy without a trace. "
-leader_trait_dark_type_Dark_Templar_4:0"Dark Templar" 
-leader_trait_dark_type_Dark_Templar_4_desc:0"This general can lead the army using dark type psionic power to create full band invisible force fields,  annihilate the enemy without a trace. "
-leader_trait_dark_type_Dark_Templar_5:0"Dark Templar" 
-leader_trait_dark_type_Dark_Templar_5_desc:0"This general can lead the army using dark type psionic power to create full band invisible force fields,  annihilate the enemy without a trace. "
-
-
-leader_trait_electric_type_Tesla_Commander_1:0"Tesla Commander"
-leader_trait_electric_type_Tesla_Commander_1_desc:0"this general can lead his troops using electric type psionic power to create electromagnetic storm as an additional attack"
-leader_trait_electric_type_Tesla_Commander_2:0"Tesla Commander"
-leader_trait_electric_type_Tesla_Commander_2_desc:0"this general can lead his troops using electric type psionic power to create electromagnetic storm as an additional attack"
-leader_trait_electric_type_Tesla_Commander_3:0"Tesla Commander"
-leader_trait_electric_type_Tesla_Commander_3_desc:0"this general can lead his troops using electric type psionic power to create electromagnetic storm as an additional attack"
-leader_trait_electric_type_Tesla_Commander_4:0"Tesla Commander"
-leader_trait_electric_type_Tesla_Commander_4_desc:0"this general can lead his troops using electric type psionic power to create electromagnetic storm as an additional attack"
-leader_trait_electric_type_Tesla_Commander_5:0"Tesla Commander"
-leader_trait_electric_type_Tesla_Commander_5_desc:0"this general can lead his troops using electric type psionic power to create electromagnetic storm as an additional attack"
-
-
-leader_trait_grass_type_Production_Construction_Corps_1:0"Production Construction Corps"
-leader_trait_grass_type_Production_Construction_Corps_1_desc:0"this general can lead his troops using grass type  psionic power to assist in production construction in the spare time ."
-leader_trait_grass_type_Production_Construction_Corps_2:0"Production Construction Corps"
-leader_trait_grass_type_Production_Construction_Corps_2_desc:0"this general can lead his troops using grass type  psionic power to assist in production construction in the spare time ."
-leader_trait_grass_type_Production_Construction_Corps_3:0"Production Construction Corps"
-leader_trait_grass_type_Production_Construction_Corps_3_desc:0"this general can lead his troops using grass type  psionic power to assist in production construction in the spare time ."
-leader_trait_grass_type_Production_Construction_Corps_4:0"Production Construction Corps"
-leader_trait_grass_type_Production_Construction_Corps_4_desc:0"this general can lead his troops using grass type  psionic power to assist in production construction in the spare time ."
-leader_trait_grass_type_Production_Construction_Corps_5:0"Production Construction Corps"
-leader_trait_grass_type_Production_Construction_Corps_5_desc:0"this general can lead his troops using grass type  psionic power to assist in production construction in the spare time ."
-
-
-
-leader_trait_fairy_type_Shared_glory_1:0"Shared glory"
-leader_trait_fairy_type_Shared_glory_1_desc:0"This leader can use fairy type psionic power to make all soldiers embrace the glory of battle."
-leader_trait_fairy_type_Shared_glory_2:0"Shared glory"
-leader_trait_fairy_type_Shared_glory_2_desc:0"This leader can use fairy type psionic power to make all soldiers embrace the glory of battle."
-leader_trait_fairy_type_Shared_glory_3:0"Shared glory"
-leader_trait_fairy_type_Shared_glory_3_desc:0"This leader can use fairy type psionic power to make all soldiers embrace the glory of battle."
-leader_trait_fairy_type_Shared_glory_4:0"Shared glory"
-leader_trait_fairy_type_Shared_glory_4_desc:0"This leader can use fairy type psionic power to make all soldiers embrace the glory of battle."
-leader_trait_fairy_type_Shared_glory_5:0"Shared glory"
-leader_trait_fairy_type_Shared_glory_5_desc:0"This leader can use fairy type psionic power to make all soldiers embrace the glory of battle."
-
-
+########################总督
+#草
+leader_trait_governor_grass_type_Plants_vs_Aliens_1:0"Plants vs Aliens"
+leader_trait_governor_grass_type_Plants_vs_Aliens_1_desc:0"The governor can organize citizens to militarize native species on the planet with grass type psionic powers in their spare time. When alien invaders land on the planet, they have to face not only our defense forces, but also a whole angry biosphere"
+concept_leader_trait_governor_grass_type_Plants_vs_Aliens_1: "$leader_trait_governor_grass_type_Plants_vs_Aliens_1$"
+concept_leader_trait_governor_grass_type_Plants_vs_Aliens_1_desc: "$EMPIRE_EFFECTS_TXT$:$NEW_LINE$  —$mod_planet_jobs_food_produces_mult$§G+15%§!$NEW_LINE$  —$MOD_COUNTRY_TERRAFORM_SPEED_MULT$§G+33%§!$NEW_LINE$$PLANET_EFFECTS_TXT$$NEW_LINE$  —$MOD_PLANET_DEFENSE_ARMIES_ADD$§G+32§!$NEW_LINE$  —$MOD_PLANET_ORBITAL_BOMBARDMENT_DAMAGE$§G-20%§!$NEW_LINE$  —$MOD_PLANET_CLEAR_BLOCKER_SPEED_MULT$§G+35%§!$NEW_LINE$  —$mod_planet_pops_organics_food_upkeep_mult$§G-20%§!$NEW_LINE$  —$mod_planet_soldiers_food_produces_add$§G+4§!$NEW_LINE$$SECTOR_EFFECTS_TXT$$NEW_LINE$  —$MOD_PLANET_DEFENSE_ARMIES_ADD$§G+24§!$NEW_LINE$  —$MOD_PLANET_ORBITAL_BOMBARDMENT_DAMAGE$§G-15%§!$NEW_LINE$  —$MOD_PLANET_CLEAR_BLOCKER_SPEED_MULT$§G+20%§!$NEW_LINE$  —$mod_planet_pops_organics_food_upkeep_mult$§G-15%§!$NEW_LINE$  —$mod_planet_soldiers_food_produces_add$§G+3§!"
+#仙
 leader_trait_governor_fairy_type_Empathy_network_1:0"Empathy Network"
 leader_trait_governor_fairy_type_Empathy_network_1_desc:0"This leader can coordinate administrative staffs to use psionic powers to create a mental network among the entire population of the sector, greatly increasing administrative efficiency."
-leader_trait_governor_fairy_type_Empathy_network_2:0"Empathy Network"
-leader_trait_governor_fairy_type_Empathy_network_2_desc:0"This leader can coordinate administrative staffs to use psionic powers to create a mental network among the entire population of the sector, greatly increasing administrative efficiency."
-leader_trait_governor_fairy_type_Empathy_network_3:0"Empathy Network"
-leader_trait_governor_fairy_type_Empathy_network_3_desc:0"This leader can coordinate administrative staffs to use psionic powers to create a mental network among the entire population of the sector, greatly increasing administrative efficiency."
-leader_trait_governor_fairy_type_Empathy_network_4:0"Empathy Network"
-leader_trait_governor_fairy_type_Empathy_network_4_desc:0"This leader can coordinate administrative staffs to use psionic powers to create a mental network among the entire population of the sector, greatly increasing administrative efficiency."
-leader_trait_governor_fairy_type_Empathy_network_5:0"Empathy Network"
-leader_trait_governor_fairy_type_Empathy_network_5_desc:0"This leader can coordinate administrative staffs to use psionic powers to create a mental network among the entire population of the sector, greatly increasing administrative efficiency."
-
-leader_trait_governor_fairy_type_Cloud_brain_services_1:0"Cloud brain services"
-leader_trait_governor_fairy_type_Cloud_brain_services_1_desc:0"This cerebrate can use fairy type psionic power to establish additional mind connections between drones, maximize the computational power of each drone's brain and monitor drones in real time."
-
-
-leader_trait_governor_dark_type_necessary_evil_1:0"Mean Look"
-leader_trait_governor_dark_type_necessary_evil_1_desc:0"This leader's dark type power can strike directly at the mind, and no one is willing to leave under his gaze until a consensus is reached."
-leader_trait_governor_dark_type_necessary_evil_2:0"Necessary Evil"
-leader_trait_governor_dark_type_necessary_evil_2_desc:0"This leader can coordinate the administration staffs to use  dark type psionic power to force the conscript without negative effects, and the conscript will be willing to go to work or fight unknowingly."
-leader_trait_governor_dark_type_necessary_evil_3:0"Necessary Evil"
-leader_trait_governor_dark_type_necessary_evil_3_desc:0"This leader can coordinate the administration staffs to use  dark type psionic power to force the conscript without negative effects, and the conscript will be willing to go to work or fight unknowingly."
-leader_trait_governor_dark_type_necessary_evil_4:0"Necessary Evil"
-leader_trait_governor_dark_type_necessary_evil_4_desc:0"This leader can coordinate the administration staffs to use  dark type psionic power to force the conscript without negative effects, and the conscript will be willing to go to work or fight unknowingly."
-leader_trait_governor_dark_type_necessary_evil_5:0"Necessary Evil"
-leader_trait_governor_dark_type_necessary_evil_5_desc:0"This leader can coordinate the administration staffs to use  dark type psionic power to force the conscript without negative effects, and the conscript will be willing to go to work or fight unknowingly."
-leader_trait_governor_dark_type_Self_cognition_control_1:0"Self cognition control"
-leader_trait_governor_dark_type_Self_cognition_control_2:0"Self cognition control"
-leader_trait_governor_dark_type_Self_cognition_control_3:0"Self cognition control"
-leader_trait_governor_dark_type_Self_cognition_control_4:0"Self cognition control"
-leader_trait_governor_dark_type_Self_cognition_control_5:0"Self cognition control"
-leader_trait_governor_dark_type_Self_cognition_control_1_desc:0"This cerebrate can use dark type psionic power to change the subconscious mind of drones, let the drones's loyalty to the Swarm not completely rely on the control of pokeballs and increase the self processing ability of drones."
-leader_trait_governor_dark_type_Self_cognition_control_2_desc:0"This cerebrate can use dark type psionic power to change the subconscious mind of drones, let the drones's loyalty to the Swarm not completely rely on the control of pokeballs and increase the self processing ability of drones."
-leader_trait_governor_dark_type_Self_cognition_control_3_desc:0"This cerebrate can use dark type psionic power to change the subconscious mind of drones, let the drones's loyalty to the Swarm not completely rely on the control of pokeballs and increase the self processing ability of drones."
-leader_trait_governor_dark_type_Self_cognition_control_4_desc:0"This cerebrate can use dark type psionic power to change the subconscious mind of drones, let the drones's loyalty to the Swarm not completely rely on the control of pokeballs and increase the self processing ability of drones."
-leader_trait_governor_dark_type_Self_cognition_control_5_desc:0"This cerebrate can use dark type psionic power to change the subconscious mind of drones, let the drones's loyalty to the Swarm not completely rely on the control of pokeballs and increase the self processing ability of drones."
-
+concept_leader_trait_governor_fairy_type_Empathy_network_1: "$leader_trait_governor_fairy_type_Empathy_network_1$"
+concept_leader_trait_governor_fairy_type_Empathy_network_1_desc: "$EMPIRE_EFFECTS_TXT$:$NEW_LINE$  —$mod_official_exp_gain$§G+20%§!$NEW_LINE$  —$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$§G+10%§!$NEW_LINE$$PLANET_EFFECTS_TXT$$NEW_LINE$  —$MOD_PLANET_STABILITY_ADD$§G+15§!$NEW_LINE$  —$mod_planet_jobs_unity_produces_mult$§G+10%§!$NEW_LINE$  —$MOD_PLANET_CRIME_ADD$§G-25§!$NEW_LINE$$SECTOR_EFFECTS_TXT$$NEW_LINE$  —$MOD_PLANET_STABILITY_ADD$§G+10§!$NEW_LINE$  —$mod_planet_jobs_unity_produces_mult$§G+5%§!$NEW_LINE$  —$MOD_PLANET_CRIME_ADD$§G-15§!"
+#水
+leader_trait_governor_water_type_1:0"Vap cute"
+leader_trait_governor_water_type_1_desc:0"Hey guys, did you know that in terms of Interstellar diplomacy..."
+concept_leader_trait_governor_water_type_1: "$leader_trait_governor_water_type_1$"
+concept_leader_trait_governor_water_type_1_desc: "$EMPIRE_EFFECTS_TXT$:$NEW_LINE$  —$MOD_COUNTRY_ENVOYS_ADD$§G+1§!$NEW_LINE$  —$mod_country_councilor_influence_produces_add$§G+1§!$NEW_LINE$  —$MOD_COUNTRY_TRUST_GROWTH$§G+25%§!$NEW_LINE$  —$MOD_MONTHLY_LOYALTY_GAIN_FROM_SUBJECTS$§G+0.5§!$NEW_LINE$$SECTOR_EFFECTS_TXT$$NEW_LINE$  —$mod_pop_job_amenities_mult$§G+10%§!$NEW_LINE$  —$MOD_LOGISTIC_GROWTH_MULT$§G+10%§!"
+#冰
 leader_trait_governor_ice_type_nano_builder_1:0"nano builder"
 leader_trait_governor_ice_type_nano_builder_1_desc:0"This leader can coordinate the builders to use ice type psionic powers to directly sense and manipulate microscopic particles, greatly increasing the efficiency of construction."
-leader_trait_governor_ice_type_nano_builder_2:0"nano builder"
-leader_trait_governor_ice_type_nano_builder_2_desc:0"This leader can coordinate the builders to use ice type psionic powers to directly sense and manipulate microscopic particles, greatly increasing the efficiency of construction."
-leader_trait_governor_ice_type_nano_builder_3:0"nano builder"
-leader_trait_governor_ice_type_nano_builder_3_desc:0"This leader can coordinate the builders to use ice type psionic powers to directly sense and manipulate microscopic particles, greatly increasing the efficiency of construction."
-leader_trait_governor_ice_type_nano_builder_4:0"nano builder"
-leader_trait_governor_ice_type_nano_builder_4_desc:0"This leader can coordinate the builders to use ice type psionic powers to directly sense and manipulate microscopic particles, greatly increasing the efficiency of construction."
-leader_trait_governor_ice_type_nano_builder_5:0"nano builder"
-leader_trait_governor_ice_type_nano_builder_5_desc:0"This leader can coordinate the builders to use ice type psionic powers to directly sense and manipulate microscopic particles, greatly increasing the efficiency of construction."
+concept_leader_trait_governor_ice_type_nano_builder_1: "$leader_trait_governor_ice_type_nano_builder_1$"
+concept_leader_trait_governor_ice_type_nano_builder_1_desc: "$EMPIRE_EFFECTS_TXT$:$NEW_LINE$  —$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$§G+25%§!$NEW_LINE$  —$MOD_STARBASE_SHIPYARD_BUILD_COST_MULT$§G-10%§!$NEW_LINE$$SECTOR_EFFECTS_TXT$$NEW_LINE$  —$mod_planet_buildings_cost_mult$§G-15%§!$NEW_LINE$  —$mod_planet_districts_cost_mult$§G-15%§!$NEW_LINE$  —$MOD_PLANET_BUILDING_BUILD_SPEED_MULT$§G+25%§!"
 
 
-#leader_trait_water_type_Steady_Stream_1:0"Steady Stream"
-#leader_trait_water_type_Steady_Stream_1_desc:0"The leader's water type psionic talent can greatly improve his cell vitality, reduce the rate of cell aging, and greatly increase his life expectancy."
-#leader_trait_water_type_Steady_Stream_2:0"Steady Stream"
-#leader_trait_water_type_Steady_Stream_2_desc:0"The leader's water type psionic talent can greatly improve his cell vitality, reduce the rate of cell aging, and greatly increase his life expectancy."
-#leader_trait_water_type_Steady_Stream_3:0"Steady Stream"
-#leader_trait_water_type_Steady_Stream_3_desc:0"The leader's water type psionic talent can greatly improve his cell vitality, reduce the rate of cell aging, and greatly increase his life expectancy."
-#leader_trait_water_type_Steady_Stream_4:0"Steady Stream"
-#leader_trait_water_type_Steady_Stream_4_desc:0"The leader's water type psionic talent can greatly improve his cell vitality, reduce the rate of cell aging, and greatly increase his life expectancy."
-#leader_trait_water_type_Steady_Stream_5:0"Steady Stream"
-#leader_trait_water_type_Steady_Stream_5_desc:0"The leader's water type psionic talent can greatly improve his cell vitality, reduce the rate of cell aging, and greatly increase his life expectancy."
-#leader_trait_water_type_Steady_Stream_6:0"Steady Stream"
-#leader_trait_water_type_Steady_Stream_6_desc:0"The leader's water type psionic talent can greatly improve his cell vitality, reduce the rate of cell aging, and greatly increase his life expectancy."
-#leader_trait_water_type_Steady_Stream_7:0"Steady Stream"
-#leader_trait_water_type_Steady_Stream_7_desc:0"The leader's water type psionic talent can greatly improve his cell vitality, reduce the rate of cell aging, and greatly increase his life expectancy."
-#leader_trait_water_type_Steady_Stream_8:0"Steady Stream"
-#leader_trait_water_type_Steady_Stream_8_desc:0"The leader's water type psionic talent can greatly improve his cell vitality, reduce the rate of cell aging, and greatly increase his life expectancy."
-#leader_trait_water_type_Steady_Stream_9:0"Steady Stream"
-#leader_trait_water_type_Steady_Stream_9_desc:0"The leader's water type psionic talent can greatly improve his cell vitality, reduce the rate of cell aging, and greatly increase his life expectancy."
-#leader_trait_water_type_Steady_Stream_10:0"Steady Stream"
-#leader_trait_water_type_Steady_Stream_10_desc:0"The leader's water type psionic talent can greatly improve his cell vitality, reduce the rate of cell aging, and greatly increase his life expectancy."
 
 leader_trait_scientist_nuclear_type:0"Nuclear type"
 leader_trait_scientist_nuclear_type_desc:0"She was turned into this type due to radiation. She suffers from this. But this special type also benefits her research."
-leader_trait_scientist_focus_on_research:0"Focus on research"
-leader_trait_scientist_focus_on_research_desc:0"This scientist prefer to focus on research, and has no interest in politics."
 
-leader_trait_scientist_master_biology:0"Expertise:Biology"
-leader_trait_scientist_master_biology_desc:0"This leader is an expert within the field of Biology."
 
-leader_trait_governor_water_type_1:0"Vap cute"
-leader_trait_governor_water_type_1_desc:0"Hey guys, did you know that in terms of Interstellar diplomacy..."
 
-leader_trait_admiral_fairy_type_1:0"Ideological transport" 
-leader_trait_admiral_fairy_type_1_desc:0"This leader is the principal of a military academy, the direct exchange of ideas at the spiritual level enables this leader to efficiently train his students" 
+
 
 
 
@@ -426,3 +217,272 @@ tech_endless_evolution_2_modifier_desc:0"$species_trait_points_add$: $POINTS|0=+
  concept_tech_endless_evolution_desc:0"-$endless_evolution_complete$\n$tech_endless_evolution_desc$"
  endless_evolution_complete:0"bio species trait points§G+1§!"
  EOE_not_enough_soc_produce:0"Insufficient society research produce to enable this option.You need at least §R4166 divide this bureau's research multiplier§! of society produce to enable this option."
+
+
+
+
+#################################回收站
+
+# leader_trait_dark_type_Void_Stutter_2:0"Void Navigate"
+# leader_trait_dark_type_Void_Stutter_2_desc:0"This leader can coordinate the crew's use of dark type psionic powers to interfere with the space-time structures around the fleet, improving the ship's seaworthiness."
+# leader_trait_dark_type_Void_Stutter_3:0"Void Navigate"
+# leader_trait_dark_type_Void_Stutter_3_desc:0"This leader can coordinate the crew's use of dark type psionic powers to interfere with the space-time structures around the fleet, improving the ship's seaworthiness."
+# leader_trait_dark_type_Void_Stutter_4:0"Void Navigate"
+# leader_trait_dark_type_Void_Stutter_4_desc:0"This leader can coordinate the crew's use of dark type psionic powers to interfere with the space-time structures around the fleet, improving the ship's seaworthiness."
+# leader_trait_dark_type_Void_Stutter_5:0"Void Navigate"
+# leader_trait_dark_type_Void_Stutter_5_desc:0"This leader can coordinate the crew's use of dark type psionic powers to interfere with the space-time structures around the fleet, improving the ship's seaworthiness."
+
+
+
+# leader_trait_water_type_Organic_Symbiont_1:0"Organic Symbiont"
+# leader_trait_water_type_Organic_Symbiont_1_desc:0"This leader can coordinate the crew to use water type psionic power to create and maintain the organic organization symbiotic with the ship, so that the warship can turn into a giant in steel, gain strong self-healing ability and maintain itself."
+# leader_trait_water_type_Organic_Symbiont_2:0"Organic Symbiont"
+# leader_trait_water_type_Organic_Symbiont_2_desc:0"This leader can coordinate the crew to use water type psionic power to create and maintain the organic organization symbiotic with the ship, so that the warship can turn into a giant in steel, gain strong self-healing ability and maintain itself."
+# leader_trait_water_type_Organic_Symbiont_3:0"Organic Symbiont"
+# leader_trait_water_type_Organic_Symbiont_3_desc:0"This leader can coordinate the crew to use water type psionic power to create and maintain the organic organization symbiotic with the ship, so that the warship can turn into a giant in steel, gain strong self-healing ability and maintain itself."
+# leader_trait_water_type_Organic_Symbiont_4:0"Organic Symbiont"
+# leader_trait_water_type_Organic_Symbiont_4_desc:0"This leader can coordinate the crew to use water type psionic power to create and maintain the organic organization symbiotic with the ship, so that the warship can turn into a giant in steel, gain strong self-healing ability and maintain itself."
+# leader_trait_water_type_Organic_Symbiont_5:0"Organic Symbiont"
+# leader_trait_water_type_Organic_Symbiont_5_desc:0"This leader can coordinate the crew to use water type psionic power to create and maintain the organic organization symbiotic with the ship, so that the warship can turn into a giant in steel, gain strong self-healing ability and maintain itself."
+# leader_trait_electric_type_Fundamental_Force_Interference_1:0"Fundamental Force Interference"
+# leader_trait_electric_type_Fundamental_Force_Interference_1_desc:0"This leader can coordinate the crew to strengthen the weapon system of the warship by using the electric type psionic power, so that the weapon can temporarily interfere with the electromagnetic force or even strong interaction force in the hit area when it hits the enemy ship. No matter how strong the structure is, it will lose its foundation of existence under such interference and turn into powder under our artillery fire."
+# leader_trait_electric_type_Fundamental_Force_Interference_2:0"Fundamental Force Interference"
+# leader_trait_electric_type_Fundamental_Force_Interference_2_desc:0"This leader can coordinate the crew to strengthen the weapon system of the warship by using the electric type psionic power, so that the weapon can temporarily interfere with the electromagnetic force or even strong interaction force in the hit area when it hits the enemy ship. No matter how strong the structure is, it will lose its foundation of existence under such interference and turn into powder under our artillery fire."
+# leader_trait_electric_type_Fundamental_Force_Interference_3:0"Fundamental Force Interference"
+# leader_trait_electric_type_Fundamental_Force_Interference_3_desc:0"This leader can coordinate the crew to strengthen the weapon system of the warship by using the electric type psionic power, so that the weapon can temporarily interfere with the electromagnetic force or even strong interaction force in the hit area when it hits the enemy ship. No matter how strong the structure is, it will lose its foundation of existence under such interference and turn into powder under our artillery fire."
+# leader_trait_electric_type_Fundamental_Force_Interference_4:0"Fundamental Force Interference"
+# leader_trait_electric_type_Fundamental_Force_Interference_4_desc:0"This leader can coordinate the crew to strengthen the weapon system of the warship by using the electric type psionic power, so that the weapon can temporarily interfere with the electromagnetic force or even strong interaction force in the hit area when it hits the enemy ship. No matter how strong the structure is, it will lose its foundation of existence under such interference and turn into powder under our artillery fire."
+# leader_trait_electric_type_Fundamental_Force_Interference_5:0"Fundamental Force Interference"
+# leader_trait_electric_type_Fundamental_Force_Interference_5_desc:0"This leader can coordinate the crew to strengthen the weapon system of the warship by using the electric type psionic power, so that the weapon can temporarily interfere with the electromagnetic force or even strong interaction force in the hit area when it hits the enemy ship. No matter how strong the structure is, it will lose its foundation of existence under such interference and turn into powder under our artillery fire."
+
+
+# leader_trait_governor_grass_type_Plants_vs_Aliens_2:0"Plants vs Aliens"
+# leader_trait_governor_grass_type_Plants_vs_Aliens_3:0"Plants vs Aliens"
+# leader_trait_governor_grass_type_Plants_vs_Aliens_4:0"Plants vs Aliens"
+# leader_trait_governor_grass_type_Plants_vs_Aliens_5:0"Plants vs Aliens"
+
+# leader_trait_governor_grass_type_Plants_vs_Aliens_2_desc:0"The governor can organize citizens to militarize native species on the planet with grass type psionic powers in their spare time. When alien invaders land on the planet, they have to face not only our defense forces, but also a whole angry biosphere"
+# leader_trait_governor_grass_type_Plants_vs_Aliens_3_desc:0"The governor can organize citizens to militarize native species on the planet with grass type psionic powers in their spare time. When alien invaders land on the planet, they have to face not only our defense forces, but also a whole angry biosphere"
+# leader_trait_governor_grass_type_Plants_vs_Aliens_4_desc:0"The governor can organize citizens to militarize native species on the planet with grass type psionic powers in their spare time. When alien invaders land on the planet, they have to face not only our defense forces, but also a whole angry biosphere"
+# leader_trait_governor_grass_type_Plants_vs_Aliens_5_desc:0"The governor can organize citizens to militarize native species on the planet with grass type psionic powers in their spare time. When alien invaders land on the planet, they have to face not only our defense forces, but also a whole angry biosphere"
+
+
+
+# leader_trait_ice_type_Directed_molecular_activation_b:0"Directed molecular activation "
+# leader_trait_ice_type_Directed_molecular_activation_b_desc:0"This leader can coordinate the crew's use of ice type  psionic powers to directly activate molecules, strengthen the ship's structure, or repair damage quickly."
+# leader_trait_ice_type_Directed_molecular_activation_c:0"Directed molecular activation "
+# leader_trait_ice_type_Directed_molecular_activation_c_desc:0"This leader can coordinate the crew's use of ice type  psionic powers to directly activate molecules, strengthen the ship's structure, or repair damage quickly."
+# leader_trait_ice_type_Directed_molecular_activation_d:0"Directed molecular activation "
+# leader_trait_ice_type_Directed_molecular_activation_d_desc:0"This leader can coordinate the crew's use of ice type  psionic powers to directly activate molecules, strengthen the ship's structure, or repair damage quickly."
+# leader_trait_ice_type_Directed_molecular_activation_e:0"Directed molecular activation "
+# leader_trait_ice_type_Directed_molecular_activation_e_desc:0"This leader can coordinate the crew's use of ice type  psionic powers to directly activate molecules, strengthen the ship's structure, or repair damage quickly."
+
+# leader_trait_psychic_type_Psionic_detection_battle_system_1:0"Psionic detection-battle system" 
+# leader_trait_psychic_type_Psionic_detection_battle_system_1_desc:0"This leader can coordinate the crew's use of psionic power to enhance the ship's shield and sensor systems."
+# leader_trait_psychic_type_Psionic_detection_battle_system_2:0"Psionic detection-battle system" 
+# leader_trait_psychic_type_Psionic_detection_battle_system_2_desc:0"This leader can coordinate the crew's use of psionic power to enhance the ship's shield and sensor systems."
+# leader_trait_psychic_type_Psionic_detection_battle_system_3:0"Psionic detection-battle system" 
+# leader_trait_psychic_type_Psionic_detection_battle_system_3_desc:0"This leader can coordinate the crew's use of psionic power to enhance the ship's shield and sensor systems."
+# leader_trait_psychic_type_Psionic_detection_battle_system_4:0"Psionic detection-battle system" 
+# leader_trait_psychic_type_Psionic_detection_battle_system_4_desc:0"This leader can coordinate the crew's use of psionic power to enhance the ship's shield and sensor systems."
+# leader_trait_psychic_type_Psionic_detection_battle_system_5:0"Psionic detection-battle system" 
+# leader_trait_psychic_type_Psionic_detection_battle_system_5_desc:0"This leader can coordinate the crew's use of psionic power to enhance the ship's shield and sensor systems."
+
+
+# leader_trait_fire_type_Instantaneous_entropy_increase_2:0"Instantaneous entropy increase" 
+# leader_trait_fire_type_Instantaneous_entropy_increase_2_desc:0"This leader can coordinate the crew's use of fire type  psionic powers to strengthen the ship's weapon systems and unleash chaos and destruction on the enemy."
+# leader_trait_fire_type_Instantaneous_entropy_increase_3:0"Instantaneous entropy increase" 
+# leader_trait_fire_type_Instantaneous_entropy_increase_3_desc:0"This leader can coordinate the crew's use of fire type  psionic powers to strengthen the ship's weapon systems and unleash chaos and destruction on the enemy."
+# leader_trait_fire_type_Instantaneous_entropy_increase_4:0"Instantaneous entropy increase" 
+# leader_trait_fire_type_Instantaneous_entropy_increase_4_desc:0"This leader can coordinate the crew's use of fire type  psionic powers to strengthen the ship's weapon systems and unleash chaos and destruction on the enemy."
+# leader_trait_fire_type_Instantaneous_entropy_increase_5:0"Instantaneous entropy increase" 
+# leader_trait_fire_type_Instantaneous_entropy_increase_5_desc:0"This leader can coordinate the crew's use of fire type  psionic powers to strengthen the ship's weapon systems and unleash chaos and destruction on the enemy."
+
+
+# leader_trait_scientist_psychic_type_psionic_benefits_2:0"Psionic Benefits " 
+# leader_trait_scientist_psychic_type_psionic_benefits_2_desc:0"This scientist's psionic gifts gave him/her an almost prophetic sense, greatly increasing the speed of his/her research."
+# leader_trait_scientist_psychic_type_psionic_benefits_3:0"Psionic Benefits " 
+# leader_trait_scientist_psychic_type_psionic_benefits_3_desc:0"This scientist's psionic gifts gave him/her an almost prophetic sense, greatly increasing the speed of his/her research."
+# leader_trait_scientist_psychic_type_psionic_benefits_4:0"Psionic Benefits " 
+# leader_trait_scientist_psychic_type_psionic_benefits_4_desc:0"This scientist's psionic gifts gave him/her an almost prophetic sense, greatly increasing the speed of his/her research."
+# leader_trait_scientist_psychic_type_psionic_benefits_5:0"Psionic Benefits " 
+# leader_trait_scientist_psychic_type_psionic_benefits_5_desc:0"This scientist's psionic gifts gave him/her an almost prophetic sense, greatly increasing the speed of his/her research."
+
+# leader_trait_scientist_ice_type_Particle_Mastery_1:0"Particle Mastery " 
+# leader_trait_scientist_ice_type_Particle_Mastery_1_desc:0"This scientist's mastery of microscopic particles could dramatically speed up his/her research in related fields."
+# leader_trait_scientist_ice_type_Particle_Mastery_2:0"Particle Mastery " 
+# leader_trait_scientist_ice_type_Particle_Mastery_2_desc:0"This scientist's mastery of microscopic particles could dramatically speed up his/her research in related fields."
+# leader_trait_scientist_ice_type_Particle_Mastery_3:0"Particle Mastery " 
+# leader_trait_scientist_ice_type_Particle_Mastery_3_desc:0"This scientist's mastery of microscopic particles could dramatically speed up his/her research in related fields."
+# leader_trait_scientist_ice_type_Particle_Mastery_4:0"Particle Mastery " 
+# leader_trait_scientist_ice_type_Particle_Mastery_4_desc:0"This scientist's mastery of microscopic particles could dramatically speed up his/her research in related fields."
+# leader_trait_scientist_ice_type_Particle_Mastery_5:0"Particle Mastery " 
+# leader_trait_scientist_ice_type_Particle_Mastery_5_desc:0"This scientist's mastery of microscopic particles could dramatically speed up his/her research in related fields."
+
+
+# leader_trait_scientist_dark_type_night_owl_2:0"night owl" 
+# leader_trait_scientist_dark_type_night_owl_2_desc:0"Yes, staying up late is bad for your health. While this restless zeal has accelerated his/her research, not even our most advanced medical technology can reverse this scientist's thinning head fur."
+# leader_trait_scientist_dark_type_night_owl_3:0"night owl" 
+# leader_trait_scientist_dark_type_night_owl_3_desc:0"Yes, staying up late is bad for your health. While this restless zeal has accelerated his/her research, not even our most advanced medical technology can reverse this scientist's thinning head fur."
+# leader_trait_scientist_dark_type_night_owl_4:0"night owl" 
+# leader_trait_scientist_dark_type_night_owl_4_desc:0"Yes, staying up late is bad for your health. While this restless zeal has accelerated his/her research, not even our most advanced medical technology can reverse this scientist's thinning head fur."
+# leader_trait_scientist_dark_type_night_owl_5:0"night owl" 
+# leader_trait_scientist_dark_type_night_owl_5_desc:0"Yes, staying up late is bad for your health. While this restless zeal has accelerated his/her research, not even our most advanced medical technology can reverse this scientist's thinning head fur."
+
+
+
+
+# leader_trait_scientist_water_type_Gene_Mastery_1:0"Gene Mastery" 
+# leader_trait_scientist_water_type_Gene_Mastery_1_desc:0"The scientist's ability to control the gene could greatly speed up his/her research in related fields."
+# leader_trait_scientist_water_type_Gene_Mastery_2:0"Gene Mastery" 
+# leader_trait_scientist_water_type_Gene_Mastery_2_desc:0"The scientist's ability to control the gene could greatly speed up his/her research in related fields."
+# leader_trait_scientist_water_type_Gene_Mastery_3:0"Gene Mastery" 
+# leader_trait_scientist_water_type_Gene_Mastery_3_desc:0"The scientist's ability to control the gene could greatly speed up his/her research in related fields."
+# leader_trait_scientist_water_type_Gene_Mastery_4:0"Gene Mastery" 
+# leader_trait_scientist_water_type_Gene_Mastery_4_desc:0"The scientist's ability to control the gene could greatly speed up his/her research in related fields."
+# leader_trait_scientist_water_type_Gene_Mastery_5:0"Gene Mastery" 
+# leader_trait_scientist_water_type_Gene_Mastery_5_desc:0"The scientist's ability to control the gene could greatly speed up his/her research in related fields."
+
+
+
+
+
+
+# leader_trait_scientist_electric_type_Energy_Mastery_1:0"Energy Mastery" 
+# leader_trait_scientist_electric_type_Energy_Mastery_1_desc:0"The scientist's precise manipulation of energy could dramatically speed up his/her research in related fields."
+# leader_trait_scientist_electric_type_Energy_Mastery_2:0"Energy Mastery" 
+# leader_trait_scientist_electric_type_Energy_Mastery_2_desc:0"The scientist's precise manipulation of energy could dramatically speed up his/her research in related fields."
+# leader_trait_scientist_electric_type_Energy_Mastery_3:0"Energy Mastery" 
+# leader_trait_scientist_electric_type_Energy_Mastery_3_desc:0"The scientist's precise manipulation of energy could dramatically speed up his/her research in related fields."
+# leader_trait_scientist_electric_type_Energy_Mastery_4:0"Energy Mastery" 
+# leader_trait_scientist_electric_type_Energy_Mastery_4_desc:0"The scientist's precise manipulation of energy could dramatically speed up his/her research in related fields."
+# leader_trait_scientist_electric_type_Energy_Mastery_5:0"Energy Mastery" 
+# leader_trait_scientist_electric_type_Energy_Mastery_5_desc:0"The scientist's precise manipulation of energy could dramatically speed up his/her research in related fields."
+
+# leader_trait_scientist_fire_type_reacter_calibration_1:0"reacter calibration" 
+# leader_trait_scientist_fire_type_reacter_calibration_1_desc:0"This scientist can directly sense and manipulate high-energy reactions, dramatically increasing the speed of his/her research in related fields."
+# leader_trait_scientist_fire_type_reacter_calibration_2:0"reacter calibration" 
+# leader_trait_scientist_fire_type_reacter_calibration_2_desc:0"This scientist can directly sense and manipulate high-energy reactions, dramatically increasing the speed of his/her research in related fields."
+# leader_trait_scientist_fire_type_reacter_calibration_3:0"reacter calibration" 
+# leader_trait_scientist_fire_type_reacter_calibration_3_desc:0"This scientist can directly sense and manipulate high-energy reactions, dramatically increasing the speed of his/her research in related fields."
+# leader_trait_scientist_fire_type_reacter_calibration_4:0"reacter calibration" 
+# leader_trait_scientist_fire_type_reacter_calibration_4_desc:0"This scientist can directly sense and manipulate high-energy reactions, dramatically increasing the speed of his/her research in related fields."
+# leader_trait_scientist_fire_type_reacter_calibration_5:0"reacter calibration" 
+# leader_trait_scientist_fire_type_reacter_calibration_5_desc:0"This scientist can directly sense and manipulate high-energy reactions, dramatically increasing the speed of his/her research in related fields."
+
+# leader_trait_dark_type_Dark_Templar_1:0"Dark Templar" 
+# leader_trait_dark_type_Dark_Templar_1_desc:0"This general can lead the army using dark type psionic power to create full band invisible force fields,  annihilate the enemy without a trace. "
+# leader_trait_dark_type_Dark_Templar_2:0"Dark Templar" 
+# leader_trait_dark_type_Dark_Templar_2_desc:0"This general can lead the army using dark type psionic power to create full band invisible force fields,  annihilate the enemy without a trace. "
+# leader_trait_dark_type_Dark_Templar_3:0"Dark Templar" 
+# leader_trait_dark_type_Dark_Templar_3_desc:0"This general can lead the army using dark type psionic power to create full band invisible force fields,  annihilate the enemy without a trace. "
+# leader_trait_dark_type_Dark_Templar_4:0"Dark Templar" 
+# leader_trait_dark_type_Dark_Templar_4_desc:0"This general can lead the army using dark type psionic power to create full band invisible force fields,  annihilate the enemy without a trace. "
+# leader_trait_dark_type_Dark_Templar_5:0"Dark Templar" 
+# leader_trait_dark_type_Dark_Templar_5_desc:0"This general can lead the army using dark type psionic power to create full band invisible force fields,  annihilate the enemy without a trace. "
+
+
+# leader_trait_electric_type_Tesla_Commander_1:0"Tesla Commander"
+# leader_trait_electric_type_Tesla_Commander_1_desc:0"this general can lead his troops using electric type psionic power to create electromagnetic storm as an additional attack"
+# leader_trait_electric_type_Tesla_Commander_2:0"Tesla Commander"
+# leader_trait_electric_type_Tesla_Commander_2_desc:0"this general can lead his troops using electric type psionic power to create electromagnetic storm as an additional attack"
+# leader_trait_electric_type_Tesla_Commander_3:0"Tesla Commander"
+# leader_trait_electric_type_Tesla_Commander_3_desc:0"this general can lead his troops using electric type psionic power to create electromagnetic storm as an additional attack"
+# leader_trait_electric_type_Tesla_Commander_4:0"Tesla Commander"
+# leader_trait_electric_type_Tesla_Commander_4_desc:0"this general can lead his troops using electric type psionic power to create electromagnetic storm as an additional attack"
+# leader_trait_electric_type_Tesla_Commander_5:0"Tesla Commander"
+# leader_trait_electric_type_Tesla_Commander_5_desc:0"this general can lead his troops using electric type psionic power to create electromagnetic storm as an additional attack"
+
+
+# leader_trait_grass_type_Production_Construction_Corps_1:0"Production Construction Corps"
+# leader_trait_grass_type_Production_Construction_Corps_1_desc:0"this general can lead his troops using grass type  psionic power to assist in production construction in the spare time ."
+# leader_trait_grass_type_Production_Construction_Corps_2:0"Production Construction Corps"
+# leader_trait_grass_type_Production_Construction_Corps_2_desc:0"this general can lead his troops using grass type  psionic power to assist in production construction in the spare time ."
+# leader_trait_grass_type_Production_Construction_Corps_3:0"Production Construction Corps"
+# leader_trait_grass_type_Production_Construction_Corps_3_desc:0"this general can lead his troops using grass type  psionic power to assist in production construction in the spare time ."
+# leader_trait_grass_type_Production_Construction_Corps_4:0"Production Construction Corps"
+# leader_trait_grass_type_Production_Construction_Corps_4_desc:0"this general can lead his troops using grass type  psionic power to assist in production construction in the spare time ."
+# leader_trait_grass_type_Production_Construction_Corps_5:0"Production Construction Corps"
+# leader_trait_grass_type_Production_Construction_Corps_5_desc:0"this general can lead his troops using grass type  psionic power to assist in production construction in the spare time ."
+
+
+
+# leader_trait_fairy_type_Shared_glory_1:0"Shared glory"
+# leader_trait_fairy_type_Shared_glory_1_desc:0"This leader can use fairy type psionic power to make all soldiers embrace the glory of battle."
+# leader_trait_fairy_type_Shared_glory_2:0"Shared glory"
+# leader_trait_fairy_type_Shared_glory_2_desc:0"This leader can use fairy type psionic power to make all soldiers embrace the glory of battle."
+# leader_trait_fairy_type_Shared_glory_3:0"Shared glory"
+# leader_trait_fairy_type_Shared_glory_3_desc:0"This leader can use fairy type psionic power to make all soldiers embrace the glory of battle."
+# leader_trait_fairy_type_Shared_glory_4:0"Shared glory"
+# leader_trait_fairy_type_Shared_glory_4_desc:0"This leader can use fairy type psionic power to make all soldiers embrace the glory of battle."
+# leader_trait_fairy_type_Shared_glory_5:0"Shared glory"
+# leader_trait_fairy_type_Shared_glory_5_desc:0"This leader can use fairy type psionic power to make all soldiers embrace the glory of battle."
+
+
+
+# leader_trait_governor_fairy_type_Empathy_network_2:0"Empathy Network"
+# leader_trait_governor_fairy_type_Empathy_network_2_desc:0"This leader can coordinate administrative staffs to use psionic powers to create a mental network among the entire population of the sector, greatly increasing administrative efficiency."
+# leader_trait_governor_fairy_type_Empathy_network_3:0"Empathy Network"
+# leader_trait_governor_fairy_type_Empathy_network_3_desc:0"This leader can coordinate administrative staffs to use psionic powers to create a mental network among the entire population of the sector, greatly increasing administrative efficiency."
+# leader_trait_governor_fairy_type_Empathy_network_4:0"Empathy Network"
+# leader_trait_governor_fairy_type_Empathy_network_4_desc:0"This leader can coordinate administrative staffs to use psionic powers to create a mental network among the entire population of the sector, greatly increasing administrative efficiency."
+# leader_trait_governor_fairy_type_Empathy_network_5:0"Empathy Network"
+# leader_trait_governor_fairy_type_Empathy_network_5_desc:0"This leader can coordinate administrative staffs to use psionic powers to create a mental network among the entire population of the sector, greatly increasing administrative efficiency."
+
+# leader_trait_governor_fairy_type_Cloud_brain_services_1:0"Cloud brain services"
+# leader_trait_governor_fairy_type_Cloud_brain_services_1_desc:0"This cerebrate can use fairy type psionic power to establish additional mind connections between drones, maximize the computational power of each drone's brain and monitor drones in real time."
+
+
+# leader_trait_governor_dark_type_necessary_evil_1:0"Mean Look"
+# leader_trait_governor_dark_type_necessary_evil_1_desc:0"This leader's dark type power can strike directly at the mind, and no one is willing to leave under his gaze until a consensus is reached."
+# leader_trait_governor_dark_type_necessary_evil_2:0"Necessary Evil"
+# leader_trait_governor_dark_type_necessary_evil_2_desc:0"This leader can coordinate the administration staffs to use  dark type psionic power to force the conscript without negative effects, and the conscript will be willing to go to work or fight unknowingly."
+# leader_trait_governor_dark_type_necessary_evil_3:0"Necessary Evil"
+# leader_trait_governor_dark_type_necessary_evil_3_desc:0"This leader can coordinate the administration staffs to use  dark type psionic power to force the conscript without negative effects, and the conscript will be willing to go to work or fight unknowingly."
+# leader_trait_governor_dark_type_necessary_evil_4:0"Necessary Evil"
+# leader_trait_governor_dark_type_necessary_evil_4_desc:0"This leader can coordinate the administration staffs to use  dark type psionic power to force the conscript without negative effects, and the conscript will be willing to go to work or fight unknowingly."
+# leader_trait_governor_dark_type_necessary_evil_5:0"Necessary Evil"
+# leader_trait_governor_dark_type_necessary_evil_5_desc:0"This leader can coordinate the administration staffs to use  dark type psionic power to force the conscript without negative effects, and the conscript will be willing to go to work or fight unknowingly."
+# leader_trait_governor_dark_type_Self_cognition_control_1:0"Self cognition control"
+# leader_trait_governor_dark_type_Self_cognition_control_2:0"Self cognition control"
+# leader_trait_governor_dark_type_Self_cognition_control_3:0"Self cognition control"
+# leader_trait_governor_dark_type_Self_cognition_control_4:0"Self cognition control"
+# leader_trait_governor_dark_type_Self_cognition_control_5:0"Self cognition control"
+# leader_trait_governor_dark_type_Self_cognition_control_1_desc:0"This cerebrate can use dark type psionic power to change the subconscious mind of drones, let the drones's loyalty to the Swarm not completely rely on the control of pokeballs and increase the self processing ability of drones."
+# leader_trait_governor_dark_type_Self_cognition_control_2_desc:0"This cerebrate can use dark type psionic power to change the subconscious mind of drones, let the drones's loyalty to the Swarm not completely rely on the control of pokeballs and increase the self processing ability of drones."
+# leader_trait_governor_dark_type_Self_cognition_control_3_desc:0"This cerebrate can use dark type psionic power to change the subconscious mind of drones, let the drones's loyalty to the Swarm not completely rely on the control of pokeballs and increase the self processing ability of drones."
+# leader_trait_governor_dark_type_Self_cognition_control_4_desc:0"This cerebrate can use dark type psionic power to change the subconscious mind of drones, let the drones's loyalty to the Swarm not completely rely on the control of pokeballs and increase the self processing ability of drones."
+# leader_trait_governor_dark_type_Self_cognition_control_5_desc:0"This cerebrate can use dark type psionic power to change the subconscious mind of drones, let the drones's loyalty to the Swarm not completely rely on the control of pokeballs and increase the self processing ability of drones."
+
+
+# leader_trait_governor_ice_type_nano_builder_2:0"nano builder"
+# leader_trait_governor_ice_type_nano_builder_2_desc:0"This leader can coordinate the builders to use ice type psionic powers to directly sense and manipulate microscopic particles, greatly increasing the efficiency of construction."
+# leader_trait_governor_ice_type_nano_builder_3:0"nano builder"
+# leader_trait_governor_ice_type_nano_builder_3_desc:0"This leader can coordinate the builders to use ice type psionic powers to directly sense and manipulate microscopic particles, greatly increasing the efficiency of construction."
+# leader_trait_governor_ice_type_nano_builder_4:0"nano builder"
+# leader_trait_governor_ice_type_nano_builder_4_desc:0"This leader can coordinate the builders to use ice type psionic powers to directly sense and manipulate microscopic particles, greatly increasing the efficiency of construction."
+# leader_trait_governor_ice_type_nano_builder_5:0"nano builder"
+# leader_trait_governor_ice_type_nano_builder_5_desc:0"This leader can coordinate the builders to use ice type psionic powers to directly sense and manipulate microscopic particles, greatly increasing the efficiency of construction."
+
+
+# #leader_trait_water_type_Steady_Stream_1:0"Steady Stream"
+# #leader_trait_water_type_Steady_Stream_1_desc:0"The leader's water type psionic talent can greatly improve his cell vitality, reduce the rate of cell aging, and greatly increase his life expectancy."
+# #leader_trait_water_type_Steady_Stream_2:0"Steady Stream"
+# #leader_trait_water_type_Steady_Stream_2_desc:0"The leader's water type psionic talent can greatly improve his cell vitality, reduce the rate of cell aging, and greatly increase his life expectancy."
+# #leader_trait_water_type_Steady_Stream_3:0"Steady Stream"
+# #leader_trait_water_type_Steady_Stream_3_desc:0"The leader's water type psionic talent can greatly improve his cell vitality, reduce the rate of cell aging, and greatly increase his life expectancy."
+# #leader_trait_water_type_Steady_Stream_4:0"Steady Stream"
+# #leader_trait_water_type_Steady_Stream_4_desc:0"The leader's water type psionic talent can greatly improve his cell vitality, reduce the rate of cell aging, and greatly increase his life expectancy."
+# #leader_trait_water_type_Steady_Stream_5:0"Steady Stream"
+# #leader_trait_water_type_Steady_Stream_5_desc:0"The leader's water type psionic talent can greatly improve his cell vitality, reduce the rate of cell aging, and greatly increase his life expectancy."
+# #leader_trait_water_type_Steady_Stream_6:0"Steady Stream"
+# #leader_trait_water_type_Steady_Stream_6_desc:0"The leader's water type psionic talent can greatly improve his cell vitality, reduce the rate of cell aging, and greatly increase his life expectancy."
+# #leader_trait_water_type_Steady_Stream_7:0"Steady Stream"
+# #leader_trait_water_type_Steady_Stream_7_desc:0"The leader's water type psionic talent can greatly improve his cell vitality, reduce the rate of cell aging, and greatly increase his life expectancy."
+# #leader_trait_water_type_Steady_Stream_8:0"Steady Stream"
+# #leader_trait_water_type_Steady_Stream_8_desc:0"The leader's water type psionic talent can greatly improve his cell vitality, reduce the rate of cell aging, and greatly increase his life expectancy."
+# #leader_trait_water_type_Steady_Stream_9:0"Steady Stream"
+# #leader_trait_water_type_Steady_Stream_9_desc:0"The leader's water type psionic talent can greatly improve his cell vitality, reduce the rate of cell aging, and greatly increase his life expectancy."
+# #leader_trait_water_type_Steady_Stream_10:0"Steady Stream"
+# #leader_trait_water_type_Steady_Stream_10_desc:0"The leader's water type psionic talent can greatly improve his cell vitality, reduce the rate of cell aging, and greatly increase his life expectancy."
+

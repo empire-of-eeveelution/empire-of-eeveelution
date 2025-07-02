@@ -40,10 +40,7 @@ leader_trait_dark_type_Void_Stutter_1 = {  #恶系指挥官
 		fleet_mia_time_mult = -0.5
 
 	}
-	# triggered_fleet_modifier = {
-	# 	# potential = { has_first_contact_dlc = yes }
-	# 	ship_cloaking_strength_add = 1
-	# }
+
 	leader_class = { commander }
 	initial = no
 	randomized = no
@@ -55,8 +52,9 @@ leader_trait_ice_type_Directed_molecular_activation_1 = {  #冰系指挥官
 
 	icon = "gfx/interface/icons/EeveelutionTypes/ice_type.png"
 	fleet_modifier = {
-		ship_hull_mult = 0.15
+		ship_hull_mult = 0.25
 		ship_armor_mult = 0.15
+		ship_armor_hardening_add = 0.2
 		# ship_shield_mult = 0.2
 		ship_hull_regen_add_perc = 0.02
 		ship_armor_regen_add_perc = 0.02
@@ -137,31 +135,16 @@ leader_trait_admiral_fairy_type_1 = { #仙系战略家
 	icon = "gfx/interface/icons/EeveelutionTypes/fairy_type.png"
 	#councilor_trait = yes
 	councilor_modifier = {
-		# ship_fire_rate_mult = 0.1
 		commander_exp_gain = 0.2
-		# commander_initial_skill = 1
 		ship_starting_experience_add = 200
 		starbase_shipyard_build_speed_mult = 0.10
 		starbase_shipyard_build_cost_mult = -0.05
 	}
 
-	triggered_fleet_modifier = {
-		potential = {
-			NOT = {
-				has_ethic = ethic_gestalt_consciousness
-			}
-		}
+	fleet_modifier = {
 		command_limit_add = 50
-		# ship_fire_rate_mult = 0.1
 	}
 
-	triggered_fleet_modifier = {
-		potential = {
-			has_ethic = ethic_gestalt_consciousness
-		}
-		command_limit_add = 100
-		# ship_fire_rate_mult = 0.2
-	}
 
 	leader_class = { commander }
 	initial = no

@@ -49,10 +49,10 @@ EOE_edict_leader_trait_dark_type_Void_Stutter_1_pick = {  #恶系指挥官
 
 	resources = {
 		category = edicts
-		cost = {
-			unity = 10
-			multiplier = value:edict_size_effect
-		}
+		# cost = {
+		# 	unity = 10
+		# 	multiplier = value:edict_size_effect
+		# }
 		upkeep = {
 			unity = 10
 			multiplier = value:edict_size_effect
@@ -89,10 +89,10 @@ EOE_edict_leader_trait_ice_type_Directed_molecular_activation_1_pick = {  #冰�
 
 	resources = {
 		category = edicts
-		cost = {
-			unity = 10
-			multiplier = value:edict_size_effect
-		}
+		# cost = {
+		# 	unity = 10
+		# 	multiplier = value:edict_size_effect
+		# }
 		upkeep = {
 			unity = 10
 			multiplier = value:edict_size_effect
@@ -129,10 +129,10 @@ EOE_edict_leader_trait_fire_type_Instantaneous_entropy_increase_1_pick = {  #火
 
 	resources = {
 		category = edicts
-		cost = {
-			unity = 10
-			multiplier = value:edict_size_effect
-		}
+		# cost = {
+		# 	unity = 10
+		# 	multiplier = value:edict_size_effect
+		# }
 		upkeep = {
 			unity = 10
 			multiplier = value:edict_size_effect
@@ -169,10 +169,10 @@ EOE_edict_leader_trait_admiral_fairy_type_1_pick = {  #仙系指挥官
 
 	resources = {
 		category = edicts
-		cost = {
-			unity = 10
-			multiplier = value:edict_size_effect
-		}
+		# cost = {
+		# 	unity = 10
+		# 	multiplier = value:edict_size_effect
+		# }
 		upkeep = {
 			unity = 10
 			multiplier = value:edict_size_effect
@@ -209,10 +209,10 @@ EOE_edict_leader_trait_scientist_psychic_type_psionic_benefits_1_pick = {  #超�
 
 	resources = {
 		category = edicts
-		cost = {
-			unity = 10
-			multiplier = value:edict_size_effect
-		}
+		# cost = {
+		# 	unity = 10
+		# 	multiplier = value:edict_size_effect
+		# }
 		upkeep = {
 			unity = 10
 			multiplier = value:edict_size_effect
@@ -249,10 +249,10 @@ EOE_edict_leader_trait_scientist_water_type_1_pick = {  #水系科学家
 
 	resources = {
 		category = edicts
-		cost = {
-			unity = 10
-			multiplier = value:edict_size_effect
-		}
+		# cost = {
+		# 	unity = 10
+		# 	multiplier = value:edict_size_effect
+		# }
 		upkeep = {
 			unity = 10
 			multiplier = value:edict_size_effect
@@ -289,10 +289,10 @@ EOE_edict_leader_trait_scientist_dark_type_night_owl_1_pick = {  #恶系科学�
 
 	resources = {
 		category = edicts
-		cost = {
-			unity = 10
-			multiplier = value:edict_size_effect
-		}
+		# cost = {
+		# 	unity = 10
+		# 	multiplier = value:edict_size_effect
+		# }
 		upkeep = {
 			unity = 10
 			multiplier = value:edict_size_effect
@@ -329,10 +329,10 @@ EOE_edict_leader_trait_scientist_electric_type_1_pick = {  #电系科学家
 
 	resources = {
 		category = edicts
-		cost = {
-			unity = 10
-			multiplier = value:edict_size_effect
-		}
+		# cost = {
+		# 	unity = 10
+		# 	multiplier = value:edict_size_effect
+		# }
 		upkeep = {
 			unity = 10
 			multiplier = value:edict_size_effect
@@ -369,10 +369,10 @@ EOE_edict_leader_trait_governor_fairy_type_Empathy_network_1_pick = {  #仙系�
 
 	resources = {
 		category = edicts
-		cost = {
-			unity = 10
-			multiplier = value:edict_size_effect
-		}
+		# cost = {
+		# 	unity = 10
+		# 	multiplier = value:edict_size_effect
+		# }
 		upkeep = {
 			unity = 10
 			multiplier = value:edict_size_effect
@@ -409,10 +409,10 @@ EOE_edict_leader_trait_governor_ice_type_nano_builder_1_pick = {  #冰系总督
 
 	resources = {
 		category = edicts
-		cost = {
-			unity = 10
-			multiplier = value:edict_size_effect
-		}
+		# cost = {
+		# 	unity = 10
+		# 	multiplier = value:edict_size_effect
+		# }
 		upkeep = {
 			unity = 10
 			multiplier = value:edict_size_effect
@@ -449,10 +449,10 @@ EOE_edict_leader_trait_governor_grass_type_Plants_vs_Aliens_1_pick = {  #草系�
 
 	resources = {
 		category = edicts
-		cost = {
-			unity = 10
-			multiplier = value:edict_size_effect
-		}
+		# cost = {
+		# 	unity = 10
+		# 	multiplier = value:edict_size_effect
+		# }
 		upkeep = {
 			unity = 10
 			multiplier = value:edict_size_effect
@@ -489,10 +489,10 @@ EOE_edict_leader_trait_governor_water_type_1_pick = {  #水系总督
 
 	resources = {
 		category = edicts
-		cost = {
-			unity = 10
-			multiplier = value:edict_size_effect
-		}
+		# cost = {
+		# 	unity = 10
+		# 	multiplier = value:edict_size_effect
+		# }
 		upkeep = {
 			unity = 10
 			multiplier = value:edict_size_effect

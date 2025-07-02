@@ -1,3 +1,51 @@
 concept_ap_mega_evolution_EOE = {
     icon ="gfx/interface/icons/ascension_perks/ap_mega_evolution_EOE.dds"
 }
+
+concept_leader_trait_admiral_fairy_type_1 = {
+    icon ="gfx/interface/icons/EeveelutionTypes/fairy_type.png"
+}
+
+concept_leader_trait_dark_type_Void_Stutter_1 = {
+    icon ="gfx/interface/icons/EeveelutionTypes/dark_type.png"
+}
+
+concept_leader_trait_ice_type_Directed_molecular_activation_1 = {
+    icon ="gfx/interface/icons/EeveelutionTypes/ice_type.png"
+}
+
+concept_leader_trait_fire_type_Instantaneous_entropy_increase_1 = {
+    icon ="gfx/interface/icons/EeveelutionTypes/fire_type.png"
+}
+
+concept_leader_trait_scientist_psychic_type_psionic_benefits_1 = {
+    icon ="gfx/interface/icons/EeveelutionTypes/psychic_type.png"
+}
+
+concept_leader_trait_scientist_water_type_1 = {
+    icon ="gfx/interface/icons/EeveelutionTypes/water_type.png"
+}
+
+concept_leader_trait_scientist_dark_type_night_owl_1 = {
+    icon ="gfx/interface/icons/EeveelutionTypes/dark_type.png"
+}
+
+concept_leader_trait_scientist_electric_type_1 = {
+    icon ="gfx/interface/icons/EeveelutionTypes/electric_type.png"
+}
+
+concept_leader_trait_governor_fairy_type_Empathy_network_1 = {
+    icon ="gfx/interface/icons/EeveelutionTypes/fairy_type.png"
+}
+
+concept_leader_trait_governor_ice_type_nano_builder_1 = {
+    icon ="gfx/interface/icons/EeveelutionTypes/ice_type.png"
+}
+
+concept_leader_trait_governor_grass_type_Plants_vs_Aliens_1 = {
+    icon ="gfx/interface/icons/EeveelutionTypes/grass_type.png"
+}
+
+concept_leader_trait_governor_water_type_1 = {
+    icon ="gfx/interface/icons/EeveelutionTypes/water_type.png"
+}
