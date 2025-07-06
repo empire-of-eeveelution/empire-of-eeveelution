@@ -1552,7 +1552,7 @@ fleet_event = {
 
 # the pokeball 巨像武器，35-36
 planet_event = {
-	id = eevent.35
+	id = eevent.35    #大师球抓星球
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -1587,7 +1587,7 @@ planet_event = {
 			}
 			# Generate threat
 			add_threat = { who = from.owner amount = 3 }
-			# modifier for allies + those upset by robots
+			# modifier for allies + those upset by robots 与机器人无关，只减平等主义者的评价
 			every_country = {
 				limit = {
 					NOR = {
@@ -1607,12 +1607,12 @@ planet_event = {
 							has_federation = yes
 							is_in_federation_with = root.owner
 						}
-						has_ai_personality = awakened_fallen_empire_spiritualist
+						# has_ai_personality = awakened_fallen_empire_spiritualist 与机器人无关
 						AND = {
 							is_country_type = default
 							OR = {
 								is_egalitarian = yes
-								is_spiritualist = yes
+								# is_spiritualist = yes   与机器人无关
 							}
 						}
 					}
@@ -2120,25 +2120,25 @@ planet_event = {  ##修改自原版的地爆天星planet_destruction.100
 						}
 					}
 					#######################################这里不一样，杀灭绝不减评价↓
+					# if = {    烧非宜居也不减评价，下面从else_if改成if
+					# 	limit = { 
+					# 		root = { is_colony = no }
+					# 			root.owner = { 
+					# 				NOR = {
+					# 				has_civic = civic_fanatic_purifiers
+					# 				has_civic = civic_machine_terminator
+					# 				has_civic = civic_hive_devouring_swarm
+					# 			} 
+					# 		}
+					
+					# }
+					# 	add_opinion_modifier = {
+					# 		modifier = opinion_burned_an_uninhabited_world
+					# 		who = from.owner
+					# 	}
+					# }
+					
 					if = {
-						limit = { 
-							root = { is_colony = no }
-								root.owner = { 
-									NOR = {
-									has_civic = civic_fanatic_purifiers
-									has_civic = civic_machine_terminator
-									has_civic = civic_hive_devouring_swarm
-								} 
-							}
-					
-					}
-						add_opinion_modifier = {
-							modifier = opinion_burned_an_uninhabited_world
-							who = from.owner
-						}
-					}
-					
-					else_if = {
 						limit = { 
 							root = { is_colony = yes }
 								root.owner = { 

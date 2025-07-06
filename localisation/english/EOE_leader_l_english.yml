@@ -17,6 +17,13 @@ leader_trait_EOE_Plant_master_desc:0 "This leader has specialized in the field o
 leader_trait_EOE_Mind_Controlled:0"Thought Enforcement"
 leader_trait_EOE_Mind_Controlled_desc:0"To ensure his absolute loyalty to us, The researcher has been controled by our pokeball technologies.This will also make him lose most of his subjective initiative, only know to complete the set tasks under the orders of others. Obviously he is no longer suitable for leading scientific research, but his profound knowledge makes him a good mental laborer. "
 
+
+lotus_hezi_catch_phrase:0 "I will dedicate everything I have to Imperial research."
+lotus_hezi_backstory:0 "Severely injured in a radiation accident, she unexpectedly activated the genetic modifications she had previously been 'volunteered' to undergo. While physical pain failed to break her, the theft of her academic achievements shattered her hope. Escaping the Curator Enclave's station wracked with injuries, she wished only to spend what little remained of her life with her family..."
+lotus_okra_catch_phrase:0 "Woo-hoo! Finally free to pick flowers wherever I roam."
+lotus_okra_backstory:0 "A student at the Curator Enclave. After being infected during contact with an ancient ruin, her subsequent cure left her incredibly energetic, possessing an uncannily accurate intuition for biological research topics. She carries a flute used to manipulate plants."
+
+
 leader_trait_scientist_nuclear_type:0 "Nuclear Type"
 leader_trait_scientist_nuclear_type_desc:0 "This scientist was once forced to participate in a curator's genetic modification project, and mutated in a fatal irradiation accident. No one knows what happened in her body. After deceived by her curator supervisor, she decide to fled back to her motherland with exceeding intelligence and sequelaes of gene collapse, and vow to devote her short life to her motherland..."
 leader_trait_scientist_nuclear_type_cured:0"Cured Nuclear Type"

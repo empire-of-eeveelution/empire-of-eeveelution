@@ -644,6 +644,7 @@ concept_ap_mega_EOE_desc:0 "-$ap_mega_evolution_EOE_modifier_desc$\n$ap_mega_evo
 #EOE_not_enough_soc_produce:0 "Insufficient Sociology Research output to enable this approach.\nRequires at least §R4166 / Current Research Multiplier§! Sociology Research output."
 endless_evolution_stage:0 "Endless Evolution: Researching"
 endless_evolution_complete:0 "$species_trait_points_add$: §G+1§!"
+situatiuon_endless_evolution_type:0 "Direct 50% of Society Research to $situation_endless_evolution$"
 
 ######################20250701添加：
 ######COMMANDER

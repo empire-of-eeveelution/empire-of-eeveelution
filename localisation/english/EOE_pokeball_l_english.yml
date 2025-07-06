@@ -30,6 +30,7 @@ EOE_Membrane_fold_effect:0"Increases the damage of §Ycapture orbit bombing§! b
 EOE_Membrane_fold_effect_desc:0"Two 50% increase is calculated by addition."
 EOE_catched_disengage:0"Remote recall device"
 EOE_masterball:0"Masterball"
+EOE_masterball_cap:0"Masterball"
 EOE_masterball_plural:0"Masterballs"
 NAME_EOE_masterball:0"Masterball"
 EOE_masterball_REACTOR:0"MasterBall Energy Core"

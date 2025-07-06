@@ -30,6 +30,8 @@ EOE_Membrane_fold_effect:0"将§H捕捉式轨道轰炸§!的伤害提高§G50%§
 EOE_Membrane_fold_effect_desc:0"两次提高§G50%§!按加法计算，总计提高§G100%§!"
 NAME_EOE_masterball:0"大师球"
 EOE_masterball:0"大师球"
+EOE_masterball_cap:0"大师球"
+EOE_masterball_plural:0"大师球"
 EOE_masterball_REACTOR:0"大师球能量核心"
 EOE_masterball_REACTOR_DESC:0"大师球相当于一次性使用的巨像，可以捕捉一整颗星球。\n§R完成捕捉后的大师球会被消耗§!"
 EOE_masterball_JUMP_DRIVE:0"大师球发射装置"
