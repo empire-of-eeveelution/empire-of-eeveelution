@@ -5636,9 +5636,9 @@ country_event = {
 			any_owned_pop_species = {
 				has_trait = trait_fairy_type_mega_evolution
 			}
-			any_owned_pop_species = {
-				has_trait = trait_fairy_type_mega_evolution_swarm
-			}
+			# any_owned_pop_species = {
+			# 	has_trait = trait_fairy_type_mega_evolution_swarm
+			# }
 		}
 	}
 	immediate = {
@@ -5719,9 +5719,9 @@ country_event = {
 			any_owned_pop_species = {
 				has_trait = trait_dark_type_mega_evolution
 			}
-			any_owned_pop_species = {
-				has_trait = trait_dark_type_mega_evolution_swarm
-			}
+			# any_owned_pop_species = {
+			# 	has_trait = trait_dark_type_mega_evolution_swarm
+			# }
 		}
 	}
 	immediate = {
@@ -5816,49 +5816,103 @@ country_event = {   #一级随机上特质
 					modifier = {
 						factor = 0
 						OR = {
+						has_trait = leader_trait_scientist_psychic_type_psionic_benefits_1
+						NOT= {
+							owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+						}
+					}
+					}
+					modifier = {
+						factor = 10
+						NOR = {
+						has_trait = leader_trait_scientist_psychic_type_psionic_benefits_1
+						NOT= {
+							owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+						}
+					}
+						owner = { has_edict = EOE_edict_leader_trait_scientist_psychic_type_psionic_benefits_1_pick }
+					}
+					add_trait = { trait = leader_trait_scientist_psychic_type_psionic_benefits_1 }
+					set_leader_flag = EOE_LV1_leader_trait_gived
+						
+			}
+
+			1 ={ 
+				modifier = {
+					factor = 0
+					OR = {
 						has_trait = leader_trait_scientist_water_type_1
 						NOT= {
 							owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
 						}
 					}
+				}
+				modifier = {
+					factor = 10
+					NOR = {
+						has_trait = leader_trait_scientist_water_type_1
+						NOT= {
+							owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+						}
 					}
-					add_trait = { trait = leader_trait_scientist_water_type_1 }
-					set_leader_flag = EOE_LV1_leader_trait_gived
-						
+					owner = { has_edict = EOE_edict_leader_trait_scientist_water_type_1_pick }
+				}
+				add_trait = { trait = leader_trait_scientist_water_type_1 }
+				set_leader_flag = EOE_LV1_leader_trait_gived
 			}
+
 			1 ={ 
 				modifier = {
 					factor = 0
 					OR = {
 						has_trait = leader_trait_scientist_dark_type_night_owl_1
-					NOT= {
-						owner = {any_owned_pop_species = {OR ={
-							has_trait = trait_dark_type_mega_evolution
-							has_trait = trait_dark_type_mega_evolution_swarm
-						}}}
+						NOT= {
+							owner = {any_owned_pop_species = {
+								has_trait = trait_dark_type_mega_evolution
+								# has_trait = trait_dark_type_mega_evolution_swarm
+							}}
+						}
 					}
+				}
+				modifier = {
+					factor = 10
+					NOR = {
+						has_trait = leader_trait_scientist_dark_type_night_owl_1
+						NOT= {
+							owner = {any_owned_pop_species = {
+								has_trait = trait_dark_type_mega_evolution
+							}}
+						}
 					}
-					
+					owner = { has_edict = EOE_edict_leader_trait_scientist_dark_type_night_owl_1_pick }
 				}
 				add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
 				set_leader_flag = EOE_LV1_leader_trait_gived
-					
-		}
-		1 ={ 
-			modifier = {
-				factor = 0
-				OR = {
-					has_trait = leader_trait_scientist_electric_type_1
-					NOT= {
-						owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
+			}
+			1 ={ 
+				modifier = {
+					factor = 0
+					OR = {
+						has_trait = leader_trait_scientist_electric_type_1
+						NOT= {
+							owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
+						}
 					}
 				}
-				
+				modifier = {
+					factor = 10
+					NOR = {
+						has_trait = leader_trait_scientist_electric_type_1
+						NOT= {
+							owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
+						}
+					}
+					owner = { has_edict = EOE_edict_leader_trait_scientist_electric_type_1_pick }
+				}
+				add_trait = { trait = leader_trait_scientist_electric_type_1 }
+				set_leader_flag = EOE_LV1_leader_trait_gived
 			}
-			add_trait = { trait = leader_trait_scientist_electric_type_1 }
-			set_leader_flag = EOE_LV1_leader_trait_gived
-				
-	}
+			
 
 			}
 		}
@@ -5870,55 +5924,95 @@ country_event = {   #一级随机上特质
 				}
 			}
 			random_list = {
+
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_dark_type_Void_Stutter_1
+							NOT= {
+								owner = {
+									any_owned_pop_species = {
+									has_trait = trait_dark_type_mega_evolution
+									}
+								}
+							}
+						}
+					}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_dark_type_Void_Stutter_1
+							NOT= {
+								owner = {
+									any_owned_pop_species = {
+									has_trait = trait_dark_type_mega_evolution
+									}
+								}
+							}
+						}
+						owner = { has_edict = EOE_edict_leader_trait_dark_type_Void_Stutter_1_pick }
+					}
+					add_trait = { trait = leader_trait_dark_type_Void_Stutter_1 }
+					set_leader_flag = EOE_LV1_leader_trait_gived
+				}
+
 				1 ={ 
 					modifier = {
 						factor = 0
 						OR = {
 							has_trait = leader_trait_ice_type_Directed_molecular_activation_1
-						NOT= {
-							owner = {any_owned_pop_species = {OR ={
-								has_trait = trait_ice_type_mega_evolution
-								has_trait = trait_ice_type_mega_evolution_swarm
-							}}}
+							NOT= {
+								owner = {
+									any_owned_pop_species = {
+									has_trait = trait_ice_type_mega_evolution
+									}
+								}
+							}
 						}
+					}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_ice_type_Directed_molecular_activation_1
+							NOT= {
+								owner = {
+									any_owned_pop_species = {
+									has_trait = trait_ice_type_mega_evolution
+									}
+								}
+							}
 						}
-						
+						owner = { has_edict = EOE_edict_leader_trait_ice_type_Directed_molecular_activation_1_pick }
 					}
 					add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
 					set_leader_flag = EOE_LV1_leader_trait_gived
-					
+				}
 				
-			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
-					NOT= {
-						owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
+							}
+						}
 					}
-				}
-					
-				}
-				add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
-				set_leader_flag = EOE_LV1_leader_trait_gived
-				
-		}
-		1 ={ 
-			modifier = {
-				factor = 0
-				OR = {
-					has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
-					NOT= {
-						owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
+							}
+						}
+						owner = { has_edict = EOE_edict_leader_trait_fire_type_Instantaneous_entropy_increase_1_pick }
 					}
+					add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
+					set_leader_flag = EOE_LV1_leader_trait_gived
 				}
-				
-			}
-			add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
-			set_leader_flag = EOE_LV1_leader_trait_gived
-			
-	}
+
 				1 ={
 					modifier = {
 						factor = 0
@@ -5927,19 +6021,28 @@ country_event = {   #一级随机上特质
 							NOT= {
 								owner = {
 									any_owned_pop_species = {
-									OR = {
 									has_trait = trait_fairy_type_mega_evolution 
-									has_trait = trait_fairy_type_mega_evolution_swarm 
+									}
 								}
 							}
 						}
+					}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_admiral_fairy_type_1
+							NOT= {
+								owner = {
+									any_owned_pop_species = {
+									has_trait = trait_fairy_type_mega_evolution 
+									}
+								}
 							}
 						}
-
+						owner = { has_edict = EOE_edict_leader_trait_admiral_fairy_type_1_pick }
 					}
 					add_trait = { trait = leader_trait_admiral_fairy_type_1 }
 					set_leader_flag = EOE_LV1_leader_trait_gived
-
 				}
 
 
@@ -5954,55 +6057,111 @@ country_event = {   #一级随机上特质
 				}
 			}
 			random_list = {
+				#leader_trait_governor_fairy_type_Empathy_network_1
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_governor_fairy_type_Empathy_network_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+							}
+						}
+					}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_governor_fairy_type_Empathy_network_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+							}
+						}
+						owner = { has_edict = EOE_edict_leader_trait_governor_fairy_type_Empathy_network_1_pick }
+					}
+					add_trait = { trait = leader_trait_governor_fairy_type_Empathy_network_1 }
+					set_leader_flag = EOE_LV1_leader_trait_gived
+				}
+
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+							}
+						}
+					}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+							}
+						}
+						owner = { has_edict = EOE_edict_leader_trait_governor_grass_type_Plants_vs_Aliens_1_pick }
+					}
+					add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
+					set_leader_flag = EOE_LV1_leader_trait_gived
+				}
+				
 				1 ={ 
 					modifier = {
 						factor = 0
 						OR = {
 							has_trait = leader_trait_governor_ice_type_nano_builder_1
-						NOT= {
-							owner = {any_owned_pop_species = {OR ={
-								has_trait = trait_ice_type_mega_evolution
-								has_trait = trait_ice_type_mega_evolution_swarm
-							}}}
+							NOT= {
+								owner = {
+									any_owned_pop_species = {
+									has_trait = trait_ice_type_mega_evolution
+									}
+								}
+							}
 						}
+					}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_governor_ice_type_nano_builder_1
+							NOT= {
+								owner = {
+									any_owned_pop_species = {
+									has_trait = trait_ice_type_mega_evolution
+									}
+								}
+							}
 						}
-						
+						owner = { has_edict = EOE_edict_leader_trait_governor_ice_type_nano_builder_1_pick }
 					}
 					add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
 					set_leader_flag = EOE_LV1_leader_trait_gived
-						
-				
-			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_governor_dark_type_necessary_evil_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
+				}
+
+
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_governor_water_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+							}
 						}
 					}
-					
-				}
-					add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_governor_water_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+							}
+						}
+						owner = { has_edict = EOE_edict_leader_trait_governor_water_type_1_pick }
+					}
+					add_trait = { trait = leader_trait_governor_water_type_1 }
 					set_leader_flag = EOE_LV1_leader_trait_gived
-					
-		}
-		1 ={ 
-			modifier = {
-				factor = 0
-				OR = {
-					has_trait = leader_trait_governor_water_type_1
-				NOT= {
-					owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
 				}
-				}
-				
-			}
-				add_trait = { trait = leader_trait_governor_water_type_1 }
-				set_leader_flag = EOE_LV1_leader_trait_gived
-			
-	}
 
 			}
 			
@@ -6023,46 +6182,103 @@ country_event = {   #一级随机上特质
 						modifier = {
 							factor = 0
 							OR = {
+							has_trait = leader_trait_scientist_psychic_type_psionic_benefits_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+							}
+						}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+							has_trait = leader_trait_scientist_psychic_type_psionic_benefits_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+							}
+						}
+							owner = { has_edict = EOE_edict_leader_trait_scientist_psychic_type_psionic_benefits_1_pick }
+						}
+						add_trait = { trait = leader_trait_scientist_psychic_type_psionic_benefits_1 }
+						set_leader_flag = EOE_LV1_leader_trait_gived
+							
+				}
+	
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
 							has_trait = leader_trait_scientist_water_type_1
 							NOT= {
 								owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
 							}
 						}
+					}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_scientist_water_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+							}
 						}
-						add_trait = { trait = leader_trait_scientist_water_type_1 }
-						set_leader_flag = EOE_LV1_leader_trait_gived
-							
+						owner = { has_edict = EOE_edict_leader_trait_scientist_water_type_1_pick }
+					}
+					add_trait = { trait = leader_trait_scientist_water_type_1 }
+					set_leader_flag = EOE_LV1_leader_trait_gived
 				}
+	
 				1 ={ 
 					modifier = {
 						factor = 0
 						OR = {
 							has_trait = leader_trait_scientist_dark_type_night_owl_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
+							NOT= {
+								owner = {any_owned_pop_species = {
+									has_trait = trait_dark_type_mega_evolution
+									# has_trait = trait_dark_type_mega_evolution_swarm
+								}}
+							}
 						}
+					}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_scientist_dark_type_night_owl_1
+							NOT= {
+								owner = {any_owned_pop_species = {
+									has_trait = trait_dark_type_mega_evolution
+								}}
+							}
 						}
-						
+						owner = { has_edict = EOE_edict_leader_trait_scientist_dark_type_night_owl_1_pick }
 					}
 					add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
 					set_leader_flag = EOE_LV1_leader_trait_gived
-						
-			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_scientist_electric_type_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
+				}
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_scientist_electric_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
+							}
 						}
 					}
-					
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_scientist_electric_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
+							}
+						}
+						owner = { has_edict = EOE_edict_leader_trait_scientist_electric_type_1_pick }
+					}
+					add_trait = { trait = leader_trait_scientist_electric_type_1 }
+					set_leader_flag = EOE_LV1_leader_trait_gived
 				}
-				add_trait = { trait = leader_trait_scientist_electric_type_1 }
-				set_leader_flag = EOE_LV1_leader_trait_gived
-					
-		}
+				
 	
 				}
 			}
@@ -6074,55 +6290,95 @@ country_event = {   #一级随机上特质
 					}
 				}
 				random_list = {
+	
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_dark_type_Void_Stutter_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_dark_type_mega_evolution
+										}
+									}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_dark_type_Void_Stutter_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_dark_type_mega_evolution
+										}
+									}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_dark_type_Void_Stutter_1_pick }
+						}
+						add_trait = { trait = leader_trait_dark_type_Void_Stutter_1 }
+						set_leader_flag = EOE_LV1_leader_trait_gived
+					}
+	
 					1 ={ 
 						modifier = {
 							factor = 0
 							OR = {
 								has_trait = leader_trait_ice_type_Directed_molecular_activation_1
-							NOT= {
-								owner = {any_owned_pop_species = {OR ={
-								has_trait = trait_ice_type_mega_evolution
-								has_trait = trait_ice_type_mega_evolution_swarm
-							}}}
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
 							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_ice_type_Directed_molecular_activation_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
 							}
-							
+							owner = { has_edict = EOE_edict_leader_trait_ice_type_Directed_molecular_activation_1_pick }
 						}
 						add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
 						set_leader_flag = EOE_LV1_leader_trait_gived
-						
+					}
 					
-				}
-				1 ={ 
-					modifier = {
-						factor = 0
-						OR = {
-							has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
+								}
+							}
 						}
-					}
-						
-					}
-					add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
-					set_leader_flag = EOE_LV1_leader_trait_gived
-					
-			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_fire_type_Instantaneous_entropy_increase_1_pick }
 						}
+						add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
+						set_leader_flag = EOE_LV1_leader_trait_gived
 					}
-					
-				}
-				add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
-				set_leader_flag = EOE_LV1_leader_trait_gived
-				
-		}
+	
 					1 ={
 						modifier = {
 							factor = 0
@@ -6130,21 +6386,31 @@ country_event = {   #一级随机上特质
 								has_trait = leader_trait_admiral_fairy_type_1
 								NOT= {
 									owner = {
-									any_owned_pop_species = {
-									OR = {
-									has_trait = trait_fairy_type_mega_evolution 
-									has_trait = trait_fairy_type_mega_evolution_swarm 
+										any_owned_pop_species = {
+										has_trait = trait_fairy_type_mega_evolution 
+										}
+									}
 								}
 							}
 						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_admiral_fairy_type_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_fairy_type_mega_evolution 
+										}
+									}
 								}
 							}
-
+							owner = { has_edict = EOE_edict_leader_trait_admiral_fairy_type_1_pick }
 						}
 						add_trait = { trait = leader_trait_admiral_fairy_type_1 }
 						set_leader_flag = EOE_LV1_leader_trait_gived
-
 					}
+	
 	
 				}
 				
@@ -6157,68 +6423,121 @@ country_event = {   #一级随机上特质
 					}
 				}
 				random_list = {
+					#leader_trait_governor_fairy_type_Empathy_network_1
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_fairy_type_Empathy_network_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_fairy_type_Empathy_network_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_fairy_type_Empathy_network_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_fairy_type_Empathy_network_1 }
+						set_leader_flag = EOE_LV1_leader_trait_gived
+					}
+	
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_grass_type_Plants_vs_Aliens_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
+						set_leader_flag = EOE_LV1_leader_trait_gived
+					}
+					
 					1 ={ 
 						modifier = {
 							factor = 0
 							OR = {
 								has_trait = leader_trait_governor_ice_type_nano_builder_1
-							NOT= {
-								owner = {any_owned_pop_species = {OR ={
-								has_trait = trait_ice_type_mega_evolution
-								has_trait = trait_ice_type_mega_evolution_swarm
-							}}}
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
 							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_ice_type_nano_builder_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
 							}
-							
+							owner = { has_edict = EOE_edict_leader_trait_governor_ice_type_nano_builder_1_pick }
 						}
 						add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
 						set_leader_flag = EOE_LV1_leader_trait_gived
-							
-					
-				}
-				1 ={ 
-					modifier = {
-						factor = 0
-						OR = {
-							has_trait = leader_trait_governor_dark_type_necessary_evil_1
-							NOT= {
-								owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
+					}
+	
+	
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_water_type_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+								}
 							}
 						}
-						
-					}
-						add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_water_type_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_water_type_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_water_type_1 }
 						set_leader_flag = EOE_LV1_leader_trait_gived
-						
-			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_governor_water_type_1
-					NOT= {
-						owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
 					}
-					}
-					
-				}
-					add_trait = { trait = leader_trait_governor_water_type_1 }
-					set_leader_flag = EOE_LV1_leader_trait_gived
-				
-		}
 	
 				}
 				
 			}
-	
-	
-			
-			
-		}
-
-		
+			}
 	}
 }
+
+
+
 
 
 country_event = {   #4级随机上特质
@@ -6235,217 +6554,377 @@ country_event = {   #4级随机上特质
 			NOT = {
 				has_leader_flag = EOE_LV4_leader_trait_gived
 			}
-			has_level > 3
+			has_base_skill > 3
 		}
 	}
 	immediate = {
 		every_owned_leader = {
-		if = {
-			limit = {
-				leader_class = scientist
-				NOT = {
-				has_leader_flag = EOE_LV4_leader_trait_gived
-			}
-			has_level > 3
-			}
-			random_list = {
+			if = {
+				limit = {
+					leader_class = scientist
+					NOT = {
+					has_leader_flag = EOE_LV4_leader_trait_gived
+				}
+				has_base_skill > 3
+				}
+				random_list = {
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+							has_trait = leader_trait_scientist_psychic_type_psionic_benefits_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+							}
+						}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+							has_trait = leader_trait_scientist_psychic_type_psionic_benefits_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+							}
+						}
+							owner = { has_edict = EOE_edict_leader_trait_scientist_psychic_type_psionic_benefits_1_pick }
+						}
+						add_trait = { trait = leader_trait_scientist_psychic_type_psionic_benefits_1 }
+						set_leader_flag = EOE_LV4_leader_trait_gived
+							
+				}
+			
 				1 ={ 
 					modifier = {
 						factor = 0
 						OR = {
-						has_trait = leader_trait_scientist_water_type_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+							has_trait = leader_trait_scientist_water_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+							}
 						}
 					}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_scientist_water_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+							}
+						}
+						owner = { has_edict = EOE_edict_leader_trait_scientist_water_type_1_pick }
 					}
 					add_trait = { trait = leader_trait_scientist_water_type_1 }
 					set_leader_flag = EOE_LV4_leader_trait_gived
-						
-			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_scientist_dark_type_night_owl_1
-					NOT= {
-						owner = {any_owned_pop_species = {OR ={
-							has_trait = trait_dark_type_mega_evolution
-							has_trait = trait_dark_type_mega_evolution_swarm
-						}}}
-					}
-					}
-					
 				}
-				add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
-				set_leader_flag = EOE_LV4_leader_trait_gived
-					
-		}
-		1 ={ 
-			modifier = {
-				factor = 0
-				OR = {
-					has_trait = leader_trait_scientist_electric_type_1
-					NOT= {
-						owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
-					}
-				}
-				
-			}
-			add_trait = { trait = leader_trait_scientist_electric_type_1 }
-			set_leader_flag = EOE_LV4_leader_trait_gived
-				
-	}
-
-			}
-		}
-		else_if ={
-			limit = {
-				leader_class = commander
-				NOT = {
-				has_leader_flag = EOE_LV4_leader_trait_gived
-			}
-			has_level > 3
-			}
-			random_list = {
+			
 				1 ={ 
 					modifier = {
 						factor = 0
 						OR = {
-							has_trait = leader_trait_ice_type_Directed_molecular_activation_1
-						NOT= {
-							owner = {any_owned_pop_species = {OR ={
-								has_trait = trait_ice_type_mega_evolution
-								has_trait = trait_ice_type_mega_evolution_swarm
-							}}}
+							has_trait = leader_trait_scientist_dark_type_night_owl_1
+							NOT= {
+								owner = {any_owned_pop_species = {
+									has_trait = trait_dark_type_mega_evolution
+									# has_trait = trait_dark_type_mega_evolution_swarm
+								}}
+							}
 						}
-						}
-						
 					}
-					add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_scientist_dark_type_night_owl_1
+							NOT= {
+								owner = {any_owned_pop_species = {
+									has_trait = trait_dark_type_mega_evolution
+								}}
+							}
+						}
+						owner = { has_edict = EOE_edict_leader_trait_scientist_dark_type_night_owl_1_pick }
+					}
+					add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
 					set_leader_flag = EOE_LV4_leader_trait_gived
-					
-				
-			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
-					NOT= {
-						owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
-					}
 				}
-					
-				}
-				add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
-				set_leader_flag = EOE_LV4_leader_trait_gived
-				
-		}
-		1 ={ 
-			modifier = {
-				factor = 0
-				OR = {
-					has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
-					NOT= {
-						owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
-					}
-				}
-				
-			}
-			add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
-			set_leader_flag = EOE_LV4_leader_trait_gived
-			
-	}
-				1 ={
+				1 ={ 
 					modifier = {
 						factor = 0
 						OR = {
-							has_trait = leader_trait_admiral_fairy_type_1
+							has_trait = leader_trait_scientist_electric_type_1
 							NOT= {
-								owner = {
-									any_owned_pop_species = {
-									OR = {
-									has_trait = trait_fairy_type_mega_evolution 
-									has_trait = trait_fairy_type_mega_evolution_swarm 
+								owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
+							}
+						}
+					}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_scientist_electric_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
+							}
+						}
+						owner = { has_edict = EOE_edict_leader_trait_scientist_electric_type_1_pick }
+					}
+					add_trait = { trait = leader_trait_scientist_electric_type_1 }
+					set_leader_flag = EOE_LV4_leader_trait_gived
+				}
+				
+			
+				}
+			}
+			else_if ={
+				limit = {
+					leader_class = commander
+					NOT = {
+						has_leader_flag = EOE_LV4_leader_trait_gived
+					}
+					has_base_skill > 3
+				}
+				random_list = {
+			
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_dark_type_Void_Stutter_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_dark_type_mega_evolution
+										}
+									}
 								}
 							}
 						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_dark_type_Void_Stutter_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_dark_type_mega_evolution
+										}
+									}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_dark_type_Void_Stutter_1_pick }
+						}
+						add_trait = { trait = leader_trait_dark_type_Void_Stutter_1 }
+						set_leader_flag = EOE_LV4_leader_trait_gived
+					}
+			
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_ice_type_Directed_molecular_activation_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
 							}
 						}
-
-					}
-					add_trait = { trait = leader_trait_admiral_fairy_type_1 }
-					set_leader_flag = EOE_LV4_leader_trait_gived
-
-				}
-
-			}
-			
-		}
-		else_if ={
-			limit = {
-				leader_class = official
-				NOT = {
-				has_leader_flag = EOE_LV4_leader_trait_gived
-			}
-			has_level > 3
-			}
-			random_list = {
-				1 ={ 
-					modifier = {
-						factor = 0
-						OR = {
-							has_trait = leader_trait_governor_ice_type_nano_builder_1
-						NOT= {
-							owner = {any_owned_pop_species = {OR ={
-								has_trait = trait_ice_type_mega_evolution
-								has_trait = trait_ice_type_mega_evolution_swarm
-							}}}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_ice_type_Directed_molecular_activation_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_ice_type_Directed_molecular_activation_1_pick }
 						}
-						}
-						
-					}
-					add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
-					set_leader_flag = EOE_LV4_leader_trait_gived
-						
-				
-			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_governor_dark_type_necessary_evil_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
-						}
+						add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
+						set_leader_flag = EOE_LV4_leader_trait_gived
 					}
 					
-				}
-					add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
-					set_leader_flag = EOE_LV4_leader_trait_gived
-					
-		}
-		1 ={ 
-			modifier = {
-				factor = 0
-				OR = {
-					has_trait = leader_trait_governor_water_type_1
-				NOT= {
-					owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
-				}
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_fire_type_Instantaneous_entropy_increase_1_pick }
+						}
+						add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
+						set_leader_flag = EOE_LV4_leader_trait_gived
+					}
+			
+					1 ={
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_admiral_fairy_type_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_fairy_type_mega_evolution 
+										}
+									}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_admiral_fairy_type_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_fairy_type_mega_evolution 
+										}
+									}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_admiral_fairy_type_1_pick }
+						}
+						add_trait = { trait = leader_trait_admiral_fairy_type_1 }
+						set_leader_flag = EOE_LV4_leader_trait_gived
+					}
+			
+			
 				}
 				
 			}
-				add_trait = { trait = leader_trait_governor_water_type_1 }
-				set_leader_flag = EOE_LV4_leader_trait_gived
+			else_if ={
+				limit = {
+					leader_class = official
+					NOT = {
+						has_leader_flag = EOE_LV4_leader_trait_gived
+					}
+					has_base_skill > 3
+				}
+				random_list = {
+					#leader_trait_governor_fairy_type_Empathy_network_1
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_fairy_type_Empathy_network_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_fairy_type_Empathy_network_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_fairy_type_Empathy_network_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_fairy_type_Empathy_network_1 }
+						set_leader_flag = EOE_LV4_leader_trait_gived
+					}
 			
-	}
-
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_grass_type_Plants_vs_Aliens_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
+						set_leader_flag = EOE_LV4_leader_trait_gived
+					}
+					
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_ice_type_nano_builder_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_ice_type_nano_builder_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_ice_type_nano_builder_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
+						set_leader_flag = EOE_LV4_leader_trait_gived
+					}
+			
+			
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_water_type_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_water_type_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_water_type_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_water_type_1 }
+						set_leader_flag = EOE_LV4_leader_trait_gived
+					}
+			
+				}
+				
 			}
 			
-		}
-
 
 	}
 		every_pool_leader = {
@@ -6455,114 +6934,211 @@ country_event = {   #4级随机上特质
 					NOT = {
 					has_leader_flag = EOE_LV4_leader_trait_gived
 				}
-				has_level > 3
+				has_base_skill > 3
 				}
 				random_list = {
 					1 ={ 
 						modifier = {
 							factor = 0
 							OR = {
+							has_trait = leader_trait_scientist_psychic_type_psionic_benefits_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+							}
+						}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+							has_trait = leader_trait_scientist_psychic_type_psionic_benefits_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+							}
+						}
+							owner = { has_edict = EOE_edict_leader_trait_scientist_psychic_type_psionic_benefits_1_pick }
+						}
+						add_trait = { trait = leader_trait_scientist_psychic_type_psionic_benefits_1 }
+						set_leader_flag = EOE_LV4_leader_trait_gived
+							
+				}
+			
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
 							has_trait = leader_trait_scientist_water_type_1
 							NOT= {
 								owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
 							}
 						}
+					}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_scientist_water_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+							}
 						}
-						add_trait = { trait = leader_trait_scientist_water_type_1 }
-						set_leader_flag = EOE_LV4_leader_trait_gived
-							
+						owner = { has_edict = EOE_edict_leader_trait_scientist_water_type_1_pick }
+					}
+					add_trait = { trait = leader_trait_scientist_water_type_1 }
+					set_leader_flag = EOE_LV4_leader_trait_gived
 				}
+			
 				1 ={ 
 					modifier = {
 						factor = 0
 						OR = {
 							has_trait = leader_trait_scientist_dark_type_night_owl_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
+							NOT= {
+								owner = {any_owned_pop_species = {
+									has_trait = trait_dark_type_mega_evolution
+									# has_trait = trait_dark_type_mega_evolution_swarm
+								}}
+							}
 						}
+					}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_scientist_dark_type_night_owl_1
+							NOT= {
+								owner = {any_owned_pop_species = {
+									has_trait = trait_dark_type_mega_evolution
+								}}
+							}
 						}
-						
+						owner = { has_edict = EOE_edict_leader_trait_scientist_dark_type_night_owl_1_pick }
 					}
 					add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
 					set_leader_flag = EOE_LV4_leader_trait_gived
-						
-			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_scientist_electric_type_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
+				}
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_scientist_electric_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
+							}
 						}
 					}
-					
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_scientist_electric_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
+							}
+						}
+						owner = { has_edict = EOE_edict_leader_trait_scientist_electric_type_1_pick }
+					}
+					add_trait = { trait = leader_trait_scientist_electric_type_1 }
+					set_leader_flag = EOE_LV4_leader_trait_gived
 				}
-				add_trait = { trait = leader_trait_scientist_electric_type_1 }
-				set_leader_flag = EOE_LV4_leader_trait_gived
-					
-		}
-	
+				
+			
 				}
 			}
 			else_if ={
 				limit = {
 					leader_class = commander
 					NOT = {
-					has_leader_flag = EOE_LV4_leader_trait_gived
-				}
-				has_level > 3
+						has_leader_flag = EOE_LV4_leader_trait_gived
+					}
+					has_base_skill > 3
 				}
 				random_list = {
+			
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_dark_type_Void_Stutter_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_dark_type_mega_evolution
+										}
+									}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_dark_type_Void_Stutter_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_dark_type_mega_evolution
+										}
+									}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_dark_type_Void_Stutter_1_pick }
+						}
+						add_trait = { trait = leader_trait_dark_type_Void_Stutter_1 }
+						set_leader_flag = EOE_LV4_leader_trait_gived
+					}
+			
 					1 ={ 
 						modifier = {
 							factor = 0
 							OR = {
 								has_trait = leader_trait_ice_type_Directed_molecular_activation_1
-							NOT= {
-								owner = {any_owned_pop_species = {OR ={
-								has_trait = trait_ice_type_mega_evolution
-								has_trait = trait_ice_type_mega_evolution_swarm
-							}}}
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
 							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_ice_type_Directed_molecular_activation_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
 							}
-							
+							owner = { has_edict = EOE_edict_leader_trait_ice_type_Directed_molecular_activation_1_pick }
 						}
 						add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
 						set_leader_flag = EOE_LV4_leader_trait_gived
-						
+					}
 					
-				}
-				1 ={ 
-					modifier = {
-						factor = 0
-						OR = {
-							has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
+								}
+							}
 						}
-					}
-						
-					}
-					add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
-					set_leader_flag = EOE_LV4_leader_trait_gived
-					
-			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_fire_type_Instantaneous_entropy_increase_1_pick }
 						}
+						add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
+						set_leader_flag = EOE_LV4_leader_trait_gived
 					}
-					
-				}
-				add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
-				set_leader_flag = EOE_LV4_leader_trait_gived
-				
-		}
+			
 					1 ={
 						modifier = {
 							factor = 0
@@ -6570,22 +7146,32 @@ country_event = {   #4级随机上特质
 								has_trait = leader_trait_admiral_fairy_type_1
 								NOT= {
 									owner = {
-									any_owned_pop_species = {
-									OR = {
-									has_trait = trait_fairy_type_mega_evolution 
-									has_trait = trait_fairy_type_mega_evolution_swarm 
+										any_owned_pop_species = {
+										has_trait = trait_fairy_type_mega_evolution 
+										}
+									}
 								}
 							}
 						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_admiral_fairy_type_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_fairy_type_mega_evolution 
+										}
+									}
 								}
 							}
-
+							owner = { has_edict = EOE_edict_leader_trait_admiral_fairy_type_1_pick }
 						}
 						add_trait = { trait = leader_trait_admiral_fairy_type_1 }
 						set_leader_flag = EOE_LV4_leader_trait_gived
-
 					}
-	
+			
+			
 				}
 				
 			}
@@ -6593,61 +7179,117 @@ country_event = {   #4级随机上特质
 				limit = {
 					leader_class = official
 					NOT = {
-					has_leader_flag = EOE_LV4_leader_trait_gived
-				}
-				has_level > 3
+						has_leader_flag = EOE_LV4_leader_trait_gived
+					}
+					has_base_skill > 3
 				}
 				random_list = {
+					#leader_trait_governor_fairy_type_Empathy_network_1
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_fairy_type_Empathy_network_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_fairy_type_Empathy_network_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_fairy_type_Empathy_network_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_fairy_type_Empathy_network_1 }
+						set_leader_flag = EOE_LV4_leader_trait_gived
+					}
+			
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_grass_type_Plants_vs_Aliens_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
+						set_leader_flag = EOE_LV4_leader_trait_gived
+					}
+					
 					1 ={ 
 						modifier = {
 							factor = 0
 							OR = {
 								has_trait = leader_trait_governor_ice_type_nano_builder_1
-							NOT= {
-								owner = {any_owned_pop_species = {OR ={
-								has_trait = trait_ice_type_mega_evolution
-								has_trait = trait_ice_type_mega_evolution_swarm
-							}}}
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
 							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_ice_type_nano_builder_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
 							}
-							
+							owner = { has_edict = EOE_edict_leader_trait_governor_ice_type_nano_builder_1_pick }
 						}
 						add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
 						set_leader_flag = EOE_LV4_leader_trait_gived
-							
-					
-				}
-				1 ={ 
-					modifier = {
-						factor = 0
-						OR = {
-							has_trait = leader_trait_governor_dark_type_necessary_evil_1
-							NOT= {
-								owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
+					}
+			
+			
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_water_type_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+								}
 							}
 						}
-						
-					}
-						add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_water_type_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_water_type_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_water_type_1 }
 						set_leader_flag = EOE_LV4_leader_trait_gived
-						
-			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_governor_water_type_1
-					NOT= {
-						owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
 					}
-					}
-					
-				}
-					add_trait = { trait = leader_trait_governor_water_type_1 }
-					set_leader_flag = EOE_LV4_leader_trait_gived
-				
-		}
-	
+			
 				}
 				
 			}
@@ -6675,216 +7317,376 @@ country_event = {   #8级随机上特质
 			NOT = {
 				has_leader_flag = EOE_LV8_leader_trait_gived
 			}
-			has_level > 7
+			has_base_skill > 7
 		}
 	}
 	immediate = {
 		every_owned_leader = {
-		if = {
-			limit = {
-				leader_class = scientist
-				NOT = {
-				has_leader_flag = EOE_LV8_leader_trait_gived
-			}
-			has_level > 7
-			}
-			random_list = {
+			if = {
+				limit = {
+					leader_class = scientist
+					NOT = {
+					has_leader_flag = EOE_LV8_leader_trait_gived
+				}
+				has_base_skill > 7
+				}
+				random_list = {
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+							has_trait = leader_trait_scientist_psychic_type_psionic_benefits_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+							}
+						}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+							has_trait = leader_trait_scientist_psychic_type_psionic_benefits_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+							}
+						}
+							owner = { has_edict = EOE_edict_leader_trait_scientist_psychic_type_psionic_benefits_1_pick }
+						}
+						add_trait = { trait = leader_trait_scientist_psychic_type_psionic_benefits_1 }
+						set_leader_flag = EOE_LV8_leader_trait_gived
+							
+				}
+			
 				1 ={ 
 					modifier = {
 						factor = 0
 						OR = {
-						has_trait = leader_trait_scientist_water_type_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+							has_trait = leader_trait_scientist_water_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+							}
 						}
 					}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_scientist_water_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+							}
+						}
+						owner = { has_edict = EOE_edict_leader_trait_scientist_water_type_1_pick }
 					}
 					add_trait = { trait = leader_trait_scientist_water_type_1 }
 					set_leader_flag = EOE_LV8_leader_trait_gived
-						
-			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_scientist_dark_type_night_owl_1
-					NOT= {
-						owner = {any_owned_pop_species = {OR ={
-							has_trait = trait_dark_type_mega_evolution
-							has_trait = trait_dark_type_mega_evolution_swarm
-						}}}
-					}
-					}
-					
 				}
-				add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
-				set_leader_flag = EOE_LV8_leader_trait_gived
-					
-		}
-		1 ={ 
-			modifier = {
-				factor = 0
-				OR = {
-					has_trait = leader_trait_scientist_electric_type_1
-					NOT= {
-						owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
-					}
-				}
-				
-			}
-			add_trait = { trait = leader_trait_scientist_electric_type_1 }
-			set_leader_flag = EOE_LV8_leader_trait_gived
-				
-	}
-
-			}
-		}
-		else_if ={
-			limit = {
-				leader_class = commander
-				NOT = {
-				has_leader_flag = EOE_LV8_leader_trait_gived
-			}
-			has_level > 7
-			}
-			random_list = {
+			
 				1 ={ 
 					modifier = {
 						factor = 0
 						OR = {
-							has_trait = leader_trait_ice_type_Directed_molecular_activation_1
-						NOT= {
-							owner = {any_owned_pop_species = {OR ={
-								has_trait = trait_ice_type_mega_evolution
-								has_trait = trait_ice_type_mega_evolution_swarm
-							}}}
+							has_trait = leader_trait_scientist_dark_type_night_owl_1
+							NOT= {
+								owner = {any_owned_pop_species = {
+									has_trait = trait_dark_type_mega_evolution
+									# has_trait = trait_dark_type_mega_evolution_swarm
+								}}
+							}
 						}
-						}
-						
 					}
-					add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_scientist_dark_type_night_owl_1
+							NOT= {
+								owner = {any_owned_pop_species = {
+									has_trait = trait_dark_type_mega_evolution
+								}}
+							}
+						}
+						owner = { has_edict = EOE_edict_leader_trait_scientist_dark_type_night_owl_1_pick }
+					}
+					add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
 					set_leader_flag = EOE_LV8_leader_trait_gived
-					
-				
-			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
-					NOT= {
-						owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
-					}
 				}
-					
-				}
-				add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
-				set_leader_flag = EOE_LV8_leader_trait_gived
-				
-		}
-		1 ={ 
-			modifier = {
-				factor = 0
-				OR = {
-					has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
-					NOT= {
-						owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
-					}
-				}
-				
-			}
-			add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
-			set_leader_flag = EOE_LV8_leader_trait_gived
-			
-	}
-				1 ={
+				1 ={ 
 					modifier = {
 						factor = 0
 						OR = {
-							has_trait = leader_trait_admiral_fairy_type_1
+							has_trait = leader_trait_scientist_electric_type_1
 							NOT= {
-								owner = {
-									any_owned_pop_species = {
-									OR = {
-									has_trait = trait_fairy_type_mega_evolution 
-									has_trait = trait_fairy_type_mega_evolution_swarm 
+								owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
+							}
+						}
+					}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_scientist_electric_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
+							}
+						}
+						owner = { has_edict = EOE_edict_leader_trait_scientist_electric_type_1_pick }
+					}
+					add_trait = { trait = leader_trait_scientist_electric_type_1 }
+					set_leader_flag = EOE_LV8_leader_trait_gived
+				}
+				
+			
+				}
+			}
+			else_if ={
+				limit = {
+					leader_class = commander
+					NOT = {
+						has_leader_flag = EOE_LV8_leader_trait_gived
+					}
+					has_base_skill > 7
+				}
+				random_list = {
+			
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_dark_type_Void_Stutter_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_dark_type_mega_evolution
+										}
+									}
 								}
 							}
 						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_dark_type_Void_Stutter_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_dark_type_mega_evolution
+										}
+									}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_dark_type_Void_Stutter_1_pick }
+						}
+						add_trait = { trait = leader_trait_dark_type_Void_Stutter_1 }
+						set_leader_flag = EOE_LV8_leader_trait_gived
+					}
+			
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_ice_type_Directed_molecular_activation_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
 							}
 						}
-
-					}
-					add_trait = { trait = leader_trait_admiral_fairy_type_1 }
-					set_leader_flag = EOE_LV8_leader_trait_gived
-
-				}
-
-			}
-			
-		}
-		else_if ={
-			limit = {
-				leader_class = official
-				NOT = {
-				has_leader_flag = EOE_LV8_leader_trait_gived
-			}
-			has_level > 7
-			}
-			random_list = {
-				1 ={ 
-					modifier = {
-						factor = 0
-						OR = {
-							has_trait = leader_trait_governor_ice_type_nano_builder_1
-						NOT= {
-							owner = {any_owned_pop_species = {OR ={
-								has_trait = trait_ice_type_mega_evolution
-								has_trait = trait_ice_type_mega_evolution_swarm
-							}}}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_ice_type_Directed_molecular_activation_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_ice_type_Directed_molecular_activation_1_pick }
 						}
-						}
-						
-					}
-					add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
-					set_leader_flag = EOE_LV8_leader_trait_gived
-						
-				
-			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_governor_dark_type_necessary_evil_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
-						}
+						add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
+						set_leader_flag = EOE_LV8_leader_trait_gived
 					}
 					
-				}
-					add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
-					set_leader_flag = EOE_LV8_leader_trait_gived
-					
-		}
-		1 ={ 
-			modifier = {
-				factor = 0
-				OR = {
-					has_trait = leader_trait_governor_water_type_1
-				NOT= {
-					owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
-				}
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_fire_type_Instantaneous_entropy_increase_1_pick }
+						}
+						add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
+						set_leader_flag = EOE_LV8_leader_trait_gived
+					}
+			
+					1 ={
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_admiral_fairy_type_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_fairy_type_mega_evolution 
+										}
+									}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_admiral_fairy_type_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_fairy_type_mega_evolution 
+										}
+									}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_admiral_fairy_type_1_pick }
+						}
+						add_trait = { trait = leader_trait_admiral_fairy_type_1 }
+						set_leader_flag = EOE_LV8_leader_trait_gived
+					}
+			
+			
 				}
 				
 			}
-				add_trait = { trait = leader_trait_governor_water_type_1 }
-				set_leader_flag = EOE_LV8_leader_trait_gived
+			else_if ={
+				limit = {
+					leader_class = official
+					NOT = {
+						has_leader_flag = EOE_LV8_leader_trait_gived
+					}
+					has_base_skill > 7
+				}
+				random_list = {
+					#leader_trait_governor_fairy_type_Empathy_network_1
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_fairy_type_Empathy_network_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_fairy_type_Empathy_network_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_fairy_type_Empathy_network_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_fairy_type_Empathy_network_1 }
+						set_leader_flag = EOE_LV8_leader_trait_gived
+					}
 			
-	}
-
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_grass_type_Plants_vs_Aliens_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
+						set_leader_flag = EOE_LV8_leader_trait_gived
+					}
+					
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_ice_type_nano_builder_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_ice_type_nano_builder_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_ice_type_nano_builder_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
+						set_leader_flag = EOE_LV8_leader_trait_gived
+					}
+			
+			
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_water_type_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_water_type_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_water_type_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_water_type_1 }
+						set_leader_flag = EOE_LV8_leader_trait_gived
+					}
+			
+				}
+				
 			}
-			
-		}
 
 
 	}
@@ -6895,114 +7697,211 @@ country_event = {   #8级随机上特质
 					NOT = {
 					has_leader_flag = EOE_LV8_leader_trait_gived
 				}
-				has_level > 7
+				has_base_skill > 7
 				}
 				random_list = {
 					1 ={ 
 						modifier = {
 							factor = 0
 							OR = {
+							has_trait = leader_trait_scientist_psychic_type_psionic_benefits_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+							}
+						}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+							has_trait = leader_trait_scientist_psychic_type_psionic_benefits_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+							}
+						}
+							owner = { has_edict = EOE_edict_leader_trait_scientist_psychic_type_psionic_benefits_1_pick }
+						}
+						add_trait = { trait = leader_trait_scientist_psychic_type_psionic_benefits_1 }
+						set_leader_flag = EOE_LV8_leader_trait_gived
+							
+				}
+			
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
 							has_trait = leader_trait_scientist_water_type_1
 							NOT= {
 								owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
 							}
 						}
+					}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_scientist_water_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+							}
 						}
-						add_trait = { trait = leader_trait_scientist_water_type_1 }
-						set_leader_flag = EOE_LV8_leader_trait_gived
-							
+						owner = { has_edict = EOE_edict_leader_trait_scientist_water_type_1_pick }
+					}
+					add_trait = { trait = leader_trait_scientist_water_type_1 }
+					set_leader_flag = EOE_LV8_leader_trait_gived
 				}
+			
 				1 ={ 
 					modifier = {
 						factor = 0
 						OR = {
 							has_trait = leader_trait_scientist_dark_type_night_owl_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
+							NOT= {
+								owner = {any_owned_pop_species = {
+									has_trait = trait_dark_type_mega_evolution
+									# has_trait = trait_dark_type_mega_evolution_swarm
+								}}
+							}
 						}
+					}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_scientist_dark_type_night_owl_1
+							NOT= {
+								owner = {any_owned_pop_species = {
+									has_trait = trait_dark_type_mega_evolution
+								}}
+							}
 						}
-						
+						owner = { has_edict = EOE_edict_leader_trait_scientist_dark_type_night_owl_1_pick }
 					}
 					add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
 					set_leader_flag = EOE_LV8_leader_trait_gived
-						
-			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_scientist_electric_type_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
+				}
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_scientist_electric_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
+							}
 						}
 					}
-					
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_scientist_electric_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
+							}
+						}
+						owner = { has_edict = EOE_edict_leader_trait_scientist_electric_type_1_pick }
+					}
+					add_trait = { trait = leader_trait_scientist_electric_type_1 }
+					set_leader_flag = EOE_LV8_leader_trait_gived
 				}
-				add_trait = { trait = leader_trait_scientist_electric_type_1 }
-				set_leader_flag = EOE_LV8_leader_trait_gived
-					
-		}
-	
+				
+			
 				}
 			}
 			else_if ={
 				limit = {
 					leader_class = commander
 					NOT = {
-					has_leader_flag = EOE_LV8_leader_trait_gived
-				}
-				has_level > 7
+						has_leader_flag = EOE_LV8_leader_trait_gived
+					}
+					has_base_skill > 7
 				}
 				random_list = {
+			
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_dark_type_Void_Stutter_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_dark_type_mega_evolution
+										}
+									}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_dark_type_Void_Stutter_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_dark_type_mega_evolution
+										}
+									}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_dark_type_Void_Stutter_1_pick }
+						}
+						add_trait = { trait = leader_trait_dark_type_Void_Stutter_1 }
+						set_leader_flag = EOE_LV8_leader_trait_gived
+					}
+			
 					1 ={ 
 						modifier = {
 							factor = 0
 							OR = {
 								has_trait = leader_trait_ice_type_Directed_molecular_activation_1
-							NOT= {
-								owner = {any_owned_pop_species = {OR ={
-								has_trait = trait_ice_type_mega_evolution
-								has_trait = trait_ice_type_mega_evolution_swarm
-							}}}
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
 							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_ice_type_Directed_molecular_activation_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
 							}
-							
+							owner = { has_edict = EOE_edict_leader_trait_ice_type_Directed_molecular_activation_1_pick }
 						}
 						add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
 						set_leader_flag = EOE_LV8_leader_trait_gived
-						
+					}
 					
-				}
-				1 ={ 
-					modifier = {
-						factor = 0
-						OR = {
-							has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
+								}
+							}
 						}
-					}
-						
-					}
-					add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
-					set_leader_flag = EOE_LV8_leader_trait_gived
-					
-			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
-						NOT= {
-							owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_fire_type_Instantaneous_entropy_increase_1_pick }
 						}
+						add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
+						set_leader_flag = EOE_LV8_leader_trait_gived
 					}
-					
-				}
-				add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
-				set_leader_flag = EOE_LV8_leader_trait_gived
-				
-		}
+			
 					1 ={
 						modifier = {
 							factor = 0
@@ -7010,23 +7909,32 @@ country_event = {   #8级随机上特质
 								has_trait = leader_trait_admiral_fairy_type_1
 								NOT= {
 									owner = {
-									any_owned_pop_species = {
-									OR = {
-									has_trait = trait_fairy_type_mega_evolution 
-									has_trait = trait_fairy_type_mega_evolution_swarm 
+										any_owned_pop_species = {
+										has_trait = trait_fairy_type_mega_evolution 
+										}
+									}
 								}
 							}
 						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_admiral_fairy_type_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_fairy_type_mega_evolution 
+										}
+									}
 								}
-								
 							}
-
+							owner = { has_edict = EOE_edict_leader_trait_admiral_fairy_type_1_pick }
 						}
 						add_trait = { trait = leader_trait_admiral_fairy_type_1 }
 						set_leader_flag = EOE_LV8_leader_trait_gived
-
 					}
-	
+			
+			
 				}
 				
 			}
@@ -7034,61 +7942,117 @@ country_event = {   #8级随机上特质
 				limit = {
 					leader_class = official
 					NOT = {
-					has_leader_flag = EOE_LV8_leader_trait_gived
-				}
-				has_level > 7
+						has_leader_flag = EOE_LV8_leader_trait_gived
+					}
+					has_base_skill > 7
 				}
 				random_list = {
+					#leader_trait_governor_fairy_type_Empathy_network_1
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_fairy_type_Empathy_network_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_fairy_type_Empathy_network_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_fairy_type_Empathy_network_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_fairy_type_Empathy_network_1 }
+						set_leader_flag = EOE_LV8_leader_trait_gived
+					}
+			
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_grass_type_Plants_vs_Aliens_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
+						set_leader_flag = EOE_LV8_leader_trait_gived
+					}
+					
 					1 ={ 
 						modifier = {
 							factor = 0
 							OR = {
 								has_trait = leader_trait_governor_ice_type_nano_builder_1
-							NOT= {
-								owner = {any_owned_pop_species = {OR ={
-								has_trait = trait_ice_type_mega_evolution
-								has_trait = trait_ice_type_mega_evolution_swarm
-							}}}
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
 							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_ice_type_nano_builder_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
 							}
-							
+							owner = { has_edict = EOE_edict_leader_trait_governor_ice_type_nano_builder_1_pick }
 						}
 						add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
 						set_leader_flag = EOE_LV8_leader_trait_gived
-							
-					
-				}
-				1 ={ 
-					modifier = {
-						factor = 0
-						OR = {
-							has_trait = leader_trait_governor_dark_type_necessary_evil_1
-							NOT= {
-								owner = {any_owned_pop_species = {has_trait = trait_dark_type_mega_evolution}}
+					}
+			
+			
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_water_type_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+								}
 							}
 						}
-						
-					}
-						add_trait = { trait = leader_trait_governor_dark_type_necessary_evil_1 }
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_water_type_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_water_type_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_water_type_1 }
 						set_leader_flag = EOE_LV8_leader_trait_gived
-						
-			}
-			1 ={ 
-				modifier = {
-					factor = 0
-					OR = {
-						has_trait = leader_trait_governor_water_type_1
-					NOT= {
-						owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
 					}
-					}
-					
-				}
-					add_trait = { trait = leader_trait_governor_water_type_1 }
-					set_leader_flag = EOE_LV8_leader_trait_gived
-				
-		}
-	
+			
 				}
 				
 			}
@@ -7100,6 +8064,769 @@ country_event = {   #8级随机上特质
 		
 	}
 }
+
+country_event = {   #10级随机上特质
+	id = leadereevent.2003
+	hide_window = yes
+	is_triggered_only = yes
+	# fire_only_once = yes
+	trigger = {
+		owner_main_species = {
+			has_trait = trait_directed_evolution
+		}
+		# has_active_tradition = tr_genetics_creation
+		from = {
+			NOT = {
+				has_leader_flag = EOE_LV10_leader_trait_gived
+			}
+			has_base_skill > 9
+		}
+	}
+	immediate = {
+		every_owned_leader = {
+			if = {
+				limit = {
+					leader_class = scientist
+					NOT = {
+					has_leader_flag = EOE_LV10_leader_trait_gived
+				}
+				has_base_skill > 9
+				}
+				random_list = {
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+							has_trait = leader_trait_scientist_psychic_type_psionic_benefits_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+							}
+						}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+							has_trait = leader_trait_scientist_psychic_type_psionic_benefits_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+							}
+						}
+							owner = { has_edict = EOE_edict_leader_trait_scientist_psychic_type_psionic_benefits_1_pick }
+						}
+						add_trait = { trait = leader_trait_scientist_psychic_type_psionic_benefits_1 }
+						set_leader_flag = EOE_LV10_leader_trait_gived
+							
+				}
+			
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_scientist_water_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+							}
+						}
+					}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_scientist_water_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+							}
+						}
+						owner = { has_edict = EOE_edict_leader_trait_scientist_water_type_1_pick }
+					}
+					add_trait = { trait = leader_trait_scientist_water_type_1 }
+					set_leader_flag = EOE_LV10_leader_trait_gived
+				}
+			
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_scientist_dark_type_night_owl_1
+							NOT= {
+								owner = {any_owned_pop_species = {
+									has_trait = trait_dark_type_mega_evolution
+									# has_trait = trait_dark_type_mega_evolution_swarm
+								}}
+							}
+						}
+					}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_scientist_dark_type_night_owl_1
+							NOT= {
+								owner = {any_owned_pop_species = {
+									has_trait = trait_dark_type_mega_evolution
+								}}
+							}
+						}
+						owner = { has_edict = EOE_edict_leader_trait_scientist_dark_type_night_owl_1_pick }
+					}
+					add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
+					set_leader_flag = EOE_LV10_leader_trait_gived
+				}
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_scientist_electric_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
+							}
+						}
+					}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_scientist_electric_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
+							}
+						}
+						owner = { has_edict = EOE_edict_leader_trait_scientist_electric_type_1_pick }
+					}
+					add_trait = { trait = leader_trait_scientist_electric_type_1 }
+					set_leader_flag = EOE_LV10_leader_trait_gived
+				}
+				
+			
+				}
+			}
+			else_if ={
+				limit = {
+					leader_class = commander
+					NOT = {
+						has_leader_flag = EOE_LV10_leader_trait_gived
+					}
+					has_base_skill > 7
+				}
+				random_list = {
+			
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_dark_type_Void_Stutter_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_dark_type_mega_evolution
+										}
+									}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_dark_type_Void_Stutter_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_dark_type_mega_evolution
+										}
+									}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_dark_type_Void_Stutter_1_pick }
+						}
+						add_trait = { trait = leader_trait_dark_type_Void_Stutter_1 }
+						set_leader_flag = EOE_LV10_leader_trait_gived
+					}
+			
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_ice_type_Directed_molecular_activation_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_ice_type_Directed_molecular_activation_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_ice_type_Directed_molecular_activation_1_pick }
+						}
+						add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
+						set_leader_flag = EOE_LV10_leader_trait_gived
+					}
+					
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_fire_type_Instantaneous_entropy_increase_1_pick }
+						}
+						add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
+						set_leader_flag = EOE_LV10_leader_trait_gived
+					}
+			
+					1 ={
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_admiral_fairy_type_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_fairy_type_mega_evolution 
+										}
+									}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_admiral_fairy_type_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_fairy_type_mega_evolution 
+										}
+									}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_admiral_fairy_type_1_pick }
+						}
+						add_trait = { trait = leader_trait_admiral_fairy_type_1 }
+						set_leader_flag = EOE_LV10_leader_trait_gived
+					}
+			
+			
+				}
+				
+			}
+			else_if ={
+				limit = {
+					leader_class = official
+					NOT = {
+						has_leader_flag = EOE_LV10_leader_trait_gived
+					}
+					has_base_skill > 7
+				}
+				random_list = {
+					#leader_trait_governor_fairy_type_Empathy_network_1
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_fairy_type_Empathy_network_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_fairy_type_Empathy_network_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_fairy_type_Empathy_network_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_fairy_type_Empathy_network_1 }
+						set_leader_flag = EOE_LV10_leader_trait_gived
+					}
+			
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_grass_type_Plants_vs_Aliens_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
+						set_leader_flag = EOE_LV10_leader_trait_gived
+					}
+					
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_ice_type_nano_builder_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_ice_type_nano_builder_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_ice_type_nano_builder_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
+						set_leader_flag = EOE_LV10_leader_trait_gived
+					}
+			
+			
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_water_type_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_water_type_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_water_type_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_water_type_1 }
+						set_leader_flag = EOE_LV10_leader_trait_gived
+					}
+			
+				}
+				
+			}
+
+
+	}
+		every_pool_leader = {
+			if = {
+				limit = {
+					leader_class = scientist
+					NOT = {
+					has_leader_flag = EOE_LV10_leader_trait_gived
+				}
+				has_base_skill > 7
+				}
+				random_list = {
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+							has_trait = leader_trait_scientist_psychic_type_psionic_benefits_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+							}
+						}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+							has_trait = leader_trait_scientist_psychic_type_psionic_benefits_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+							}
+						}
+							owner = { has_edict = EOE_edict_leader_trait_scientist_psychic_type_psionic_benefits_1_pick }
+						}
+						add_trait = { trait = leader_trait_scientist_psychic_type_psionic_benefits_1 }
+						set_leader_flag = EOE_LV10_leader_trait_gived
+							
+				}
+			
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_scientist_water_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+							}
+						}
+					}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_scientist_water_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+							}
+						}
+						owner = { has_edict = EOE_edict_leader_trait_scientist_water_type_1_pick }
+					}
+					add_trait = { trait = leader_trait_scientist_water_type_1 }
+					set_leader_flag = EOE_LV10_leader_trait_gived
+				}
+			
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_scientist_dark_type_night_owl_1
+							NOT= {
+								owner = {any_owned_pop_species = {
+									has_trait = trait_dark_type_mega_evolution
+									# has_trait = trait_dark_type_mega_evolution_swarm
+								}}
+							}
+						}
+					}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_scientist_dark_type_night_owl_1
+							NOT= {
+								owner = {any_owned_pop_species = {
+									has_trait = trait_dark_type_mega_evolution
+								}}
+							}
+						}
+						owner = { has_edict = EOE_edict_leader_trait_scientist_dark_type_night_owl_1_pick }
+					}
+					add_trait = { trait = leader_trait_scientist_dark_type_night_owl_1 }
+					set_leader_flag = EOE_LV10_leader_trait_gived
+				}
+				1 ={ 
+					modifier = {
+						factor = 0
+						OR = {
+							has_trait = leader_trait_scientist_electric_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
+							}
+						}
+					}
+					modifier = {
+						factor = 10
+						NOR = {
+							has_trait = leader_trait_scientist_electric_type_1
+							NOT= {
+								owner = {any_owned_pop_species = {has_trait = trait_electric_type_mega_evolution}}
+							}
+						}
+						owner = { has_edict = EOE_edict_leader_trait_scientist_electric_type_1_pick }
+					}
+					add_trait = { trait = leader_trait_scientist_electric_type_1 }
+					set_leader_flag = EOE_LV10_leader_trait_gived
+				}
+				
+			
+				}
+			}
+			else_if ={
+				limit = {
+					leader_class = commander
+					NOT = {
+						has_leader_flag = EOE_LV10_leader_trait_gived
+					}
+					has_base_skill > 7
+				}
+				random_list = {
+			
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_dark_type_Void_Stutter_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_dark_type_mega_evolution
+										}
+									}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_dark_type_Void_Stutter_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_dark_type_mega_evolution
+										}
+									}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_dark_type_Void_Stutter_1_pick }
+						}
+						add_trait = { trait = leader_trait_dark_type_Void_Stutter_1 }
+						set_leader_flag = EOE_LV10_leader_trait_gived
+					}
+			
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_ice_type_Directed_molecular_activation_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_ice_type_Directed_molecular_activation_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_ice_type_Directed_molecular_activation_1_pick }
+						}
+						add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
+						set_leader_flag = EOE_LV10_leader_trait_gived
+					}
+					
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_fire_type_Instantaneous_entropy_increase_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fire_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_fire_type_Instantaneous_entropy_increase_1_pick }
+						}
+						add_trait = { trait = leader_trait_fire_type_Instantaneous_entropy_increase_1 }
+						set_leader_flag = EOE_LV10_leader_trait_gived
+					}
+			
+					1 ={
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_admiral_fairy_type_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_fairy_type_mega_evolution 
+										}
+									}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_admiral_fairy_type_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_fairy_type_mega_evolution 
+										}
+									}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_admiral_fairy_type_1_pick }
+						}
+						add_trait = { trait = leader_trait_admiral_fairy_type_1 }
+						set_leader_flag = EOE_LV10_leader_trait_gived
+					}
+			
+			
+				}
+				
+			}
+			else_if ={
+				limit = {
+					leader_class = official
+					NOT = {
+						has_leader_flag = EOE_LV10_leader_trait_gived
+					}
+					has_base_skill > 7
+				}
+				random_list = {
+					#leader_trait_governor_fairy_type_Empathy_network_1
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_fairy_type_Empathy_network_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_fairy_type_Empathy_network_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_fairy_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_fairy_type_Empathy_network_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_fairy_type_Empathy_network_1 }
+						set_leader_flag = EOE_LV10_leader_trait_gived
+					}
+			
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_grass_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_grass_type_Plants_vs_Aliens_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_grass_type_Plants_vs_Aliens_1 }
+						set_leader_flag = EOE_LV10_leader_trait_gived
+					}
+					
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_ice_type_nano_builder_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_ice_type_nano_builder_1
+								NOT= {
+									owner = {
+										any_owned_pop_species = {
+										has_trait = trait_ice_type_mega_evolution
+										}
+									}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_ice_type_nano_builder_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
+						set_leader_flag = EOE_LV10_leader_trait_gived
+					}
+			
+			
+					1 ={ 
+						modifier = {
+							factor = 0
+							OR = {
+								has_trait = leader_trait_governor_water_type_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+								}
+							}
+						}
+						modifier = {
+							factor = 10
+							NOR = {
+								has_trait = leader_trait_governor_water_type_1
+								NOT= {
+									owner = {any_owned_pop_species = {has_trait = trait_water_type_mega_evolution}}
+								}
+							}
+							owner = { has_edict = EOE_edict_leader_trait_governor_water_type_1_pick }
+						}
+						add_trait = { trait = leader_trait_governor_water_type_1 }
+						set_leader_flag = EOE_LV10_leader_trait_gived
+					}
+			
+				}
+				
+			}
+	
+	
+				
+		}
+
+		
+	}
+}
+
 
 # country_event = {   #草系随机上特质
 # 	id = leadereevent.2000
@@ -10622,7 +12349,7 @@ country_event = {   #4级随机上特质
 			NOT = {
 				has_leader_flag = EOE_LV4_leader_trait_gived
 			}
-			has_level > 3
+			has_base_skill > 3
 		}
 	}
 	immediate = {
@@ -10633,7 +12360,7 @@ country_event = {   #4级随机上特质
 				NOT = {
 				has_leader_flag = EOE_LV4_leader_trait_gived
 			}
-			has_level > 3
+			has_base_skill > 3
 			}
 			random_list = {
 				1 ={ 
@@ -10689,7 +12416,7 @@ country_event = {   #4级随机上特质
 				NOT = {
 				has_leader_flag = EOE_LV4_leader_trait_gived
 			}
-			has_level > 3
+			has_base_skill > 3
 			}
 			random_list = {
 				1 ={ 
@@ -10749,7 +12476,7 @@ country_event = {   #4级随机上特质
 				NOT = {
 				has_leader_flag = EOE_LV4_leader_trait_gived
 			}
-			has_level > 3
+			has_base_skill > 3
 			}
 			random_list = {
 				1 ={ 
@@ -10812,7 +12539,7 @@ country_event = {   #4级随机上特质
 					NOT = {
 					has_leader_flag = EOE_LV4_leader_trait_gived
 				}
-				has_level > 3
+				has_base_skill > 3
 				}
 				random_list = {
 					1 ={ 
@@ -10868,7 +12595,7 @@ country_event = {   #4级随机上特质
 					NOT = {
 					has_leader_flag = EOE_LV4_leader_trait_gived
 				}
-				has_level > 3
+				has_base_skill > 3
 				}
 				random_list = {
 					1 ={ 
@@ -10928,7 +12655,7 @@ country_event = {   #4级随机上特质
 					NOT = {
 					has_leader_flag = EOE_LV4_leader_trait_gived
 				}
-				has_level > 3
+				has_base_skill > 3
 				}
 				random_list = {
 					1 ={ 
@@ -11005,7 +12732,7 @@ country_event = {   #8级随机上特质
 			NOT = {
 				has_leader_flag = EOE_LV8_leader_trait_gived
 			}
-			has_level > 7
+			has_base_skill > 7
 		}
 	}
 	immediate = {
@@ -11016,7 +12743,7 @@ country_event = {   #8级随机上特质
 				NOT = {
 				has_leader_flag = EOE_LV8_leader_trait_gived
 			}
-			has_level > 7
+			has_base_skill > 7
 			}
 			random_list = {
 				1 ={ 
@@ -11072,7 +12799,7 @@ country_event = {   #8级随机上特质
 				NOT = {
 				has_leader_flag = EOE_LV8_leader_trait_gived
 			}
-			has_level > 7
+			has_base_skill > 7
 			}
 			random_list = {
 				1 ={ 
@@ -11132,7 +12859,7 @@ country_event = {   #8级随机上特质
 				NOT = {
 				has_leader_flag = EOE_LV8_leader_trait_gived
 			}
-			has_level > 7
+			has_base_skill > 7
 			}
 			random_list = {
 				1 ={ 
@@ -11195,7 +12922,7 @@ country_event = {   #8级随机上特质
 					NOT = {
 					has_leader_flag = EOE_LV8_leader_trait_gived
 				}
-				has_level > 7
+				has_base_skill > 7
 				}
 				random_list = {
 					1 ={ 
@@ -11251,7 +12978,7 @@ country_event = {   #8级随机上特质
 					NOT = {
 					has_leader_flag = EOE_LV8_leader_trait_gived
 				}
-				has_level > 7
+				has_base_skill > 7
 				}
 				random_list = {
 					1 ={ 
@@ -11311,7 +13038,7 @@ country_event = {   #8级随机上特质
 					NOT = {
 					has_leader_flag = EOE_LV8_leader_trait_gived
 				}
-				has_level > 7
+				has_base_skill > 7
 				}
 				random_list = {
 					1 ={ 

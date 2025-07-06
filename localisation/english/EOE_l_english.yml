@@ -79,6 +79,7 @@ PLANET_KILLER_EOE_ACTION:0 "Catch"
 PLANET_KILLER_EOE_DESC:0 "This super weapon can control the minds of all intelligent creatures on the entire planet in one strike."
 FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_EOE:0 "Prepare to catch $PLANET|Y$"
 MESSAGE_DESC_FOR_PLANET_KILLER_EOE:0 "was catched by"
+no_catchable_pops:0 "§R$TRIGGER_FAIL$Target does not house any Pops suitable for mind control§!"
 
 #opinion_modifier
 triggered_opinion_trait_extremely_cute:0"Extremely Cute"
@@ -643,3 +644,55 @@ concept_ap_mega_EOE_desc:0 "-$ap_mega_evolution_EOE_modifier_desc$\n$ap_mega_evo
 #EOE_not_enough_soc_produce:0 "Insufficient Sociology Research output to enable this approach.\nRequires at least §R4166 / Current Research Multiplier§! Sociology Research output."
 endless_evolution_stage:0 "Endless Evolution: Researching"
 endless_evolution_complete:0 "$species_trait_points_add$: §G+1§!"
+
+######################20250701添加：
+######COMMANDER
+edict_EOE_edict_leader_trait_dark_type_Void_Stutter_1_pick:0"$trait_dark_type_mega_evolution$§Y$commander$§! Targeted Cultivation"
+edict_EOE_edict_leader_trait_dark_type_Void_Stutter_1_pick_desc:0"Prioritizes Dark-type Gene Enhancement for §Y$commander$§!"
+EOE_edict_leader_trait_dark_type_Void_Stutter_1_pick_tooltip:0"When any pop possesses $trait_dark_type_mega_evolution$, §Y$commander$§! gains §G10×§! higher probability of acquiring ['concept_leader_trait_dark_type_Void_Stutter_1']"
+
+edict_EOE_edict_leader_trait_ice_type_Directed_molecular_activation_1_pick:0 "$trait_ice_type_mega_evolution$§Y$commander$§! Targeted Cultivation"
+edict_EOE_edict_leader_trait_ice_type_Directed_molecular_activation_1_pick_desc:0 "Prioritizes Ice-type Gene Enhancement for §Y$commander$§!"
+EOE_edict_leader_trait_ice_type_Directed_molecular_activation_1_pick_tooltip:0 "When any pop possesses $trait_ice_type_mega_evolution$, §Y$commander$§! gains §G10×§! higher probability of acquiring ['concept_leader_trait_ice_type_Directed_molecular_activation_1']"
+
+edict_EOE_edict_leader_trait_fire_type_Instantaneous_entropy_increase_1_pick:0 "$trait_fire_type_mega_evolution$§Y$commander$§! Targeted Cultivation"
+edict_EOE_edict_leader_trait_fire_type_Instantaneous_entropy_increase_1_pick_desc:0 "Prioritizes Fire-type Gene Enhancement for §Y$commander$§!"
+EOE_edict_leader_trait_fire_type_Instantaneous_entropy_increase_1_pick_tooltip:0 "When any pop possesses $trait_fire_type_mega_evolution$, §Y$commander$§! gains §G10×§! higher probability of acquiring ['concept_leader_trait_fire_type_Instantaneous_entropy_increase_1']"
+
+edict_EOE_edict_leader_trait_admiral_fairy_type_1_pick:0 "$trait_fairy_type_mega_evolution$§Y$commander$§! Targeted Cultivation"
+edict_EOE_edict_leader_trait_admiral_fairy_type_1_pick_desc:0 "Prioritizes Fairy-type Gene Enhancement for §Y$commander$§!"
+EOE_edict_leader_trait_admiral_fairy_type_1_pick_tooltip:0 "When any pop possesses $trait_fairy_type_mega_evolution$, §Y$commander$§! gains §G10×§! higher probability of acquiring ['concept_leader_trait_admiral_fairy_type_1']"
+
+#######SCIENTIST
+edict_EOE_edict_leader_trait_scientist_psychic_type_psionic_benefits_1_pick:0 "$trait_psychic_type_mega_evolution$§Y$scientist$§! Targeted Cultivation"
+edict_EOE_edict_leader_trait_scientist_psychic_type_psionic_benefits_1_pick_desc:0 "Prioritizes Psychic-type Gene Enhancement for §Y$scientist$§!"
+EOE_edict_leader_trait_scientist_psychic_type_psionic_benefits_1_pick_tooltip:0 "When any pop possesses $trait_psychic_type_mega_evolution$, §Y$scientist$§! gains §G10×§! higher probability of acquiring ['concept_leader_trait_scientist_psychic_type_psionic_benefits_1']"
+
+edict_EOE_edict_leader_trait_scientist_water_type_1_pick:0 "$trait_water_type_mega_evolution$§Y$scientist$§! Targeted Cultivation"
+edict_EOE_edict_leader_trait_scientist_water_type_1_pick_desc:0 "Prioritizes Water-type Gene Enhancement for §Y$scientist$§!"
+EOE_edict_leader_trait_scientist_water_type_1_pick_tooltip:0 "When any pop possesses $trait_water_type_mega_evolution$, §Y$scientist$§! gains §G10×§! higher probability of acquiring ['concept_leader_trait_scientist_water_type_1']"
+
+edict_EOE_edict_leader_trait_scientist_dark_type_night_owl_1_pick:0 "$trait_dark_type_mega_evolution$§Y$scientist$§! Targeted Cultivation"
+edict_EOE_edict_leader_trait_scientist_dark_type_night_owl_1_pick_desc:0 "Prioritizes Dark-type Gene Enhancement for §Y$scientist$§!"
+EOE_edict_leader_trait_scientist_dark_type_night_owl_1_pick_tooltip:0 "When any pop possesses $trait_dark_type_mega_evolution$, §Y$scientist$§! gains §G10×§! higher probability of acquiring ['concept_leader_trait_scientist_dark_type_night_owl_1']"
+
+edict_EOE_edict_leader_trait_scientist_electric_type_1_pick:0 "$trait_electric_type_mega_evolution$§Y$scientist$§! Targeted Cultivation"
+edict_EOE_edict_leader_trait_scientist_electric_type_1_pick_desc:0 "Prioritizes Electric-type Gene Enhancement for §Y$scientist$§!"
+EOE_edict_leader_trait_scientist_electric_type_1_pick_tooltip:0 "When any pop possesses $trait_electric_type_mega_evolution$, §Y$scientist$§! gains §G10×§! higher probability of acquiring ['concept_leader_trait_scientist_electric_type_1']"
+
+########GOVERNOR
+edict_EOE_edict_leader_trait_governor_fairy_type_Empathy_network_1_pick:0 "$trait_fairy_type_mega_evolution$§Y$governor$§! Targeted Cultivation"
+edict_EOE_edict_leader_trait_governor_fairy_type_Empathy_network_1_pick_desc:0 "Prioritizes Fairy-type Gene Enhancement for §Y$governor$§!"
+EOE_edict_leader_trait_governor_fairy_type_Empathy_network_1_pick_tooltip:0 "When any pop possesses $trait_fairy_type_mega_evolution$, §Y$governor$§! gains §G10×§! higher probability of acquiring ['concept_leader_trait_governor_fairy_type_Empathy_network_1']"
+
+edict_EOE_edict_leader_trait_governor_ice_type_nano_builder_1_pick:0 "$trait_ice_type_mega_evolution$§Y$governor$§! Targeted Cultivation"
+edict_EOE_edict_leader_trait_governor_ice_type_nano_builder_1_pick_desc:0 "Prioritizes Ice-type Gene Enhancement for §Y$governor$§!"
+EOE_edict_leader_trait_governor_ice_type_nano_builder_1_pick_tooltip:0 "When any pop possesses $trait_ice_type_mega_evolution$, §Y$governor$§! gains §G10×§! higher probability of acquiring ['concept_leader_trait_governor_ice_type_nano_builder_1']"
+
+edict_EOE_edict_leader_trait_governor_grass_type_Plants_vs_Aliens_1_pick:0 "$trait_grass_type_mega_evolution$§Y$governor$§! Targeted Cultivation"
+edict_EOE_edict_leader_trait_governor_grass_type_Plants_vs_Aliens_1_pick_desc:0 "Prioritizes Grass-type Gene Enhancement for §Y$governor$§!"
+EOE_edict_leader_trait_governor_grass_type_Plants_vs_Aliens_1_pick_tooltip:0 "When any pop possesses $trait_grass_type_mega_evolution$, §Y$governor$§! gains §G10×§! higher probability of acquiring ['concept_leader_trait_governor_grass_type_Plants_vs_Aliens_1']"
+
+edict_EOE_edict_leader_trait_governor_water_type_1_pick:0 "$trait_water_type_mega_evolution$§Y$governor$§! Targeted Cultivation" 
+edict_EOE_edict_leader_trait_governor_water_type_1_pick_desc:0 "Prioritizes Water-type Gene Enhancement for §Y$governor$§!"
+EOE_edict_leader_trait_governor_water_type_1_pick_tooltip:0 "When any pop possesses $trait_water_type_mega_evolution$, §Y$governor$§! gains §G10×§! higher probability of acquiring ['concept_leader_trait_governor_water_type_1']"

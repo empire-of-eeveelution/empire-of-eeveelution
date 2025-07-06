@@ -1720,7 +1720,7 @@ planet_event = {
 		every_owned_pop_group = {
 			limit = {
 				OR = {
-					has_trait = trait_hive_mind
+					# has_trait = trait_hive_mind
 					has_trait = trait_mechanical
 					has_trait = trait_machine_unit
 				}
@@ -1969,7 +1969,7 @@ country_event = { #环开开局布置
 
 #白龙巨像39~43
 
-planet_event = {
+planet_event = {  ##修改自原版的地爆天星planet_destruction.100
 	id = eevent.39
 	is_triggered_only = yes
 	hide_window = yes
@@ -2119,6 +2119,7 @@ planet_event = {
 							}
 						}
 					}
+					#######################################这里不一样，杀灭绝不减评价↓
 					if = {
 						limit = { 
 							root = { is_colony = no }
@@ -2136,6 +2137,7 @@ planet_event = {
 							who = from.owner
 						}
 					}
+					
 					else_if = {
 						limit = { 
 							root = { is_colony = yes }
@@ -2153,6 +2155,7 @@ planet_event = {
 							who = from.owner
 						}
 					}
+					#######################################这里不一样，杀灭绝不减评价↑
 				}
 			}
 			else = {
@@ -2207,7 +2210,7 @@ planet_event = {
 						}
 					}
 					add_opinion_modifier = {
-						modifier = opinion_burned_a_primitive_world
+						modifier = opinion_burned_a_primitive_world ###############这里和原版不一样
 						who = from.owner
 					}
 				}
@@ -2228,7 +2231,7 @@ planet_event = {
 						}
 					}
 					add_opinion_modifier = {
-						modifier = opinion_burned_a_primitive_world_phile
+						modifier = opinion_burned_a_primitive_world_phile ###############这里和原版不一样
 						who = from.owner
 					}
 				}
@@ -2253,7 +2256,13 @@ planet_event = {
 			}
 		}
 		every_owned_pop_group = {
-			kill_pop = yes
+			kill_all_pop = yes
+		}
+		if = {
+			limit = {
+				exists = orbital_defence
+			}
+			destroy_fleet = orbital_defence
 		}
 		remove_all_buildings = yes
 		# destroy habitats and ringworlds
@@ -2262,18 +2271,21 @@ planet_event = {
 				is_planet_class = pc_habitat
 			}
 			spawn_habitat_cracker_effect = yes
-			remove_planet = yes
 		}
 		else_if = {
 			limit = {
-				OR = { 
-				is_planet_class = pc_ringworld_habitable
-				is_planet_class = pc_shattered_ring_habitable
-				}
+				is_planet_class = pc_cosmogenesis_world
+			}
+			spawn_lathe_cracker_effect = yes
+		}
+		else_if = {
+			limit = {
+				is_ringworld = yes
 			}
 			spawn_ringworld_cracker_effect = yes
 			change_pc = pc_ringworld_habitable_damaged
 		}
+		##############################下面是改过的
 		else_if = {
 			limit = { habitable_planet = yes }
 			change_pc = pc_nuked
