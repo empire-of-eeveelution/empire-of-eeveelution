@@ -1,5 +1,5 @@
 situation_endless_evolution = {
-    picture = GFX_evt_EOE_cthugha_calling
+    picture = GFX_evt_EOE_endless_evolution
     category = positive
     # fail_icon = GFX_situation_outcome_meh
     # fail_icon_frame = GFX_situation_outcome_frame_green
