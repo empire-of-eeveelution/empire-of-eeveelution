@@ -44,6 +44,7 @@ situation_endless_evolution = {
         owner = {
             hidden_effect = {
                 give_technology = { tech = tech_endless_evolution message = no }
+                give_technology = { tech = tech_endless_evolution1 message = no }
                 start_situation = { type = situation_endless_evolution target = this }
                 destroy_situation = root
                 export_resource_income_to_variable  = { resource = society_research variable = soc_research_produce }
@@ -65,6 +66,7 @@ situation_endless_evolution = {
             #     id = EOEjifei3.20
             # }
             custom_tooltip = endless_evolution_complete
+            custom_tooltip = endless_evolution_complete_picks
         }
     }
     on_fail = {

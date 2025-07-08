@@ -9,6 +9,9 @@ tech_Gender_Balance_desc:0"众所周知，雌性伊布是极为高效的生殖�
 tech_endless_evolution:0"无穷进化"
 tech_endless_evolution_desc:0"随着对基因本质的深入认知，我们终将激发自身的所有潜力。"
 tech_endless_evolution_modifier_desc:0"$species_trait_points_add$: $POINTS|0=+$"
+tech_endless_evolution1:0"$tech_endless_evolution$"
+tech_endless_evolution1_desc:0"$tech_endless_evolution_desc$"
+tech_endless_evolution1_modifier_desc:0"物种特质选择§G+0.34§!"
 tech_mega_evolution:0"青出于蓝"
 tech_mega_evolution_desc:0"脱胎于百万年前的先贤，我们如今的灵能生物科技已经超越了当年的创造者。对基因与灵能本质的研究将为我们带来无穷的可能性。"
 tech_mega_evolution_modifier_desc:0"$species_trait_points_add$: $POINTS|0=+$\n物种修饰特殊项目花费：§G-25%§!"
@@ -644,6 +647,7 @@ councilor_external_synapse_desc:1 "$TITLE$是我们管理子个体的部位"
  #EOE_not_enough_soc_produce:0"社会学研究产出不足，无法启用该方案\n你至少需要§R4166/本局科研倍数§!的社会学产出才能启用该方案"
  endless_evolution_stage:0"无限进化：正在研究"
  endless_evolution_complete:0"$species_trait_points_add$: §G+1§!"
+ endless_evolution_complete_picks:0"物种特质选择§G+0.34§!"
 
 ################################20250701添加
 

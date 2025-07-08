@@ -51,6 +51,56 @@ tech_endless_evolution = {
 	}
 }
 
+tech_endless_evolution1 = {
+	area = society
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { biology }
+	levels = 60
+	prerequisites = {  }
+	icon = tech_gene_tailoring
+	weight = -10000
+
+	potential = {
+		or = {
+			has_tradition = tr_cloning_finish
+			has_tradition = tr_mutation_finish
+			has_tradition = tr_purity_finish
+			has_tradition = tr_genetics_finish
+		}
+		NOT = { has_country_flag = disabled_endless_evolution }
+	}
+	weight_modifier = {
+		factor = 0
+		modifier = {
+			factor = 0
+			NOT = {
+				owner_main_species = { has_trait = trait_directed_evolution }
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 1.0
+	}
+
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0
+	}
+
+	modifier = {
+		description = tech_endless_evolution1_modifier_desc
+		description_parameters = {
+			POINTS = 0.34
+		}
+		BIOLOGICAL_species_trait_picks_add = 0.34
+	}
+}
+
 
 
 
