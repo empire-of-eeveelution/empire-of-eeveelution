@@ -1011,3 +1011,14 @@ EOE_create_ultra_system = {
 		}
 	}
 }
+
+# EOE_ghost_random_fix = {
+# 	optimize_memory
+# 	prev = {
+# 		ship_event = {
+# 			id = EOE_ghost_fix.$x$
+# 		}
+# 	}
+	
+# }
+#这看起来没用

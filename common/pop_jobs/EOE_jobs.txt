@@ -16,45 +16,53 @@ EOE_assimilation = {
 	resources = {
 		category = planet_jobs
 		upkeep = {
-			trigger = {
-				has_phototrophic_energy_upkeep = yes
-			}
-			energy = @living_standard_phototrophic_normal
-		}
-		upkeep = {
-			trigger = {
-				has_food_upkeep = yes
-				is_phototrophic = no
-			}
 			food = @living_standard_food_normal
 		}
-		upkeep = {
-			trigger = {
-				has_food_upkeep = yes
-				is_phototrophic = yes
-			}
-			food = @living_standard_phototrophic_normal
-		}
-		upkeep = {
-			trigger = {
-				has_mineral_upkeep = yes
-				is_phototrophic = no
-			}
-			minerals = @living_standard_food_normal
-		}
-		upkeep = {
-			trigger = {
-				has_mineral_upkeep = yes
-				is_phototrophic = yes
-			}
-			minerals = @living_standard_phototrophic_normal
-		}
-		upkeep = {
-			trigger = {
-				is_robotic_or_voidspawn_species = yes
-			}
-			energy = @living_standard_energy_normal
-		}
+		#同化人口全都吃苹果。不然报错太多了也改不来
+
+		# upkeep = {
+		# 	trigger = {
+		# 		prev = {
+
+		# 		}
+		# 		has_phototrophic_energy_upkeep = yes
+		# 	}
+		# 	energy = @living_standard_phototrophic_normal
+		# }
+		# upkeep = {
+		# 	trigger = {
+		# 		has_food_upkeep = yes
+		# 		is_phototrophic = no
+		# 	}
+		# 	food = @living_standard_food_normal
+		# }
+		# upkeep = {
+		# 	trigger = {
+		# 		has_food_upkeep = yes
+		# 		is_phototrophic = yes
+		# 	}
+		# 	food = @living_standard_phototrophic_normal
+		# }
+		# upkeep = {
+		# 	trigger = {
+		# 		has_mineral_upkeep = yes
+		# 		is_phototrophic = no
+		# 	}
+		# 	minerals = @living_standard_food_normal
+		# }
+		# upkeep = {
+		# 	trigger = {
+		# 		has_mineral_upkeep = yes
+		# 		is_phototrophic = yes
+		# 	}
+		# 	minerals = @living_standard_phototrophic_normal
+		# }
+		# upkeep = {
+		# 	trigger = {
+		# 		is_robotic_or_voidspawn_species = yes
+		# 	}
+		# 	energy = @living_standard_energy_normal
+		# }
 	}
 
 	weight = {

@@ -226,6 +226,7 @@ special_project = {
 		}
 	}
 }
+#看起来4.5.6都不用到
 special_project = {
 	key = "EOE_enter_portal_4"
 	event_scope = ship_event
