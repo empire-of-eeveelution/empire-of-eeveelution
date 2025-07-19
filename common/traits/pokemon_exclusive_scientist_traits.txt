@@ -12,6 +12,10 @@ leader_trait_EOE_Plant_master = { #秋葵生物专精
 		leader_trait_selection_options_add = 2
 		leader_lifespan_add = 50
 	}
+	councilor_modifier = {
+		category_biology_research_speed_mult = 0.5
+		category_biology_draw_chance_mult = 0.35
+	}
 	planet_modifier = {
 		planet_jobs_physics_research_produces_mult = 0.2
 		planet_jobs_society_research_produces_mult = 0.2
