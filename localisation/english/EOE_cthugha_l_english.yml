@@ -265,11 +265,11 @@ EOE_fire_vampire_DESC:0"The life activities of Fire Vampire are powered by the e
  EOE_branch.65.desc:0 "Demigod Reshiram's power burned the surface of whole planet! There is now a purgatory of magma and fire!"
  EOE_branch.65.a:0"Damn it"
 eevent.40.name:0"The Vermillion Problem"
-eevent.40.desc:0"The power of [From.From.GetName] temporarily distorts the physical laws around [From.GetName], making the sea of fire of heavy element fusion reaction sweep the whole planet. All the advanced life on [From.GetName] has been eliminated, and now there is only the scorched earth filled with radioactive material."
+eevent.40.desc:0"The power of [From.From.GetName] instantly extended the range of strong nuclear forces beyond electromagnetic forces at [From.GetName], engulfing the entire planet in a firestorm of heavy-element fusion reactions. All advanced life on [From.GetName] has been eradicated, leaving only charred earth littered with radioactive material."
 eevent.41.name:0"The Vermillion Problem"
-eevent.41.desc:0"The power of [From.From.GetName] has forever changed the physical laws around [From.GetName], plunged the whole planet into the sea of fire of heavy element fusion reaction. Now, [From.GetName] is a planet sized fusion reactor."
+eevent.41.desc:0"The power of [From.From.GetName] instantly extended the range of strong nuclear forces beyond electromagnetic forces around [From.GetName], plunging the entire planet into a firestorm of heavy-element fusion. [From.GetName] is now a global ocean of magma, expected to remain incandescent for centuries to come."
 eevent.43.name:0"Ignite gaseous giant"
-eevent.43.desc:0"The power of [From.From.GetName] has forever changed the physical laws around [From.GetName], induced deuterium lithium fusion in [From.GetName] atmosphere.Now, [From.GetName] can be called a small mass brown dwarf."
+eevent.43.desc:0"The power of [From.From.GetName] instantly extended the range of strong nuclear forces beyond electromagnetic forces around [From.GetName], inducing deuterium-lithium fusion in its atmosphere. [From.GetName] now qualifies as a low-mass brown dwarf."
 
 
 
