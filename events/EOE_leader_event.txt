@@ -8218,7 +8218,7 @@ country_event = {   #10级随机上特质
 					NOT = {
 						has_leader_flag = EOE_LV10_leader_trait_gived
 					}
-					has_base_skill > 7
+					has_base_skill > 9
 				}
 				random_list = {
 			
@@ -8352,7 +8352,7 @@ country_event = {   #10级随机上特质
 					NOT = {
 						has_leader_flag = EOE_LV10_leader_trait_gived
 					}
-					has_base_skill > 7
+					has_base_skill > 9
 				}
 				random_list = {
 					#leader_trait_governor_fairy_type_Empathy_network_1
@@ -8474,7 +8474,7 @@ country_event = {   #10级随机上特质
 					NOT = {
 					has_leader_flag = EOE_LV10_leader_trait_gived
 				}
-				has_base_skill > 7
+				has_base_skill > 9
 				}
 				random_list = {
 					1 ={ 
@@ -8587,7 +8587,7 @@ country_event = {   #10级随机上特质
 					NOT = {
 						has_leader_flag = EOE_LV10_leader_trait_gived
 					}
-					has_base_skill > 7
+					has_base_skill > 9
 				}
 				random_list = {
 			
@@ -8721,7 +8721,7 @@ country_event = {   #10级随机上特质
 					NOT = {
 						has_leader_flag = EOE_LV10_leader_trait_gived
 					}
-					has_base_skill > 7
+					has_base_skill > 9
 				}
 				random_list = {
 					#leader_trait_governor_fairy_type_Empathy_network_1
