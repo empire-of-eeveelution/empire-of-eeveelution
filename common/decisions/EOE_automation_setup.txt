@@ -1,0 +1,78 @@
+decision_automation_project = {
+	owned_planets_only = yes
+	icon = decision_arcology_project
+
+	enactment_time = 3600
+	resources = {
+		category = decisions
+		cost = {
+			influence = 200
+			minerals = 20000
+			sr_dark_matter = 500
+		}
+	}
+
+	potential = {
+		NOR = {
+			is_planet_class = pc_city
+			is_planet_class = pc_relic
+			is_planet_class = pc_automation_planet
+			is_planet_class = pc_automation_planet_darkmatter
+			is_planet_class = pc_habitat
+			is_planet_class = pc_ringworld_habitable
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+			has_modifier = pm_wenkwort_custodian
+		}
+		exists = owner
+		owner = {
+			OR = {
+				has_ascension_perk = ap_arcology_project
+				has_ascension_perk = ap_machine_worlds
+				has_ascension_perk = ap_hive_worlds
+			}
+			has_technology = tech_fe_affluence_2
+			has_technology = tech_fe_forge_2
+			has_technology = tech_fe_lab_2
+			has_technology = tech_fe_mine_2
+			has_technology = tech_fe_singularity_2
+			has_technology = tech_fe_nourishment_2
+			has_technology = tech_dark_matter_power_core
+			has_country_flag = EOE_auto_complete
+		}
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = has_wrong
+			num_districts = { type = district_farming value < 1 }
+			num_districts = { type = district_mining value < 1 }
+			num_districts = { type = district_generator value < 1 }
+		}
+	}
+
+	effect = {
+		custom_tooltip = decision_automation_project_effects
+		hidden_effect = {
+			clear_deposits = yes
+			change_pc = pc_automation_planet
+			##改造自动化星球违反星海共同体的4级和5级环保法案
+			if = {
+				limit = {
+					OR = {
+						is_active_resolution = "resolution_ecology_environmental_control_board"
+						is_active_resolution = "resolution_ecology_paradise_initiative"
+					}
+				}
+				owner = {
+					set_timed_country_flag = { flag = resolution_breached_terraformed days = 3600 }
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

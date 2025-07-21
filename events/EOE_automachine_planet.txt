@@ -1,0 +1,65 @@
+namespace = EOE_auto
+country_event = {
+    id = EOE_auto.1
+    is_triggered_only = yes
+    title = EOE.auto.1.title
+    desc = EOE.auto.1.desc
+    picture = GFX_evt_ai_planet
+    show_sound = event_cityscape_02
+    trigger = {
+        always = no
+        is_species_class = Eeveelutions
+        OR = {
+            has_ascension_perk = ap_arcology_project
+            has_ascension_perk = ap_hive_worlds
+        }
+        has_technology = tech_fe_affluence_2
+        has_technology = tech_fe_forge_2
+        has_technology = tech_fe_lab_2
+        has_technology = tech_fe_mine_2
+        has_technology = tech_fe_singularity_2
+        has_technology = tech_fe_nourishment_2
+        has_technology = tech_dark_matter_power_core
+        NOT = { has_country_flag = EOE_auto_complete }
+        NOT = { has_country_flag = EOE_auto_start }
+    }
+    immediate = { set_country_flag = EOE_auto_start }
+    option = {
+        name = EOE.auto.1.accept
+        enable_special_project = { name = RESEARCH_EOE_AUTO_PLANET }
+    }
+    option = {
+        name = EOE.auto.1.disable
+    }
+}
+country_event = {
+    id = EOE_auto.2
+    is_triggered_only = yes
+    title = EOE.auto.2.title
+    desc = EOE.auto.2.desc
+    picture = GFX_evt_ai_planet
+    show_sound = event_cityscape_02
+    trigger = {
+        is_species_class = Eeveelutions
+        OR = {
+            has_ascension_perk = ap_arcology_project
+            has_ascension_perk = ap_hive_worlds
+        }
+        has_technology = tech_fe_affluence_2
+        has_technology = tech_fe_forge_2
+        has_technology = tech_fe_lab_2
+        has_technology = tech_fe_mine_2
+        has_technology = tech_fe_singularity_2
+        has_technology = tech_fe_nourishment_2
+        has_technology = tech_dark_matter_power_core
+        NOT = { has_country_flag = EOE_auto_complete }
+    }
+    immediate =
+    {
+        set_country_flag = EOE_auto_complete
+        remove_country_flag = EOE_auto_start
+    }
+    }
+    option = {
+        name = EOE.auto.2.ok
+}

@@ -1,0 +1,5 @@
+on_monthly_pulse_country = {
+    events = {
+        EOE_auto.1
+    }
+}

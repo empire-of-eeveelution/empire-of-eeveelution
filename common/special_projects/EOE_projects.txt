@@ -470,3 +470,19 @@ special_project = { #抓小陨星
 	}
 }
 
+special_project = { #抓小陨星
+	key = "RESEARCH_EOE_AUTO_PLANET"
+	event_scope = country_event
+	cost = 50000
+	tech_department = engineering_technology
+	timelimit = -1
+	picture = GFX_evt_ai_planet
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+
+	on_success = {
+		country_event = {
+			id = EOE_auto.2
+		}
+	}
+}
+

@@ -1,0 +1,245 @@
+district_dimensional_fabricator = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = { uses_district_set = automation_planet }
+
+	potential = { uses_district_set = automation_planet }
+
+	zone_slots = {
+		slot_city_01
+		slot_city_02
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 500
+		}
+		produces = {
+			minerals = 150
+			exotic_gases = 10
+			rare_crystals = 10
+			volatile_motes = 10
+			sr_dark_matter = 10
+			sr_zro = 10
+			sr_living_metal = 10
+		}
+		
+		upkeep = {
+			energy = 30
+		}
+	}
+	planet_modifier = {
+		planet_amenities_add = 24
+	}
+}
+district_class-4_singularity = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = { uses_district_set = automation_planet }
+
+	potential = { uses_district_set = automation_planet }
+
+	zone_slots = {
+		slot_city_01
+		slot_city_02
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 500
+		}
+		produces = {
+			energy = 250
+		}
+	}
+	planet_modifier = {
+		planet_amenities_add = 24
+	}
+}
+district_auto_forge = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = { uses_district_set = automation_planet }
+
+	potential = { uses_district_set = automation_planet }
+
+	zone_slots = {
+		slot_city_01
+		slot_city_02
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 500
+		}
+		produces = {
+			alloys = 100
+		}
+		upkeep = {
+			minerals = 150
+			energy = 20
+		}
+	}
+	planet_modifier = {
+		planet_amenities_add = 24
+	}
+}
+district_affluence_center = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = { uses_district_set = automation_planet }
+
+	potential = { uses_district_set = automation_planet }
+
+	zone_slots = {
+		slot_city_01
+		slot_city_02
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 500
+		}
+		produces = {
+			consumer_goods = 200
+		}
+		upkeep = {
+			minerals = 150
+			energy = 20
+		}
+	}
+	planet_modifier = {
+		planet_amenities_add = 24
+	}
+}
+district_nourishment_center = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = { uses_district_set = automation_planet }
+
+	potential = { uses_district_set = automation_planet }
+
+	zone_slots = {
+		slot_city_01
+		slot_city_02
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 500
+		}
+		produces = {
+			food = 200
+		}
+		upkeep = {
+			energy = 40
+		}
+	}
+	planet_modifier = {
+		planet_amenities_add = 24
+	}
+}
+district_auto_science = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = { uses_district_set = automation_planet }
+
+	potential = { uses_district_set = automation_planet }
+
+	zone_slots = {
+		slot_city_government
+		slot_city_01
+		slot_city_02
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 500
+			exotic_gases = 20
+		}
+		upkeep = {
+			energy = 10
+			exotic_gases = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		planet_housing_add = 2000
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_biologist_add = 300
+			job_engineer_add = 300
+			job_physicist_add = 300
+			job_head_researcher_add = 100
+			researcher_jobs_bonus_workforce_mult = 0.05
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_brain_drone_biologist_add = 333
+			job_brain_drone_engineer_add = 333
+			job_brain_drone_physicist_add = 333
+			researcher_jobs_bonus_workforce_mult = 0.05
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_calculator_biologist_add = 333
+			job_calculator_engineer_add = 333
+			job_calculator_physicist_add = 333
+			researcher_jobs_bonus_workforce_mult = 0.05
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_researcher_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		text = job_brain_drone_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		text = job_calculator_effect_desc
+	}
+}
