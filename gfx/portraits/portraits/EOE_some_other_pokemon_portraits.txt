@@ -38,6 +38,9 @@ portraits = {
 	EOEother013 = {
 		texturefile = "gfx/models/portraits/OtherTypePokemon/eoegrass830.png"
 	}
+	EOEBIXIE = {
+		texturefile = "gfx/models/portraits/OtherTypePokemon/EOEBIXIE.dds"
+	}
 }
 
 portrait_groups = {
@@ -141,6 +144,55 @@ portrait_groups = {
 					EOEother013
 				}
 			}
+		}
+	}
+	bixie= {
+		default = EOEBIXIE
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				portraits = {
+					EOEBIXIE
+				}
+			}
+			add = {
+				portraits = {
+					EOEBIXIE
+				}
+			}
+		}
+
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					EOEBIXIE
+				}
+			}
+
+		}
+
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					EOEBIXIE
+				}
+			}
+		}
+
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				portraits = {
+					EOEBIXIE
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				portraits = {
+					EOEBIXIE
+				}
+			}
+
 		}
 	}
 }

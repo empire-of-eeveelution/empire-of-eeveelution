@@ -23,3 +23,67 @@
 # 		}
 # 	}
 # }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BRAVE_TROOP = {
+    inherit_traits_from = { BIOLOGICAL }
+    species_trait_points = 20
+    species_max_traits = 200
+}

@@ -1,0 +1,19 @@
+special_project = { #炎之精
+    key = "BIXIE_FOUND"
+    event_scope = ship_event
+    days_to_research = 720
+    timelimit = -1
+    picture = GFX_evt_dead_city
+    icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+    requirements = {
+        shipclass_science_ship = 1
+        leader = scientist
+        skill = 2
+    }
+
+    on_success = {
+        country_event = {
+            id = bixie.7
+        }
+    }
+}

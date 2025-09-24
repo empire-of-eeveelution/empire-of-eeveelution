@@ -1,0 +1,273 @@
+namespace = bixie
+
+country_event = {
+    id = bixie.1
+    hide_window = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        is_ai = no
+        is_species_class = Eeveelutions
+    }
+
+    immediate = {
+        create_country = {
+            name = "NAME_PIXIU_BIXIE"
+            type = paragon_event_country
+            auto_delete = yes
+            flag = {
+                icon = {
+                    category = "special"
+                    file = "unknown.dds"
+                }
+                background = {
+                    category = "backgrounds"
+                    file = "00_solid.dds"
+                }
+                colors = {
+                    "white"
+                    "red"
+                    "null"
+                    "null"
+                }
+            }
+            effect = {
+                save_global_event_target_as = bixie_country
+            }
+        }
+        event_target:bixie_country = {
+            create_species = {
+                name = "BRA2"
+                plural = "BRA2"
+                class = BRA_bixie
+                portrait = EOEBIXIE
+                traits = random
+                sapient = no
+                immortal = yes
+                gender = not_set
+                allow_negative_traits = no
+                namelist = random
+                effect = {
+                    save_global_event_target_as = bixie_species
+                }
+            }
+            create_leader = {
+                name = "辟邪"
+                class = commander
+                species = event_target:bixie_species
+                skill = 10
+                event_leader = yes
+                set_age = 5000000
+                skip_background_generation = yes
+                gender = indeterminable
+                immortal = yes
+                hide_age = yes
+                custom_catch_phrase = bixie_catch_phrase
+                effect = {
+                    this = {
+                        change_leader_portrait = EOEBIXIE
+                        set_leader_flag = pixiubixie
+                        set_leader_flag = legendary_leader
+                        set_leader_flag = immune_to_negative_traits
+                        save_global_event_target_as = leader_bixie
+                    }
+                }
+            }
+            last_created_leader = {
+                set_owner = event_target:bixie_country
+            }
+        }
+
+    }
+}
+country_event = {
+    id = bixie.2
+    hide_window = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    immediate = {
+        every_owned_leader = {
+            if = {
+                limit = {
+                    has_leader_flag = pixiubixie
+                }
+                change_leader_portrait = EOEBIXIE
+                set_gender = indeterminable
+            }
+        }
+    }
+}
+country_event = {
+    id = bixie.3
+    hide_window = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        is_ai = no
+        is_species_class = Eeveelutions
+        NOT = {
+            any_galaxy_planet = {
+                has_planet_flag = planet_earth
+            }
+        }
+    }
+    immediate = {
+        random_system = {
+            limit = {
+                distance = {
+                    source = root
+                    min_jumps = 6
+                    max_jumps = 8
+                }
+            }
+            spawn_system = {
+                min_distance >= 29
+                max_distance <= 31
+                min_orientation_angle = 24
+                max_orientation_angle = 66
+                initializer = sol_system_initializer
+            }
+        }
+            last_created_system = {
+                set_global_flag = event_bixie
+                every_system_planet = {
+                    limit = {
+                        has_planet_flag = planet_earth
+                    }
+                    change_pc = pc_nuked
+                }
+            }
+
+    }
+}
+fleet_event = {
+    id = bixie.4
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        owner = {
+            is_ai = no
+            is_species_class = Eeveelutions
+            NOT = { has_country_flag = found_pixiu }
+            NOT = { has_global_flag = solar_system_founded }
+        }
+        this.solar_system = {
+            has_star_flag = sol_system
+        }
+    }
+    immediate = {
+        set_global_flag = solar_system_founded
+        this.owner = {
+            country_event = { id = bixie.5 }
+        }
+        this.solar_system = {
+            random_system_planet = {
+                limit = {
+                    has_planet_flag = planet_earth
+                }
+                enable_special_project = {
+                    name = BIXIE_FOUND
+                }
+            }
+        }
+    }
+}
+country_event = {
+    id = bixie.5
+    title = bixie.5.title
+    desc = bixie.5.desc
+    picture = GFX_evt_alien_ruins
+    is_triggered_only = yes
+    trigger = {
+        is_ai = no
+    }
+    option = {
+        name = bixie.5.a
+    }
+    immediate = {
+        set_country_flag = found_pixiu
+    }
+}
+country_event = {
+    id = bixie.6
+    title = bixie.6.title
+    desc = bixie.6.desc
+    picture = GFX_leader_recruitment_bg_renowned
+    is_triggered_only = yes
+    trigger = {
+        is_ai = no
+    }
+    event_window_type = leader_recruit
+    picture_event_data = {
+        portrait = event_target:leader_bixie
+        room = ethic_spaceship_room
+    }
+    immediate = {
+
+    }
+    option = {
+        name = bixie.6.a
+        response_text = bixie.6.a.response
+        is_dialog_only = yes
+    }
+    option = {
+        name = bixie.6.b
+        response_text = bixie.6.b.response
+        is_dialog_only = yes
+    }
+    option = {
+        name = bixie.6.1
+        response_text = bixie.6.1.response
+        is_dialog_only = yes
+    }
+    option = {
+        name = bixie.6.2
+        response_text = bixie.6.2.response
+        is_dialog_only = yes
+    }
+    option = {
+        name = bixie.6.c
+        custom_tooltip = bixie.6.c.tooltip
+        tag = hire_leader
+        sound = "par_skrand_hire"
+        event_target:leader_bixie = {
+            set_owner = root
+            hidden_effect = {
+                assign_leader = root
+            }
+        }
+        create_message = {
+            type = MESSAGE_RECRUITED_LEADER
+            localization =  MESSAGE_RECRUITED_LEADER_DESC
+            days = @toast_message_days
+            target = event_target:leader_bixie
+            variable = {
+                type = name
+                localization = LEADER
+                scope = event_target:leader_bixie
+            }
+            variable = {
+                key = "border"
+                value = "GFX_border_legendary"
+            }
+        }
+    }
+    option = {
+        name = bixie.6.d
+        custom_tooltip = bixie.6.d.tooltip
+        tag = dismiss_leader
+        sound = "par_skrand_dismiss"
+    }
+}
+country_event = {
+    id = bixie.7
+    title = bixie.7.title
+    desc = bixie.7.desc
+    picture = GFX_evt_alien_ruins
+    is_triggered_only = yes
+    option = {
+        name = bixie.7.a
+        country_event = { id = bixie.6 }
+    }
+}

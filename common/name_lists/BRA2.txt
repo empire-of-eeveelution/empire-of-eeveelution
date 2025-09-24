@@ -1,0 +1,274 @@
+﻿BRA2 = {
+	category = "brave_troop"
+	ship_names = {
+
+		generic = {
+			蝉栖 难不 幂处 邃馆 旧阑 漫嗟 东西 尚来 游邃 几日 息已 疏处 阑时 响惊 过了 年断 饯旧
+		}
+
+		corvette = {
+			蛊雕 精卫 横公鱼 吼 祸斗 鬼车
+		}
+
+		destroyer = {
+			九尾狐 肥遗 应龙 猰貐 趴蝮
+		}
+
+		cruiser = {
+			白矖 虬龙 蟠龙 狴犴 化蛇 英招
+		}
+
+		battleship = {
+			帝江 饕餮 青龙 白虎 朱雀 毕方
+		}
+
+		titan = {
+			烛阴 烛龙 蛟龙 囚牛
+		}
+
+		colossus = {
+			穷奇 梼杌 重明 金乌
+		}
+
+		science = {
+			白泽 负屃 螭吻
+		}
+
+		colonizer = {
+			混沌 麒麟 狻猊 当康 凿齿
+		}
+
+		constructor = {
+			狸力 螭龙 举父
+		}
+
+		transport = {
+			睚毗 嘲风 蒲牢 虚耗
+		}
+		
+		precursor_colossus = {
+			天禄 辟邪
+		}
+
+		ion_cannon = {
+			玄武 霸下
+		}
+	}
+
+	ship_class_names = {
+
+		generic = {
+			蝉栖 难不 幂处 邃馆 旧阑 漫嗟 东西 尚来 游邃 几日 息已 疏处 阑时 响惊 过了 年断 饯旧
+		}
+
+		corvette = {
+			蛊雕 精卫 横公鱼 吼 祸斗 鬼车
+		}
+
+		destroyer = {
+			九尾狐 肥遗 应龙 猰貐 趴蝮
+		}
+
+		cruiser = {
+			白矖 虬龙 蟠龙 狴犴 化蛇 英招
+		}
+
+		battleship = {
+			帝江 饕餮 青龙 白虎 朱雀 毕方
+		}
+
+		titan = {
+			烛阴 烛龙 蛟龙 囚牛
+		}
+
+		colossus = {
+			穷奇 梼杌 重明 金乌
+		}
+
+		science = {
+			白泽 负屃 螭吻
+		}
+
+		colonizer = {
+			混沌 麒麟 狻猊 当康 凿齿
+		}
+
+		constructor = {
+			狸力 螭龙 举父
+		}
+
+		transport = {
+			睚毗 嘲风 蒲牢 虚耗
+		}
+		
+		precursor_colossus = {
+			貔貅
+		}
+
+		ion_cannon = {
+			玄武 霸下
+		}
+	}
+
+	fleet_names = {
+		random_names = {
+			昆仑舰队 扶桑舰队 瑶池舰队 玄圃舰队 神州舰队 蓬莱舰队 归墟舰队 建木舰队
+		}
+		sequential_name = BRA1_EXTRAORBITALCORPS
+	}
+
+	army_names = {
+
+		machine_defense = {
+			sequential_name = MAM3_DEFENSEARMY
+		}
+
+		machine_assault_1 = {
+			sequential_name = MAM3_ASSAULTARMY
+		}
+
+		machine_assault_2 = {
+			sequential_name = MAM3_ASSAULTARMY
+		}
+
+		machine_assault_3 = {
+			sequential_name = MAM3_ASSAULTARMY
+		}
+
+		defense_army = {
+			sequential_name = MAM3_DEFENSEARMY
+		}
+
+		assault_army = {
+			sequential_name = MAM3_ASSAULTARMY
+		}
+
+		slave_army = {
+			sequential_name = MAM3_SLAVEARMY
+		}
+
+		clone_army = {
+			sequential_name = MAM3_CLONEDIVISION
+		}
+
+		undead_army = {
+			sequential_name = MAM3_DREADDIVISION
+		}
+
+		robotic_army = {
+			sequential_name = MAM3_ROBOTDIVISION
+		}
+
+		robotic_defense_army = {
+			sequential_name = MAM3_ROBOTGARRISON
+		}
+
+		psionic_army = {
+			sequential_name = MAM3_PSIONICARMY
+		}
+
+		xenomorph_army = {
+			sequential_name = MAM3_XENOMORPHDIVISION
+		}
+
+		gene_warrior_army = {
+			sequential_name = MAM3_GENEWARRIORDIVISION
+		}
+
+		occupation_army = {
+			sequential_name = MAM3_OCCUPATIONARMY
+		}
+
+		robotic_occupation_army = {
+			sequential_name = MAM3_OCCUPATIONROBOTARMY
+		}
+
+		primitive_army = {
+			sequential_name = MAM3_PRIMITIVEARMY
+		}
+		industrial_army = {
+			sequential_name = MAM3_INDUSTRIALARMY
+		}
+		postatomic_army = {
+			sequential_name = MAM3_POSTATOMICARMY
+		}
+	}
+
+	planet_names = {
+
+		generic = {
+			names = {
+				空桑 宛丘 雷泽 北溟 沧海 南溟 羽山 扶桑 昆仑 夷洲 亶洲 英水 青丘 鹿台 若水 轩辕 堂庭 长留 帝都 钱来 少室 杻阳 灌湘 若水 合虚
+			}
+		}
+
+		pc_desert = {
+			names = {
+			}
+		}
+
+		pc_tropical = {
+			names = {
+			}
+		}
+
+		pc_arid = {
+			names = {
+			}
+		}
+
+		pc_continental = {
+			names = {
+			}
+		}
+
+		pc_ocean = {
+			names = {
+			}
+		}
+
+		pc_tundra = {
+			names = {
+			}
+		}
+
+		pc_arctic = {
+			names = {
+			}
+		}
+
+		pc_savannah = {
+			names = {
+			}
+		}
+
+		pc_alpine = {
+			names = {
+			}
+		}
+
+	}
+
+	character_names = {
+		default = {
+			# A complete name
+			full_names = {
+				"BRA2"
+			}
+
+			# Always combined with a second name
+			first_names = {
+			}
+
+			# Always combined with a first name
+			second_names = {
+			}
+
+			regnal_first_names = {
+			}
+
+			regnal_second_names = {
+			}
+		}
+	}
+}
