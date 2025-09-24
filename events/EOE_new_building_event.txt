@@ -295,8 +295,14 @@ country_event = {
 	title = "EOE_building.4.name"
 	picture = GFX_evt_circuitry_modification
 	desc = "EOE_building.4.desc"
+	fire_only_once = yes
 	trigger = {
-		has_tradition = tr_genetics_creation
+		or = {
+			has_tradition = tr_genetics_creation
+			has_tradition = tr_cloning_somatic_synthesization
+			has_tradition = tr_mutation_unnatural_selection
+			has_tradition = tr_purity_exemplary_genetics
+		}
 		has_valid_civic = civic_EOE_evolution_planning
 	}
 	option = {
