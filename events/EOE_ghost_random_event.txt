@@ -9281,7 +9281,7 @@ country_event = {
 		}
 		last_created_leader = {
 			set_gender = female
-			change_leader_portrait = EOEOkra
+			change_leader_portrait = EOEOkra_test
 			save_global_event_target_as = EOE_okra
 			owner = {
 			}

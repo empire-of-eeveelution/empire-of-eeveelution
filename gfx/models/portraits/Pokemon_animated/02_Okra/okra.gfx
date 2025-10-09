@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "okra_mesh"
+		file = "gfx/models/portraits/Pokemon_animated/02_Okra/EOE_Okra.mesh"
+		scale = 1.0
+		animation = { id = "idle1" type = "okra_idle1_animation" }
+		animation = { id = "idle2" type = "okra_idle2_animation" }
+
+		meshsettings = {
+			name = "pPlane1:MeshShape"
+			index = 0
+			texture_diffuse = "EOE_Okra.dds"
+			shader = "PdxMeshPortrait"
+		}
+	}
+}

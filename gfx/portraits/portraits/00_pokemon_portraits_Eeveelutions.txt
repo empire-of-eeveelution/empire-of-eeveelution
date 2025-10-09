@@ -98,7 +98,7 @@ portraits = {
 		EOE098 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE098.png" }
 		EOE099 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE099.png" }
 		#EOEhezi = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE_Hezi.png" }
-		EOEOkra = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE_Okra.dds" }
+		# EOEOkra = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE_Okra.dds" }
 		EOE100 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE100.png" }
 		EOE101 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE101.png" }
 		EOE102 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE102.png" }
@@ -183,6 +183,17 @@ portraits = {
 			
 			}
 			
+		}
+		EOEOkra_test = {
+			entity = "okra_entity"
+			clothes_selector = "no_texture"
+			hair_selector = "no_texture"
+			greeting_sound = "pokemon_Eeveelutions"
+			attachment_selector = no_texture
+			character_textures = {
+				"gfx/models/portraits/Pokemon_animated/02_Okra/EOE_Okra.dds"
+
+			}
 		}
 
 	
