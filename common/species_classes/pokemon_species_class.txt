@@ -82,7 +82,7 @@
 	portraits = {
 		"Eeveelutions"
 	}
-	graphical_culture = mammalian_01
+	graphical_culture = pokemon_01
 	move_pop_sound_effect = "moving_pop_confirmation"
 }
 
@@ -149,8 +149,8 @@
 
 
 
-"BRA_bixie" = {
-	archetype = BRAVE_TROOP
+"bixie" = {
+	archetype = BIOLOGICAL
 	possible = {
 		# always = no
 		authority = {
@@ -160,12 +160,18 @@
 			}
 		}
 	}
+	randomized = {
+		always = no
+	}
+	gender = no
+	use_climate_preference = no
 	portraits = {
 		"bixie"
 	}
 	leader_age_min = 50000000
 	leader_age_max = 50000000
-	# graphical_culture = brave_troop
+	graphical_culture = bixie
+	move_pop_sound_effect = "moving_pop_confirmation"
 	resources = {}
 	move_pop_sound_effect = "moving_pop_confirmation"
 }
