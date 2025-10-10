@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="466fb39f-5700-450f-9f42-8c7299091cf8" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/graphical_culture/pokemon_graphical_culture.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/graphical_culture/pokemon_graphical_culture.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/species_archetypes/pokemon_species_archetypes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/species_archetypes/pokemon_species_archetypes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/species_classes/pokemon_species_class.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/species_classes/pokemon_species_class.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events/bixie.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/bixie.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localisation/simp_chinese/EOE_automation_planet_l_simp_chinese.yml" beforeDir="false" afterPath="$PROJECT_DIR$/localisation/simp_chinese/EOE_automation_planet_l_simp_chinese.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
