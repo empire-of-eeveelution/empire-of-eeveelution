@@ -12,30 +12,30 @@ portraits = {
 		EOE011 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE011.dds"	}
 		EOE012 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE012.dds"	}
 		EOE013 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE013.dds"	}
-		#EOE014 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE014.dds"	}
-		EOE015 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE015.png" }
+		EOE014 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE014.dds"	}
+		EOE015 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE015.dds" }
 		EOE016 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE016.png" }
 		EOE017 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE017.png" }
-		EOE018 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE018.png" }
+		EOE018 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE018.dds" }
 		EOE019 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE019.png" }
 		EOE020 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE020.png" }
 		EOE021 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE021.png" }
 		EOE022 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE022.png" }
 		EOE023 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE023.png" }
 		EOE024 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE024.png" }
-		EOE025 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE025.png" }
+		EOE025 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE025.dds" }
 		EOE026 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE026.png" }
 		EOE027 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE027.png" }
 		EOE028 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE028.png" }
 		EOE029 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE029.png" }
 		EOE030 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE030.png" }
-		#EOE031 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE031.png" }
+		EOE031 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE031.png" }
 		EOE032 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE032.png" }
-		EOE033 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE033.png" }
+		EOE033 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE033.dds" }
 		EOE034 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE034.png" }
-		EOE035 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE035.png" }
+		EOE035 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE035.dds" }
 		EOE036 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE036.png" }
-		EOE037 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE037.png" }
+		EOE037 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE037.dds" }
 		EOE038 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE038.png" }
 		EOE039 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE039.png" }
 		EOE040 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE040.png" }
@@ -45,7 +45,7 @@ portraits = {
 		EOE044 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE044.png" }
 		EOE045 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE045.png" }
 		EOE046 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE046.png" }
-		EOE047 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE047.png" }
+		EOE047 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE047.dds" }
 		EOE048 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE048.png" }
 		EOE049 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE049.png" }
 		EOE050 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE050.png" }
@@ -55,6 +55,7 @@ portraits = {
 		EOE054 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE054.png" }
 		EOE055 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE055.png" }
 		EOE056 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE056.png" }
+		EOE057 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE057.dds" }
 		EOE058 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE058.png" }
 		EOE059 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE059.png" }
 		EOE060 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE060.png" }
@@ -67,23 +68,23 @@ portraits = {
 		EOE067 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE067.png" }
 		EOE068 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE068.png" }
 		EOE069 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE069.png" }
-		EOE070 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE070.png" }
+		EOE070 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE070.dds" }
 		EOE071 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE071.png" }
 		EOE072 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE072.png" }
 		EOE073 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE073.png" }
 		EOE074 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE074.png" }
-		#EOE075 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE075.png" }
+		EOE075 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE075.png" }
 		EOE076 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE076.png" }
 		EOE077 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE077.png" }
 		EOE078 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE078.png" }
-		EOE079 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE079.png" }
-		EOE080 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE080.png" }
+		EOE079 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE079.dds" }
+		EOE080 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE080.dds" }
 		EOE081 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE081.png" }
 		EOE082 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE082.png" }
 		EOE083 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE083.png" }
-		EOE084 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE084.png" }
+		EOE084 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE084.dds" }
 		EOE085 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE085.png" }
-		EOE086 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE086.png" }
+		EOE086 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE086.dds" }
 		EOE087 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE087.png" }
 		EOE088 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE088.png" }
 		EOE089 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE089.png" }
@@ -98,7 +99,7 @@ portraits = {
 		EOE098 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE098.png" }
 		EOE099 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE099.png" }
 		#EOEhezi = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE_Hezi.png" }
-		# EOEOkra = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE_Okra.dds" }
+		#EOEOkra = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE_Okra.dds" }
 		EOE100 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE100.png" }
 		EOE101 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE101.png" }
 		EOE102 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE102.png" }
@@ -109,18 +110,18 @@ portraits = {
 		EOE107 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE107.png" }
 		EOE108 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE108.png" }
 		EOE109 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE109.png" }
-		EOE110 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE110.png" }
+		EOE110 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE110.dds" }
 		EOE111 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE111.png" }
-		EOE112 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE112.png" }
+		EOE112 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE112.dds" }
 		EOE113 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE113.png" }
 		EOE114 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE114.png" }
-		EOE115 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE115.png" }
+		EOE115 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE115.dds" }
 		EOE116 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE116.png" }
 		EOE117 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE117.png" }
 		EOE118 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE118.png" }
 		EOE119 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE119.png" }
 		EOE120 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE120.png" }
-		EOE121 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE121.png" }
+		EOE121 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE121.dds" }
 		EOE122 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE122.png" }
 		EOE123 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE123.png" }
 		EOE124 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE124.png" }
@@ -133,7 +134,7 @@ portraits = {
 		EOE131 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE131.png" }
 		EOE132 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE132.png" }
 		EOE133 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE133.png" }
-		EOE134 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE134.png" }
+		EOE134 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE134.dds" }
 		EOE135 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE135.png" }
 		EOE136 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE136.png" }
 		EOE137 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE137.png" }
@@ -147,10 +148,10 @@ portraits = {
 		EOE145 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE145.png" }
 		EOE146 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE146.png" }
 		EOE147 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE147.png" }
-		EOE148 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE148.png" }
-		EOE149 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE149.png" }
+		EOE148 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE148.dds" }
+		EOE149 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE149.dds" }
 		EOE150 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE150.png" }
-		EOE151 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE151.png" }
+		EOE151 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE151.dds" }
 		EOE152 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE152.png" }
 		EOE153 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE153.png" }
 		EOE154 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE154.png" }
@@ -160,7 +161,7 @@ portraits = {
 		EOE158 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE158.png" }
 		EOE159 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE159.png" }
 		EOE160 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE160.png" }
-		EOE161 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE161.png" }
+		EOE161 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE161.dds" }
 		EOEReshiram = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE_Reshiram.png" }
 		Umbreon01 = {
 			entity = "Umbreon01_entity"
@@ -236,7 +237,7 @@ Eeveelutions= {
 					ruler = { gender = female }
 				}
                                 portraits = {
-EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 EOE161 Umbreon01 Vaporeon01
+EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE031 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE057 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE075 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE112 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 EOE161 Umbreon01 Vaporeon01
 
 				}
 			}
@@ -245,7 +246,7 @@ EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE
                     ruler = { gender = male }
                 }
                 portraits = {
-EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 EOE161 Umbreon01 Vaporeon01
+EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE031 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE057 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE075 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE112 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 EOE161 Umbreon01 Vaporeon01
 
                 }
             }
@@ -254,7 +255,7 @@ EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE
         species = { #generic portrait for a species
             add = {
                 portraits = {
-EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150  EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 EOE161 Umbreon01 Vaporeon01
+EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE031 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE057 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE075 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE112 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 EOE161 Umbreon01 Vaporeon01
 
                 }
             }
@@ -269,7 +270,7 @@ EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE
 						}			
 				}
                 portraits = {
-EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 EOE161 Umbreon01 Vaporeon01
+EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE031 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE057 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE075 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE112 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 EOE161 Umbreon01 Vaporeon01
 
                 }
             }
@@ -280,7 +281,7 @@ EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE
 						}
 				}
                 portraits = {
-EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 EOE161 Umbreon01 Vaporeon01
+EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE031 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE057 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE075 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE112 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 EOE161 Umbreon01 Vaporeon01
                             }
                  }
         }
@@ -291,7 +292,7 @@ EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE
                     gender = female
                 }
                 portraits = {
-EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 EOE161 Umbreon01 Vaporeon01
+EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE031 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE057 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE075 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE112 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 EOE161 Umbreon01 Vaporeon01
 
                 }
             }
@@ -300,7 +301,7 @@ EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE
                     gender = male
                 }
                 portraits = {
-EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 EOE161 Umbreon01 Vaporeon01
+EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE031 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE057 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE075 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE112 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 EOE161 Umbreon01 Vaporeon01
 
                 }
             }
@@ -312,7 +313,7 @@ EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE
                     gender = female
                 }
                 portraits = {
-EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 EOE161 Umbreon01 Vaporeon01
+EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE031 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE057 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE075 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE112 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 EOE161 Umbreon01 Vaporeon01
 
                 }
             }
@@ -321,7 +322,7 @@ EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE
                     gender = male
                 }
                 portraits = {
-EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 EOE161 Umbreon01 Vaporeon01
+EOE001 EOE002 EOE003 EOE004 EOE005 EOE006 EOE007 EOE008 EOE009 EOE010 EOE011 EOE012 EOE013 EOE014 EOE015 EOE016 EOE017 EOE018 EOE019 EOE020 EOE021 EOE022 EOE023 EOE024 EOE025 EOE026 EOE027 EOE028 EOE029 EOE030 EOE031 EOE032 EOE033 EOE034 EOE035 EOE036 EOE037 EOE038 EOE039 EOE040 EOE041 EOE042 EOE043 EOE044 EOE045 EOE046 EOE047 EOE048 EOE049 EOE050 EOE051 EOE052 EOE053 EOE054 EOE055 EOE056 EOE057 EOE058 EOE059 EOE060 EOE061 EOE062 EOE063 EOE064 EOE065 EOE066 EOE067 EOE068 EOE069 EOE070 EOE071 EOE072 EOE073 EOE074 EOE075 EOE076 EOE077 EOE078 EOE079 EOE080 EOE081 EOE082 EOE083 EOE084 EOE085 EOE086 EOE087 EOE088 EOE089 EOE090 EOE091 EOE092 EOE093 EOE094 EOE095 EOE096 EOE097 EOE098 EOE099 EOE100 EOE101 EOE102 EOE103 EOE104 EOE105 EOE106 EOE107 EOE108 EOE109 EOE110 EOE111 EOE112 EOE113 EOE114 EOE115 EOE116 EOE117 EOE118 EOE119 EOE120 EOE121 EOE122 EOE123 EOE124 EOE125 EOE126 EOE127 EOE128 EOE129  EOE130 EOE131 EOE132 EOE133 EOE134 EOE135 EOE136 EOE137 EOE138 EOE139 EOE140 EOE141 EOE142 EOE143 EOE144 EOE145 EOE146 EOE147 EOE148 EOE149 EOE150 EOE151 EOE152 EOE153 EOE154 EOE155 EOE156 EOE157 EOE158 EOE159 EOE160 EOE161 Umbreon01 Vaporeon01
 
 
 
