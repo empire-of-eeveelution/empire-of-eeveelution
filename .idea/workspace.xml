@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="466fb39f-5700-450f-9f42-8c7299091cf8" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/ascension_perks/pokemon_ascension_perks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/ascension_perks/pokemon_ascension_perks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gfx/models/portraits/Pokemon/Eeveelutions/EOE010.dds" beforeDir="false" afterPath="$PROJECT_DIR$/gfx/models/portraits/Pokemon/Eeveelutions/EOE010.dds" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gfx/portraits/portraits/00_pokemon_portraits_Eeveelutions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/gfx/portraits/portraits/00_pokemon_portraits_Eeveelutions.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
