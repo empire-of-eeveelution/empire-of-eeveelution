@@ -120,7 +120,26 @@ situation_endless_evolution = {
 			}
         }
         resources = {
-            upkeep = { consumer_goods = 50 }
+            upkeep = {
+                trigger = {
+                    owner = {
+                        and = {
+                            is_gestalt = no
+                        }
+                    }
+                }
+                consumer_goods = 50
+            }
+            upkeep = {
+                trigger = {
+                    owner = {
+                        and = {
+                            is_gestalt = yes
+                        }
+                    }
+                }
+                food = 100
+            }
         }
         ai_weight = {
             base = 1
@@ -142,7 +161,26 @@ situation_endless_evolution = {
             country_society_research_produces_mult = -0.5
         }
         resources = {
-            upkeep = { consumer_goods = 50 }
+            upkeep = {
+                trigger = {
+                    owner = {
+                        and = {
+                            is_gestalt = no
+                        }
+                    }
+                }
+                consumer_goods = 50
+            }
+            upkeep = {
+                trigger = {
+                    owner = {
+                        and = {
+                            is_gestalt = yes
+                        }
+                    }
+                }
+                food = 100
+            }
         }
         ai_weight = {
             base = 0

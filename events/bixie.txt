@@ -190,7 +190,7 @@ country_event = {
     option = {
         name = bixie.5.a
         hidden_effect = {
-            country_event = { id = bixie.6 }
+            enable_special_project = { name = BIXIE_FOUND owner = ROOT }
         }
     }
     immediate = {
