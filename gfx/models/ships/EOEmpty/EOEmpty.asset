@@ -1,7 +1,0 @@
-
-entity = {
-	name = "EOEmpty_entity"
-	pdxmesh = "EOEmpty_mesh"
-	scale = 0.5
-
-}
