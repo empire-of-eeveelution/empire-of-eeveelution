@@ -5,16 +5,16 @@ country_event = {
     hide_window = yes
     is_triggered_only = yes
     fire_only_once = yes
-    trigger = {
-        is_ai = no
-        is_species_class = Eeveelutions
-    }
+    # trigger = {
+    #     is_ai = no
+    #     is_species_class = Eeveelutions
+    # }
 
     immediate = {
         create_country = {
             name = "NAME_PIXIU_BIXIE"
-            type = paragon_event_country
-            auto_delete = yes
+            type = global_event
+            auto_delete = no
             flag = {
                 icon = {
                     category = "special"
@@ -62,6 +62,13 @@ country_event = {
                 gender = indeterminable
                 immortal = yes
                 hide_age = yes
+                traits = {
+                    trait = leader_trait_brave_troop
+                    trait = leader_trait_commander_omni_type
+                    trait = random_trait
+                    trait = random_trait
+                    trait = random_trait
+                }
                 custom_catch_phrase = bixie_catch_phrase
                 effect = {
                     this = {

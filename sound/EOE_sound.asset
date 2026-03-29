@@ -130,12 +130,12 @@ soundeffect = {
 	name = event_ground_battle_01
 	sounds = {
 		sound = event_ground_battle_01
-	} 
+	}
 	volume = 0.45
 	max_audible = 1
 	max_audible_behaviour = fail
 }
-sound = 
+sound =
 {
 	name = "event_ground_battle_01"
 	file = "event/event_ground_battle_01.wav"

@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="466fb39f-5700-450f-9f42-8c7299091cf8" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/gfx/interface/icons/traits/trait_EOE_egg_laying.dds" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/traits/pokemon_species_traits.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/traits/pokemon_species_traits.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/special_projects/Bixie_easter_egg_projects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/special_projects/Bixie_easter_egg_projects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/traits/pokemon_admiral_traits.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/traits/pokemon_admiral_traits.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/bixie.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/bixie.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gfx/models/ships/EOEmpty/EOEmpty.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gfx/models/ships/EOEmpty/EOEmpty.gfx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gfx/models/ships/EOEmpty/EOEmpty.mesh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/localisation/simp_chinese/EOE_cthugha_l_simp_chinese.yml" beforeDir="false" afterPath="$PROJECT_DIR$/localisation/simp_chinese/EOE_cthugha_l_simp_chinese.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localisation/simp_chinese/EOE_l_simp_chinese.yml" beforeDir="false" afterPath="$PROJECT_DIR$/localisation/simp_chinese/EOE_l_simp_chinese.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/localisation/simp_chinese/EOE_traits_l_simp_chinese.yml" beforeDir="false" afterPath="$PROJECT_DIR$/localisation/simp_chinese/EOE_traits_l_simp_chinese.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prescripted_countries/EOE_prescripted_countries.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prescripted_countries/EOE_prescripted_countries.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sound/EOE_sound.asset" beforeDir="false" afterPath="$PROJECT_DIR$/sound/EOE_sound.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

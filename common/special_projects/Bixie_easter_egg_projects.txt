@@ -12,8 +12,10 @@ special_project = { #炎之精
     }
 
     on_success = {
-        country_event = {
-            id = bixie.7
+        this.owner = {
+            country_event = {
+                id = bixie.7
+            }
         }
     }
 }
