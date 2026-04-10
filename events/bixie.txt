@@ -83,6 +83,36 @@ country_event = {
             last_created_leader = {
                 set_owner = event_target:bixie_country
             }
+            # create_leader = {
+            #     name = "星凝"
+            #     class = scientist
+            #     # species = event_target:bixie_species
+            #     skill = 10
+            #     event_leader = yes
+            #     set_age = 20
+            #     skip_background_generation = yes
+            #     gender = female
+            #     immortal = yes
+            #     hide_age = yes
+            #     traits = {
+            #         trait = random_trait
+            #         trait = random_trait
+            #         trait = random_trait
+            #     }
+            #     # custom_catch_phrase = bixie_catch_phrase
+            #     effect = {
+            #         this = {
+            #             change_leader_portrait = EOEXN
+            #             set_leader_flag = xingning
+            #             set_leader_flag = legendary_leader
+            #             set_leader_flag = immune_to_negative_traits
+            #             save_global_event_target_as = leader_xingning
+            #         }
+            #     }
+            # }
+            # last_created_leader = {
+            #     set_owner = root
+            # }
         }
     }
 }

@@ -41,6 +41,9 @@ portraits = {
 	EOEBIXIE = {
 		texturefile = "gfx/models/portraits/OtherTypePokemon/EOEBIXIE.dds"
 	}
+	EOEXN = {
+		texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE_xingning.png"
+	}
 }
 
 portrait_groups = {
