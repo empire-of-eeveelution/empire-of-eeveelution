@@ -83,6 +83,7 @@
 		"Eeveelutions"
 	}
 	graphical_culture = pokemon_01
+	generate_shipset = no
 	move_pop_sound_effect = "moving_pop_confirmation"
 }
 
@@ -171,7 +172,7 @@
 	leader_age_min = 50000000
 	leader_age_max = 50000000
 	graphical_culture = bixie
+	generate_shipset = no
 	move_pop_sound_effect = "moving_pop_confirmation"
 	resources = {}
-	move_pop_sound_effect = "moving_pop_confirmation"
 }
