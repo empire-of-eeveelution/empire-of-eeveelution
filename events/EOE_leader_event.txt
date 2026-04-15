@@ -377,6 +377,7 @@ country_event = {
 					set_leader_flag = legendary_leader
 					set_leader_flag = immune_to_negative_traits
 					set_leader_flag = leader_death_events_blocked
+					set_leader_tier = leader_tier_legendary
 					add_experience = 5000
 				}
 			}
@@ -5271,6 +5272,7 @@ country_event = {
 					set_leader_flag = legendary_leader
 					set_leader_flag = immune_to_negative_traits
 					set_leader_flag = leader_death_events_blocked
+					set_leader_tier = leader_tier_legendary
 					add_experience = 5000
 				}
 			}
@@ -5355,6 +5357,7 @@ country_event = {
 					set_leader_flag = legendary_leader
 					set_leader_flag = immune_to_negative_traits
 					set_leader_flag = leader_death_events_blocked
+					set_leader_tier = leader_tier_legendary
 					add_experience = 5000
 				}
 			}
