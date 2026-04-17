@@ -17,6 +17,8 @@
  EOE_hezi_dont_love_you_desc:0 "Hezi hates you guts."
  EOE_pokeball_catched:0 "Pokeball Caught"
  EOE_pokeball_catched_desc:0 "Placeholder"
+ EOE_pokeball_catched_run:0 "Pokeball Caught"
+ EOE_pokeball_catched_run_desc:0 "Placeholder"
  EOE_ship_test_effect:0 "Ship Effect Test"
  EOE_ship_test_effect_desc:0 "Test"
  tech_EOE_Minior:0 "EOE Minior Tech"
