@@ -22,7 +22,7 @@ tech_endless_evolution = {
 		NOT = { has_country_flag = disabled_endless_evolution }
 	}
 	weight_modifier = {
-		factor = 0
+		# factor = 0
 	    modifier = {
 			factor = 0
 			NOT = { 
@@ -72,7 +72,7 @@ tech_endless_evolution1 = {
 		NOT = { has_country_flag = disabled_endless_evolution }
 	}
 	weight_modifier = {
-		factor = 0
+		# factor = 0
 		modifier = {
 			factor = 0
 			NOT = {

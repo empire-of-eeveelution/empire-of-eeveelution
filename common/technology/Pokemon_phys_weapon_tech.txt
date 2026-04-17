@@ -106,7 +106,7 @@ tech_EOE_energy_torpedoes_2 = {
 	}
 	
 	ai_weight = {
-		# factor = 0   Factor seems to be zero by default now.
+		# factor = 0 no longer necessary
 		modifier = {
 			factor = 1
 			has_global_flag = EOE_tempest_digged
