@@ -1,6 +1,6 @@
 "Eeveelutions" = {
 	articuno = {
-		language = "l_simp_chinese"
+		# language = "l_simp_chinese"
 		name = "伊布"
 		plural = "伊布"
 		home_planet = "急冻鸟"
@@ -8,7 +8,7 @@
 		name_list = "MAM3"
 	}
 	zapdos = {
-		language = "l_simp_chinese"
+		# language = "l_simp_chinese"
 		name = "伊布"
 		plural = "伊布"
 		home_planet = "闪电鸟"
@@ -16,7 +16,7 @@
 		name_list = "MAM3"
 	}
 	moltres = {
-		language = "l_simp_chinese"
+		# language = "l_simp_chinese"
 		name = "伊布"
 		plural = "伊布"
 		home_planet = "火焰鸟"
@@ -24,7 +24,7 @@
 		name_list = "MAM3"
 	}
 	raikou = {
-		language = "l_simp_chinese"
+		# language = "l_simp_chinese"
 		name = "伊布"
 		plural = "伊布"
 		home_planet = "雷公"
@@ -32,7 +32,7 @@
 		name_list = "MAM3"
 	}
 	entei = {
-		language = "l_simp_chinese"
+		# language = "l_simp_chinese"
 		name = "伊布"
 		plural = "伊布"
 		home_planet = "炎帝"
@@ -40,7 +40,7 @@
 		name_list = "MAM3"
 	}
 	suicune = {
-		language = "l_simp_chinese"
+		# language = "l_simp_chinese"
 		name = "伊布"
 		plural = "伊布"
 		home_planet = "水君"
@@ -48,7 +48,7 @@
 		name_list = "MAM3"
 	}
 	regirock = {
-		language = "l_simp_chinese"
+		# language = "l_simp_chinese"
 		name = "伊布"
 		plural = "伊布"
 		home_planet = "雷吉洛克"
@@ -56,7 +56,7 @@
 		name_list = "MAM3"
 	}
 	regice = {
-		language = "l_simp_chinese"
+		# language = "l_simp_chinese"
 		name = "伊布"
 		plural = "伊布"
 		home_planet = "雷吉艾斯"
@@ -64,7 +64,7 @@
 		name_list = "MAM3"
 	}
 	registeel = {
-		language = "l_simp_chinese"
+		# language = "l_simp_chinese"
 		name = "伊布"
 		plural = "伊布"
 		home_planet = "雷吉斯奇鲁"
@@ -72,7 +72,7 @@
 		name_list = "MAM3"
 	}
 	uxie = {
-		language = "l_simp_chinese"
+		# language = "l_simp_chinese"
 		name = "伊布"
 		plural = "伊布"
 		home_planet = "由克希"
@@ -80,7 +80,7 @@
 		name_list = "MAM3"
 	}
 	mesprit = {
-		language = "l_simp_chinese"
+		# language = "l_simp_chinese"
 		name = "伊布"
 		plural = "伊布"
 		home_planet = "艾姆利多"
@@ -88,7 +88,7 @@
 		name_list = "MAM3"
 	}
 	azelf = {
-		language = "l_simp_chinese"
+		# language = "l_simp_chinese"
 		name = "伊布"
 		plural = "伊布"
 		home_planet = "亚克诺姆"
@@ -96,7 +96,7 @@
 		name_list = "MAM3"
 	}
 	aiur = {
-		language = "l_simp_chinese"
+		# language = "l_simp_chinese"
 		name = "伊布"
 		plural = "伊布"
 		home_planet = "艾尔"
@@ -104,7 +104,7 @@
 		name_list = "MAM3"
 	}
 	shakuras = {
-		language = "l_simp_chinese"
+		# language = "l_simp_chinese"
 		name = "伊布"
 		plural = "伊布"
 		home_planet = "萨古拉斯"
