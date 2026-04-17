@@ -294,6 +294,9 @@ mod_ship_EOE_Reshiram_cost_mult:0"莱希拉姆生物组织部分花费"
 
 pokemon_ships:0"宝可梦生物组织"
 
+opinion_burned_an_uninhabited_world:0 "你烧死了一个无人居住的世界!"
+opinion_burned_my_uninhabited_world:0 "你烧光了我的无人世界!"
+
 
 
 
