@@ -323,6 +323,12 @@ building_EOE_trainer_department = {
 	can_be_disabled = no
 	position_priority = 0
 
+	building_sets = {
+		government
+		urban
+	}
+
+
 	category = government
 	icon = building_capital
 
@@ -336,7 +342,7 @@ building_EOE_trainer_department = {
 		job_EOE_trainer_add = 100
 		planet_housing_add = 500
 		planet_amenities_add = 500
-		planet_max_buildings_add = @buildings_t2
+		# planet_max_buildings_add = @buildings_t2
 		# planet_max_branch_office_buildings_add = 1
 		planet_district_orbital_mining_add = 10
 	}
@@ -361,6 +367,10 @@ building_EOE_evolution_planning_office = {
 	base_cap_amount = 1
 	category = unity
 	icon = building_biolab_4
+	building_sets = {
+		government
+		unity
+	}
 	potential = {
 		exists = owner
 		owner = {
