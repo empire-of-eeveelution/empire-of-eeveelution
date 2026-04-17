@@ -1,6 +1,6 @@
 district_dimensional_fabricator_darkmatter = {
 	base_buildtime = 360
-	is_capped_by_modifier = no
+	#is_capped_by_modifier = no
 
 	show_on_uncolonized = { uses_district_set = automation_planet_darkmatter }
 
@@ -37,7 +37,7 @@ district_dimensional_fabricator_darkmatter = {
 }
 district_class-4_singularity_darkmatter = {
 	base_buildtime = 360
-	is_capped_by_modifier = no
+	#is_capped_by_modifier = no
 
 	show_on_uncolonized = { uses_district_set = automation_planet_darkmatter }
 
@@ -64,7 +64,7 @@ district_class-4_singularity_darkmatter = {
 }
 district_auto_forge_darkmatter = {
 	base_buildtime = 360
-	is_capped_by_modifier = no
+	#is_capped_by_modifier = no
 
 	show_on_uncolonized = { uses_district_set = automation_planet_darkmatter }
 
@@ -95,7 +95,7 @@ district_auto_forge_darkmatter = {
 }
 district_affluence_center_darkmatter = {
 	base_buildtime = 360
-	is_capped_by_modifier = no
+	#is_capped_by_modifier = no
 
 	show_on_uncolonized = { uses_district_set = automation_planet_darkmatter }
 
@@ -126,7 +126,7 @@ district_affluence_center_darkmatter = {
 }
 district_nourishment_center_darkmatter = {
 	base_buildtime = 360
-	is_capped_by_modifier = no
+	#is_capped_by_modifier = no
 
 	show_on_uncolonized = { uses_district_set = automation_planet_darkmatter }
 
@@ -156,7 +156,7 @@ district_nourishment_center_darkmatter = {
 }
 district_auto_science_darkmatter = {
 	base_buildtime = 360
-	is_capped_by_modifier = no
+	#is_capped_by_modifier = no
 
 	show_on_uncolonized = { uses_district_set = automation_planet_darkmatter }
 

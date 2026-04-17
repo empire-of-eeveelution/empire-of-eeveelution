@@ -9,8 +9,16 @@
 district_rw_hive_EOE = {
 	icon = district_rw_hive_EOE
 	base_buildtime = @rw_district_buildtime
-	is_capped_by_modifier = no
 
+	exempt_from_ai_planet_specialization = yes
+	overlay_icon = GFX_district_government
+
+	zone_slots = {
+		slot_city_government
+		slot_city_01
+		slot_city_02
+	}
+	
 	show_on_uncolonized = {
 		exists = from
 		from = { is_hive_empire = yes }
@@ -27,6 +35,7 @@ district_rw_hive_EOE = {
 	convert_to = {
 		district_rw_nexus
 		district_rw_city
+		district_mindlink
 	}
 
 	resources = {
@@ -40,9 +49,11 @@ district_rw_hive_EOE = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 30
-		job_maintenance_drone_add = 15
-		job_EOE_synapse_drone_add = 2
+		planet_housing_add = 3000
+	}
+
+	planet_modifier = {
+		planet_housing_add = 3000
 	}
 
 	triggered_planet_modifier = {
@@ -51,7 +62,7 @@ district_rw_hive_EOE = {
 			owner = { has_technology = tech_housing_1 }
 		}
 		modifier = {
-			planet_housing_add = 5
+			planet_housing_add = 500
 		}
 	}
 
@@ -61,18 +72,36 @@ district_rw_hive_EOE = {
 			owner = { has_technology = tech_housing_2 }
 		}
 		modifier = {
-			planet_housing_add = 5
-			job_maintenance_drone_add = 5
+			planet_housing_add = 500
 		}
 	}
 
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_swapped_tradition = tr_prosperity_extended_hives }
 		}
 		modifier = {
-			planet_housing_add = 5
+			job_coordinator_add = @base_district_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_extended_hives }
+		}
+		modifier = {
+			planet_housing_add = 500
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_tankbound_empire = yes }
+		}
+		modifier = {
+			job_production_overseer_add = 100
 		}
 	}
 
@@ -84,5 +113,9 @@ district_rw_hive_EOE = {
 			}
 		}
 		text = arcane_generator_upkeep_desc
+	}
+
+	inline_script = {
+		script = districts/district_triggered_name_hive
 	}
 }

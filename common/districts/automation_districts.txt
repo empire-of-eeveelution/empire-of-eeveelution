@@ -1,6 +1,6 @@
 district_dimensional_fabricator = {
 	base_buildtime = 360
-	is_capped_by_modifier = no
+	#is_capped_by_modifier = no
 
 	show_on_uncolonized = { uses_district_set = automation_planet }
 
@@ -36,7 +36,7 @@ district_dimensional_fabricator = {
 }
 district_class-4_singularity = {
 	base_buildtime = 360
-	is_capped_by_modifier = no
+	#is_capped_by_modifier = no
 
 	show_on_uncolonized = { uses_district_set = automation_planet }
 
@@ -62,7 +62,7 @@ district_class-4_singularity = {
 }
 district_auto_forge = {
 	base_buildtime = 360
-	is_capped_by_modifier = no
+	#is_capped_by_modifier = no
 
 	show_on_uncolonized = { uses_district_set = automation_planet }
 
@@ -92,7 +92,7 @@ district_auto_forge = {
 }
 district_affluence_center = {
 	base_buildtime = 360
-	is_capped_by_modifier = no
+	#is_capped_by_modifier = no
 
 	show_on_uncolonized = { uses_district_set = automation_planet }
 
@@ -122,7 +122,7 @@ district_affluence_center = {
 }
 district_nourishment_center = {
 	base_buildtime = 360
-	is_capped_by_modifier = no
+	#is_capped_by_modifier = no
 
 	show_on_uncolonized = { uses_district_set = automation_planet }
 
@@ -151,7 +151,7 @@ district_nourishment_center = {
 }
 district_auto_science = {
 	base_buildtime = 360
-	is_capped_by_modifier = no
+	#is_capped_by_modifier = no
 
 	show_on_uncolonized = { uses_district_set = automation_planet }
 
