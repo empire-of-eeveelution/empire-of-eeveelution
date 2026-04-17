@@ -248,13 +248,13 @@ greetings = {
 			has_ai_personality = EOE_Eevee_assimilators
 			NOT = { is_at_war_with = FROM }
 			is_neutral_to = FROM
-		}
 			from = {
 				NOR = {
 					has_authority = auth_machine_intelligence
 					has_country_flag = synthetic_empire
 				}
 			 }
+		}
 	}
 	EOE_EA_NEUTRAL_GREETING_03_ROBOT_RS = {
 		weight = {
