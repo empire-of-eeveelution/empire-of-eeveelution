@@ -14,7 +14,6 @@ catch = {
 	}
 }
 
-	icon_frame = 4
 	default = no
 
 	stop_when_armies_dead = no
@@ -47,7 +46,6 @@ catch_1 = {
 		owner = { has_technology = EOE_Membrane_warp_mapping }
 	}
 
-	icon_frame = 4
 	default = no
 
 	stop_when_armies_dead = no
@@ -80,7 +78,6 @@ catch_2 = {
 		owner = { has_technology = EOE_Membrane_fold}
 	}
 
-	icon_frame = 4
 	default = no
 
 	stop_when_armies_dead = no
@@ -116,7 +113,6 @@ catch_swarm = {
 		}
 	}
 
-	icon_frame = 4
 	default = no
 
 	stop_when_armies_dead = no
@@ -151,7 +147,6 @@ catch_swarm_1 = {
 		}
 	}
 
-	icon_frame = 4
 	default = no
 
 	stop_when_armies_dead = no
@@ -184,7 +179,6 @@ catch_swarm_2 = {
 		}
 	}
 
-	icon_frame = 4
 	default = no
 
 	stop_when_armies_dead = no
@@ -211,7 +205,6 @@ EOE_purify = {
 	trigger = {
 			is_ship_size = EOE_necrozma_normal
 		}
-	icon_frame = 3
 	default = no
 	
 	stop_when_armies_dead = no
