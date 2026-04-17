@@ -202,6 +202,9 @@ mod_ship_EOE_mew_cost_mult:0"Mew biological tissue cost"
 mod_shipsize_EOE_Latias_build_speed_mult:0"Latias Build Speed"
 mod_ship_EOE_Latias_cost_mult:0"Latias biological tissue cost"
 
+ opinion_burned_an_uninhabited_world:0 "You burned an uninhabited world!"
+ opinion_burned_my_uninhabited_world:0 "You burned my uninhabited world!"
+
 mod_shipsize_EOE_Reshiram_build_speed_mult:0"Reshiram Build Speed"
 mod_ship_EOE_Reshiram_cost_mult:0"Reshiram biological tissue cost"
 
