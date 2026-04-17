@@ -2,5 +2,5 @@ pop_EOE_evolution_planning_effect_mult = {
 	icon = mod_society_tech_cost_mult
 	percentage = yes
 	good = yes
-	category = pop
+	category = pop_group
 }
