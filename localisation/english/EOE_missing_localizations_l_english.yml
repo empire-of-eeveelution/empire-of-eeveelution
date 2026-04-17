@@ -223,6 +223,25 @@ l_english:
  EOE_ghost.120.desc:0 "Placeholder"
  EOE_ghost.122.desc:0 "Placeholder"
  
+ EOE_ghost.96.a.tooltip:0 "Placeholder"
+ EOE_ghost.96.b.tooltip:0 "Placeholder"
+ EOE_ghost.96.c.tooltip:0 "Placeholder"
+ EOE_ghost.98.a.tooltip:0 "Placeholder"
+ EOE_ghost.98.b.tooltip:0 "Placeholder"
+ EOE_ghost.98.c.tooltip:0 "Placeholder"
+ EOE_ghost.98.d.tooltip:0 "Placeholder"
+ EOE_ghost.98.e.tooltip:0 "Placeholder"
+ EOE_ghost.99.a.tooltip:0 "Placeholder"
+ EOE_ghost.99.b.tooltip:0 "Placeholder"
+ EOE_ghost.99.c.tooltip:0 "Placeholder"
+ EOE_ghost.99.d.tooltip:0 "Placeholder"
+ EOE_ghost.99.e.tooltip:0 "Placeholder"
+ EOE_ghost.100.a.tooltip:0 "Placeholder"
+ EOE_ghost.100.b.tooltip:0 "Placeholder"
+ EOE_ghost.100.c.tooltip:0 "Placeholder"
+ EOE_ghost.100.d.tooltip:0 "Placeholder"
+ EOE_ghost.100.e.tooltip:0 "Placeholder"
+ 
  #leader events
  dark_matter_event.40.ask_curator:0 "Placeholder"
  acot_alpha_matter_events.1040.a:0 "Placeholder"
@@ -278,6 +297,9 @@ l_english:
  eevent.51.desc.a:0 "Placeholder"
  eevent.51.desc.b:0 "Placeholder"
  eevent.7102.a:0 "Placeholder"
+ 
+ bixie.6.c.tooltip:0 "Placeholder"
+ bixie.6.d.tooltip:0 "Placeholder"
  
  #eevium
  site_EOE_eevium_z_intro:0 "Placeholder"
