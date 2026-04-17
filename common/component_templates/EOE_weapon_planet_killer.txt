@@ -2,7 +2,7 @@ weapon_component_template = { # the pokeball
 	key = "PLANET_KILLER_EOE"
 	size = planet_killer
 	type = planet_killer
-	use_ship_kill_target = no
+	# use_ship_kill_target = no
 
 	prerequisites = { "EOE_mental_storm" }
 
@@ -26,7 +26,7 @@ weapon_component_template = { # FIRE, FIRE, FIRE
 	key = "PLANET_KILLER_FIRE_EOE"
 	size = planet_killer
 	type = planet_killer
-	use_ship_kill_target = no
+	# use_ship_kill_target = no
 
 	hidden = yes
 
@@ -47,7 +47,7 @@ weapon_component_template = { # FIRE, FIRE, FIRE
 	key = "PLANET_KILLER_FIRE_EOE_SMALL"
 	size = planet_killer
 	type = planet_killer
-	use_ship_kill_target = no
+	# use_ship_kill_target = no
 
 
 	windup = { min = 18 max = 18 }
@@ -70,7 +70,7 @@ weapon_component_template = { # the pokeball
 	key = "PLANET_KILLER_OKRA"
 	size = planet_killer
 	type = planet_killer
-	use_ship_kill_target = no
+	# use_ship_kill_target = no
 
 	hidden = yes
 
@@ -130,7 +130,7 @@ weapon_component_template = { # 光龙的恰星系
 	key = "PLANET_KILLER_NECROZMA"
 	size = planet_killer
 	type = planet_killer
-	use_ship_kill_target = no
+	# use_ship_kill_target = no
 
 	hidden = yes
 
