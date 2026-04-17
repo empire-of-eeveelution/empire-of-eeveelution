@@ -166,7 +166,6 @@ portraits = {
 		Umbreon01 = {
 			entity = "Umbreon01_entity"
 			clothes_selector = "no_texture"
-			hair_selector = "no_texture"
 			greeting_sound = "pokemon_Eeveelutions"
 			character_textures = {
 				"gfx/models/portraits/Pokemon_animated/Umbreon01/EOE075.dds"
@@ -177,7 +176,6 @@ portraits = {
 		EOEHezi_test = {
 			entity = "EOE_Hezi_dongtai_entity"
 			clothes_selector = "no_texture"
-			hair_selector = "no_texture"
 			greeting_sound = "pokemon_Eeveelutions"
 			character_textures = {
 				"gfx/models/portraits/Pokemon_animated/01_Hezi/EOE_Hezi.dds"
@@ -188,7 +186,6 @@ portraits = {
 		EOEOkra_test = {
 			entity = "okra_entity"
 			clothes_selector = "no_texture"
-			hair_selector = "no_texture"
 			greeting_sound = "pokemon_Eeveelutions"
 			attachment_selector = no_texture
 			character_textures = {
@@ -201,10 +198,9 @@ portraits = {
 		Eevee01 = {
 		entity = "EEVEE01_entity"
 		clothes_selector = "no_texture"
-		hair_selector = "no_texture"
 		greeting_sound = "pokemon_Eeveelutions"
 		character_textures = {
-			"gfx/models/portraits/Pokemon_animated/EEVEE01/EOE014.dds"
+			"gfx/models/portraits/Pokemon_animated/EEVEE01/EEVEE01.dds"
 		
 		}
 		}
@@ -212,7 +208,6 @@ portraits = {
 		Vaporeon01 = {
 			entity = "Vaporeon01_entity"
 			clothes_selector = "no_texture"
-			hair_selector = "no_texture"
 			greeting_sound = "pokemon_Eeveelutions"
 			character_textures = {
 				"gfx/models/portraits/Pokemon_animated/Vaporeon01/EOE031.dds"
