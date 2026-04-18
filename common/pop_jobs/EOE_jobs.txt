@@ -101,13 +101,14 @@ EOE_synapse_drone = {
 		produces = {
 			unity = 4
 		}
-		upkeep = {
-			trigger = {
-				is_lithoid = no
-			}
-			food = 2
-			energy = 2
-		}
+# Causes log error, need to fix later.
+#		upkeep = {
+#			trigger = {
+#				is_lithoid = no
+#			}
+#			food = 2
+#			energy = 2
+#		}
 		upkeep = {
 			trigger = {
 				owner = { has_civic = civic_external_synapse }
