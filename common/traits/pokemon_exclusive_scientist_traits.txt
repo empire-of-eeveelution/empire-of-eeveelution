@@ -150,9 +150,7 @@ leader_trait_EOE_Mind_Controlled = { #思想钢印
 	leader_class = { scientist }
 	initial = no
 	randomized = no
-	ai_categories = {
-		society
-	}
+	# ai_categories = { society }
 
 	ai_weight = {
 		weight = 100

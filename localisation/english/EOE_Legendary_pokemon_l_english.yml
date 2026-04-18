@@ -206,3 +206,6 @@ mod_shipsize_EOE_Reshiram_build_speed_mult:0"Reshiram Build Speed"
 mod_ship_EOE_Reshiram_cost_mult:0"Reshiram biological tissue cost"
 
 pokemon_ships:0"Pokemon biological tissue"
+
+opinion_burned_an_uninhabited_world:0 "You burned an uninhabited world!"
+opinion_burned_my_uninhabited_world:0 "You burned my uninhabited world!"

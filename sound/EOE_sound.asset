@@ -138,7 +138,7 @@ soundeffect = {
 sound =
 {
 	name = "event_ground_battle_01"
-	file = "event/event_ground_battle_01.wav"
+	file = "event/event_ground_battle.wav"
 }
 soundeffect = {
 	name = event_ground_battle_02

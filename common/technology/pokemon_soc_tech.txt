@@ -166,7 +166,7 @@ tech_EOE_Mew_armor = {
 	# }
 
 	modifier = {
-		country_command_limit_add = 20
+		command_limit_add = 20
 	}
 	
 	potential = {
@@ -219,7 +219,7 @@ tech_EOE_Mew = {
 	}
 
 	modifier = {
-		country_command_limit_add = 20
+		command_limit_add = 20
 	}
 	
 	potential = {
@@ -317,7 +317,7 @@ tech_EOE_Latias_armor = {
 	# }
 
 	modifier = {
-		country_command_limit_add = 20
+		command_limit_add = 20
 	}
 	
 	potential = {
@@ -358,13 +358,13 @@ tech_EOE_Latias = {
 				}
 			}
 		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_EOE_Plant_master
-			}
-		}
+#		modifier = {
+#			factor = 1.25
+#			research_leader = {
+#				area = society
+#				has_trait = leader_trait_EOE_Plant_master
+#			}
+#		}
 	}
 
 	prereqfor_desc = {
@@ -375,7 +375,7 @@ tech_EOE_Latias = {
 	}
 
 	modifier = {
-		country_command_limit_add = 20
+		command_limit_add = 20
 	}
 	potential = {
 		owner_main_species = {
@@ -473,7 +473,7 @@ tech_EOE_Reshiram_armor = {
 	# }
 
 	modifier = {
-		country_command_limit_add = 20
+		command_limit_add = 20
 	}
 	
 	potential = {
@@ -515,13 +515,14 @@ tech_EOE_Reshiram = {
 				}
 			}
 		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_EOE_Plant_master
-			}
-		}
+#			# ... Seriously?! This hasn't even been a thing since 3.5!!
+#		modifier = {
+#			factor = 1.25
+#			research_leader = {
+#				area = society
+#				has_trait = leader_trait_EOE_Plant_master
+#			}
+#		}
 	}
 
 	prereqfor_desc = {
@@ -532,7 +533,7 @@ tech_EOE_Reshiram = {
 	}
 
 	modifier = {
-		country_command_limit_add = 50
+		command_limit_add = 50
 	}
 
 	potential = {

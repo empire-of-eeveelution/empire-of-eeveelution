@@ -85,7 +85,8 @@ EOE_cthugha_planet_cat = {
 	level = 3
 	spawn_chance = {
 		modifier = {
-			factor = 0
+ 			# no need for this since default is zero.
+			# factor = 0
 		}
 	}
 	on_success = EOE_branch.2

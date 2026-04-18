@@ -91,7 +91,7 @@ trait_EOE_spark_of_love = {
 	self_modifier = {
 		leader_lifespan_add = 20
 	}
-	councilor_trait = yes
+	force_councilor_trait = yes
 	councilor_modifier = {
 		all_technology_research_speed = 0.15
 	}
@@ -105,7 +105,7 @@ trait_EOE_spark_of_love_okra = {
 	initial = no
 	randomized = no
 
-	councilor_trait = yes
+	force_councilor_trait = yes
 	self_modifier = {
 		leader_lifespan_add = 20
 	}
@@ -122,7 +122,7 @@ trait_EOE_spark_of_love_hezi = {
 	initial = no
 	randomized = no
 
-	councilor_trait = yes
+	force_councilor_trait = yes
 	self_modifier = {
 		leader_lifespan_add = 20
 	}
@@ -137,7 +137,7 @@ trait_EOE_broken_spark_of_love = {
 	leader_class = { scientist }
 	initial = no
 	randomized = no
-	councilor_trait = yes
+	force_councilor_trait = yes
 	self_modifier = {
 		leader_lifespan_add = -40
 	}

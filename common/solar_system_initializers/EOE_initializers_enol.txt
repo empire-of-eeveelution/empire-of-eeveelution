@@ -1222,7 +1222,7 @@ EOE_ultra_system = {
 				}
 				species = last_created_species
 				ethos = {
-					ethic = "ethic_xenophilia"
+					ethic = "ethic_xenophile"
 					ethic = "ethic_spiritualist"
 					ethic = "ethic_authoritarian"
 				}

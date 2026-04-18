@@ -1,6 +1,6 @@
 # trait_EOE_self_replication = {  #没有实际效果
 # 	cost = 2
-# 	potential_crossbreeding_chance = 1.00
+# 	# potential_crossbreeding_chance = 1.00
 # 	icon = "gfx/interface/icons/traits/trait_EOE_self_replication.dds"
 
 # 	opposites = { trait_robot_mass_produced }
@@ -27,7 +27,8 @@
 # }
 trait_EOE_alloy_structure = {
 	cost = 2
-	potential_crossbreeding_chance = 1.00
+	# Crossbreeding was deep sixed in 4.0. Thank heavens.
+	# potential_crossbreeding_chance = 1.00
 	icon = "gfx/interface/icons/traits/trait_EOE_alloy_structure.dds"
 
 	opposites = { trait_robot_mass_produced }
@@ -99,7 +100,7 @@ trait_EOE_miner_robot = {
 
 trait_EOE_type_advantage = {
 	cost = 5
-	potential_crossbreeding_chance = 1.00
+	# potential_crossbreeding_chance = 1.00
 	icon = "gfx/interface/icons/EeveelutionTypes/grass_type.png"
 
 	#opposites = { trait_robot_mass_produced }

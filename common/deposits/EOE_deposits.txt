@@ -718,7 +718,7 @@ d_EOE_mining_station = {
 	
 	planet_modifier = {
 		planet_max_districts_add = 2
-		district_hab_mining_max = 3
+		district_hab_mining_max_add = 3
 	}
 	
 }

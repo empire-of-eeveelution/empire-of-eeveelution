@@ -1,7 +1,7 @@
 EOE_assimilation = {
 	category = assimilation
 	is_capped_by_modifier = no
-	clothes_texture_index = 2
+	# clothes_texture_index = 2
 
 	possible_pre_triggers = {
 		is_sapient = yes
@@ -78,9 +78,12 @@ EOE_assimilation = {
 
 EOE_synapse_drone = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = building_hive_capital
-
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = building_hive_capital
+		}
+    }
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -98,13 +101,14 @@ EOE_synapse_drone = {
 		produces = {
 			unity = 4
 		}
-		upkeep = {
-			trigger = {
-				is_lithoid = no
-			}
-			food = 2
-			energy = 2
-		}
+# Causes log error, need to fix later.
+#		upkeep = {
+#			trigger = {
+#				is_lithoid = no
+#			}
+#			food = 2
+#			energy = 2
+#		}
 		upkeep = {
 			trigger = {
 				owner = { has_civic = civic_external_synapse }
@@ -206,10 +210,14 @@ EOE_synapse_drone = {
 
 EOE_trainer = {
 	category = ruler
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_capital
-	clothes_texture_index = 1
-	icon = EOE_trainer
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_capital
+			# clothes_texture_index = 1
+			icon = EOE_trainer
+		}
+    }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -267,9 +275,7 @@ EOE_trainer = {
 			country_naval_cap_add = 2
 		}
 	}
-	pop_modifier = {
-		pop_defense_armies_add = 1
-	}
+	# pop_modifier = { pop_defense_armies_add = 1	}
 	weight = {
 		weight = @ruler_job_weight
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
@@ -280,7 +286,8 @@ EOE_trainer = {
 		}
 		modifier = {
 			factor = 5
-			has_job = EOE_trainer
+# (Invalid trigger)
+		#	has_job = EOE_trainer
 		}
 		# crisis purge
 		modifier = {
@@ -304,7 +311,7 @@ EOE_trainer = {
 # 	category = specialist
 # 	condition_string = BATTLE_THRALL_JOB_TRIGGER
 # 	building_icon = building_holo_theatres
-# 	clothes_texture_index = 3
+# 	# clothes_texture_index = 3
 
 # 	possible_pre_triggers = {
 # 		has_owner = yes

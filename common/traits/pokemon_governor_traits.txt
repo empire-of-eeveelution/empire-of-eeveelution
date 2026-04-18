@@ -114,7 +114,7 @@ leader_trait_governor_water_type_1 = { #水系帝国代表
 		pop_job_amenities_mult = 0.1
 		logistic_growth_mult = 0.1
 	}
-	councilor_trait = yes
+	force_councilor_trait = yes
 	initial = no
 	randomized = no
 	leader_class = { official }
@@ -232,7 +232,7 @@ leader_trait_governor_ground_type = { #地面系总督
 		planet_buildings_cost_mult = -0.2
 		planet_districts_cost_mult = -0.2
 		planet_building_build_speed_mult = 0.2
-		deposit_blockers_time_cost_mult = -0.25
+		planet_clear_blocker_speed_mult = 0.25
 		deposit_blockers_cost_mult = -0.25
 		
 	}
@@ -240,7 +240,7 @@ leader_trait_governor_ground_type = { #地面系总督
 		planet_buildings_cost_mult = -0.1
 		planet_districts_cost_mult = -0.1
 		planet_building_build_speed_mult = 0.1
-		deposit_blockers_time_cost_mult = -0.125
+		planet_clear_blocker_speed_mult = 0.125
 		deposit_blockers_cost_mult = -0.125
 	}
 	leader_class = { official }
@@ -254,12 +254,12 @@ leader_trait_governor_poison_type = { #毒系总督
 	planet_modifier = {
 		planet_jobs_consumer_goods_produces_mult = 0.2
 		planet_jobs_alloys_produces_mult = 0.2
-		pop_habitability = -0.1
+		pop_environment_tolerance = -0.1
 	}
 	sector_modifier = {
 		planet_jobs_consumer_goods_produces_mult = 0.1
 		planet_jobs_alloys_produces_mult = 0.1
-		pop_habitability = -0.05
+		pop_environment_tolerance = -0.05
 	}
 	
 
@@ -285,7 +285,7 @@ leader_trait_governor_bug_type = { #虫系内阁
 
 	icon = "gfx/interface/icons/EeveelutionTypes/bug_type.png"
 	
-	councilor_trait = yes
+	force_councilor_trait = yes
 	initial = no
 	randomized = no
 	leader_class = { official }
@@ -343,7 +343,7 @@ leader_trait_governor_dragon_type = { #龙系，抄的水系
 		federation_naval_cap_contribution_mult = 0.15
 		federation_fleet_cap_add = 25
 	}
-	councilor_trait = yes
+	force_councilor_trait = yes
 	initial = no
 	randomized = no
 	leader_class = { official }

@@ -7,7 +7,7 @@ greetings = {
 			weight = 30
 		}
 		trigger = {
-			has_ai_personality = map_patronizing_colonizers
+			has_ai_personality = EOE_Eevee_assimilators
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_hostile_to = FROM
@@ -248,13 +248,13 @@ greetings = {
 			has_ai_personality = EOE_Eevee_assimilators
 			NOT = { is_at_war_with = FROM }
 			is_neutral_to = FROM
-		}
 			from = {
 				NOR = {
 					has_authority = auth_machine_intelligence
 					has_country_flag = synthetic_empire
 				}
 			 }
+		}
 	}
 	EOE_EA_NEUTRAL_GREETING_03_ROBOT_RS = {
 		weight = {
@@ -529,7 +529,7 @@ action_declare_war = {
 				weight = 100
 			}
 			trigger = {
-				has_authority = civic_machine_assimilator
+				has_civic = civic_machine_assimilator
 				has_country_flag = synthetic_empire
 				FROM = {
 					has_ai_personality = EOE_Eevee_assimilators

@@ -22,9 +22,7 @@
 	randomized = {
 		always = no
 	}
-	portraits = {
-		"Steelmons"
-	}
+	# portraits = {	"Steelmons"	}
 	possible = {
 		authority = {
 			OR = {
@@ -54,9 +52,7 @@
 			}
 		}
 	}
-	portraits = {
-		"Othermons"
-	}
+	# portraits = {	"Othermons" }
 	use_climate_preference = no
 	playable = {
 		always = no
@@ -80,74 +76,11 @@
 			}
 		}
 	}
-	portraits = {
-		"Eeveelutions"
-	}
+	# portraits = {	"Eeveelutions"	}
 	graphical_culture = pokemon_01
 	generate_shipset = no
 	move_pop_sound_effect = "moving_pop_confirmation"
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -167,9 +100,7 @@
 	}
 	gender = no
 	use_climate_preference = no
-	portraits = {
-		"bixie"
-	}
+	# portraits = {	"bixie"	}
 	leader_age_min = 50000000
 	leader_age_max = 50000000
 	graphical_culture = bixie
