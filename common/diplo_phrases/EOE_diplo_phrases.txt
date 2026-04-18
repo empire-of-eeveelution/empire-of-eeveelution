@@ -529,7 +529,7 @@ action_declare_war = {
 				weight = 100
 			}
 			trigger = {
-				has_authority = civic_machine_assimilator
+				has_civic = civic_machine_assimilator
 				has_country_flag = synthetic_empire
 				FROM = {
 					has_ai_personality = EOE_Eevee_assimilators
