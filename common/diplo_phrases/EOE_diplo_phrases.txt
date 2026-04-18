@@ -7,7 +7,7 @@ greetings = {
 			weight = 30
 		}
 		trigger = {
-			has_ai_personality = map_patronizing_colonizers
+			has_ai_personality = EOE_Eevee_assimilators
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_hostile_to = FROM
