@@ -1,6 +1,6 @@
 trait_EOE_Inheritors = {
 	cost = 0
-	potential_crossbreeding_chance = 1.00
+	# potential_crossbreeding_chance = 1.00
 	icon = "gfx/interface/icons/traits/trait_EOE_Inheritors.png"
 
 	opposites = { "trait_nonadaptive" }
@@ -27,7 +27,8 @@ trait_EOE_Inheritors = {
 
 trait_directed_evolution = {
 	cost = 0
-	potential_crossbreeding_chance = 1.00
+	# Crossbreeding was deep sixed in 4.0. Thank heavens.
+	# potential_crossbreeding_chance = 1.00
 	icon = "gfx/interface/icons/traits/EOET1.png"
 
 	opposites = { "trait_nonadaptive" }
@@ -258,7 +259,7 @@ trait_directed_evolution = {
 
 trait_pokeball_adaptability = {
 	cost = 0
-	potential_crossbreeding_chance = 1.00
+	# potential_crossbreeding_chance = 1.00
 	icon = "gfx/interface/icons/traits/EOET2.png"
 
 	opposites = { "trait_solitary" "trait_sedentary" "trait_unruly"}
@@ -301,7 +302,7 @@ trait_pokeball_adaptability = {
 
 # trait_centralized_incubation_system = {
 # 	cost = 2
-# 	potential_crossbreeding_chance = 1.00
+# 	# potential_crossbreeding_chance = 1.00
 # 	icon = "gfx/interface/icons/traits/EOET3.png"
 
 
@@ -327,7 +328,7 @@ trait_pokeball_adaptability = {
 
 trait_natural_psionic_warrior = {
 	cost = 0
-	potential_crossbreeding_chance = 1.00
+	# potential_crossbreeding_chance = 1.00
 	icon = "gfx/interface/icons/traits/EOET5.png"
 	
 	improves_leaders = no
@@ -357,7 +358,7 @@ trait_natural_psionic_warrior = {
 
 trait_extremely_cute = {
 	cost = 0
-	potential_crossbreeding_chance = 1.00
+	# potential_crossbreeding_chance = 1.00
 	icon = "gfx/interface/icons/traits/EOET4.png"
 	opposites = { "trait_repugnant" }
 	improves_leaders = no
@@ -380,7 +381,7 @@ trait_extremely_cute = {
 
 trait_normal_type_mega_evolution = {
 	cost = 4
-	potential_crossbreeding_chance = 0.5
+	# potential_crossbreeding_chance = 0.5
 	icon = "gfx/interface/icons/EeveelutionTypes/normal_type.png"
 	initial = no
 	randomized = no
@@ -406,7 +407,7 @@ trait_normal_type_mega_evolution = {
 
 trait_grass_type_mega_evolution = {
 	cost = 4
-	potential_crossbreeding_chance = 0.5
+	# potential_crossbreeding_chance = 0.5
 	icon = "gfx/interface/icons/EeveelutionTypes/grass_type.png"
 	initial = no
 	randomized = no
@@ -434,7 +435,7 @@ trait_grass_type_mega_evolution = {
 
 trait_fire_type_mega_evolution = {
 	cost = 4
-	potential_crossbreeding_chance = 0.5
+	# potential_crossbreeding_chance = 0.5
 	icon = "gfx/interface/icons/EeveelutionTypes/fire_type.png"
 	initial = no
 	randomized = no
@@ -460,7 +461,7 @@ trait_fire_type_mega_evolution = {
 
 trait_water_type_mega_evolution = {
 	cost = 4
-	potential_crossbreeding_chance = 0.5
+	# potential_crossbreeding_chance = 0.5
 	icon = "gfx/interface/icons/EeveelutionTypes/water_type.png"
 	initial = no
 	randomized = no
@@ -489,7 +490,7 @@ trait_water_type_mega_evolution = {
 
 trait_electric_type_mega_evolution = {
 	cost = 4
-	potential_crossbreeding_chance = 0.5
+	# potential_crossbreeding_chance = 0.5
 	icon = "gfx/interface/icons/EeveelutionTypes/electric_type.png"
 	initial = no
 	randomized = no
@@ -516,7 +517,7 @@ trait_electric_type_mega_evolution = {
 
 trait_psychic_type_mega_evolution = {
 	cost = 4
-	potential_crossbreeding_chance = 0.5
+	# potential_crossbreeding_chance = 0.5
 	icon = "gfx/interface/icons/EeveelutionTypes/psychic_type.png"
 	initial = no
 	randomized = no
@@ -542,7 +543,7 @@ trait_psychic_type_mega_evolution = {
 
 trait_dark_type_mega_evolution = {
 	cost = 4
-	potential_crossbreeding_chance = 0.5
+	# potential_crossbreeding_chance = 0.5
 	icon = "gfx/interface/icons/EeveelutionTypes/dark_type.png"
 	initial = no
 	randomized = no
@@ -563,7 +564,7 @@ trait_dark_type_mega_evolution = {
 		enforcer_jobs_bonus_workforce_mult = 0.3
 		# planet_jobs_specialist_produces_mult = 0.05
 		# planet_jobs_worker_produces_mult = 0.1
-		# planet_jobs_slave_produces_mult = 0.15	
+		# pop_slave_bonus_workforce_mult = 0.15	
 	}
 
 	triggered_species_modifier = {
@@ -594,7 +595,7 @@ trait_dark_type_mega_evolution = {
 }
 # 0 = {
 # 	cost = 4
-# 	potential_crossbreeding_chance = 0.5
+# 	# potential_crossbreeding_chance = 0.5
 # 	icon = "gfx/interface/icons/EeveelutionTypes/dark_type.png"
 # 	initial = no
 # 	randomized = no
@@ -625,7 +626,7 @@ trait_dark_type_mega_evolution = {
 
 trait_ice_type_mega_evolution = {
 	cost = 4
-	potential_crossbreeding_chance = 0.5
+	# potential_crossbreeding_chance = 0.5
 	icon = "gfx/interface/icons/EeveelutionTypes/ice_type.png"
 	initial = no
 	randomized = no
@@ -709,7 +710,7 @@ trait_ice_type_mega_evolution = {
 
 # trait_ice_type_mega_evolution_swarm = {
 # 	cost = 4
-# 	potential_crossbreeding_chance = 0.5
+# 	# potential_crossbreeding_chance = 0.5
 # 	icon = "gfx/interface/icons/EeveelutionTypes/ice_type.png"
 # 	initial = no
 # 	randomized = no
@@ -741,7 +742,7 @@ trait_ice_type_mega_evolution = {
 
 trait_fairy_type_mega_evolution = {
 	cost = 4
-	potential_crossbreeding_chance = 0.5
+	# potential_crossbreeding_chance = 0.5
 	icon = "gfx/interface/icons/EeveelutionTypes/fairy_type.png"
 	initial = no
 	randomized = no
@@ -773,7 +774,7 @@ trait_fairy_type_mega_evolution = {
 
 # trait_fairy_type_mega_evolution_swarm = {
 # 	cost = 4
-# 	potential_crossbreeding_chance = 0.5
+# 	# potential_crossbreeding_chance = 0.5
 # 	icon = "gfx/interface/icons/EeveelutionTypes/fairy_type.png"
 # 	initial = no
 # 	randomized = no
@@ -801,7 +802,7 @@ trait_fairy_type_mega_evolution = {
 
 #trait_nuclear_type_mega_evolution = {
 #	cost = 4
-#	potential_crossbreeding_chance = 0.5
+#	# potential_crossbreeding_chance = 0.5
 #	icon = "gfx/interface/icons/EeveelutionTypes/nuclear_type.png"
 #	initial = no
 #	randomized = no
@@ -815,7 +816,7 @@ trait_fairy_type_mega_evolution = {
 #}
 trait_steel_type_mega_evolution = {
 	cost = 4
-	potential_crossbreeding_chance = 0.5
+	# potential_crossbreeding_chance = 0.5
 	icon = "gfx/interface/icons/EeveelutionTypes/steel_type.png"
 	initial = no
 	randomized = no
@@ -844,7 +845,7 @@ trait_steel_type_mega_evolution = {
 
 trait_rock_type_mega_evolution = {
 	cost = 4
-	potential_crossbreeding_chance = 0.5
+	# potential_crossbreeding_chance = 0.5
 	icon = "gfx/interface/icons/EeveelutionTypes/rock_type.png"
 	initial = no
 	randomized = no
@@ -874,7 +875,7 @@ trait_rock_type_mega_evolution = {
 
 trait_ground_type_mega_evolution = {
 	cost = 4
-	potential_crossbreeding_chance = 0.5
+	# potential_crossbreeding_chance = 0.5
 	icon = "gfx/interface/icons/EeveelutionTypes/ground_type.png"
 	initial = no
 	randomized = no
@@ -900,7 +901,7 @@ trait_ground_type_mega_evolution = {
 
 trait_fly_type_mega_evolution = {
 	cost = 4
-	potential_crossbreeding_chance = 0.5
+	# potential_crossbreeding_chance = 0.5
 	icon = "gfx/interface/icons/EeveelutionTypes/fly_type.png"
 	initial = no
 	randomized = no
@@ -914,8 +915,8 @@ trait_fly_type_mega_evolution = {
 	allowed_archetypes = { BIOLOGICAL }
 	species_class = { Eeveelutions }
 	modifier = {
-		pop_job_trade_mult = 0.3
-		pop_growth_from_immigration = 1
+		trader_jobs_bonus_workforce_mult = 0.3
+		#pop_growth_from_immigration = 1
 		pop_resettlement_cost_mult = -0.50
 		species_empire_size_mult = -0.3
 	}
@@ -927,7 +928,7 @@ trait_fly_type_mega_evolution = {
 
 trait_fight_type_mega_evolution = {
 	cost = 4
-	potential_crossbreeding_chance = 0.5
+	# potential_crossbreeding_chance = 0.5
 	icon = "gfx/interface/icons/EeveelutionTypes/fight_type.png"
 	initial = no
 	randomized = no
@@ -943,7 +944,7 @@ trait_fight_type_mega_evolution = {
 	modifier = {
 		planet_jobs_unity_produces_mult = 0.25
 		planet_jobs_worker_produces_mult = 0.1
-		planet_jobs_slave_produces_mult = 0.15
+		pop_slave_bonus_workforce_mult = 0.15
 	}
 
 	slave_cost = {
@@ -953,7 +954,7 @@ trait_fight_type_mega_evolution = {
 
 trait_posion_type_mega_evolution = {
 	cost = 4
-	potential_crossbreeding_chance = 0.5
+	# potential_crossbreeding_chance = 0.5
 	icon = "gfx/interface/icons/EeveelutionTypes/poison_type.png"
 	initial = no
 	randomized = no
@@ -983,7 +984,7 @@ trait_posion_type_mega_evolution = {
 
 trait_dragon_type_mega_evolution = {
 	cost = 4
-	potential_crossbreeding_chance = 0.5
+	# potential_crossbreeding_chance = 0.5
 	icon = "gfx/interface/icons/EeveelutionTypes/dragon_type.png"
 	initial = no
 	randomized = no
@@ -1011,7 +1012,7 @@ trait_dragon_type_mega_evolution = {
 
 trait_bug_type_mega_evolution = {
 	cost = 4
-	potential_crossbreeding_chance = 0.5
+	# potential_crossbreeding_chance = 0.5
 	icon = "gfx/interface/icons/EeveelutionTypes/bug_type.png"
 	initial = no
 	randomized = no
@@ -1066,7 +1067,8 @@ trait_EOE_egg_laying = {
 			can_add_or_remove_phenotype_traits = yes
 		}
 	}
-	# portrait_override = { mam16 mindwarden_01 }
+	# ... Why?
+	# portrait_override = { mam16 mindwarden_01 } 
 	tags = { organic positive pop_growth avian reptilian aquatic species }
 	custom_tooltip = trait_egg_laying_effect
 	triggered_planet_growth_habitability_modifier = {
