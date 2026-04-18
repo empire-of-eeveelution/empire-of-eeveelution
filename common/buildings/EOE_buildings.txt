@@ -365,12 +365,14 @@ building_EOE_evolution_planning_office = {
 
 	exempt_from_ai_planet_specialization = no
 	base_cap_amount = 1
-	category = unity
-	icon = building_biolab_4
+
 	building_sets = {
 		government
 		unity
 	}
+
+	category = unity
+	icon = building_biolab_4
 	potential = {
 		exists = owner
 		owner = {
@@ -399,158 +401,164 @@ building_EOE_evolution_planning_office = {
 		}
 	}
 	
+	# 4.0 uses inline scripts rather than the old stinky method.
+	inline_script = {
+		script = jobs/unity_jobs_add
+		AMOUNT = @building_static_jobs
+	}
 	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_megacorp = no
-				is_worker_coop_empire = no
-				has_valid_civic = civic_EOE_evolution_planning
-				NOT = {
-					has_ethic = ethic_spiritualist
-				}
-			}
-		}
-		modifier = {
-			job_bureaucrat_add = 2
-		}
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_megacorp = no
-				is_worker_coop_empire = no
-				has_valid_civic = civic_EOE_evolution_planning
-			}
-		}
-		text = job_bureaucrat_effect_desc
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_megacorp = yes
-				is_worker_coop_empire = no
-				has_valid_civic = civic_EOE_evolution_planning
-			}
-		}
-		modifier = {
-			job_manager_add = 2
-		}
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_megacorp = yes
-				is_worker_coop_empire = no
-				has_valid_civic = civic_EOE_evolution_planning
-			}
-		}
-		text = job_manager_effect_desc
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_worker_coop_empire = yes
-				has_valid_civic = civic_EOE_evolution_planning
-			}
-		}
-		modifier = {
-			job_steward_add = 2
-		}
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_worker_coop_empire = yes
-				has_valid_civic = civic_EOE_evolution_planning
-			}
-		}
-		text = job_steward_effect_desc
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_megacorp = no
-				is_worker_coop_empire = no
-				has_valid_civic = civic_EOE_evolution_planning
-				has_ethic = ethic_spiritualist
-				NOT = {
-					has_valid_civic = civic_death_cult
-				}
-			}
-		}
-		modifier = {
-			job_priest_add = 2
-		}
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_megacorp = no
-				is_worker_coop_empire = no
-				has_valid_civic = civic_EOE_evolution_planning
-				has_ethic = ethic_spiritualist
-				NOT = {
-					has_valid_civic = civic_death_cult
-				}
-			}
-		}
-		text = job_priest_effect_desc
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_megacorp = no
-				is_worker_coop_empire = no
-				has_valid_civic = civic_EOE_evolution_planning
-				is_death_cult_empire = yes
-			}
-		}
-		modifier = {
-			job_death_priest_add = 1
-			job_mortal_initiate_add = 1
-		}
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_megacorp = no
-				is_worker_coop_empire = no
-				has_valid_civic = civic_EOE_evolution_planning
-				is_death_cult_empire = yes
-			}
-		}
-		text = job_death_priest_effect_desc
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_megacorp = no
-				is_worker_coop_empire = no
-				has_valid_civic = civic_EOE_evolution_planning
-				is_death_cult_empire = yes
-			}
-		}
-		text = job_mortal_initiate_effect_desc
-	}
+# Old stinky 3.x method. Commented out in case we need to come back to it.	
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = {
+#				is_megacorp = no
+#				is_worker_coop_empire = no
+#				has_valid_civic = civic_EOE_evolution_planning
+#				NOT = {
+#					has_ethic = ethic_spiritualist
+#				}
+#			}
+#		}
+#		modifier = {
+#			job_bureaucrat_add = 2
+#		}
+#	}
+#
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = {
+#				is_megacorp = no
+#				is_worker_coop_empire = no
+#				has_valid_civic = civic_EOE_evolution_planning
+#			}
+#		}
+#		text = job_bureaucrat_effect_desc
+#	}
+#
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = {
+#				is_megacorp = yes
+#				is_worker_coop_empire = no
+#				has_valid_civic = civic_EOE_evolution_planning
+#			}
+#		}
+#		modifier = {
+#			job_manager_add = 2
+#		}
+#	}
+#
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = {
+#				is_megacorp = yes
+#				is_worker_coop_empire = no
+#				has_valid_civic = civic_EOE_evolution_planning
+#			}
+#		}
+#		text = job_manager_effect_desc
+#	}
+#
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = {
+#				is_worker_coop_empire = yes
+#				has_valid_civic = civic_EOE_evolution_planning
+#			}
+#		}
+#		modifier = {
+#			job_steward_add = 2
+#		}
+#	}
+#
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = {
+#				is_worker_coop_empire = yes
+#				has_valid_civic = civic_EOE_evolution_planning
+#			}
+#		}
+#		text = job_steward_effect_desc
+#	}
+#
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = {
+#				is_megacorp = no
+#				is_worker_coop_empire = no
+#				has_valid_civic = civic_EOE_evolution_planning
+#				has_ethic = ethic_spiritualist
+#				NOT = {
+#					has_valid_civic = civic_death_cult
+#				}
+#			}
+#		}
+#		modifier = {
+#			job_priest_add = 2
+#		}
+#	}
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = {
+#				is_megacorp = no
+#				is_worker_coop_empire = no
+#				has_valid_civic = civic_EOE_evolution_planning
+#				has_ethic = ethic_spiritualist
+#				NOT = {
+#					has_valid_civic = civic_death_cult
+#				}
+#			}
+#		}
+#		text = job_priest_effect_desc
+#	}
+#
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = {
+#				is_megacorp = no
+#				is_worker_coop_empire = no
+#				has_valid_civic = civic_EOE_evolution_planning
+#				is_death_cult_empire = yes
+#			}
+#		}
+#		modifier = {
+#			job_death_priest_add = 1
+#			job_mortal_initiate_add = 1
+#		}
+#	}
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = {
+#				is_megacorp = no
+#				is_worker_coop_empire = no
+#				has_valid_civic = civic_EOE_evolution_planning
+#				is_death_cult_empire = yes
+#			}
+#		}
+#		text = job_death_priest_effect_desc
+#	}
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = {
+#				is_megacorp = no
+#				is_worker_coop_empire = no
+#				has_valid_civic = civic_EOE_evolution_planning
+#				is_death_cult_empire = yes
+#			}
+#		}
+#		text = job_mortal_initiate_effect_desc
+#	}
 
 
 	prerequisites = {
