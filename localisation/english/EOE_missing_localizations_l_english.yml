@@ -155,7 +155,7 @@ l_english:
  EOE_branch.169.a:0 "Placeholder"
  
  #Ghost Event
- EOE_ghost.34.desc.:0 "Placeholder"
+ EOE_ghost.34.desc:0 "Placeholder"
  EOE_ghost.34.a:0 "Placeholder"
  EOE_ghost.96.desc.a:0 "Placeholder"
  EOE_ghost.96.desc.b:0 "Placeholder"
