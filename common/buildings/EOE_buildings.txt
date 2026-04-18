@@ -344,7 +344,7 @@ building_EOE_trainer_department = {
 		planet_amenities_add = 500
 		# planet_max_buildings_add = @buildings_t2
 		# planet_max_branch_office_buildings_add = 1
-		planet_district_orbital_mining_add = 10
+		# planet_district_orbital_mining_add = 10
 	}
 
 	resources = {
