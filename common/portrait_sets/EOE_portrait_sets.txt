@@ -5,11 +5,10 @@ Eeveelutions = {
     portraits = {
         "Eeveelutions"
     }
-
     # These should not be used for randomly generated species
-    non_randomized_portraits = {
-        "Eeveelutions"
-    }
+    #non_randomized_portraits = {
+    #    "Eeveelutions"
+    #}
 }
 Othermons = {
     species_class = Othermons

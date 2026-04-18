@@ -123,12 +123,18 @@ country_event ={
 						   has_trait = trait_directed_evolution
 						   has_trait = trait_natural_psionic_warrior
 						   has_trait = trait_pokeball_adaptability
-					 }
-				 }
+					 	}
+					}
+				}
+			owner_main_species = {
+				save_event_target_as = EOE_ai_eevee_species
 			}
-		   every_owned_pop_species = {
+		   	every_owned_pop_group = {
+				limit = {
+					is_species_class = Eeveelutions
+				}
 				modify_species = {
-					species = this
+					species = event_target:EOE_ai_eevee_species
 					add_trait = trait_extremely_cute
 				   add_trait = trait_directed_evolution
 				   add_trait = trait_natural_psionic_warrior
