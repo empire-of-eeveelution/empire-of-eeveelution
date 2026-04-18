@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="466fb39f-5700-450f-9f42-8c7299091cf8" name="更改" comment="修复了一些本地化文本的定界符未完全包裹文本导致的BUG&#10;修复了辟邪彩蛋无法正常获得领袖的BUG&#10;为辟邪新增了两个特质">
+    <list default="true" id="466fb39f-5700-450f-9f42-8c7299091cf8" name="更改" comment="修复了无法刷出AI伊布的BUG&#10;修复了AI伊布无法获得伊布基础特质三件套的BUG&#10;新增了伊布物种不能使用机械智能政体的提示（虽然我也不知道有谁会尝试这么做）">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events/bixie.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/bixie.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gfx/portraits/portraits/EOE_some_other_pokemon_portraits.txt" beforeDir="false" afterPath="$PROJECT_DIR$/gfx/portraits/portraits/EOE_some_other_pokemon_portraits.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +78,47 @@
       <option name="project" value="LOCAL" />
       <updated>1774778003831</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="删除了过时的country_limit文件&#10;添加了目前还没做完的星凝领袖">
+      <option name="closed" value="true" />
+      <created>1775838112610</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1775838112610</updated>
+    </task>
+    <task id="LOCAL-00004" summary="删除了过时的country_limit文件&#10;添加了目前还没做完的星凝领袖">
+      <option name="closed" value="true" />
+      <created>1775838122339</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1775838122339</updated>
+    </task>
+    <task id="LOCAL-00005" summary="修复了伊布会错误生成“生物”船模的问题">
+      <option name="closed" value="true" />
+      <created>1775958301048</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1775958301048</updated>
+    </task>
+    <task id="LOCAL-00006" summary="为核子和秋葵添加了传奇领袖（传奇领袖不会占用领袖规模了）">
+      <option name="closed" value="true" />
+      <created>1776248104218</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1776248104218</updated>
+    </task>
+    <task id="LOCAL-00007" summary="修复了无法刷出AI伊布的BUG&#10;修复了AI伊布无法获得伊布基础特质三件套的BUG&#10;新增了伊布物种不能使用机械智能政体的提示（虽然我也不知道有谁会尝试这么做）">
+      <option name="closed" value="true" />
+      <created>1776527159679</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1776527159679</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,6 +136,10 @@
     <MESSAGE value="蜂群国策兼容文灾建筑并优化性能，水系草系物种特质适配现版本，精灵球科技提供重力陷阱加成，无光星球不能作为初始球出现（随机的AI会无光开，然后崩掉）" />
     <MESSAGE value="Merge branch 'main' of github.com:empire-of-eeveelution/empire-of-eeveelution" />
     <MESSAGE value="修复了一些本地化文本的定界符未完全包裹文本导致的BUG&#10;修复了辟邪彩蛋无法正常获得领袖的BUG&#10;为辟邪新增了两个特质" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复了一些本地化文本的定界符未完全包裹文本导致的BUG&#10;修复了辟邪彩蛋无法正常获得领袖的BUG&#10;为辟邪新增了两个特质" />
+    <MESSAGE value="删除了过时的country_limit文件&#10;添加了目前还没做完的星凝领袖" />
+    <MESSAGE value="修复了伊布会错误生成“生物”船模的问题" />
+    <MESSAGE value="为核子和秋葵添加了传奇领袖（传奇领袖不会占用领袖规模了）" />
+    <MESSAGE value="修复了无法刷出AI伊布的BUG&#10;修复了AI伊布无法获得伊布基础特质三件套的BUG&#10;新增了伊布物种不能使用机械智能政体的提示（虽然我也不知道有谁会尝试这么做）" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复了无法刷出AI伊布的BUG&#10;修复了AI伊布无法获得伊布基础特质三件套的BUG&#10;新增了伊布物种不能使用机械智能政体的提示（虽然我也不知道有谁会尝试这么做）" />
   </component>
 </project>
