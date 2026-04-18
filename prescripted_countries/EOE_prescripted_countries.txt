@@ -39,8 +39,6 @@ EOE = {
 	ethic="ethic_fanatic_materialist"
 
 	origin="origin_protoss_shattered_ring"
-
-	flag = EOEst
 	
 	planet_name = "Arceus"
 	planet_class = "pc_continental"
@@ -121,8 +119,6 @@ Swarm_of_Eeveelutions = {
 	ethic="ethic_gestalt_consciousness"
 
 	origin="origin_post_apocalyptic"
-
-	flag = EOEst
 	
 	planet_name = "Aiur"
 	planet_class = "pc_continental"
@@ -159,7 +155,6 @@ Swarm_of_Eeveelutions = {
 		clothes=0
 		ruler_title="King of Blades"
 		ruler_title_female="Queen of Blades"
-		leader_class="ruler"
 		trait = "leader_trait_shipwright"
 		leader_class = governor
 	}
