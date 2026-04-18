@@ -1,6 +1,6 @@
 l_english:
 
-#These are all placeholders for later.
+#These are all placeholders for later. Put them in their proper places then delete this file.
  EOE_crisisfive:0 "Crisis Five"
  EOE_crisisfive_desc:0 "Placeholder" 
  EOE_scientific_faith_1:0 "Scientific Faith 1"
@@ -68,7 +68,7 @@ l_english:
  EOE.auto.1.desc:0 "Auto Machine Planet Description Placeholder"
  EOE.auto.1.accept:0 "Accept"
  EOE.auto.1.disable:0 "Disable"
- EOE.auto.2.desc: "Auto Machine Planet Description Placeholder"
+ EOE.auto.2.desc:0 "Auto Machine Planet Description Placeholder"
  
  #hezi event
  hezieevent.1.desc:0 "Placeholder"
@@ -242,6 +242,9 @@ l_english:
  EOE_ghost.100.d.tooltip:0 "Placeholder"
  EOE_ghost.100.e.tooltip:0 "Placeholder"
  
+ d_EOE_ghost_portal:0 "Ghost Portal"
+ d_EOE_ghost_portal_desc:0 "Placeholder"
+ 
  #leader events
  dark_matter_event.40.ask_curator:0 "Placeholder"
  acot_alpha_matter_events.1040.a:0 "Placeholder"
@@ -279,6 +282,7 @@ l_english:
  bixie.7.a:0 "Placeholder"
  
  #eevent
+ 
  eevent.45.desc:0 "Placeholder"
  eevent.45.a:0 "Placeholder"
  eevent.46.desc.a:0 "Placeholder"
@@ -296,6 +300,8 @@ l_english:
  eevent.51.desc:0 "Placeholder"
  eevent.51.desc.a:0 "Placeholder"
  eevent.51.desc.b:0 "Placeholder"
+ eevent.52.desc.a:0 "Placeholder"
+ eevent.52.desc.b:0 "Placeholder"
  eevent.7102.a:0 "Placeholder"
  
  bixie.6.c.tooltip:0 "Placeholder"
@@ -305,3 +311,24 @@ l_english:
  site_EOE_eevium_z_intro:0 "Placeholder"
  site_EOE_ultra_city_intro:0 "Placeholder"
  
+ #armies
+ EOE_kratz_shroud_army:0 "Kratz Shroud Army"
+ EOE_kratz_shroud_army_desc:0 "Placeholder"
+ EOE_kratz_shroud_army_small:0 "Small Kratz Shroud Army"
+ EOE_kratz_shroud_army_small_desc:0 "Placeholder"
+ EOE_regirock:0 "Regirock"
+ EOE_regirock_desc:0 "Placeholder"
+ EOE_registeel:0 "Registeel"
+ EOE_registeel_desc:0 "Placeholder"
+ EOE_regice:0 "Regice"
+ EOE_regice_desc:0 "Placeholder"
+ EOE_mew_fleet:0 "Mew Fleet"
+ EOE_mew_fleet_desc:0 "Placeholder"
+ EOE_tree_def_army:0 "Tree Defense Army"
+ EOE_tree_def_army_desc:0 "Placeholder"
+ 
+ 
+ #misc
+ concept_ap_mega_evolution_EOE_desc:0 "Placeholder"
+ situation_endless_evolution_type:0 "Endless Evolution"
+ EOE_steel_type_pokemon_produce_cooldown:0 "Steel Type Cooldown"
