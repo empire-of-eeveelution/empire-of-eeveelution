@@ -285,7 +285,8 @@ EOE_trainer = {
 		}
 		modifier = {
 			factor = 5
-			has_job = EOE_trainer
+# (Invalid trigger)
+		#	has_job = EOE_trainer
 		}
 		# crisis purge
 		modifier = {
