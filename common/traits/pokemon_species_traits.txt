@@ -1066,7 +1066,7 @@ trait_EOE_egg_laying = {
 			can_add_or_remove_phenotype_traits = yes
 		}
 	}
-	portrait_override = { mam16 mindwarden_01 }
+	# portrait_override = { mam16 mindwarden_01 }
 	tags = { organic positive pop_growth avian reptilian aquatic species }
 	custom_tooltip = trait_egg_laying_effect
 	triggered_planet_growth_habitability_modifier = {
