@@ -1,29 +1,29 @@
-decision_EOE_habitat_repairing = {
-	owned_planets_only = yes
-	potential = {
-		is_planet_class = pc_habitat
-		has_modifier = EOE_broken_habitat
-	}
-	prerequisites = { tech_habitat_1 }
-	show_tech_unlock_if = {
-		has_origin = origin_protoss_shattered_ring
-	}
-	enactment_time = 180
-	resources = {
-		category = decisions
-		cost = {
-			influence = 25
-			alloys = 750
-		}
-	}
-	effect = {
-		remove_modifier = EOE_broken_habitat
-		add_deposit = d_EOE_mining_station
-	}
-	ai_weight = {
-		weight = 1000
-	}
-}
+#decision_EOE_habitat_repairing = {
+#	owned_planets_only = yes
+#	potential = {
+#		is_planet_class = pc_habitat
+#		has_modifier = EOE_broken_habitat
+#	}
+#	prerequisites = { tech_habitat_1 }
+#	show_tech_unlock_if = {
+#		has_origin = origin_protoss_shattered_ring
+#	}
+#	enactment_time = 180
+#	resources = {
+#		category = decisions
+#		cost = {
+#			influence = 25
+#			alloys = 750
+#		}
+#	}
+#	effect = {
+#		remove_modifier = EOE_broken_habitat
+#		add_deposit = d_EOE_mining_station
+#	}
+#	ai_weight = {
+#		weight = 1000
+#	}
+#}
 
 decision_EOE_produce_steel_type_pokemon = {
 	owned_planets_only = yes
