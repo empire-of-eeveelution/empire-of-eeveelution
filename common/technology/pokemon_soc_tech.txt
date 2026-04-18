@@ -522,7 +522,7 @@ tech_EOE_Reshiram = {
 #				area = society
 #				has_trait = leader_trait_EOE_Plant_master
 #			}
-		}
+#		}
 	}
 
 	prereqfor_desc = {
