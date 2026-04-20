@@ -154,3 +154,8 @@ EOE_ship_test_effect = {
 	ship_shield_mult = 30
 	ship_armor_mult = 30
 }
+
+#Steel Type Trainer boost for AIs.
+EOE_steeltype_ai_assemblyboost = {
+	planet_pop_assembly_mult = 0.25
+}

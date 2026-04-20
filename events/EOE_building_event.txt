@@ -675,10 +675,20 @@ country_event = {
 		}
 		last_created_species = {
 			save_global_event_target_as = EOE_steelmons
+		}		
+		# If Steel Type Trainers on AI Empire, turn them into Mechanists. 如果AI帝国中的钢系训练家，就把他们变成机械师
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			give_technology = { message = no tech = tech_powered_exoskeletons }
+			give_technology = { message = no tech = tech_robotic_workers }
+			add_modifier = {
+				modifier = EOE_steeltype_ai_assemblyboost days = -1
+			}
 		}
 	}
 }
-
 
 #钢系国策
 country_event = {
@@ -707,6 +717,15 @@ country_event = {
 		}
 		last_created_species = {
 			save_global_event_target_as = EOE_steelmons
+		}	
+		# If Steel Type Trainers on AI Empire, turn them into Mechanists. 如果AI帝国中的钢系训练家，就把他们变成机械师
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			capital_scope = {
+				add_building = building_robot_assembly_plant
+			}
 		}
 		# if = {
 		# 	limit = {
