@@ -1,3 +1,5 @@
+#Currently broken until someone can get this fixed. 
+
 origin_protoss_shattered_ring = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_shattered_ring.dds"
@@ -8,11 +10,14 @@ origin_protoss_shattered_ring = {
 	max_once_global = yes
 	#non_colonizable_planet_class_neighbor = yes
 
+
 	possible = {
 		# species_archetype = {
 		# 	value = POKEMON
 		# }
 		#ethics = { NOT = { value = ethic_gestalt_consciousness }}
+		always = no
+		text = "Currently broken. Disabled untill it's fixed."
 	}
 
 	description = "origin_tooltip_protoss_shattered_ring_effects"
