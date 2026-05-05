@@ -630,6 +630,10 @@ EOE_shatterring_start_buildings = {
 			type_conversion = yes
 		}
 		add_district = {
+			district_type = district_mining
+			type_conversion = yes
+		}
+		add_district = {
 			district_type = district_generator
 			type_conversion = yes
 		}
