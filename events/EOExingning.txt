@@ -1,0 +1,64 @@
+namespace = EOE_xingning
+ship_event = {
+    id = EOE_xingning.1
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        exists = owner
+        root.owner.species = { is_species_class = Eeveelutions }
+        root.leader = { has_leader_flag = xingning }
+    }
+    immediate = {
+        this = {
+            if = {
+                limit = {
+                    NOT = { has_global_flag = xingning_ship }
+                }
+                set_global_flag = xingning_ship
+            }
+        }
+        root.solar_system = {
+            random_list = {
+                90 = {
+                    spawn_system = {
+                        min_distance = 9
+                        max_distance = 12
+                        initializer = random
+                        random hyperlane = yes
+                    }
+                }
+                10 = {
+                    spawn_system = {
+                        min_distance = 9
+                        max_distance = 12
+                        initializer = op_superring_system
+                        random hyperlane = yes
+                    }
+                }
+            }
+        }
+    }
+}
+ship_event = {
+    id = EOE_xingning.2
+    hide_window = yes
+    is_triggered_only = yes
+    immediate = {
+        owner = {
+            every_owned_ship = {
+                limit = {
+                    has_global_flag = xingning_ship
+                }
+                remove_global_flag = xingning_ship
+            }
+            random_owned_ship = {
+                limit = {
+                    this.leader = {
+                        has_leader_flag = xingning
+                    }
+                }
+                ship_event = { id = EOE_xingning.1 }
+            }
+        }
+    }
+}

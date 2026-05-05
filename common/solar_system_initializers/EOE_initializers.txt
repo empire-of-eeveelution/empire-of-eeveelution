@@ -648,3 +648,250 @@ protoss_shattered_ring_2 = {
 
 
 }
+
+op_superring_system = {
+	class = "rl_standard_stars"
+	flags = { titan_system }
+	planet = {
+		class = star
+		size = 30
+		orbit_distance = 0
+		orbit_angle = 0
+	}
+	init_effect = {
+		set_star_flag = superring_built
+	}
+
+	change_orbit = 45
+
+	planet = {
+
+		name = "Segment-A"
+		class = "pc_ringworld_habitable"
+		size = 5
+		orbit_distance = 0
+		has_ring = no
+		deposit_blockers = none
+		modifiers = none
+
+		init_effect = {
+
+		}
+
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "Segment-B"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "Segment-C"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "Segment-D"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+
+		}
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "Segment-E"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+
+		}
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "Segment-F"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+
+		}
+	}
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "Segment-G"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+
+		}
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "Segment-H"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "Segment-I"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "Segment-J"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "Segment-K"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "Segment-L"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+	change_orbit = 45
+
+	planet = {
+		name = "Eternos"
+		orbit_distance = 20
+		class = pc_gaia
+		starting_planet = yes
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		deposit_blockers = none
+		modifiers = none
+
+		init_effect = {
+			change_pc = "pc_gaia"
+			prevent_anomaly = yes
+
+
+		}
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			name = "Telos"
+			class = "pc_gaia"
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+			modifiers = none
+
+			init_effect = { prevent_anomaly = yes }
+		}
+	}
+
+	change_orbit = 60
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -210
+		size = 5
+		has_ring = no
+		init_effect = {
+			set_deposit = d_minerals_4
+		}
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+		init_effect = {
+			set_deposit = d_minerals_4
+		}
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+		init_effect = {
+			set_deposit = d_minerals_4
+		}
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+		init_effect = {
+			set_deposit = d_minerals_4
+		}
+	}
+
+	change_orbit = 45
+
+	planet = {
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 4 }
+			size = { min = 8 max = 20 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 6
+		}
+	}
+
+	change_orbit = 30
+
+	planet = {
+		count = { min = 0 max = 2 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+	}
+}
