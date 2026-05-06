@@ -111,7 +111,7 @@ country_event ={
 					 NOR = {
 					   has_civic = civic_eeveelutions_assimilator
 					   has_civic = civic_external_synapse
-					   has_civic = civic_scientific_faith
+					   #has_civic = civic_scientific_faith
 					  any_owned_pop_species = {
 						has_trait = trait_EOE_Inheritors
 					  }

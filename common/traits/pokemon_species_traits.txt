@@ -1038,8 +1038,8 @@ trait_bug_type_mega_evolution = {
 }
 
 trait_EOE_egg_laying = {
-	host_has_dlc = "BioGenesis"
-	cost = 2
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_egg_laying.dds"
 	species_possible_add = {
 		OR = {
 			can_add_genetic_traits = yes
