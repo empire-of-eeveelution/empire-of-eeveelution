@@ -78,7 +78,7 @@ trait_directed_evolution = {
 				}
 			}
 		}
-		pop_happiness = -0.02
+		pop_happiness = -0.01
 	}
 
 	triggered_pop_group_modifier = {
