@@ -165,7 +165,7 @@ decision_EOE_evolution_effects:0 "The direction of Evolution Planning can be adj
  EOE_building.3.g.tooltip:0 "Effect：£consumer_goods£ Consumer goods from £pops£ Jobs：§G+10%§!\nHabitability on cold planet：§G+10%§!\nHabitability on dry planet：§R-10%§!"
  EOE_building.3.desc.h:0 "Current effect：£unity£ Unity from £pops£ Jobs：§G+10%§!"
  EOE_building.3.h:0 "Focus on Sylveon"
- EOE_building.3.h.tooltip:0 "REffect：£unity£ Unity from £pops£ Jobs：§G+10%§!"
+ EOE_building.3.h.tooltip:0 "Effect：£unity£ Unity from £pops£ Jobs：§G+10%§!"
  EOE_building.3.desc.i:0 "No evolution plan yet."
  EOE_building.3.i:0 "Free evolution"
  EOE_building.3.i.tooltip:0 "No bonus or loss"

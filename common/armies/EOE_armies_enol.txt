@@ -107,7 +107,7 @@ EOE_steel_type_pokemon_army = {
 
 	potential_country = {
 		OR = {
-			has_valid_civic = civic_EOE_steel_type_trainer
+			#has_valid_civic = civic_EOE_steel_type_trainer
 			has_origin = origin_EOE_pokemon_trainer
 		}
 	}

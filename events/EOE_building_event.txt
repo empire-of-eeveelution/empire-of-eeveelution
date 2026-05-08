@@ -631,148 +631,148 @@ planet_event = {
 # 	}
 # }
 
-country_event = {
-	#钢系国策
-	id = EOEbuliding.16
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		has_valid_civic = civic_EOE_steel_type_trainer
-	}
-	immediate = {
-		country_event = {
-			id = EOEbuliding.17
-			days = 1
-		}
-	}
-}
+# country_event = {
+# 	#钢系国策
+# 	id = EOEbuliding.16
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		has_valid_civic = civic_EOE_steel_type_trainer
+# 	}
+# 	immediate = {
+# 		country_event = {
+# 			id = EOEbuliding.17
+# 			days = 1
+# 		}
+# 	}
+# }
 
-country_event = {
-	#钢系国策，游戏中加进去时创建物种
-	id = EOEbuliding.1600
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		has_valid_civic = civic_EOE_steel_type_trainer
-	}
-	immediate = {
-		create_species = {
-			name = "Steelmons"
-			plural = "Steelmons_plural"
-			class = Steelmons
-			portrait = Steelmons
-			namelist = "Cybrex"
-			traits = {
-				trait = trait_EOE_alloy_structure
-				trait = trait_mechanical
-				trait = trait_EOE_miner_robot
-			}
-			homeworld = owner.capital_scope
-		}
-		modify_species = {
-			species = last_created_species
-			add_trait = trait_syncretic_proles
-		}
-		last_created_species = {
-			save_global_event_target_as = EOE_steelmons
-		}
-	}
-}
+# country_event = {
+# 	#钢系国策，游戏中加进去时创建物种
+# 	id = EOEbuliding.1600
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		has_valid_civic = civic_EOE_steel_type_trainer
+# 	}
+# 	immediate = {
+# 		create_species = {
+# 			name = "Steelmons"
+# 			plural = "Steelmons_plural"
+# 			class = Steelmons
+# 			portrait = Steelmons
+# 			namelist = "Cybrex"
+# 			traits = {
+# 				trait = trait_EOE_alloy_structure
+# 				trait = trait_mechanical
+# 				trait = trait_EOE_miner_robot
+# 			}
+# 			homeworld = owner.capital_scope
+# 		}
+# 		modify_species = {
+# 			species = last_created_species
+# 			add_trait = trait_syncretic_proles
+# 		}
+# 		last_created_species = {
+# 			save_global_event_target_as = EOE_steelmons
+# 		}
+# 	}
+# }
 
 
-#钢系国策
-country_event = {
-	id = EOEbuliding.17
-	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		capital_scope = {
-			create_species = {
-				name = "Steelmons"
-				plural = "Steelmons_plural"
-				class = Steelmons
-				portrait = Steelmons
-				namelist = "Cybrex"
-				traits = {
-					trait = trait_EOE_alloy_structure
-					trait = trait_mechanical
-					trait = trait_EOE_miner_robot
-				}
-				homeworld = this
-			}
-			modify_species = {
-				species = last_created_species
-				add_trait = trait_syncretic_proles
-			}
-		}
-		last_created_species = {
-			save_global_event_target_as = EOE_steelmons
-		}
-		# if = {
-		# 	limit = {
-		# 		has_origin = origin_protoss_shattered_ring
-		# 	}
-		# 	capital_scope = {
-		# 		while = {
-		# 			count = 4
-		# 			hidden_effect = {
-		# 				random_owned_pop_group = {
-		# 					kill_pop = yes
-		# 				}
-		# 			}
-		# 		}
-		# 	}
-		# 	capital_scope.solar_system = {
-		# 		random_system_planet = {
-		# 			limit = {
-		# 				is_planet_class = pc_habitat
-		# 			}
-		# 			add_district = district_hab_mining
-		# 			remove_building = building_hab_capital
-		# 			add_building = building_EOE_trainer_department
-		# 			set_owner = root
-		# 			add_modifier = {
-		# 				modifier = EOE_broken_habitat
-		# 				days = -1
-		# 			}
-		# 			create_pop = {
-		# 				species = owner_main_species
-		# 			}
-		# 			create_pop = {
-		# 				species = last_created_species
-		# 			}
-		# 			create_pop = {
-		# 				species = last_created_species
-		# 			}
-		# 			create_pop = {
-		# 				species = last_created_species
-		# 			}
-		# 			add_district = district_hab_mining
-		# 			add_district = district_hab_mining
-		# 			add_district = district_hab_mining
-		# 			remove_building = building_hab_capital
-		# 			add_building = building_EOE_trainer_department
-		# 		}
-		# 	}
-		# }
-		#else = {
-			capital_scope = {
-				# random_owned_pop_group = {
-				# 	kill_pop = yes
-				# }
-				# random_owned_pop_group = {
-				# 	kill_pop = yes
-				# }
-				create_pop = {
-					species = last_created_species
-				}
-				create_pop = {
-					species = last_created_species
-				}
-			}
-		#}
-	}
-}
+# #钢系国策
+# country_event = {
+# 	id = EOEbuliding.17
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	immediate = {
+# 		capital_scope = {
+# 			create_species = {
+# 				name = "Steelmons"
+# 				plural = "Steelmons_plural"
+# 				class = Steelmons
+# 				portrait = Steelmons
+# 				namelist = "Cybrex"
+# 				traits = {
+# 					trait = trait_EOE_alloy_structure
+# 					trait = trait_mechanical
+# 					trait = trait_EOE_miner_robot
+# 				}
+# 				homeworld = this
+# 			}
+# 			modify_species = {
+# 				species = last_created_species
+# 				add_trait = trait_syncretic_proles
+# 			}
+# 		}
+# 		last_created_species = {
+# 			save_global_event_target_as = EOE_steelmons
+# 		}
+# 		# if = {
+# 		# 	limit = {
+# 		# 		has_origin = origin_protoss_shattered_ring
+# 		# 	}
+# 		# 	capital_scope = {
+# 		# 		while = {
+# 		# 			count = 4
+# 		# 			hidden_effect = {
+# 		# 				random_owned_pop_group = {
+# 		# 					kill_pop = yes
+# 		# 				}
+# 		# 			}
+# 		# 		}
+# 		# 	}
+# 		# 	capital_scope.solar_system = {
+# 		# 		random_system_planet = {
+# 		# 			limit = {
+# 		# 				is_planet_class = pc_habitat
+# 		# 			}
+# 		# 			add_district = district_hab_mining
+# 		# 			remove_building = building_hab_capital
+# 		# 			add_building = building_EOE_trainer_department
+# 		# 			set_owner = root
+# 		# 			add_modifier = {
+# 		# 				modifier = EOE_broken_habitat
+# 		# 				days = -1
+# 		# 			}
+# 		# 			create_pop = {
+# 		# 				species = owner_main_species
+# 		# 			}
+# 		# 			create_pop = {
+# 		# 				species = last_created_species
+# 		# 			}
+# 		# 			create_pop = {
+# 		# 				species = last_created_species
+# 		# 			}
+# 		# 			create_pop = {
+# 		# 				species = last_created_species
+# 		# 			}
+# 		# 			add_district = district_hab_mining
+# 		# 			add_district = district_hab_mining
+# 		# 			add_district = district_hab_mining
+# 		# 			remove_building = building_hab_capital
+# 		# 			add_building = building_EOE_trainer_department
+# 		# 		}
+# 		# 	}
+# 		# }
+# 		#else = {
+# 			capital_scope = {
+# 				# random_owned_pop_group = {
+# 				# 	kill_pop = yes
+# 				# }
+# 				# random_owned_pop_group = {
+# 				# 	kill_pop = yes
+# 				# }
+# 				create_pop = {
+# 					species = last_created_species
+# 				}
+# 				create_pop = {
+# 					species = last_created_species
+# 				}
+# 			}
+# 		#}
+# 	}
+# }
 
 #18~26：宝可梦训练师起源
 
@@ -813,31 +813,31 @@ country_event = {
 					}
 			}
 		}
-			else_if = {
-				limit = {
-					owner = { 
-						has_civic = civic_EOE_steel_type_trainer
-						resource_stockpile_compare = { resource = minerals value >= 1200 }
-					 }
+		# 	else_if = {
+		# 		limit = {
+		# 			owner = { 
+		# 				has_civic = civic_EOE_steel_type_trainer
+		# 				resource_stockpile_compare = { resource = minerals value >= 1200 }
+		# 			 }
 			
-			}
-					create_pop = {species = event_target:EOE_steelmons}
-					create_pop = {species = event_target:EOE_steelmons}
-					create_pop = {species = event_target:EOE_steelmons}
+		# 	}
+		# 			create_pop = {species = event_target:EOE_steelmons}
+		# 			create_pop = {species = event_target:EOE_steelmons}
+		# 			create_pop = {species = event_target:EOE_steelmons}
 				
-				add_modifier = {
-						modifier = EOE_steel_type_pokemon_produce_cooldown_modifier days = 1080
-					}
-				set_timed_planet_flag = {
-					flag = EOE_steel_type_pokemon_produce_cooldown
-					days = 1080
-				} 
-				owner = { 
-					add_resource = {
-						minerals = -1200
-					}
-			}	
-		}	
+		# 		add_modifier = {
+		# 				modifier = EOE_steel_type_pokemon_produce_cooldown_modifier days = 1080
+		# 			}
+		# 		set_timed_planet_flag = {
+		# 			flag = EOE_steel_type_pokemon_produce_cooldown
+		# 			days = 1080
+		# 		} 
+		# 		owner = { 
+		# 			add_resource = {
+		# 				minerals = -1200
+		# 			}
+		# 	}	
+		# }	
 	}
 	}
 }

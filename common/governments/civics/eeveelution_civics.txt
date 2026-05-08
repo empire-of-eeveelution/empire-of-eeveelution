@@ -62,7 +62,7 @@ civic_EOE_evolution_planning = {
 		}
 	}
 	modifier = {
-		pop_EOE_evolution_planning_effect_mult = 1
+		pop_EOE_evolution_planning_effect_mult = 1.5
 		official_initial_skill = 2
 	}
 	pickable_at_start = yes 
@@ -72,43 +72,43 @@ civic_EOE_evolution_planning = {
 	}
 }
 
-civic_EOE_steel_type_trainer = {
-	description = civic_EOE_steel_type_trainer_effects
-	pickable_at_start = yes
-	modification = no
-	potential = {
-		species_class = {
-			value = Eeveelutions
-		}
-		origin = {
-			NOR = {
-				value = origin_EOE_pokemon_trainer
-				value = origin_mechanists
-				value = origin_broken_shackles	
-			}
-		}
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { 
-			NOT = { value = auth_corporate } 
-			# OR = {
-			# 	value = auth_EOE_oligarchic
-			# 	value = auth_EOE_imperial
-			# }
-		}
-	}
-	# possible = {
-	# 	ethics = {
-	# 		OR = {
-	# 			value = ethic_fanatic_materialist
-	# 			value = ethic_materialist
-	# 		}
-	# 	}
-	# }
-	random_weight = {
-		base = 0
-	}
+# civic_EOE_steel_type_trainer = {
+# 	description = civic_EOE_steel_type_trainer_effects
+# 	pickable_at_start = yes
+# 	modification = no
+# 	potential = {
+# 		species_class = {
+# 			value = Eeveelutions
+# 		}
+# 		origin = {
+# 			NOR = {
+# 				value = origin_EOE_pokemon_trainer
+# 				value = origin_mechanists
+# 				value = origin_broken_shackles	
+# 			}
+# 		}
+# 		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+# 		authority = { 
+# 			NOT = { value = auth_corporate } 
+# 			# OR = {
+# 			# 	value = auth_EOE_oligarchic
+# 			# 	value = auth_EOE_imperial
+# 			# }
+# 		}
+# 	}
+# 	# possible = {
+# 	# 	ethics = {
+# 	# 		OR = {
+# 	# 			value = ethic_fanatic_materialist
+# 	# 			value = ethic_materialist
+# 	# 		}
+# 	# 	}
+# 	# }
+# 	random_weight = {
+# 		base = 0
+# 	}
 	
-}
+# }
 
 # civic_scientific_faith = {
 # 	description = civic_tooltip_scientific_faith_effects

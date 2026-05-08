@@ -25,46 +25,46 @@
 #	}
 #}
 
-decision_EOE_produce_steel_type_pokemon = {
-	owned_planets_only = yes
-	potential = {
-		owner = {
-			has_valid_civic = civic_EOE_steel_type_trainer
-		}
+# decision_EOE_produce_steel_type_pokemon = {
+# 	owned_planets_only = yes
+# 	potential = {
+# 		owner = {
+# 			has_valid_civic = civic_EOE_steel_type_trainer
+# 		}
 		
-	}
-	allow = {
-		custom_tooltip = {
-			fail_text = EOE_steel_type_pokemon_produce_cooldown  #building
-			NOT = { has_planet_flag = EOE_steel_type_pokemon_produce_cooldown }
-		}
-	}
-	#Getting rid of this for the time being as it's still too easy to cheese it via the edict.
-	#enactment_time = 90
-	resources = {
-		category = decisions
-		cost = {
-			minerals = 1200
-		}
-	}
+# 	}
+# 	allow = {
+# 		custom_tooltip = {
+# 			fail_text = EOE_steel_type_pokemon_produce_cooldown  #building
+# 			NOT = { has_planet_flag = EOE_steel_type_pokemon_produce_cooldown }
+# 		}
+# 	}
+# 	#Getting rid of this for the time being as it's still too easy to cheese it via the edict.
+# 	#enactment_time = 90
+# 	resources = {
+# 		category = decisions
+# 		cost = {
+# 			minerals = 1200
+# 		}
+# 	}
 	
-	effect = {
-			create_pop = {species = event_target:EOE_steelmons}
-			create_pop = {species = event_target:EOE_steelmons}
-			create_pop = {species = event_target:EOE_steelmons}
+# 	effect = {
+# 			create_pop = {species = event_target:EOE_steelmons}
+# 			create_pop = {species = event_target:EOE_steelmons}
+# 			create_pop = {species = event_target:EOE_steelmons}
 		
-		add_modifier = {
-				modifier = EOE_steel_type_pokemon_produce_cooldown_modifier days = 1080
-			}
-		set_timed_planet_flag = {
-			flag = EOE_steel_type_pokemon_produce_cooldown
-			days = 1080
-		} 
-	}
-	ai_weight = {
-		weight = 1000 #unfortunately this still doesn't make the AI actually use this. More research is needed as to why, or how to make them use it.
-	}
-}
+# 		add_modifier = {
+# 				modifier = EOE_steel_type_pokemon_produce_cooldown_modifier days = 1080
+# 			}
+# 		set_timed_planet_flag = {
+# 			flag = EOE_steel_type_pokemon_produce_cooldown
+# 			days = 1080
+# 		} 
+# 	}
+# 	ai_weight = {
+# 		weight = 1000 #unfortunately this still doesn't make the AI actually use this. More research is needed as to why, or how to make them use it.
+# 	}
+# }
 
 decision_EOE_evolution_planning = {
 	owned_planets_only = yes
@@ -75,12 +75,12 @@ decision_EOE_evolution_planning = {
 		}
 		has_building = building_EOE_evolution_planning_office
 	}
-	resources = {
-		category = decisions
-		cost = {
-			influence = 40
-		}
-	}
+	# resources = {
+	# 	category = decisions
+	# 	cost = {
+	# 		influence = 40
+	# 	}
+	# }
 	effect = {
 		custom_tooltip = decision_EOE_evolution_effects
 		hidden_effect = {
