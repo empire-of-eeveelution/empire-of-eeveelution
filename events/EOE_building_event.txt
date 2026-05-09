@@ -473,306 +473,306 @@ planet_event = {
 # 	}
 # }
 
-event = {
-	id = EOEbuliding.11
-	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		every_country = {
-			if = {
-				limit = {
-					has_civic = civic_scientific_faith
-				}
-				every_owned_planet = {
-					planet_event = {
-						id = EOEbuliding.10
-						days = 3
-					}
-				}
-			}
-		}
-	}
-}
-#减少政客
-planet_event = {	
-	id = EOEbuliding.10
-	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		remove_deposit = d_EOE_scientific_faith_1
-		remove_deposit = d_EOE_scientific_faith_2
-		remove_deposit = d_EOE_scientific_faith_3
-		if = {
-			limit = {
-				owner = {
-					has_civic = civic_scientific_faith
-				}
-			}
-			if = {
-				limit = {
-					OR = {
-						has_building = building_capital
-						has_building = building_major_capital
-						has_building = building_hab_major_capital
-					}
-				}
-				add_deposit = d_EOE_scientific_faith_1
-				planet_event = {
-					id = EOEbuliding.13
-				}				#延时，用来刷新人口
-			}
-			else_if = {
-				limit = {
-					has_building = building_system_capital
-				}
-				add_deposit = d_EOE_scientific_faith_2
-				planet_event = {
-					id = EOEbuliding.14
-				}				#延时，用来刷新人口
-			}
-			else_if = {
-				limit = {
-					has_building = building_imperial_capital
-				}
-				add_deposit = d_EOE_scientific_faith_3
-				planet_event = {
-					id = EOEbuliding.15
-				}				#延时，用来刷新人口
-			}
-		}
-	}
-}
+# event = {
+# 	id = EOEbuliding.11
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	immediate = {
+# 		every_country = {
+# 			if = {
+# 				limit = {
+# 					has_civic = civic_scientific_faith
+# 				}
+# 				every_owned_planet = {
+# 					planet_event = {
+# 						id = EOEbuliding.10
+# 						days = 3
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+# #减少政客
+# planet_event = {	
+# 	id = EOEbuliding.10
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	immediate = {
+# 		remove_deposit = d_EOE_scientific_faith_1
+# 		remove_deposit = d_EOE_scientific_faith_2
+# 		remove_deposit = d_EOE_scientific_faith_3
+# 		if = {
+# 			limit = {
+# 				owner = {
+# 					has_civic = civic_scientific_faith
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					OR = {
+# 						has_building = building_capital
+# 						has_building = building_major_capital
+# 						has_building = building_hab_major_capital
+# 					}
+# 				}
+# 				add_deposit = d_EOE_scientific_faith_1
+# 				planet_event = {
+# 					id = EOEbuliding.13
+# 				}				#延时，用来刷新人口
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					has_building = building_system_capital
+# 				}
+# 				add_deposit = d_EOE_scientific_faith_2
+# 				planet_event = {
+# 					id = EOEbuliding.14
+# 				}				#延时，用来刷新人口
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					has_building = building_imperial_capital
+# 				}
+# 				add_deposit = d_EOE_scientific_faith_3
+# 				planet_event = {
+# 					id = EOEbuliding.15
+# 				}				#延时，用来刷新人口
+# 			}
+# 		}
+# 	}
+# }
 
-country_event = {
-	id = EOEbuliding.12
-	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		every_owned_planet = {
-			planet_event = {
-				id = EOEbuliding.10
-			}
-		}
-	}
-}
-#添加科研主管
-planet_event = {
-	id = EOEbuliding.13
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		owner = {
-			has_civic = civic_scientific_faith
-		}
-		has_deposit = d_EOE_scientific_faith_1
-		NOT = {
-			has_deposit = d_EOE_scientific_faith_1_a
-		}
-	}
-	immediate = {
-		owner = {
-			add_modifier = {
-				modifier = EOE_pop_unemploy
-				days = 100
-			}
-		}
-		add_deposit = d_EOE_scientific_faith_1_a
-	}
-}
-#添加科研主管
-planet_event = {	
-	id = EOEbuliding.14
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		owner = {
-			has_civic = civic_scientific_faith
-		}
-		has_deposit = d_EOE_scientific_faith_2
-		NOT = {
-			has_deposit = d_EOE_scientific_faith_2_a
-		}
-	}
-	immediate = {
-		owner = {
-			add_modifier = {
-				modifier = EOE_pop_unemploy
-				days = 100
-			}
-		}
-		remove_deposit = d_EOE_scientific_faith_1_a
-		add_deposit = d_EOE_scientific_faith_2_a
-	}
-}
-#添加科研主管
-planet_event = {	
-	id = EOEbuliding.15
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		owner = {
-			has_civic = civic_scientific_faith
-		}
-		has_deposit = d_EOE_scientific_faith_3
-		NOT = {
-			has_deposit = d_EOE_scientific_faith_3_a
-		}
-	}
-	immediate = {
-		owner = {
-			add_modifier = {
-				modifier = EOE_pop_unemploy
-				days = 100
-			}
-		}
-		remove_deposit = d_EOE_scientific_faith_1_a
-		remove_deposit = d_EOE_scientific_faith_2_a
-		add_deposit = d_EOE_scientific_faith_3_a
-	}
-}
+# country_event = {
+# 	id = EOEbuliding.12
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	immediate = {
+# 		every_owned_planet = {
+# 			planet_event = {
+# 				id = EOEbuliding.10
+# 			}
+# 		}
+# 	}
+# }
+# #添加科研主管
+# planet_event = {
+# 	id = EOEbuliding.13
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		owner = {
+# 			has_civic = civic_scientific_faith
+# 		}
+# 		has_deposit = d_EOE_scientific_faith_1
+# 		NOT = {
+# 			has_deposit = d_EOE_scientific_faith_1_a
+# 		}
+# 	}
+# 	immediate = {
+# 		owner = {
+# 			add_modifier = {
+# 				modifier = EOE_pop_unemploy
+# 				days = 100
+# 			}
+# 		}
+# 		add_deposit = d_EOE_scientific_faith_1_a
+# 	}
+# }
+# #添加科研主管
+# planet_event = {	
+# 	id = EOEbuliding.14
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		owner = {
+# 			has_civic = civic_scientific_faith
+# 		}
+# 		has_deposit = d_EOE_scientific_faith_2
+# 		NOT = {
+# 			has_deposit = d_EOE_scientific_faith_2_a
+# 		}
+# 	}
+# 	immediate = {
+# 		owner = {
+# 			add_modifier = {
+# 				modifier = EOE_pop_unemploy
+# 				days = 100
+# 			}
+# 		}
+# 		remove_deposit = d_EOE_scientific_faith_1_a
+# 		add_deposit = d_EOE_scientific_faith_2_a
+# 	}
+# }
+# #添加科研主管
+# planet_event = {	
+# 	id = EOEbuliding.15
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		owner = {
+# 			has_civic = civic_scientific_faith
+# 		}
+# 		has_deposit = d_EOE_scientific_faith_3
+# 		NOT = {
+# 			has_deposit = d_EOE_scientific_faith_3_a
+# 		}
+# 	}
+# 	immediate = {
+# 		owner = {
+# 			add_modifier = {
+# 				modifier = EOE_pop_unemploy
+# 				days = 100
+# 			}
+# 		}
+# 		remove_deposit = d_EOE_scientific_faith_1_a
+# 		remove_deposit = d_EOE_scientific_faith_2_a
+# 		add_deposit = d_EOE_scientific_faith_3_a
+# 	}
+# }
 
-country_event = {
-	#钢系国策
-	id = EOEbuliding.16
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		has_valid_civic = civic_EOE_steel_type_trainer
-	}
-	immediate = {
-		country_event = {
-			id = EOEbuliding.17
-			days = 1
-		}
-	}
-}
+# country_event = {
+# 	#钢系国策
+# 	id = EOEbuliding.16
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		has_valid_civic = civic_EOE_steel_type_trainer
+# 	}
+# 	immediate = {
+# 		country_event = {
+# 			id = EOEbuliding.17
+# 			days = 1
+# 		}
+# 	}
+# }
 
-country_event = {
-	#钢系国策，游戏中加进去时创建物种
-	id = EOEbuliding.1600
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		has_valid_civic = civic_EOE_steel_type_trainer
-	}
-	immediate = {
-		create_species = {
-			name = "Steelmons"
-			plural = "Steelmons_plural"
-			class = Steelmons
-			portrait = Steelmons
-			namelist = "Cybrex"
-			traits = {
-				trait = trait_EOE_alloy_structure
-				trait = trait_mechanical
-				trait = trait_EOE_miner_robot
-			}
-			homeworld = owner.capital_scope
-		}
-		modify_species = {
-			species = last_created_species
-			add_trait = trait_syncretic_proles
-		}
-		last_created_species = {
-			save_global_event_target_as = EOE_steelmons
-		}
-	}
-}
+# country_event = {
+# 	#钢系国策，游戏中加进去时创建物种
+# 	id = EOEbuliding.1600
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		has_valid_civic = civic_EOE_steel_type_trainer
+# 	}
+# 	immediate = {
+# 		create_species = {
+# 			name = "Steelmons"
+# 			plural = "Steelmons_plural"
+# 			class = Steelmons
+# 			portrait = Steelmons
+# 			namelist = "Cybrex"
+# 			traits = {
+# 				trait = trait_EOE_alloy_structure
+# 				trait = trait_mechanical
+# 				trait = trait_EOE_miner_robot
+# 			}
+# 			homeworld = owner.capital_scope
+# 		}
+# 		modify_species = {
+# 			species = last_created_species
+# 			add_trait = trait_syncretic_proles
+# 		}
+# 		last_created_species = {
+# 			save_global_event_target_as = EOE_steelmons
+# 		}
+# 	}
+# }
 
 
-#钢系国策
-country_event = {
-	id = EOEbuliding.17
-	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		capital_scope = {
-			create_species = {
-				name = "Steelmons"
-				plural = "Steelmons_plural"
-				class = Steelmons
-				portrait = Steelmons
-				namelist = "Cybrex"
-				traits = {
-					trait = trait_EOE_alloy_structure
-					trait = trait_mechanical
-					trait = trait_EOE_miner_robot
-				}
-				homeworld = this
-			}
-			modify_species = {
-				species = last_created_species
-				add_trait = trait_syncretic_proles
-			}
-		}
-		last_created_species = {
-			save_global_event_target_as = EOE_steelmons
-		}
-		# if = {
-		# 	limit = {
-		# 		has_origin = origin_protoss_shattered_ring
-		# 	}
-		# 	capital_scope = {
-		# 		while = {
-		# 			count = 4
-		# 			hidden_effect = {
-		# 				random_owned_pop_group = {
-		# 					kill_pop = yes
-		# 				}
-		# 			}
-		# 		}
-		# 	}
-		# 	capital_scope.solar_system = {
-		# 		random_system_planet = {
-		# 			limit = {
-		# 				is_planet_class = pc_habitat
-		# 			}
-		# 			add_district = district_hab_mining
-		# 			remove_building = building_hab_capital
-		# 			add_building = building_EOE_trainer_department
-		# 			set_owner = root
-		# 			add_modifier = {
-		# 				modifier = EOE_broken_habitat
-		# 				days = -1
-		# 			}
-		# 			create_pop = {
-		# 				species = owner_main_species
-		# 			}
-		# 			create_pop = {
-		# 				species = last_created_species
-		# 			}
-		# 			create_pop = {
-		# 				species = last_created_species
-		# 			}
-		# 			create_pop = {
-		# 				species = last_created_species
-		# 			}
-		# 			add_district = district_hab_mining
-		# 			add_district = district_hab_mining
-		# 			add_district = district_hab_mining
-		# 			remove_building = building_hab_capital
-		# 			add_building = building_EOE_trainer_department
-		# 		}
-		# 	}
-		# }
-		#else = {
-			capital_scope = {
-				# random_owned_pop_group = {
-				# 	kill_pop = yes
-				# }
-				# random_owned_pop_group = {
-				# 	kill_pop = yes
-				# }
-				create_pop = {
-					species = last_created_species
-				}
-				create_pop = {
-					species = last_created_species
-				}
-			}
-		#}
-	}
-}
+# #钢系国策
+# country_event = {
+# 	id = EOEbuliding.17
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	immediate = {
+# 		capital_scope = {
+# 			create_species = {
+# 				name = "Steelmons"
+# 				plural = "Steelmons_plural"
+# 				class = Steelmons
+# 				portrait = Steelmons
+# 				namelist = "Cybrex"
+# 				traits = {
+# 					trait = trait_EOE_alloy_structure
+# 					trait = trait_mechanical
+# 					trait = trait_EOE_miner_robot
+# 				}
+# 				homeworld = this
+# 			}
+# 			modify_species = {
+# 				species = last_created_species
+# 				add_trait = trait_syncretic_proles
+# 			}
+# 		}
+# 		last_created_species = {
+# 			save_global_event_target_as = EOE_steelmons
+# 		}
+# 		# if = {
+# 		# 	limit = {
+# 		# 		has_origin = origin_protoss_shattered_ring
+# 		# 	}
+# 		# 	capital_scope = {
+# 		# 		while = {
+# 		# 			count = 4
+# 		# 			hidden_effect = {
+# 		# 				random_owned_pop_group = {
+# 		# 					kill_pop = yes
+# 		# 				}
+# 		# 			}
+# 		# 		}
+# 		# 	}
+# 		# 	capital_scope.solar_system = {
+# 		# 		random_system_planet = {
+# 		# 			limit = {
+# 		# 				is_planet_class = pc_habitat
+# 		# 			}
+# 		# 			add_district = district_hab_mining
+# 		# 			remove_building = building_hab_capital
+# 		# 			add_building = building_EOE_trainer_department
+# 		# 			set_owner = root
+# 		# 			add_modifier = {
+# 		# 				modifier = EOE_broken_habitat
+# 		# 				days = -1
+# 		# 			}
+# 		# 			create_pop = {
+# 		# 				species = owner_main_species
+# 		# 			}
+# 		# 			create_pop = {
+# 		# 				species = last_created_species
+# 		# 			}
+# 		# 			create_pop = {
+# 		# 				species = last_created_species
+# 		# 			}
+# 		# 			create_pop = {
+# 		# 				species = last_created_species
+# 		# 			}
+# 		# 			add_district = district_hab_mining
+# 		# 			add_district = district_hab_mining
+# 		# 			add_district = district_hab_mining
+# 		# 			remove_building = building_hab_capital
+# 		# 			add_building = building_EOE_trainer_department
+# 		# 		}
+# 		# 	}
+# 		# }
+# 		#else = {
+# 			capital_scope = {
+# 				# random_owned_pop_group = {
+# 				# 	kill_pop = yes
+# 				# }
+# 				# random_owned_pop_group = {
+# 				# 	kill_pop = yes
+# 				# }
+# 				create_pop = {
+# 					species = last_created_species
+# 				}
+# 				create_pop = {
+# 					species = last_created_species
+# 				}
+# 			}
+# 		#}
+# 	}
+# }
 
 #18~26：宝可梦训练师起源
 
@@ -813,31 +813,31 @@ country_event = {
 					}
 			}
 		}
-			else_if = {
-				limit = {
-					owner = { 
-						has_civic = civic_EOE_steel_type_trainer
-						resource_stockpile_compare = { resource = minerals value >= 1200 }
-					 }
+		# 	else_if = {
+		# 		limit = {
+		# 			owner = { 
+		# 				has_civic = civic_EOE_steel_type_trainer
+		# 				resource_stockpile_compare = { resource = minerals value >= 1200 }
+		# 			 }
 			
-			}
-					create_pop = {species = event_target:EOE_steelmons}
-					create_pop = {species = event_target:EOE_steelmons}
-					create_pop = {species = event_target:EOE_steelmons}
+		# 	}
+		# 			create_pop = {species = event_target:EOE_steelmons}
+		# 			create_pop = {species = event_target:EOE_steelmons}
+		# 			create_pop = {species = event_target:EOE_steelmons}
 				
-				add_modifier = {
-						modifier = EOE_steel_type_pokemon_produce_cooldown_modifier days = 1080
-					}
-				set_timed_planet_flag = {
-					flag = EOE_steel_type_pokemon_produce_cooldown
-					days = 1080
-				} 
-				owner = { 
-					add_resource = {
-						minerals = -1200
-					}
-			}	
-		}	
+		# 		add_modifier = {
+		# 				modifier = EOE_steel_type_pokemon_produce_cooldown_modifier days = 1080
+		# 			}
+		# 		set_timed_planet_flag = {
+		# 			flag = EOE_steel_type_pokemon_produce_cooldown
+		# 			days = 1080
+		# 		} 
+		# 		owner = { 
+		# 			add_resource = {
+		# 				minerals = -1200
+		# 			}
+		# 	}	
+		# }	
 	}
 	}
 }

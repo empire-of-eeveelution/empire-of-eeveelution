@@ -8,7 +8,7 @@ country_event ={   #创造者坟
 		owner_main_species = {
 			has_trait = trait_EOE_Inheritors
 		}
-		num_ascension_perks > 1
+		num_ascension_perks > 2
 	 }
 	immediate = {
 		country_event = { id = eevent.140 days = 360 random = 60  }

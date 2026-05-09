@@ -111,7 +111,7 @@ country_event ={
 					 NOR = {
 					   has_civic = civic_eeveelutions_assimilator
 					   has_civic = civic_external_synapse
-					   has_civic = civic_scientific_faith
+					   #has_civic = civic_scientific_faith
 					  any_owned_pop_species = {
 						has_trait = trait_EOE_Inheritors
 					  }
@@ -1873,19 +1873,19 @@ country_event = { #环开开局布置
 				}
 			} 	
 		}
-		else_if = {
-			limit = {has_valid_civic = civic_EOE_steel_type_trainer }
-			capital_scope.solar_system = {
-				spawn_megastructure = {
-					type = "major_orbital"
-					planet = event_target:EOE_the_interloper
-					coords_from = event_target:EOE_the_interloper
-					owner = root
-					graphical_culture = root
-				}
-			}
+		# else_if = {
+		# 	limit = {has_valid_civic = civic_EOE_steel_type_trainer }
+		# 	capital_scope.solar_system = {
+		# 		spawn_megastructure = {
+		# 			type = "major_orbital"
+		# 			planet = event_target:EOE_the_interloper
+		# 			coords_from = event_target:EOE_the_interloper
+		# 			owner = root
+		# 			graphical_culture = root
+		# 		}
+		# 	}
 
-		}
+		# }
 		every_owned_planet = {
 			limit = {
 				has_planet_flag = EOE_start_ring
@@ -1904,7 +1904,7 @@ country_event = { #环开开局布置
 				building = building_factory_1
 				zone = zone_industrial
 			}
-			add_deposit = d_EOE_arcane_generator
+			#add_deposit = d_EOE_arcane_generator
 			add_deposit = d_EOE_ringworld_Ancient_ruins_1
 			add_deposit = d_EOE_ringworld_Ancient_ruins_2
 			add_deposit = d_EOE_ringworld_Broken_tunnel_2

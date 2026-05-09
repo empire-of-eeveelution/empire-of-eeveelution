@@ -55,11 +55,11 @@ trait_directed_evolution = {
 		# BIOLOGICAL_species_trait_picks_add = 20
 	}
 
-	triggered_species_modifier = {
+	triggered_pop_group_modifier = {
 
 	}
 
-	triggered_planet_pop_group_modifier_for_species = {
+	triggered_pop_group_modifier = {
 		potential = {
 			exists = owner
 			owner = {
@@ -78,10 +78,10 @@ trait_directed_evolution = {
 				}
 			}
 		}
-		pop_happiness = -0.05
+		pop_happiness = -0.01
 	}
 
-	triggered_planet_pop_group_modifier_for_species = {
+	triggered_pop_group_modifier = {
 		potential = {
 			exists = owner
 			owner = {
@@ -94,7 +94,7 @@ trait_directed_evolution = {
 		farmer_jobs_bonus_workforce_mult = 0.15
 		mult = modifier:pop_EOE_evolution_planning_effect_mult
 	}
-	triggered_planet_pop_group_modifier_for_species = {
+	triggered_pop_group_modifier = {
 		potential = {
 			exists = owner
 			owner = {
@@ -107,7 +107,7 @@ trait_directed_evolution = {
 		technician_jobs_bonus_workforce_mult = 0.15
 		mult = modifier:pop_EOE_evolution_planning_effect_mult
 	}
-	triggered_planet_pop_group_modifier_for_species = {
+	triggered_pop_group_modifier = {
 		potential = {
 			exists = owner
 			owner = {
@@ -120,7 +120,7 @@ trait_directed_evolution = {
 		foundry_jobs_bonus_workforce_mult = 0.1
 		mult = modifier:pop_EOE_evolution_planning_effect_mult
 	}
-	triggered_planet_pop_group_modifier_for_species = {
+	triggered_pop_group_modifier = {
 		potential = {
 			exists = owner
 			owner = {
@@ -133,7 +133,7 @@ trait_directed_evolution = {
 		logistic_growth_mult = 0.1
 		mult = modifier:pop_EOE_evolution_planning_effect_mult
 	}
-	triggered_planet_pop_group_modifier_for_species = {
+	triggered_pop_group_modifier = {
 		potential = {
 			exists = owner
 			owner = {
@@ -146,7 +146,7 @@ trait_directed_evolution = {
 		researcher_jobs_bonus_workforce_mult = 0.1
 		mult = modifier:pop_EOE_evolution_planning_effect_mult
 	}
-	triggered_planet_pop_group_modifier_for_species = {
+	triggered_pop_group_modifier = {
 		potential = {
 			exists = owner
 			owner = {
@@ -159,7 +159,7 @@ trait_directed_evolution = {
 		miner_jobs_bonus_workforce_mult = 0.15
 		mult = modifier:pop_EOE_evolution_planning_effect_mult
 	}
-	triggered_planet_pop_group_modifier_for_species = {
+	triggered_pop_group_modifier = {
 		potential = {
 			exists = owner
 			owner = {
@@ -172,7 +172,8 @@ trait_directed_evolution = {
 		artisan_jobs_bonus_workforce_mult = 0.1
 		mult = modifier:pop_EOE_evolution_planning_effect_mult
 	}
-	triggered_planet_pop_group_modifier_for_species = {
+	
+	triggered_pop_group_modifier = {
 		potential = {
 			exists = owner
 			owner = {
@@ -185,7 +186,25 @@ trait_directed_evolution = {
 		bureaucrat_jobs_bonus_workforce_mult = 0.1
 		mult = modifier:pop_EOE_evolution_planning_effect_mult
 	}
-	triggered_planet_pop_group_modifier_for_species = {
+	# this did not work.
+	# resources = {
+	# 	category = planet_pops
+	# 	produces = {
+	# 		trigger = {
+	# 			exists = owner
+	# 			owner = {
+	# 				has_valid_civic = civic_EOE_evolution_planning
+	# 			}
+	# 			planet = {
+	# 				has_planet_flag = EOE_evoplan_fairy
+	# 			}
+	# 			has_job_type = bureaucrat
+	# 		}
+	# 		unity = 0.5
+	# 		mult = modifier:pop_EOE_evolution_planning_effect_mult
+	# 	}
+	# }
+	triggered_pop_group_modifier = {
 		potential = {
 			exists = owner
 			owner = {
@@ -222,7 +241,7 @@ trait_directed_evolution = {
 		}
 		pop_environment_tolerance = 0.1
 	}
-	triggered_planet_pop_group_modifier_for_species = {
+	triggered_pop_group_modifier = {
 		potential = {
 			exists = owner
 			owner = {
@@ -567,7 +586,7 @@ trait_dark_type_mega_evolution = {
 		# pop_slave_bonus_workforce_mult = 0.15	
 	}
 
-	triggered_species_modifier = {
+	triggered_pop_group_modifier = {
 		potential = {
 			exists = from
 			from = {
@@ -579,7 +598,7 @@ trait_dark_type_mega_evolution = {
 		pop_government_ethic_attraction = 0.50
 	}
 
-	triggered_species_modifier = {
+	triggered_pop_group_modifier = {
 		potential = {
 			exists = from
 			from = {
@@ -675,7 +694,7 @@ trait_ice_type_mega_evolution = {
 	# 	engineer_jobs_bonus_workforce_mult = 0.15
 	# }
 
-	# triggered_species_modifier = {
+	# triggered_pop_group_modifier = {
 	# 	potential = {
 	# 		exists = from
 	# 		from = {
@@ -690,7 +709,7 @@ trait_ice_type_mega_evolution = {
 	# 	# engineer_jobs_bonus_workforce_mult = 0.15
 	# }
 
-	triggered_species_modifier = {
+	triggered_pop_group_modifier = {
 		potential = {
 			exists = from
 			from = {
@@ -1038,8 +1057,8 @@ trait_bug_type_mega_evolution = {
 }
 
 trait_EOE_egg_laying = {
-	host_has_dlc = "BioGenesis"
-	cost = 2
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_egg_laying.dds"
 	species_possible_add = {
 		OR = {
 			can_add_genetic_traits = yes

@@ -57,19 +57,19 @@ councilor_EOE_evolution_planning = {
 	}
 }
 
-councilor_steel_type_trainer = {
-	leader_class = { scientist official }
-	is_leader_possible = {
-		OR = {
-			leader_class = scientist
-			leader_class = official
-		}
-	}
-	civic = civic_EOE_steel_type_trainer
-	modifier = {
-		empire_size_penalty_mult = -0.02
-	}
-}
+# councilor_steel_type_trainer = {
+# 	leader_class = { scientist official }
+# 	is_leader_possible = {
+# 		OR = {
+# 			leader_class = scientist
+# 			leader_class = official
+# 		}
+# 	}
+# 	civic = civic_EOE_steel_type_trainer
+# 	modifier = {
+# 		empire_size_penalty_mult = -0.02
+# 	}
+# }
 
 councilor_external_synapse = {
 	leader_class = { scientist official }

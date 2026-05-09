@@ -12,7 +12,7 @@ EOE = {
 		name="Eeveelutions"
 		plural="Eeveelutions"
 		adjective="Eeveelutions"
-		name_list="MAM1"
+		name_list="EEVEELUTION"
 		trait = "trait_EOE_Inheritors"
 		trait = "trait_organic"
 		trait = "trait_extremely_cute"
@@ -22,15 +22,13 @@ EOE = {
 		trait = "trait_natural_sociologists"
 		trait = "trait_traditional"
 		trait = "trait_EOE_egg_laying"
-		trait = "trait_wasteful"
-		trait = "trait_weak"
 	}
 	
 	room="default_room"
 	
 	authority="auth_dictatorial"
 	civics={
-		"civic_EOE_steel_type_trainer"
+		"civic_EOE_evolution_planning"
 		"civic_technocracy"	#"civic_scientific_faith"
 	}
 	government="gov_illuminated_autocracy"

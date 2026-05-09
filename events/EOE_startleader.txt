@@ -269,6 +269,7 @@ country_event = {
 		last_created_leader = {
 			set_gender = female
 			set_leader_flag = EOE_leader_elena
+			set_leader_tier = leader_tier_legendary
 			save_global_event_target_as = EOE_elena
 		}
 		country_event = {
@@ -295,6 +296,7 @@ country_event = {
 		last_created_leader = {
 			set_gender = female
 			set_leader_flag = EOE_leader_elena
+			set_leader_tier = leader_tier_legendary
 			save_global_event_target_as = EOE_elena
 		}
 		country_event = {
@@ -385,6 +387,7 @@ country_event = {
 		last_created_leader = {
 			set_gender = female
 			set_leader_flag = EOE_leader_elena
+			set_leader_tier = leader_tier_legendary
 			save_global_event_target_as = EOE_elena
 		}
 		country_event = {

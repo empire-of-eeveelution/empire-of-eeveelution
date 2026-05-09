@@ -63,6 +63,12 @@ planet_event = {
 		}
 		name = EOE_building.3.a
 		custom_tooltip = EOE_building.3.a.tooltip
+		owner = {
+			add_resource = {
+				influence = -50
+			}
+		}
+		
 		set_planet_flag = EOE_evoplan_grass
 		remove_planet_flag = EOE_evoplan_water
 		remove_planet_flag = EOE_evoplan_fire
@@ -87,6 +93,11 @@ planet_event = {
 		}
 		name = EOE_building.3.b
 		custom_tooltip = EOE_building.3.b.tooltip
+		owner = {
+			add_resource = {
+				influence = -50
+			}
+		}
 		remove_planet_flag = EOE_evoplan_grass
 		set_planet_flag = EOE_evoplan_water
 		remove_planet_flag = EOE_evoplan_fire
@@ -111,6 +122,11 @@ planet_event = {
 		}
 		name = EOE_building.3.c
 		custom_tooltip = EOE_building.3.c.tooltip
+		owner = {
+			add_resource = {
+				influence = -50
+			}
+		}
 		remove_planet_flag = EOE_evoplan_grass
 		remove_planet_flag = EOE_evoplan_water
 		set_planet_flag = EOE_evoplan_fire
@@ -135,6 +151,11 @@ planet_event = {
 		}
 		name = EOE_building.3.d
 		custom_tooltip = EOE_building.3.d.tooltip
+		owner = {
+			add_resource = {
+				influence = -50
+			}
+		}
 		remove_planet_flag = EOE_evoplan_grass
 		remove_planet_flag = EOE_evoplan_water
 		remove_planet_flag = EOE_evoplan_fire
@@ -160,6 +181,11 @@ planet_event = {
 		}
 		name = EOE_building.3.e
 		custom_tooltip = EOE_building.3.e.tooltip
+		owner = {
+			add_resource = {
+				influence = -50
+			}
+		}
 		remove_planet_flag = EOE_evoplan_grass
 		remove_planet_flag = EOE_evoplan_water
 		remove_planet_flag = EOE_evoplan_fire
@@ -185,6 +211,11 @@ planet_event = {
 		}
 		name = EOE_building.3.f
 		custom_tooltip = EOE_building.3.f.tooltip
+		owner = {
+			add_resource = {
+				influence = -50
+			}
+		}
 		remove_planet_flag = EOE_evoplan_grass
 		remove_planet_flag = EOE_evoplan_water
 		remove_planet_flag = EOE_evoplan_fire
@@ -209,6 +240,11 @@ planet_event = {
 		}
 		name = EOE_building.3.g
 		custom_tooltip = EOE_building.3.g.tooltip
+		owner = {
+			add_resource = {
+				influence = -50
+			}
+		}
 		remove_planet_flag = EOE_evoplan_grass
 		remove_planet_flag = EOE_evoplan_water
 		remove_planet_flag = EOE_evoplan_fire
@@ -234,6 +270,11 @@ planet_event = {
 		}
 		name = EOE_building.3.h
 		custom_tooltip = EOE_building.3.h.tooltip
+		owner = {
+			add_resource = {
+				influence = -50
+			}
+		}
 		remove_planet_flag = EOE_evoplan_grass
 		remove_planet_flag = EOE_evoplan_water
 		remove_planet_flag = EOE_evoplan_fire

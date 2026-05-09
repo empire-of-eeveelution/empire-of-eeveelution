@@ -203,7 +203,7 @@ d_EOE_ringworld_Broken_tunnel_3 = {
 @rw_maintenance = 5
 @rw_maintenance_sr = 2
 
-d_EOE_arcane_generator = { #保留以防万一哪一天蠢驴给它删了
+d_EOE_arcane_generator = { #保留以防万一哪一天蠢驴给它删了 #暂时不用了。
 	is_for_colonizable = yes
 	icon = "d_station_reactor"
 	category = deposit_cat_rare
@@ -211,7 +211,7 @@ d_EOE_arcane_generator = { #保留以防万一哪一天蠢驴给它删了
 	potential = { always = no }
 
 	planet_modifier = {
-		planet_amenities_add = 5
+		planet_amenities_add = 500
 	}
 
 	resources = {
@@ -306,7 +306,7 @@ d_EOE_ringworld_Refuge_City= {
 		job_artisan_add = 50
 		planet_housing_add = 200
 		planet_jobs_unity_produces_mult = 0.1
-		
+		planet_amenities_add = 1000
 	}
 	
 }
@@ -483,86 +483,86 @@ d_EOE_protoss_relic = {
 }
 
 
-d_EOE_scientific_faith_1 = {
-	is_for_colonizable = yes
-	icon = d_EOE_PC_center_building_hive_capital
-	category = deposit_cat_rare
+# d_EOE_scientific_faith_1 = {
+# 	is_for_colonizable = yes
+# 	icon = d_EOE_PC_center_building_hive_capital
+# 	category = deposit_cat_rare
 
-	potential = { always = no }
+# 	potential = { always = no }
 	
-	planet_modifier = {
-    	job_politician_add= -100
-	}
+# 	planet_modifier = {
+#     	job_politician_add= -100
+# 	}
 	
-}
-d_EOE_scientific_faith_1_a = {
-	is_for_colonizable = yes
-	icon = d_EOE_PC_center_building_hive_capital
-	category = deposit_cat_rare
+# }
+# d_EOE_scientific_faith_1_a = {
+# 	is_for_colonizable = yes
+# 	icon = d_EOE_PC_center_building_hive_capital
+# 	category = deposit_cat_rare
 
-	potential = { always = no }
+# 	potential = { always = no }
 	
-	planet_modifier = {
-    	job_head_researcher_add = 100
-	}
+# 	planet_modifier = {
+#     	job_head_researcher_add = 100
+# 	}
 	
-}
+# }
 
-d_EOE_scientific_faith_2 = {
-	is_for_colonizable = yes
-	icon = d_EOE_PC_center_building_hive_capital
-	category = deposit_cat_rare
+# d_EOE_scientific_faith_2 = {
+# 	is_for_colonizable = yes
+# 	icon = d_EOE_PC_center_building_hive_capital
+# 	category = deposit_cat_rare
 
-	potential = { always = no }
+# 	potential = { always = no }
 	
-	planet_modifier = {
-		job_politician_add = -200
+# 	planet_modifier = {
+# 		job_politician_add = -200
     	
-	}
+# 	}
 	
-}
+# }
 
-d_EOE_scientific_faith_2_a = {
-	is_for_colonizable = yes
-	icon = d_EOE_PC_center_building_hive_capital
-	category = deposit_cat_rare
+# d_EOE_scientific_faith_2_a = {
+# 	is_for_colonizable = yes
+# 	icon = d_EOE_PC_center_building_hive_capital
+# 	category = deposit_cat_rare
 
-	potential = { always = no }
+# 	potential = { always = no }
 	
-	planet_modifier = {
+# 	planet_modifier = {
 		
-    	job_head_researcher_add = 200
-	}
+#     	job_head_researcher_add = 200
+# 	}
 	
-}
+# }
 
-d_EOE_scientific_faith_3 = {
-	is_for_colonizable = yes
-	icon = d_EOE_PC_center_building_hive_capital
-	category = deposit_cat_rare
+# d_EOE_scientific_faith_3 = {
+# 	is_for_colonizable = yes
+# 	icon = d_EOE_PC_center_building_hive_capital
+# 	category = deposit_cat_rare
 
-	potential = { always = no }
+# 	potential = { always = no }
 	
-	planet_modifier = {
-		job_politician_add = -300
+# 	planet_modifier = {
+# 		job_politician_add = -300
     	
-	}
+# 	}
 	
-}
+# }
 
-d_EOE_scientific_faith_3_a = {
-	is_for_colonizable = yes
-	icon = d_EOE_PC_center_building_hive_capital
-	category = deposit_cat_rare
+# d_EOE_scientific_faith_3_a = {
+# 	is_for_colonizable = yes
+# 	icon = d_EOE_PC_center_building_hive_capital
+# 	category = deposit_cat_rare
 
-	potential = { always = no }
+# 	potential = { always = no }
 	
-	planet_modifier = {
+# 	planet_modifier = {
 		
-    	job_head_researcher_add = 300
-	}
+#     	job_head_researcher_add = 300
+# 	}
 	
-}
+# }
 
 d_EOE_Pokemon_Jingjichang = {
 	is_for_colonizable = yes
