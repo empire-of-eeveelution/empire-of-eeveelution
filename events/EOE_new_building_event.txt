@@ -358,6 +358,8 @@ country_event = {
 			remove_planet_flag = EOE_evoplan_dark
 			remove_planet_flag = EOE_evoplan_ice
 			remove_planet_flag = EOE_evoplan_fairy
+			remove_building = building_EOE_evolution_planning_office
 		}
+		set_government_cooldown = no
 	}
 }

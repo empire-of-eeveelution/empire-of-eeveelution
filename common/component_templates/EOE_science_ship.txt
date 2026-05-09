@@ -211,15 +211,23 @@ utility_component_template = { # the okra terraform
 				leader = {
 					is_same_value = event_target:EOE_okra
 				}
-					}
+				}
 		}
 
 		button_clickable = {
 			owner = {
 				has_resource = { type = energy amount >= 5000 }
 			}
+			custom_tooltip = {
+				event_target:EOE_okra_ship = {
+					leader = {
+						is_same_value = event_target:EOE_okra
+					}
+				}		
+				text = "eoe_need_okra"
+			}	
+			
 		}
-
 		finished = {
 			has_planet_flag = EOE_okra_effect_exist
 		}
