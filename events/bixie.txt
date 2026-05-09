@@ -196,6 +196,7 @@ fleet_event = {
         }
         this.solar_system = {
             has_star_flag = sol_system
+            has_star_flag = event_bixie
         }
     }
     immediate = {
