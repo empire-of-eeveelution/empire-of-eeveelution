@@ -63,7 +63,6 @@ EOE_crystal = {
 		space_creatures = yes
 	}
 	modules = {
-		exclusive_diplomacy_module = {} # Nothing is allowed, but we need this for relationships.
 		basic_technology_module = {}
 	}
 }

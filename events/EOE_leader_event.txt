@@ -10189,6 +10189,9 @@ country_event = {
 				owner = {
 					has_country_flag = EOE_ghost_started_1
 				}
+				NOT = {
+					has_country_flag = EOE_banana_cooldown
+				}
 			}
 		}
 		text = leadereevent.1000.desc.a
@@ -10302,6 +10305,7 @@ country_event = {
 	}
 	option = {
 		name = leadereevent.1000.e
+		custom_gui = "enclave_curator_option"
 		trigger = {
 			any_system_within_border = {
 				any_system_planet = {
@@ -10317,6 +10321,43 @@ country_event = {
 			create_archaeological_site = site_EOE_eevium_z
 		}
 	}
+	option = {
+		name = leadereevent.1000.f #投喂香蕉1
+		custom_gui = "enclave_curator_option"
+		trigger = {
+			NOR = {
+				has_country_flag = has_ate_banana
+				has_country_flag = EOE_banana_cooldown 
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = leadereevent.1010
+			}
+		}
+		add_resource = {
+			physics_research = 1
+		}
+	}
+	option = {
+		name = leadereevent.1000.f #投喂香蕉2
+		custom_gui = "enclave_curator_option"
+		trigger = {
+			has_country_flag = has_ate_banana
+			NOT = {
+				has_country_flag = EOE_banana_cooldown
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = leadereevent.1011
+			}
+		}
+		add_resource = {
+			physics_research = 1
+		}
+	}
+
 	# option = {
 	# 	#买大师球
 	# 	name = leadereevent.27.g
@@ -11615,6 +11656,122 @@ country_event = {
 		custom_tooltip = new_admiral
 	}
 }
+
+country_event = { #第一次投喂香蕉
+	id = leadereevent.1010
+	title = "leadereevent.1010.name"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "enclave_curator_window"
+	picture_event_data = {
+		room = enclave_curator_room
+		portrait = EOEHezi_test
+	}
+	desc = "leadereevent.1010.desc"	#我爱香蕉
+	immediate = {
+		hidden_effect = {
+			set_country_flag = has_ate_banana
+			create_variable_if_not_exists = {
+				name = EOE_banana_counter
+				value = 0
+			}
+			set_timed_country_flag = {
+				flag = EOE_banana_cooldown 
+				days = 2
+			}
+		}
+		
+	}
+	option = {
+		# Back
+		name = leadereevent.31.d
+		custom_gui = "enclave_curator_option"
+		hidden_effect = {
+			remove_country_flag = EOE_databank_diplomacy_engaged
+			country_event = {
+				id = leadereevent.1000
+			}
+		}
+	}
+	option = {
+		# exit
+		custom_gui = "enclave_curator_option"
+		name = leadereevent.29.b
+	}
+}
+
+country_event = { #第二次投喂香蕉
+	id = leadereevent.1011
+	title = "leadereevent.1010.name"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "enclave_curator_window"
+	picture_event_data = {
+		room = enclave_curator_room
+		portrait = EOEHezi_test
+	}
+	desc = "leadereevent.1010.desc.a"
+	desc = "leadereevent.1010.desc.b"
+	desc = "leadereevent.1010.desc.c"
+	desc = "leadereevent.1010.desc.d"
+	desc = "leadereevent.1010.desc.e"
+	desc = "leadereevent.1010.desc.f"
+	desc = "leadereevent.1010.desc.g"
+	desc = "leadereevent.1010.desc.h"
+	desc = "leadereevent.1010.desc.i"
+	desc = "leadereevent.1010.desc.j"
+	desc = "leadereevent.1010.desc.k"
+	desc = "leadereevent.1010.desc.l"
+	desc = "leadereevent.1010.desc.m"
+	desc = "leadereevent.1010.desc.n"
+	desc = "leadereevent.1010.desc.o"
+	desc = "leadereevent.1010.desc.p"
+	desc = "leadereevent.1010.desc.q"
+	desc = "leadereevent.1010.desc.r"
+	desc = "leadereevent.1010.desc.s"
+	desc = "leadereevent.1010.desc.t"
+	desc = "leadereevent.1010.desc.u"
+	desc = "leadereevent.1010.desc.v"
+	desc = "leadereevent.1010.desc.w"
+	desc = "leadereevent.1010.desc.x"
+	desc = "leadereevent.1010.desc.y"
+	desc = "leadereevent.1010.desc.z"
+	immediate = {
+		hidden_effect = {
+			add_variable = {
+				which = EOE_banana_counter
+				value = 1 
+			}
+			set_timed_country_flag = {
+				flag = EOE_banana_cooldown 
+				days = 2
+			}
+		}
+		
+	}
+	option = {
+		# Back
+		name = leadereevent.31.d
+		custom_gui = "enclave_curator_option"
+		hidden_effect = {
+			remove_country_flag = EOE_databank_diplomacy_engaged
+			country_event = {
+				id = leadereevent.1000
+			}
+		}
+	}
+	option = {
+		# exit
+		custom_gui = "enclave_curator_option"
+		name = leadereevent.29.b
+	}
+}
+
+
+
+
+
+
 
 #秋葵效果
 planet_event = { 
