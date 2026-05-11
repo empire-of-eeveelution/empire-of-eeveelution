@@ -10,7 +10,8 @@ tech_endless_evolution = {
 	levels = -1
 	prerequisites = {  }
 	icon = tech_gene_tailoring
-	weight = -10000
+	weight = 0
+
 	
 	potential = {
 		or = {
@@ -28,11 +29,11 @@ tech_endless_evolution = {
 			NOT = { 
 				owner_main_species = { has_trait = trait_directed_evolution }
 			}
-			}
+		}
 	}
 	
 	ai_weight = {
-		factor = 1.0
+		factor = 0
 	}
 	
 	weight_groups = {
@@ -60,7 +61,7 @@ tech_endless_evolution1 = {
 	levels = 60
 	prerequisites = {  }
 	icon = tech_gene_tailoring
-	weight = -10000
+	weight = 0
 
 	potential = {
 		or = {
@@ -82,7 +83,7 @@ tech_endless_evolution1 = {
 	}
 
 	ai_weight = {
-		factor = 1.0
+		factor = 0
 	}
 
 	weight_groups = {
