@@ -1,43 +1,36 @@
 ﻿l_simp_chinese:
 
 #These are all placeholders for later. Put them in their proper places then delete this file.
- EOE_crisisfive:0 "Crisis Five"
- EOE_crisisfive_desc:0 "Placeholder" 
- EOE_scientific_faith_1:0 "Scientific Faith 1"
- EOE_scientific_faith_1_desc:0 "Placeholder"
- EOE_scientific_faith_2:0 "Scientific Faith 2"
- EOE_scientific_faith_2_desc:0 "Placeholder"
- EOE_scientific_faith_3:0 "Scientific Faith 3"
- EOE_scientific_faith_3_desc:0 "Placeholder"
- EOE_eevium_z:0 "Eevium Z"
- EOE_eevium_z_desc:0 "Placeholder"
- EOE_necrozma_research:0 "Necrozma Research"
- EOE_necrozma_research_desc:0 "Placeholder"
- EOE_hezi_dont_love_you:0 "Hezi Hates You"
- EOE_hezi_dont_love_you_desc:0 "Hezi hates you guts."
- EOE_pokeball_catched:0 "Pokeball Caught"
- EOE_pokeball_catched_desc:0 "Placeholder"
- EOE_pokeball_catched_run:0 "Pokeball Caught"
- EOE_pokeball_catched_run_desc:0 "Placeholder"
- EOE_ship_test_effect:0 "Ship Effect Test"
- EOE_ship_test_effect_desc:0 "Test"
- tech_EOE_Minior:0 "EOE Minior Tech"
- tech_EOE_Minior_desc:0 "Placeholder"
- EOE_cthugha_1_sz_plural:0 "Placeholder"
- EOE_minior:0 "Placeholder"
- EOE_minior_plural:0 "Placeholder"
- EOE_necrozma_normal:0 "Placeholder"
- EOE_necrozma_normal_plural:0 "Placeholder"
- EOE_okra_ship_plural:0 "Okra's Ship"
- PLANET_KILLER_NECROZMA_ACTION:0 "Placeholder"
- FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_NECROZMA:0 "Placeholder"
- job_steel_type_trainer:0 "Placeholder"
- job_steel_type_trainer_desc:0 "Placeholder"
+ EOE_crisisfive:0 "半神白龙的静态增益"
+ EOE_crisisfive_desc:0 "半神白龙的静态增益" 
+ EOE_scientific_faith_1:0 "科学信仰"
+ EOE_scientific_faith_1_desc:0 "已弃用"
+ EOE_scientific_faith_2:0 "科学信仰"
+ EOE_scientific_faith_2_desc:0 "已弃用"
+ EOE_scientific_faith_3:0 "科学信仰"
+ EOE_scientific_faith_3_desc:0 "已弃用"
+ EOE_eevium_z:0 "伊布Z"
+ EOE_eevium_z_desc:0 "Z纯晶的力量短暂但是全面地增加了我们舰队的力量。"
+ EOE_hezi_dont_love_you:0 "AI伊布帝国强化修正"
+ EOE_hezi_dont_love_you_desc:0 "AI伊布帝国强化修正"
+ EOE_pokeball_catched:0 "被精灵球捕获"
+ EOE_pokeball_catched_desc:0 "由于被精灵球捕获而十分易于维护。"
+ EOE_pokeball_catched_run:0 "被精灵球捕获2"
+ EOE_pokeball_catched_run_desc:0 "由于被精灵球捕获，可以很容易地撤退。"
+ EOE_ship_test_effect:0 "舰船测试用修正"
+ EOE_ship_test_effect_desc:0 "舰船测试用修正"
+ EOE_cthugha_1_sz_plural:0 "半神莱希拉姆"
+ job_steel_type_trainer:0 "钢属性训练家"
+ job_steel_type_trainer_desc:0 "钢属性训练家（已弃用）"
+
+
+#奇怪晶体事件链，稍后修理
  EOE_wierd_crystals:0 "Weird Crystal"
  EOE_wierd_crystals_desc:0 "Something about weird crystals."
  
  
 #astral rift placeholders
+# 这个测试事件并未实装。
  EOE_astral_rift.1:0 "Astral Rift"
  EOE_astral_rift.1.desc:0 "Placeholder"
  EOE_astral_rift.1.a:0 "Placeholder"
@@ -65,12 +58,14 @@
  EOE_astral_rift.12221.a:0 "Placeholder"
  
  #auto machine planet
+ #看起来也像测试事件。
  EOE.auto.1.desc:0 "Auto Machine Planet Description Placeholder"
  EOE.auto.1.accept:0 "Accept"
  EOE.auto.1.disable:0 "Disable"
  EOE.auto.2.desc:0 "Auto Machine Planet Description Placeholder"
  
  #hezi event
+ #未实装事件。
  hezieevent.1.desc:0 "Placeholder"
  hezieevent.1.a:0 "Placeholder"
  hezieevent.1.b:0 "Placeholder"
@@ -81,7 +76,7 @@
  hezieevent.1.g:0 "Placeholder"
  
  #branch event
-
+ #究极空间事件链，修好再说
  EOE_branch.69.desc:0 "Placeholder"
  EOE_branch.70.desc:0 "Placeholder"
  EOE_branch.71.desc:0 "Placeholder"
@@ -93,8 +88,6 @@
  EOE_branch.141.a:0 "Placeholder"
  EOE_branch.142.desc:0 "Placeholder"
  EOE_branch.142.a:0 "Placeholder"
- EOE_branch.143.desc:0 "Placeholder"
- EOE_branch.143.a:0 "Placeholder"
  EOE_branch.146.desc:0 "Placeholder"
  EOE_branch.146.a:0 "Placeholder"
  EOE_branch.147.desc:0 "Placeholder"
@@ -155,7 +148,8 @@
  EOE_branch.169.a:0 "Placeholder"
  
  #Ghost Event
- EOE_ghost.34.desc:0 "Placeholder"
+ #以下均为没有实装的事件。
+ EOE_ghost.34.desc:0 "Placeholder" 
  EOE_ghost.34.a:0 "Placeholder"
  EOE_ghost.96.desc.a:0 "Placeholder"
  EOE_ghost.96.desc.b:0 "Placeholder"
@@ -242,20 +236,13 @@
  EOE_ghost.100.d.tooltip:0 "Placeholder"
  EOE_ghost.100.e.tooltip:0 "Placeholder"
  
- d_EOE_ghost_portal:0 "Ghost Portal"
- d_EOE_ghost_portal_desc:0 "Placeholder"
  
- #leader events
+ #leader events 这两个都是acot的本地化。
  dark_matter_event.40.ask_curator:0 "Placeholder"
  acot_alpha_matter_events.1040.a:0 "Placeholder"
- leadereevent.27.desc.h:0 "Placeholder"
- leadereevent.1000.d:0 "Placeholder"
- leadereevent.1000.e:0 "Placeholder"
- leadereevent.65.desc:0 "Placeholder"
- leadereevent.65.a:0 "Placeholder"
- leadereevent.65.b:0 "Placeholder"
+
  
- #start leader
+ #start leader 暂时废弃的事件。
  eoestartleader.15.desc:0 "Placeholder"
  eoestartleader.15.a:0 "Placeholder"
  eoestartleader.15.b:0 "Placeholder"
@@ -266,21 +253,9 @@
  eoestartleader.15.g:0 "Placeholder"
  eoestartleader.15.h:0 "Placeholder"
  
- #bixie
- bixie.5.desc:0 "Placeholder"
- bixie.5.a:0 "Placeholder"
- bixie.6.desc:0 "Placeholder"
- bixie.6.a:0 "Placeholder"
- bixie.6.b:0 "Placeholder"
- bixie.6.c:0 "Placeholder"
- bixie.6.d:0 "Placeholder"
- bixie.6.1:0 "Placeholder"
- bixie.6.2:0 "Placeholder"
- bixie.7.desc:0 "Placeholder"
- bixie.7.a:0 "Placeholder"
  
  #eevent
- 
+ #小陨星事件链。稍后修复。
  eevent.45.desc:0 "Placeholder"
  eevent.45.a:0 "Placeholder"
  eevent.46.desc.a:0 "Placeholder"
@@ -300,16 +275,13 @@
  eevent.51.desc.b:0 "Placeholder"
  eevent.52.desc.a:0 "Placeholder"
  eevent.52.desc.b:0 "Placeholder"
- eevent.7102.a:0 "Placeholder"
  
- bixie.6.c.tooltip:0 "Placeholder"
- bixie.6.d.tooltip:0 "Placeholder"
  
- #eevium
+ #eevium 究极空间事件，后面修复。
  site_EOE_eevium_z_intro:0 "Placeholder"
  site_EOE_ultra_city_intro:0 "Placeholder"
  
- #armies
+ #armies 都是暂时没有用到的东西。
  EOE_kratz_shroud_army:0 "Kratz Shroud Army"
  EOE_kratz_shroud_army_desc:0 "Placeholder"
  EOE_kratz_shroud_army_small:0 "Small Kratz Shroud Army"
@@ -326,7 +298,4 @@
  EOE_tree_def_army_desc:0 "Placeholder"
  
  
- #misc
- concept_ap_mega_evolution_EOE_desc:0 "Placeholder"
- situation_endless_evolution_type:0 "Endless Evolution"
- EOE_steel_type_pokemon_produce_cooldown:0 "Steel Type Cooldown"
+

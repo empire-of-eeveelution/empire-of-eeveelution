@@ -604,6 +604,7 @@ NAME_EOE_Old_daddy:0"Ancient mechanical fleet"
 
 #################2022年6月15日18:23:28添加
 eevent.7102.a.tootip:0"§Y$tech_ship_armor_5$§! will get the research options and add 50% of the research progress immediately after the completion of §Y$tech_ship_armor_4$§!."
+eevent.7102.a:0"Good."
 eevent.345.name:0"$tech_ship_armor_5$"
 eevent.345.desc:0"After completing the research of $tech_ship_armor_4$, we can use the $tech_ship_armor_5$ samples left by the creator for reverse research."
 eevent.345.a:0"GOOD"
@@ -642,7 +643,7 @@ situation_endless_evolution_desc:0 "Born from ancestors of a million years past,
 situation_endless_evolution_monthly_change_tooltip:0 ""
 endless_evolution_has_technology:0 "Has ['concept_ap_mega_evolution_EOE'] Ascension Perk"
 concept_ap_mega_evolution_EOE:0 "$ap_mega_evolution_EOE$"
-concept_ap_mega_EOE_desc:0 "-$ap_mega_evolution_EOE_modifier_desc$\n$ap_mega_evolution_EOE_desc$"
+concept_ap_mega_EOE_desc:0"-$ap_mega_evolution_EOE_modifier_desc$\n$ap_mega_evolution_EOE_desc$"
 #tech_mega_evolution_complete:0 "Organic Species Modification Points: §G+1§!"
 #EOE_not_enough_soc_produce:0 "Insufficient Sociology Research output to enable this approach.\nRequires at least §R4166 / Current Research Multiplier§! Sociology Research output."
 endless_evolution_stage:0 "Endless Evolution: Researching"

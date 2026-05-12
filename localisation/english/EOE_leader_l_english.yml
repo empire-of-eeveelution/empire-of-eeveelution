@@ -163,6 +163,14 @@ leadereevent.27.desc.i:0 "I don't understand how slavery has grown to such a lar
 # leadereevent.27.g.tooltip.cooldown:0"Cooling time §Y10§! years."
 # leadereevent.27.g.response:0"Emmm...This thing... It comes from the future.\nIt probably means that the damn Umbreon released part of her pie in the sky in advance."
 leadereevent.203.desc.f:0"Several old classmates of mine contacted me recently. They are concerned about my current condition and are very curious about my life here."
+
+leadereevent.27.desc.h:0 "If I ever had the chance, I'd actually really like to discuss the use of tactical nuclear weapons with Kaiser Kattail."
+leadereevent.27.desc.i:0 "I don't understand. How has slavery grown to such a massive scale?"
+leadereevent.205.desc.a:0 "Hello."
+leadereevent.205.desc.b:0 "Okra and I have been searching for a way to awaken my mother's personality..."
+leadereevent.205.desc.c:0 "At your service."
+leadereevent.206.desc.a:0 "I'm here to visit my mother... I'll head back soon."
+
 leadereevent.27.desc.g:0 "I feel a little better recently. Maybe the treatment developed by my mom is working."
 leadereevent.205.desc.b:0"Okra and I am finding a way to wake my mom's personality..."
 leadereevent.205.desc.c:0"At your service~"
@@ -583,6 +591,14 @@ trait_EOE_hezi_network_host_desc:0 "The utilization of experimental psionic netw
  leadereevent.1009.desc:0 "Captain [officer.GetName], the commanding officer of [ship.GetName], has recently demonstrated considerable excellence in live fleet exercises. The naval command of [Root.Capital.GetName] decided to honor this very promising captain by promoting her to the rank of fleet commander. \n Addition to that, as far as we know, her true identity is one of the clones of Hezi, and a large part of her ability comes from the presence of the psionic network."
 
 
+#核子的恐怖负相物质急救
+leadereevent.1000.d:0 "Hezi, save me!"
+leadereevent.65.desc:0 "You look so flustered—what happened?"
+leadereevent.65.a:0 "There's $horrific_inverse_mass$"
+leadereevent.65.a.response:0 "Got it. I'll take care of it for you."
+leadereevent.65.b:0 "It's nothing now."
+
+
 ###banana
 leadereevent.1000.f:0 "Feed Hezi a Banana"
 leadereevent.1010.name:0 "Hezi"
@@ -638,6 +654,52 @@ EOE_is_not_our_planet:0"§R$TRIGGER_FAIL$The target does not belong to us§!"
 EOE_already_have_modifier:0"§R$TRIGGER_FAIL$It has already been greened§!"
 NAME_EOE_OKRASHIP:0"Experimental Environmental engineering ship"
 EOE_okra_ship:0"Experimental Environmental engineering ship"
+EOE_okra_ship_plural:0 "$EOE_okra_ship$"
 OKRA_THRUSTER:0"Experimental Environmental engineering ship thruster"
 OKRA_BIO_REACTOR:0"Experimental Environmental engineering ship core"
 OKRA_BIO_REACTOR_DESC:0"The ancient Zerg organ discovered in an exploration by OKRA, which ability to analyze and improve organisms can be adjusted for our use."
+
+#辟邪（纯机翻）
+
+BRA2:0 "Bixie"
+
+bixie.5.title:0 "A Figure on the Wasteland"
+bixie.5.desc:0 "As soon as we entered this system, we discovered that the third planet from the star is experiencing a nuclear winter. It is speculated that this condition was caused by a nuclear war between the planet's native civilizations. Currently, there is only one trace of activity from a possible postwar survivor on the planet's surface, but it is clear that the radiation levels on this planet are completely unsuitable for any intelligent life to survive."
+bixie.5.a:0 "Perhaps not a mortal being?"
+
+BIXIE_FOUND:0 "Search for Survivors"
+BIXIE_FOUND_DESC:0 "A survivor who can endure such high radiation levels without difficulty—this survivor is worth finding and studying."
+
+bixie.6.title:0 "Establishing Communications"
+bixie.6.desc:0 "How interesting. I originally thought extraterrestrial life didn't exist. As you can see, the natives of this planet fought a nuclear war and blew themselves to near extinction. But that doesn't matter much to me—I had already accomplished what I set out to do before all this.\nSo, do you have any questions?"
+
+bixie.6.a:0 "Who are you?"
+bixie.6.a.response:0 "A mythical beast. More precisely, a Pixiu named Bixie. Nothing else to say."
+
+bixie.6.b:0 "Mythical beast? I thought that was just a story made up by pre-space age natives?"
+bixie.6.b.response:0 "Hmph, it seems you've found some records about this on this planet—perhaps even in some 'ancient' texts. You're right. I am Bixie, a Pixiu. We mythical beasts are born of heaven and earth, existing since the universe stabilized and planets formed.\nFor the past few millennia, my brother and I came to this planet... to take care of a very important matter. But just as we were at a critical moment, the natives of this planet started fighting. Fortunately, we finished our business before the nuclear war. Now my brother has left, and I am staying here temporarily to ensure that 'those beasts' have all been eliminated."
+
+bixie.6.1:0 "'Those beasts'? Who exactly do you mean?"
+bixie.6.1.response:0 "There are some things you'd better not dig too deep into. Even knowing of their existence would severely impact your worldview and scientific methodology."
+
+bixie.6.2:0 "Do you plan to stay here forever?"
+bixie.6.2.response:0 "No. My work is done. I'll likely leave this planet in a few days. But... after finishing that task, I feel like I've lost my purpose. Honestly, I don't know what to do anymore. Can you give me a purpose? Perhaps let me lead your armies? Even just for 5,000 years as a trial run?"
+
+bixie.6.c:0 "Please lead our armies."
+bixie.6.c.tooltip:0 "A legendary mythical beast joins the leader pool."
+
+bixie.6.d:0 "May you find your purpose among the stars."
+bixie.6.d.tooltip:0 "Farewell, mysterious mythical beast."
+
+bixie.7.title:0 "Active Contact"
+bixie.7.desc:0 "After two years of searching, our efforts to locate the survivor have been fruitless. But just then, the survivor actively connected to our quantum communications—without any mechanical assistance or psychic fluctuations! Our scientists are amazed at how He managed this."
+
+bixie.7.a:0 "Truly miraculous."
+
+bixie_catch_phrase:0 "As we agreed, for the next 5,000 years, your enemies shall feel the fury of a mythical beast."
+
+
+##宝可梦星球，调查
+leadereevent.1000.e:0 "Investigate the Pokémon Planet"
+leadereevent.1005.name:0 "Hezi"
+leadereevent.1005.desc:0 "Indeed, that planet now has something worth investigating. Why was it overlooked? No matter—next, we should organize a team for an expedition."

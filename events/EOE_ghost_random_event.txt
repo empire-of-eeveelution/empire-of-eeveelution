@@ -10,682 +10,696 @@ ship_event = {
 	hide_window = yes
 	immediate = {
 		reroll_random = yes
-		owner = {
-			if = {
-				limit = { 
-					root = {
-						is_hezi_in_shroud = yes
-					}
-				}
-				set_country_flag = EOE_hezi_in_shroud
-			}
-			else = {
-				remove_country_flag = EOE_hezi_in_shroud
-			}
-			random_list = {
-				5 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_3
-					}
-					set_country_flag = EOE_ghost_3
-				}
-				1 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_4
-					}
-					set_country_flag = EOE_ghost_4
-				}
-				5 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_6
-					}
-					set_country_flag = EOE_ghost_6
-				}
-				5 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_7
-					}
-					modifier = {
-						factor = 0
-						NOT = {
-							owner_main_species = {
-								has_trait = trait_extremely_cute
-							}
-						}
-					}
-					set_country_flag = EOE_ghost_7
-				}
-				5 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_8
-					}
-					set_country_flag = EOE_ghost_8
-				}
-				5 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_9
-					}
-					set_country_flag = EOE_ghost_9
-				}
-				2 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_10
-					}
-					set_country_flag = EOE_ghost_10
-				}
-				2 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_11
-					}
-					set_country_flag = EOE_ghost_11
-				}
-				2 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_12
-					}
-					set_country_flag = EOE_ghost_12
-				}
-				2 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_13
-					}
-					modifier = {
-						factor = 0
-						OR = {
-							AND = {
-								is_hezi_in_shroud = no
-								is_okra_in_shroud = yes
-							}
-							AND = {
-								is_hezi_in_shroud = yes
-								is_okra_in_shroud = no
-							}
-						}
-					}
-					set_country_flag = EOE_ghost_13
-				}
-				5 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_15
-					}
-					set_country_flag = EOE_ghost_15
-				}
-				5 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_16
-					}
-					modifier = {
-						factor = 0
-						OR = {
-							has_country_flag = gray_governor_active
-							has_country_flag = gray_warship_active
-							has_country_flag = gray_army_active
-							has_country_flag = gray_reforming
-							has_country_flag = gray_diplomacy_engaged 
-						}
-					}
-					set_country_flag = EOE_ghost_16
-				}
-				5 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_17
-					}
-					set_country_flag = EOE_ghost_17
-				}
-				5 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_18
-					}
-					set_country_flag = EOE_ghost_18
-				}
-				4 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_19
-					}
-					modifier = {
-						factor = 0
-						NOT = {
-							owner_main_species = {
-								has_trait = trait_extremely_cute
-							}
-						}
-					}
-					set_country_flag = EOE_ghost_19
-				}
-				5 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_22
-					}
-					set_country_flag = EOE_ghost_22
-				}
-				5 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_23
-					}
-					set_country_flag = EOE_ghost_23
-				}
-				5 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_29
-					}
-					set_country_flag = EOE_ghost_29
-				}
-				5 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_30
-					}
-					set_country_flag = EOE_ghost_30
-				}
-				5 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_31
-					}
-					set_country_flag = EOE_ghost_31
-				}
-				5 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_32
-					}
-					modifier = {
-						factor = 0
-						OR = {
-							has_global_flag = EOE_no_machine_fallen_empire
-							has_global_flag = ai_invasion_happened
-						}
-					}
-					set_country_flag = EOE_ghost_32
-				}
-				5 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_33
-					}
-					set_country_flag = EOE_ghost_33
-				}
-				5 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_35
-					}
-					set_country_flag = EOE_ghost_35
-				}
-				5 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_88
-					}
-					set_country_flag = EOE_ghost_88
-				}
-				5 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_89
-					}
-					set_country_flag = EOE_ghost_89
-				}
-				10 = {
-					modifier = {
-						factor = 0
-						has_country_flag = EOE_ghost_90
-					}
-					set_country_flag = EOE_ghost_90
-				}
-			}
-		}
 		ship_event = {
-			id = EOE_ghost.2
+			id = EOE_ghost.124
 		}
+
+		# effect = { #调试用的。
+		# 	every_owned_ship = {
+		# 		limit = {
+		# 			has_ship_flag = special_science_ship
+		# 		}
+		# 		ship_event = {
+		# 			id = EOE_ghost.125
+		# 		}
+		# 	}
+		# }
+		# owner = {
+		# 	if = {
+		# 		limit = { 
+		# 			root = {
+		# 				is_hezi_in_shroud = yes
+		# 			}
+		# 		}
+		# 		set_country_flag = EOE_hezi_in_shroud
+		# 	}
+		# 	else = {
+		# 		remove_country_flag = EOE_hezi_in_shroud
+		# 	}
+		# 	random_list = {
+		# 		5 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_3
+		# 			}
+		# 			set_country_flag = EOE_ghost_3
+		# 		}
+		# 		1 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_4
+		# 			}
+		# 			set_country_flag = EOE_ghost_4
+		# 		}
+		# 		5 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_6
+		# 			}
+		# 			set_country_flag = EOE_ghost_6
+		# 		}
+		# 		5 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_7
+		# 			}
+		# 			modifier = {
+		# 				factor = 0
+		# 				NOT = {
+		# 					owner_main_species = {
+		# 						has_trait = trait_extremely_cute
+		# 					}
+		# 				}
+		# 			}
+		# 			set_country_flag = EOE_ghost_7
+		# 		}
+		# 		5 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_8
+		# 			}
+		# 			set_country_flag = EOE_ghost_8
+		# 		}
+		# 		5 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_9
+		# 			}
+		# 			set_country_flag = EOE_ghost_9
+		# 		}
+		# 		2 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_10
+		# 			}
+		# 			set_country_flag = EOE_ghost_10
+		# 		}
+		# 		2 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_11
+		# 			}
+		# 			set_country_flag = EOE_ghost_11
+		# 		}
+		# 		2 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_12
+		# 			}
+		# 			set_country_flag = EOE_ghost_12
+		# 		}
+		# 		2 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_13
+		# 			}
+		# 			modifier = {
+		# 				factor = 0
+		# 				OR = {
+		# 					AND = {
+		# 						is_hezi_in_shroud = no
+		# 						is_okra_in_shroud = yes
+		# 					}
+		# 					AND = {
+		# 						is_hezi_in_shroud = yes
+		# 						is_okra_in_shroud = no
+		# 					}
+		# 				}
+		# 			}
+		# 			set_country_flag = EOE_ghost_13
+		# 		}
+		# 		5 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_15
+		# 			}
+		# 			set_country_flag = EOE_ghost_15
+		# 		}
+		# 		5 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_16
+		# 			}
+		# 			modifier = {
+		# 				factor = 0
+		# 				OR = {
+		# 					has_country_flag = gray_governor_active
+		# 					has_country_flag = gray_warship_active
+		# 					has_country_flag = gray_army_active
+		# 					has_country_flag = gray_reforming
+		# 					has_country_flag = gray_diplomacy_engaged 
+		# 				}
+		# 			}
+		# 			set_country_flag = EOE_ghost_16
+		# 		}
+		# 		5 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_17
+		# 			}
+		# 			set_country_flag = EOE_ghost_17
+		# 		}
+		# 		5 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_18
+		# 			}
+		# 			set_country_flag = EOE_ghost_18
+		# 		}
+		# 		4 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_19
+		# 			}
+		# 			modifier = {
+		# 				factor = 0
+		# 				NOT = {
+		# 					owner_main_species = {
+		# 						has_trait = trait_extremely_cute
+		# 					}
+		# 				}
+		# 			}
+		# 			set_country_flag = EOE_ghost_19
+		# 		}
+		# 		5 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_22
+		# 			}
+		# 			set_country_flag = EOE_ghost_22
+		# 		}
+		# 		5 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_23
+		# 			}
+		# 			set_country_flag = EOE_ghost_23
+		# 		}
+		# 		5 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_29
+		# 			}
+		# 			set_country_flag = EOE_ghost_29
+		# 		}
+		# 		5 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_30
+		# 			}
+		# 			set_country_flag = EOE_ghost_30
+		# 		}
+		# 		5 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_31
+		# 			}
+		# 			set_country_flag = EOE_ghost_31
+		# 		}
+		# 		5 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_32
+		# 			}
+		# 			modifier = {
+		# 				factor = 0
+		# 				OR = {
+		# 					has_global_flag = EOE_no_machine_fallen_empire
+		# 					has_global_flag = ai_invasion_happened
+		# 				}
+		# 			}
+		# 			set_country_flag = EOE_ghost_32
+		# 		}
+		# 		5 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_33
+		# 			}
+		# 			set_country_flag = EOE_ghost_33
+		# 		}
+		# 		5 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_35
+		# 			}
+		# 			set_country_flag = EOE_ghost_35
+		# 		}
+		# 		5 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_88
+		# 			}
+		# 			set_country_flag = EOE_ghost_88
+		# 		}
+		# 		5 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_89
+		# 			}
+		# 			set_country_flag = EOE_ghost_89
+		# 		}
+		# 		10 = {
+		# 			modifier = {
+		# 				factor = 0
+		# 				has_country_flag = EOE_ghost_90
+		# 			}
+		# 			set_country_flag = EOE_ghost_90
+		# 		}
+		# 	}
+		# }
+		# ship_event = {
+		# 	id = EOE_ghost.2
+		# }
 	}
 }
 #随机发配中心
-ship_event = {
+# ship_event = {
 	
-	id = EOE_ghost.2
-	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_3
-				}
-			}
-			owner = {
-				remove_country_flag = EOE_ghost_3
-			}
-			ship_event = {
-				id = EOE_ghost.3
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_4
-					NOT = {
-						has_country_flag = EOE_ghost_4_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_4_finished
-			}
-			ship_event = {
-				id = EOE_ghost.4
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_6
-					NOT = {
-						has_country_flag = EOE_ghost_6_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_6_finished
-			}
-			ship_event = {
-				id = EOE_ghost.6
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_7
-					NOT = {
-						has_country_flag = EOE_ghost_7_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_7_finished
-			}
-			ship_event = {
-				id = EOE_ghost.7
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_8
-					NOT = {
-						has_country_flag = EOE_ghost_8_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_8_finished
-			}
-			ship_event = {
-				id = EOE_ghost.8
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_9
-				}
-			}
-			owner = {
-				remove_country_flag = EOE_ghost_9
-			}
-			ship_event = {
-				id = EOE_ghost.9
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_10
-					NOT = {
-						has_country_flag = EOE_ghost_10_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_10_finished
-			}
-			ship_event = {
-				id = EOE_ghost.10
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_11
-					NOT = {
-						has_country_flag = EOE_ghost_11_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_11_finished
-			}
-			ship_event = {
-				id = EOE_ghost.11
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_12
-					NOT = {
-						has_country_flag = EOE_ghost_12_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_12_finished
-			}
-			ship_event = {
-				id = EOE_ghost.12
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_13
-					NOT = {
-						has_country_flag = EOE_ghost_13_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_13_finished
-			}
-			ship_event = {
-				id = EOE_ghost.13
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_15
-					NOT = {
-						has_country_flag = EOE_ghost_15_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_15_finished
-			}
-			ship_event = {
-				id = EOE_ghost.15
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_16
-					NOT = {
-						has_country_flag = EOE_ghost_16_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_16_finished
-			}
-			ship_event = {
-				id = EOE_ghost.16
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_17
-					NOT = {
-						has_country_flag = EOE_ghost_17_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_17_finished
-			}
-			ship_event = {
-				id = EOE_ghost.17
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_18
-					NOT = {
-						has_country_flag = EOE_ghost_18_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_18_finished
-			}
-			ship_event = {
-				id = EOE_ghost.18
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_19
-					NOT = {
-						has_country_flag = EOE_ghost_19_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_19_finished
-			}
-			ship_event = {
-				id = EOE_ghost.19
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_22
-					NOT = {
-						has_country_flag = EOE_ghost_22_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_22_finished
-			}
-			ship_event = {
-				id = EOE_ghost.22
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_23
-					NOT = {
-						has_country_flag = EOE_ghost_23_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_23_finished
-			}
-			ship_event = {
-				id = EOE_ghost.23
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_29
-					NOT = {
-						has_country_flag = EOE_ghost_29_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_29_finished
-			}
-			ship_event = {
-				id = EOE_ghost.29
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_30
-					NOT = {
-						has_country_flag = EOE_ghost_30_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_30_finished
-			}
-			ship_event = {
-				id = EOE_ghost.30
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_31
-					NOT = {
-						has_country_flag = EOE_ghost_31_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_31_finished
-			}
-			ship_event = {
-				id = EOE_ghost.31
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_32
-					NOT = {
-						has_country_flag = EOE_ghost_32_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_32_finished
-			}
-			random_country = {
-				limit = {
-					OR = {
-						has_country_flag = fallen_machine_empire_awaken_2
-						has_country_flag = fallen_machine_empire_awaken_1
-					}
-				}
-				save_event_target_as = EOE_fallen_machine_empire
-			}
-			ship_event = {
-				id = EOE_ghost.32
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_33
-					NOT = {
-						has_country_flag = EOE_ghost_33_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_33_finished
-			}
-			ship_event = {
-				id = EOE_ghost.33
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_35
-					NOT = {
-						has_country_flag = EOE_ghost_35_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_35_finished
-			}
-			ship_event = {
-				id = EOE_ghost.35
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_88
-					NOT = {
-						has_country_flag = EOE_ghost_88_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_88_finished
-			}
-			ship_event = {
-				id = EOE_ghost.88
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_89
-					NOT = {
-						has_country_flag = EOE_ghost_89_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_89_finished
-			}
-			ship_event = {
-				id = EOE_ghost.89
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_country_flag = EOE_ghost_90
-					NOT = {
-						has_country_flag = EOE_ghost_90_finished
-					}
-				}
-			}
-			owner = {
-				set_country_flag = EOE_ghost_90_finished
-			}
-			ship_event = {
-				id = EOE_ghost.90
-			}
-		}
-	}
-}
+# 	id = EOE_ghost.2
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	immediate = {
+# 		if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_3
+# 				}
+# 			}
+# 			owner = {
+# 				remove_country_flag = EOE_ghost_3
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.3
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_4
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_4_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_4_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.4
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_6
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_6_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_6_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.6
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_7
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_7_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_7_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.7
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_8
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_8_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_8_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.8
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_9
+# 				}
+# 			}
+# 			owner = {
+# 				remove_country_flag = EOE_ghost_9
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.9
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_10
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_10_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_10_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.10
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_11
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_11_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_11_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.11
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_12
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_12_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_12_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.12
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_13
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_13_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_13_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.13
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_15
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_15_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_15_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.15
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_16
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_16_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_16_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.16
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_17
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_17_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_17_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.17
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_18
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_18_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_18_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.18
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_19
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_19_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_19_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.19
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_22
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_22_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_22_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.22
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_23
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_23_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_23_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.23
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_29
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_29_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_29_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.29
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_30
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_30_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_30_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.30
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_31
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_31_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_31_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.31
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_32
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_32_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_32_finished
+# 			}
+# 			random_country = {
+# 				limit = {
+# 					OR = {
+# 						has_country_flag = fallen_machine_empire_awaken_2
+# 						has_country_flag = fallen_machine_empire_awaken_1
+# 					}
+# 				}
+# 				save_event_target_as = EOE_fallen_machine_empire
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.32
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_33
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_33_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_33_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.33
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_35
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_35_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_35_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.35
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_88
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_88_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_88_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.88
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_89
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_89_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_89_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.89
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				owner = {
+# 					has_country_flag = EOE_ghost_90
+# 					NOT = {
+# 						has_country_flag = EOE_ghost_90_finished
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				set_country_flag = EOE_ghost_90_finished
+# 			}
+# 			ship_event = {
+# 				id = EOE_ghost.90
+# 			}
+# 		}
+# 	}
+# }
 #抓鬼陆军，秋荷一起上的时候抓到的更强
 ship_event = {
 	
@@ -11410,3 +11424,519 @@ planet_event = {
 		
 # 	}
 # }
+
+ship_event = {	#尝试修复随机发配。似乎一共有27个随机选项。124分成5档：普通，罕见，稀有，史诗，传奇。
+	id = EOE_ghost.124
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		owner = {
+			# remove_country_flag = EOE_normal_ghost_event
+			# remove_country_flag = EOE_uncommon_ghost_event
+			# remove_country_flag = EOE_rare_ghost_event
+			# remove_country_flag = EOE_epic_ghost_event
+			# remove_country_flag = EOE_legendary_ghost_event
+			if = {
+				limit = { 
+					root = {
+						is_hezi_in_shroud = yes
+					}
+				}
+				set_country_flag = EOE_hezi_in_shroud
+			}	
+			else = {
+					remove_country_flag = EOE_hezi_in_shroud
+			}
+			random_list = {
+				8 = {
+					modifier = {
+						factor = 0.4
+						has_country_flag = EOE_hezi_in_shroud
+					}
+					root = {
+						ship_event = {
+							id = EOE_ghost.125
+						}
+					}
+					#set_country_flag = EOE_normal_ghost_event
+				}
+				8 = {
+					modifier = {
+						factor = 0.4
+						has_country_flag = EOE_hezi_in_shroud
+					}
+					root = {
+						ship_event = {
+							id = EOE_ghost.126
+						}
+					}
+					#`set_country_flag = EOE_uncommon_ghost_event
+				}
+				5 = {
+					root = {
+						ship_event = {
+							id = EOE_ghost.127
+						}
+					}
+					#set_country_flag = EOE_rare_ghost_event
+				}
+				1 = {
+					modifier = {
+						factor = 4
+						has_country_flag = EOE_hezi_in_shroud
+					}
+					root = {
+						ship_event = {
+							id = EOE_ghost.128
+						}
+					}
+					#set_country_flag = EOE_epic_ghost_event
+				}
+				1 = {
+					modifier = {
+						factor = 3
+						has_country_flag = EOE_hezi_in_shroud
+					}
+					root = {
+						ship_event = {
+							id = EOE_ghost.129
+						}
+					}
+					#set_country_flag = EOE_legendary_ghost_event
+				}
+			}
+		}
+	}	
+}
+ship_event = { #普通。
+	id = EOE_ghost.125
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		owner = {
+			random_list = {
+				5 = {
+					#set_country_flag = EOE_ghost_3
+					root = {
+						ship_event = {
+							id = EOE_ghost.3
+						}
+					}
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_6_finished
+					}	
+					set_country_flag = EOE_ghost_6_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.6
+						}
+					}
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						OR = {
+							has_country_flag = EOE_ghost_7_finished
+							NOT = {
+								owner_main_species = {
+									has_trait = trait_extremely_cute
+								}
+							}
+						}	
+					}
+					set_country_flag = EOE_ghost_7_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.7
+						}
+					}
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_8_finished
+					}
+					set_country_flag = EOE_ghost_8_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.8
+						}
+					}
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_22_finished
+					}
+					set_country_flag = EOE_ghost_22_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.22
+						}
+					}
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_29_finished
+					}
+					set_country_flag = EOE_ghost_29_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.29
+						}
+					}
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						OR = {
+							has_country_flag = EOE_ghost_32_finished
+							has_global_flag = EOE_no_machine_fallen_empire
+							has_global_flag = ai_invasion_happened
+						}
+					}
+					set_country_flag = EOE_ghost_32_finished
+					random_country = {
+						limit = {
+							OR = {
+								has_country_flag = fallen_machine_empire_awaken_2
+								has_country_flag = fallen_machine_empire_awaken_1
+							}
+						}
+						save_event_target_as = EOE_fallen_machine_empire
+					}
+					root = {
+						ship_event = {
+							id = EOE_ghost.32
+						}
+					}
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_33_finished
+					}
+					set_country_flag = EOE_ghost_33_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.33
+						}
+					}
+				}
+			}
+		}
+	}	
+}
+ship_event = { #罕见。
+	id = EOE_ghost.126
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		owner = {
+			random_list = {
+				1 = {
+					#set_country_flag = EOE_ghost_3
+					root = {
+						ship_event = {
+							id = EOE_ghost.3
+						}
+					}
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_15_finished
+					}
+					set_country_flag = EOE_ghost_15_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.15
+						}
+					}
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						OR = {
+							has_country_flag = EOE_ghost_16_finished
+							owner = {
+								OR = {
+									has_country_flag = gray_governor_active
+									has_country_flag = gray_warship_active
+									has_country_flag = gray_army_active
+									has_country_flag = gray_reforming
+									has_country_flag = gray_diplomacy_engaged 
+								}
+							}
+						}
+					}
+					set_country_flag = EOE_ghost_16_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.16
+						}
+					}
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_17_finished
+					}
+					set_country_flag = EOE_ghost_17_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.17
+						}
+					}
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_18_finished
+					}
+					set_country_flag = EOE_ghost_18_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.18
+						}
+					}
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						OR = {
+							has_country_flag = EOE_ghost_19_finished
+							NOT = {
+								owner_main_species = {
+									has_trait = trait_extremely_cute
+								}
+							}
+						}	
+					}
+					set_country_flag = EOE_ghost_19_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.19
+						}
+					}
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_30_finished
+					}
+					set_country_flag = EOE_ghost_30_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.30
+						}
+					}
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_31_finished
+					}
+					set_country_flag = EOE_ghost_31_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.31
+						}
+					}
+				}
+			}
+		}	
+	}
+}
+ship_event = { #稀有。
+	id = EOE_ghost.127
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		owner = {
+			random_list = {
+				1 = {
+					#set_country_flag = EOE_ghost_3
+					root = {
+						ship_event = {
+							id = EOE_ghost.3
+						}
+					}
+				}
+				20 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_10_finished
+					}
+					set_country_flag = EOE_ghost_10_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.10
+						}
+					}
+				}
+				20 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_11_finished
+					}
+					set_country_flag = EOE_ghost_11_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.11
+						}
+					}
+				}
+				20 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_12_finished
+					}
+					set_country_flag = EOE_ghost_12_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.12
+						}
+					}
+				}
+				20 = {
+					modifier = {
+						factor = 0
+						OR = {
+							has_country_flag = EOE_ghost_13_finished
+							AND = {
+								is_hezi_in_shroud = no
+								is_okra_in_shroud = yes
+							}
+							AND = {
+								is_hezi_in_shroud = yes
+								is_okra_in_shroud = no
+							}
+						}
+					}
+					set_country_flag = EOE_ghost_13_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.13
+						}
+					}
+				}
+				20 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_88_finished
+					}
+					set_country_flag = EOE_ghost_88_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.88
+						}
+					}
+				}
+			}
+		}
+	}	
+}
+ship_event = { #史诗。
+	id = EOE_ghost.128
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		owner = {
+			random_list = {
+				4 = {
+					set_country_flag = EOE_ghost_9_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.9
+						}
+					}
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_23_finished
+					}
+					set_country_flag = EOE_ghost_23_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.23
+						}
+					}
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_35_finished
+					}
+					set_country_flag = EOE_ghost_35_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.35
+						}
+					}
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_89_finished
+					}
+					set_country_flag = EOE_ghost_89_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.89
+						}
+					}
+				}
+			}
+		}
+	}	
+}
+ship_event = { #传说。
+	id = EOE_ghost.129
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		owner = {
+			random_list = {
+				1 = {
+					set_country_flag = EOE_ghost_9_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.9
+						}
+					}
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_4_finished
+					}
+					set_country_flag = EOE_ghost_4_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.4
+						}
+					}
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_country_flag = EOE_ghost_90_finished
+					}
+					set_country_flag = EOE_ghost_90_finished
+					root = {
+						ship_event = {
+							id = EOE_ghost.90
+						}
+					}
+				}
+			}
+		}
+	}	
+}
+
