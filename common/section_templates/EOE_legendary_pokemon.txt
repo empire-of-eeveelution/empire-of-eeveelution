@@ -212,9 +212,35 @@ ship_section_template = {
 
 ship_section_template = {
 	key = "EOE_Minior"
+	entity = EOEmpty_entity
 	ship_size = EOE_minior
 	fits_on_slot = mid
-	entity = "EOEmpty_entity"
+	#should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_turret"
+		locatorname = "EOE_Minior_body"
+	}
+
+	small_utility_slots = 10
+	aux_utility_slots = 3
+	resources = {
+		category = pokemon_ships
+		cost = {
+			minerals = 200
+			rare_crystals = 2
+		}
+	}
+	
+}
+
+ship_section_template = {
+	key = "EOE_Minior_2"
+	entity = EOEmpty_entity
+	ship_size = EOE_minior_2
+	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
 	

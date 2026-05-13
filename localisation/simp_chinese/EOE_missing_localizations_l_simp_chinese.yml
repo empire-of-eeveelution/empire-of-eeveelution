@@ -255,26 +255,26 @@
  
  
  #eevent
- #小陨星事件链。稍后修复。
- eevent.45.desc:0 "Placeholder"
- eevent.45.a:0 "Placeholder"
- eevent.46.desc.a:0 "Placeholder"
- eevent.46.desc.b:0 "Placeholder"
- eevent.46.a:0 "Placeholder"
- eevent.46.b:0 "Placeholder"
- eevent.46.c:0 "Placeholder"
- eevent.46.d:0 "Placeholder"
- eevent.48.desc:0 "Placeholder"
- eevent.48.a:0 "Placeholder"
- eevent.49.desc:0 "Placeholder"
- eevent.49.a:0 "Placeholder"
- eevent.50.desc:0 "Placeholder"
- eevent.50.a:0 "Placeholder"
- eevent.51.desc:0 "Placeholder"
- eevent.51.desc.a:0 "Placeholder"
- eevent.51.desc.b:0 "Placeholder"
- eevent.52.desc.a:0 "Placeholder"
- eevent.52.desc.b:0 "Placeholder"
+ #小陨星事件链。已经修改了。
+#  eevent.45.desc:0 "Placeholder"
+#  eevent.45.a:0 "Placeholder"
+#  eevent.46.desc.a:0 "Placeholder"
+#  eevent.46.desc.b:0 "Placeholder"
+#  eevent.46.a:0 "Placeholder"
+#  eevent.46.b:0 "Placeholder"
+#  eevent.46.c:0 "Placeholder"
+#  eevent.46.d:0 "Placeholder"
+#  eevent.48.desc:0 "Placeholder"
+#  eevent.48.a:0 "Placeholder"
+#  eevent.49.desc:0 "Placeholder"
+#  eevent.49.a:0 "Placeholder"
+#  eevent.50.desc:0 "Placeholder"
+#  eevent.50.a:0 "Placeholder"
+#  eevent.51.desc:0 "Placeholder"
+#  eevent.51.desc.a:0 "Placeholder"
+#  eevent.51.desc.b:0 "Placeholder"
+#  eevent.52.desc.a:0 "Placeholder"
+#  eevent.52.desc.b:0 "Placeholder"
  
  
  #eevium 究极空间事件，后面修复。

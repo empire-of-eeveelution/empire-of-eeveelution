@@ -43,3 +43,10 @@ on_monthly_pulse_country = {
 		EOE_branch.159 #月检防止土著提升时代
 	}
 }
+
+on_fauna_captured = {
+	events = {
+		eevent.54
+		eevent.48 #捕获小陨星
+	}
+}

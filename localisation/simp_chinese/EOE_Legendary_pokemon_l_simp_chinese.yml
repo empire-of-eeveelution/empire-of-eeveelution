@@ -12,9 +12,17 @@ EOE_Reshiram:0"莱希拉姆"
 EOE_Reshiram_plural:0"莱希拉姆"
 EOE_Reshiram_cap:0"莱希拉姆"
 SHIP_GRAPHICS_EOE_RESHIRAM_DESC:0 "这种太空巨兽以同名宝可梦为蓝本制造，模块化设计使其可以兼容不同的器官配置。莱希拉姆兼顾火力与防护，还能搭载大规模杀伤性武器。"
+EOE_category_minior:0 "$EOE_Minior$"
 EOE_Minior:0"小陨星"
-EOE_minior:0"小陨星"
+EOE_minior:0"$EOE_Minior$"
+EOE_minior_cap:0"$EOE_Minior$"
+EOE_minior_plural:0"$EOE_Minior$"
 SHIP_GRAPHICS_EOE_MINIOR_DESC:0 "太空毒爆虫"
+EOE_Minior_2:0"$EOE_Minior$"
+EOE_minior_2:0"$EOE_Minior$"
+EOE_minior_2_cap:0"$EOE_Minior$"
+EOE_minior_2_plural:0"$EOE_Minior$"
+SHIP_GRAPHICS_EOE_MINIOR_2_DESC:0 "$SHIP_GRAPHICS_EOE_MINIOR_DESC$"
 ################################武器
 EOE_MEW_Psychic:0"精神强念"
 EOE_MEW_Psychic_small:0"精神强念"
@@ -103,6 +111,8 @@ RESHIRAM_SENSOR:0"莱希拉姆型心灵感应器"
 RESHIRAM_SENSOR_DESC:1"这个器官可以让莱希拉姆窥探现实世界在虚境中的投影，附近数十光年内的一切活动在来自另一维度的注视下都无所遁形。"
 
 #########小陨星
+
+
 MINIOR_BIO_REACTOR:0"质能转换核心"
 MINIOR_BIO_REACTOR_DESC:1"变异小陨星的特殊结构令其能以极高效率进行质能转换"
 MINIOR_JUMP_DRIVE:0"小陨星型灵能跃迁引擎"
@@ -182,8 +192,7 @@ tech_EOE_Minior:0"构造体：小陨星"
 tech_EOE_Minior_desc:0"正常的小陨星是微小的石质太空生物，难以造成任何威胁。但是这些与稀有水晶结合而变异的小陨星，体型巨大，能量充盈，易于繁殖，或许能够在太空战当中发挥用处。"
 TECH_UNLOCK_MINIOR_CONSTRUCTION_TITLE:0 "§H解锁舰船类型：§!小陨星"
 TECH_UNLOCK_MINIOR_CONSTRUCTION_DESC:0 "§H小陨星§!\n这种变异太空生物体经过改造，培育和筛选之后，可以用于太空作战。它们将遵循被编入思维核心的本能，冲向敌人并甩出大部分质量进行自爆攻击。"
-
-
+EOE_minior_desc:0 "与稀有水晶结合而变异的小陨星，体型巨大，能量充盈。"
 
 
 
