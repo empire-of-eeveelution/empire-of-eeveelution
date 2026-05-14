@@ -1,5 +1,21 @@
 namespace = bixie
 
+event = {
+    id = bixie.0
+    hide_window = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+        every_country = {
+            limit = {
+                is_ai = no
+                is_species_class = Eeveelutions
+            }
+            country_event = { id = bixie.1 days = 2 }
+        }
+    }
+}
+
 country_event = {
     id = bixie.1
     hide_window = yes
