@@ -4,6 +4,10 @@
 	randomized = yes
 	alias = "Eeveelution"
   ship_names = {
+
+	# generic = {
+	# 	"Eevee" "Vaporeon" "Jolteon" "Flareon" "Espeon" "Umbreon" "Leafeon" "Glaceon" "Sylveon"
+	# }
     corvette = {
     "Pidgey" "Spearow" "Zubat" "Hoothoot" "Ledyba" "Natu" "Starly" "Pidove" "Woobat" "Archen" "Fletchling" "pikipek" "Horsea" "Staryu" "Chinchou" "Carvanha" "Barboach" "Dratini" "Vibrava" "Denio" "Weedle" "Gastly"
     }
@@ -46,17 +50,24 @@
     ion_cannon = {
     "Slowbrow" "Tentacruel" "Relicanth"
     }
-    mew = {
+    EOE_mew = {
     "Mew"
     }
-    latias = {
+    EOE_latias = {
     "Latias"
     }
-    reshiram = {
+    EOE_reshiram = {
     "Reshiram"
     }
+	EOE_minior_2 = {
+	"Minior"
+	}
   }
-  
+#   ship_class_names = {
+# 		generic = {
+# 			"Eevee" "Vaporeon" "Jolteon" "Flareon" "Espeon" "Umbreon" "Leafeon" "Glaceon" "Sylveon"
+# 		}
+# 	}
   
   ## Borrowing the human1 names for some of these for now... I guess it makes sense considering the creators.
   fleet_names = {

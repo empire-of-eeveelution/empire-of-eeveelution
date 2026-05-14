@@ -1,0 +1,6 @@
+EOE_category_minior = {
+	rarity_icons = GFX_ship_category_crystalline_entity_rarity
+	namelist = CrystallineEntity
+	desc = EOE_minior_desc
+	preferred_planet_class = pc_pulsar
+}

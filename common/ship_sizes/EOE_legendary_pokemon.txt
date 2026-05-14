@@ -13,9 +13,9 @@ EOE_mew = {
 	}
 	combat_disengage_chance = 10
 	max_hitpoints = 2000
-	size_multiplier = 2
+	size_multiplier = 4
 	combat_size_multiplier = 8
-	fleet_slot_size = 1
+	fleet_slot_size = 4
 	section_slots = { "mid" = { locator = "EOE_MEW_Psychic" } }
 	num_target_locators = 0
 	is_space_station = no
@@ -71,9 +71,9 @@ EOE_Latias = {
 	}
 	combat_disengage_chance = 10
 	max_hitpoints = 3000
-	size_multiplier = 4
+	size_multiplier = 8
 	combat_size_multiplier = 1
-	fleet_slot_size = 4
+	fleet_slot_size = 8
 	section_slots = { "mid" = { locator = "EOE_Latias_body" } }
 	num_target_locators = 0
 	is_space_station = no
@@ -127,9 +127,9 @@ EOE_Reshiram = {
 	}
 	combat_disengage_chance = 10
 	max_hitpoints = 15000
-	size_multiplier = 8
+	size_multiplier = 16
 	combat_size_multiplier = 4
-	fleet_slot_size = 8
+	fleet_slot_size = 16
 	section_slots = { "mid" = { locator = "" } }
 	num_target_locators = 0
 	is_space_station = no
@@ -171,6 +171,8 @@ EOE_Reshiram = {
 
 EOE_minior = {
 	entity = EOE_minior_entity
+	ship_category = EOE_category_minior
+	mutation_components_size = small
 	formation_priority = 1
 	is_space_object = yes
 	graphical_culture = no
@@ -188,7 +190,7 @@ EOE_minior = {
 	size_multiplier = 1
 	combat_size_multiplier = 4
 	fleet_slot_size = 1
-	section_slots = { "mid" = { locator = "EOE_Minior_body" } }
+	section_slots = { "mid" = { locator = "EOE_Minior_body" } "mutations" = { locator = "EOE_Minior_body" } }
 	num_target_locators = 0
 	is_space_station = no
 	icon_frame = 5
@@ -203,17 +205,105 @@ EOE_minior = {
 			owner_main_species = {
 				is_species_class = Eeveelutions
 			}
-			is_ai = no }
+			is_ai = no
+		}
+	}
+	potential_country = {
+		always = no
+	}
+	construction_type = { starbase_hatchery starbase_beastport starbase_shipyard}
+	is_space_fauna_ship = yes
+	space_fauna_values = {
+		age_threshold = { max = 40 }
+		culling_value = {
+			category = vivarium
+			produces = {
+				rare_crystals = @tier1_rare_crystal_culling_value
+			}
+		}
+		icon_frame = 1
 	}
 	resources = {
 		category = ships
 		upkeep = {
 			minerals = 0.4
 		}
+		inline_script = {
+			script = "grand_archive/space_fauna_upkeep"
+			RESOURCE = minerals
+			UPKEEP = 0.4
+		}
 	}
 	
 	class = shipclass_military
-	construction_type = starbase_shipyard
+
+	is_designable = yes
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	required_component_set = "pokemon_mint"
+	ai_ship_data = {
+		
+	}
+	available_to_everyone = yes
+}
+
+EOE_minior_2 = {
+	entity = EOE_minior_entity
+	ship_category = EOE_category_minior
+	#mutation_components_size = small
+	formation_priority = 1
+	is_space_object = yes
+	graphical_culture = no
+	can_be_inspected = yes
+	max_speed = 200
+	acceleration = 2
+	rotation_speed = 2
+	collision_radius = 4
+	modifier = {
+		ship_armor_add = 400
+		ship_evasion_add = 80
+	}
+	combat_disengage_chance = 10
+	max_hitpoints = 800
+	size_multiplier = 1
+	combat_size_multiplier = 4
+	fleet_slot_size = 1
+	section_slots = { "mid" = { locator = "EOE_Minior_body" }  }
+	num_target_locators = 0
+	is_space_station = no
+	icon_frame = 5
+	icon = ship_size_military_1
+	base_buildtime = 90
+	default_behavior = swarm
+	enable_default_design = yes
+	enable_3dview_in_ship_browser = no
+	prerequisites = { "tech_EOE_Minior" }
+	potential_construction = {
+		owner ={ 
+			owner_main_species = {
+				is_species_class = Eeveelutions
+			}
+			is_ai = no
+		}
+	}
+	construction_type =  starbase_shipyard
+	
+	resources = {
+		category = ships
+		upkeep = {
+			minerals = 0.4
+		}
+		inline_script = {
+			script = "grand_archive/space_fauna_upkeep"
+			RESOURCE = minerals
+			UPKEEP = 0.4
+		}
+	}
+	
+	class = shipclass_military
 
 	is_designable = yes
 	required_component_set = "power_core"

@@ -133,8 +133,8 @@ weapon_component_template = {
 		max = 1451
 	}
 	windup = {
-		min = 10
-		max = 20
+		min = 40
+		max = 50
 	}
 	total_fire_time = 15
 	range = 275
@@ -167,8 +167,8 @@ weapon_component_template = {
 		max = 1451
 	}
 	windup = {
-		min = 10
-		max = 20
+		min = 40
+		max = 50
 	}
 	total_fire_time = 15
 	range = 275
@@ -196,8 +196,8 @@ weapon_component_template = {
 	ai_tags = { weapon_role_anti_hull }
 	ai_tag_weight = 2
 	damage = {
-		min = 64
-		max = 96
+		min = 16
+		max = 24
 	}
 	windup = {
 		min = 2

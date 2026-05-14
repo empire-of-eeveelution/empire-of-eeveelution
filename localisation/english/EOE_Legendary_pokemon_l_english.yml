@@ -209,3 +209,43 @@ pokemon_ships:0"Pokemon biological tissue"
 
 opinion_burned_an_uninhabited_world:0 "You burned an uninhabited world!"
 opinion_burned_my_uninhabited_world:0 "You burned my uninhabited world!"
+
+
+###小陨星
+
+tech_EOE_Minior:0 "Construct Minior"
+tech_EOE_Minior_desc:0 "Normal Minior are tiny stone-based space creatures that pose little threat. However, these Minior, mutated by bonding with rare crystals, have grown enormous in size, become energy-rich, and reproduce easily—perhaps proving useful in space warfare."
+
+TECH_UNLOCK_MINIOR_CONSTRUCTION_TITLE:0 "§HUnlock Ship Type:§! Minior"
+TECH_UNLOCK_MINIOR_CONSTRUCTION_DESC:0 "§HMinior§!\nThese mutated space creatures, modified, bred, and selected, can be used in space combat. Following the instincts programmed into their cognitive core, they will charge at enemies and fling most of their mass in a suicide explosion attack."
+
+MINIOR_BIO_REACTOR:0 "Mass-Energy Conversion Core"
+MINIOR_BIO_REACTOR_DESC:1 "The unique structure of the mutated Minior allows for extremely efficient mass-energy conversion."
+
+MINIOR_JUMP_DRIVE:0 "Minior-class Psychic Jump Drive"
+MINIOR_JUMP_DRIVE_DESC:1 "This organ uses the Minior's psychic power to disrupt the continuity of spacetime, eliminating the distance between origin and destination. In theory."
+
+MINIOR_THRUSTER:0 "Minior-class Thruster"
+MINIOR_THRUSTER_DESC:1 "Similar to the 'Force' used by Eevees when manipulating objects, this organ converts psychic energy into kinetic energy, allowing the Minior to fly through space."
+
+MINIOR_COMPUTER:0 "Minior-class Cognitive Core"
+MINIOR_COMPUTER_DESC:1 "Minior lack complex intelligence. Following the instincts programmed into their cognitive core, they will charge at enemies and fling most of their mass in a suicide explosion attack, then harass the enemy to draw fire."
+
+MINIOR_SENSOR:0 "Minior Telepathic Sensor"
+MINIOR_SENSOR_DESC:1 "This organ allows the Minior to peer into the Shroud’s projection of reality. All activity within dozens of light-years is laid bare under the gaze from another dimension."
+
+EOE_MINIOR_EXPLOSION:0 "Explosion"
+EOE_MINIOR_EXPLOSION_DESC:0 "Hurls the energy and crystalline matter stored in the mutated Minior's body at enemy ships. Upon impact, the large number of crystal fragments convert their entire mass into energy, causing severe damage to enemy vessels. After the explosion, only a core remains of the Minior.\nUnlike the Pokémon move of the same name, this doesn't destroy the Minior, but reaccumulating the crystalline matter still takes a long time."
+
+EOE_category_minior:0 "Minior"
+EOE_Minior:0 "Minior"
+EOE_minior:0 "Minior"
+SHIP_GRAPHICS_EOE_MINIOR_DESC:0 "Space Baneling"
+EOE_category_minior:0 "$EOE_Minior$"
+EOE_minior_cap:0"$EOE_Minior$"
+EOE_minior_plural:0"$EOE_Minior$"
+EOE_Minior_2:0"$EOE_Minior$"
+EOE_minior_2:0"$EOE_Minior$"
+EOE_minior_2_cap:0"$EOE_Minior$"
+EOE_minior_2_plural:0"$EOE_Minior$"
+SHIP_GRAPHICS_EOE_MINIOR_2_DESC:0 "$SHIP_GRAPHICS_EOE_MINIOR_DESC$"
