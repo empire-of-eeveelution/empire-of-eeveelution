@@ -346,3 +346,24 @@ leader_trait_brave_troop = {
 	initial = no
 	randomized = no
 }
+
+leader_trait_Bravetroop_power = {
+    leader_trait_type = destiny
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_supreme_warrior"
+        RARITY = paragon
+        COUNCIL = yes
+        TIER = none
+    }
+    leader_class = { commander }
+    councilor_modifier = {
+        army_damage_mult = -99999
+        army_morale = 0.66
+		army_health = 1
+        army_collateral_damage_mult = -0.66
+    }
+	custom_tooltip = leader_trait_Bravetroop_power_tooltip
+    background_icon = "GFX_leader_background_destiny_1"
+}

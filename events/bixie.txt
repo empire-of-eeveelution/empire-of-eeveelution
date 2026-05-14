@@ -51,32 +51,70 @@ country_event = {
                     save_global_event_target_as = bixie_species
                 }
             }
-            create_leader = {
-                name = "辟邪"
-                class = commander
-                species = event_target:bixie_species
-                skill = 10
-                event_leader = yes
-                set_age = 5000000
-                skip_background_generation = yes
-                gender = indeterminable
-                immortal = yes
-                hide_age = yes
-                traits = {
-                    trait = leader_trait_brave_troop
-                    trait = leader_trait_commander_omni_type
-                    trait = random_trait
-                    trait = random_trait
-                    trait = random_trait
+            if = {
+                limit = {
+                    NOT = { has_global_flag = ECL_ready }
                 }
-                custom_catch_phrase = bixie_catch_phrase
-                effect = {
-                    this = {
-                        change_leader_portrait = EOEBIXIE
-                        set_leader_flag = pixiubixie
-                        set_leader_flag = legendary_leader
-                        set_leader_flag = immune_to_negative_traits
-                        save_global_event_target_as = leader_bixie
+                create_leader = {
+                    name = "BRA2"
+                    class = commander
+                    species = event_target:bixie_species
+                    skill = 10
+                    event_leader = yes
+                    set_age = 5000000
+                    skip_background_generation = yes
+                    gender = indeterminable
+                    immortal = yes
+                    hide_age = yes
+                    traits = {
+                        trait = leader_trait_brave_troop
+                        trait = leader_trait_commander_omni_type
+                        trait = subclass_commander_councilor
+                        trait = random_trait
+                        trait = random_trait
+                    }
+                    custom_catch_phrase = bixie_catch_phrase
+                    effect = {
+                        this = {
+                            change_leader_portrait = EOEBIXIE
+                            set_leader_flag = pixiubixie
+                            set_leader_flag = legendary_leader
+                            set_leader_flag = immune_to_negative_traits
+                            save_global_event_target_as = leader_bixie
+                        }
+                    }
+                }
+            }
+            if = {
+                limit = { has_global_flag = ECL_ready }
+                create_leader = {
+                    name = "BRA2"
+                    class = commander
+                    species = event_target:bixie_species
+                    skill = 10
+                    event_leader = yes
+                    set_age = 5000000
+                    skip_background_generation = yes
+                    gender = indeterminable
+                    immortal = yes
+                    hide_age = yes
+                    traits = {
+                        trait = leader_trait_brave_troop
+                        trait = leader_trait_commander_omni_type
+                        trait = leader_trait_Bravetroop_power
+                        trait = subclass_commander_councilor
+                        trait = random_trait
+                        trait = random_trait
+                    }
+                    custom_catch_phrase = bixie_catch_phrase
+                    effect = {
+                        this = {
+                            change_leader_portrait = EOEBIXIE
+                            set_leader_flag = pixiubixie
+                            set_leader_flag = legendary_leader
+                            set_leader_flag = immune_to_negative_traits
+                            save_global_event_target_as = leader_bixie
+                        }
                     }
                 }
             }
@@ -315,5 +353,91 @@ country_event = {
     option = {
         name = bixie.7.a
         country_event = { id = bixie.6 }
+    }
+}
+planet_event = {
+    id = bixie.8
+    hide_window = yes
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = {
+                any_ground_combat_attacker = {
+                    owner = { any_owned_leader = { has_trait = leader_trait_Bravetroop_power is_councilor = yes } }
+                }
+            }
+            set_planet_flag = bravetroop_power_target
+            random_ground_combat_defender = {
+                random_list = {
+                    70 = { remove_army = yes }
+                    30 = {  }
+                }
+            }
+            if = {
+                limit = {
+                    this = { has_planet_flag = bravetroop_power_target }
+                }
+                this = { planet_event = { id = bixie.8 days = 30 } }
+            }
+        }
+        if = {
+            limit = {
+                any_ground_combat_defender = {
+                    owner = { any_owned_leader = { has_trait = leader_trait_Bravetroop_power } }
+                }
+            }
+            set_planet_flag = bravetroop_power_target
+            random_ground_combat_attacker = {
+                random_list = {
+                    70 = { remove_army = yes }
+                    30 = {  }
+                }
+            }
+            if = {
+                limit = {
+                    this = { has_planet_flag = bravetroop_power_target }
+                }
+                this = { planet_event = { id = bixie.8 days = 30 } }
+            }
+        }
+    }
+}
+country_event = {
+    id = bixie.9
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        fromfrom = {
+            has_planet_flag = bravetroop_power_target
+        }
+    }
+    immediate = {
+        fromfrom = {
+            remove_planet_flag = bravetroop_power_target
+        }
+    }
+}
+country_event = {
+    id = bixie.10
+    title = bixie.6.title
+    desc = bixie.10.desc
+    picture = GFX_leader_recruitment_bg_renowned
+    is_triggered_only = yes
+    trigger = {
+        is_ai = no
+    }
+    event_window_type = leader_recruit
+    picture_event_data = {
+        portrait = event_target:leader_bixie
+        room = ethic_spaceship_room
+    }
+    option = {
+        name = bixie.10.a
+        response_text = bixie.10.text
+        is_dialog_only = yes
+    }
+    option = {
+        name = bixie.10.b
+        tag = hire_leader
     }
 }

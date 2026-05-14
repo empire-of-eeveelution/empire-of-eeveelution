@@ -548,3 +548,47 @@ EOE_edict_leader_trait_governor_water_type_1_pick = {  #水系总督
 # 		}
 # 	}
 # }
+# ECL_debug_getbixie = {
+# 	icon = "GFX_edict_fund"
+# 	length = -1
+# 	potential = { event_target:leader_bixie.owner = { is_ai = yes } NOT = { has_country_flag = debug_bixie } has_global_flag = ECL_ready }
+# 	effect = {
+# 		event_target:leader_bixie = {
+# 			kill_leader = {
+# 				fire = yes
+# 			}
+# 		}
+# 		set_country_flag = debug_bixie
+# 		create_leader = {
+# 			name = "BRA2"
+# 			class = commander
+# 			species = event_target:bixie_species
+# 			skill = 10
+# 			event_leader = yes
+# 			set_age = 5000000
+# 			skip_background_generation = yes
+# 			gender = indeterminable
+# 			immortal = yes
+# 			hide_age = yes
+# 			traits = {
+# 				trait = leader_trait_brave_troop
+# 				trait = leader_trait_commander_omni_type
+# 				trait = leader_trait_Bravetroop_power
+# 				trait = subclass_commander_councilor
+# 				trait = random_trait
+# 				trait = random_trait
+# 			}
+# 			custom_catch_phrase = bixie_catch_phrase
+# 			effect = {
+# 				this = {
+# 					change_leader_portrait = EOEBIXIE
+# 					set_leader_flag = pixiubixie
+# 					set_leader_flag = legendary_leader
+# 					set_leader_flag = immune_to_negative_traits
+# 					save_global_event_target_as = leader_bixie
+# 				}
+# 			}
+# 		}
+# 		country_event = { id = bixie.10 }
+# 	}
+# }
