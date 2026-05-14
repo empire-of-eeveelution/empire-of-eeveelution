@@ -359,7 +359,7 @@ leader_trait_Bravetroop_power = {
     }
     leader_class = { commander }
     councilor_modifier = {
-        army_damage_mult = -99999
+        army_damage_mult = 0.5
         army_morale = 0.66
 		army_health = 1
         army_collateral_damage_mult = -0.66
