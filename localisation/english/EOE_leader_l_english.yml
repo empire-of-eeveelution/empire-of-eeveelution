@@ -667,7 +667,7 @@ OKRA_BIO_REACTOR_DESC:0"The ancient Zerg organ discovered in an exploration by O
  bixie_catch_phrase:0"As we agreed, for the next 5,000 years, your enemies will feel the wrath of a mythical beast."
  leader_trait_Bravetroop_power:0"Luck of the Pixiu"
  leader_trait_Bravetroop_power_desc:0"This combat-oriented Pixiu has bestowed his luck attribute upon our armies, greatly increasing the probability of our armies landing critical hits on enemies."
- leader_trait_Bravetroop_power_tooltip:0"If this leader is serving on our Council, there is a 70% chance each month in every battle our armies participate in to randomly instakill one enemy army unit."
+ leader_trait_Bravetroop_power_tooltip:0"If this leader is serving on our Council, there is a 100% chance each month in every battle our armies participate in to randomly instakill two enemy army unit."
  edict_ECL_debug_getbixie:0"Instantly Acquire Bixie"
  bixie.10.desc:0"Seriously, are you in that much of a rush? You didn't even hesitate to uncomment this debug edict in the MOD files just so I could serve you ASAP!?"
  bixie.10.a:0"Well, I wanted to test some of your mechanics, waiting for the easter egg RNG takes too much effort~"

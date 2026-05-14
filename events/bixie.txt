@@ -368,10 +368,10 @@ planet_event = {
             }
             set_planet_flag = bravetroop_power_target
             random_ground_combat_defender = {
-                random_list = {
-                    70 = { remove_army = yes }
-                    30 = {  }
-                }
+                remove_army = yes
+            }
+            random_ground_combat_defender = {
+                remove_army = yes
             }
             if = {
                 limit = {
@@ -388,10 +388,10 @@ planet_event = {
             }
             set_planet_flag = bravetroop_power_target
             random_ground_combat_attacker = {
-                random_list = {
-                    70 = { remove_army = yes }
-                    30 = {  }
-                }
+                remove_army = yes
+            }
+            random_ground_combat_attacker = {
+                remove_army = yes
             }
             if = {
                 limit = {
