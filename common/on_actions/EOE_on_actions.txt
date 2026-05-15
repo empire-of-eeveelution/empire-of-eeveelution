@@ -130,3 +130,29 @@ on_ship_disabled = {
 		eevent.47
 	}
 }
+
+on_ground_combat_started = {
+	events = {
+		bixie.8
+	}
+}
+on_planet_attackers_win = {
+	events = {
+		bixie.9
+	}
+}
+on_planet_attackers_lose = {
+	events = {
+		bixie.9
+	}
+}
+on_planet_defenders_lose = {
+	events = {
+		bixie.9
+	}
+}
+on_planet_defenders_win = {
+	events = {
+		bixie.9
+	}
+}
