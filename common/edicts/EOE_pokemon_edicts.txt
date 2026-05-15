@@ -585,6 +585,7 @@ EOE_edict_leader_trait_governor_water_type_1_pick = {  #水系总督
 # 					set_leader_flag = pixiubixie
 # 					set_leader_flag = legendary_leader
 # 					set_leader_flag = immune_to_negative_traits
+# 					set_leader_tier = leader_tier_legendary
 # 					save_global_event_target_as = leader_bixie
 # 				}
 # 			}
