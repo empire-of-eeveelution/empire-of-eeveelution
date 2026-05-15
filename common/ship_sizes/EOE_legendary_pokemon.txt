@@ -14,7 +14,7 @@ EOE_mew = {
 	combat_disengage_chance = 10
 	max_hitpoints = 2000
 	size_multiplier = 4
-	combat_size_multiplier = 8
+	combat_size_multiplier = 1
 	fleet_slot_size = 4
 	section_slots = { "mid" = { locator = "EOE_MEW_Psychic" } }
 	num_target_locators = 0
@@ -72,7 +72,7 @@ EOE_Latias = {
 	combat_disengage_chance = 10
 	max_hitpoints = 3000
 	size_multiplier = 8
-	combat_size_multiplier = 1
+	combat_size_multiplier = 2
 	fleet_slot_size = 8
 	section_slots = { "mid" = { locator = "EOE_Latias_body" } }
 	num_target_locators = 0
@@ -187,9 +187,9 @@ EOE_minior = {
 	}
 	combat_disengage_chance = 10
 	max_hitpoints = 800
-	size_multiplier = 1
+	size_multiplier = 4
 	combat_size_multiplier = 4
-	fleet_slot_size = 1
+	fleet_slot_size = 4
 	section_slots = { "mid" = { locator = "EOE_Minior_body" } "mutations" = { locator = "EOE_Minior_body" } }
 	num_target_locators = 0
 	is_space_station = no
@@ -209,7 +209,7 @@ EOE_minior = {
 		}
 	}
 	potential_country = {
-		always = no
+		always = no   #由于没有找到方法生成正常的动物朋友舰船设计，所以只能使用普通舰船。
 	}
 	construction_type = { starbase_hatchery starbase_beastport starbase_shipyard}
 	is_space_fauna_ship = yes
@@ -221,6 +221,10 @@ EOE_minior = {
 				rare_crystals = @tier1_rare_crystal_culling_value
 			}
 		}
+		monthly_initial_breeding_chance = 5
+		monthly_increased_breeding_chance = 1
+		breeding_cooldown_months = 60
+		reanimated_ship_design = NAME_EOE_CRYSTALSHIP
 		icon_frame = 1
 	}
 	resources = {
@@ -250,9 +254,8 @@ EOE_minior = {
 	available_to_everyone = yes
 }
 
-EOE_minior_2 = {
+EOE_minior_another = {
 	entity = EOE_minior_entity
-	ship_category = EOE_category_minior
 	#mutation_components_size = small
 	formation_priority = 1
 	is_space_object = yes
@@ -268,9 +271,9 @@ EOE_minior_2 = {
 	}
 	combat_disengage_chance = 10
 	max_hitpoints = 800
-	size_multiplier = 1
+	size_multiplier = 4
 	combat_size_multiplier = 4
-	fleet_slot_size = 1
+	fleet_slot_size = 4
 	section_slots = { "mid" = { locator = "EOE_Minior_body" }  }
 	num_target_locators = 0
 	is_space_station = no
@@ -283,10 +286,10 @@ EOE_minior_2 = {
 	prerequisites = { "tech_EOE_Minior" }
 	potential_construction = {
 		owner ={ 
-			owner_main_species = {
-				is_species_class = Eeveelutions
+			OR = {
+				is_ai = no
+				is_country_type = crystal
 			}
-			is_ai = no
 		}
 	}
 	construction_type =  starbase_shipyard

@@ -78,6 +78,11 @@ ship_event = {
 	}
 	option = {
 		name = EOE_branch.2.a
+		trigger = {
+			owner = {
+				is_ai = no
+			}
+		}
 		ship_event = {
 			id = EOE_branch.3
 		}
@@ -6104,17 +6109,17 @@ country_event = {
 	option = {
 		name = "EOE_branch.149.a" 
 		country_event = {
-			id = EOE_branch.142 days = 1800
+			id = EOE_branch.170 days = 1800
 		}
 	} 
 }
 #星界裂隙
 #奇怪的信号似乎来自于一处星界裂隙。
 country_event = {
-	id = EOE_branch.142
+	id = EOE_branch.170
 	is_triggered_only = yes
-	title = EOE_branch.142.name
-	desc = EOE_branch.142.desc
+	title = EOE_branch.170.name
+	desc = EOE_branch.170.desc
 	picture = GFX_evt_astral_rift
 	show_sound = ap_rift_event_0_astral_wonder
 	immediate = {
@@ -6130,12 +6135,12 @@ country_event = {
 			spawn_astral_rift = {
 				id = EOE_ultra_system_rift
 				random_pos = yes
-				orbit_angle = 360
+				spawn_sound = no
 			}
 		}
 	}
 	option = {
-		name = "EOE_branch.142.a"
+		name = "EOE_branch.170.a"
 	}
 }
 
@@ -6158,12 +6163,13 @@ astral_rift_event = {
 	}
 	option = {
 		name = EOE_branch.148.a
+		
 		allow = {
-			explorer = {
-				has_country_flag = EOE_searched_electromagnetic_chaotic
-			}
-			fail_text = {
-				text = EOE_branch.148.a.failtext
+			custom_tooltip = {
+				fail_text = EOE_branch.148.a.failtext
+				explorer = {
+					has_country_flag = EOE_searched_electromagnetic_chaotic
+				}
 			}
 		}
 		set_next_astral_rift_event = { id = EOE_branch.147 }
@@ -6476,7 +6482,7 @@ astral_rift_event = {
 		# }
 	}
 	option = {
-		name = EOE_branch.157.a
+		name = EOE_branch.157.b
 		trigger = {
 			exists = event_target:EOE_wormsystem_1
 		}
@@ -6498,52 +6504,52 @@ astral_rift_event = {
 		}
 		finish_astral_rift = yes
 	}
-	option = {
-		name = EOE_branch.157.a
-		trigger = {
-			exists = event_target:EOE_wormsystem_2
-		}
-		EOE_create_ultra_system = yes
-		event_target:EOE_wormsystem_2 = {
-			spawn_natural_wormhole = {
-				bypass_type = wormhole
-				random_pos = no
-				orbit_angle = 207
-			}
-			event_target:EOE_ultra_space_system = {
-				spawn_natural_wormhole = {
-					bypass_type = wormhole
-					random_pos = no
-					orbit_angle = 159
-			 	}
-				link_wormholes = prev
-			}
-		}
-		finish_astral_rift = yes
-	}
-	option = {
-		name = EOE_branch.157.a
-		trigger = {
-			exists = event_target:EOE_wormsystem_3
-		}
-		EOE_create_ultra_system = yes
-		event_target:EOE_wormsystem_3 = {
-			spawn_natural_wormhole = {
-				bypass_type = wormhole
-				random_pos = no
-				orbit_angle = 207
-			}
-			event_target:EOE_ultra_space_system = {
-				spawn_natural_wormhole = {
-					bypass_type = wormhole
-					random_pos = no
-					orbit_angle = 159
-			 	}
-				link_wormholes = prev
-			}
-		}
-		finish_astral_rift = yes
-	}
+	# option = {
+	# 	name = EOE_branch.157.c
+	# 	trigger = {
+	# 		exists = event_target:EOE_wormsystem_2
+	# 	}
+	# 	EOE_create_ultra_system = yes
+	# 	event_target:EOE_wormsystem_2 = {
+	# 		spawn_natural_wormhole = {
+	# 			bypass_type = wormhole
+	# 			random_pos = no
+	# 			orbit_angle = 207
+	# 		}
+	# 		event_target:EOE_ultra_space_system = {
+	# 			spawn_natural_wormhole = {
+	# 				bypass_type = wormhole
+	# 				random_pos = no
+	# 				orbit_angle = 159
+	# 		 	}
+	# 			link_wormholes = prev
+	# 		}
+	# 	}
+	# 	finish_astral_rift = yes
+	# }
+	# option = {
+	# 	name = EOE_branch.157.d
+	# 	trigger = {
+	# 		exists = event_target:EOE_wormsystem_3
+	# 	}
+	# 	EOE_create_ultra_system = yes
+	# 	event_target:EOE_wormsystem_3 = {
+	# 		spawn_natural_wormhole = {
+	# 			bypass_type = wormhole
+	# 			random_pos = no
+	# 			orbit_angle = 207
+	# 		}
+	# 		event_target:EOE_ultra_space_system = {
+	# 			spawn_natural_wormhole = {
+	# 				bypass_type = wormhole
+	# 				random_pos = no
+	# 				orbit_angle = 159
+	# 		 	}
+	# 			link_wormholes = prev
+	# 		}
+	# 	}
+	# 	finish_astral_rift = yes
+	# }
 	option = {
 		name = EOE_branch.157.e #别调查惹,到此为止
 		astral_thread_large_reward = yes
@@ -6905,6 +6911,7 @@ country_event = {
 				count = 5
 				kill_pop = yes
 			}
+			change_pc = EOE_pc_nolight
 		}
 	} 
 }
@@ -6920,29 +6927,29 @@ fleet_event = {
 
 	immediate = {
 		from = { set_site_progress_locked = yes }
-		create_country = {
-			name = "NAME_EOE_Crystal_z"
-			type = EOE_crystal
-			flag = {
-				icon = {
-					category = "zoological"
-					file = "flag_zoological_1.dds"
-				}
-				background= {
-					category = "backgrounds"
-					file = "00_solid.dds"
-				}
-				colors={
-					"black"
-					"black"
-					"null"
-					"null"
-				}
-			}
-			effect = {
-				save_global_event_target_as = EOE_crystal_z_country
-			}
-		}
+		# create_country = {
+		# 	name = "NAME_EOE_Crystal_z"
+		# 	type = EOE_crystal
+		# 	flag = {
+		# 		icon = {
+		# 			category = "zoological"
+		# 			file = "flag_zoological_1.dds"
+		# 		}
+		# 		background= {
+		# 			category = "backgrounds"
+		# 			file = "00_solid.dds"
+		# 		}
+		# 		colors={
+		# 			"black"
+		# 			"black"
+		# 			"null"
+		# 			"null"
+		# 		}
+		# 	}
+		# 	effect = {
+		# 		save_global_event_target_as = EOE_crystal_z_country
+		# 	}
+		# }
 	}
 
 	after = { 
@@ -6953,7 +6960,7 @@ fleet_event = {
 			}
 		}
 		
-		event_target:EOE_crystal_z_country = {
+		owner = {
 			if = {
 				limit = {
 					is_scrappy_mod_used = yes
@@ -6965,7 +6972,8 @@ fleet_event = {
 						is_boss = yes
 					}
 					effect = {
-						set_owner = event_target:EOE_crystal_z_country
+						#set_owner = event_target:EOE_crystal_z_country
+						set_owner = root.owner
 						create_ship = {
 							name = "NAME_EOE_Necrozma_3"
 							design = NAME_EOE_necrozma_ship
@@ -6978,7 +6986,8 @@ fleet_event = {
 						}
 						save_global_event_target_as = EOE_necrozma_fleet
 						set_fleet_flag = EOE_necrozma_fleet
-						set_location = event_target:EOE_ultra_home_planet					
+						set_location = event_target:EOE_ultra_home_planet		
+						set_event_locked = yes			
 					}
 					
 				}
@@ -6991,7 +7000,7 @@ fleet_event = {
 						is_boss = yes
 					}
 					effect = {
-						set_owner = event_target:EOE_crystal_z_country
+						set_owner = root.owner
 						create_ship = {
 							name = "NAME_EOE_Necrozma_3_small"
 							design = NAME_EOE_necrozma_smallship
@@ -7005,6 +7014,7 @@ fleet_event = {
 						save_global_event_target_as = EOE_necrozma_fleet
 						set_fleet_flag = EOE_necrozma_fleet
 						set_location = event_target:EOE_ultra_home_planet
+						set_event_locked = yes		
 					}
 					
 				}
@@ -7036,22 +7046,27 @@ country_event = {
 	option = {
 		name = EOE_branch.167.a #你是什么？
 		response_text = EOE_branch.167.a.reply
+		is_dialog_only = yes
 	}
 	option = {
 		name = EOE_branch.167.b #你们以前的宇宙经历了什么？
 		response_text = EOE_branch.167.b.reply
+		is_dialog_only = yes
 	}
 	option = {
 		name = EOE_branch.167.c #为什么究极空间会变成如今这样？
 		response_text = EOE_branch.167.c.reply
+		is_dialog_only = yes
 	}
 	option = {
 		name = EOE_branch.167.d #能修吗？
 		response_text = EOE_branch.167.d.reply
+		is_dialog_only = yes
 	}
 	option = {
 		name = EOE_branch.167.e #接下来你有什么打算？
 		response_text = EOE_branch.167.e.reply
+		is_dialog_only = yes
 	}
 	option = {
 		name = EOE_branch.167.f #可以支援我们的科学研究吗？
@@ -7059,13 +7074,16 @@ country_event = {
 		add_modifier = {
 			modifier = EOE_necrozma_research days = -1
 		}
+		is_dialog_only = yes
 	}
 	option = {
 		name = EOE_branch.167.g #我们需要你的力量
 		response_text = EOE_branch.167.g.reply
+		is_dialog_only = yes
 	}
 	option = {
 		name = EOE_branch.167.h #结束通讯
+		add_relic = r_EOE_necrozma_z
 	}
 }
 #交换舰队所属
@@ -7081,10 +7099,10 @@ country_event = {
 	}
 	immediate = {
 		event_target:EOE_necrozma_fleet = {
-			set_owner = root
+			set_event_locked = no
 		}
 		country_event = {
-			id = EOE_branch.169 days = 1800
+			id = EOE_branch.169 days = 3600
 		}
 	}
 	option = {
@@ -7103,20 +7121,8 @@ country_event = {
 	}
 	immediate = {
 		event_target:EOE_necrozma_fleet = {
-			set_owner = event_target:EOE_crystal_z_country
-			queue_actions = {
-				repeat = {
-					find_closest_system = {
-						trigger = {
-							id = necrozma.1
-							has_star_flag = ultra_space_system
-						}
-						found_system = {
-							move_to = this
-						}
-					}
-				}
-			}
+			set_location = event_target:EOE_ultra_home_planet
+			set_event_locked = yes
 		}
 	}
 	option = {

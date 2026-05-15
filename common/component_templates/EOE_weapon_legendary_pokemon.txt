@@ -399,7 +399,7 @@ weapon_component_template = { #大自爆
 		}
 	}
 
-	size_restriction = { EOE_minior EOE_minior_2 }
+	size_restriction = { EOE_minior EOE_minior_another }
 	prerequisites = { "tech_EOE_Minior" }
 	component_set = "EOE_MINIOR_EXPLOSION"
 	projectile_gfx = "neutron_torpedoes" #again, a placeholder untill we get something better.
@@ -665,7 +665,7 @@ utility_component_template = {
 
 		ACOT_CLOAKING_DIMENSIONAL
 	}
-	size_restriction = { EOE_mew EOE_minior EOE_minior_2}
+	size_restriction = { EOE_mew EOE_minior EOE_minior_another}
 	prerequisites = { "tech_EOE_Mew" }
 	component_set = "MEW_CLOAKING_HIGH"
 	ai_tags = {
@@ -725,7 +725,7 @@ utility_component_template = {
 
 		ACOT_CLOAKING_DIMENSIONAL
 	}
-	size_restriction = { EOE_mew EOE_minior EOE_minior_2 }
+	size_restriction = { EOE_mew EOE_minior EOE_minior_another }
 	prerequisites = { "tech_EOE_Mew" }
 	component_set = "MEW_CLOAKING_LOW"
 	ai_tags = {
@@ -1368,7 +1368,7 @@ utility_component_template = {
 		}
 	}
 	size_restriction = {
-		EOE_mew EOE_Latias EOE_Reshiram EOE_minior EOE_minior_2
+		EOE_mew EOE_Latias EOE_Reshiram EOE_minior EOE_minior_another
 	}
 	
 	ai_weight = {
@@ -1398,7 +1398,7 @@ utility_component_template = {
 		ship_emergency_ftl_mult = -1
 	}
 	size_restriction = {
-		EOE_mew EOE_minior EOE_minior_2
+		EOE_mew EOE_minior EOE_minior_another
 	}
 
 	ai_weight = {
@@ -1552,7 +1552,7 @@ utility_component_template = {  #小陨星 反应堆
 
 	prerequisites = { "tech_EOE_Minior" }
 	component_set = "power_core"
-	size_restriction = { EOE_minior EOE_minior_2 }
+	size_restriction = { EOE_minior EOE_minior_another }
 
 ai_weight = {
 		weight = 0
@@ -1582,7 +1582,7 @@ utility_component_template = {  ###小陨星 跃迁引擎
 ai_weight = {
 		weight = 0
 	}
-	size_restriction = { EOE_minior EOE_minior_2 }
+	size_restriction = { EOE_minior EOE_minior_another }
 	prerequisites = { "tech_jump_drive_1" }
 	component_set = "ftl_components"
 }
@@ -1608,7 +1608,7 @@ utility_component_template = { #小陨星   推进器
 
 	prerequisites = { "tech_EOE_Minior" }
 	component_set = "thruster_components"
-	size_restriction = { EOE_minior EOE_minior_2 }
+	size_restriction = { EOE_minior EOE_minior_another }
 
 ai_weight = {
 		weight = 0
@@ -1637,7 +1637,7 @@ utility_component_template = {  #小陨星电脑
 	ship_behavior = "swarm"
 	prerequisites = { "tech_EOE_Minior" }
 	class_restriction = { shipclass_military }
-	size_restriction = { EOE_minior EOE_minior_2 }
+	size_restriction = { EOE_minior EOE_minior_another }
 	component_set = "combat_computers"
 
 ai_weight = {
@@ -1666,7 +1666,7 @@ utility_component_template = {   #小陨星  雷达
 
 	prerequisites = { "tech_EOE_Minior" }
 	component_set = "sensor_components"
-	size_restriction = { EOE_minior EOE_minior_2 }
+	size_restriction = { EOE_minior EOE_minior_another }
 ai_weight = {
 		weight = 0
 	}}

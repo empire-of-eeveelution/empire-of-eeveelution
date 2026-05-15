@@ -46,7 +46,7 @@ on_monthly_pulse_country = {
 
 on_fauna_captured = {
 	events = {
-		eevent.54
+		#eevent.54
 		eevent.48 #捕获小陨星
 	}
 }

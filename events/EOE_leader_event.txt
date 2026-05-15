@@ -10316,10 +10316,16 @@ country_event = {
 				has_country_flag = has_z_site
 			}
 		}
-		set_country_flag = has_z_site
-		event_target:wild_eeveelution_planet = {
-			create_archaeological_site = site_EOE_eevium_z
+		hidden_effect = {
+			set_country_flag = has_z_site
+			event_target:wild_eeveelution_planet = {
+				create_archaeological_site = site_EOE_eevium_z
+			}
+			country_event = {
+				id = leadereevent.1012
+			}
 		}
+		
 	}
 	option = {
 		name = leadereevent.1000.f #投喂香蕉1
@@ -11242,10 +11248,10 @@ country_event = {
 }
 #Z纯晶研究所
 country_event = {
-	id = leadereevent.1005
+	id = leadereevent.1012
 	is_triggered_only = yes
-	title = leadereevent.1005.name
-	desc = leadereevent.1005.desc
+	title = leadereevent.1012.name
+	desc = leadereevent.1012.desc
 	diplomatic = yes
 	custom_gui = "enclave_curator_window"
 	picture_event_data = {

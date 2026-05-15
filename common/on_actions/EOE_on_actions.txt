@@ -10,7 +10,7 @@ on_game_start_country = {
 	events = {	
 		eevent.6
 		eevent.6998
-		eevent.45 #小陨星晶体开局刷新
+		#eevent.45 #小陨星晶体开局刷新
 		# leadereevent.3000
 	}
 }

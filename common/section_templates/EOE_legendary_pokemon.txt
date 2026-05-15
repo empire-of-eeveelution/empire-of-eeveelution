@@ -237,9 +237,9 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "EOE_Minior_2"
+	key = "EOE_minior_another"
 	entity = EOEmpty_entity
-	ship_size = EOE_minior_2
+	ship_size = EOE_minior_another
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
