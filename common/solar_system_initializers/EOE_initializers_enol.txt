@@ -8,7 +8,10 @@ EOE_cthugha_system = {
 	flags = { EOE_cthugha_system }
 
 	prevent_anomalies = no
-
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135
+	}
 	planet = {
 		count = 1
 		class = star
@@ -25,7 +28,7 @@ EOE_cthugha_system = {
 	change_orbit = 45
 	
 	planet = {
-		count = { min = 2 max = 4 }
+		count = 2
 		class = rl_unhabitable_planets
 		orbit_distance = 20
 		orbit_angle = { min = 90 max = 270 }
@@ -50,6 +53,14 @@ EOE_cthugha_system = {
 			}
 		}
 	}
+	change_orbit = 20
+	planet = {
+		class = "pc_asteroid"
+		count = { min = 2 max = 4 }
+		size = { min = 3 max = 7 }
+		orbit_angle = { min = 90 max = 270 }
+		orbit_distance = 0
+	}
 	planet = {
 		count = { min = 2 max = 4 }
 		class = rl_unhabitable_planets
@@ -64,6 +75,7 @@ EOE_cthugha_system = {
 			orbit_distance = 5
 		}
 	}
+	
 	init_effect = {
 		save_global_event_target_as = EOE_cthugha_system
 	}

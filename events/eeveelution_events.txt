@@ -28,6 +28,12 @@ country_event ={
 			country_event = {
 				 id = EOE_branch.1 days = 2 #克子事件
 			}
+			country_event = {
+				id = eevent.45 days = 5 #小陨星 
+			}
+			country_event = {
+				id = eevent.46 days = 8 #小陨星第二轮
+			}
 		}
 		every_country = {
 			if = {
@@ -3015,16 +3021,13 @@ country_event = {   #######给加决斗者岗位的地块
 		}
 		event_target:wild_eeveelution_planet = {
 			add_deposit = d_EOE_Pokemon_Jingjichang
-			# hidden_effect = {
-			# 	planet_event = {
-			# 		id = EOE_branch.146 days = 3600
-			# 	}
-			# }
-		}
-		
+			hidden_effect = {
+				planet_event = {
+					id = EOE_branch.146 days = 3600
+				}
+			}
+		}	
 	}
-	
-
 }
 
 
@@ -3272,73 +3275,22 @@ country_event = {  #开局刷小陨星，少量。小陨星属于原版晶体国
 	id = eevent.45
 	hide_window = yes
 	is_triggered_only = yes
-	trigger= {
-		OR = {
-			owner_main_species = { has_trait = trait_EOE_Inheritors }
-			has_origin = origin_lotus_hezi_start
-		}
-		is_ai = no
-	}
 	immediate = {
-		closest_system = {
+		create_crystal_country = yes
+		event_target:crystal_country = {
+			random_system = {
 			limit = {
-				NOR = {
-					has_star_flag = hostile_system
-					is_same_value = root.solar_system
-					is_pirate_system = yes
-					any_system_planet = { is_colony = yes }
-					has_owner = yes
-				}
-				has_planet_class = pc_asteroid 
-				has_access_fleet = root.owner
+				has_star_flag = red_system
 			}
-			min_steps = 4
-			max_steps = 10
-			set_star_flag = EOE_minior_system
-			system_event = {
-				id = eevent.46 days = 2
-			}
-		}
-	}
-}
-system_event = {
-	id = eevent.46
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		random_system_planet = {
-			limit = {
-				is_planet_class = pc_asteroid
-			}
-			create_fleet = {
+			save_event_target_as = EOE_red_system
+			random_system_planet = {
+				create_fleet = {
 					name = "NAME_Ruby_Stack_Modified"
 					settings = {
 						spawn_debris = no
 					}
 					effect = {
 						set_owner = event_target:crystal_country
-						while = {
-							count = 7
-							create_ship = {
-								name = ""
-								design = "NAME_Large_Crystal_Entity_Red"
-							}
-						}
-						while = {
-							count = 9
-							create_ship = {
-								name = ""
-								design = "NAME_Medium_Crystal_Entity_Red"
-							}
-						}
-						while = {
-							count = 15
-							create_ship = {
-								name = ""
-								design = "NAME_Small_Crystal_Entity_Red"
-							}
-						}
 						while = {
 							count = 5
 							create_ship = {
@@ -3348,26 +3300,231 @@ system_event = {
 						}
 						set_fleet_stance = passive
 						set_fleet_flag = EOE_minior_fleet
+						set_location = event_target:EOE_red_system
 					}							
 				}
+			}
 		}
-		while = {
-			count = 3
-			random_system = {
-				limit = {
-					any_fleet_in_system = {
-						owner = {
-							is_same_value = event_target:crystal_country
-						} 
-						NOT = {
-							has_fleet_flag = EOE_minior_fleet
+		random_system = {
+			limit = {
+				has_star_flag = blue_system
+			}
+			save_event_target_as = EOE_blue_system
+			random_system_planet = {
+				create_fleet = {
+					name = "NAME_Ruby_Stack_Modified"
+					settings = {
+						spawn_debris = no
+					}
+					effect = {
+						set_owner = event_target:crystal_country
+						while = {
+							count = 5
+							create_ship = {
+								name = ""
+								design = "NAME_EOE_CRYSTALSHIP"
+							}
+						}
+						set_fleet_stance = passive
+						set_fleet_flag = EOE_minior_fleet
+						set_location = event_target:EOE_blue_system
+					}							
+				}
+			}
+		}
+		random_system = {
+			limit = {
+				has_star_flag = green_system
+			}
+			save_event_target_as = EOE_green_system
+			random_system_planet = {
+				create_fleet = {
+					name = "NAME_Ruby_Stack_Modified"
+					settings = {
+						spawn_debris = no
+					}
+					effect = {
+						set_owner = event_target:crystal_country
+						while = {
+							count = 5
+							create_ship = {
+								name = ""
+								design = "NAME_EOE_CRYSTALSHIP"
+							}
+						}
+						set_fleet_stance = passive
+						set_fleet_flag = EOE_minior_fleet
+						set_location = event_target:EOE_green_system
+					}							
+				}
+			}
+		}
+		random_system = {
+			limit = {
+				has_star_flag = red2_system
+			}
+			save_event_target_as = EOE_red2_system
+			random_system_planet = {
+				create_fleet = {
+					name = "NAME_Ruby_Stack_Modified"
+					settings = {
+						spawn_debris = no
+					}
+					effect = {
+						set_owner = event_target:crystal_country
+						while = {
+							count = 5
+							create_ship = {
+								name = ""
+								design = "NAME_EOE_CRYSTALSHIP"
+							}
+						}
+						set_fleet_stance = passive
+						set_fleet_flag = EOE_minior_fleet
+						set_location = event_target:EOE_red2_system
+					}							
+				}
+			}
+		}
+		random_system = {
+			limit = {
+				has_star_flag = blue2_system
+			}
+			save_event_target_as = EOE_blue2_system
+			random_system_planet = {
+				create_fleet = {
+					name = "NAME_Ruby_Stack_Modified"
+					settings = {
+						spawn_debris = no
+					}
+					effect = {
+						set_owner = event_target:crystal_country
+						while = {
+							count = 5
+							create_ship = {
+								name = ""
+								design = "NAME_EOE_CRYSTALSHIP"
+							}
+						}
+						set_fleet_stance = passive
+						set_fleet_flag = EOE_minior_fleet
+						set_location = event_target:EOE_blue2_system
+					}							
+				}
+			}
+		}
+		random_system = {
+			limit = {
+				has_star_flag = green2_system
+			}
+			save_event_target_as = EOE_green2_system
+			random_system_planet = {
+				create_fleet = {
+					name = "NAME_Ruby_Stack_Modified"
+					settings = {
+						spawn_debris = no
+					}
+					effect = {
+						set_owner = event_target:crystal_country
+						while = {
+							count = 5
+							create_ship = {
+								name = ""
+								design = "NAME_EOE_CRYSTALSHIP"
+							}
+						}
+						set_fleet_stance = passive
+						set_fleet_flag = EOE_minior_fleet
+						set_location = event_target:EOE_green2_system
+					}							
+				}
+			}
+		}
+		random_system = {
+			limit = {
+				has_star_flag = crystal_home_system
+			}
+			save_event_target_as = EOE_crystal_home_system
+			random_system_planet = {
+				create_fleet = {
+					name = "NAME_Ruby_Stack_Modified"
+					settings = {
+						spawn_debris = no
+					}
+					effect = {
+						set_owner = event_target:crystal_country
+						while = {
+							count = 20
+							create_ship = {
+								name = ""
+								design = "NAME_EOE_CRYSTALSHIP"
+							}
+						}
+						set_fleet_stance = passive
+						set_fleet_flag = EOE_minior_fleet
+						set_location = event_target:EOE_crystal_home_system
+					}							
+				}
+			}
+		}
+		}
+	}
+}
+
+country_event = {  #第二轮刷小陨星
+	id = eevent.46
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		create_crystal_country = yes
+		event_target:crystal_country = {
+			while = {
+				count = 5
+				random_system = {
+					limit = {
+						NOR = {
+							has_star_flag = hostile_system
+							is_pirate_system = yes
+							any_system_planet = { is_colony = yes }
+							has_owner = yes
+						}
+					}
+					save_event_target_as = EOE_spawn_crystal_system
+					random_system_planet = {
+						create_fleet = {
+							name = "NAME_Ruby_Stack_Modified"
+							settings = {
+								spawn_debris = no
+							}
+							effect = {
+								set_owner = event_target:crystal_country
+								while = {
+									count = 5	
+									create_ship = {
+										name = ""
+										design = "NAME_EOE_CRYSTALSHIP"
+									}
+								}
+								set_fleet_stance = passive
+								set_fleet_flag = EOE_minior_fleet
+								set_location = event_target:EOE_spawn_crystal_system
+							}							
 						}
 					}
 				}
-				random_system_planet = {
-					limit = {
-						is_planet_class = pc_asteroid
+			}
+			random_system = {
+				limit = {
+					NOR = {
+						has_star_flag = hostile_system
+						is_pirate_system = yes
+						any_system_planet = { is_colony = yes }
+						has_owner = yes
 					}
+				}
+				save_event_target_as = EOE_spawn_crystal_system
+				random_system_planet = {
 					create_fleet = {
 						name = "NAME_Ruby_Stack_Modified"
 						settings = {
@@ -3376,28 +3533,7 @@ system_event = {
 						effect = {
 							set_owner = event_target:crystal_country
 							while = {
-								count = 1
-								create_ship = {
-									name = ""
-								design = "NAME_Large_Crystal_Entity_Red"
-								}
-							}
-							while = {
-								count = 4
-								create_ship = {
-									name = ""
-									design = "NAME_Medium_Crystal_Entity_Red"
-								}
-							}
-							while = {
-								count = 8
-								create_ship = {
-									name = ""
-									design = "NAME_Small_Crystal_Entity_Red"
-								}
-							}
-							while = {
-								count = 2
+								count = 20	
 								create_ship = {
 									name = ""
 									design = "NAME_EOE_CRYSTALSHIP"
@@ -3405,11 +3541,12 @@ system_event = {
 							}
 							set_fleet_stance = passive
 							set_fleet_flag = EOE_minior_fleet
+							set_location = event_target:EOE_cthugha_system
 						}							
 					}
 				}
 			}
-		}
+		}	
 	}
 }
 fleet_event = { #第一次进入星系时候提示。

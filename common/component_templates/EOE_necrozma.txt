@@ -28,7 +28,7 @@ weapon_component_template = {
 	tracking = 1
 	armor_penetration = 0.5
 	shield_penetration = 0.5
-	size_damage_factor = 20
+	size_damage_factor = 5
 
 
 	ai_weight = {
@@ -66,7 +66,7 @@ weapon_component_template = {
 	tracking = 1
 	armor_penetration = 0.5
 	shield_penetration = 0.5
-	size_damage_factor = 20
+	size_damage_factor = 5
 
 
 	ai_weight = {
@@ -105,7 +105,7 @@ weapon_component_template = {
 	tracking = 0.5
 	armor_penetration = 0.5
 	shield_penetration = 0.5
-	size_damage_factor = 4
+	size_damage_factor = 0.5
 
 
 	ai_weight = {

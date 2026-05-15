@@ -136,7 +136,8 @@ spriteTypes = {
 	}
 	spriteType = { 
 		name = "GFX_EOE_ship_size_military_16"
-		texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_necrozma_ship_size.dds"
+		sprite_sheet_sprite_type = "GFX_ship_sizes_top"
+		#texturefile = "gfx/interface/icons/ship_parts/GFX_EOE_necrozma_ship_size.dds"
 	}
 	spriteType = { #画不来这个，暂时借用原版怪物
 		name = "GFX_EOE_ship_size_military_16_top"

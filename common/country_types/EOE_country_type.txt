@@ -64,5 +64,6 @@ EOE_crystal = {
 	}
 	modules = {
 		basic_technology_module = {}
+		standard_event_module = {}
 	}
 }

@@ -83,8 +83,16 @@ r_EOE_eevium_z = {
 		}
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
-			country_event = {
-				id = EOE_branch.149 days = 180
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = EOE_ultra_event_activated
+					}
+				}
+				set_country_flag = EOE_ultra_event_activated
+				country_event = {
+					id = EOE_branch.149 days = 180
+				}
 			}
 			add_modifier = {
 				modifier = "relic_activation_cooldown"
@@ -111,7 +119,7 @@ r_EOE_necrozma_z = {
 		category = relics
 		# Activation cost
 		cost = {
-			energy = 100000
+			energy = 150000
 		}
 	}
 
@@ -137,7 +145,7 @@ r_EOE_necrozma_z = {
 			}
 			add_modifier = {
 				modifier = "relic_activation_cooldown"
-				days = 1800
+				days = 3600
 			}
 		}
 	}

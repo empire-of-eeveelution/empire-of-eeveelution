@@ -59,7 +59,7 @@
     EOE_reshiram = {
     "Reshiram"
     }
-	EOE_minior_2 = {
+	EOE_minior_another = {
 	"Minior"
 	}
   }

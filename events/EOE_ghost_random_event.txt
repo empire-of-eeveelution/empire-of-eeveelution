@@ -1528,7 +1528,7 @@ ship_event = {
 	}
 	desc = {
 		trigger = {
-			NOT = {
+			NOR = {
 				has_global_flag = gray_goo_empire_set
 				has_global_flag = dragon_season
 				has_global_flag = gray_goo_crisis_set
@@ -1770,29 +1770,35 @@ ship_event = {
 		name = EOE_ghost.20.a
 		hidden_effect = {
 			owner = {
-				random_planet_within_border = {
+				if = {
 					limit = {
-						has_anomaly = no
-						OR = {
-							is_planet_class = pc_molten
-							is_planet_class = pc_barren
-							is_planet_class = pc_barren_cold
-							is_planet_class = pc_frozen
-							is_planet_class = pc_toxic
-							is_planet_class = pc_gas_giant
-							is_planet_class = pc_asteroid
+						NOR = {
+							has_country_flag = gray_army_active
+							has_country_flag = gray_warship_active
+							has_country_flag = gray_official_active
 						}
 					}
-					prev = {
+					random_planet_within_border = {
+						limit = {
+							has_anomaly = no
+							OR = {
+								is_planet_class = pc_molten
+								is_planet_class = pc_barren
+								is_planet_class = pc_barren_cold
+								is_planet_class = pc_frozen
+								is_planet_class = pc_toxic
+								is_planet_class = pc_gas_giant
+								is_planet_class = pc_asteroid
+							}
+						}
 						enable_special_project = {
 							name = EOE_gray_goo
-							location = prev
-							owner = this
+							location = this
+							owner = this.owner
 						}
 					}
 				}
 			}
-
 			if = {
 				limit = {
 					owner = {
