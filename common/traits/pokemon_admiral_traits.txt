@@ -363,6 +363,7 @@ leader_trait_Bravetroop_power = {
         army_morale = 0.66
 		army_health = 1
         army_collateral_damage_mult = -0.66
+        planet_combat_width_add = 5
     }
 	custom_tooltip_with_modifiers = leader_trait_Bravetroop_power_tooltip
     background_icon = "GFX_leader_background_destiny_1"

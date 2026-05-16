@@ -96,6 +96,7 @@ country_event = {
                             set_leader_flag = pixiubixie
                             set_leader_flag = legendary_leader
                             set_leader_flag = immune_to_negative_traits
+                            set_leader_tier = leader_tier_legendary
                             save_global_event_target_as = leader_bixie
                         }
                     }
@@ -129,6 +130,7 @@ country_event = {
                             set_leader_flag = pixiubixie
                             set_leader_flag = legendary_leader
                             set_leader_flag = immune_to_negative_traits
+                            set_leader_tier = leader_tier_legendary
                             save_global_event_target_as = leader_bixie
                         }
                     }
