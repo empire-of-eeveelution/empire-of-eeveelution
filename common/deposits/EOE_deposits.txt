@@ -322,7 +322,8 @@ d_EOE_wild_eeveelution_habitat = {
 		
 	planet_modifier = { 
 		planet_max_districts_add = -3
-		job_culture_worker_add = 200
+		job_bureaucrat_add = 200
+		#job_culture_worker_add = 200
 		planet_jobs_society_research_produces_mult = 0.1
 	}
 	resources = {
@@ -346,7 +347,8 @@ d_EOE_wild_eeveelution_reserve = {
 	
 	planet_modifier = {
 		planet_max_districts_add = -1
-		job_culture_worker_add = 300
+		job_bureaucrat_add = 300
+		#job_culture_worker_add = 300
 		planet_jobs_society_research_produces_mult = 0.15
 	}
 	
@@ -473,7 +475,23 @@ d_EOE_protoss_relic = {
 
 	potential = { always = no }
 	
-	planet_modifier = {
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				has_ethic = ethic_gestalt_consciousness
+			}
+		}
+		job_calculator_physicist_add = 67
+		job_calculator_biologist_add = 67
+		job_calculator_engineer_add = 67
+		planet_researchers_produces_mult = 0.1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				NOT = { has_ethic = ethic_gestalt_consciousness }
+			}
+		}
 		job_physicist_add = 67
 		job_biologist_add = 67
 		job_engineer_add = 67
@@ -571,9 +589,23 @@ d_EOE_Pokemon_Jingjichang = {
 
 	potential = { always = no }
 	
-	planet_modifier = {
-		
-    	job_duelist_add = 300
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				NOT = { has_ethic = ethic_gestalt_consciousness }
+			}
+		}
+		job_entertainer_add = 300
+    	#job_duelist_add = 300
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				 has_ethic = ethic_gestalt_consciousness 
+			}
+		}
+		job_logistics_add = 300
+    	#job_duelist_add = 300
 	}
 	
 }
@@ -630,9 +662,9 @@ d_EOE_wild_eevee_protoss_city = {
 			exists = owner
 			 owner = { NOT = { has_ethic = ethic_gestalt_consciousness }     } 
 		}
-		planet_housing_add = 5
-		planet_amenities_add = 10	
-		planet_max_buildings_add = 1
+		planet_housing_add = 500
+		planet_amenities_add = 1000
+		planet_max_districts_add = 1
 	}
 	
 	triggered_planet_modifier = {
@@ -640,9 +672,9 @@ d_EOE_wild_eevee_protoss_city = {
 			exists = owner
 			 owner = { has_ethic = ethic_gestalt_consciousness      } 
 		}
-		planet_housing_add = 5
-		planet_amenities_no_happiness_add = 10
-		planet_max_buildings_add = 1
+		planet_housing_add = 500
+		planet_amenities_no_happiness_add = 1000
+		planet_max_districts_add = 1
 	}
 }
 
@@ -654,7 +686,7 @@ d_EOE_ghost_trace = { #消散传送门痕迹的研究促进了物理学
 	potential = { always = no }
 	
 	planet_modifier = {
-		planet_max_buildings_add = -1
+		planet_max_districts_add = -1
 		planet_jobs_physics_research_produces_mult = 0.05
 	}
 	
@@ -668,7 +700,7 @@ d_EOE_ghost_portal = { #传送门区域的研究促进了物理学
 	potential = { always = no }
 	
 	planet_modifier = {
-		planet_max_buildings_add = -1
+		planet_max_districts_add = -1
 		planet_jobs_physics_research_produces_mult = 0.05
 	}
 	

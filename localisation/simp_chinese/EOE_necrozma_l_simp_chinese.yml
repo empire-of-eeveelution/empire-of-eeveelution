@@ -220,7 +220,11 @@
  EOE_branch.71.desc: "来自§H[destroyed_system.GetName]§!的遥测数据表明，这个恒星系的首星在一瞬间发生了超新星爆炸。极其猛烈的冲击波摧毁了这个恒星系内的所有事物，恒星本体坍缩成了一个黑洞。\n\n然而§H[crisis_country.GetName]§!使用的似乎并不是我们熟悉的焚天神兵科技，而是一种被称为“§H奈克洛兹玛§!”的古怪实体。"
  EOE_branch.71.a: "无论如何，他们必须被正法。"
 
-
+ EOE_branch.172.name: "[From.GetName]的毁灭"
+ EOE_branch.172.desc: "随着电磁相互作用的弱化，§H[From.GetName]§!已经在引力的作用下坍缩，彻底毁灭。奈克洛兹玛也从中获取了少量需要的物理规则。"
+ EOE_branch.172.a: "确定"
+ EOE_branch.173.desc: "敌人摧毁了我们的§H[From.GetName]§!殖民地。如今它已经彻底坍缩了。"
+ EOE_branch.173.a: "他们会为此付出代价的！"
 
 
 

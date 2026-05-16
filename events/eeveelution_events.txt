@@ -195,7 +195,11 @@ country_event = {
 	location = event_target:eeveelab
 
 	is_triggered_only = yes
-	
+	trigger = {
+		NOT = {
+			has_origin = origin_lotus_hezi_start #秋荷起源不应该出这玩意
+		}
+	}
 	immediate = {
 		random_planet_within_border = {
 			limit = {

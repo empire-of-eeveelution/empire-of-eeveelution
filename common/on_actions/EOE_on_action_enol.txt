@@ -50,3 +50,23 @@ on_fauna_captured = {
 		eevent.48 #捕获小陨星
 	}
 }
+
+# 骡子马的轨道轰炸
+# Scope is same as on_destroy_planet
+# This = Planet
+# From = Fleet
+on_fracture_planet_with_necrozma_bombardment = {
+	events = {
+		crisis.5015 # Menace Objective - Destroy World/Empire
+		toxoids.8016 # Destroyed knight Keep placed up here so events fire while it's a planet
+		planet_destruction.600 # Frag holy world
+		origin.3245 # Glassing a Progenitors Nest
+		awareness.150 # Planet cracker used OR planet terraformed, chance to gain 20 awareness.
+	}
+}
+
+on_planet_bombarded = {
+	events = {
+		EOE_branch.171
+	}
+}
