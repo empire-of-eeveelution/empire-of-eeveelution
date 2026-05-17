@@ -1767,7 +1767,7 @@ ship_event = { #炎精事故-开始
 						has_leader_flag = EOE_leader_okra
 						has_leader_flag = EOE_leader_elena
 						has_trait = leader_trait_curator
-						has_skill >= 5
+						has_base_skill >= 5
 					}
 				}
 			}
@@ -2134,7 +2134,7 @@ ship_event = { #辐射事故发生
 							has_leader_flag = EOE_leader_okra
 							has_leader_flag = EOE_leader_elena
 							has_trait = leader_trait_curator
-							has_skill >= 5
+							has_base_skill >= 5
 						}
 					}
 				}
@@ -2377,7 +2377,7 @@ ship_event = { #发生了地震
 						has_leader_flag = EOE_leader_okra
 						has_leader_flag = EOE_leader_elena
 						has_trait = leader_trait_curator
-						has_skill >= 5
+						has_base_skill >= 5
 					}
 				}
 			} 
@@ -2457,7 +2457,7 @@ ship_event = { #看到了致疯绘画
 						has_leader_flag = EOE_leader_okra
 						has_leader_flag = EOE_leader_elena
 						has_trait = leader_trait_curator
-						has_skill >= 5
+						has_base_skill >= 5
 					}
 				}
 			} 
@@ -2728,7 +2728,7 @@ ship_event = { #触发了陷阱
 						has_leader_flag = EOE_leader_okra
 						has_leader_flag = EOE_leader_elena
 						has_trait = leader_trait_curator
-						has_skill >= 5
+						has_base_skill >= 5
 					}
 				}
 			} 
@@ -4625,7 +4625,7 @@ ship_event = {	#鬼故事调查——成功判断
 						has_leader_flag = EOE_leader_elena
 						has_leader_flag = EOE_leader_okra
 						has_trait = leader_trait_curator
-						has_skill = 6
+						has_base_skill = 6
 					}	
 				}
 			}
@@ -4808,7 +4808,7 @@ ship_event = {	#人口统计——成功判断
 						has_leader_flag = EOE_leader_elena
 						has_leader_flag = EOE_leader_okra
 						has_trait = leader_trait_curator
-						has_skill = 6
+						has_base_skill = 6
 					}	
 				}
 			}
@@ -4948,7 +4948,7 @@ ship_event = {	#实地考察——成功判断
 						has_leader_flag = EOE_leader_elena
 						has_leader_flag = EOE_leader_okra
 						has_trait = leader_trait_curator
-						has_skill = 6
+						has_base_skill = 6
 					}	
 				}
 			}
@@ -7121,6 +7121,7 @@ country_event = {
 	}
 	immediate = {
 		event_target:EOE_necrozma_fleet = {
+			clear_orders = yes
 			set_location = event_target:EOE_ultra_home_planet
 			set_event_locked = yes
 		}
@@ -7314,10 +7315,12 @@ planet_event = {
 				}
 			}
 			add_threat = { who = from.owner amount = 10 }
-			add_victory_score = {
-				source = destroyed_stars_score
-				score = 10
-			}
+			from.owner = {
+				add_victory_score = {
+					source = destroyed_stars_score
+					score = 10
+				}
+			}		
 		}
 		
 		from = {
@@ -7462,5 +7465,139 @@ country_event = {
 
 	option = {
 		name = crisis.6182.a
+	}
+}
+
+###下面写骡子马的轨道轰炸。炸成无光
+
+planet_event = {
+	id = EOE_branch.171
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_orbital_bombardment_stance = EOE_purify
+		colonizable_planet = yes
+		count_owned_pop_amount = {
+			count <= 50
+		}
+	}
+
+	immediate = {
+		add_threat = { who = from amount = 10 }
+		### FRACTURE
+		owner = { 
+			add_static_war_exhaustion = {
+				attacker = from
+				location = root
+				value_for_planet_destruction = 1
+			}
+		}
+
+		every_owned_pop_group = {
+			kill_single_pop = yes
+		}
+		remove_all_buildings = yes
+		destroy_colony = yes
+		clear_planet_modifiers = yes
+
+		if = {
+			limit = {
+				habitable_structure = yes
+			}
+			if = {
+				limit = { is_planet_class = pc_habitat }
+				spawn_habitat_cracker_effect = yes
+			}
+			else = {
+				spawn_ringworld_cracker_effect = yes
+				change_pc = pc_ringworld_habitable_damaged
+			}
+		}
+		else = {
+			hidden_effect = { clear_deposits = yes }	
+			if = {
+				limit = {
+					exists = planet_owner
+				}
+				planet_owner = {
+					country_event = {
+						id = EOE_branch.173
+						scopes = {
+							from = prev
+						}
+					}			
+				}
+			}
+			from = {
+				country_event = {
+					id = EOE_branch.172
+					scopes = {
+						from = prev
+					}
+				}
+			}
+			change_pc = pc_EOE_nolight
+			set_planet_size = 1
+		}
+
+		if = {
+			limit = {
+				has_orbital_bombardment = yes
+				any_fleet_in_orbit = {
+					exists = owner
+					owner = {
+						is_same_value = from
+					}
+				}
+			}
+			random_fleet_in_orbit = {
+				limit = {
+					exists = owner
+					owner = {
+						is_same_value = from
+					}
+				}
+				root = {
+					fire_on_action = {	
+						on_action = on_fracture_planet_with_necrozma_bombardment
+						scopes = {
+							from = prev
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = EOE_branch.172
+	title = "EOE_branch.172.name"
+	picture = GFX_evt_exploding_planet
+	desc = EOE_branch.172.desc
+	show_sound = event_super_explosion
+	location = from
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EOE_branch.172.a
+	}
+}
+
+country_event = {
+	id = EOE_branch.173
+	title = "EOE_branch.172.name"
+	picture = GFX_evt_exploding_planet
+	desc = EOE_branch.173.desc
+	show_sound = event_super_explosion
+	location = from
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EOE_branch.173.a
 	}
 }

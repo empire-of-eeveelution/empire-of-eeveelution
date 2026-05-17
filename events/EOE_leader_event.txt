@@ -911,7 +911,7 @@ country_event = {
 			country_event = {
 				id = leadereevent.26
 			}
-			#country_event = {  id = leadereevent.80 days = 1080 random = 180 }  #策反秋葵
+			country_event = {  id = leadereevent.80 days = 1080 random = 180 }  #策反秋葵
 		}
 	}
 }
@@ -949,7 +949,7 @@ country_event = {
 				id = leadereevent.22
 				days = 15
 			}
-			#country_event = {  id = leadereevent.80 days = 1080 random = 180 }  #策反秋葵
+			country_event = {  id = leadereevent.80 days = 1080 random = 180 }  #策反秋葵
 		}
 	}
 }
