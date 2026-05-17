@@ -13280,3 +13280,215 @@ country_event = {   #8级随机上特质
 		
 	}
 }
+######云谲
+country_event = {
+	id = leadereevent.283
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		# has_country_flag = EOE_hezi_cured
+	}
+	immediate = {
+		create_leader = {
+			name = NAME_yunja
+			species = root
+			class = scientist
+			tier = leader_tier_legendary
+			skill = 5
+			gender = male
+			set_age = 106
+			event_leader = yes
+			immortal = yes
+			background_ethic = ethic_egalitarian
+			traits = {
+				trait = leader_trait_yunja_paranoid
+				trait = leader_trait_scientist_psychic_type_psionic_benefits_1
+				trait = leader_trait_expertise_voidcraft
+				trait = leader_trait_expertise_materials
+				trait = leader_trait_ancient_cyber_brain
+			}
+			effect = {
+				this = {
+					set_leader_flag = legendary_leader
+					set_leader_flag = immune_to_negative_traits
+					set_leader_flag = paranoid_influencing
+					set_leader_tier = leader_tier_legendary
+					save_global_event_target_as = EOEyunja
+					change_leader_portrait = EOEyunja
+					set_variable = { which = yunjue_paranoid value = 0 }
+				}
+			}
+		}
+	}
+}
+fleet_event = {#进入云谲事件黑洞，转2835
+	id = leadereevent.2831
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		root.owner = {
+			is_ai = no
+			is_species_class = Eeveelutions
+			# has_country_flag = EOE_hezi_cured
+		}
+		root.solar_system = {
+			any_system_planet = { is_planet_class = pc_black_hole }
+			has_star_flag = yunja_blackhole
+		}
+		root = {
+			any_controlled_ship = { is_ship_size = science }
+		}
+	}
+	immediate = {
+		this.owner = {
+			country_event = { id = leadereevent.2832 }
+		}
+		this.solar_system = {
+			random_system_planet = {
+				limit = { has_planet_flag = yunja_planet }
+				enable_special_project = { name = YUNJA_FOUND }
+			}
+		}
+	}
+}
+country_event = {
+	id = leadereevent.2832
+	is_triggered_only = yes
+	title = leadereevent.2832.title
+	desc = leadereevent.2832.desc
+	picture = GFX_evt_exploding_ship
+	show_sound = event_scanner
+	option = {
+		name = leadereevent.2832.a
+	}
+}
+country_event = {
+	id = leadereevent.2833
+	is_triggered_only = yes
+	title = bixie.6.title
+	desc = leadereevent.2833.desc
+	picture = GFX_evt_exploding_ship
+	show_sound = event_scanner
+	diplomatic = yes
+	picture_event_data = {
+		portrait = EOEyunja
+		room = ethic_spaceship_room
+	}
+	option = {
+		name = leadereevent.2833.a
+		response_text = leadereevent.2833.a.text
+		is_dialog_only = yes
+	}
+	option = {
+		name = leadereevent.2833.b
+		response_text = leadereevent.2833.b.text
+		is_dialog_only = yes
+	}
+	option = {
+		name = leadereevent.2833.c
+		response_text = leadereevent.2833.c.text
+		is_dialog_only = yes
+		hidden_effect = { if = { limit = { NOT = { has_country_flag = leadereevent_2833_c } } set_country_flag = leadereevent_2833_c } }
+	}
+	option = {
+		name = leadereevent.2833.c.1
+		response_text = leadereevent.2833.c.1.text
+		is_dialog_only = yes
+		trigger = { has_country_flag = leadereevent_2833_c }
+	}
+	option = {
+		name = leadereevent.2833.d
+		tag = hire_leader
+		response_text = "leadereevent.2833.d.text"
+		hidden_effect = {
+			country_event = { id = leadereevent.283 }
+		}
+		sound = "par_skrand_hire"
+	}
+	option = {
+		name = leadereevent.2833.e
+		response_text = "leadereevent.2833.e.text"
+		tag = dismiss_leader
+		sound = "par_skrand_dismiss"
+	}
+}
+country_event = {#转破译
+	id = leadereevent.2834
+	title = bixie.6.title
+	desc = leadereevent.2834.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_evt_exploding_ship
+	show_sound = event_scanner
+	diplomatic = yes
+	picture_event_data = {
+		portrait = EOEyunja
+		room = ethic_spaceship_room
+	}
+	option = {
+		name = leadereevent.2834.a
+		response_text = leadereevent.2834.a.text
+		is_dialog_only = yes
+		hidden_effect = { if = { limit = { NOT = { has_country_flag = Rosetta_Stone_found } } set_country_flag = Rosetta_Stone_found } }
+	}
+	option = {
+		name = leadereevent.2834.b
+		allow = { has_country_flag = Rosetta_Stone_found }
+		response_text = leadereevent.2834.b.text
+		is_dialog_only = yes
+		hidden_effect = { if = { limit = { NOT = { has_country_flag = Preparing_to_decipher_the_Rosetta_Stone } } set_country_flag = Preparing_to_decipher_the_Rosetta_Stone } }
+	}
+	option = {
+		name = leadereevent.2834.c
+		allow = { has_country_flag = Preparing_to_decipher_the_Rosetta_Stone }
+		hidden_effect = { enable_special_project = { name = DECIPHER_ROSETTA } }#转2836
+	}
+}
+country_event = { #转2834
+	id = leadereevent.2835
+	title = leadereevent.2835.title
+	desc = leadereevent.2835.desc
+	is_triggered_only = yes
+	picture = GFX_evt_exploding_ship
+	option = {
+		name = leadereevent.2835.a
+		hidden_effect = { country_event = { id = leadereevent.2834 } }
+	}
+}
+country_event = { #转2833
+	id = leadereevent.2836
+	title = leadereevent.2836.title
+	desc = leadereevent.2836.desc
+	picture = GFX_evt_archaeological_dig
+	is_triggered_only = yes
+	option = {
+		name = leadereevent.2836.a
+		hidden_effect = { country_event = { id = leadereevent.2833 } }
+	}
+}
+country_event = {
+	id = leadereevent.2837
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		random_system = {
+			limit = {
+				exists = owner
+				owner = {
+					is_ai = no
+					is_species_class = Eeveelutions
+					# has_country_flag = EOE_hezi_cured
+				}
+			}
+			solar_system = {
+				spawn_system = {
+					min_distance = 9
+					max_distance = 12
+					initializer = yunja_blackhole
+					hyperlane = yes
+				}
+			}
+		}
+	}
+}

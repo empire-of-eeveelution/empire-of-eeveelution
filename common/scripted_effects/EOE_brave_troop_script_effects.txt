@@ -292,3 +292,31 @@ add_eeveelution_leader_trait = {
 		add_trait = { trait = leader_trait_water_type_Organic_Symbiont }
 	}
 }
+EOE_yunjue_paranoid_growth = {
+	if = {
+		limit = {
+			any_owned_leader = {
+				exists = owner
+				has_leader_flag = paranoid_influencing
+				is_councilor = yes
+			}
+		}
+		every_owned_leader = {
+			limit = {
+				has_leader_flag = paranoid_influencing
+				is_councilor = yes
+			}
+			random_list = {
+				60 = { change_variable = { which = yunjue_paranoid value = 10 } }
+				20 = { change_variable = { which = yunjue_paranoid value = 20 } }
+				20 = { change_variable = { which = yunjue_paranoid value = 5 } }
+			}
+			if = {
+				limit = {
+					check_variable = { which = yunjue_paranoid value > 100 }
+				}
+				set_variable = { which = yunjue_paranoid value = 100 }
+			}
+		}
+	}
+}

@@ -1,4 +1,4 @@
-special_project = { #炎之精
+special_project = { #寻找辟邪
     key = "BIXIE_FOUND"
     event_scope = ship_event
     days_to_research = 720

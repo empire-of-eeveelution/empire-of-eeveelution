@@ -895,3 +895,127 @@ op_superring_system = {
 		orbit_angle = { min = 90 max = 270 }
 	}
 }
+
+yunja_blackhole = {
+	class = "sc_black_hole"
+
+	flags = { yunja_blackhole }
+
+	planet = {
+		class = "pc_black_hole"
+		orbit_distance = 0
+		orbit_angle = 0
+		size = 5
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_living_metal_deposit
+			add_deposit = d_living_metal_deposit
+			add_deposit = d_living_metal_deposit
+		}
+	}
+
+	change_orbit = 60
+
+	planet = {
+		class = "pc_broken"
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+		size = {
+			min = 18
+			max = 21
+		}
+		modifiers = none
+	}
+
+	change_orbit = 30
+
+	planet = {
+		count = 1
+		class = "pc_gas_giant"
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			# Either Food & Exotic Gases
+			# Or Society Research
+			random_list = {
+				50 = {
+					random_list = {
+						25 = { }	# No luck
+						25 = { add_deposit = d_food_3 }
+						25 = { add_deposit = d_food_4 }
+						25 = { add_deposit = d_food_5 }
+					}
+					random_list = {
+						25 = { }	# No luck
+						25 = { add_deposit = d_exotic_gases_1 }
+						25 = { add_deposit = d_exotic_gases_2 }
+						25 = { add_deposit = d_exotic_gases_3 }
+					}
+				}
+				50 = {
+					random_list = {
+						25 = { }	# No luck
+						25 = { add_deposit = d_society_3 }
+						25 = { add_deposit = d_society_4 }
+						25 = { add_deposit = d_society_5 }
+					}
+				}
+			}
+		}
+		moon = {
+			count = { min = 0 max = 2 }
+			class = "pc_toxic"
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+				random_list = {
+					50 = {
+						random_list = {
+							50 = { }	# No luck
+							50 = { add_deposit = d_food_3 }
+						}
+						random_list = {
+							50 = { }	# No luck
+							50 = { add_deposit = d_exotic_gases_1 }
+						}
+					}
+					50 = {
+						random_list = {
+							50 = { }	# No luck
+							50 = { add_deposit = d_society_2 }
+						}
+					}
+				}
+			}
+		}
+	}
+
+	change_orbit = 50
+
+	planet = {
+		count = 3
+		class = pc_ice_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = {
+			min = 4
+			max = 8
+		}
+		modifiers = none
+		flags = { yunja_planet }
+	}
+
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 180
+	}
+}

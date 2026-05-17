@@ -1,0 +1,38 @@
+special_project = { #寻找云谲
+    key = "YUNJA_FOUND"
+    event_scope = ship_event
+    days_to_research = 180
+    timelimit = -1
+    picture = GFX_evt_exploding_ship
+    icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+    requirements = {
+        shipclass_science_ship = 1
+        leader = scientist
+        skill = 2
+    }
+
+    on_success = {
+        this.owner = {
+            country_event = {
+                id = leadereevent.2835
+            }
+        }
+    }
+}
+special_project = {
+    key = "DECIPHER_ROSETTA"
+    event_scope = country_event
+    cost = 75000
+    tech_department = society_technology
+    timelimit = -1
+    picture = GFX_evt_archaeological_dig
+    icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+
+    on_success = {
+        this.owner = {
+            country_event = {
+                id = leadereevent.2836
+            }
+        }
+    }
+}
