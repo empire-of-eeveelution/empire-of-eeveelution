@@ -32,6 +32,7 @@ on_entering_system_fleet = {
 	events = {
 		leadereevent.6		#核子事件触发
 		bixie.4
+		leadereevent.2831
 	}
 }
 on_yearly_pulse_country = {

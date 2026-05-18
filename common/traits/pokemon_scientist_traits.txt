@@ -323,3 +323,89 @@ leader_trait_scientist_steel_type = { #钢系科学家
 	initial = no
 	randomized = no
 }
+
+leader_trait_yunja_paranoid = { #云谲偏执度
+	icon = "gfx/interface/icons/traits/leader_trait_yunja_paranoid.dds"
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+	triggered_councilor_modifier = {
+		potential = {
+			check_variable = { which = yunjue_paranoid value >= 25 }
+			check_variable = { which = yunjue_paranoid value < 50 }
+		}
+		country_engineering_tech_research_speed = -0.2
+		country_unity_produces_mult = -0.1
+		country_influence_produces_mult = -0.1
+		pop_happiness = -0.2
+		bonus_pop_growth = -0.5
+		planet_stability_add = -5
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			check_variable = { which = yunjue_paranoid value >= 50 }
+			check_variable = { which = yunjue_paranoid value < 75 }
+		}
+		country_engineering_tech_research_speed = -0.4
+		country_unity_produces_mult = -0.2
+		country_influence_produces_mult = -0.2
+		pop_happiness = -0.4
+		bonus_pop_growth = -1.0
+		planet_stability_add = -10
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			check_variable = { which = yunjue_paranoid value >= 75 }
+			check_variable = { which = yunjue_paranoid value < 100 }
+		}
+		country_engineering_tech_research_speed = -0.6
+		country_unity_produces_mult = -0.15
+		country_influence_produces_mult = -0.15
+		pop_happiness = -0.6
+		bonus_pop_growth = -1.5
+		planet_stability_add = -15
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			check_variable = { which = yunjue_paranoid value >= 100 }
+		}
+		country_engineering_tech_research_speed = -0.8
+		country_unity_produces_mult = -0.2
+		country_influence_produces_mult = -0.2
+		pop_happiness = -0.8
+		bonus_pop_growth = -2.0
+		planet_stability_add = -20
+	}
+	triggered_desc = {
+		trigger = { this = { check_variable = { which = yunjue_paranoid value < 25 } } }
+		text = leader_trait_yunja_paranoid_0
+	}
+	triggered_desc = {
+		trigger = { this = { check_variable = { which = yunjue_paranoid value >= 25 } check_variable = { which = yunjue_paranoid value < 50 } } }
+		text = leader_trait_yunja_paranoid_1
+	}
+	triggered_desc = {
+		trigger = { this = { check_variable = { which = yunjue_paranoid value >= 50 } check_variable = { which = yunjue_paranoid value < 75 } } }
+		text = leader_trait_yunja_paranoid_2
+	}
+	triggered_desc = {
+		trigger = { this = { check_variable = { which = yunjue_paranoid value >= 75 } check_variable = { which = yunjue_paranoid value < 100 } } }
+		text = leader_trait_yunja_paranoid_3
+	}
+	triggered_desc = {
+		trigger = { this = { check_variable = { which = yunjue_paranoid value >= 100 } } }
+		text = leader_trait_yunja_paranoid_4
+	}
+}
+leader_trait_ancient_cyber_brain = {
+	icon = "gfx/interface/icons/traits/trait_cybernetic.dds"
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+	councilor_modifier = {
+		all_technology_research_speed = 0.5
+		researcher_jobs_bonus_workforce_mult = 0.5
+		category_materials_draw_chance_mult = 1.0
+		category_voidcraft_draw_chance_mult = 1.0
+	}
+}

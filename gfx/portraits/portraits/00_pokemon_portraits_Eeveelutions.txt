@@ -162,6 +162,7 @@ portraits = {
 		EOE159 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE159.png" }
 		EOE160 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE160.png" }
 		EOE161 = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE161.dds" }
+		EOEyunja = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOEyunja.dds" }
 		EOEReshiram = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE_Reshiram.png" }
 		Umbreon01 = {
 			entity = "Umbreon01_entity"
