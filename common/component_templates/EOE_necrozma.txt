@@ -304,6 +304,7 @@ utility_component_template = {
 
 	modifier = {
 		ship_cloaking_detection_add = 10
+		ship_weapon_range_mult = 0.8
 	}
 
 	component_set = "sensor_components"

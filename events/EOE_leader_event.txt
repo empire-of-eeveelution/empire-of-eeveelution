@@ -10363,6 +10363,23 @@ country_event = {
 			physics_research = 1
 		}
 	}
+	option = {
+		name = leadereevent.1000.g #给事件船改配置
+		custom_gui = "enclave_curator_option"
+		trigger = {
+			any_owned_ship = {
+				OR = {
+					has_ship_flag = EOE_cthugha_ship_2
+					has_ship_flag = EOE_necrozma_ship
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = leadereevent.1013
+			}
+		}
+	}
 
 	# option = {
 	# 	#买大师球
@@ -11773,9 +11790,348 @@ country_event = { #第二次投喂香蕉
 	}
 }
 
+country_event = { #修改事件船ai。砸了造新的这
+	id = leadereevent.1013
+	title = "leadereevent.1013.name"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "enclave_curator_window"
+	picture_event_data = {
+		room = enclave_curator_room
+		portrait = EOEHezi_test
+	}
+	desc = "leadereevent.1013.desc"
+	
+	option = {
+		name = leadereevent.1013.a
+		custom_gui = "enclave_curator_option"
+		trigger = {
+			any_owned_ship = {
+				has_ship_flag = EOE_cthugha_ship_2
+				NOT = { has_ship_flag = EOE_ai_modified_ship_serious  }
+			}
+		}
+		random_owned_ship = {
+			limit = {
+				has_ship_flag = EOE_cthugha_ship_2
+			}
+			unassign_leader = this
+			fleet = {
+				delete_fleet = this
+			}			
+		}
 
+		if = {
+			limit = {
+				OR = {
+					is_scrappy_mod_used = yes
+				}
+			}
+			create_fleet = {
+				name = "NAME_EOE_Cthugha_2"
+				settings = {
+					spawn_debris = no
+					is_boss = yes
+					
+				}
+				effect = {
+					create_ship = {
+						name = "NAME_EOE_Cthugha_3"
+						design = NAME_EOE_cthugha_1_ship_serious
+						effect = {
+							set_ship_flag = EOE_cthugha_ship_2
+							set_ship_flag = EOE_ai_modified_ship_serious
+						}
+					}
+					add_modifier = {
+						modifier = EOE_crisisfive
+					}
+					set_owner = root.owner
+					save_global_event_target_as = EOE_cthugha_fleet
+					set_fleet_flag = EOE_cthugha_fleet
+					set_location = root.capital_scope
+				}	
+			}
+		}
+		else = {
+			create_fleet = {
+				name = "NAME_EOE_Cthugha_2_small"
+				settings = {
+					spawn_debris = no
+					is_boss = yes
+					
+				}
+				effect = {
+					create_ship = {
+						name = "NAME_EOE_Cthugha_3_small"
+						design = NAME_EOE_cthugha_1_small_ship_serious
+						effect = {
+							set_ship_flag = EOE_cthugha_ship_2
+							set_ship_flag = EOE_ai_modified_ship_serious
+						}
+					}
+					add_modifier = {
+						modifier = EOE_crisisfive
+					}
+					set_owner = root.owner
+					save_global_event_target_as = EOE_cthugha_fleet
+					set_fleet_flag = EOE_cthugha_fleet
+					set_location = root.capital_scope
+				}	
+			}
+		}
+				
+	}
+	option = {
+		name = leadereevent.1013.b
+		custom_gui = "enclave_curator_option"
+		trigger = {
+			any_owned_ship = {
+				has_ship_flag = EOE_cthugha_ship_2
+				has_ship_flag = EOE_ai_modified_ship_serious  
+			}
+		}
+		random_owned_ship = {
+			limit = {
+				has_ship_flag = EOE_cthugha_ship_2
+			}
+			unassign_leader = this
+			fleet = {
+				delete_fleet = this
+			}
+		}
 
+		if = {
+			limit = {
+				OR = {
+					is_scrappy_mod_used = yes
+				}
+			}
+			create_fleet = {
+				name = "NAME_EOE_Cthugha_2"
+				settings = {
+					spawn_debris = no
+					is_boss = yes
+					
+				}
+				effect = {
+					create_ship = {
+						name = "NAME_EOE_Cthugha_3"
+						design = NAME_EOE_cthugha_1_ship
+						effect = {
+							set_ship_flag = EOE_cthugha_ship_2
+							set_ship_flag = EOE_ai_modified_ship 
+						}
+					}
+					add_modifier = {
+						modifier = EOE_crisisfive
+					}
+					set_owner = root.owner
+					save_global_event_target_as = EOE_cthugha_fleet
+					set_fleet_flag = EOE_cthugha_fleet
+					set_location = root.capital_scope
+				}	
+			}
+		}
+		else = {
+			create_fleet = {
+				name = "NAME_EOE_Cthugha_2_small"
+				settings = {
+					spawn_debris = no
+					is_boss = yes
+					
+				}
+				effect = {
+					create_ship = {
+						name = "NAME_EOE_Cthugha_3_small"
+						design = NAME_EOE_cthugha_1_small_ship
+						effect = {
+							set_ship_flag = EOE_cthugha_ship_2
+							set_ship_flag = EOE_ai_modified_ship
+						}
+					}
+					add_modifier = {
+						modifier = EOE_crisisfive
+					}
+					set_owner = root.owner
+					save_global_event_target_as = EOE_cthugha_fleet
+					set_fleet_flag = EOE_cthugha_fleet
+					set_location = root.capital_scope
+				}	
+			}
+		}	
+	}
+	option = {
+		name = leadereevent.1013.c
+		custom_gui = "enclave_curator_option"
+		trigger = {
+			any_owned_ship = {
+				has_ship_flag = EOE_necrozma_ship_serious 
+				NOT = { has_ship_flag = EOE_ai_modified_ship_serious  }
+			}
+		}
+		random_owned_ship = {
+			limit = {
+				has_ship_flag = EOE_necrozma_ship
+			}
+			unassign_leader = this
+			fleet = {
+				delete_fleet = this
+			}			
+			
+		}
 
+		if = {
+			limit = {
+				is_scrappy_mod_used = yes
+			}
+			create_fleet = {
+				name = "NAME_EOE_Necrozma_2"
+				settings = {
+					spawn_debris = no
+					is_boss = yes
+				}
+				effect = {
+					#set_owner = event_target:EOE_crystal_z_country
+					set_owner = root.owner
+					create_ship = {
+						name = "NAME_EOE_Necrozma_3"
+						design = NAME_EOE_necrozma_ship_serious
+						effect = {
+							set_ship_flag = EOE_necrozma_ship
+							set_ship_flag = EOE_ai_modified_ship_serious
+						}
+					}
+					add_modifier = {
+						modifier = EOE_crisisfive
+					}
+					save_global_event_target_as = EOE_necrozma_fleet
+					set_fleet_flag = EOE_necrozma_fleet
+					set_location = root.capital_scope			
+				}
+			}
+		}
+		else = {
+			create_fleet = {
+				name = "NAME_EOE_Necrozma_2_small"
+				settings = {
+					spawn_debris = no
+					is_boss = yes
+				}
+				effect = {
+					set_owner = root.owner
+					create_ship = {
+						name = "NAME_EOE_Necrozma_3_small"
+						design = NAME_EOE_necrozma_small_ship_serious
+						effect = {
+							set_ship_flag = EOE_necrozma_ship
+							set_ship_flag = EOE_ai_modified_ship_serious
+						}	
+					}
+					add_modifier = {
+						modifier = EOE_crisisfive
+					}
+					save_global_event_target_as = EOE_necrozma_fleet
+					set_fleet_flag = EOE_necrozma_fleet
+					set_location = root.capital_scope
+				}					
+			}
+		}
+	}
+	option = {
+		name = leadereevent.1013.d
+		custom_gui = "enclave_curator_option"
+		trigger = {
+			any_owned_ship = {
+				has_ship_flag = EOE_necrozma_ship
+				has_ship_flag = EOE_ai_modified_ship_serious 
+			}
+		}
+		random_owned_ship = {
+			limit = {
+				has_ship_flag = EOE_necrozma_ship
+			}
+			unassign_leader = this
+			fleet = {
+				delete_fleet = this
+			}			
+			
+		}
+
+		if = {
+			limit = {
+				is_scrappy_mod_used = yes
+			}
+			create_fleet = {
+				name = "NAME_EOE_Necrozma_2"
+				settings = {
+					spawn_debris = no
+					is_boss = yes
+				}
+				effect = {
+					#set_owner = event_target:EOE_crystal_z_country
+					set_owner = root.owner
+					create_ship = {
+						name = "NAME_EOE_Necrozma_3"
+						design = NAME_EOE_necrozma_ship
+						effect = {
+							set_ship_flag = EOE_necrozma_ship
+							set_ship_flag = EOE_ai_modified_ship
+						}
+					}
+					add_modifier = {
+						modifier = EOE_crisisfive
+					}
+					save_global_event_target_as = EOE_necrozma_fleet
+					set_fleet_flag = EOE_necrozma_fleet
+					set_location = root.capital_scope	
+				}
+			}
+		}
+		else = {
+			create_fleet = {
+				name = "NAME_EOE_Necrozma_2_small"
+				settings = {
+					spawn_debris = no
+					is_boss = yes
+				}
+				effect = {
+					set_owner = root.owner
+					create_ship = {
+						name = "NAME_EOE_Necrozma_3_small"
+						design = NAME_EOE_necrozma_small_ship
+						effect = {
+							set_ship_flag = EOE_necrozma_ship
+							set_ship_flag = EOE_ai_modified_ship
+						}	
+					}
+					add_modifier = {
+						modifier = EOE_crisisfive
+					}
+					save_global_event_target_as = EOE_necrozma_fleet
+					set_fleet_flag = EOE_necrozma_fleet
+					set_location = root.capital_scope	
+				}					
+			}
+		}
+	}
+	option = {
+		# Back
+		name = leadereevent.1013.e #我有个新主意
+		custom_gui = "enclave_curator_option"
+		hidden_effect = {
+			remove_country_flag = EOE_databank_diplomacy_engaged
+			country_event = {
+				id = leadereevent.1000
+			}
+		}
+	}
+	option = {
+		# exit
+		custom_gui = "enclave_curator_option"
+		name = leadereevent.29.b
+	}
+}
 
 
 

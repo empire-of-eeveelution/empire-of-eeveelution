@@ -293,7 +293,7 @@ weapon_component_template = { #神鸟猛击
 	power = -70
 	armor_damage = 1.5
 	shield_penetration = 1
-	size_damage_factor = 1.0
+	size_damage_factor = 0.15
 
 	resources = {
 		category = pokemon_ships

@@ -1,3 +1,22 @@
+ship_behavior = {    #认真薄荷 微操大师
+	name = "Serious_Mint_0"
+	desc = "Serious_Mint_0_DESC"
+	
+	preferred_attack_range = 0
+	formation_distance = 0
+	return_to_formation_distance = 0
+
+	collision_awareness = 0
+	collision_strafe = 0
+	collision_radius = 0
+
+	attack_move_pattern = none
+	passive_move_pattern = none
+
+	ignore_combat_movement = yes
+}
+
+
 ship_behavior = {    #急躁薄荷 100范围走A
 	name = "Hasty_Mint_100"
 	desc = "Hasty_Mint_100_DESC"

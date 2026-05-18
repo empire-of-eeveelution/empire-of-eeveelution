@@ -3611,7 +3611,7 @@ ship_event = { #召唤出了古神
 						set_owner = event_target:EOE_cthugha_country
 						create_ship = {
 							name = "NAME_EOE_Cthugha_3_small"
-							design = NAME_EOE_cthugha_1_smallship
+							design = NAME_EOE_cthugha_1_small_ship
 							effect = {
 								set_ship_flag = EOE_cthugha_ship
 							}
@@ -3950,7 +3950,7 @@ ship_event = { #古神捕获
 				effect = {
 					create_ship = {
 						name = "NAME_EOE_Cthugha_3_small"
-						design = NAME_EOE_cthugha_1_smallship
+						design = NAME_EOE_cthugha_1_small_ship
 						effect = {
 							set_ship_flag = EOE_cthugha_ship_2
 						}
@@ -6881,7 +6881,7 @@ country_event = {
 						set_owner = event_target:EOE_necrozma_country
 						create_ship = {
 							name = "NAME_EOE_Necrozma_3_small"
-							design = NAME_EOE_necrozma_smallship_hostile
+							design = NAME_EOE_necrozma_small_ship_hostile
 							effect = {
 								set_ship_flag = EOE_necrozma_ship
 								set_disable_at_health = 0.05
@@ -6907,11 +6907,10 @@ country_event = {
 		name = "EOE_branch.165.a" 
 		event_target:EOE_ultra_home_planet = {
 			add_planet_devastation = 50
-			while = {
-				count = 5
-				kill_pop = yes
+			every_owned_pop_group = {
+				kill_single_pop = yes
 			}
-			change_pc = EOE_pc_nolight
+			change_pc = pc_EOE_nolight
 		}
 	} 
 }
@@ -7003,7 +7002,7 @@ fleet_event = {
 						set_owner = root.owner
 						create_ship = {
 							name = "NAME_EOE_Necrozma_3_small"
-							design = NAME_EOE_necrozma_smallship
+							design = NAME_EOE_necrozma_small_ship
 							effect = {
 								set_ship_flag = EOE_necrozma_ship
 							}	

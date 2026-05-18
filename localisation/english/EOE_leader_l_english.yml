@@ -614,6 +614,18 @@ leadereevent.1010.desc.x:0 "A banana has about 15 becquerels of radioactivity. A
 leadereevent.1010.desc.y:0 "Don't stare at me while I eat. ...Fine, if you insist."
 leadereevent.1010.desc.z:0 "This banana is perfectly ripe. The spots on the peel look like a starry sky. But honestly, green or overripe, I love them all. I'm not picky."
 
+##调整薄荷
+
+
+leadereevent.1000.g:0 "I want to adjust the Mint on the Legendary Pokémon"
+leadereevent.1013.name:0 "Adjust Legendary Pokémon"
+leadereevent.1013.desc:0 "Alright. How would you like to adjust it?"
+leadereevent.1013.a:0 "Equip Demigod Reshiram with a Serious Mint"
+leadereevent.1013.b:0 "Equip Demigod Reshiram with a Naive Mint"
+leadereevent.1013.c:0 "Equip Necrozma with a Serious Mint"
+leadereevent.1013.d:0 "Equip Necrozma with a Naive Mint"
+leadereevent.1013.e:0 "I have a new idea"
+
 
 ##Okra
 
