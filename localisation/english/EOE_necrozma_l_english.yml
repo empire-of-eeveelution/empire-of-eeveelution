@@ -178,7 +178,7 @@
  bombardment_EOE_purify_desc:4 "§YBecome light!§!\n- §MApocalyptic§! damage to §YLand Armies§!\n- §MApocalyptic§! damage to §YPlanet§!\n- Bombards undefended planets\n- §REliminates§! Population with extreme efficiency"
 
 r_EOE_necrozma_z:0 "Rule Stabilizer"
-r_EOE_necrozma_z_desc:0 "A device used to stabilize Necrozma. Lasts for five years, and does not share cooldown with other relics."
+r_EOE_necrozma_z_desc:0 "A device used to stabilize Necrozma."
 EOE_branch.69.name: "The Mysterious Supernova"
 EOE_branch.69.desc: "We have received highly unusual subspace telemetry from the §H[destroyed_system.GetName]§! system. If our readings are correct, the primary star of that system turned into a supernova in an instant, producing a devastating effect. All planets have been shattered, and any starships or space stations that appeared in this star system have been destroyed. The star itself collapsed into a black hole.\n\nUnconfirmed reports indicate that there is only one survivor of this cataclysmic disaster — a colossal entity belonging to §H[crisis_country.GetName]§! ..."
 EOE_branch.69.a: "What are they plotting in secret?"

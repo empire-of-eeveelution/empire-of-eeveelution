@@ -112,11 +112,12 @@ EOE_branch.115.a:0 "继续调查"
  EOE_enter_portal_1:0 "进入传送门"
  EOE_enter_portal_1_DESC:0 "我们已经做好了进入传送门，前往灵能实体所在的位面的一切准备。是时候出发了。\n§Y科研船领袖和社会科学部门领袖将被视为冒险队伍的两位队长§!"
  EOE_branch.129.name:0 "虚境调查报告"
- EOE_branch.129.desc:0 "穿过传送门的调查队准时回来了。调查队首先确定的一点是，毫无疑问，这个奇异位面和创造者文献资料当中描述的“虚境”几乎完全一致。而这个次元当中的恒定背景辐射给这一观点提供了强有力的支持。在刚进入虚境的时候，调查队遇到了一些困难————这个地方完全不同于有着稳定时空的物质次元，它的时空结构完全是一团乱麻。只有在较小的尺度上，时空才是有序的。因而，在进入虚境之后，第一批主动前去探索未知的队员都消失在了混乱时空当中，再也没有回来；调查队在传送门附近研究了很久，才终于摸索出一些在虚境中安全行动，并且还能安全返回的做法。"
+ EOE_branch.129.desc:0 "穿过传送门的调查队准时回来了。调查队首先确定的一点是，毫无疑问，这个奇异位面和创造者文献资料当中描述的“虚境”十分相似，但是却并不完全一致。从背景辐射上看，这里很可能就是虚境，然而这里却又没有记录中提到的极度危险的能量环境。调查队员们决定暂时称这里为虚境。在刚进入虚境的时候，调查队遇到了一些困难————这个地方完全不同于有着稳定时空的物质次元，它的时空结构完全是一团乱麻。只有在较小的尺度上，时空才是有序的。因而，在进入虚境之后，第一批主动前去探索未知的队员都消失在了混乱时空当中，再也没有回来；调查队在传送门附近研究了很久，才终于摸索出一些在虚境中安全行动，并且还能安全返回的做法。"
  EOE_branch.130.name:0 "######################"
  EOE_branch.130.desc:0 "######################"
  EOE_branch.130.b:0 "§Y继续使用传送门§!"
  EOE_branch.130.b.tooltip:0 "§G开启一场全新的冒险§!"
+ EOE_branch.130.c:0 "我们可以先等待一年"
  EOE_enter_portal_2:0 "虚境冒险"
  EOE_enter_portal_2_DESC:0 "在有了上一次冒险的经历之后，调查队完善了他们携带的生存设备。想必这次他们能够走得更远。"
  EOE_branch.131.name:0 "灵体军队"
@@ -126,13 +127,15 @@ EOE_branch.115.a:0 "继续调查"
  EOE_branch.132.name:0 "######################"
  EOE_branch.132.desc:0 "######################"
  EOE_branch.133.name:0 "$EOE_branch.134.name$"
- EOE_branch.133.desc:0 "$EOE_branch.134.desc$"
+ EOE_branch.133.desc:0 "§L完成一次虚境探险之后，可以选择安全关闭传送门或者继续进行探险。§!\n§Y因为承载了过多实物粒子，传送门开始变得不稳定。§!\n为了维持传送门，工程师将需要4096能量币和4096合金用于建造维持装置。"
+ EOE_branch.136.desc:0 "§L完成一次虚境探险之后，可以选择安全关闭传送门或者继续进行探险。§!\n§Y因为承载了过多实物粒子，传送门开始变得不稳定。§!\n为了维持传送门，工程师将需要16384能量币和16384合金用于建造更大的维持装置。"
+ EOE_branch.137.desc:0 "§L完成一次虚境探险之后，可以选择安全关闭传送门或者继续进行探险。§R因为承载了过多实物粒子，传送门已经开始有了快要崩塌的迹象，但是理论上依然可用。§!\n为了勉强维持传送门，工程师将需要16384能量币和16384合金用于进一步升级维持装置。已经没有办法再长时间拖延了。"
  EOE_branch.134.name:0 "完成探索"
  EOE_branch.134.desc:0 "§L完成一次虚境探险之后，可以选择安全关闭传送门或者继续进行探险。§!"
  EOE_enter_portal_3:0 "继续虚境冒险"
  EOE_enter_portal_3_DESC:0 "拥有精良装备的探险队将探索虚境。"
  EOE_enter_portal_4:0 "$EOE_enter_portal_3$"
- EOE_enter_portal_4_DESC:0 "拥有精良装备的探险队将探索虚境。\n§Y因为承载了过多实物粒子，传送门开始变得不稳定。§!\n为了维持传送门，工程师将需要4096能量币和4096合金用于建造维持装置。"
+ EOE_enter_portal_4_DESC:0 "拥有精良装备的探险队将探索虚境。\n§Y因为承载了过多实物粒子，传送门开始变得不稳定。§!"
  EOE_enter_portal_5:0 "$EOE_enter_portal_3$"
  EOE_enter_portal_5_DESC:0 "拥有精良装备的探险队将探索虚境。\n§Y因为承载了过多实物粒子，传送门开始变得非常不稳定。§!\n为了维持传送门，工程师将需要16384能量币和16384合金用于升级维持装置。\n§R我们的科学家预计，按照当前的探险队规模，我们的传送门至多只能维持一两次传输了。§!"
  EOE_enter_portal_6:0 "$EOE_enter_portal_3$"
@@ -867,16 +870,31 @@ EOE_ghost.98.c:0"巨炮乱射"
 EOE_ghost.98.c.tooltip:0"使用机甲背部的330毫米弹幕型加农炮对目标区域无差别炮击。威力§H200§!，命中§Y100%§!，暴击§R0§!，能量消耗§B30§!"
 
 
+#############################################局势
 
+situation_EOE_ghost:0 "传送门探险"
+situation_EOE_ghost_type:0 "$situation_EOE_ghost$"
+situation_EOE_ghost_desc:0 "我们的研究团队正尝试前往传送门对面的未知地域探险。"
+situation_EOE_ghost_complete_tooltip:0 "我们的研究团队正尝试前往传送门对面的未知地域探险。或许会有什么好事情发生。"
 
+EOE_ghost_stage_1_effects:0 "我们的研究团队正前往传送门对面探险。我们需要准备足够的物资。"
 
+# EOE_ghost_situation_approach_1_desc:0 "我们会准备最多的资源，最大程度地加速探险。"
+# EOE_ghost_situation_approach_2_desc:0 "我们会准备恰到好处的资源，平衡探险进度与资源消耗。"
+# EOE_ghost_situation_approach_3_desc:0 "暂停探险，等待更好的时机。"
 
+# EOE_situation_ghost_hezi_locked:0 "核子现在不允许你使用这个选项"
 
+EOE_situation_ghost_speedup:0 "大量投入能量和合金"
+EOE_situation_ghost_medium:0 "适当投入能量和合金"
+EOE_situation_ghost_pause:0 "暂停探险"
+EOE_situation_ghost_speedup_desc:0 ""
+EOE_situation_ghost_medium_desc:0 ""
+EOE_situation_ghost_pause_desc:0 "暂停探险，无需维护费。"
+situation_EOE_ghost_monthly_change_tooltip:0 "每月产生的局势进展"
 
-
-
-
-
+EOE_ghost_situation_approach_desc:0 "投入资源越多，进展越快。"
+EOE_ghost_approach_value:0 "投入资源程度"
 
 
 

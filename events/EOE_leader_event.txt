@@ -11246,6 +11246,23 @@ country_event = {
 		}
 		response_text = "leadereevent.1004.ri"		#（拿下）就是简单的防身武器。标配的60mm火箭筒，改装后火箭弹可以加装上中子弹弹头……这有问题吗，为什么你要用奇怪的眼神盯着我看？
 	}
+	# option = {
+	# 	name = leadereevent.1004.b
+	# 	custom_gui = "enclave_curator_option"
+	# 	trigger = {
+	# 		OR = {
+	# 			has_country_flag = EOE_ghost_situation_approach_1
+    #         	has_country_flag = EOE_ghost_situation_approach_2
+    #         	has_country_flag = EOE_ghost_situation_approach_3
+	# 		}
+	# 	}
+	# 	hidden_effect = {
+	# 		remove_country_flag = EOE_databank_diplomacy_engaged
+	# 		country_event = {
+	# 			id = leadereevent.1014
+	# 		}
+	# 	}
+	# }
 	option = {
 		# Back
 		name = leadereevent.31.d
@@ -12133,7 +12150,139 @@ country_event = { #修改事件船ai。砸了造新的这
 	}
 }
 
+# ###捉鬼局势的辅助
+# country_event = {
+# 	id = leadereevent.1014
+# 	is_triggered_only = yes
+# 	title = leadereevent.1014.name
+# 	diplomatic = yes
+# 	custom_gui = "enclave_curator_window"
+# 	picture_event_data = {
+# 		room = enclave_curator_room
+# 		portrait = EOEHezi_test
+# 	}
+# 	desc = {
+# 		trigger = {
+# 			OR = {
+# 				has_country_flag = EOE_ghost_situation_approach_1
+# 				has_country_flag = EOE_ghost_situation_approach_2
+# 			}
+# 		}
+# 		text = leadereevent.1014.desc.a
+# 	}
+# 	desc = {
+# 		trigger = {
+# 			has_country_flag = EOE_ghost_situation_approach_3
+# 			has_country_flag = EOE_ghost_situation_pause_hezi
+# 		}
+# 		text = leadereevent.1014.desc.b
+# 	}
+# 	desc = {
+# 		trigger = {
+# 			has_country_flag = EOE_ghost_situation_approach_3
+# 			NOT = {
+# 				has_country_flag = EOE_ghost_situation_pause_hezi
+# 			}
+# 		}
+# 		text = leadereevent.1014.desc.c
+# 	}
+# 	option ={
+# 		name = leadereevent.1014.a  #解锁
+# 		custom_gui = "enclave_curator_option"
+# 		trigger = {
+# 			has_country_flag = EOE_ghost_situation_approach_3
+# 		}
+# 		hidden_effect = {
+# 			random_owned_ship = {
+# 				limit = {
+# 					has_ship_flag = EOE_ghost_survey_ship
+# 				}
+# 				remove_ship_flag = EOE_ghost_survey_ship
+# 				fleet = {
+# 					set_event_locked = no
+# 				}
+# 			}
+# 			set_country_flag = EOE_ghost_situation_pause_hezi
+# 		}
 
+# 	}
+# 	option ={
+# 		name = leadereevent.1014.b  #锁定
+# 		custom_gui = "enclave_curator_option"
+# 		allow = {
+# 			custom_tooltip = {
+# 				fail_Text = leadereevent.1014.b.failtext
+# 				any_owned_planet = {
+# 				has_planet_flag = EOE_ghost_planet_1
+# 					any_fleet_in_orbit = {
+# 						is_ship_class = shipclass_science_ship
+# 						leader = {
+# 							leader_class = scientist
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 		#hidden_effect = {
+# 			random_owned_planet = {
+# 				limit = {
+# 					has_planet_flag = EOE_ghost_planet_1
+# 				}
+# 				random_fleet_in_orbit = {
+# 					limit = {
+# 						is_ship_class = shipclass_science_ship
+# 						leader = {
+# 							leader_class = scientist
+# 						}
+# 					}
+# 					set_event_locked = yes
+# 					set_fleet_flag = EOE_fleet_watched_by_hezi
+# 					solar_system = {
+# 						random_ship_in_system = {
+# 							limit = {
+# 								is_ship_class = shipclass_science_ship
+# 								leader = {
+# 									leader_class = scientist
+# 								}
+# 								fleet = {
+# 									has_fleet_flag = EOE_fleet_watched_by_hezi
+# 								}
+# 							}
+# 							set_ship_flag = EOE_ghost_survey_ship
+# 						}
+# 					}
+# 				}
+# 			}
+# 		#}
+# 		remove_country_flag = EOE_ghost_situation_pause_hezi
+# 	}
+# 	option = {
+# 		# Back
+# 		name = leadereevent.31.d
+# 		custom_gui = "enclave_curator_option"
+# 		hidden_effect = {
+# 			remove_country_flag = EOE_databank_diplomacy_engaged
+# 			country_event = {
+# 				id = leadereevent.57
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		# exit
+# 		custom_gui = "enclave_curator_option"
+# 		name = leadereevent.29.b
+# 	}
+# 	after = {
+# 		hidden_effect = {
+# 			every_owned_fleet = {
+# 				limit = {
+# 					has_fleet_flag = EOE_fleet_watched_by_hezi
+# 				}
+# 				remove_fleet_flag = EOE_fleet_watched_by_hezi
+# 			}
+# 		}
+# 	}
+# }
 
 #秋葵效果
 planet_event = { 

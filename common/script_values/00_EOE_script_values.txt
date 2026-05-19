@@ -28,6 +28,22 @@ EOE_soc_research_produce = {
 	}
 }
 
+EOE_ghost_situation_approach = {
+	base = 0
+	modifier = {
+		add = EOE_ghost_approach_value
+	}
+}
+
+EOE_ghost_situation_portal_upkeep_mult = {
+	base = 1
+	# modifier = {
+	# 	mult = value:EOE_ghost_situation_approach
+	# }
+	modifier = {
+		mult = owner.EOE_ghost_stage_value
+	}
+}
 # EOE_trainer_drone_crime_output = { #暂时用不上，就只检测数量不吃加成了吧，方便玩家对账
 # 	base = 0
 # 	complex_trigger_modifier = {

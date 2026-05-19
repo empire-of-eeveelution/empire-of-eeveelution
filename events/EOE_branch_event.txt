@@ -4170,18 +4170,18 @@ country_event = { #克子拆星弹窗2
 	}
 }
 
-country_event = { #克子拆星弹窗2
-	id = EOE_branch.65
-	title = EOE_branch.65.name
-	desc = EOE_branch.65.desc
-	picture = GFX_evt_EOE_The_Vermillion_Problem
-	show_sound = "event_red_alert"
-	location = from
-	is_triggered_only = yes
-	option = {
-		name = EOE_branch.65.a
-	}
-}
+# country_event = { #克子拆星弹窗2
+# 	id = EOE_branch.65
+# 	title = EOE_branch.65.name
+# 	desc = EOE_branch.65.desc
+# 	picture = GFX_evt_EOE_The_Vermillion_Problem
+# 	show_sound = "event_red_alert"
+# 	location = from
+# 	is_triggered_only = yes
+# 	option = {
+# 		name = EOE_branch.65.a
+# 	}
+# }
 
 
 country_event = {    #白龙领袖
@@ -5560,8 +5560,14 @@ ship_event = { #第一次调查，分支
 	show_sound = event_mystic_reveal_light
 	option = {
 		name = OK
-		ship_event = {
-			id = EOE_branch.131
+		hidden_effect = {
+			ship_event = {
+				id = EOE_branch.131
+			}
+			fleet = {
+				set_event_locked = yes
+			}
+			set_ship_flag = EOE_ghost_survey_ship
 		}
 		#核子这一块还没有用到。等到日后光锥边缘写好之后安排上。
 
@@ -5588,35 +5594,35 @@ ship_event = { #第一次调查，分支
 		# }
 	}
 }
-ship_event = { #核子第一次
-	id = EOE_branch.130
-	is_triggered_only = yes
-	title = EOE_branch.130.name
-	desc = EOE_branch.130.desc
-	picture = GFX_evt_EOE_shrouded_planet_mother
-	show_sound = event_whispering_01
-	option = {
-		name = EOE_branch.126.a #安全关闭传送门
-		owner = {
-			enable_special_project = {
-				name = EOE_close_portal
-				location = event_target:EOE_ghost_planet
-				owner = this
-			}
-		}
-	}
-	option = {
-		name = EOE_branch.130.b
-		custom_tooltip = EOE_branch.130.b.tooltip #继续使用传送门
-		owner = {
-			enable_special_project = {
-				name = EOE_enter_portal_2
-				location = event_target:EOE_ghost_planet
-				owner = this
-			}
-		}
-	}
-}
+# ship_event = { #核子第一次
+# 	id = EOE_branch.130
+# 	is_triggered_only = yes
+# 	title = EOE_branch.130.name
+# 	desc = EOE_branch.130.desc
+# 	picture = GFX_evt_EOE_shrouded_planet_mother
+# 	show_sound = event_whispering_01
+# 	option = {
+# 		name = EOE_branch.126.a #安全关闭传送门
+# 		owner = {
+# 			enable_special_project = {
+# 				name = EOE_close_portal
+# 				location = event_target:EOE_ghost_planet
+# 				owner = this
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = EOE_branch.130.b
+# 		custom_tooltip = EOE_branch.130.b.tooltip #继续使用传送门
+# 		owner = {
+# 			enable_special_project = {
+# 				name = EOE_enter_portal_2
+# 				location = event_target:EOE_ghost_planet
+# 				owner = this
+# 			}
+# 		}
+# 	}
+# }
 ship_event = { #其他第一次
 	id = EOE_branch.131
 	is_triggered_only = yes
@@ -5625,7 +5631,6 @@ ship_event = { #其他第一次
 	picture = GFX_evt_EOE_the_ghost
 	show_sound = event_mystic_reveal
 	immediate = {
-
 		event_target:EOE_ghost_planet = {
 			create_army = {
 				name = "NAME_Avatar"
@@ -5644,205 +5649,322 @@ ship_event = { #其他第一次
 				owner = this
 			}
 		}
-	}
-	option = {
-		name = EOE_branch.130.b
-		custom_tooltip = EOE_branch.130.b.tooltip #继续使用传送门
-		owner = {
-			enable_special_project = {
-				name = EOE_enter_portal_2
-				location = event_target:EOE_ghost_planet
-				owner = this
-			}
-		}
-	}
-} 
-ship_event = { #核子第三次，还没写完，后面插入光锥边缘事件
-	id = EOE_branch.132
-	is_triggered_only = yes
-	title = EOE_branch.132.name
-	desc = EOE_branch.132.desc
-}
-ship_event = { #其他第三次，正常抓个鬼
-	id = EOE_branch.133
-	is_triggered_only = yes
-	title = EOE_branch.133.name
-	desc = EOE_branch.133.desc
-	picture = GFX_evt_EOE_the_ghost
-	show_sound = event_mystic_reveal
-	option = {
-		name = EOE_branch.126.a #差不多得了，安全关闭传送门
-		owner = {
-			enable_special_project = {
-				name = EOE_close_portal
-				location = event_target:EOE_ghost_planet
-				owner = this
-			}
+		fleet = {
+			set_event_locked = no
 		}
 	}
 	option = {
 		name = EOE_branch.130.b
 		custom_tooltip = EOE_branch.130.b.tooltip #继续使用传送门
 		owner = {
-			enable_special_project = {
-				name = EOE_enter_portal_4
-				location = event_target:EOE_ghost_planet
-				owner = this
+			start_situation = {
+				type = situation_EOE_ghost
+				target = root.owner
 			}
 		}
-	}
-} 
-ship_event = { #第二次的随机，结尾事件
-	id = EOE_branch.134
-	is_triggered_only = yes
-	title = EOE_branch.134.name #探索完成
-	desc = EOE_branch.134.desc #可以选择关门或继续
-	picture = GFX_evt_physics_research
-	show_sound = event_mystic_reveal
-	option = {
-		name = EOE_branch.126.a #差不多得了，安全关闭传送门
-		owner = {
-			enable_special_project = {
-				name = EOE_close_portal
-				location = event_target:EOE_ghost_planet
-				owner = this
-			}
-		}
-	}
-	option = {
-		name = EOE_branch.130.b
-		custom_tooltip = EOE_branch.130.b.tooltip #继续使用传送门
-		owner = {
-			enable_special_project = {
-				name = EOE_enter_portal_3
-				location = event_target:EOE_ghost_planet
-				owner = this
-			}
-		}
-	}
-} 
-ship_event = { #第三次调查，分支
-	id = EOE_branch.135
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		owner = {
-			NOT = {
-				has_country_flag = EOE_has_com_with_sei
-			}
-		}
-	}
-	immediate = {
-		ship_event = {
-			id = EOE_branch.133
-		}
-		# hidden_effect = {
-		# 	if = {
-		# 		limit = {
-		# 			is_hezi_in_shroud = yes
-		# 			owner = {
-		# 				has_country_flag = EOE_mothergone
-		# 				has_country_flag = EOE_saw_mother
-		# 			}
-		# 		}
-		# 		ship_event = {
-		# 			id = EOE_branch.132
-		# 		}
-		# 	}
-		# 	else = {
-		# 		ship_event = {
-		# 			id = EOE_branch.133
-		# 		}
+		
+		# owner = {
+		# 	enable_special_project = {
+		# 		name = EOE_enter_portal_2
+		# 		location = event_target:EOE_ghost_planet
+		# 		owner = this
 		# 	}
 		# }
 	}
-}
-ship_event = { #第四次的随机，结尾事件
-	id = EOE_branch.136
-	is_triggered_only = yes
-	title = EOE_branch.134.name #探索完成
-	desc = EOE_branch.134.desc #可以选择关门或继续
-	picture = GFX_evt_physics_research
-	show_sound = event_mystic_reveal
-	trigger = {
-		owner = {
-			NOT = {
-				has_country_flag = EOE_has_com_with_sei
-			}
-		}
-	}
-	option = {
-		name = EOE_branch.126.a #差不多得了，安全关闭传送门
-		owner = {
-			enable_special_project = {
-				name = EOE_close_portal
-				location = event_target:EOE_ghost_planet
-				owner = this
-			}
-		}
-	}
-	option = {
-		name = EOE_branch.130.b
-		custom_tooltip = EOE_branch.130.b.tooltip #继续使用传送门
-		owner = {
-			enable_special_project = {
-				name = EOE_enter_portal_5
-				location = event_target:EOE_ghost_planet
-				owner = this
-			}
-		}
-	}
 } 
-ship_event = { #第五次的随机，结尾事件
-	id = EOE_branch.137
-	is_triggered_only = yes
-	title = EOE_branch.134.name #探索完成
-	desc = EOE_branch.134.desc #可以选择关门或继续
-	picture = GFX_evt_physics_research
-	show_sound = event_mystic_reveal
-	trigger = {
-		owner = {
-			NOT = {
-				has_country_flag = EOE_has_com_with_sei
-			}
-		}
-	}
-	option = {
-		name = EOE_branch.126.a #差不多得了，安全关闭传送门
-		owner = {
-			enable_special_project = {
-				name = EOE_close_portal
-				location = event_target:EOE_ghost_planet
-				owner = this
-			}
-		}
-	}
-	option = {
-		name = EOE_branch.130.b
-		custom_tooltip = EOE_branch.130.b.tooltip #继续使用传送门
-		owner = {
-			enable_special_project = {
-				name = EOE_enter_portal_6
-				location = event_target:EOE_ghost_planet
-				owner = this
-			}
-		}
-	}
-} 
-ship_event = { #第六次的随机，结尾事件
+# ship_event = { #核子第三次，还没写完，后面插入光锥边缘事件
+# 	id = EOE_branch.132
+# 	is_triggered_only = yes
+# 	title = EOE_branch.132.name
+# 	desc = EOE_branch.132.desc
+# }
+# ship_event = { #其他第三次，正常抓个鬼
+# 	id = EOE_branch.133
+# 	is_triggered_only = yes
+# 	title = EOE_branch.133.name
+# 	desc = EOE_branch.133.desc
+# 	picture = GFX_evt_EOE_the_ghost
+# 	show_sound = event_mystic_reveal
+# 	option = {
+# 		name = EOE_branch.126.a #差不多得了，安全关闭传送门
+# 		owner = {
+# 			enable_special_project = {
+# 				name = EOE_close_portal
+# 				location = event_target:EOE_ghost_planet
+# 				owner = this
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = EOE_branch.130.b
+# 		custom_tooltip = EOE_branch.130.b.tooltip #继续使用传送门
+# 		allow = {
+# 			owner = {
+# 				resource_stockpile_compare = {
+# 					resource = alloys
+# 					value >= 4096
+# 				}
+# 				resource_stockpile_compare = {
+# 					resource = energy
+# 					value >= 4096
+# 				}
+# 			}
+# 		}
+# 		owner = {
+# 			add_resource = {
+# 				energy = -4096
+# 				alloys = -4096
+# 			}
+# 		}
+# 		owner = {
+# 			enable_special_project = {
+# 				name = EOE_enter_portal_4
+# 				location = event_target:EOE_ghost_planet
+# 				owner = this
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = EOE_branch.130.c #拖延一年再来
+# 		ship_event = {
+# 			id = EOE_branch.133 days = 360
+# 		}
+# 	}
+# } 
+# ship_event = { #第二次的随机，结尾事件
+# 	id = EOE_branch.134
+# 	is_triggered_only = yes
+# 	title = EOE_branch.134.name #探索完成
+# 	desc = EOE_branch.134.desc #可以选择关门或继续
+# 	picture = GFX_evt_physics_research
+# 	show_sound = event_mystic_reveal
+# 	option = {
+# 		name = EOE_branch.126.a #差不多得了，安全关闭传送门
+# 		owner = {
+# 			enable_special_project = {
+# 				name = EOE_close_portal
+# 				location = event_target:EOE_ghost_planet
+# 				owner = this
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = EOE_branch.130.b
+# 		custom_tooltip = EOE_branch.130.b.tooltip #继续使用传送门
+# 		owner = {
+# 			enable_special_project = {
+# 				name = EOE_enter_portal_3
+# 				location = event_target:EOE_ghost_planet
+# 				owner = this
+# 			}
+# 		}
+# 	}
+# } 
+# ship_event = { #第三次调查，分支
+# 	id = EOE_branch.135
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		owner = {
+# 			NOT = {
+# 				has_country_flag = EOE_has_com_with_sei
+# 			}
+# 		}
+# 	}
+# 	immediate = {
+# 		ship_event = {
+# 			id = EOE_branch.133
+# 		}
+# 		# hidden_effect = {
+# 		# 	if = {
+# 		# 		limit = {
+# 		# 			is_hezi_in_shroud = yes
+# 		# 			owner = {
+# 		# 				has_country_flag = EOE_mothergone
+# 		# 				has_country_flag = EOE_saw_mother
+# 		# 			}
+# 		# 		}
+# 		# 		ship_event = {
+# 		# 			id = EOE_branch.132
+# 		# 		}
+# 		# 	}
+# 		# 	else = {
+# 		# 		ship_event = {
+# 		# 			id = EOE_branch.133
+# 		# 		}
+# 		# 	}
+# 		# }
+# 	}
+# }
+# ship_event = { #第四次的随机，结尾事件
+# 	id = EOE_branch.136
+# 	is_triggered_only = yes
+# 	title = EOE_branch.134.name #探索完成
+# 	desc = EOE_branch.136.desc #可以选择关门或继续
+# 	picture = GFX_evt_physics_research
+# 	show_sound = event_mystic_reveal
+# 	trigger = {
+# 		owner = {
+# 			NOT = {
+# 				has_country_flag = EOE_has_com_with_sei
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = EOE_branch.126.a #差不多得了，安全关闭传送门
+# 		owner = {
+# 			enable_special_project = {
+# 				name = EOE_close_portal
+# 				location = event_target:EOE_ghost_planet
+# 				owner = this
+# 			}
+# 		}
+		
+# 	}
+# 	option = {
+# 		name = EOE_branch.130.c #拖延一年再来
+# 		ship_event = {
+# 			id = EOE_branch.136 days = 360
+# 		}
+# 	}
+# 	option = {
+# 		name = EOE_branch.130.b
+# 		custom_tooltip = EOE_branch.130.b.tooltip #继续使用传送门
+# 		owner = {
+# 			enable_special_project = {
+# 				name = EOE_enter_portal_5
+# 				location = event_target:EOE_ghost_planet
+# 				owner = this
+# 			}
+# 		}
+		
+# 		allow = {
+# 			owner = {
+# 				resource_stockpile_compare = {
+# 					resource = alloys
+# 					value >= 16384
+# 				}
+# 				resource_stockpile_compare = {
+# 					resource = energy
+# 					value >= 16384
+# 				}
+# 			}
+# 		}
+# 		owner = {
+# 			add_resource = {
+# 				energy = -16384
+# 				alloys = -16384
+# 			}
+# 		}
+		
+# 	}
+# } 
+# ship_event = { #第五次的随机，结尾事件
+# 	id = EOE_branch.137
+# 	is_triggered_only = yes
+# 	title = EOE_branch.134.name #探索完成
+# 	desc = EOE_branch.137.desc #可以选择关门或继续
+# 	picture = GFX_evt_physics_research
+# 	show_sound = event_mystic_reveal
+# 	trigger = {
+# 		owner = {
+# 			NOT = {
+# 				has_country_flag = EOE_has_com_with_sei
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = EOE_branch.126.a #差不多得了，安全关闭传送门
+
+# 		owner = {
+# 			enable_special_project = {
+# 				name = EOE_close_portal
+# 				location = event_target:EOE_ghost_planet
+# 				owner = this
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = EOE_branch.130.b
+# 		custom_tooltip = EOE_branch.130.b.tooltip #继续使用传送门
+# 		allow = {
+# 			owner = {
+# 				resource_stockpile_compare = {
+# 					resource = alloys
+# 					value >= 16384
+# 				}
+# 				resource_stockpile_compare = {
+# 					resource = energy
+# 					value >= 16384
+# 				}
+# 			}
+# 		}
+# 		owner = {
+# 			add_resource = {
+# 				energy = -16384
+# 				alloys = -16384
+# 			}
+# 		}
+# 		owner = {
+# 			enable_special_project = {
+# 				name = EOE_enter_portal_6
+# 				location = event_target:EOE_ghost_planet
+# 				owner = this
+# 			}
+# 		}
+# 	}
+# } 
+##########################################
+# ship_event = { #第六次的随机，结尾事件
+# 	id = EOE_branch.138
+# 	is_triggered_only = yes
+# 	title = EOE_branch.138.name #探索完成
+# 	desc = EOE_branch.138.desc #炸了
+# 	picture = GFX_evt_exploding_ship 
+# 	show_sound = event_super_explosion
+# 	trigger = {
+# 		owner = {
+# 			NOT = {
+# 				has_country_flag = EOE_has_com_with_sei
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = OK
+# 		event_target:EOE_ghost_planet = {
+# 			add_deposit = d_EOE_ghost_trace
+# 			remove_modifier = EOE_modifier_ghost_story
+# 		}
+# 		owner = {
+# 			add_resource = {
+# 				sr_zro = 1000
+# 				sr_dark_matter = 100
+# 			}
+# 		}
+		
+# 		owner = {
+# 			end_event_chain = EOE_ghost_story_chain
+# 			remove_global_flag = EOE_ghost_started
+# 			clear_global_event_target = EOE_ghost_planet
+# 			set_country_flag = EOE_portal_exploded_finally
+# 		}
+# 	}
+# } 
+situation_event = { #局势结尾事件
 	id = EOE_branch.138
 	is_triggered_only = yes
 	title = EOE_branch.138.name #探索完成
 	desc = EOE_branch.138.desc #炸了
 	picture = GFX_evt_exploding_ship 
 	show_sound = event_super_explosion
-	trigger = {
-		owner = {
-			NOT = {
-				has_country_flag = EOE_has_com_with_sei
-			}
-		}
-	}
+	situation = this
+	# trigger = {
+	# 	owner = {
+	# 		NOT = {
+	# 			has_country_flag = EOE_has_com_with_sei
+	# 		}
+	# 	}
+	# }
 	option = {
 		name = OK
 		event_target:EOE_ghost_planet = {
@@ -5854,140 +5976,166 @@ ship_event = { #第六次的随机，结尾事件
 				sr_zro = 1000
 				sr_dark_matter = 100
 			}
-		}
-		
-		owner = {
 			end_event_chain = EOE_ghost_story_chain
 			remove_global_flag = EOE_ghost_started
 			clear_global_event_target = EOE_ghost_planet
 			set_country_flag = EOE_portal_exploded_finally
+			random_owned_ship = {
+				limit = {
+					has_ship_flag = EOE_ghost_survey_ship
+				}
+				fleet = {
+					set_event_locked = no
+				}
+			}
 		}
+	}
+	after = {
+		remove_situation_flag = EOE_situation_ghost
+		destroy_situation = this
 	}
 } 
 
-ship_event = { #第四次随机时收钱
+situation_event = { #发车
 	id = EOE_branch.143
 	is_triggered_only = yes
-	title = EOE_branch.143.name 
-	desc = EOE_branch.143.desc 
-	picture = GFX_evt_physics_research
-	trigger = {
+	hide_window = yes
+	immediate = {
 		owner = {
-			NOT = {
-				has_country_flag = EOE_has_com_with_sei
-			}
-		}
-	}
-	option = {
-		name = EOE_branch.143.a #提供维护费
-		allow = {
-			owner = {
-				resource_stockpile_compare = {
-					resource = alloys
-					value >= 4096
+			random_owned_ship = {
+				limit = {
+					has_ship_flag = EOE_ghost_survey_ship
 				}
-				resource_stockpile_compare = {
-					resource = energy
-					value >= 4096
+				ship_event = {
+					id = EOE_ghost.1
 				}
-			}
+			}			
 		}
-		owner = {
-			add_resource = {
-				energy = -4096
-				alloys = -4096
-			}
-		}
-	}
-	option = { 
-		name = EOE_branch.143.b #暂停项目
-		hidden_effect = {
-			unassign_leader = root.leader
-		}
-	}
-} 
-ship_event = { #第五次随机时收钱
-	id = EOE_branch.144
-	is_triggered_only = yes
-	title = EOE_branch.144.name 
-	desc = EOE_branch.144.desc #快支持不住传送门了
-	picture = GFX_evt_physics_research
-	trigger = {
-		owner = {
-			NOT = {
-				has_country_flag = EOE_has_com_with_sei
-			}
-		}
-	}
-	option = {
-		name = EOE_branch.143.a #提供维护费
-		allow = {
-			owner = {
-				resource_stockpile_compare = {
-					resource = alloys
-					value >= 16384
-				}
-				resource_stockpile_compare = {
-					resource = energy
-					value >= 16384
-				}
-			}
-		}
-		owner = {
-			add_resource = {
-				energy = -16384
-				alloys = -16384
-			}
-		}
-	}
-	option = { 
-		name = EOE_branch.143.b #暂停项目
-		hidden_effect = {
-			unassign_leader = root.leader
-		}
-	}
-} 
-ship_event = { #第六次随机时收钱
-	id = EOE_branch.145
-	is_triggered_only = yes
-	title = EOE_branch.145.name 
-	desc = EOE_branch.145.desc #传送门快无了，最后勉强顶一下
-	picture = GFX_evt_physics_research
-	trigger = {
-		owner = {
-			NOT = {
-				has_country_flag = EOE_has_com_with_sei
-			}
-		}
-	}
-	option = {
-		name = EOE_branch.143.a #提供维护费
-		allow = {
-			owner = {
-				resource_stockpile_compare = {
-					resource = alloys
-					value >= 16384
-				}
-				resource_stockpile_compare = {
-					resource = energy
-					value >= 16384
-				}
-			}
-		}
-		owner = {
-			add_resource = {
-				energy = -16384
-				alloys = -16384
-			}
-		}
-	}
-	option = { 
-		name = EOE_branch.143.b #暂停项目
-		hidden_effect = {
-			unassign_leader = root.leader
-		}
-	}
-} 
+	}	
+}
+# ship_event = { #第四次随机时收钱
+# 	id = EOE_branch.143
+# 	is_triggered_only = yes
+# 	title = EOE_branch.143.name 
+# 	desc = EOE_branch.143.desc 
+# 	picture = GFX_evt_physics_research
+# 	trigger = {
+# 		owner = {
+# 			NOT = {
+# 				has_country_flag = EOE_has_com_with_sei
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = EOE_branch.143.a #提供维护费
+# 		allow = {
+# 			owner = {
+# 				resource_stockpile_compare = {
+# 					resource = alloys
+# 					value >= 4096
+# 				}
+# 				resource_stockpile_compare = {
+# 					resource = energy
+# 					value >= 4096
+# 				}
+# 			}
+# 		}
+# 		owner = {
+# 			add_resource = {
+# 				energy = -4096
+# 				alloys = -4096
+# 			}
+# 		}
+# 	}
+# 	option = { 
+# 		name = EOE_branch.143.b #暂停项目
+# 		hidden_effect = {
+# 			unassign_leader = root.leader
+# 		}
+# 	}
+# } 
+# ship_event = { #第五次随机时收钱
+# 	id = EOE_branch.144
+# 	is_triggered_only = yes
+# 	title = EOE_branch.144.name 
+# 	desc = EOE_branch.144.desc #快支持不住传送门了
+# 	picture = GFX_evt_physics_research
+# 	trigger = {
+# 		owner = {
+# 			NOT = {
+# 				has_country_flag = EOE_has_com_with_sei
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = EOE_branch.143.a #提供维护费
+# 		allow = {
+# 			owner = {
+# 				resource_stockpile_compare = {
+# 					resource = alloys
+# 					value >= 16384
+# 				}
+# 				resource_stockpile_compare = {
+# 					resource = energy
+# 					value >= 16384
+# 				}
+# 			}
+# 		}
+# 		owner = {
+# 			add_resource = {
+# 				energy = -16384
+# 				alloys = -16384
+# 			}
+# 		}
+# 	}
+# 	option = { 
+# 		name = EOE_branch.143.b #暂停项目
+# 		hidden_effect = {
+# 			unassign_leader = root.leader
+# 		}
+# 	}
+# } 
+# ship_event = { #第六次随机时收钱
+# 	id = EOE_branch.145
+# 	is_triggered_only = yes
+# 	title = EOE_branch.145.name 
+# 	desc = EOE_branch.145.desc #传送门快无了，最后勉强顶一下
+# 	picture = GFX_evt_physics_research
+# 	trigger = {
+# 		owner = {
+# 			NOT = {
+# 				has_country_flag = EOE_has_com_with_sei
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = EOE_branch.143.a #提供维护费
+# 		allow = {
+# 			owner = {
+# 				resource_stockpile_compare = {
+# 					resource = alloys
+# 					value >= 16384
+# 				}
+# 				resource_stockpile_compare = {
+# 					resource = energy
+# 					value >= 16384
+# 				}
+# 			}
+# 		}
+# 		owner = {
+# 			add_resource = {
+# 				energy = -16384
+# 				alloys = -16384
+# 			}
+# 		}
+# 	}
+# 	option = { 
+# 		name = EOE_branch.143.b #暂停项目
+# 		hidden_effect = {
+# 			unassign_leader = root.leader
+# 		}
+# 	}
+# } 
 
 #############################
 #Z晶和究极空间
