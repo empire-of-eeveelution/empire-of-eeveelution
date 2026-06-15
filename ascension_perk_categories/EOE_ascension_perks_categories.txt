@@ -1,0 +1,5 @@
+ap_category_ambitions = {
+    ascension_perks = {
+        "ap_mega_evolution_EOE"
+    }
+}
