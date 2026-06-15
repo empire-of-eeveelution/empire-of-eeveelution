@@ -233,7 +233,7 @@ utility_component_template = {
 		modifier = {
 			ship_weapon_damage = -0.33
 			ship_shield_penetration_mult = -1
-			ship_accuracy_mult = 1
+			ship_accuracy_add = 50
 		}
 		
 		graphics = {

@@ -182,132 +182,131 @@ special_project = {
 		}
 	}
 }
-special_project = {
-	key = "EOE_enter_portal_2"
-	event_scope = ship_event
-	cost = 6561
-	timelimit = -1
-	picture = GFX_evt_vortex
-	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
-	tech_department = society_technology
-	requirements = {
-		shipclass_science_ship = 1
-		leader = scientist
-		skill = 1
-	}
-	on_success = { 
-		ship_event = {
-			id = EOE_ghost.1
-		}
-		ship_event = {
-			id = EOE_branch.134 days = 5
-		}
-	}
-}
-special_project = {
-	key = "EOE_enter_portal_3"
-	event_scope = ship_event
-	cost = 59049
-	timelimit = -1
-	picture = GFX_evt_vortex
-	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
-	tech_department = society_technology
-	requirements = {
-		shipclass_science_ship = 1
-		leader = scientist
-		skill = 1
-	}
-	on_success = { 
-		ship_event = {
-			id = EOE_ghost.1
-		}
-		ship_event = {
-			id = EOE_branch.135 days = 5
-		}
-	}
-}
-#看起来4.5.6都不用到
-special_project = {
-	key = "EOE_enter_portal_4"
-	event_scope = ship_event
-	cost = 177147
-	timelimit = -1
-	picture = GFX_evt_vortex
-	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
-	tech_department = society_technology
-	requirements = {
-		shipclass_science_ship = 1
-		leader = scientist
-		skill = 1
-	}
-	on_progress_25 = {
-		ship_event = {
-			id = EOE_branch.143
-		}
-	}
-	on_success = { 
-		ship_event = {
-			id = EOE_ghost.1
-		}
-		ship_event = {
-			id = EOE_branch.136 days = 5
-		}
-	}
-}
-special_project = {
-	key = "EOE_enter_portal_5"
-	event_scope = ship_event
-	cost = 177147
-	timelimit = -1
-	picture = GFX_evt_vortex
-	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
-	tech_department = society_technology
-	requirements = {
-		shipclass_science_ship = 1
-		leader = scientist
-		skill = 1
-	}
-	on_progress_25 = {
-		ship_event = {
-			id = EOE_branch.144
-		}
-	}
-	on_success = { 
-		ship_event = {
-			id = EOE_ghost.1
-		}
-		ship_event = {
-			id = EOE_branch.137 days = 5
-		}
-	}
-}
-special_project = {
-	key = "EOE_enter_portal_6"
-	event_scope = ship_event
-	cost = 177147
-	timelimit = -1
-	picture = GFX_evt_vortex
-	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
-	tech_department = society_technology
-	requirements = {
-		shipclass_science_ship = 1
-		leader = scientist
-		skill = 1
-	}
-	on_progress_25 = {
-		ship_event = {
-			id = EOE_branch.145
-		}
-	}
-	on_success = { 
-		ship_event = {
-			id = EOE_ghost.1
-		}
-		ship_event = {
-			id = EOE_branch.138 days = 5
-		}
-	}
-}
+# special_project = {
+# 	key = "EOE_enter_portal_2"
+# 	event_scope = ship_event
+# 	cost = 6561
+# 	timelimit = -1
+# 	picture = GFX_evt_vortex
+# 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+# 	tech_department = society_technology
+# 	requirements = {
+# 		shipclass_science_ship = 1
+# 		leader = scientist
+# 		skill = 1
+# 	}
+# 	on_success = { 
+# 		ship_event = {
+# 			id = EOE_ghost.1
+# 		}
+# 		ship_event = {
+# 			id = EOE_branch.134 days = 5
+# 		}
+# 	}
+# }
+# special_project = {
+# 	key = "EOE_enter_portal_3"
+# 	event_scope = ship_event
+# 	cost = 59049
+# 	timelimit = -1
+# 	picture = GFX_evt_vortex
+# 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+# 	tech_department = society_technology
+# 	requirements = {
+# 		shipclass_science_ship = 1
+# 		leader = scientist
+# 		skill = 1
+# 	}
+# 	on_success = { 
+# 		ship_event = {
+# 			id = EOE_ghost.1
+# 		}
+# 		ship_event = {
+# 			id = EOE_branch.135 days = 5
+# 		}
+# 	}
+# }
+# special_project = {
+# 	key = "EOE_enter_portal_4"
+# 	event_scope = ship_event
+# 	cost = 177147
+# 	timelimit = -1
+# 	picture = GFX_evt_vortex
+# 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+# 	tech_department = society_technology
+# 	requirements = {
+# 		shipclass_science_ship = 1
+# 		leader = scientist
+# 		skill = 1
+# 	}
+# 	# on_progress_25 = {
+# 	# 	ship_event = {
+# 	# 		id = EOE_branch.143
+# 	# 	}
+# 	# }
+# 	on_success = { 
+# 		ship_event = {
+# 			id = EOE_ghost.1
+# 		}
+# 		ship_event = {
+# 			id = EOE_branch.136 days = 5
+# 		}
+# 	}
+# }
+# special_project = {
+# 	key = "EOE_enter_portal_5"
+# 	event_scope = ship_event
+# 	cost = 177147
+# 	timelimit = -1
+# 	picture = GFX_evt_vortex
+# 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+# 	tech_department = society_technology
+# 	requirements = {
+# 		shipclass_science_ship = 1
+# 		leader = scientist
+# 		skill = 1
+# 	}
+# 	# on_progress_25 = {
+# 	# 	ship_event = {
+# 	# 		id = EOE_branch.144
+# 	# 	}
+# 	# }
+# 	on_success = { 
+# 		ship_event = {
+# 			id = EOE_ghost.1
+# 		}
+# 		ship_event = {
+# 			id = EOE_branch.137 days = 5
+# 		}
+# 	}
+# }
+# special_project = {
+# 	key = "EOE_enter_portal_6"
+# 	event_scope = ship_event
+# 	cost = 177147
+# 	timelimit = -1
+# 	picture = GFX_evt_vortex
+# 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+# 	tech_department = society_technology
+# 	requirements = {
+# 		shipclass_science_ship = 1
+# 		leader = scientist
+# 		skill = 1
+# 	}
+# 	# on_progress_25 = {
+# 	# 	ship_event = {
+# 	# 		id = EOE_branch.145
+# 	# 	}
+# 	# }
+# 	on_success = { 
+# 		ship_event = {
+# 			id = EOE_ghost.1
+# 		}
+# 		ship_event = {
+# 			id = EOE_branch.138 days = 5
+# 		}
+# 	}
+# }
 special_project = {
 	key = "EOE_gray_goo"
 	event_scope = ship_event

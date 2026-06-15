@@ -156,27 +156,91 @@ EOEjifei3.11451.name:0"MEGA Evolution"
 EOEjifei3.11451.desc:0"When the so-called \"materialists\" turn a blind eye to the real existence of psionics, and those spiritualist believe that their little brain is the source of everything, we have thoroughly understood the connection between consciousness and the physical body, to build the living god with flesh and steel.\nUnlock the corresponding psionic biological combat unit technology after completing the research on weapons and shield technology.\n§YLatias§! technology has a chance to appear after §YMew§! research is completed.\n§YReshiram§! technology has a chance to appear after §YLatias§! research is completed."
 
 
-pokemon_mint:0"Mint"
+# pokemon_mint:0"Mint"
 
 
-####走A
-Hasty_Mint:0"Hasty Mint"
-Hasty_Mint_DESC:0"This plant symbiont can secrete hormones, regulate the metabolic mode of the host and affect its behavior mode. When a Pokémon equipped this mint, it will swarm in with more speed and evasion (Swarm Computer equivalent.)"
+# ####走A
+# Hasty_Mint:0"Hasty Mint"
+# Hasty_Mint_DESC:0"This plant symbiont can secrete hormones, regulate the metabolic mode of the host and affect its behavior mode. When a Pokémon equipped this mint, it will swarm in with more speed and evasion (Swarm Computer equivalent.)"
 
-Bold_Mint:0"Bold Mint"
-Bold_Mint_DESC:0"This plant symbiont can secrete hormones, regulate the metabolic mode of the host and affect its behavior mode. When a Pokémon equipped this mint, its explosive damage and accuracy will increase (Torpedo Computer equivalent.)"
+# Bold_Mint:0"Bold Mint"
+# Bold_Mint_DESC:0"This plant symbiont can secrete hormones, regulate the metabolic mode of the host and affect its behavior mode. When a Pokémon equipped this mint, its explosive damage and accuracy will increase (Torpedo Computer equivalent.)"
 
-Brave_Mint:0"Brave Min"
-Brave_Mint_DESC:0"This plant symbiont can secrete hormones, regulate the metabolic mode of the host and affect its behavior mode. When a Pokémon equipped this mint, it will attack incoming missiles and strike craft faster and more accurately (Picket Computer equivalent.)"
+# Brave_Mint:0"Brave Min"
+# Brave_Mint_DESC:0"This plant symbiont can secrete hormones, regulate the metabolic mode of the host and affect its behavior mode. When a Pokémon equipped this mint, it will attack incoming missiles and strike craft faster and more accurately (Picket Computer equivalent.)"
 
-Sassy_Mint:0"Sassy Mint"
-Sassy_Mint_DESC:0"This plant symbiont can secrete hormones, regulate the metabolic mode of the host and affect its behavior mode. When a Pokémon equipped this mint, it will attack faster and more accurately at medium range (Line Computer equivalent.)"
+# Sassy_Mint:0"Sassy Mint"
+# Sassy_Mint_DESC:0"This plant symbiont can secrete hormones, regulate the metabolic mode of the host and affect its behavior mode. When a Pokémon equipped this mint, it will attack faster and more accurately at medium range (Line Computer equivalent.)"
 
-Quiet_Mint:0"Quiet Mint"
-Quiet_Mint_DESC:0"This plant symbiont can secrete hormones, regulate the metabolic mode of the host and affect its behavior mode. When a Pokémon equipped this mint, it will attack more accurately at much longer ranges (Artillery Computer equivalent.)"
+# Quiet_Mint:0"Quiet Mint"
+# Quiet_Mint_DESC:0"This plant symbiont can secrete hormones, regulate the metabolic mode of the host and affect its behavior mode. When a Pokémon equipped this mint, it will attack more accurately at much longer ranges (Artillery Computer equivalent.)"
 
-Timid_Mint:0"Timid Mint"
-Timid_Mint_DESC:0"This plant symbiont can secrete hormones, regulate the metabolic mode of the host and affect its behavior mode. When a Pokémon equipped this mint, it will stay as far away from the fight as possible, attacking accurately with its longest range weapon (Carrier Computer equivalent.)"
+# Timid_Mint:0"Timid Mint"
+# Timid_Mint_DESC:0"This plant symbiont can secrete hormones, regulate the metabolic mode of the host and affect its behavior mode. When a Pokémon equipped this mint, it will stay as far away from the fight as possible, attacking accurately with its longest range weapon (Carrier Computer equivalent.)"
+
+#######薄荷
+
+pokemon_mint:0 "Mint"
+No_Mint:0 "No Mint"
+No_Mint_DESC:0 "No Mint Equipped"
+
+# Micro-Management Master
+Serious_Mint:0 "Serious Mint"
+Serious_Mint_DESC:0 "This plant symbiont secretes hormones that regulate the host's metabolism and influence its behavior patterns. A Pokémon equipped with this Mint will focus intently on following orders."
+Serious_Mint_0:0 "Serious Mint"
+Serious_Mint_0_DESC:0 "A Pokémon carrying this Mint will have no AI and will only act on your direct commands."
+
+#### Kiting / Hit-and-Run
+Hasty_Mint:0 "Hasty Mint"
+Hasty_Mint_DESC:0 "This plant symbiont secretes hormones that regulate the host's metabolism and influence its behavior patterns. A Pokémon equipped with this Mint will find its Speed more easily raised, while its Defense is more difficult to raise."
+Hasty_Mint_100:0 "Hasty Mint"
+Hasty_Mint_100_DESC:0 "A Pokémon carrying this Mint will attempt to stay away from enemies, maintaining mobility at a distance of §Y100§! and engaging enemies with long-range firepower."
+
+Jolly_Mint:0 "Jolly Mint"
+Jolly_Mint_DESC:0 "This plant symbiont secretes hormones that regulate the host's metabolism and influence its behavior patterns. A Pokémon equipped with this Mint will find its Speed more easily raised, while its Special Attack is more difficult to raise."
+Jolly_Mint_150:0 "Jolly Mint"
+Jolly_Mint_150_DESC:0 "A Pokémon carrying this Mint will attempt to stay away from enemies, maintaining mobility at a distance of §Y150§! and engaging enemies with long-range firepower."
+
+Modest_Mint:0 "Modest Mint"
+Modest_Mint_DESC:0 "This plant symbiont secretes hormones that regulate the host's metabolism and influence its behavior patterns. A Pokémon equipped with this Mint will find its Attack more easily raised, while its Special Attack is more difficult to raise."
+Naive_Mint_190:0 "Modest Mint"
+Naive_Mint_190_DESC:0 "A Pokémon carrying this Mint will attempt to stay away from enemies, maintaining mobility at a distance of §Y200§! and engaging enemies with long-range firepower."
+
+Naive_Mint:0 "Naive Mint"
+Naive_Mint_DESC:0 "This plant symbiont secretes hormones that regulate the host's metabolism and influence its behavior patterns. A Pokémon equipped with this Mint will find its Speed more easily raised, while its Special Defense is more difficult to raise."
+Naive_Mint_250:0 "Naive Mint"
+Naive_Mint_250_DESC:0 "A Pokémon carrying this Mint will attempt to stay away from enemies, maintaining mobility at a distance of §Y250§! and engaging enemies with long-range firepower."
+
+Timid_Mint:0 "Timid Mint"
+Timid_Mint_DESC:0 "This plant symbiont secretes hormones that regulate the host's metabolism and influence its behavior patterns. A Pokémon equipped with this Mint will find its Speed more easily raised, while its Attack is more difficult to raise."
+Timid_Mint_300:0 "Timid Mint"
+Timid_Mint_300_DESC:0 "A Pokémon carrying this Mint will attempt to stay away from enemies, maintaining mobility at a distance of §Y300§! and engaging enemies with long-range firepower."
+
+Sassy_Mint:0 "Sassy Mint"
+Sassy_Mint_DESC:0 "This plant symbiont secretes hormones that regulate the host's metabolism and influence its behavior patterns. A Pokémon equipped with this Mint will find its Special Defense more easily raised, while its Speed is more difficult to raise."
+Sassy_Mint_stay:0 "Sassy Mint"
+Sassy_Mint_stay_DESC:0 "A Pokémon carrying this Mint will attempt to stay stationary at a distance of §Y100§! from enemies and engage them with long-range firepower."
+
+Brave_Mint:0 "Brave Mint"
+Brave_Mint_DESC:0 "This plant symbiont secretes hormones that regulate the host's metabolism and influence its behavior patterns. A Pokémon equipped with this Mint will find its Attack more easily raised, while its Speed is more difficult to raise."
+Brave_Mint_stay:0 "Brave Mint"
+Brave_Mint_stay_DESC:0 "A Pokémon carrying this Mint will attempt to stay stationary at a distance of §Y150§! from enemies and engage them with long-range firepower."
+
+Quiet_Mint:0 "Quiet Mint"
+Quiet_Mint_DESC:0 "This plant symbiont secretes hormones that regulate the host's metabolism and influence its behavior patterns. A Pokémon equipped with this Mint will find its Special Attack more easily raised, while its Speed is more difficult to raise."
+Quiet_Mint_stay:0 "Quiet Mint"
+Quiet_Mint_stay_DESC:0 "A Pokémon carrying this Mint will attempt to stay stationary at a distance of §Y200§! from enemies and engage them with long-range firepower."
+
+Relaxed_Mint:0 "Relaxed Mint"
+Relaxed_Mint_DESC:0 "This plant symbiont secretes hormones that regulate the host's metabolism and influence its behavior patterns. A Pokémon equipped with this Mint will find its Defense more easily raised, while its Speed is more difficult to raise."
+Relaxed_Mint_stay:0 "Relaxed Mint"
+Relaxed_Mint_stay_DESC:0 "A Pokémon carrying this Mint will attempt to stay stationary at a distance of §Y250§! from enemies and engage them with long-range firepower."
+
+Bold_Mint:0 "Bold Mint"
+Bold_Mint_DESC:0 "This plant symbiont secretes hormones that regulate the host's metabolism and influence its behavior patterns. A Pokémon equipped with this Mint will find its Defense more easily raised, while its Attack is more difficult to raise."
+Bold_Mint_charge:0 "Bold Mint"
+Bold_Mint_charge_DESC:0 "A Pokémon carrying this Mint will charge directly at enemy ships."
+
 
 
 EOE_pokeball_healing:0"Fainted pokemons"

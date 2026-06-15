@@ -4,7 +4,7 @@ EOE = {
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "ISS"
+	ship_prefix = "ESC"
 	
 	species={
 		class="Eeveelutions"
@@ -49,14 +49,14 @@ EOE = {
 	empire_flag={
 		icon={
 			category="eevee"
-			file="tail.dds"
+			file="SC.dds"
 		}
 		background={
 			category="backgrounds"
-			file="v.dds"
+			file="rounded_middle.dds"
 		}
 		colors={
-			"teal"
+			"dark_blue"
 			"light_blue"
 			"null"
 			"null"

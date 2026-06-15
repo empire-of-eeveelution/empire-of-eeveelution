@@ -13,6 +13,23 @@ utility_component_template = {
 	ai_weight = { weight = 0 }
 }
 
+utility_component_template = {
+	key = "Serious_Mint"
+	size = small
+
+	icon = "GFX_EOE_No_Mint"
+	icon_frame = 1
+	resources = {
+		category = pokemon_ships
+		cost = { food = 20 }
+	}
+	component_set = "pokemon_mint"
+	
+	ship_behavior = "Serious_Mint_0"
+	size_restriction = {EOE_mew EOE_Latias EOE_Reshiram EOE_minior EOE_minior_another EOE_cthugha_1_sz EOE_necrozma_normal}
+
+	ai_weight = { weight = 0 }
+}
 
 utility_component_template = {
 	key = "Hasty_Mint"

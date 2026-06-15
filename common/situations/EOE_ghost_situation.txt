@@ -1,0 +1,194 @@
+situation_EOE_ghost = {
+    picture = GFX_evt_shrouded_planet
+    category = positive
+    # fail_icon = GFX_situation_outcome_meh
+    # fail_icon_frame = GFX_situation_outcome_frame_green
+    complete_icon = GFX_situation_outcome_ascension
+    complete_icon_frame = GFX_situation_outcome_frame_green
+    initial_progress = 0
+
+    on_progress_complete = {
+        custom_tooltip = situation_EOE_ghost_complete_tooltip
+        hidden_effect = {
+            situation_event = {
+                id = EOE_branch.143
+            }
+            situation_event = {
+                id = EOE_branch.138 days = 5
+            }
+        }
+    }
+
+    stages = {
+        stage_1 = {
+            icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 360
+			# on_first_enter = {
+			# 	situation_event = { id = bio.5 days = 1 }
+			# }
+            on_first_enter = {
+                owner = {
+			    	set_variable = {
+                        which = EOE_ghost_stage_value
+                        value = 1
+                    }
+                }
+			}
+			custom_tooltip = "EOE_ghost_stage_1_effects" #我们的研究团队正前往传送门对面探险。我们需要准备足够的物资。
+        }
+        stage_2 = {
+            icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_blue
+			end = 720
+			on_first_enter = {
+                owner = {
+			    	set_variable = {
+                        which = EOE_ghost_stage_value
+                        value = 2
+                    }
+                }
+				situation_event = { id = EOE_branch.143 }
+			}
+			custom_tooltip = "EOE_ghost_stage_1_effects"
+        }
+        stage_3 = {
+            icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_blue
+			end = 1080
+			on_first_enter = {
+                owner = {
+			    	set_variable = {
+                        which = EOE_ghost_stage_value
+                        value = 3
+                    }
+                }
+				situation_event = { id = EOE_branch.143 }
+			}
+			custom_tooltip = "EOE_ghost_stage_1_effects"
+        }
+        stage_4 = {
+            icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_blue
+			end = 1440
+			on_first_enter = {
+                owner = {
+			    	set_variable = {
+                        which = EOE_ghost_stage_value
+                        value = 4
+                    }
+                }
+				situation_event = { id = EOE_branch.143 }
+			}
+			custom_tooltip = "EOE_ghost_stage_1_effects" 
+        }
+        stage_5 = {
+            icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_blue
+			end = 1800
+			on_first_enter = {
+                owner = {
+			    	set_variable = {
+                        which = EOE_ghost_stage_value
+                        value = 5
+                    }
+                }
+				situation_event = { id = EOE_branch.143 }
+			}
+			custom_tooltip = "EOE_ghost_stage_1_effects"
+        }
+    }
+
+    monthly_progress = {
+        base = 180
+        modifier = {
+            mult = value:EOE_ghost_situation_approach
+            desc = "EOE_ghost_situation_approach_desc" 
+        }
+        # modifier = {
+        #     mult = 0
+        #     owner = {
+        #         has_country_flag = EOE_ghost_situation_approach_3
+        #     }
+        #     desc = "EOE_ghost_situation_approach_3_desc" #慢速进行
+        # }
+    }
+
+    approach = { #快速进行：
+        name = EOE_situation_ghost_speedup
+        icon = GFX_situation_approach_energy_credits
+        icon_background = GFX_situation_approach_bg_green
+        # allow = {
+        #     custom_tooltip = {
+        #         text = EOE_situation_ghost_hezi_locked
+        #         NOT = {
+        #             owner = {
+        #                 has_country_flag = EOE_ghost_situation_pause_hezi
+        #             }
+        #         }
+        #     }
+        # }
+        on_select = {
+            set_situation_locked = no
+            set_variable = {
+                which = EOE_ghost_approach_value
+                value = 2
+            }
+        }
+        resources = {
+            category = situations
+            upkeep = {
+                energy = 200
+                mult = owner.value:EOE_ghost_situation_portal_upkeep_mult
+            }
+            upkeep = {
+                alloys = 100
+                mult = owner.value:EOE_ghost_situation_portal_upkeep_mult
+            }
+        }
+    }
+
+    approach = { #普通速度，1年1个
+        name = EOE_situation_ghost_medium
+        icon = GFX_situation_approach_balance_sheet
+        icon_background = GFX_situation_approach_bg_yellow
+        # allow = {
+        #     custom_tooltip = {
+        #         text = EOE_situation_ghost_hezi_locked
+        #         NOT = {
+        #             owner = {
+        #                 has_country_flag = EOE_ghost_situation_pause_hezi
+        #             }
+        #         }
+        #     }
+        # }
+        on_select = {
+            set_situation_locked = no
+            set_variable = {
+                which = EOE_ghost_approach_value
+                value = 1
+            }
+        }
+        resources = {
+            category = situations
+            upkeep = {
+                energy = 100
+                mult = owner.value:EOE_ghost_situation_portal_upkeep_mult
+            }
+            upkeep = {
+                alloys = 50
+                mult = owner.value:EOE_ghost_situation_portal_upkeep_mult
+            }
+        }
+    }
+    
+    approach = { #暂停，中止
+        name = EOE_situation_ghost_pause
+        icon = GFX_situation_approach_suspicious
+        icon_background = GFX_situation_approach_bg_red
+        on_select = {
+            set_situation_locked = yes
+        }
+    }
+
+}

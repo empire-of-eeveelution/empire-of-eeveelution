@@ -1,5 +1,5 @@
 ship_design = { #光龙，小号，给玩家
-	name = "NAME_EOE_necrozma_small_ship"
+	name = "NAME_EOE_necrozma_small_ship_serious"
 	ship_size = EOE_necrozma_normal
 
 	section = {
@@ -121,12 +121,12 @@ ship_design = { #光龙，小号，给玩家
 	required_component = "EOE_THRUSTER_CTHUGHA"
 	required_component = "COMBAT_COMPUTER_ARTILLERY_PRECOG"
 	required_component = "EOE_Emergency_Recall"
-	required_component = "Naive_Mint"
+	required_component = "Serious_Mint"
 	required_component = "EOE_NECROZMA_AURA"
 	required_component = "EOE_NECROZMA_AURA_2"
 }
 ship_design = { #光龙，大号，给玩家
-	name = "NAME_EOE_necrozma_ship"
+	name = "NAME_EOE_necrozma_ship_serious"
 	ship_size = EOE_necrozma_normal
 
 	section = {
@@ -248,259 +248,350 @@ ship_design = { #光龙，大号，给玩家
 	required_component = "EOE_THRUSTER_CTHUGHA"
 	required_component = "COMBAT_COMPUTER_ARTILLERY_PRECOG"
 	required_component = "EOE_Emergency_Recall"
-	required_component = "Naive_Mint"
+	required_component = "Serious_Mint"
 	required_component = "EOE_NECROZMA_AURA"
 	required_component = "EOE_NECROZMA_AURA_2"
 }
-ship_design = { #光龙，小号，boss
-	name = "NAME_EOE_necrozma_small_ship_hostile"
-	ship_size = EOE_necrozma_normal
+
+ship_design = {
+	name = "NAME_EOE_cthugha_1_small_ship_serious"
+	ship_size = EOE_cthugha_1_sz
 
 	section = {
-		template = luozima
+		template = EOE_cthugha
 		slot = "mid"
 		
 		component = {
 			slot = "EOE_fire_fire"
-			template = "PLANET_KILLER_NECROZMA"
+			template = "PLANET_KILLER_FIRE_EOE"
 		}
 		component = {
 			slot = "EOE_LARGE_GUN_01"
-			template = "EOE_light_that_burns_the_sky_small"
+			template = "EOE_cthugha_lance_s"
 		}
 		component = {
 			slot = "EOE_LARGE_GUN_02"
-			template = "EOE_prismatic_laser"
+			template = "EOE_cthugha_lance_s"
 
 		}
 		component = {
 			slot = "EOE_LARGE_GUN_03"
-			template = "EOE_prismatic_laser"
+			template = "EOE_cthugha_lance_s"
 
 		}
 		component = {
 			slot = "EOE_LARGE_GUN_04"
-			template = "EOE_moongeist_beam"
+			template = "EOE_cthugha_lance_s"
 
 		}
 		component = {
 			slot = "EOE_LARGE_GUN_05"
-			template = "EOE_moongeist_beam"
+			template = "EOE_cthugha_lance_s"
 
 		}
 		component = {
-			slot = "EOE_LARGE_GUN_06"
-			template = "EOE_moongeist_beam"
+			slot = "EOE_fire_vampire_01"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_LARGE_GUN_07"
-			template = "EOE_meteor_drive"
+			slot = "EOE_fire_vampire_02"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_LARGE_GUN_08"
-			template = "EOE_meteor_drive"
+			slot = "EOE_fire_vampire_03"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_LARGE_GUN_09"
-			template = "EOE_meteor_drive"
+			slot = "EOE_fire_vampire_04"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_01"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_05"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_02"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_06"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_03"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_07"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_04"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_08"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_05"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_09"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_06"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_10"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_07"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_11"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_08"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_12"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_09"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_13"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_10"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_14"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_11"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_15"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_12"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_16"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
-		
+		component = {
+			slot = "EOE_fire_vampire_17"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_18"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_19"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_20"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_21"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_22"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_23"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_24"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_25"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
 	}
 	required_component = "EOE_CTHUGHA_DRIVE"
-	required_component = "EOE_NECROZMA_BIO_DETECTOR"
+	required_component = "SENSOR_4"
 	required_component = "EOE_THRUSTER_CTHUGHA"
 	required_component = "COMBAT_COMPUTER_ARTILLERY_PRECOG"
+	required_component = "EOE_CTHUGHA_AURA"
 	required_component = "EOE_Emergency_Recall"
-	required_component = "Naive_Mint"
-	required_component = "EOE_NECROZMA_AURA"
+	required_component = "Serious_Mint"
 }
-ship_design = { #光龙，大号，boss
-	name = "NAME_EOE_necrozma_ship_hostile"
-	ship_size = EOE_necrozma_normal
+
+ship_design = {
+	name = "NAME_EOE_cthugha_1_ship_serious"
+	ship_size = EOE_cthugha_1_sz
+	
 
 	section = {
-		template = luozima
+		template = EOE_cthugha
 		slot = "mid"
 		
 		component = {
 			slot = "EOE_fire_fire"
-			template = "PLANET_KILLER_NECROZMA"
+			template = "PLANET_KILLER_FIRE_EOE"
 		}
 		component = {
 			slot = "EOE_LARGE_GUN_01"
-			template = "EOE_light_that_burns_the_sky"
+			template = "EOE_cthugha_lance"
 		}
 		component = {
 			slot = "EOE_LARGE_GUN_02"
-			template = "EOE_prismatic_laser"
+			template = "EOE_cthugha_lance"
 
 		}
 		component = {
 			slot = "EOE_LARGE_GUN_03"
-			template = "EOE_prismatic_laser"
+			template = "EOE_cthugha_lance"
 
 		}
 		component = {
 			slot = "EOE_LARGE_GUN_04"
-			template = "EOE_moongeist_beam"
+			template = "EOE_cthugha_lance"
 
 		}
 		component = {
 			slot = "EOE_LARGE_GUN_05"
-			template = "EOE_moongeist_beam"
+			template = "EOE_cthugha_lance"
 
 		}
 		component = {
-			slot = "EOE_LARGE_GUN_06"
-			template = "EOE_moongeist_beam"
+			slot = "EOE_fire_vampire_01"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_LARGE_GUN_07"
-			template = "EOE_meteor_drive"
+			slot = "EOE_fire_vampire_02"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_LARGE_GUN_08"
-			template = "EOE_meteor_drive"
+			slot = "EOE_fire_vampire_03"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_LARGE_GUN_09"
-			template = "EOE_meteor_drive"
+			slot = "EOE_fire_vampire_04"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_01"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_05"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_02"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_06"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_03"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_07"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_04"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_08"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_05"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_09"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_06"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_10"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_07"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_11"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_08"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_12"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_09"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_13"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_10"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_14"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_11"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_15"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
 		component = {
-			slot = "EOE_POINT_DEFENCE_12"
-			template = "EOE_photon_geyser"
+			slot = "EOE_fire_vampire_16"
+			template = "EOE_strike_craft_fire_vampire"
 
 		}
-		
+		component = {
+			slot = "EOE_fire_vampire_17"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_18"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_19"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_20"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_21"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_22"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_23"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_24"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
+		component = {
+			slot = "EOE_fire_vampire_25"
+			template = "EOE_strike_craft_fire_vampire"
+
+		}
 	}
 	required_component = "EOE_CTHUGHA_DRIVE"
-	required_component = "EOE_NECROZMA_BIO_DETECTOR"
+	required_component = "SENSOR_4"
 	required_component = "EOE_THRUSTER_CTHUGHA"
 	required_component = "COMBAT_COMPUTER_ARTILLERY_PRECOG"
+	required_component = "EOE_CTHUGHA_AURA"
 	required_component = "EOE_Emergency_Recall"
-	required_component = "Naive_Mint"
-	required_component = "EOE_NECROZMA_AURA"
+	required_component = "Serious_Mint"
 }
