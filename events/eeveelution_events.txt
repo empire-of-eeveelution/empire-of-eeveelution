@@ -1898,16 +1898,20 @@ country_event = { #环开开局布置
 		# }
 		every_owned_planet = {
 			limit = {
-				has_planet_flag = EOE_start_ring
+				has_carrier_flag = EOE_start_ring
 			}
-			set_owner = root
+			# set_owner = root
 			# clear_blockers = yes
 			# remove_all_districts = yes
-			while = {
-				count = 47
-				hidden_effect = {
-					create_pop = { 	species = owner_main_species }
-				}
+			# while = {
+			# 	count = 47
+			# 	hidden_effect = {
+			# 		create_pop = { 	species = owner_main_species }
+			# 	}
+			# }
+			create_pop_group = {
+				species = owner_main_species
+				size = 4700
 			}
 			EOE_shatterring_start_buildings = yes
 			add_building = {

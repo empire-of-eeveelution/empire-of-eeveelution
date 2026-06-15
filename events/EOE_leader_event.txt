@@ -13492,3 +13492,30 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = leadereevent.2838
+	title = leadereevent.2838.title
+	desc = leadereevent.2838.desc
+	trigger = {
+		root = { any_owned_leader = { has_leader_flag = paranoid_influencing } }
+	}
+	option = {
+		name = leadereevent.2838.a
+		event_target:EOEyunja = {
+			change_variable = { which = yunjue_paranoid value = -20 }
+		}
+		add_resource = { minerals = -1000 }
+	}
+	option = {
+		name = leadereevent.2838.b
+		event_target:EOEyunja = {
+			change_variable = { which = yunjue_paranoid value = 10 }
+			random = {
+				chance = 50 add_trait = leader_trait_substance_abuser
+			}
+			random = {
+				chance = 50 change_variable = { which = yunjue_paranoid value = 0 }
+			}
+		}
+	}
+}

@@ -36,6 +36,7 @@ pc_automation_planet = {
 	district_set = automation_planet
 	starting_planet = no
 	show_city = no
+	ideal = yes
 
 	carry_cap_per_free_district = 1
 }

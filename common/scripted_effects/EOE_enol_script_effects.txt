@@ -664,6 +664,7 @@ EOE_shatterring_start_buildings = {
 		# 	replace = yes
 		# }
 		create_pop_group = {
+			species = owner_main_species
 			size = 880
 		}
 		#暂时没有适配岩石系宝可梦捏

@@ -199,8 +199,9 @@ planet = {
 	flags = { ignore_startup_effect megastructure }
 	init_effect = {
 		prevent_anomaly = yes
-		set_planet_flag = EOE_start_ring
+		set_carrier_flag = EOE_start_ring
 		set_planet_flag = special_start_planet
+		save_global_event_target_as = EOE_start_ring
 		generate_start_buildings_and_districts = yes
 			# generate_start_pops = yes
 	}
