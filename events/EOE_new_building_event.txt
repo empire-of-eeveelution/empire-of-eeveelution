@@ -67,7 +67,7 @@ planet_event = {
 			owner = {
 				has_resource = {
 					type = influence
-					amount = 50
+					amount >= 50
 				}
 			}
 		}
@@ -77,14 +77,14 @@ planet_event = {
 			}
 		}
 		
-		set_planet_flag = EOE_evoplan_grass
-		remove_planet_flag = EOE_evoplan_water
-		remove_planet_flag = EOE_evoplan_fire
-		remove_planet_flag = EOE_evoplan_electric
-		remove_planet_flag = EOE_evoplan_psychic
-		remove_planet_flag = EOE_evoplan_dark
-		remove_planet_flag = EOE_evoplan_ice
-		remove_planet_flag = EOE_evoplan_fairy
+		set_carrier_flag = EOE_evoplan_grass
+		remove_carrier_flag = EOE_evoplan_water
+		remove_carrier_flag = EOE_evoplan_fire
+		remove_carrier_flag = EOE_evoplan_electric
+		remove_carrier_flag = EOE_evoplan_psychic
+		remove_carrier_flag = EOE_evoplan_dark
+		remove_carrier_flag = EOE_evoplan_ice
+		remove_carrier_flag = EOE_evoplan_fairy
 	}
 
 	desc = {
@@ -105,7 +105,7 @@ planet_event = {
 			owner = {
 				has_resource = {
 					type = influence
-					amount = 50
+					amount >= 50
 				}
 			}
 		}
@@ -114,14 +114,14 @@ planet_event = {
 				influence = -50
 			}
 		}
-		remove_planet_flag = EOE_evoplan_grass
-		set_planet_flag = EOE_evoplan_water
-		remove_planet_flag = EOE_evoplan_fire
-		remove_planet_flag = EOE_evoplan_electric
-		remove_planet_flag = EOE_evoplan_psychic
-		remove_planet_flag = EOE_evoplan_dark
-		remove_planet_flag = EOE_evoplan_ice
-		remove_planet_flag = EOE_evoplan_fairy
+		remove_carrier_flag = EOE_evoplan_grass
+		set_carrier_flag = EOE_evoplan_water
+		remove_carrier_flag = EOE_evoplan_fire
+		remove_carrier_flag = EOE_evoplan_electric
+		remove_carrier_flag = EOE_evoplan_psychic
+		remove_carrier_flag = EOE_evoplan_dark
+		remove_carrier_flag = EOE_evoplan_ice
+		remove_carrier_flag = EOE_evoplan_fairy
 	}
 
 	desc = {
@@ -142,7 +142,7 @@ planet_event = {
 			owner = {
 				has_resource = {
 					type = influence
-					amount = 50
+					amount >= 50
 				}
 			}
 		}
@@ -151,14 +151,14 @@ planet_event = {
 				influence = -50
 			}
 		}
-		remove_planet_flag = EOE_evoplan_grass
-		remove_planet_flag = EOE_evoplan_water
-		set_planet_flag = EOE_evoplan_fire
-		remove_planet_flag = EOE_evoplan_electric
-		remove_planet_flag = EOE_evoplan_psychic
-		remove_planet_flag = EOE_evoplan_dark
-		remove_planet_flag = EOE_evoplan_ice
-		remove_planet_flag = EOE_evoplan_fairy
+		remove_carrier_flag = EOE_evoplan_grass
+		remove_carrier_flag = EOE_evoplan_water
+		set_carrier_flag = EOE_evoplan_fire
+		remove_carrier_flag = EOE_evoplan_electric
+		remove_carrier_flag = EOE_evoplan_psychic
+		remove_carrier_flag = EOE_evoplan_dark
+		remove_carrier_flag = EOE_evoplan_ice
+		remove_carrier_flag = EOE_evoplan_fairy
 	}
 	
 	desc = {
@@ -179,7 +179,7 @@ planet_event = {
 			owner = {
 				has_resource = {
 					type = influence
-					amount = 50
+					amount >= 50
 				}
 			}
 		}
@@ -188,14 +188,14 @@ planet_event = {
 				influence = -50
 			}
 		}
-		remove_planet_flag = EOE_evoplan_grass
-		remove_planet_flag = EOE_evoplan_water
-		remove_planet_flag = EOE_evoplan_fire
-		set_planet_flag = EOE_evoplan_electric
-		remove_planet_flag = EOE_evoplan_psychic
-		remove_planet_flag = EOE_evoplan_dark
-		remove_planet_flag = EOE_evoplan_ice
-		remove_planet_flag = EOE_evoplan_fairy
+		remove_carrier_flag = EOE_evoplan_grass
+		remove_carrier_flag = EOE_evoplan_water
+		remove_carrier_flag = EOE_evoplan_fire
+		set_carrier_flag = EOE_evoplan_electric
+		remove_carrier_flag = EOE_evoplan_psychic
+		remove_carrier_flag = EOE_evoplan_dark
+		remove_carrier_flag = EOE_evoplan_ice
+		remove_carrier_flag = EOE_evoplan_fairy
 	}
 
 	
@@ -217,7 +217,7 @@ planet_event = {
 			owner = {
 				has_resource = {
 					type = influence
-					amount = 50
+					amount >= 50
 				}
 			}
 		}
@@ -226,14 +226,14 @@ planet_event = {
 				influence = -50
 			}
 		}
-		remove_planet_flag = EOE_evoplan_grass
-		remove_planet_flag = EOE_evoplan_water
-		remove_planet_flag = EOE_evoplan_fire
-		remove_planet_flag = EOE_evoplan_electric
-		set_planet_flag = EOE_evoplan_psychic
-		remove_planet_flag = EOE_evoplan_dark
-		remove_planet_flag = EOE_evoplan_ice
-		remove_planet_flag = EOE_evoplan_fairy
+		remove_carrier_flag = EOE_evoplan_grass
+		remove_carrier_flag = EOE_evoplan_water
+		remove_carrier_flag = EOE_evoplan_fire
+		remove_carrier_flag = EOE_evoplan_electric
+		set_carrier_flag = EOE_evoplan_psychic
+		remove_carrier_flag = EOE_evoplan_dark
+		remove_carrier_flag = EOE_evoplan_ice
+		remove_carrier_flag = EOE_evoplan_fairy
 	}
 
 	
@@ -255,7 +255,7 @@ planet_event = {
 			owner = {
 				has_resource = {
 					type = influence
-					amount = 50
+					amount >= 50
 				}
 			}
 		}
@@ -264,14 +264,14 @@ planet_event = {
 				influence = -50
 			}
 		}
-		remove_planet_flag = EOE_evoplan_grass
-		remove_planet_flag = EOE_evoplan_water
-		remove_planet_flag = EOE_evoplan_fire
-		remove_planet_flag = EOE_evoplan_electric
-		remove_planet_flag = EOE_evoplan_psychic
-		set_planet_flag = EOE_evoplan_dark
-		remove_planet_flag = EOE_evoplan_ice
-		remove_planet_flag = EOE_evoplan_fairy
+		remove_carrier_flag = EOE_evoplan_grass
+		remove_carrier_flag = EOE_evoplan_water
+		remove_carrier_flag = EOE_evoplan_fire
+		remove_carrier_flag = EOE_evoplan_electric
+		remove_carrier_flag = EOE_evoplan_psychic
+		set_carrier_flag = EOE_evoplan_dark
+		remove_carrier_flag = EOE_evoplan_ice
+		remove_carrier_flag = EOE_evoplan_fairy
 	}
 	
 	desc = {
@@ -292,7 +292,7 @@ planet_event = {
 			owner = {
 				has_resource = {
 					type = influence
-					amount = 50
+					amount >= 50
 				}
 			}
 		}
@@ -301,14 +301,14 @@ planet_event = {
 				influence = -50
 			}
 		}
-		remove_planet_flag = EOE_evoplan_grass
-		remove_planet_flag = EOE_evoplan_water
-		remove_planet_flag = EOE_evoplan_fire
-		remove_planet_flag = EOE_evoplan_electric
-		remove_planet_flag = EOE_evoplan_psychic
-		remove_planet_flag = EOE_evoplan_dark
-		set_planet_flag = EOE_evoplan_ice
-		remove_planet_flag = EOE_evoplan_fairy
+		remove_carrier_flag = EOE_evoplan_grass
+		remove_carrier_flag = EOE_evoplan_water
+		remove_carrier_flag = EOE_evoplan_fire
+		remove_carrier_flag = EOE_evoplan_electric
+		remove_carrier_flag = EOE_evoplan_psychic
+		remove_carrier_flag = EOE_evoplan_dark
+		set_carrier_flag = EOE_evoplan_ice
+		remove_carrier_flag = EOE_evoplan_fairy
 	}
 
 	
@@ -330,7 +330,7 @@ planet_event = {
 			owner = {
 				has_resource = {
 					type = influence
-					amount = 50
+					amount >= 50
 				}
 			}
 		}
@@ -339,14 +339,14 @@ planet_event = {
 				influence = -50
 			}
 		}
-		remove_planet_flag = EOE_evoplan_grass
-		remove_planet_flag = EOE_evoplan_water
-		remove_planet_flag = EOE_evoplan_fire
-		remove_planet_flag = EOE_evoplan_electric
-		remove_planet_flag = EOE_evoplan_psychic
-		remove_planet_flag = EOE_evoplan_dark
-		remove_planet_flag = EOE_evoplan_ice
-		set_planet_flag = EOE_evoplan_fairy
+		remove_carrier_flag = EOE_evoplan_grass
+		remove_carrier_flag = EOE_evoplan_water
+		remove_carrier_flag = EOE_evoplan_fire
+		remove_carrier_flag = EOE_evoplan_electric
+		remove_carrier_flag = EOE_evoplan_psychic
+		remove_carrier_flag = EOE_evoplan_dark
+		remove_carrier_flag = EOE_evoplan_ice
+		set_carrier_flag = EOE_evoplan_fairy
 	}
 
 	
@@ -380,14 +380,14 @@ planet_event = {
 		}
 		name = EOE_building.3.i
 		custom_tooltip = EOE_building.3.i.tooltip
-		remove_planet_flag = EOE_evoplan_grass
-		remove_planet_flag = EOE_evoplan_water
-		remove_planet_flag = EOE_evoplan_fire
-		remove_planet_flag = EOE_evoplan_electric
-		remove_planet_flag = EOE_evoplan_psychic
-		remove_planet_flag = EOE_evoplan_dark
-		remove_planet_flag = EOE_evoplan_ice
-		remove_planet_flag = EOE_evoplan_fairy
+		remove_carrier_flag = EOE_evoplan_grass
+		remove_carrier_flag = EOE_evoplan_water
+		remove_carrier_flag = EOE_evoplan_fire
+		remove_carrier_flag = EOE_evoplan_electric
+		remove_carrier_flag = EOE_evoplan_psychic
+		remove_carrier_flag = EOE_evoplan_dark
+		remove_carrier_flag = EOE_evoplan_ice
+		remove_carrier_flag = EOE_evoplan_fairy
 	}
 	option = {
 		name = EOE_building.3.j
@@ -414,14 +414,14 @@ country_event = {
 		name = EOE_building.4.a
 		force_remove_civic = civic_EOE_evolution_planning
 		every_controlled_planet = {
-			remove_planet_flag = EOE_evoplan_grass
-			remove_planet_flag = EOE_evoplan_water
-			remove_planet_flag = EOE_evoplan_fire
-			remove_planet_flag = EOE_evoplan_electric
-			remove_planet_flag = EOE_evoplan_psychic
-			remove_planet_flag = EOE_evoplan_dark
-			remove_planet_flag = EOE_evoplan_ice
-			remove_planet_flag = EOE_evoplan_fairy
+			remove_carrier_flag = EOE_evoplan_grass
+			remove_carrier_flag = EOE_evoplan_water
+			remove_carrier_flag = EOE_evoplan_fire
+			remove_carrier_flag = EOE_evoplan_electric
+			remove_carrier_flag = EOE_evoplan_psychic
+			remove_carrier_flag = EOE_evoplan_dark
+			remove_carrier_flag = EOE_evoplan_ice
+			remove_carrier_flag = EOE_evoplan_fairy
 			remove_building = building_EOE_evolution_planning_office
 		}
 		set_government_cooldown = no
