@@ -161,6 +161,8 @@ utility_component_template = {
 
 	component_set = "combat_computers"
 
+	should_ai_use = no
+
 	ai_weight = {
 		weight = 0
 	}

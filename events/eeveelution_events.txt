@@ -2615,7 +2615,7 @@ country_event = { #刷异常
 	trigger = {
 		capital_scope = {
 			NOT = {
-				has_planet_flag = EOE_pokemon_start_planet
+				has_carrier_flag = EOE_pokemon_start_planet
 			}
 		}
 	}
