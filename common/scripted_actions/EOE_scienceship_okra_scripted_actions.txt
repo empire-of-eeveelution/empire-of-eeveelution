@@ -1,0 +1,52 @@
+EOE_okra_transfix = {
+    user_scope = fleet
+    scope = planet
+
+    possible = {
+        is_terraforming = no
+        NOT = { has_planet_flag = EOE_okra_effect_exist }
+        is_colony = yes
+        exists = event_target:EOE_okra
+        exists = space_owner
+        space_owner = {
+            is_same_value = event_target:EOE_okra.owner
+        }
+        event_target:EOE_okra_ship = {
+            leader = {
+                is_same_value = event_target:EOE_okra
+            }
+        }
+    }
+
+    button_visible = {
+        always = yes
+    }
+
+    button_clickable = {
+        owner = {
+            has_resource = { type = energy amount >= 5000 }
+        }
+        custom_tooltip = {
+            event_target:EOE_okra_ship = {
+                leader = {
+                    is_same_value = event_target:EOE_okra
+                }
+            }
+            text = "eoe_need_okra"
+        }
+
+    }
+    finished = {
+        has_planet_flag = EOE_okra_effect_exist
+    }
+
+    name = on_eoe_okra_target_planet_reached
+    tooltip = eoe_okra_ship_button
+    slot = 1
+    icon = GFX_fleet_order_button_transfix_terraformation_nucleus_action
+    icon_selected = GFX_fleet_order_button_transfix_terraformation_nucleus_selected
+    on_completed = on_eoe_okra_target_planet_reached
+    on_cancel = on_eoe_okra_action_cancel
+    activity_key = eoe_okra_action_activity_key
+    context_menu_name = EOE_okra_transfix
+}

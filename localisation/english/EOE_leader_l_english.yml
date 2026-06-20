@@ -636,7 +636,7 @@ EOE_OKRA_effect_desc:0"The plants on this planet have been transformed to form a
  MESSAGE_DESC_FOR_PLANET_KILLER_OKRA:0 "Greened"
 
 SHIP_EOE_OKRA_TERRAFORM:1 "Okra's flute"
-eoe_okra_ship_button:0 "§GGreening§!\nTransform the plants on the planet to form an intelligent system that serves the residents. From home cleaning to the treatment of major diseases, plants can be seen everywhere, just like intelligent robots, which can meet most of the needs of residents' lives. The fruits they produce are within reach, incredibly delicious and nutritious, with hormones that encourage residents to engage in romantic intimate encounters.\n\ncost：£energy£§Y5000§!\ntime：£resource_time£§Y300§!days\n"
+eoe_okra_ship_button:0 "Transform the plants on the planet to form an intelligent system that serves the residents. From home cleaning to the treatment of major diseases, plants can be seen everywhere, just like intelligent robots, which can meet most of the needs of residents' lives. The fruits they produce are within reach, incredibly delicious and nutritious, with hormones that encourage residents to engage in romantic intimate encounters.\n\ncost：£energy£§Y5000§!\ntime：£resource_time£§Y300§!days\n"
 eoe_okra_action_activity_key:0 "move to green $PLANET_NAME|Y$"
 eoe_need_okra:0"NEED Okra"
 
@@ -685,3 +685,5 @@ OKRA_BIO_REACTOR_DESC:0"The ancient Zerg organ discovered in an exploration by O
  bixie.10.a:0"Well, I wanted to test some of your mechanics, waiting for the easter egg RNG takes too much effort~"
  bixie.10.text:0"I'm truly speechless. Let's get this done and over with early, I still have to go back and keep Tianlu company!"
  bixie.10.b:0"Hurry up."
+ ################################20260620add
+ EOE_okra_transfix:0"§Ggreening§!"
