@@ -264,7 +264,7 @@ country_event = {
 			add_trait = { trait = leader_trait_scientist_water_type_1 }
 			add_trait = { trait = subclass_scientist_councilor }
 			set_leader_flag = EOE_startleader_ice
-			change_leader_portrait = EOE081
+			change_leader_portrait = EOE_Elena
 		}
 		last_created_leader = {
 			set_gender = female
@@ -291,7 +291,7 @@ country_event = {
 			add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
 			add_trait = { trait = subclass_commander_admiral }
 			set_leader_flag = EOE_startleader_ice
-			change_leader_portrait = EOE081
+			change_leader_portrait = EOE_Elena
 		}
 		last_created_leader = {
 			set_gender = female
@@ -382,7 +382,7 @@ country_event = {
 			add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
 			add_trait = { trait = subclass_official_governor }
 			set_leader_flag = EOE_startleader_ice
-			change_leader_portrait = EOE081
+			change_leader_portrait = EOE_Elena
 		}
 		last_created_leader = {
 			set_gender = female
@@ -474,7 +474,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		last_created_leader = {
-			change_leader_portrait = EOE081
+			change_leader_portrait = EOE_Elena
 			set_name = "Elena"
 			add_experience = 12000
 		}
@@ -760,7 +760,7 @@ country_event = {
 			add_trait = { trait = leader_trait_ice_type_Directed_molecular_activation_1 }
 			add_trait = { trait = leader_trait_governor_ice_type_nano_builder_1 }
 			add_trait = { trait = leader_trait_scientist_ice_type_Particle_Mastery_1 }
-			change_leader_portrait = EOE081
+			change_leader_portrait = EOE_Elena
 			set_leader_flag = EOE_startleader_ice
 		}
 	}

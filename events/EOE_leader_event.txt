@@ -69,7 +69,7 @@ country_event = {
 				limit = {
 					has_leader_flag = EOE_leader_elena
 				}
-				change_leader_portrait = EOE081
+				change_leader_portrait = EOE_Elena
 			}
 			# if = {
 			# 	limit = {
@@ -5499,7 +5499,7 @@ country_event = {
 	diplomatic = yes
 	picture_event_data = {
 		room = EOE_tomb_room
-		portrait = EOE081
+		portrait = EOE_Elena_serious
 	}
 	option = {
 		name = leadereevent.85.a
@@ -5519,7 +5519,7 @@ country_event = {
 	diplomatic = yes
 	picture_event_data = {
 		room = EOE_tomb_room
-		portrait = EOE081
+		portrait = EOE_Elena_serious
 	}
 	option = {
 		name = leadereevent.86.a
@@ -5559,7 +5559,7 @@ country_event = {
 	diplomatic = yes
 	picture_event_data = {
 		room = EOE_tomb_room
-		portrait = EOE081
+		portrait = EOE_Elena_close_eyes_serious
 	}
 	option = {
 		name = leadereevent.87.a
@@ -5579,7 +5579,7 @@ country_event = {
 	diplomatic = yes
 	picture_event_data = {
 		room = EOE_tomb_room
-		portrait = EOE081
+		portrait = EOE_Elena_close_eyes_serious
 	}
 	option = {
 		name = leadereevent.87.a
