@@ -129,16 +129,14 @@ tech_EOE_Mew:0 "Combat unit: Mew"
 tech_EOE_Mew_desc:0 "This space warfare creature with a body length of about 10 meters is made based on the eponymous Pokémon, and its modular design makes it compatible with different organ configurations. It can also carry anti-ship weapons and power them with it's own psionics. The Mew's powerful shifting and stealth capabilities allow it to absorb large amounts of damage."
  TECH_UNLOCK_MEW_CONSTRUCTION_TITLE:0 "§H unlock ship type:§! Mew"
  TECH_UNLOCK_MEW_CONSTRUCTION_DESC:0"§H Mew§! \n This space warfare creature of approximately 10 meters in length is made based on the eponymous Pokémon, and its modular design allows it to be compatible with different organ configurations. It can also carry anti-ship weapons and power them with it's own psionics. Mew's powerful shifting and stealth capabilities allow it to absorb large amounts of damage."
-tech_EOE_Latias_weapon:0"High power offensive organ"
-tech_EOE_Latias_weapon_desc:0"These experimental psionic organs can be cultivated on warships as offensive weapons. Further psionic biotechnology allows these organs to launch attacks comparable to the main guns of battleships."
+
 tech_EOE_Latias_armor:0"High-power defensive organ"
 tech_EOE_Latias_armor_desc:0"These experimental psionic organs can be cultivated on warships as defense equipment. Further psionic biotechnology allows these organs to provide protection for larger ships."
 tech_EOE_Latias:0 "Combat unit: Latias"
 tech_EOE_Latias_desc:0 "This approximately corvette sized space warfare creature is built on the model of the eponymous Pokémon, and its modular design allows it to be compatible with different organ configurations. It can also carry anti-ship weapons and power them with it's own psionics. Latias are designed as long-range firepower platforms, with almost all of their body's psionic used to supply their primary attack organ."
  TECH_UNLOCK_LATIAS_CONSTRUCTION_TITLE:0 "§H unlock ship type:§! Latias"
  TECH_UNLOCK_LATIAS_CONSTRUCTION_DESC:0 "§H Latias§! \n This approximately corvette sized space warfare creature is built on the model of the eponymous Pokémon, and its modular design allows it to be compatible with different organ configurations. It can also carry anti-ship weapons and power them with it's own psionics. Latias are designed as long-range firepower platforms, with almost all of their body's psionic used to feed their primary attack organ."
-tech_EOE_Reshiram_weapon:0"Giant offensive organ"
-tech_EOE_Reshiram_weapon_desc:0"These experimental psionic organs can be cultivated on warships as offensive weapons. The in-depth study of psionic biotechnology makes these organs have destructive power."
+
 tech_EOE_Reshiram_armor:0"Giant defensive organ"
 tech_EOE_Reshiram_armor_desc:0"These experimental psionic organs can be cultivated on warships as defense equipment. The in-depth study of psionic biotechnology enables these organs to provide protection for the largest ships."
 tech_EOE_Reshiram:0 "Combat unit: Reshiram"
@@ -313,3 +311,15 @@ EOE_minior_another:0"$EOE_Minior$"
 EOE_minior_another_cap:0"$EOE_Minior$"
 EOE_minior_another_plural:0"$EOE_Minior$"
 SHIP_GRAPHICS_EOE_minior_another_DESC:0 "$SHIP_GRAPHICS_EOE_MINIOR_DESC$"
+
+
+
+
+
+
+
+tech_EOE_Reshiram_weapon:0"Giant offensive organ"
+tech_EOE_Reshiram_weapon_desc:0"These experimental psionic organs can be cultivated on warships as offensive weapons. The in-depth study of psionic biotechnology makes these organs have destructive power."
+
+tech_EOE_Latias_weapon:0"High power offensive organ"
+tech_EOE_Latias_weapon_desc:0"These experimental psionic organs can be cultivated on warships as offensive weapons. Further psionic biotechnology allows these organs to launch attacks comparable to the main guns of battleships."

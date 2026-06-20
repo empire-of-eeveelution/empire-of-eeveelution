@@ -160,16 +160,14 @@ tech_EOE_Mew:0"构造体：梦幻"
 tech_EOE_Mew_desc:0"这种体长约10米的太空战生物以同名宝可梦为蓝本制造，模块化设计使其可以兼容不同的器官配置，还可以携带对舰武器并使用自身灵能为武器供能。梦幻强大的变化与隐身能力使其可以吸收大量伤害。"
  TECH_UNLOCK_MEW_CONSTRUCTION_TITLE:0 "§H解锁舰船类型：§!梦幻"
  TECH_UNLOCK_MEW_CONSTRUCTION_DESC:0 "§H梦幻§!\n这种体长约10米的太空战生物以同名宝可梦为蓝本制造，模块化设计使其可以兼容不同的器官配置。梦幻强大的变化与隐身能力使其可以吸收大量伤害。"
-tech_EOE_Latias_weapon:0"大功率进攻型器官"
-tech_EOE_Latias_weapon_desc:0"这些实验性的灵能器官可以在战舰上培养，作为进攻性武器。更进一步的灵能生物科技让这些器官能发射堪比战列舰主炮的攻击。"
+
 tech_EOE_Latias_armor:0"大功率防御型器官"
 tech_EOE_Latias_armor_desc:0"这些实验性的灵能器官可以在战舰上培养，作为防御装备。更进一步的灵能生物科技让这些器官能为更大的舰船提供防护。"
 tech_EOE_Latias:0"构造体：拉帝亚斯"
 tech_EOE_Latias_desc:0"这种约有护卫舰大小的太空战生物以同名宝可梦为蓝本制造，模块化设计使其可以兼容不同的器官配置，还可以携带对舰武器并使用自身灵能为武器供能。拉帝亚斯被设计为远程火力平台，几乎全身的灵能都用来供给她们的主要攻击器官。"
  TECH_UNLOCK_LATIAS_CONSTRUCTION_TITLE:0 "§H解锁舰船类型：§!拉帝亚斯"
  TECH_UNLOCK_LATIAS_CONSTRUCTION_DESC:0 "§H拉帝亚斯§!\n这种约有护卫舰大小的太空战生物以同名宝可梦为蓝本制造，模块化设计使其可以兼容不同的器官配置。拉帝亚斯被设计为远程火力平台，几乎全身的灵能都用来供给她们的主要攻击器官。"
-tech_EOE_Reshiram_weapon:0"巨兽级进攻型器官"
-tech_EOE_Reshiram_weapon_desc:0"这些实验性的灵能器官可以在战舰上培养，作为进攻性武器。对灵能生物科技的深入研究让这些器官有毁灭性的威力。"
+
 tech_EOE_Reshiram_armor:0"巨兽级防御型器官"
 tech_EOE_Reshiram_armor_desc:0"这些实验性的灵能器官可以在战舰上培养，作为防御装备。对灵能生物科技的深入研究让这些器官能为最大的舰船提供防护。"
 tech_EOE_Reshiram:0"构造体：莱希拉姆"
@@ -314,5 +312,67 @@ opinion_burned_my_uninhabited_world:0 "你烧光了我的无人世界!"
 
 
 
+
+
+#####################################
+
+EOE_detect
+EOE_detect_DESC
+EOE_detect_mid_DESC
+EOE_detect_large_DESC
+EOE_devastating_drake
+EOE_devastating_drake_DESC
+EOE_devastating_drake_EFFECT: "§Y连带伤害：§!对位于目标的§G20§!范围内的全体舰船造成§G250§!伤害。"
+EOE_dragon_energy #等待写机制中
+EOE_dragon_energy_DESC 
+
+EOE_dynamax_cannon
+EOE_dynamax_cannon_DESC
+EOE_eevium_Z
+EOE_eevium_Z_DESC
+EOE_fusion_flare
+EOE_fusion_flare_DESC
+EOE_inferno_overdrive
+EOE_inferno_overdrive_DESC
+EOE_inferno_overdrive_EFFECT: "§Y连带伤害：§!对位于目标的§G20§!范围内的全体舰船造成§G500§!伤害。"
+EOE_protect
+EOE_protect_DESC
+EOE_protect_mid_DESC
+EOE_protect_large_DESC
+EOE_V_fire
+EOE_V_fire_DESC
+EOE_dragon_pulse
+EOE_dragon_pulse_DESC
+
+tech_EOE_detect
+tech_EOE_detect_desc
+tech_EOE_devastating_drake
+tech_EOE_devastating_drake_desc
+tech_EOE_dragon_energy
+tech_EOE_dragon_energy_desc
+
+tech_EOE_dynamax_cannon
+tech_EOE_dynamax_cannon_desc
+tech_EOE_eevium_Z
+tech_EOE_eevium_Z_desc
+
+tech_EOE_inferno_overdrive
+tech_EOE_inferno_overdrive_desc
+tech_EOE_protect
+tech_EOE_protect_desc
+tech_EOE_V_fire
+tech_EOE_V_fire_desc
+
+tech_EOE_Reshiram_weapon
+tech_EOE_Reshiram_weapon_desc
+tech_EOE_Latias_weapon
+tech_EOE_Latias_weapon_desc
+
+
+tech_EOE_dragon_pulse:0"大功率进攻型器官"
+tech_EOE_dragon_pulse_desc:0"这些实验性的灵能器官可以在战舰上培养，作为进攻性武器。更进一步的灵能生物科技让这些器官能发射堪比战列舰主炮的攻击。"
+
+tech_EOE_fusion_flare:0"巨兽级进攻型器官"
+tech_EOE_fusion_flare_desc:0"这些实验性的灵能器官可以在战舰上培养，作为进攻性武器。对灵能生物科技的深入研究让这些器官有毁灭性的威力。"
 
 

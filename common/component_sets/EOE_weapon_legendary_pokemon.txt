@@ -138,3 +138,63 @@ component_set = {
 	icon = "GFX_EOE_explosion" 
 	icon_frame = 1	
 }
+###
+component_set = {
+	key = "EOE_detect"
+	icon = "GFX_EOE_detect" 
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "EOE_devastating_drake"
+	icon = "GFX_EOE_devastating_drake" 
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "EOE_dragon_energy"
+	icon = "GFX_EOE_dragon_energy" 
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "EOE_dragon_pulse"
+	icon = "GFX_EOE_dragon_pulse" 
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "EOE_dynamax_cannon"
+	icon = "GFX_EOE_dynamax_cannon" 
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "EOE_eevium_Z"
+	icon = "GFX_EOE_eevium_Z" 
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "EOE_fusion_flare"
+	icon = "GFX_EOE_fusion_flare" 
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "EOE_inferno_overdrive"
+	icon = "GFX_EOE_inferno_overdrive" 
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "EOE_protect"
+	icon = "GFX_EOE_protect" 
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "EOE_V_fire"
+	icon = "GFX_EOE_V_fire" 
+	icon_frame = 1	
+}

@@ -149,4 +149,86 @@ spriteTypes = {
 		sprite_sheet_sprite_type = "GFX_ship_sizes_top_damaged"
 		default_frame = 12
 	}
+	####第二批舰船部件
+	spriteType = {
+		name = "GFX_EOE_detect"
+		textureFile = "gfx/interface/icons/ship_parts/GFX_EOE_detect.dds"
+	}
+	spriteType = {
+		name = "GFX_EOE_devastating_drake"
+		textureFile = "gfx/interface/icons/ship_parts/GFX_EOE_devastating_drake.dds"
+	}
+	spriteType = {
+		name = "GFX_EOE_dragon_energy"
+		textureFile = "gfx/interface/icons/ship_parts/GFX_EOE_dragon_energy.dds"	
+	}
+	spriteType = {
+		name = "GFX_EOE_dragon_pulse"
+		textureFile = "gfx/interface/icons/ship_parts/GFX_EOE_dragon_pulse.dds"
+	}
+	spriteType = {
+		name = "GFX_EOE_dynamax_cannon"
+		textureFile = "gfx/interface/icons/ship_parts/GFX_EOE_dynamax_cannon.dds"
+	}
+	spriteType = {
+		name = "GFX_EOE_eevium_Z"
+		textureFile = "gfx/interface/icons/ship_parts/GFX_EOE_eevium_Z.dds"
+	}
+	spriteType = {
+		name = "GFX_EOE_fusion_flare"
+		textureFile = "gfx/interface/icons/ship_parts/GFX_EOE_fusion_flare.dds"
+	}
+	spriteType = {
+		name = "GFX_EOE_inferno_overdrive"
+		textureFile = "gfx/interface/icons/ship_parts/GFX_EOE_inferno_overdrive.dds"
+	}
+	spriteType = {
+		name = "GFX_EOE_protect"
+		textureFile = "gfx/interface/icons/ship_parts/GFX_EOE_protect.dds"
+	}
+	spriteType = {
+		name = "GFX_EOE_V_fire"
+		textureFile = "gfx/interface/icons/ship_parts/GFX_EOE_V_fire.dds"
+	}
+	##
+	spriteType = {
+		name = "tech_GFX_EOE_detect"
+		textureFile = "gfx/interface/icons/technologies/GFX_EOE_detect.dds"
+	}
+	spriteType = {
+		name = "tech_GFX_EOE_devastating_drake"
+		textureFile = "gfx/interface/icons/technologies/GFX_EOE_devastating_drake.dds"
+	}
+	spriteType = {
+		name = "tech_GFX_EOE_dragon_energy"
+		textureFile = "gfx/interface/icons/technologies/GFX_EOE_dragon_energy.dds"	
+	}
+	spriteType = {
+		name = "tech_GFX_EOE_dragon_pulse"
+		textureFile = "gfx/interface/icons/technologies/GFX_EOE_dragon_pulse.dds"
+	}
+	spriteType = {
+		name = "tech_GFX_EOE_dynamax_cannon"
+		textureFile = "gfx/interface/icons/technologies/GFX_EOE_dynamax_cannon.dds"
+	}
+	spriteType = {
+		name = "tech_GFX_EOE_eevium_Z"
+		textureFile = "gfx/interface/icons/technologies/GFX_EOE_eevium_Z.dds"
+	}
+	spriteType = {
+		name = "tech_GFX_EOE_fusion_flare"
+		textureFile = "gfx/interface/icons/technologies/GFX_EOE_fusion_flare.dds"
+	}
+	spriteType = {
+		name = "tech_GFX_EOE_inferno_overdrive"
+		textureFile = "gfx/interface/icons/technologies/GFX_EOE_inferno_overdrive.dds"
+	}
+	spriteType = {
+			name = "tech_GFX_EOE_protect"
+		textureFile = "gfx/interface/icons/technologies/GFX_EOE_protect.dds"
+	}
+	spriteType = {
+		name = "tech_GFX_EOE_V_fire"
+		textureFile = "gfx/interface/icons/technologies/GFX_EOE_V_fire.dds"
+	}	
 }	
