@@ -57,3 +57,30 @@ tech_EOE_flare_blitz = {
 		}
 	}
 }
+
+
+
+#2类 获得Z晶后获取
+tech_EOE_eevium_Z = {
+	area = engineering
+	cost = @EOE_tier6cost2
+	tier = 6
+	category = { materials }
+	ai_update_type = military	
+	weight = 10
+	potential = {
+		has_relic = r_EOE_eevium_z
+		is_ai = no
+		owner_main_species = {
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
+		}
+	}
+}
+
+
+
+
+

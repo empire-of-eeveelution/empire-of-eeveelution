@@ -294,3 +294,124 @@ tech_EOE_calm_mind = {
 		}
 	}
 }
+
+#1类 力场 暂时不能刷出
+tech_EOE_detect = {
+	area = physics
+	cost = @EOE_tier6cost1
+	tier = 6
+	category = { field_manipulation }
+	ai_update_type = military	
+	weight = 0
+	prerequisites = {
+		tech_EOE_Mew_armor
+	}
+	potential = {
+		owner_main_species = {
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
+		}
+	}
+}
+tech_EOE_protect = {
+	area = physics
+	cost = @EOE_tier6cost1
+	tier = 6
+	category = { field_manipulation }
+	ai_update_type = military	
+	weight = 0
+	prerequisites = {
+		tech_EOE_Mew_armor
+	}
+	potential = {
+		owner_main_species = {
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
+		}
+	}
+}
+
+#3类 或许是核子限定
+
+tech_EOE_devastating_drake = {
+	area = physics
+	cost = @EOE_tier6cost3
+	tier = 6
+	category = { particles }
+	ai_update_type = military	
+	weight = 0
+	prerequisites = {
+
+	}
+	potential = {
+		owner_main_species = {
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
+		}
+	}
+}
+
+tech_EOE_dragon_energy = {
+	area = physics
+	cost = @EOE_tier6cost3
+	tier = 6
+	category = { particles }
+	ai_update_type = military	
+	weight = 0
+	prerequisites = {
+
+	}
+	potential = {
+		owner_main_species = {
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
+		}
+	}
+}
+tech_EOE_dynamax_cannon = {
+	area = physics
+	cost = @EOE_tier6cost3
+	tier = 6
+	category = { particles }
+	ai_update_type = military	
+	weight = 0
+	prerequisites = {
+
+	}
+	potential = {
+		owner_main_species = {
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
+		}
+	}
+}
+
+tech_EOE_inferno_overdrive = {
+	area = physics
+	cost = @EOE_tier6cost3
+	tier = 6
+	category = { particles }
+	ai_update_type = military	
+	weight = 0
+	prerequisites = {
+
+	}
+	potential = {
+		owner_main_species = {
+			OR = {
+				has_trait = trait_EOE_Inheritors 
+				has_trait = trait_EOE_Inheritors_exclusion
+			}	
+		}
+	}
+}

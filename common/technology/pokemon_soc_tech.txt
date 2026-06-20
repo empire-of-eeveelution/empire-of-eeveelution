@@ -239,52 +239,6 @@ tech_EOE_Mew = {
 	}
 }
 
-tech_EOE_Latias_weapon = {
-	cost = 32000
-	area = society
-	tier = 5
-	category = { biology }
-	weight = 60
-	prerequisites = { "tech_EOE_Mew" }
-	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				owner = {
-					owner_main_species = {
-						is_species_class = Eeveelutions
-					}
-				}
-			}
-		}
-	}
-	
-
-	gateway = ship
-
-	# prereqfor_desc = {
-	# 	ship = {
-	# 		title = "TECH_UNLOCK_MEW_CONSTRUCTION_TITLE"
-	# 		desc = "TECH_UNLOCK_MEW_CONSTRUCTION_DESC"
-	# 	}
-	# }
-	
-	potential = {
-		owner_main_species = {
-			is_species_class = Eeveelutions
-		}
-		has_ascension_perk = ap_mega_evolution_EOE
-		OR = {
-			owner_main_species = { has_trait = trait_EOE_Inheritors }
-			owner_main_species = { has_trait = trait_transfur_eevee }
-			has_origin = origin_lotus_hezi_start
-		}
-		is_ai = no
-	}
-	ai_weight = {
-		weight = 0
-	}
-}
 
 tech_EOE_Latias_armor = {
 	cost = 32000
@@ -292,7 +246,7 @@ tech_EOE_Latias_armor = {
 	tier = 5
 	category = { biology }
 	weight = 60
-	prerequisites = { "tech_EOE_Latias_weapon" }
+	prerequisites = { "tech_EOE_dragon_pulse" }
 	weight_modifier = {
 		modifier = {
 			factor = 0
@@ -395,52 +349,7 @@ tech_EOE_Latias = {
 	}
 }
 
-tech_EOE_Reshiram_weapon = {
-	cost = 32000
-	area = society
-	tier = 5
-	category = { biology }
-	weight = 60
-	prerequisites = { "tech_EOE_Latias" }
-	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				owner = {
-					owner_main_species = {
-						is_species_class = Eeveelutions
-					}
-				}
-			}
-		}
-	}
-	
 
-	gateway = ship
-
-	# prereqfor_desc = {
-	# 	ship = {
-	# 		title = "TECH_UNLOCK_MEW_CONSTRUCTION_TITLE"
-	# 		desc = "TECH_UNLOCK_MEW_CONSTRUCTION_DESC"
-	# 	}
-	# }
-	
-	potential = {
-		owner_main_species = {
-			is_species_class = Eeveelutions
-		}
-		has_ascension_perk = ap_mega_evolution_EOE
-		OR = {
-			owner_main_species = { has_trait = trait_EOE_Inheritors }
-			owner_main_species = { has_trait = trait_transfur_eevee }
-			has_origin = origin_lotus_hezi_start
-		}
-		is_ai = no
-	}
-	ai_weight = {
-		weight = 0
-	}
-}
 
 tech_EOE_Reshiram_armor = {
 	cost = 32000
@@ -448,7 +357,7 @@ tech_EOE_Reshiram_armor = {
 	tier = 5
 	category = { biology }
 	weight = 60
-	prerequisites = { "tech_EOE_Reshiram_weapon" }
+	prerequisites = { tech_EOE_fusion_flare }
 	weight_modifier = {
 		modifier = {
 			factor = 0
@@ -613,6 +522,200 @@ tech_EOE_Minior = {
 			is_species_class = Eeveelutions
 		}
 		#has_ascension_perk = ap_mega_evolution_EOE
+		OR = {
+			owner_main_species = { has_trait = trait_EOE_Inheritors }
+			owner_main_species = { has_trait = trait_transfur_eevee }
+			has_origin = origin_lotus_hezi_start
+		}
+		is_ai = no
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+tech_EOE_dragon_pulse = {
+	cost = 32000
+	area = society
+	tier = 5
+	category = { biology }
+	weight = 60
+	prerequisites = { "tech_EOE_Mew" }
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				owner = {
+					owner_main_species = {
+						is_species_class = Eeveelutions
+					}
+				}
+			}
+		}
+	}
+	
+
+	gateway = ship
+
+	# prereqfor_desc = {
+	# 	ship = {
+	# 		title = "TECH_UNLOCK_MEW_CONSTRUCTION_TITLE"
+	# 		desc = "TECH_UNLOCK_MEW_CONSTRUCTION_DESC"
+	# 	}
+	# }
+	
+	potential = {
+		owner_main_species = {
+			is_species_class = Eeveelutions
+		}
+		has_ascension_perk = ap_mega_evolution_EOE
+		OR = {
+			owner_main_species = { has_trait = trait_EOE_Inheritors }
+			owner_main_species = { has_trait = trait_transfur_eevee }
+			has_origin = origin_lotus_hezi_start
+		}
+		is_ai = no
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+tech_EOE_fusion_flare = {
+	cost = 32000
+	area = society
+	tier = 5
+	category = { biology }
+	weight = 60
+	prerequisites = { "tech_EOE_Latias" }
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				owner = {
+					owner_main_species = {
+						is_species_class = Eeveelutions
+					}
+				}
+			}
+		}
+	}
+	
+
+	gateway = ship
+
+	# prereqfor_desc = {
+	# 	ship = {
+	# 		title = "TECH_UNLOCK_MEW_CONSTRUCTION_TITLE"
+	# 		desc = "TECH_UNLOCK_MEW_CONSTRUCTION_DESC"
+	# 	}
+	# }
+	
+	potential = {
+		owner_main_species = {
+			is_species_class = Eeveelutions
+		}
+		has_ascension_perk = ap_mega_evolution_EOE
+		OR = {
+			owner_main_species = { has_trait = trait_EOE_Inheritors }
+			owner_main_species = { has_trait = trait_transfur_eevee }
+			has_origin = origin_lotus_hezi_start
+		}
+		is_ai = no
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+
+
+
+
+tech_EOE_Reshiram_weapon = {
+	cost = @EOE_tier6cost2
+	area = society
+	tier = 6
+	category = { biology }
+	weight = 5
+	prerequisites = { "tech_EOE_Reshiram" }
+	is_rare = yes
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				owner = {
+					owner_main_species = {
+						is_species_class = Eeveelutions
+					}
+				}
+			}
+		}
+	}
+	
+
+	gateway = ship
+
+	# prereqfor_desc = {
+	# 	ship = {
+	# 		title = "TECH_UNLOCK_MEW_CONSTRUCTION_TITLE"
+	# 		desc = "TECH_UNLOCK_MEW_CONSTRUCTION_DESC"
+	# 	}
+	# }
+	
+	potential = {
+		owner_main_species = {
+			is_species_class = Eeveelutions
+		}
+		has_ascension_perk = ap_mega_evolution_EOE
+		OR = {
+			owner_main_species = { has_trait = trait_EOE_Inheritors }
+			owner_main_species = { has_trait = trait_transfur_eevee }
+			has_origin = origin_lotus_hezi_start
+		}
+		is_ai = no
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+tech_EOE_Latias_weapon = {
+	cost = @EOE_tier6cost2
+	area = society
+	tier = 6
+	category = { biology }
+	weight = 5
+	prerequisites = { "tech_EOE_Latias" }
+	is_rare = yes
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				owner = {
+					owner_main_species = {
+						is_species_class = Eeveelutions
+					}
+				}
+			}
+		}
+	}
+	
+
+	gateway = ship
+
+	# prereqfor_desc = {
+	# 	ship = {
+	# 		title = "TECH_UNLOCK_MEW_CONSTRUCTION_TITLE"
+	# 		desc = "TECH_UNLOCK_MEW_CONSTRUCTION_DESC"
+	# 	}
+	# }
+	
+	potential = {
+		owner_main_species = {
+			is_species_class = Eeveelutions
+		}
+		has_ascension_perk = ap_mega_evolution_EOE
 		OR = {
 			owner_main_species = { has_trait = trait_EOE_Inheritors }
 			owner_main_species = { has_trait = trait_transfur_eevee }
