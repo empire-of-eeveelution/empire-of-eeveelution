@@ -330,8 +330,8 @@ EOE_dynamax_cannon
 EOE_dynamax_cannon_DESC
 EOE_eevium_Z
 EOE_eevium_Z_DESC
-EOE_fusion_flare
-EOE_fusion_flare_DESC
+EOE_fusion_flare:0 "交错火焰"
+EOE_fusion_flare_DESC:0 "基于同名招式研发，这个器官能够投射出高密度等离子物质团，造成毁灭性的伤害。"
 EOE_inferno_overdrive
 EOE_inferno_overdrive_DESC
 EOE_inferno_overdrive_EFFECT: "§Y连带伤害：§!对位于目标的§G20§!范围内的全体舰船造成§G500§!伤害。"
@@ -341,8 +341,8 @@ EOE_protect_mid_DESC
 EOE_protect_large_DESC
 EOE_V_fire
 EOE_V_fire_DESC
-EOE_dragon_pulse
-EOE_dragon_pulse_DESC
+EOE_dragon_pulse:0 "龙之波动"
+EOE_dragon_pulse_DESC:0 "基于同名招式研发，这些经过特殊调制的激光可以有效避免常规激光被护盾轻易拦截的弱点。"
 
 tech_EOE_detect
 tech_EOE_detect_desc

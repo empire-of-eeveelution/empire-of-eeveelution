@@ -323,3 +323,9 @@ tech_EOE_Reshiram_weapon_desc:0"These experimental psionic organs can be cultiva
 
 tech_EOE_Latias_weapon:0"High power offensive organ"
 tech_EOE_Latias_weapon_desc:0"These experimental psionic organs can be cultivated on warships as offensive weapons. Further psionic biotechnology allows these organs to launch attacks comparable to the main guns of battleships."
+
+EOE_fusion_flare:0 "Fusion Flare"
+EOE_fusion_flare_DESC:0 "Developed based on the move of the same name, this organ projects high-density plasma masses, inflicting devastating damage."
+
+EOE_dragon_pulse:0 "Dragon Pulse"
+EOE_dragon_pulse_DESC:0 "Developed based on the move of the same name, these specially modulated lasers effectively avoid the weakness of conventional lasers being easily intercepted by shields."

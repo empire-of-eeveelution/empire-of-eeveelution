@@ -3496,6 +3496,7 @@ country_event = {  #第二轮刷小陨星
 							is_pirate_system = yes
 							any_system_planet = { is_colony = yes }
 							has_owner = yes
+							has_star_flag = empire_home_system
 						}
 					}
 					save_event_target_as = EOE_spawn_crystal_system
@@ -3529,6 +3530,7 @@ country_event = {  #第二轮刷小陨星
 						is_pirate_system = yes
 						any_system_planet = { is_colony = yes }
 						has_owner = yes
+						has_star_flag = empire_home_system
 					}
 				}
 				save_event_target_as = EOE_spawn_crystal_system
