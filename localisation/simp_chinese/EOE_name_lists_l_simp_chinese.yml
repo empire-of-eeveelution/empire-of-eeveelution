@@ -77,7 +77,7 @@ Fie:0 "菲"
 Fay:0 "费"
 Lee:0 "李"
 Lea:0 "莉亚"
-Leaf:0 "叶"
+Leaf:0 "叶子"
 Leafy:0 "小叶"
 Freon:0 "福里昂"
 Syl:0 "希尔"
@@ -106,9 +106,8 @@ Speed:0 "极速"
 Sunshine:0 "阳光"
 Silvia:0 "西尔维娅"
 Lazuli:0 "天青"
-Crystal:0 "克瑞斯托"
-Solarfalre:0 "日耀"
-Leaf:0 "叶"
+Crystal:0 "水晶"
+Solarfalre:0 "阳光烈焰"
 Pearl:0 "珀尔"
 Black:0 "布莱克"
 Mollie:0 "莫莉"
@@ -120,3 +119,19 @@ Rin:0 "凛"
 Bolt:0 "博尔特"
 Enolether:0 "伊纳尔"
 Leptailurus:0 "墨月"
+
+#预设国星球与星系名字以及统治者名号
+Arceus:0 "阿尔宙斯"
+Navigator:0 "领航者"
+Aiur:0 "艾尔"
+Golden_Orb_of_Day:0 "黄金星域"
+King_of_Blades:0 "刀锋之王"
+Queen_of_Blades:0 "刀锋女王"
+
+#星球名号
+
+
+#舰队名号
+
+
+#舰船名号
