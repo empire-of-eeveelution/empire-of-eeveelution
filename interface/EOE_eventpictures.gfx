@@ -447,4 +447,40 @@ spriteTypes = {
 		name = "GFX_fairy_type"
 		textureFile = "gfx/interface/icons/EeveelutionTypes/fairy_type.png"
 	}
+	spriteType = {
+		name = "GFX_bug_type"
+		textureFile = "gfx/interface/icons/EeveelutionTypes/bug_type.png"
+	}
+	spriteType = {
+		name = "GFX_dragon_type"
+		textureFile = "gfx/interface/icons/EeveelutionTypes/dragon_type.png"
+	}
+	spriteType = {
+		name = "GFX_fight_type"
+		textureFile = "gfx/interface/icons/EeveelutionTypes/fight_type.png"
+	}
+	spriteType = {
+		name = "GFX_fly_type"
+		textureFile = "gfx/interface/icons/EeveelutionTypes/fly_type.png"
+	}
+	spriteType = {
+		name = "GFX_ghost_type"
+		textureFile = "gfx/interface/icons/EeveelutionTypes/ghost_type.png"
+	}
+	spriteType = {
+		name = "GFX_ground_type"
+		textureFile = "gfx/interface/icons/EeveelutionTypes/ground_type.png"
+	}
+	spriteType = {
+		name = "GFX_rock_type"
+		textureFile = "gfx/interface/icons/EeveelutionTypes/rock_type.png"
+	}
+	spriteType = {
+		name = "GFX_steel_type"
+		textureFile = "gfx/interface/icons/EeveelutionTypes/steel_type.png"
+	}
+	spriteType = {
+		name = "GFX_poison_type"
+		textureFile = "gfx/interface/icons/EeveelutionTypes/poison_type.png"
+	}
 }
