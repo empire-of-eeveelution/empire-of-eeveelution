@@ -674,6 +674,7 @@ tech_EOE_Reshiram_weapon = {
 			has_origin = origin_lotus_hezi_start
 		}
 		is_ai = no
+		always = no
 	}
 	ai_weight = {
 		weight = 0
