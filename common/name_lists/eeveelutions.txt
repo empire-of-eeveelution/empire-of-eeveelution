@@ -239,7 +239,7 @@
 			second_names = {
 			}
 			regnal_full_names = {
-			"Enolether" "Leptailiurus"
+			"Enolether" "Leptailurus"
 			}
 			regnal_first_names = {
 			}
