@@ -9,16 +9,16 @@
 	# 	"Eevee" "Vaporeon" "Jolteon" "Flareon" "Espeon" "Umbreon" "Leafeon" "Glaceon" "Sylveon"
 	# }
     corvette = {
-    "Pidgey" "Spearow" "Zubat" "Hoothoot" "Ledyba" "Natu" "Starly" "Pidove" "Woobat" "Archen" "Fletchling" "pikipek" "Horsea" "Staryu" "Chinchou" "Carvanha" "Barboach" "Dratini" "Vibrava" "Denio" "Weedle" "Gastly"
+    "Pidgey" "Spearow" "Zubat" "Hoothoot" "Ledyba" "Natu" "Starly" "Pidove" "Woobat" "Archen" "Fletchling" "pikipek" "Horsea" "Staryu" "Chinchou" "Carvanha" "Barboach" "Dratini" "Vibrava" "Deino" "Weedle" "Gastly"
     }
     destroyer = {
-    "Rookidee" "Corviknight" "Beedrill" "Doduo"  "Golbat" "Ledian" "Noctowl" "Pidgeotto" "Taillow" "Staravia" "Chatot" "Rotom" "Swoobat" "Ducklett" "Vullaby" "Hawlucha" "Trumbeak" "Watteral" "Ninjask" "Goldeen" "Finneon" "Lanturn" "Sharpedo" "Venomoth" "Haunter"
+    "Rookidee" "Corviknight" "Beedrill" "Doduo"  "Golbat" "Ledian" "Noctowl" "Pidgeotto" "Taillow" "Staravia" "Chatot" "Rotom" "Swoobat" "Ducklett" "Vullaby" "Hawlucha" "Trumbeak" "Wattrel" "Ninjask" "Goldeen" "Finneon" "Lanturn" "Sharpedo" "Venomoth" "Haunter"
     }
     cruiser = {
     "Corvisquire" "Crobat" "Aerodactyl" "Xatu" "Murkow" "Mantine" "Pidgeot" "Fearow" "Dodrio" "Wingull" "Yanmega" "Tranquill" "Archeops" "Rufflet" "Mandibuzz" "Fletchinder" "Toucannon" "Seadra" "Lumineon" "Zweilous"
     }
     battleship = {
-    "Dragonite" "Swellow" "Salamence" "Staraptor" "Sky Shaymin" "Braviary" "Talonflame" "Seaking" "Starmine" "Kindra" "Charizard" "Flygon" "Hydreigon"
+    "Dragonite" "Swellow" "Salamence" "Staraptor" "Shaymin" "Braviary" "Talonflame" "Seaking" "Starmie" "Kingdra" "Charizard" "Flygon" "Hydreigon"
     }
     titan = {
     "Gyarados" "Rayquaza" "Thundurus" "Landorus" "Milotic" "Cresselia"
@@ -30,7 +30,7 @@
     "Lugia" "Ho-Oh" "Altaria" "Wailord" "Lapras"
     }
     constructor = {
-    "Difblim" "Magikarp" "Skiploom" "Jumpluff" "Feebas" "Luvdisc" "Gorebyss" "Slowpoke" "Bibarel" "Beautify" "Dustox" "Cutiefly"
+    "Drifblim" "Magikarp" "Skiploom" "Jumpluff" "Feebas" "Luvdisc" "Gorebyss" "Slowpoke" "Bibarel" "Beautifly" "Dustox" "Cutiefly"
     }
     colonizer = {
     "Drifblim" "Masquerain" "Pelipper" "Vespiquen"
@@ -157,37 +157,37 @@
 
 #name them after regions and towns in pokemon, obviously.
 		generic = {
-			names = { "Accumula" "Alfornada" "Ambrette" "Anistar" "Anvillet" "Artazon" "Aspertia" "Azaela Planet" "Ballonlea" "Black"  "Blackthorn" "Cabo Poco" "Camphrier" "Canalave" "Cascarrafa" "Castelia" "Celadon" "Celestic" "Cerulean" "Cherrygrove" "Cianwood" "Circhester" "Cortondo" "Courmarine" "Couriway" "Cyllage" "Dendemille" "Diamond" "Driftviel" "Ecruteak" "Eterna" "Ever Grande" "Fallarbore" "Floaroma" "Floccesy" "Fortree" "Fuchsia" "Geosenge" "Goldenrod" "Hammerlocke" "Hau'oli" "Hulbury" "Humilau" "Icirrus" "Iki" "Jubilife" "Kiloude" "Konikoni" "Lacunosa" "Lavender" "Laverre" "Letimas" "Los Platos" "Lumiose" "Mahogany" "Malie" "Mauville" "Medali" "Mesagoza" "Mistraltron" "Montenevera" "Motostoke" "Nacrene" "Nuvema" "Oldale" "Olivine" "Opelucid" "Oreburgh" "Pacifidlog" "Pallet" "Pastoria" "Petalburg" "Pewter" "Po" "Postwick" "Rustboro" "Saffron" "Santalune" "Shalour" "Slateport" "Stow-on-Side" "Solaceon" "Spikemuth" "Striaton" "Tapu" "Turffield" "Undella" "Vaniville" "Veilstone" "Vermilion" "Violet" "Viridian" "Wedgehurst" "Wyndon" "Zapapico" "Agate" "Gateon" "Pyrite" "The Under"  "Axle" "Baram" "Boyleland" "Capim" "Centra" "Chicole" "Cocona" "Easterly" "Fall" "Haruba" "Lively" "Mintale" "Noe" "Northerly" "Puelworld" "Ryme" "Shra" "Serene" "Shaymin" "Tilt" "Vienworld" "Westerly" "Winworld"
+			names = { "Accumula" "Alfornada" "Ambrette" "Anistar" "Anvillet" "Artazon" "Aspertia" "Azaela Planet" "Ballonlea" "Black"  "Blackthorn" "CaboPoco" "Camphrier" "Canalave" "Cascarrafa" "Castelia" "Celadon" "Celestic" "Cerulean" "Cherrygrove" "Cianwood" "Circhester" "Cortondo" "Courmarine" "Couriway" "Cyllage" "Dendemille" "Diamond" "Driftveil" "Ecruteak" "Eterna" "EverGrande" "Fallarbor" "Floaroma" "Floccesy" "Fortree" "Fuchsia" "Geosenge" "Goldenrod" "Hammerlocke" "Hauoli" "Hulbury" "Humilau" "Icirrus" "Iki" "Jubilife" "Kiloude" "Konikoni" "Lacunosa" "Lavender" "Laverre" "Letimas" "LosPlatos" "Lumiose" "Mahogany" "Malie" "Mauville" "Medali" "Mesagoza" "Mistralton" "Montenevera" "Motostoke" "Nacrene" "Nuvema" "Oldale" "Olivine" "Opelucid" "Oreburgh" "Pacifidlog" "Pallet" "Pastoria" "Petalburg" "Pewter" "Po" "Postwick" "Rustboro" "Saffron" "Santalune" "Shalour" "Slateport" "StowonSide" "Solaceon" "Spikemuth" "Striaton" "Tapu" "Turffield" "Undella" "Vaniville" "Veilstone" "Vermilion" "Violet" "Viridian" "Wedgehurst" "Wyndon" "Zapapico" "Agate" "Gateon" "Pyrite" "TheUnder"  "Axle" "Baram" "Boyleland" "Capim" "Centra" "Chicole" "Cocona" "Easterly" "Fall" "Haruba" "Lively" "Mintale" "Noe" "Northerly" "Puelworld" "Ryme" "Shra" "Serene" "Shayminland" "Tilt" "Vienworld" "Westerly" "Winworld"
 				
 			}
 		}
 
 		pc_tropical = {
-			names = { "Littleroot" "Mossdeep" "New Bark" "Twinleaf" "Verdanturf" "White Forest" "Leaf" "Mossgreen" "Arborville" "Banana Slakoth" "Shroomish" "Arrowroot" "Bewilder" "Chocovine" "Dustox" "Emeragrove" "Greenstation" "Flower Garden" "Allearth" "Okoya"
+			names = { "Littleroot" "Mossdeep" "NewBark" "Twinleaf" "Verdanturf" "WhiteForest" "Leaf" "Mossgreen" "Arborville" "BananaSlakoth" "Shroomish" "Arrowroot" "Bewilder" "Chocovine" "Dustox" "Emeragrove" "Greenstation" "FlowerGarden" "Allearth" "Okoya"
 				
 			}
 		}
 
 		pc_continental = {
-			names = { "Gaiva" "Gardenia" "Mulberry" "Rifure" "Rota" "Sable" "Blue Moon" "Eggseter" "Florando" "Catallia" "Bonita" "Greenfield" "Len" "Marion" "Maroon" "Megi" "Scarlet" "Sunflora" "Whitestone" "Foothill" "LaRousse" "Petalburg" "Rinshin" "Alamos" "Brussel" "Camellia" "Daybreak" "Gracidea" "Neighborly" "Sandalstraw" "Ambiga" "Astilbe" "Eindoak" "Ferroseed" "Luxuria" "New Tork" "Rainbow Valley" "Roshan" "Stonesthrow" "Vertress""Azoth" "Brackish" "Calanthe" "Fleurrh" "Gloire" "Joule" "Odyssey" "Orsay" "Starfall" "Fula" "Milyfa"
+			names = { "Gaiva" "Gardenia" "Mulberry" "Rifure" "Rota" "Sable" "BlueMoon" "Eggseter" "Florando" "Catallia" "Bonita" "Greenfield" "Len" "Marion" "Maroon" "Megi" "Scarlet" "Sunflora" "Whitestone" "Foothill" "LaRousse" "Petalburg" "Rinshin" "Alamos" "Camellia" "Daybreak" "Gracidea" "Neighborly" "Sandalstraw" "Ambiga" "Astilbe" "Eindoak" "Ferroseed" "Luxuria" "NewTork" "RainbowValley" "Roshan" "Stonesthrow" "Vertress""Azoth" "Brackish" "Calanthe" "Fleurrh" "Gloire" "Starfall" "Fula" "Milyfa"
 				
 			}
 		}
 
 		pc_gaia = {
-			names = { "Pokelantis" "Pokemopolis" "Celebi" "Jirachi" "Deoxys" "Phione" "Manaphy" "Shaymin" "Arceus" "Keldeo" "Hoopa" "Zeraora" "Xerneas" "Solgaleo" "Lunala" "Groudon" "Ho-Oh" "Lugia" "Kyogre" "Virizion" "Cresselia" "Suicune" "Raikou" "Entei"
+			names = { "Pokelantis" "Pokemopolis" "Celebi" "Jirachi" "Deoxys" "Phione" "Manaphy" "Shayminland" "Arceus" "Keldeo" "Hoopa" "Zeraora" "Xerneas" "Solgaleo" "Lunala" "Groudon" "Ho-Oh" "Lugia" "Kyogre" "Virizion" "Cresselia" "Suicune" "Raikou" "Entei"
 				
 			}
 		}
 
 		pc_ocean = {
-			names = { "Lilycove" "Seafolk" "Sunnyshore" "Acapulco" "Camomile" "Hutber" "Potpourri" "Sayda" "Seafoam" "Ascorbia" "Butwal" "Celopatra" "Fairchild" "Golden" "Hamlin" "Knnow" "Kumquat" "Mandarin" "Mikan" "Murcott" "Navel" "Pinkan" "Pummelo" "Rind" "Grapefruit" "Shamouti" "Sunburst" "Tangelo" "Tarrco" "Trovita" "Valencia" "Alto" "Bluefin" "Blue Lagoon" "Blue Point" "Ogi" "Palmpona" "Pudgy Pidgey" "Red Rock"  "Silver Rock" "Way Away" "Yellow Rock" "Bomba" "Donto" "Izabe" "Maisie" "Monsu" "Muscle" "Wilmer" "Wales" "Wazoo" "Dandelion" "Lilypad" "Majolica" "Milos" "Capacia" "Spectrala" "Harvest" "Honey" "Paladin" "Torom" "Wayfarer" "Avignon" "Dahara" "Lagoon" "Manalo" "Treasure Island" "Cero"
+			names = { "Lilycove" "Seafolk" "Sunnyshore" "Acapulco" "Camomile" "Hutber" "Potpourri" "Sayda" "Seafoam" "Ascorbia" "Butwal" "Celopatra" "Fairchild" "Golden" "Hamlin" "Knnow" "Kumquat" "Mandarin" "Mikan" "Murcott" "Navel" "Pinkan" "Pummelo" "Rind" "Grapefruit" "Shamouti" "Sunburst" "Tangelo" "Tarrco" "Trovita" "Valencia" "Alto" "Bluefin" "BlueLagoon" "BluePoint" "Ogi" "Palmpona" "PudgyPidgey" "RedRock"  "SilverRock" "WayAway" "YellowRock" "Bomba" "Donto" "Izabe" "Maisie" "Monsu" "Muscle" "Wilmer" "Wales" "Wazoo" "Dandelion" "Lilypad" "Majolica" "Milos" "Capacia" "Spectrala" "Harvest" "Honey" "Torom" "Avignon" "Dahara" "Lagoon" "Manalo" "TreasureIsland" "Cero"
 				
 			}
 		}
 
 		pc_alpine = {
-			names = { "Freezington" "Snowbelle" "Snowpoint" "Shiver" "Quena" "Remoraid" "Snowtop" "Crossgate" "Forina" "Kirikiri" "Square Top" "Metagross" "Michina" "Shady" "Arche" "Molteau" "Otori" "Pomace" "Lapidarian Highlands" "Tensei" "Raizen"
+			names = { "Freezington" "Snowbelle" "Snowpoint" "Shiver" "Quena" "Remoraid" "Snowtop" "Crossgate" "Forina" "Kirikiri" "SquareTop" "Metagross" "Michina" "Shady" "Arche" "Molteau" "Otori" "Pomace" "LapidarianHighlands" "Tensei" "Raizen"
 				
 			}
 		}
@@ -217,7 +217,7 @@
 		}
 
 		pc_arid = {
-			names = { "Cinnabar" "Lavaridge" "Sootopolis" "Grampa Canyon" "Diglett World" "Onix" "Riyado" "Valley of Steel" "Squallvilla" "Kalos" "Nebel" "Bloom Canyon"
+			names = { "Cinnabar" "Lavaridge" "Sootopolis" "GrampaCanyon" "DiglettWorld" "Onix" "Riyado" "ValleyofSteel" "Squallvilla" "Kalos" "Nebel" "BloomCanyon"
 				
 			}
 		}
