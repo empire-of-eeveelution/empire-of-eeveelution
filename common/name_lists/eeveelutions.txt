@@ -48,7 +48,7 @@
     "Minior" "Lunatone" "Solrock" "Rolycoly" "Geodude" "Graveler" "Golem" "Probopass"
     }
     ion_cannon = {
-    "Slowbrow" "Tentacruel" "Relicanth"
+    "Slowbro" "Tentacruel" "Relicanth"
     }
     EOE_mew = {
     "Mew"
