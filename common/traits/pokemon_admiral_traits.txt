@@ -349,6 +349,8 @@ leader_trait_brave_troop = {
 
 leader_trait_Bravetroop_power = {
     leader_trait_type = destiny
+	randomized = no
+	immortal_leaders = yes
     inline_script = {
         script = trait/icon
         CLASS = commander

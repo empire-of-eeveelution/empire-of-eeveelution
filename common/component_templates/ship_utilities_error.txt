@@ -146,7 +146,11 @@ utility_component_template = {
 	power = 0
 
 	component_set = "sensor_components"
-
+	should_ai_use = no
+	custom_tooltip = {
+		is_arkship_ship = no
+		fail_text = default
+	}
 	ai_weight = {
 		weight = 0
 	}
