@@ -1063,7 +1063,7 @@ trait_EOE_egg_laying = {
 		always = no
 	}
 	species_possible_remove = {
-		always = no
+		can_remove_beneficial_genetic_traits = yes
 	}
 	species_possible_merge_add = {
 		always = no
