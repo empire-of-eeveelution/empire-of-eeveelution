@@ -69,7 +69,23 @@ country_event = {
 				limit = {
 					has_leader_flag = EOE_leader_elena
 				}
-				change_leader_portrait = EOE_Elena
+				random_list = {
+					15 = {
+						change_leader_portrait = EOE_Elena
+					}
+					10 = {
+						change_leader_portrait = EOE_Elena_close_eyes
+					}
+					5 = {
+						change_leader_portrait = EOE_Elena_surprise
+					}
+					3 = {
+						change_leader_portrait = EOE_Elena_serious
+					}
+					2 = {
+						change_leader_portrait = EOE_Elena_close_eyes_serious
+					}
+				}
 			}
 			# if = {
 			# 	limit = {
