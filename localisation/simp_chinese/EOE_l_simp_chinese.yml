@@ -507,8 +507,8 @@ civic_external_synapse_effects:0"允许使用§Y捕捉式§!轨道轰炸姿态\n
  job_EOE_synapse_drone:0 "突触工蜂"
  job_EOE_synapse_drone_plural:0 "突触工蜂"
  job_EOE_synapse_drone_desc:1 "作为突触结构的宏观体现，这些工蜂专注于强化主脑所传播的指令信息无缝持续而不受干扰。"
-mod_job_EOE_synapse_drone_add:0"突触工蜂岗位"
-mod_planet_pops_food_upkeep_mult:0"人口食物消耗"
+mod_job_EOE_synapse_drone_add:0"£job_synapse_drone£突触工蜂岗位"
+mod_planet_pops_food_upkeep_mult:0"£food£人口食物消耗"
 
 ##################################野生原始伊布事件
 wild_eeveelution_cat:0"发现野生原始伊布"
