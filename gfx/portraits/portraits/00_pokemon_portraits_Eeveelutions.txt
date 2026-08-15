@@ -167,6 +167,8 @@ portraits = {
 		EOE_Elena = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE_Elena.dds" }
 		EOE_Elena_serious = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE_Elena_serious.dds" }
 		EOE_Elena_close_eyes_serious = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE_Elena_close_eyes_serious.dds" }
+		EOE_Elena_surprise = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE_Elena_surprise.dds" }
+		EOE_Elena_close_eyes = { greeting_sound = "pokemon_Eeveelutions" texturefile = "gfx/models/portraits/Pokemon/Eeveelutions/EOE_Elena_eye_close.dds" }
 		Umbreon01 = {
 			entity = "Umbreon01_entity"
 			clothes_selector = "no_texture"

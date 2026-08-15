@@ -546,8 +546,8 @@ civic_external_synapse_effects:0"Allow to use §YCatch§! bombardment stances\nP
  job_EOE_synapse_drone:0 "Synapse Drone"
  job_EOE_synapse_drone_plural:0 "Synapse Drones"
  job_EOE_synapse_drone_desc:1 "The macroscopic embodiment of a synapse, these drones focus on amplifying the Overmind's ceaseless messages, and cleaning them of distortions."
-mod_job_EOE_synapse_drone_add:0"$job_synapse_drone$ Jobs"
-mod_planet_pops_food_upkeep_mult:0"Pops food upkeep"
+mod_job_EOE_synapse_drone_add:0"£job_synapse_drone£$job_synapse_drone$ Jobs"
+mod_planet_pops_food_upkeep_mult:0"£food£Pops food upkeep"
 
 ##################################野生原始伊布事件
 wild_eeveelution_cat:0"Discovered wild primitive Eeveelutions"
