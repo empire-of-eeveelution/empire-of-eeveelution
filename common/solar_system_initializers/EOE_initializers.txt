@@ -238,6 +238,7 @@ planet = {
 		set_deposit = d_engineering_5
 		set_planet_flag = starting_research_target
 		set_planet_flag = starting_deposit
+		set_carrier_flag = catastrophic_damage
 	}
 }
 
