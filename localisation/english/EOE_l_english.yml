@@ -3,6 +3,8 @@
 #namelist
 name_list_EEVEELUTION:0 "Eeveelution"
 
+###some_mod
+mod_starbase_shipyard_build_food_cost_mult:0"£food£Ship food cost"
 
 #technology
 tech_Gender_Balance:0"Gender Balance"
