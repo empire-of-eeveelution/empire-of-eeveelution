@@ -721,7 +721,7 @@ OKRA_BIO_REACTOR_DESC:0"秋葵在一次探索中发现的远古异虫器官，�
  bixie_catch_phrase:0"按照我们说好的，接下来5000年你的对手都会感受到神兽的怒火。"
  leader_trait_Bravetroop_power:0"貔貅的幸运"
  leader_trait_Bravetroop_power_desc:0"这位主杀伐的貔貅将他的幸运属性赋予了我们的陆军，使我们的陆军攻击敌人命中要害的概率大幅上升。"
- leader_trait_Bravetroop_power_tooltip:0"如果这位领袖在我们的内阁任职，我们的陆军参与的每一场战斗的每个月都能随机秒杀对方两个陆军单位。"
+ leader_trait_Bravetroop_power_tooltip:0"如果这位领袖在我们的内阁任职，我们的陆军参与的每一场战斗的每个月都能随机秒杀对方两个陆军单位；我们的舰队参与的每一场战斗开始时秒杀对方两艘舰船，之后每月再秒杀两艘。"
  edict_ECL_debug_getbixie:0"立即获得辟邪"
  bixie.10.desc:0"不是，你就这么猴急？不惜在MOD文件里把这个debug法令的注释解除了就想尽快让我为你效力！？"
  bixie.10.a:0"毕竟我想测试一些你的一些机制嘛，慢慢抽奖彩蛋多费劲啊~"

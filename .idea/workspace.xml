@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="466fb39f-5700-450f-9f42-8c7299091cf8" name="更改" comment="修复了超级进化飞升不显示的BUG">
+    <list default="true" id="466fb39f-5700-450f-9f42-8c7299091cf8" name="更改" comment="修复了伊布环开修复灾厄损伤修出的不是宜居区段的BUG">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/on_actions/EOE_on_actions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/on_actions/EOE_on_actions.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/script_values/00_EOE_script_values.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/script_values/00_EOE_script_values.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/traits/pokemon_admiral_traits.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/traits/pokemon_admiral_traits.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/bixie.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/bixie.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localisation/english/EOE_leader_l_english.yml" beforeDir="false" afterPath="$PROJECT_DIR$/localisation/english/EOE_leader_l_english.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localisation/english/EOE_traits_l_english.yml" beforeDir="false" afterPath="$PROJECT_DIR$/localisation/english/EOE_traits_l_english.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localisation/simp_chinese/EOE_leader_l_simp_chinese.yml" beforeDir="false" afterPath="$PROJECT_DIR$/localisation/simp_chinese/EOE_leader_l_simp_chinese.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localisation/simp_chinese/EOE_traits_l_simp_chinese.yml" beforeDir="false" afterPath="$PROJECT_DIR$/localisation/simp_chinese/EOE_traits_l_simp_chinese.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,10 +56,15 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/SteamLibrary/steamapps/common/Stellaris&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/brave_troop/Documents/Paradox Interactive/Stellaris/mod/empire-of-eeveelution&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\brave_troop\Documents\Paradox Interactive\Stellaris\mod\empire-of-eeveelution\common\scripted_actions" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -253,7 +266,103 @@
       <option name="project" value="LOCAL" />
       <updated>1781534773515</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="修复了超级进化飞升不显示的BUG">
+      <option name="closed" value="true" />
+      <created>1781536544665</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1781536544665</updated>
+    </task>
+    <task id="LOCAL-00026" summary="修复了超级进化飞升不显示的BUG">
+      <option name="closed" value="true" />
+      <created>1781536572708</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1781536572708</updated>
+    </task>
+    <task id="LOCAL-00027" summary="修复了计划进化选项的影响力存量判定BUG">
+      <option name="closed" value="true" />
+      <created>1781619120477</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1781619120477</updated>
+    </task>
+    <task id="LOCAL-00028" summary="修复了方舟舰配件自动分配错误导致无功能的BUG&#10;修复了野生原始伊布的trigger仍然使用has_planet_flag导致日志报错的BUG">
+      <option name="closed" value="true" />
+      <created>1781868548032</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1781868548032</updated>
+    </task>
+    <task id="LOCAL-00029" summary="为Elena提供了新的专属肖像&#10;某些事件Elena肖像会有差分&#10;临时把初级谐振盘P了个凑数的图标qwq">
+      <option name="closed" value="true" />
+      <created>1781962353319</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1781962353319</updated>
+    </task>
+    <task id="LOCAL-00030" summary="为Elena提供了新的专属肖像&#10;某些事件Elena肖像会有差分&#10;临时把初级谐振盘P了个凑数的图标qwq">
+      <option name="closed" value="true" />
+      <created>1781962366811</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1781962366811</updated>
+    </task>
+    <task id="LOCAL-00031" summary="修复了秋葵座驾绿化按钮消失的BUG">
+      <option name="closed" value="true" />
+      <created>1781966615864</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1781966615864</updated>
+    </task>
+    <task id="LOCAL-00032" summary="暂时注释掉了龙星群">
+      <option name="closed" value="true" />
+      <created>1783222890460</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1783222890460</updated>
+    </task>
+    <task id="LOCAL-00033" summary="暂时禁用掉了龙星群">
+      <option name="closed" value="true" />
+      <created>1783223105795</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1783223105795</updated>
+    </task>
+    <task id="LOCAL-00034" summary="暂时禁用掉了龙星群和T槽青焰">
+      <option name="closed" value="true" />
+      <created>1783239151647</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1783239151647</updated>
+    </task>
+    <task id="LOCAL-00035" summary="修复了方舟会在某些情况下错误使用占位符电脑导致方舟失去所有功能的BUG&#10;修复了辟邪的命定特质会被其他领袖随机到的BUG">
+      <option name="closed" value="true" />
+      <created>1784886744650</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1784886744650</updated>
+    </task>
+    <task id="LOCAL-00036" summary="修复了伊布环开修复灾厄损伤修出的不是宜居区段的BUG">
+      <option name="closed" value="true" />
+      <created>1786783991984</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1786783991984</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -283,6 +392,15 @@
     <MESSAGE value="修复4.4版本中开局初始化事件无法初始化伊布环开母星的BUG" />
     <MESSAGE value="修复了计划进化国策中即使没有足够的影响力仍能更改计划进化的进化型的BUG" />
     <MESSAGE value="修复了超级进化飞升不显示的BUG" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复了超级进化飞升不显示的BUG" />
+    <MESSAGE value="修复了计划进化选项的影响力存量判定BUG" />
+    <MESSAGE value="修复了方舟舰配件自动分配错误导致无功能的BUG&#10;修复了野生原始伊布的trigger仍然使用has_planet_flag导致日志报错的BUG" />
+    <MESSAGE value="为Elena提供了新的专属肖像&#10;某些事件Elena肖像会有差分&#10;临时把初级谐振盘P了个凑数的图标qwq" />
+    <MESSAGE value="修复了秋葵座驾绿化按钮消失的BUG" />
+    <MESSAGE value="暂时注释掉了龙星群" />
+    <MESSAGE value="暂时禁用掉了龙星群" />
+    <MESSAGE value="暂时禁用掉了龙星群和T槽青焰" />
+    <MESSAGE value="修复了方舟会在某些情况下错误使用占位符电脑导致方舟失去所有功能的BUG&#10;修复了辟邪的命定特质会被其他领袖随机到的BUG" />
+    <MESSAGE value="修复了伊布环开修复灾厄损伤修出的不是宜居区段的BUG" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复了伊布环开修复灾厄损伤修出的不是宜居区段的BUG" />
   </component>
 </project>

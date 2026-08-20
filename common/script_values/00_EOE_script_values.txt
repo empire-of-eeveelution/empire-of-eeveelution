@@ -57,3 +57,11 @@ EOE_ghost_situation_portal_upkeep_mult = {
 # 	}
 # }
 ############################################
+
+##############辟邪全能特质（leader_trait_commander_omni_type）：每领袖等级增加该特质现有buff加成的1/4
+##############倍率 = 1 + 领袖等级 × 0.25 （例如10级=3.5倍）
+EOE_bixie_omni_level_mult = {
+	base = 0.25
+	mult = trigger:has_total_skill
+	add = 1
+}

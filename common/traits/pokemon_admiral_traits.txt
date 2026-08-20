@@ -293,14 +293,21 @@ leader_trait_commander_bug_type = {
 
 leader_trait_commander_omni_type = {
 	icon = "gfx/interface/icons/EeveelutionTypes/omni_type.png"
-	councilor_modifier = {
+	triggered_councilor_modifier = {
+		potential = {
+			always = yes
+		}
 		ship_fire_rate_mult = 0.10
 		ship_weapon_damage = 0.10
 		ship_weapon_range_mult = 0.10
 		starbase_shipyard_build_speed_mult = 0.05
 		starbase_shipyard_build_cost_mult = -0.05
+		mult = value:EOE_bixie_omni_level_mult
 	}
-	fleet_modifier = {
+	triggered_fleet_modifier = {
+		potential = {
+			always = yes
+		}
 		ship_evasion_add = 5
 		ship_weapon_damage = 0.1
 		ship_orbital_bombardment_mult = 0.25
@@ -314,11 +321,17 @@ leader_trait_commander_omni_type = {
 		ship_disengage_chance_mult = 0.25
 		ship_emergency_ftl_mult = -0.15
 		fleet_mia_time_mult = -0.25
+		mult = value:EOE_bixie_omni_level_mult
 	}
-	army_modifier = {
+	triggered_army_modifier = {
+		potential = {
+			always = yes
+		}
 		army_damage_mult = 0.125
 		army_health = 0.125
+		mult = value:EOE_bixie_omni_level_mult
 	}
+	custom_tooltip_with_modifiers = leader_trait_commander_omni_type_tt
 	leader_class = { commander }
 	initial = no
 	randomized = no

@@ -435,6 +435,105 @@ country_event = {
         }
     }
 }
+# This = 本国 | From = 敌方 | FromFrom = 本国舰队 | FromFromFrom = 敌方舰队
+country_event = {
+    id = bixie.11
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        any_owned_leader = {
+            has_trait = leader_trait_Bravetroop_power
+            is_councilor = yes
+        }
+    }
+    immediate = {
+        fromfromfrom = {
+            random_owned_ship = {
+                damage_ship = {
+                    amount = 10000000
+                    attacker = root
+                }
+            }
+            random_owned_ship = {
+                damage_ship = {
+                    amount = 10000000
+                    attacker = root
+                }
+            }
+        }
+        # 记录本侧舰队，并启动每月递归（仅当本侧舰队正在交战时）
+        fromfrom = {
+            if = {
+                limit = {
+                    is_in_combat = yes
+                    NOT = { has_fleet_flag = bravetroop_power_fleet_target }
+                }
+                set_fleet_flag = bravetroop_power_fleet_target
+                fleet_event = { id = bixie.13 days = 30 }
+            }
+        }
+    }
+}
+# 每月递归：本侧舰队仍在该星系与敌方舰队交战时，随机秒杀对方2艘舰船。
+fleet_event = {
+    id = bixie.13
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        has_fleet_flag = bravetroop_power_fleet_target
+        is_in_combat = yes
+        owner = {
+            any_owned_leader = {
+                has_trait = leader_trait_Bravetroop_power
+                is_councilor = yes
+            }
+        }
+    }
+    immediate = {
+        solar_system = {
+            random_fleet_in_system = {
+                limit = {
+                    owner = {
+                        NOT = { is_same_value = root.owner }
+                        is_hostile = root.owner
+                    }
+                    is_in_combat = yes
+                }
+                random_owned_ship = {
+                    damage_ship = {
+                        amount = 10000000
+                        attacker = root.owner
+                    }
+                }
+                random_owned_ship = {
+                    damage_ship = {
+                        amount = 10000000
+                        attacker = root.owner
+                    }
+                }
+            }
+        }
+        if = {
+            limit = {
+                is_in_combat = yes
+            }
+            fleet_event = { id = bixie.13 days = 30 }
+        }
+    }
+}
+# 舰队版清场：本侧舰队退出战斗时移除标记，停止月度递归。
+# via on_fleet_exit_battle, This = fleet
+fleet_event = {
+    id = bixie.12
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        has_fleet_flag = bravetroop_power_fleet_target
+    }
+    immediate = {
+        remove_fleet_flag = bravetroop_power_fleet_target
+    }
+}
 country_event = {
     id = bixie.10
     title = bixie.6.title

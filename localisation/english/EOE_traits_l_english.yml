@@ -194,6 +194,9 @@ concept_leader_trait_governor_ice_type_nano_builder_1_desc: "$EMPIRE_EFFECTS_TXT
  leader_trait_commander_rock_type_desc:0 "Testing"
  leader_trait_commander_bug_type:0 "Bug Type Commander"
  leader_trait_commander_bug_type_desc:0 "Testing"
+ leader_trait_commander_omni_type:0 "Omni Type Commander"
+ leader_trait_commander_omni_type_desc:0 "While this commander is not as specialized as any single mega-evolved commander, they know a little bit of everything.\nThe bonuses of this trait scale with leader level: each level adds 1/4 of the current bonus."
+ leader_trait_commander_omni_type_tt:0 "The bonuses of this trait scale with leader level: each level adds 1/4 of the current bonus."
 
 tech_endless_evolution_2:0 "Infinity Optimization"
 tech_endless_evolution_2_desc:0 "Testing"
