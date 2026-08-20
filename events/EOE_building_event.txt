@@ -267,7 +267,7 @@ country_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = EOEbuliding.104
 	is_triggered_only = yes
 	hide_window = yes
@@ -313,7 +313,7 @@ country_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = EOEbuliding.105
 	is_triggered_only = yes
 	hide_window = yes

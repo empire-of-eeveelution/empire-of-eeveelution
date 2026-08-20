@@ -2898,12 +2898,10 @@ country_event = {
 		trigger = {  owner = { has_ethic = ethic_gestalt_consciousness  }    }
 		owner = {
 		capital_scope = {
-			create_pop = { 	species = owner_main_species } #1
-			create_pop = { 	species = owner_main_species } #2
-			create_pop = {	species = owner_main_species } #3
-			create_pop = {	species = owner_main_species } #4
-			create_pop = {	species = owner_main_species } #5
-			create_pop = {	species = owner_main_species } #6
+			create_pop_group = {
+				species = root
+				size = 600
+			}
 			}
 			hidden_effect = {
 				country_event = { id = eevent.7100 days = 720 }
@@ -2915,12 +2913,10 @@ country_event = {
 		trigger = {  owner = { NOT = { has_ethic = ethic_gestalt_consciousness }     }    }
 		owner = {
 		capital_scope = {
-			create_pop = { 	species = owner_main_species } #1
-			create_pop = { 	species = owner_main_species } #2
-			create_pop = {	species = owner_main_species } #3
-			create_pop = {	species = owner_main_species } #4
-			create_pop = {	species = owner_main_species } #5
-			create_pop = {	species = owner_main_species } #6
+			create_pop_group = {
+				species = root
+				size = 600
+			}
 			}
 			hidden_effect = {
 				country_event = { id = eevent.7100 days = 720 }

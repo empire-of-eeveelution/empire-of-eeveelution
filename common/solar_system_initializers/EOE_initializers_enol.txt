@@ -1055,7 +1055,7 @@ EOE_pokemon_system_initializer = {
 EOE_ultra_system = {
 	class = sc_black_drawf
 	usage = misc_system_init
-	
+
 	usage_odds = 0
 	flags = { ultra_space_system EOE_electromagnetic_suppress }
 	planet = {
@@ -1185,7 +1185,7 @@ EOE_ultra_system = {
 		}
 
 	}
-	
+
 	change_orbit = 5
 
 
