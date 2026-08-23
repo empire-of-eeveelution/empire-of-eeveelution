@@ -316,57 +316,57 @@ opinion_burned_my_uninhabited_world:0 "你烧光了我的无人世界!"
 
 #####################################
 
-EOE_detect
-EOE_detect_DESC
-EOE_detect_mid_DESC
-EOE_detect_large_DESC
-EOE_devastating_drake
-EOE_devastating_drake_DESC
+EOE_detect:0"看穿"
+EOE_detect_DESC:0"基于同名宝可梦招式研发，这个器官可以产生偏转动能伤害的灵能屏障，并快速修复装甲损伤。\n§T你也可以在战舰上培养这些器官，将其用作舰船组件。§!"
+EOE_detect_mid:0"增殖级看穿"
+EOE_detect_mid_DESC:0"基于同名宝可梦招式研发，额外增殖的附属组织让这个器官能产生更强大的灵能屏障\n§T你也可以在战舰上培养这些器官，将其用作舰船组件。§!"
+EOE_detect_large:0"巨兽级看穿"
+EOE_detect_large_DESC:0"基于同名宝可梦招式研发，数个看穿器官组成的复合器官阵列能产生无比强大的灵能屏障\n§T你也可以在战舰上培养这些器官，将其用作舰船组件。§!"
+EOE_devastating_drake:0"究极巨龙震天地"
+EOE_devastating_drake_DESC:0"基于同名Z招式研发，这个器官凝聚了使用者体内全部灵能并将其压缩为一枚龙之能量弹，命中后释放毁灭性的能量，波及周围的舰船。"
 EOE_devastating_drake_EFFECT: "§Y连带伤害：§!对位于目标的§G20§!范围内的全体舰船造成§G250§!伤害。"
-EOE_dragon_energy #等待写机制中
-EOE_dragon_energy_DESC 
-
-EOE_dynamax_cannon
-EOE_dynamax_cannon_DESC
+EOE_dragon_energy:0"龙之能量"
+EOE_dragon_energy_DESC:0"基于同名宝可梦招式研发，这个器官将龙属性的灵能压缩为纯粹的能量射线，虽然蓄力缓慢，但一旦命中便足以撕裂任何装甲。"
+EOE_dynamax_cannon:0"极巨炮"
+EOE_dynamax_cannon_DESC:0"基于同名宝可梦招式研发，这个器官将极巨化的灵能汇聚为一道毁灭性的龙之能量光束，对小型目标效果尤为致命。"
 EOE_eevium_Z:0 "伊布z"
 EOE_eevium_Z_DESC:0 "对z纯晶的研究让我们得以利用其能量，这可以小幅但全面地提升舰船战斗力。"
 EOE_fusion_flare:0 "交错火焰"
 EOE_fusion_flare_DESC:0 "基于同名招式研发，这个器官能够投射出高密度等离子物质团，造成毁灭性的伤害。"
-EOE_inferno_overdrive
-EOE_inferno_overdrive_DESC
+EOE_inferno_overdrive:0"超强极限爆焰弹"
+EOE_inferno_overdrive_DESC:0"基于同名Z招式研发，这个器官将全部灵能灌注进火焰之中，释放出足以点燃星海的高温烈焰，波及周围的舰船。"
 EOE_inferno_overdrive_EFFECT: "§Y连带伤害：§!对位于目标的§G20§!范围内的全体舰船造成§G500§!伤害。"
-EOE_protect
-EOE_protect_DESC
-EOE_protect_mid_DESC
-EOE_protect_large_DESC
-EOE_V_fire
-EOE_V_fire_DESC
+EOE_protect:0"守住"
+EOE_protect_DESC:0"基于同名宝可梦招式研发，这个器官能产生擅于偏转定向能量的灵能屏障，足以抵挡星舰炮火。\n§T你也可以在战舰上培养这些器官，将其用作舰船组件。§!"
+EOE_protect_mid:0"增殖级守住"
+EOE_protect_mid_DESC:0"基于同名宝可梦招式研发，额外增殖的附属组织让这个器官能产生更强大的灵能屏障\n§T你也可以在战舰上培养这些器官，将其用作舰船组件。§!"
+EOE_protect_large:0"巨兽级守住"
+EOE_protect_large_DESC:0"基于同名宝可梦招式研发，数个守住器官组成的复合器官阵列能产生无比强大的灵能屏障\n§T你也可以在战舰上培养这些器官，将其用作舰船组件。§!"
+EOE_V_fire:0"Ｖ热焰"
+EOE_V_fire_DESC:0"基于同名宝可梦招式研发，这个器官能够制造出『V』字形的超高温度火焰冲击，烧穿敌舰的护盾与装甲。"
 EOE_dragon_pulse:0 "龙之波动"
 EOE_dragon_pulse_DESC:0 "基于同名招式研发，这些经过特殊调制的激光可以有效避免常规激光被护盾轻易拦截的弱点。"
 
-tech_EOE_detect
-tech_EOE_detect_desc
-tech_EOE_devastating_drake
-tech_EOE_devastating_drake_desc
-tech_EOE_dragon_energy
-tech_EOE_dragon_energy_desc
-
-tech_EOE_dynamax_cannon
-tech_EOE_dynamax_cannon_desc
+tech_EOE_detect:0"看穿"
+tech_EOE_detect_desc:0"这些实验性的灵能器官可以在战舰上培养，作为防御装备。对灵能力场的深入研究让这些器官能为中型舰船提供防护。"
+tech_EOE_devastating_drake:0"龙系Z招式：究极巨龙震天地"
+tech_EOE_devastating_drake_desc:0"对Z纯晶能量的进一步研究让我们得以复现宝可梦的龙系Z招式。这个器官将使用者的全部灵能凝聚为毁灭性的龙之能量。"
+tech_EOE_dragon_energy:0"巨龙威能"
+tech_EOE_dragon_energy_desc:0"基于同名宝可梦招式研发，这个器官将龙属性的灵能压缩为纯粹的能量射线。"
+tech_EOE_dynamax_cannon:0"极巨炮"
+tech_EOE_dynamax_cannon_desc:0"对极巨化的深入研究让我们得以复现宝可梦的极巨招式。这个器官能将极巨化的灵能汇聚为毁灭性的光束。"
 tech_EOE_eevium_Z:0 "伊布z"
 tech_EOE_eevium_Z_desc:0 "对z纯晶的研究让我们得以利用其能量，这可以小幅但全面地提升舰船战斗力。"
-
-tech_EOE_inferno_overdrive
-tech_EOE_inferno_overdrive_desc
-tech_EOE_protect
-tech_EOE_protect_desc
-tech_EOE_V_fire
-tech_EOE_V_fire_desc
-
-tech_EOE_Reshiram_weapon
-tech_EOE_Reshiram_weapon_desc
-tech_EOE_Latias_weapon
-tech_EOE_Latias_weapon_desc
+tech_EOE_inferno_overdrive:0"火系Z招式：超强极限爆焰弹"
+tech_EOE_inferno_overdrive_desc:0"对Z纯晶能量的进一步研究让我们得以复现宝可梦的火系Z招式。这个器官将全部灵能灌注进火焰之中，释放出足以点燃星海的高温烈焰。"
+tech_EOE_protect:0"守住"
+tech_EOE_protect_desc:0"这些实验性的灵能器官可以在战舰上培养，作为防御装备。对灵能力场的深入研究让这些器官能为中型舰船提供防护。"
+tech_EOE_V_fire:0"Ｖ热焰"
+tech_EOE_V_fire_desc:0"基于同名宝可梦招式研发，这个器官能够制造出『V』字形的超高温度火焰冲击。"
+tech_EOE_Reshiram_weapon:0"巨兽级进攻型器官"
+tech_EOE_Reshiram_weapon_desc:0"这些实验性的灵能器官可以在战舰上培养，作为进攻性武器。对灵能生物科技的深入研究让这些器官有毁灭性的威力。"
+tech_EOE_Latias_weapon:0"大功率进攻型器官"
+tech_EOE_Latias_weapon_desc:0"这些实验性的灵能器官可以在战舰上培养，作为进攻性武器。更进一步的灵能生物科技让这些器官能发射堪比战列舰主炮的攻击。"
 
 
 tech_EOE_dragon_pulse:0"大功率进攻型器官"
