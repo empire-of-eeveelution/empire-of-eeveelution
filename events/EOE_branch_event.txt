@@ -4342,36 +4342,41 @@ event = {  #见鬼——伊布专属事件
 				has_country_flag = eoe_country_lotus #让核子灵能军团也能过这个事件
 			}
 		}
-		NOT = { has_country_flag = EOE_ghost_started }
+		NOT = { has_global_flag = EOE_ghost_started }	#4.0+全局event无国家作用域，改用全局flag
 	}
 	immediate = {
-		set_country_flag = EOE_ghost_started
+		set_global_flag = EOE_ghost_started
 		random_country = {
 			limit = {
 				OR = {
 					has_country_flag = eoe_country
 					has_country_flag = eoe_country_lotus
 				}
-				
+
 				is_ai = no
 				any_owned_planet = {
-					is_colony = yes
-					is_a_planet = yes
+					planet = {	#4.0+ owned planet迭代器作用域是colony，需切到planet作用域检查
+						is_colony = yes
+						is_a_planet = yes
+					}
 				}
 			}
 			set_country_flag = EOE_ghost_started_1
 			random_owned_planet = {
 				limit = {
-					is_colony = yes
-					is_a_planet = yes
+					planet = {
+						is_a_planet = yes
+					}
 				}
-				set_planet_flag = EOE_ghost_planet_1
-				save_global_event_target_as = EOE_ghost_planet
-				planet_event = {
-					id = EOE_branch.101
+				planet = {	#set_planet_flag/planet_event仅支持planet作用域
+					set_planet_flag = EOE_ghost_planet_1
+					save_global_event_target_as = EOE_ghost_planet
+					planet_event = {
+						id = EOE_branch.101
+					}
 				}
 			}
-		} 
+		}
 		if = { #捉鬼随机事件中判断机械爸爸
 			limit = { 
 				any_country = {
@@ -5519,9 +5524,13 @@ planet_event = { #关闭传送门
 			set_country_flag = EOE_portal_closed_hezi
 			random_owned_planet = {
 				limit = {
-					has_planet_flag = EOE_ghost_planet_1
+					planet = {
+						has_planet_flag = EOE_ghost_planet_1
+					}
 				}
-				remove_modifier = EOE_modifier_ghost_story
+				planet = {
+					remove_modifier = EOE_modifier_ghost_story
+				}
 			}
 		}
 	}
