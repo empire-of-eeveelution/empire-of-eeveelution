@@ -15,8 +15,8 @@ weapon_component_template = {
 	ai_tags = { weapon_role_anti_hull }
 	ai_tag_weight = 2
 	damage = {
-		min = 114514
-		max = 1919810
+		min = 57257
+		max = 959905
 	}
 	windup = {
 		min = 1
@@ -53,8 +53,8 @@ weapon_component_template = {
 	ai_tags = { weapon_role_anti_hull }
 	ai_tag_weight = 2
 	damage = {
-		min = 11451
-		max = 51411
+		min = 5725
+		max = 25705
 	}
 	windup = {
 		min = 1
@@ -92,8 +92,8 @@ weapon_component_template = {
 	ai_tags = { weapon_role_anti_hull }
 	ai_tag_weight = 2
 	damage = {
-		min = 4096
-		max = 25525
+		min = 2048
+		max = 12762
 	}
 	windup = {
 		min = 60
@@ -129,8 +129,8 @@ weapon_component_template = {
 	ai_tags = { weapon_role_anti_hull }
 	ai_tag_weight = 2
 	damage = {
-		min = 1145
-		max = 1451
+		min = 572
+		max = 725
 	}
 	windup = {
 		min = 40
@@ -163,8 +163,8 @@ weapon_component_template = {
 	ai_tags = { weapon_role_anti_hull }
 	ai_tag_weight = 2
 	damage = {
-		min = 1145
-		max = 1451
+		min = 572
+		max = 725
 	}
 	windup = {
 		min = 40
@@ -196,8 +196,8 @@ weapon_component_template = {
 	ai_tags = { weapon_role_anti_hull }
 	ai_tag_weight = 2
 	damage = {
-		min = 16
-		max = 24
+		min = 8
+		max = 12
 	}
 	windup = {
 		min = 2

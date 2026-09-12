@@ -240,8 +240,9 @@ trait_directed_evolution = {
 			}
 		}
 		pop_environment_tolerance = 0.1
+		mult = modifier:pop_EOE_evolution_planning_effect_mult
 	}
-	triggered_pop_group_modifier = {
+	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = {
@@ -273,6 +274,7 @@ trait_directed_evolution = {
 			}
 		}
 		pop_environment_tolerance = -0.1
+		mult = modifier:pop_EOE_evolution_planning_effect_mult
 	}
 }
 
