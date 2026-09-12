@@ -501,7 +501,7 @@ fleet_event = {
                 }
                 random_owned_ship = {
                     limit = {
-                        ship_size_multiplier > 32
+                        ship_size_multiplier > 120
                     }
                     damage_ship = {
                         amount = 10000000
@@ -510,7 +510,7 @@ fleet_event = {
                 }
                 random_owned_ship = {
                     limit = {
-                        ship_size_multiplier > 32
+                        ship_size_multiplier > 120
                     }
                     damage_ship = {
                         amount = 10000000
