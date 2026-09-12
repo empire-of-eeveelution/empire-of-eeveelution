@@ -374,7 +374,7 @@ weapon_component_template = { #大自爆
 	icon_frame = 1
 	type = instant 
 	
-	damage = { min = 650 max = 975 }
+	damage = { min = 325 max = 487 }
 	windup = { min = 10 max = 20 }
 	total_fire_time = 2085
 	min_range = 0
