@@ -500,12 +500,18 @@ fleet_event = {
                     is_in_combat = yes
                 }
                 random_owned_ship = {
+                    limit = {
+                        ship_size_multiplier > 32
+                    }
                     damage_ship = {
                         amount = 10000000
                         attacker = root.owner
                     }
                 }
                 random_owned_ship = {
+                    limit = {
+                        ship_size_multiplier > 32
+                    }
                     damage_ship = {
                         amount = 10000000
                         attacker = root.owner
