@@ -14,7 +14,7 @@ strike_craft_component_template = {
 	regeneration_per_day = 1
 	launch_time = 0.2
 	
-	damage = { min = 250 max = 500 }
+	damage = { min = 125 max = 250 }
 	cooldown = 6
 	range = 300
 	attack_range = 140
@@ -60,7 +60,7 @@ weapon_component_template = {
 	}
 	power = -50
 	
-	damage = { min = 15251 max = 31415 }
+	damage = { min = 7625 max = 15707 }
 	windup = { min = 1 max = 9 }
 	total_fire_time = 5
 	range = 300
@@ -97,7 +97,7 @@ weapon_component_template = {
 	}
 	power = -50
 	
-	damage = { min = 3082 max = 10405 }
+	damage = { min = 1541 max = 5202 }
 	windup = { min = 1 max = 9 }
 	total_fire_time = 5
 	range = 300
