@@ -86,6 +86,7 @@ country_event = {
 						change_leader_portrait = EOE_Elena_close_eyes_serious
 					}
 				}
+				set_name = "Elena"
 			}
 			# if = {
 			# 	limit = {
