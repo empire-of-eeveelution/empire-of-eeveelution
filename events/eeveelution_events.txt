@@ -498,6 +498,12 @@ country_event = {
 	}
 	
 	immediate = {
+		# 若已存在"创造者遗迹"标记则沿用原星系，只有完全没有标记时才挑选新星系。
+		# 保证全银河至多一个候选星系 —— 兴趣点与残骸/特殊项目必然落在同一星系。
+		if = {
+			limit = {
+				NOT = { any_system = { has_star_flag = old_creators_system_1@root.owner } }
+			}
 		if = {
 			limit = {   
 				closest_system = {
@@ -527,6 +533,7 @@ country_event = {
 				min_steps = 4
 				max_steps = 100
 				set_star_flag = old_creators_system_1@root.owner
+				save_event_target_as = old_creators_system_1
 			}
 			  
 
@@ -543,11 +550,22 @@ country_event = {
 				min_steps = 2
 				max_steps = 100
 				set_star_flag = old_creators_system_1@root.owner
+				save_event_target_as = old_creators_system_1
 			}
 		}
 		else = {
 			random_system_within_border = {
 				set_star_flag = old_creators_system_1@root.owner #Larry指的是因为遗迹生成在孤立星系而无法继续事件的稀有bug
+				save_event_target_as = old_creators_system_1
+			}
+		}
+		}
+		# 统一把"当前被标记的那个星系"记为事件目标（此时至多一个，必然唯一）
+		if = {
+			limit = { NOT = { exists = event_target:old_creators_system_1 } }
+			random_system = {
+				limit = { has_star_flag = old_creators_system_1@root.owner }
+				save_event_target_as = old_creators_system_1
 			}
 		}
 
@@ -587,14 +605,10 @@ country_event = {
 	}
 	option = {
 		trigger = {
-			any_system = { has_star_flag = old_creators_system_1@root.owner }
+			exists = event_target:old_creators_system_1
 		}
 		name = "eevent.13.f"
 		hidden_effect = {
-			random_system = {
-				limit = { has_star_flag = old_creators_system_1@root.owner }
-				save_event_target_as = old_creators_system_1
-			}
 			create_point_of_interest = {
 				id = old_creators_shrine_poi.1
 				name = "old_creators_shrine_poi_1"
@@ -695,19 +709,30 @@ fleet_event = {
 	}
 
 	immediate = {
-		FROM = { remove_star_flag = old_creators_system_1@root.owner }
-		owner = { remove_point_of_interest = old_creators_shrine_poi.1 }
-		create_ambient_object = {
-			type = "derelict_ship_object"  
-			location = solar_system
+		# 残骸与特殊项目固定生成在"本舰队刚进入的星系"（FROM），不再全银河随机挑选
+		FROM = {
+			save_event_target_as = old_creators_site
+			remove_star_flag = old_creators_system_1@root.owner
 		}
+		create_ambient_object = {
+			type = "derelict_ship_object"
+			location = event_target:old_creators_site
+		}
+		# 兜底：清掉任何残留的同名标记，避免下次在非兴趣点星系误触发
+		every_system = {
+			limit = { has_star_flag = old_creators_system_1@root.owner }
+			remove_star_flag = old_creators_system_1@root.owner
+		}
+		owner = { remove_point_of_interest = old_creators_shrine_poi.1 }
 		last_created_ambient_object = {
 			save_event_target_as = EOEship
-			enable_special_project = {
-				name = "OLD_creators_1"
-				location = this
-				owner = root
-			}
+		}
+		# 直接把项目锚定到"本舰队进入的星系"，不依赖 last_created_ambient_object，
+		# 彻底杜绝项目被生成到其它星系
+		enable_special_project = {
+			name = "OLD_creators_1"
+			location = event_target:old_creators_site
+			owner = root
 		}
 		owner = { set_country_flag = old_creators_benefactress }
 	}
@@ -742,19 +767,29 @@ fleet_event = {
 	
 
 	immediate = {
-		FROM = { remove_star_flag = old_creators_system_2@root.owner }
+		# 残骸与特殊项目固定生成在"本舰队刚进入的星系"（FROM）
+		FROM = {
+			save_event_target_as = old_creators_site_2
+			remove_star_flag = old_creators_system_2@root.owner
+		}
 		owner = { remove_point_of_interest = old_creators_shrine_poi.2 }
 		create_ambient_object = {
 			type = "abandoned_ship_object"  
-			location = solar_system
+			location = event_target:old_creators_site_2
+		}
+		# 兜底：清掉任何残留的同名标记，避免下次在非兴趣点星系误触发
+		every_system = {
+			limit = { has_star_flag = old_creators_system_2@root.owner }
+			remove_star_flag = old_creators_system_2@root.owner
 		}
 		last_created_ambient_object = {
 			save_event_target_as = EOEship
-			enable_special_project = {
-				name = "OLD_creators_2"
-				location = this
-				owner = root
-			}
+		}
+		# 直接把项目锚定到"本舰队进入的星系"
+		enable_special_project = {
+			name = "OLD_creators_2"
+			location = event_target:old_creators_site_2
+			owner = root
 		}
 		owner = { set_country_flag = old_creators_undaunted }
 	}
@@ -806,6 +841,7 @@ ship_event = {
 				min_steps = 4
 				max_steps = 100
 				set_star_flag = old_creators_system_2@root.owner
+				save_event_target_as = old_creators_system_2
 			}
 			  
 
@@ -822,12 +858,14 @@ ship_event = {
 				min_steps = 2
 				max_steps = 100
 				set_star_flag = old_creators_system_2@root.owner
+				save_event_target_as = old_creators_system_2
 			}
 		}
 		else = {
 			owner = {
 				random_system_within_border = {
 					set_star_flag = old_creators_system_2@root.owner #Larry指的是因为遗迹生成在孤立星系而无法继续事件的稀有bug
+					save_event_target_as = old_creators_system_2
 				}
 			}
 		}
@@ -861,10 +899,6 @@ ship_event = {
              }
 		hidden_effect = {
 			fromfrom = { destroy_ambient_object = this }
-			random_system = {
-				limit = { has_star_flag = old_creators_system_2@root.owner }
-				save_event_target_as = old_creators_system_2
-			}
 			owner = {
 				remove_point_of_interest = old_creators_shrine_poi.1
 			}

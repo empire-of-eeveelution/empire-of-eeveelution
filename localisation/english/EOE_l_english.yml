@@ -433,10 +433,10 @@ OLD_creators_2_DESC:0"We found a second creator ship"
 
 
 eevent.142.name:0 "Discover the creator ship"
-eevent.142.desc:0 "[Root.GetName] has entered the [Root.GetStarName] system. The crew observed the creator spacecraft in the expected position."
+eevent.142.desc:0 "[Root.GetName] has entered the [From.GetName] system. The crew observed the creator spacecraft in the expected position."
 eevent.142.a:0 "Start the investigation."
 eevent.143.name:0 "Discover the creator ship"
-eevent.143.desc:0 "[Root.GetName] has entered the [Root.GetStarName] system. The crew observed the creator spacecraft in the expected position."
+eevent.143.desc:0 "[Root.GetName] has entered the [From.GetName] system. The crew observed the creator spacecraft in the expected position."
 eevent.143.a:0 "Good job"
 
 eevent.165.name:0"No man's ship"

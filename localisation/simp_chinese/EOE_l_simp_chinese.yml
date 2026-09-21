@@ -402,10 +402,10 @@ OLD_creators_2_DESC:0"我们发现了第二艘创造者飞船"
 
 
 eevent.142.name:0 "发现创造者飞船"
-eevent.142.desc:0 "[Root.GetName]已经进入了[Root.GetStarName]星系。船员在预期位置观测到了创造者飞船。"
+eevent.142.desc:0 "[Root.GetName]已经进入了[From.GetName]星系。船员在预期位置观测到了创造者飞船。"
 eevent.142.a:0 "开始调查。"
 eevent.143.name:0 "发现创造者飞船"
-eevent.143.desc:0 "[Root.GetName]已经进入了[Root.GetStarName]星系。船员在预期位置观测到了创造者飞船。"
+eevent.143.desc:0 "[Root.GetName]已经进入了[From.GetName]星系。船员在预期位置观测到了创造者飞船。"
 eevent.143.a:0 "干得好。"
 #eevent.144.name:0 "发现创造者方舟舰"
 #eevent.144.desc:0 "[Root.GetName]已经进入了[Root.GetStarName]星系。船员在预期位置观测到了一艘足有数百公里长的巨型方舟舰。"
