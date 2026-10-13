@@ -42,10 +42,6 @@ EOE_virtual_paradise = {
 	icon = EOE_virtual_paradise
 	prerequisites = { EOE_dopamine_stimulation }
 
-	modifier = {
-			planet_crime_mult = 0.03
-	}
-
 	potential = { owner_main_species = { has_trait = trait_pokeball_adaptability } }
 	ai_weight = {
 		factor = 0
