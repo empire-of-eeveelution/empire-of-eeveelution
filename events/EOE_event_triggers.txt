@@ -34,3 +34,35 @@ country_event ={
 	}
 
 }
+
+country_event = {
+    id = EOE_trigger.3
+    is_triggered_only = yes
+    hide_window = yes
+	trigger = { 
+		owner_main_species = {
+			has_trait = trait_pokeball_adaptability
+		}
+		has_technology = EOE_virtual_paradise
+	 }
+    immediate = {
+		every_owned_planet = {
+			if = {
+				limit = {
+					AND = {
+						is_colony = yes
+						is_under_colonization = no
+					}
+				}
+				if = {
+					limit = { count_deposits = { type = d_num_eeveelution count > 1 } }
+					remove_deposit = d_num_eeveelution
+				}
+				if = {
+					limit = { NOT = { has_deposit = d_num_eeveelution } }
+					add_deposit = d_num_eeveelution
+				}
+			}
+		}
+	}
+}

@@ -71,7 +71,11 @@ on_eoe_okra_action_cancel = {
 # 		eevent.37
 # 	}
 # }
-
+on_monthly_pulse_country ={
+	events = {
+		EOE_trigger.3
+	}
+}
 
 
 

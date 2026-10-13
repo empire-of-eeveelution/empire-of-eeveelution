@@ -58,6 +58,18 @@ EOE_ghost_situation_portal_upkeep_mult = {
 # }
 ############################################
 
+num_eeveelution = {
+	base = 0
+	complex_trigger_modifier = {
+		trigger = count_owned_pop_amount
+		parameters = {
+			limit = { has_trait = trait_pokeball_adaptability }
+		}
+		mode = add
+	}
+	divide = 200
+}
+
 ##############辟邪全能特质（leader_trait_commander_omni_type）：每领袖等级增加该特质现有buff加成的1/4
 ##############倍率 = 1 + 领袖等级 × 0.25 （例如10级=3.5倍）
 EOE_bixie_omni_level_mult = {
