@@ -39,6 +39,12 @@ country_event = {
     id = EOE_trigger.3
     is_triggered_only = yes
     hide_window = yes
+	trigger = { 
+		owner_main_species = {
+			has_trait = trait_pokeball_adaptability
+		}
+		has_technology = EOE_virtual_paradise
+	 }
     immediate = {
 		every_owned_planet = {
 			if = {
