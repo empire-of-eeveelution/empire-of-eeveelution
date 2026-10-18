@@ -754,3 +754,21 @@ d_EOE_mining_station = {
 	}
 	
 }
+
+d_num_eeveelution = {
+	is_for_colonizable = yes
+	icon = "d_city"
+
+	potential = { always = no }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = EOE_virtual_paradise
+			}
+		}
+		planet_crime_add = 1
+		mult = value:num_eeveelution
+	}
+}
