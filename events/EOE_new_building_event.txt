@@ -391,6 +391,7 @@ planet_event = {
 	}
 	option = {
 		name = EOE_building.3.j
+		default_hide_option = yes
 	}
 }
 
