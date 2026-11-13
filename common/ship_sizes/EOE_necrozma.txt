@@ -1,4 +1,5 @@
 EOE_necrozma_normal = {
+	evaluation_resource = minor_artifacts	# 性能修复：避开默认的 energy，船体和组件都没有该资源的维护费
 	#entity = EOEmpty_entity
 	is_space_object = yes
 	graphical_culture = no
