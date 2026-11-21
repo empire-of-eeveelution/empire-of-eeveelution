@@ -5322,6 +5322,14 @@ country_event = {
 		room = enclave_curator_room
 		portrait = EOEHezi_test
 	}
+	# 多条路线（leadereevent.20/21/26/199）都会排队触发本事件，只允许每个国家弹出一次
+	trigger = {
+		NOT = { has_country_flag = EOE_okra_invited }
+		NOT = { any_owned_leader = { has_leader_flag = EOE_leader_okra } }	# 兼容旧存档：秋葵已在的话不再弹
+	}
+	immediate = {
+		set_country_flag = EOE_okra_invited
+	}
 	option = {
 		name = leadereevent.80.a
 		hidden_effect = {
@@ -5347,6 +5355,14 @@ country_event = {
 	desc = "leadereevent.81.desc"
 	is_triggered_only = yes
 	picture = GFX_evt_EOE_ship_warping
+	# 防止重复生成秋葵
+	trigger = {
+		NOT = { has_country_flag = EOE_okra_arrived }
+		NOT = { any_owned_leader = { has_leader_flag = EOE_leader_okra } }	# 兼容旧存档
+	}
+	immediate = {
+		set_country_flag = EOE_okra_arrived
+	}
 	option = {
 		name = leadereevent.81.a
 		hidden_effect = {
