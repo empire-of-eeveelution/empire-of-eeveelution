@@ -3550,7 +3550,7 @@ ship_event = { #召唤出了古神
 												effect = {
 													id = EOE.cthugha.2
 													every_owned_pop_group = {
-														kill_pop = yes
+														kill_all_pop = yes
 													}
 													save_event_target_as = EOE_cthugha_burned_planet_oh_no
 													change_pc = pc_molten
@@ -3650,7 +3650,7 @@ ship_event = { #召唤出了古神
 												effect = {
 													id = EOE.cthugha.2
 													every_owned_pop_group = {
-														kill_pop = yes
+														kill_all_pop = yes
 													}
 													save_event_target_as = EOE_cthugha_burned_planet_oh_no
 													change_pc = pc_molten

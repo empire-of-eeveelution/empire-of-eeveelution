@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="466fb39f-5700-450f-9f42-8c7299091cf8" name="更改" comment="修复了伊布环开修复灾厄损伤修出的不是宜居区段的BUG">
+    <list default="true" id="466fb39f-5700-450f-9f42-8c7299091cf8" name="更改" comment="将计划进化的默认选项设置为不做任何更改的退出，以避免做出玩家不愿做出的选择">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/on_actions/EOE_on_actions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/on_actions/EOE_on_actions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/script_values/00_EOE_script_values.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/script_values/00_EOE_script_values.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/traits/pokemon_admiral_traits.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/traits/pokemon_admiral_traits.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events/bixie.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events/bixie.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localisation/english/EOE_leader_l_english.yml" beforeDir="false" afterPath="$PROJECT_DIR$/localisation/english/EOE_leader_l_english.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localisation/english/EOE_traits_l_english.yml" beforeDir="false" afterPath="$PROJECT_DIR$/localisation/english/EOE_traits_l_english.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localisation/simp_chinese/EOE_leader_l_simp_chinese.yml" beforeDir="false" afterPath="$PROJECT_DIR$/localisation/simp_chinese/EOE_leader_l_simp_chinese.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localisation/simp_chinese/EOE_traits_l_simp_chinese.yml" beforeDir="false" afterPath="$PROJECT_DIR$/localisation/simp_chinese/EOE_traits_l_simp_chinese.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -362,7 +354,79 @@
       <option name="project" value="LOCAL" />
       <updated>1786783991984</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="修改了一些关于辟邪的特质、特性、英语本地化等">
+      <option name="closed" value="true" />
+      <created>1787233609676</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1787233609676</updated>
+    </task>
+    <task id="LOCAL-00038" summary="修改了EOEbuilding.104、.105随机崩溃的问题&#10;修复了eevent.7002刷不出人口的BUG">
+      <option name="closed" value="true" />
+      <created>1787241035779</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1787241035779</updated>
+    </task>
+    <task id="LOCAL-00039" summary="抽蓝色大肥鱼鞭子让大肥鱼补齐了一些本地化（什么赛博摘棉花）&#10;修复了究极大都市添加人口代码过时导致无法添加额外人口的BUG">
+      <option name="closed" value="true" />
+      <created>1787487506884</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1787487506884</updated>
+    </task>
+    <task id="LOCAL-00040" summary="为辟邪的新机制增加了限制（大船杀手）&#10;修复了计划进化里宜居性加成不生效的问题&#10;修复了Elena随机表情可能变成滚木的BUG">
+      <option name="closed" value="true" />
+      <created>1789229536351</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1789229536351</updated>
+    </task>
+    <task id="LOCAL-00041" summary="为辟邪的新机制增加了限制（大船杀手）">
+      <option name="closed" value="true" />
+      <created>1789230013496</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1789230013496</updated>
+    </task>
+    <task id="LOCAL-00042" summary="为埃琳娜引入了每月锁定名字的机制">
+      <option name="closed" value="true" />
+      <created>1789315581946</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1789315581946</updated>
+    </task>
+    <task id="LOCAL-00043" summary="初步修复了湮灭真相事件链中创造者飞船事件要求进入的星系与特殊项目刷出星系不一致的BUG（后续仍需调试，目前特殊项目刷新在恒星上）">
+      <option name="closed" value="true" />
+      <created>1789967773590</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1789967773590</updated>
+    </task>
+    <task id="LOCAL-00044" summary="修复了伊布物种名被错误命名为“伊布国”的BUG">
+      <option name="closed" value="true" />
+      <created>1791545536356</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1791545536356</updated>
+    </task>
+    <task id="LOCAL-00045" summary="将计划进化的默认选项设置为不做任何更改的退出，以避免做出玩家不愿做出的选择">
+      <option name="closed" value="true" />
+      <created>1792321665482</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1792321665482</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -377,14 +441,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="蜂群国策兼容文灾建筑并优化性能，水系草系物种特质适配现版本，精灵球科技提供重力陷阱加成，无光星球不能作为初始球出现（随机的AI会无光开，然后崩掉）" />
-    <MESSAGE value="Merge branch 'main' of github.com:empire-of-eeveelution/empire-of-eeveelution" />
-    <MESSAGE value="修复了一些本地化文本的定界符未完全包裹文本导致的BUG&#10;修复了辟邪彩蛋无法正常获得领袖的BUG&#10;为辟邪新增了两个特质" />
-    <MESSAGE value="删除了过时的country_limit文件&#10;添加了目前还没做完的星凝领袖" />
-    <MESSAGE value="修复了伊布会错误生成“生物”船模的问题" />
-    <MESSAGE value="为核子和秋葵添加了传奇领袖（传奇领袖不会占用领袖规模了）" />
-    <MESSAGE value="修复了无法刷出AI伊布的BUG&#10;修复了AI伊布无法获得伊布基础特质三件套的BUG&#10;新增了伊布物种不能使用机械智能政体的提示（虽然我也不知道有谁会尝试这么做）" />
-    <MESSAGE value="修复了伊布环开初始区划错误的BUG" />
     <MESSAGE value="修复了貔貅彩蛋能够被太阳系开局触发的BUG" />
     <MESSAGE value="修复了无限进化科技能被刷新到科技池的BUG" />
     <MESSAGE value="为辟邪适配ECL环境的强度&#10;添加了辟邪彩蛋事件的英文本地化（早该做的qwq）" />
@@ -401,6 +457,15 @@
     <MESSAGE value="暂时禁用掉了龙星群和T槽青焰" />
     <MESSAGE value="修复了方舟会在某些情况下错误使用占位符电脑导致方舟失去所有功能的BUG&#10;修复了辟邪的命定特质会被其他领袖随机到的BUG" />
     <MESSAGE value="修复了伊布环开修复灾厄损伤修出的不是宜居区段的BUG" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复了伊布环开修复灾厄损伤修出的不是宜居区段的BUG" />
+    <MESSAGE value="修改了一些关于辟邪的特质、特性、英语本地化等" />
+    <MESSAGE value="修改了EOEbuilding.104、.105随机崩溃的问题&#10;修复了eevent.7002刷不出人口的BUG" />
+    <MESSAGE value="抽蓝色大肥鱼鞭子让大肥鱼补齐了一些本地化（什么赛博摘棉花）&#10;修复了究极大都市添加人口代码过时导致无法添加额外人口的BUG" />
+    <MESSAGE value="为辟邪的新机制增加了限制（大船杀手）&#10;修复了计划进化里宜居性加成不生效的问题&#10;修复了Elena随机表情可能变成滚木的BUG" />
+    <MESSAGE value="为辟邪的新机制增加了限制（大船杀手）" />
+    <MESSAGE value="为埃琳娜引入了每月锁定名字的机制" />
+    <MESSAGE value="初步修复了湮灭真相事件链中创造者飞船事件要求进入的星系与特殊项目刷出星系不一致的BUG（后续仍需调试，目前特殊项目刷新在恒星上）" />
+    <MESSAGE value="修复了伊布物种名被错误命名为“伊布国”的BUG" />
+    <MESSAGE value="将计划进化的默认选项设置为不做任何更改的退出，以避免做出玩家不愿做出的选择" />
+    <option name="LAST_COMMIT_MESSAGE" value="将计划进化的默认选项设置为不做任何更改的退出，以避免做出玩家不愿做出的选择" />
   </component>
 </project>

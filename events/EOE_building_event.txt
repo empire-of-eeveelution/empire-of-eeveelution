@@ -796,9 +796,9 @@ country_event = {
 						resource_stockpile_compare = { resource = food value >= 1200 }
 				}
 				}
-					create_pop = {species = event_target:EOE_othermons }
-					create_pop = {species = event_target:EOE_othermons }
-					create_pop = {species = event_target:EOE_othermons }
+					create_pop_group = { species = event_target:EOE_othermons }
+					create_pop_group = { species = event_target:EOE_othermons }
+					create_pop_group = { species = event_target:EOE_othermons }
 					add_modifier = {
 						modifier = EOE_pokemon_produce_cooldown_modifier days = 1080
 					}

@@ -972,166 +972,166 @@ ship_event = {
 				capital_scope = {
 					random_list = {
 						1 = {
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
-								species = owner_main_species
-							}
-						}
-						1 = {
-							create_pop = {
-								species = owner_main_species
-							}
-							create_pop = {
-								species = owner_main_species
-							}
-							create_pop = {
-								species = owner_main_species
-							}
-							create_pop = {
-								species = owner_main_species
-							}
-							create_pop = {
-								species = owner_main_species
-							}
-							create_pop = {
-								species = owner_main_species
-							}
-							create_pop = {
-								species = owner_main_species
-							}
-							create_pop = {
-								species = owner_main_species
-							}
-							create_pop = {
-								species = owner_main_species
-							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
 						}
 						1 = {
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
-								species = owner_main_species
-							}
-							create_pop = {
-								species = owner_main_species
-							}
-							create_pop = {
-								species = owner_main_species
-							}
-							create_pop = {
-								species = owner_main_species
-							}
-							create_pop = {
-								species = owner_main_species
-							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
 						}
 						1 = {
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+						}
+						1 = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
 								species = owner_main_species
 							}
-							create_pop = {
+							create_pop_group = {
+								species = owner_main_species
+							}
+							create_pop_group = {
+								species = owner_main_species
+							}
+							create_pop_group = {
+								species = owner_main_species
+							}
+							create_pop_group = {
+								species = owner_main_species
+							}
+							create_pop_group = {
+								species = owner_main_species
+							}
+							create_pop_group = {
+								species = owner_main_species
+							}
+							create_pop_group = {
+								species = owner_main_species
+							}
+							create_pop_group = {
+								species = owner_main_species
+							}
+							create_pop_group = {
+								species = owner_main_species
+							}
+							create_pop_group = {
+								species = owner_main_species
+							}
+							create_pop_group = {
+								species = owner_main_species
+							}
+							create_pop_group = {
+								species = owner_main_species
+							}
+							create_pop_group = {
+								species = owner_main_species
+							}
+							create_pop_group = {
+								species = owner_main_species
+							}
+							create_pop_group = {
+								species = owner_main_species
+							}
+							create_pop_group = {
 								species = owner_main_species
 							}
 						}
@@ -10903,7 +10903,7 @@ planet_event = {
 	}
 	immediate = {
 		every_owned_pop_group = {
-			kill_pop = yes
+			kill_all_pop = yes
 		}
 		change_pc = pc_shrouded
 		set_planet_flag = EOE_supress_com_with_sei

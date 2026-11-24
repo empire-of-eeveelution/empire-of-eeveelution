@@ -430,7 +430,7 @@ EOE_assimilation_effect = {
 					}
 				}
 			}
-			kill_pop = yes
+			kill_single_pop = yes
 			root.owner = {
 				generate_cyborg_treats = yes #蠢驴你塞效果的地方真阴间东一个西一个哼啊啊啊啊啊啊啊啊啊啊啊啊啊啊
 			}
@@ -459,7 +459,7 @@ EOE_assimilation_effect = {
 					}
 				}
 				root = {
-					create_pop = {
+					create_pop_group = {
 						species = root.owner
 						ethos = root.owner
 					}
@@ -481,7 +481,7 @@ EOE_assimilation_effect = {
 				}
 			}
 			root = {
-				create_pop = {
+				create_pop_group = {
 					species = event_target:EOE_assim_species
 					ethos = root.owner
 				}

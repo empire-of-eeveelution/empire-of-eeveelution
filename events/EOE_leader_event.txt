@@ -11729,8 +11729,8 @@ country_event = { #第一次投喂香蕉
 		hidden_effect = {
 			set_country_flag = has_ate_banana
 			create_variable_if_not_exists = {
-				name = EOE_banana_counter
-				value = 0
+				VARIABLE = EOE_banana_counter
+				VALUE_IF_CREATED = 0
 			}
 			set_timed_country_flag = {
 				flag = EOE_banana_cooldown 

@@ -59,7 +59,7 @@ country_event = {
         set_country_flag = EOE_auto_complete
         remove_country_flag = EOE_auto_start
     }
-    }
     option = {
         name = EOE.auto.2.ok
+    }
 }
