@@ -771,4 +771,19 @@ d_num_eeveelution = {
 		planet_crime_add = 1
 		mult = value:num_eeveelution
 	}
+	triggered_planet_modifier = {
+		potential = {
+			planet = {
+				any_owned_pop_group = {
+					is_species_class = Eeveelutions
+				}
+			}
+			exists = owner
+			owner = {
+				has_technology = tech_Gender_Balance
+			}
+		}
+		planet_crime_mult = -0.05
+		planet_amenities_mult = 0.05
+	}
 }
