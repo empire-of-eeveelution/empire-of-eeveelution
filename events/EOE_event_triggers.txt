@@ -43,7 +43,10 @@ country_event = {
 		owner_main_species = {
 			has_trait = trait_pokeball_adaptability
 		}
-		has_technology = EOE_virtual_paradise
+		OR = {
+			has_technology = EOE_virtual_paradise
+			has_technology = tech_Gender_Balance
+		}
 	 }
     immediate = {
 		every_owned_planet = {
