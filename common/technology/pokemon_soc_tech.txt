@@ -56,14 +56,16 @@ tech_Gender_Balance = {
 	icon = tech_Gender_Balance
 
 	modifier = {
-		logistic_growth_mult = 0.20
-		planet_crime_mult = -0.05
-		planet_amenities_mult = 0.05
 	}
 
 	potential = {
 		owner_main_species = {
 			has_trait = trait_directed_evolution
+		}
+	}
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_EOE_Gender_Balance"
 		}
 	}
 

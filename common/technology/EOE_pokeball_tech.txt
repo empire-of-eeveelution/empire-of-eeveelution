@@ -10,6 +10,11 @@ EOE_afferent_nerve_stimulation = {
 	}
 	icon = EOE_afferent_nerve_stimulation
 	potential = { owner_main_species = { has_trait = trait_pokeball_adaptability }  }
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_EOE_afferent_nerve_stimulation"
+		}
+	}
 
 	ai_weight = {
 		factor = 0
@@ -26,6 +31,11 @@ EOE_dopamine_stimulation = {
 	icon = EOE_dopamine_stimulation
 	prerequisites = { EOE_afferent_nerve_stimulation }
 	potential = { owner_main_species = { has_trait = trait_pokeball_adaptability } }
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_EOE_dopamine_stimulation"
+		}
+	}
 	
 	ai_weight = {
 		factor = 0
@@ -41,8 +51,13 @@ EOE_virtual_paradise = {
 	is_dangerous = yes
 	icon = EOE_virtual_paradise
 	prerequisites = { EOE_dopamine_stimulation }
-
 	potential = { owner_main_species = { has_trait = trait_pokeball_adaptability } }
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_EOE_virtual_paradise"
+		}
+	}
+
 	ai_weight = {
 		factor = 0
 	}
