@@ -1,4 +1,4 @@
-﻿BRA2 = {
+BRA2 = {
 	category = "brave_troop"
 	ship_names = {
 

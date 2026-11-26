@@ -1,4 +1,4 @@
-﻿EEVEELUTION = {
+EEVEELUTION = {
 
 	category = "Eeveelution"
 	randomized = yes
