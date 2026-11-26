@@ -20,7 +20,7 @@ EOE_dopamine_stimulation_desc:0"利用精灵球的心智连接组件刺激居住
 TECH_EOE_dopamine_stimulation:0"布口幸福度 §G+5§!\n布口住房使用 §G-10%§!\n布口帝国规模 §G-10%§!"
 EOE_virtual_paradise:0"虚拟天堂"
 EOE_virtual_paradise_desc:0"将精灵球的心智连接组件改造为脑机接口，以基于脑神经刺激的沉浸式虚拟现实游戏满足公民从肉体到精神的一切需要。只要付出足够的金钱，公民就能在规定的休息时间内体验人间极乐。这具有极强成瘾性，几乎所有阶层的公民在体验过精灵球居住后都无法抗拒它的美妙。一些无力支付高级精灵球昂贵费用的穷人甚至会为此铤而走险。"
-TECH_EOE_virtual_paradise:0"布口幸福度 §G+10§!\n布口住房使用 §G-20%§!\n布口帝国规模 §G-20%§!\n§R每10k布口犯罪度 +1§!"
+TECH_EOE_virtual_paradise:0"布口幸福度 §G+10§!\n布口住房使用 §G-20%§!\n布口帝国规模 §G-20%§!\n§R星球犯罪度 +3%§!"
 d_num_eeveelution:0"布口效果"
 d_num_eeveelution_desc:0"用于修正某些布口效果"
 EOE_mental_assault_effect:0"§H解锁特性：§!捕捉式轨道轰炸"
