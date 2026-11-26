@@ -63,6 +63,18 @@ trait_directed_evolution = {
 		potential = {
 			exists = owner
 			owner = {
+				has_technology = tech_Gender_Balance
+			}
+		}
+		logistic_growth_mult = 0.20
+		planet_crime_mult = -0.05
+		planet_amenities_mult = 0.05
+	}
+
+	triggered_pop_group_modifier = {
+		potential = {
+			exists = owner
+			owner = {
 				has_valid_civic = civic_EOE_evolution_planning
 			}
 			planet = {
