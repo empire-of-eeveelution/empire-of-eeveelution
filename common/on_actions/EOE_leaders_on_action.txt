@@ -92,6 +92,12 @@ on_modification_complete = {
 	}
 }
 
+on_modification_completion = {
+	events = {
+		leadereevent.3		#改领袖头像
+	}
+}
+
 on_leader_level_up = {
 	events = {
 		leadereevent.2001 #4级发特质
