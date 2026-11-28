@@ -1,0 +1,10 @@
+EOE_advisor = {
+	name = "EOE_advisor"
+	icon = "gfx/interface/icons/traits/EOET5.png"
+	playable = {
+		always = yes
+	}
+	weight = {
+		base = 0
+	}
+}
