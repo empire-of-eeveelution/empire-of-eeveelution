@@ -9,7 +9,7 @@ mod_starbase_shipyard_build_food_cost_mult:0"£food£Ship food cost"
 #technology
 tech_Gender_Balance:0"Gender Balance"
 tech_Gender_Balance_desc:0"As we all know, female Eeveelutions are extremely efficient reproductive machines. They can produce enough offsprings to make the population of Eeveelutions keep growing even when the ratio of male to female is 7:1, compete with the irrational setting left by the Creators. Now, Eeveelutions can balance their sex ratio by promoting the use of drugs that can selectively inactivate some male gametes containing Y chromosome, break the \"7:1 curse\" in the blood, release the full potential of its own race in terms of proliferation and reproduction.\n This will also put an end to the custom of group marriage caused by the uneven sex ratio and make it possible to promote monogamy, improve the happiness of citizens and reduce sexual violence. "
-TECH_EOE_Gender_Balance:0"Eeveelutions Growth Speed §G+20%§!\nEeveelutions Amenities Usage §G-5%§!\nEeveelutions Happiness §G+5%§!"
+TECH_EOE_Gender_Balance:0"Eeveelutions Growth Speed §G+20%§!\nEeveelutions Amenities Usage §G-5%§!\nEeveelutions Happiness §G+5%§!\nPlanet Crime §G-5%§!"
 #origin
 origin_protoss_shattered_ring:0 "Shattered Ring(Eeveelutions)"
 origin_protoss_shattered_ring_DESC:0 "This civilization inhabits a Ring World built by unknown forerunners. If it can be understood and fully repaired it will grant them great power."

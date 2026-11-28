@@ -1,0 +1,916 @@
+#注册音效
+#将音效整合进音效组中注册并归入一大类
+#应用音效组
+
+
+###注册音效
+sound = { name = "eevee_idle_1"   file = "vo/eevee_advisor/eevee_idle_1.wav" }
+sound = { name = "eevee_idle_2"   file = "vo/eevee_advisor/eevee_idle_2.wav" }
+sound = { name = "eevee_idle_3"   file = "vo/eevee_advisor/eevee_idle_3.wav" }
+sound = { name = "after_touch_eevee_1"   file = "vo/eevee_advisor/after_touch_eevee_1.wav" }
+sound = { name = "after_touch_eevee_2"   file = "vo/eevee_advisor/after_touch_eevee_2.wav" }
+sound = { name = "after_touch_eevee_3"   file = "vo/eevee_advisor/after_touch_eevee_3.wav" }
+sound = { name = "after_touch_eevee_4"   file = "vo/eevee_advisor/after_touch_eevee_4.wav" }
+sound = { name = "after_touch_eevee_5"   file = "vo/eevee_advisor/after_touch_eevee_5.wav" }
+sound = { name = "after_touch_eevee_6"   file = "vo/eevee_advisor/after_touch_eevee_6.wav" }
+sound = { name = "after_touch_eevee_7"   file = "vo/eevee_advisor/after_touch_eevee_7.wav" }
+sound = { name = "after_touch_eevee_8"   file = "vo/eevee_advisor/after_touch_eevee_8.wav" }
+sound = { name = "after_touch_eevee_9"   file = "vo/eevee_advisor/after_touch_eevee_9.wav" }
+sound = { name = "after_touch_eevee_10"   file = "vo/eevee_advisor/after_touch_eevee_10.wav" }
+sound = { name = "touching_eevee_1"   file = "vo/eevee_advisor/touching_eevee_1.wav" }
+sound = { name = "touching_eevee_2"   file = "vo/eevee_advisor/touching_eevee_2.wav" }
+sound = { name = "touching_eevee_3"   file = "vo/eevee_advisor/touching_eevee_3.wav" }
+sound = { name = "touching_eevee_4"   file = "vo/eevee_advisor/touching_eevee_4.wav" }
+sound = { name = "touching_eevee_5"   file = "vo/eevee_advisor/touching_eevee_5.wav" }
+sound = { name = "touching_eevee_6"   file = "vo/eevee_advisor/touching_eevee_6.wav" }
+sound = { name = "touching_eevee_7"   file = "vo/eevee_advisor/touching_eevee_7.wav" }
+sound = { name = "touching_eevee_8"   file = "vo/eevee_advisor/touching_eevee_8.wav" }
+sound = { name = "touching_eevee_9"   file = "vo/eevee_advisor/touching_eevee_9.wav" }
+sound = { name = "touching_eevee_10"   file = "vo/eevee_advisor/touching_eevee_10.wav" }
+sound = { name = "touching_eevee_11"   file = "vo/eevee_advisor/touching_eevee_11.wav" }
+sound = { name = "eevee_changing_hairstyle_1"   file = "vo/eevee_advisor/eevee_changing_hairstyle_1.wav" }
+sound = { name = "eevee_changing_hairstyle_2"   file = "vo/eevee_advisor/eevee_changing_hairstyle_2.wav" }
+sound = { name = "eevee_chat_1"   file = "vo/eevee_advisor/eevee_chat_1.wav" }
+sound = { name = "eevee_chat_2"   file = "vo/eevee_advisor/eevee_chat_2.wav" }
+sound = { name = "eevee_clap_1"   file = "vo/eevee_advisor/eevee_clap_1.wav" }
+sound = { name = "eevee_clap_2"   file = "vo/eevee_advisor/eevee_clap_2.wav" }
+sound = { name = "eevee_clap_3"   file = "vo/eevee_advisor/eevee_clap_3.wav" }
+sound = { name = "eevee_dozing"   file = "vo/eevee_advisor/eevee_dozing.wav" }
+sound = { name = "eevee_eat_delicious_1"   file = "vo/eevee_advisor/eevee_eat_delicious_1.wav" }
+sound = { name = "eevee_eat_delicious_2"   file = "vo/eevee_advisor/eevee_eat_delicious_2.wav" }
+sound = { name = "eevee_eat_delicious_3"   file = "vo/eevee_advisor/eevee_eat_delicious_3.wav" }
+sound = { name = "eevee_emerging_1"   file = "vo/eevee_advisor/eevee_emerging_1.wav" }
+sound = { name = "eevee_emerging_2"   file = "vo/eevee_advisor/eevee_emerging_2.wav" }
+sound = { name = "eevee_exciting_1"   file = "vo/eevee_advisor/eevee_exciting_1.wav" }
+sound = { name = "eevee_exciting_2"   file = "vo/eevee_advisor/eevee_exciting_2.wav" }
+sound = { name = "eevee_exciting_3"   file = "vo/eevee_advisor/eevee_exciting_3.wav" }
+sound = { name = "eevee_fearing"   file = "vo/eevee_advisor/eevee_fearing.wav" }
+sound = { name = "eevee_fighting_1"   file = "vo/eevee_advisor/eevee_fighting_1.wav" }
+sound = { name = "eevee_fighting_2"   file = "vo/eevee_advisor/eevee_fighting_2.wav" }
+sound = { name = "eevee_gift_1"   file = "vo/eevee_advisor/eevee_gift_1.wav" }
+sound = { name = "eevee_gift_2"   file = "vo/eevee_advisor/eevee_gift_2.wav" }
+sound = { name = "eevee_hajimi"   file = "vo/eevee_advisor/eevee_hajimi.wav" }
+sound = { name = "eevee_in_pokedex"   file = "vo/eevee_advisor/eevee_in_pokedex.wav" }
+sound = { name = "eevee_on_scene_1"   file = "vo/eevee_advisor/eevee_on_scene_1.wav" }
+sound = { name = "eevee_on_scene_2"   file = "vo/eevee_advisor/eevee_on_scene_2.wav" }
+sound = { name = "eevee_poke_face_1"   file = "vo/eevee_advisor/eevee_poke_face_1.wav" }
+sound = { name = "eevee_poke_face_2"   file = "vo/eevee_advisor/eevee_poke_face_2.wav" }
+sound = { name = "eevee_runaway_1"   file = "vo/eevee_advisor/eevee_runaway_1.wav" }
+sound = { name = "eevee_runaway_2"   file = "vo/eevee_advisor/eevee_runaway_2.wav" }
+sound = { name = "eevee_shiver"   file = "vo/eevee_advisor/eevee_shiver.wav" }
+sound = { name = "eevee_singing"   file = "vo/eevee_advisor/eevee_singing.wav" }
+sound = { name = "eevee_spacing_out"   file = "vo/eevee_advisor/eevee_spacing_out.wav" }
+sound = { name = "eevee_squeezee"   file = "vo/eevee_advisor/eevee_squeezee.wav" }
+sound = { name = "eevee_stretch"   file = "vo/eevee_advisor/eevee_stretch.wav" }
+sound = { name = "eevee_tickling_1"   file = "vo/eevee_advisor/eevee_tickling_1.wav" }
+sound = { name = "eevee_tickling_2"   file = "vo/eevee_advisor/eevee_tickling_2.wav" }
+sound = { name = "eevee_tickling_3"   file = "vo/eevee_advisor/eevee_tickling_3.wav" }
+sound = { name = "eevee_tickling_4"   file = "vo/eevee_advisor/eevee_tickling_4.wav" }
+sound = { name = "eevee_tilting_1"   file = "vo/eevee_advisor/eevee_tilting_1.wav" }
+sound = { name = "eevee_tilting_2"   file = "vo/eevee_advisor/eevee_tilting_2.wav" }
+sound = { name = "eevee_unhappy_1"   file = "vo/eevee_advisor/eevee_unhappy_1.wav" }
+sound = { name = "eevee_unhappy_2"   file = "vo/eevee_advisor/eevee_unhappy_2.wav" }
+sound = { name = "eevee_unhappy_3"   file = "vo/eevee_advisor/eevee_unhappy_3.wav" }
+sound = { name = "dynamax_eevee_scraming"   file = "vo/eevee_advisor/000_dynamax_eevee_scraming.wav" }
+
+
+###注册音效组
+soundeffect = {
+    name = eevee_generic_phrase
+    sounds = {
+        sound = eevee_gift_1
+        sound = eevee_gift_2
+        sound = eevee_in_pokedex
+    }
+    volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+    name = eevee_notify_alien_empire
+    sounds = {
+        sound = eevee_chat_1
+        sound = eevee_chat_2
+        sound = eevee_in_pokedex
+        sound = eevee_emerging_2
+        sound = after_touch_eevee_5
+        sound = eevee_changing_hairstyle_2
+    }
+    volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+    name = eevee_notify_alien_ferderation
+    sounds = {
+        sound = eevee_exciting_1
+        sound = eevee_exciting_3
+        sound = eevee_emerging_1
+        sound = eevee_changing_hairstyle_2
+    }
+    volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+    name = eevee_notify_fight_alien_spaceport
+    sounds = {
+        sound = eevee_changing_hairstyle_1
+        sound = after_touch_eevee_10
+        sound = eevee_fighting_1
+        sound = eevee_on_scene_2
+    }
+    volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+    name = eevee_notify_strange_alien_spaceship
+    sounds = {
+        sound = eevee_tilting_1
+        sound = eevee_changing_hairstyle_1
+        sound = eevee_idle_3
+        sound = eevee_exciting_3
+        sound = after_touch_eevee_10
+    }
+    volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+    name = eevee_notify_building_ruined
+    sounds = {
+        sound = eevee_runaway_1
+        sound = eevee_runaway_2
+        sound = eevee_fighting_1
+        sound = eevee_unhappy_2
+        sound = eevee_unhappy_3
+    }
+    volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+    name = eevee_notify_colony_start
+    sounds = {
+        sound = eevee_singing
+    }
+    volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+    name = eevee_notify_colony_finished
+    sounds = {
+        sound = eevee_emerging_1
+        sound = eevee_eat_delicious_1
+        sound = eevee_eat_delicious_2
+        sound = eevee_eat_delicious_3
+        sound = eevee_exciting_1
+        sound = eevee_exciting_2
+        sound = eevee_exciting_3
+    }
+    volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+    name = eevee_notify_colony_ship_destoryed
+    sounds = {
+        sound = eevee_unhappy_1
+        sound = eevee_unhappy_2
+        sound = eevee_unhappy_3
+        sound = eevee_tilting_1
+        sound = eevee_tilting_2
+        sound = eevee_fearing
+        sound = eevee_shiver
+        sound = eevee_squeezee
+    }
+    volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+    name = eevee_notify_colony_ship_under_attack
+    sounds = {
+        sound = eevee_hajimi
+        sound = eevee_fighting_1
+        sound = eevee_on_scene_1
+    }
+    volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+    name = eevee_notify_construction_finished
+    sounds = {
+        sound = after_touch_eevee_1
+        sound = after_touch_eevee_2
+        sound = after_touch_eevee_3
+        sound = after_touch_eevee_4
+        sound = after_touch_eevee_5
+        sound = after_touch_eevee_6
+        sound = after_touch_eevee_8
+        sound = after_touch_eevee_9
+    }
+    volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+    name = eevee_notify_construction_ship_destoryed
+    sounds = {
+        sound = eevee_unhappy_1
+        sound = eevee_unhappy_2
+        sound = eevee_unhappy_3
+        sound = eevee_tilting_1
+        sound = eevee_tilting_2
+        sound = eevee_fearing
+        sound = eevee_shiver
+        sound = eevee_squeezee
+    }
+    volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+    name = eevee_notify_construction_ship_under_attack
+    sounds = {
+        sound = eevee_hajimi
+        sound = eevee_fighting_1
+        sound = eevee_on_scene_1
+    }
+    volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+    name = eevee_notify_debri_analysed
+    sounds = {
+        sound = eevee_gift_1
+        sound = eevee_gift_2
+    }
+    volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+    name = eevee_notify_discovery_detected
+    sounds = {
+        sound = eevee_chat_1
+        sound = eevee_chat_2
+    }
+    volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+    name = eevee_notify_be_declare_war
+    sounds = {
+        sound = eevee_fighting_2
+        sound = eevee_on_scene_2
+    }
+    volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+    name = eevee_notify_defeat_enermy_invade_army
+    sounds = {
+        sound = eevee_emerging_1
+        sound = eevee_eat_delicious_1
+        sound = eevee_eat_delicious_2
+        sound = eevee_eat_delicious_3
+        sound = eevee_exciting_1
+        sound = eevee_exciting_2
+        sound = eevee_exciting_3
+    }
+    volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+    name = eevee_notify_enermy_army_landing
+    sounds = {
+        sound = eevee_hajimi
+        sound = eevee_changing_hairstyle_1
+        sound = eevee_changing_hairstyle_2
+    }
+    volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+    name = eevee_notify_avoid_hostile_fleet
+    sounds = {
+        sound = eevee_runaway_1
+        sound = eevee_changing_hairstyle_1
+        sound = eevee_changing_hairstyle_2
+    }
+    volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+    name = eevee_notify_federation_formed
+    sounds = {
+        sound = eevee_emerging_1
+        sound = eevee_eat_delicious_1
+        sound = eevee_eat_delicious_2
+        sound = eevee_eat_delicious_3
+        sound = eevee_exciting_1
+        sound = eevee_exciting_2
+        sound = eevee_exciting_3
+    }
+    volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+    name = eevee_notify_home_fleet_be_destoryed
+    sounds = {
+        sound = eevee_unhappy_1
+        sound = eevee_unhappy_2
+        sound = eevee_unhappy_3
+        sound = eevee_tilting_1
+        sound = eevee_tilting_2
+        sound = eevee_fearing
+        sound = eevee_shiver
+        sound = eevee_squeezee
+    }
+    volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_found_enermy_fleet
+	sounds = {
+		sound = eevee_poke_face_2
+        sound = eevee_fighting_1
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_declare_war
+	sounds = {
+		sound = eevee_fighting_2
+        sound = eevee_on_scene_2
+	}
+	volume = 0.6
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_found_hostile_fleet
+	sounds = {
+		sound = eevee_poke_face_2
+        sound = eevee_fighting_1
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_fighting_hostile_fleet
+	sounds = {
+		sound = eevee_hajimi
+        sound = eevee_fighting_1
+        sound = eevee_fighting_2
+        sound = eevee_on_scene_1
+        sound = eevee_on_scene_2
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_fighting_hostile_station
+	sounds = {
+		sound = eevee_hajimi
+        sound = eevee_fighting_1
+        sound = eevee_fighting_2
+        sound = eevee_on_scene_1
+        sound = eevee_on_scene_2
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_transmission
+	sounds = {
+		sound = eevee_chat_1
+        sound = eevee_chat_2
+        sound = eevee_gift_1
+        sound = eevee_gift_2
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_lost_planet
+	sounds = {
+		sound = eevee_unhappy_1
+        sound = eevee_unhappy_2
+        sound = eevee_unhappy_3
+        sound = eevee_tilting_1
+        sound = eevee_tilting_2
+        sound = eevee_fearing
+        sound = eevee_shiver
+        sound = eevee_squeezee
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_home_landing_army_manba_out
+	sounds = {
+		sound = eevee_unhappy_1
+        sound = eevee_unhappy_2
+        sound = eevee_unhappy_3
+        sound = eevee_tilting_1
+        sound = eevee_tilting_2
+        sound = eevee_fearing
+        sound = eevee_shiver
+        sound = eevee_squeezee
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_home_army_landing
+	sounds = {
+		sound = eevee_hajimi
+        sound = eevee_fighting_1
+        sound = eevee_fighting_2
+        sound = eevee_on_scene_1
+        sound = eevee_on_scene_2
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_home_army_catching_planet
+	sounds = {
+		sound = eevee_emerging_1
+        sound = eevee_eat_delicious_1
+        sound = eevee_eat_delicious_2
+        sound = eevee_eat_delicious_3
+        sound = eevee_exciting_1
+        sound = eevee_exciting_2
+        sound = eevee_exciting_3
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_military_station_lost
+	sounds = {
+		sound = eevee_unhappy_1
+        sound = eevee_unhappy_2
+        sound = eevee_unhappy_3
+        sound = eevee_tilting_1
+        sound = eevee_tilting_2
+        sound = eevee_fearing
+        sound = eevee_shiver
+        sound = eevee_squeezee
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_mining_station_lost
+	sounds = {
+		sound = eevee_unhappy_1
+        sound = eevee_unhappy_2
+        sound = eevee_unhappy_3
+        sound = eevee_tilting_1
+        sound = eevee_tilting_2
+        sound = eevee_fearing
+        sound = eevee_shiver
+        sound = eevee_squeezee
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_observe_station_lost
+	sounds = {
+		sound = eevee_unhappy_1
+        sound = eevee_unhappy_2
+        sound = eevee_unhappy_3
+        sound = eevee_tilting_1
+        sound = eevee_tilting_2
+        sound = eevee_fearing
+        sound = eevee_shiver
+        sound = eevee_squeezee
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_low_stability
+	sounds = {
+        sound = eevee_changing_hairstyle_1
+        sound = eevee_changing_hairstyle_2
+        sound = eevee_fighting_1
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_scraming_for_war
+	sounds = {
+        sound = dynamax_eevee_scraming
+	}
+	volume = 0.6
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_home_alien_be_teached
+	sounds = {
+        sound = eevee_emerging_1
+        sound = eevee_eat_delicious_1
+        sound = eevee_eat_delicious_2
+        sound = eevee_eat_delicious_3
+        sound = eevee_exciting_1
+        sound = eevee_exciting_2
+        sound = eevee_exciting_3
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_home_pre_ftl_got_ftl
+	sounds = {
+        sound = eevee_emerging_1
+        sound = eevee_eat_delicious_1
+        sound = eevee_eat_delicious_2
+        sound = eevee_eat_delicious_3
+        sound = eevee_exciting_1
+        sound = eevee_exciting_2
+        sound = eevee_exciting_3
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_research_finished
+	sounds = {
+		sound = touching_eevee_1
+        sound = touching_eevee_2
+        sound = touching_eevee_3
+        sound = touching_eevee_4
+        sound = touching_eevee_5
+        sound = touching_eevee_6
+        sound = touching_eevee_7
+        sound = touching_eevee_9
+        sound = touching_eevee_10
+        sound = touching_eevee_11
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_research_station_lost
+	sounds = {
+		sound = eevee_unhappy_1
+        sound = eevee_unhappy_2
+        sound = eevee_unhappy_3
+        sound = eevee_tilting_1
+        sound = eevee_tilting_2
+        sound = eevee_fearing
+        sound = eevee_shiver
+        sound = eevee_squeezee
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_science_ship_under_attack
+	sounds = {
+		sound = eevee_hajimi
+        sound = eevee_fighting_1
+        sound = eevee_on_scene_1
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_science_ship_destoryed
+	sounds = {
+		sound = eevee_unhappy_1
+        sound = eevee_unhappy_2
+        sound = eevee_unhappy_3
+        sound = eevee_tilting_1
+        sound = eevee_tilting_2
+        sound = eevee_fearing
+        sound = eevee_shiver
+        sound = eevee_squeezee
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_ships_upgraded
+	sounds = {
+		sound = eevee_gift_1
+        sound = eevee_gift_2
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_situation_log
+	sounds = {
+		sound = eevee_chat_1
+        sound = eevee_chat_2
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_amiba
+	sounds = {
+		sound = eevee_chat_1
+        sound = eevee_chat_2
+        sound = eevee_in_pokedex
+        sound = eevee_emerging_2
+        sound = eevee_changing_hairstyle_2
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_spaceport_lost
+	sounds = {
+		sound = eevee_unhappy_1
+        sound = eevee_unhappy_2
+        sound = eevee_unhappy_3
+        sound = eevee_tilting_1
+        sound = eevee_tilting_2
+        sound = eevee_fearing
+        sound = eevee_shiver
+        sound = eevee_squeezee
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_spaceport_under_attack
+	sounds = {
+		sound = eevee_hajimi
+        sound = eevee_fighting_1
+        sound = eevee_on_scene_1
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_special_project_finished
+	sounds = {
+		sound = eevee_emerging_1
+        sound = eevee_eat_delicious_1
+        sound = eevee_eat_delicious_2
+        sound = eevee_eat_delicious_3
+        sound = eevee_exciting_1
+        sound = eevee_exciting_2
+        sound = eevee_exciting_3
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_species_modified
+	sounds = {
+		sound = eevee_emerging_1
+        sound = eevee_eat_delicious_1
+        sound = eevee_eat_delicious_2
+        sound = eevee_eat_delicious_3
+        sound = eevee_exciting_1
+        sound = eevee_exciting_2
+        sound = eevee_exciting_3
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_station_under_attack
+	sounds = {
+		sound = eevee_hajimi
+        sound = eevee_fighting_1
+        sound = eevee_on_scene_1
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_system_survey_complete
+	sounds = {
+		sound = after_touch_eevee_1
+        sound = after_touch_eevee_2
+        sound = after_touch_eevee_3
+        sound = after_touch_eevee_4
+        sound = after_touch_eevee_5
+        sound = after_touch_eevee_6
+        sound = after_touch_eevee_8
+        sound = after_touch_eevee_9
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_blocker_clear
+	sounds = {
+		sound = eevee_idle_1
+        sound = eevee_idle_2
+        sound = eevee_idle_3
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_unkonwn_object
+	sounds = {
+		sound = eevee_in_pokedex
+        sound = eevee_changing_hairstyle_2
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_agenda_available
+	sounds = {
+		sound = eevee_clap_1
+        sound = eevee_clap_2
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = eevee_notify_agenda_ready
+	sounds = {
+		sound = eevee_singing
+        sound = eevee_spacing_out
+        sound = eevee_stretch
+	}
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+
+###音效组归类
+category = {
+    name = "Voice"
+    soundeffects = {
+        eevee_generic_phrase
+        eevee_notify_alien_empire
+        eevee_notify_alien_ferderation
+        eevee_notify_fight_alien_spaceport
+        eevee_notify_strange_alien_spaceship
+        eevee_notify_building_ruined
+        eevee_notify_colony_start
+        eevee_notify_colony_finished
+        eevee_notify_colony_ship_destoryed
+        eevee_notify_colony_ship_under_attack
+        eevee_notify_construction_finished
+        eevee_notify_construction_ship_destoryed
+        eevee_notify_construction_ship_under_attack
+        eevee_notify_debri_analysed
+        eevee_notify_discovery_detected
+        eevee_notify_be_declare_war
+        eevee_notify_defeat_enermy_invade_army
+        eevee_notify_enermy_army_landing
+        eevee_notify_avoid_hostile_fleet
+        eevee_notify_federation_formed
+        eevee_notify_home_fleet_be_destoryed
+        eevee_notify_found_enermy_fleet
+        eevee_notify_declare_war
+        eevee_notify_found_hostile_fleet
+        eevee_notify_fighting_hostile_fleet
+        eevee_notify_fighting_hostile_station
+        eevee_notify_transmission
+        eevee_notify_lost_planet
+        eevee_notify_home_landing_army_manba_out
+        eevee_notify_home_army_landing
+        eevee_notify_home_army_catching_planet
+        eevee_notify_military_station_lost
+        eevee_notify_mining_station_lost
+        eevee_notify_observe_station_lost
+        eevee_notify_low_stability
+        eevee_scraming_for_war
+        eevee_notify_home_alien_be_teached
+        eevee_notify_home_pre_ftl_got_ftl
+        eevee_notify_research_finished
+        eevee_notify_research_station_lost
+        eevee_notify_science_ship_under_attack
+        eevee_notify_science_ship_destoryed
+        eevee_notify_ships_upgraded
+        eevee_notify_situation_log
+        eevee_notify_amiba
+        eevee_notify_spaceport_lost
+        eevee_notify_spaceport_under_attack
+        eevee_notify_special_project_finished
+        eevee_notify_species_modified
+        eevee_notify_station_under_attack
+        eevee_notify_system_survey_complete
+        eevee_notify_blocker_clear
+        eevee_notify_unkonwn_object
+        eevee_notify_agenda_available
+        eevee_notify_agenda_ready
+    }
+}
+
+
+###使用音效组
+soundgroup = {
+	name = EOE_advisor
+	soundeffectoverrides = {
+		advisor_sample_voice_type = eevee_generic_phrase
+		advisor_notification_alien_empire_communication_01 = eevee_notify_alien_empire
+		advisor_notification_alien_federation_formed = eevee_notify_alien_ferderation
+		advisor_notification_alien_spaceport_engaged = eevee_notify_fight_alien_spaceport
+		advisor_notification_alien_vessel_encountered = eevee_notify_strange_alien_spaceship
+		advisor_notification_building_ruined = eevee_notify_building_ruined
+		advisor_notification_colonization_progress = eevee_notify_colony_start
+		advisor_notification_colony_established = eevee_notify_colony_finished
+		advisor_notification_colony_ship_destroyed_01 = eevee_notify_colony_ship_destoryed
+		advisor_notification_colony_ship_under_attack = eevee_notify_colony_ship_under_attack
+		advisor_notification_construction_complete = eevee_notify_construction_finished
+		advisor_notification_construction_ship_destroyed = eevee_notify_construction_ship_destoryed
+		advisor_notification_construction_ship_under_attack = eevee_notify_construction_ship_under_attack
+		advisor_notification_debris_analysed = eevee_notify_debri_analysed
+		advisor_notification_discovery_detected = eevee_notify_discovery_detected
+		advisor_notification_enemy_declared_war = eevee_notify_be_declare_war
+		advisor_notification_enemy_invasion_defeated = eevee_notify_defeat_enermy_invade_army
+		advisor_notification_enemy_troops_landing = eevee_notify_enermy_army_landing
+		advisor_notification_evade_hostile_fleet = eevee_notify_avoid_hostile_fleet
+		advisor_notification_federation_formed = eevee_notify_federation_formed
+		advisor_notification_fleet_destroyed = eevee_notify_home_fleet_be_destoryed
+		advisor_notification_fleet_detected = eevee_notify_found_enermy_fleet
+		advisor_notification_generic_war_declare = eevee_notify_declare_war
+		advisor_notification_hostile_fleet_detected = eevee_notify_found_hostile_fleet
+		advisor_notification_hostile_fleet_engaged = eevee_notify_fighting_hostile_fleet
+		advisor_notification_hostile_station_engaged = eevee_notify_fighting_hostile_station
+		advisor_notification_incoming_transmission = eevee_notify_transmission
+		advisor_notification_invasion_enemy_won = eevee_notify_lost_planet
+		advisor_notification_invasion_failed = eevee_notify_home_landing_army_manba_out
+		advisor_notification_invasion_progress = eevee_notify_home_army_landing
+		advisor_notification_invasion_success = eevee_notify_home_army_catching_planet
+		advisor_notification_military_station_lost = eevee_notify_military_station_lost
+		advisor_notification_mining_station_lost = eevee_notify_mining_station_lost
+		advisor_notification_research_station_lost = eevee_notify_research_station_lost
+		advisor_notification_observation_post_lost = eevee_notify_observe_station_lost
+		advisor_notification_planet_in_revolt = eevee_notify_low_stability
+		advisor_notification_player_declare_war = eevee_scraming_for_war
+		advisor_notification_pre_sapient_uplifted = eevee_notify_home_alien_be_teached
+		advisor_notification_primitive_enlighted = eevee_notify_home_pre_ftl_got_ftl
+		advisor_notification_research_complete = eevee_notify_research_finished
+		advisor_notification_science_ship_destroyed = eevee_notify_science_ship_destoryed
+		advisor_notification_science_ship_under_attack = eevee_notify_science_ship_under_attack
+		advisor_notification_ships_upgraded = eevee_notify_ships_upgraded
+		advisor_notification_situation_log = eevee_notify_situation_log
+		advisor_notification_spaceborne_encounter = eevee_notify_amiba
+		advisor_notification_spaceport_lost = eevee_notify_spaceport_lost
+		advisor_notification_spaceport_under_attack = eevee_notify_spaceport_under_attack
+		advisor_notification_special_project_complete = eevee_notify_special_project_finished
+		advisor_notification_species_modified = eevee_notify_species_modified
+		advisor_notification_station_under_attack = eevee_notify_station_under_attack
+		advisor_notification_system_survey_complete = eevee_notify_system_survey_complete
+		advisor_notification_tile_blocker_clear = eevee_notify_blocker_clear
+		advisor_notification_unidentified_object = eevee_notify_unkonwn_object
+		advisor_tutorial_agenda_available = eevee_notify_agenda_available
+		advisor_tutorial_agenda_ready = eevee_notify_agenda_ready
+	}
+}

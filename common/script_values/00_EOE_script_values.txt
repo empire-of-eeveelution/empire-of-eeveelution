@@ -70,6 +70,40 @@ num_eeveelution = {
 	mult = 0.0001
 }
 
+##############星球上"定向进化"布口占星球总人口的比例（0~1），用于"性别比例均衡化"的犯罪度修正
+EOE_directed_evolution_pop_ratio = {
+	base = 0
+	complex_trigger_modifier = {
+		trigger = count_owned_pop_amount
+		parameters = {
+			limit = { has_trait = trait_directed_evolution }
+		}
+		mode = add
+	}
+	modifier = {
+		pop_amount > 0
+		divide = trigger:pop_amount
+	}
+	max = 1
+}
+
+##############星球上"亚空间居住适应性"人口占星球总人口的比例（0~1），用于"虚拟天堂"的犯罪度修正
+EOE_pokeball_adaptability_pop_ratio = {
+	base = 0
+	complex_trigger_modifier = {
+		trigger = count_owned_pop_amount
+		parameters = {
+			limit = { has_trait = trait_pokeball_adaptability }
+		}
+		mode = add
+	}
+	modifier = {
+		pop_amount > 0
+		divide = trigger:pop_amount
+	}
+	max = 1
+}
+
 ##############辟邪全能特质（leader_trait_commander_omni_type）：每领袖等级增加该特质现有buff加成的1/4
 ##############倍率 = 1 + 领袖等级 × 0.25 （例如10级=3.5倍）
 EOE_bixie_omni_level_mult = {

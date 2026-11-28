@@ -40,10 +40,20 @@ country_event = {
     is_triggered_only = yes
     hide_window = yes
 	trigger = { 
-		owner_main_species = {
-			has_trait = trait_pokeball_adaptability
+		OR = {
+			AND = {	#虚拟天堂
+				owner_main_species = {
+					has_trait = trait_pokeball_adaptability
+				}
+				has_technology = EOE_virtual_paradise
+			}
+			AND = {	#性别比例均衡化
+				owner_main_species = {
+					has_trait = trait_directed_evolution
+				}
+				has_technology = tech_Gender_Balance
+			}
 		}
-		has_technology = EOE_virtual_paradise
 	 }
     immediate = {
 		every_owned_planet = {

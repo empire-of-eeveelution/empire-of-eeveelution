@@ -761,14 +761,24 @@ d_num_eeveelution = {
 
 	potential = { always = no }
 
-	triggered_planet_modifier = {
+	triggered_planet_modifier = {	#虚拟天堂：犯罪度按"亚空间居住适应性"人口占比折算
 		potential = {
 			exists = owner
 			owner = {
 				has_technology = EOE_virtual_paradise
 			}
 		}
-		planet_crime_add = 1
-		mult = value:num_eeveelution
+		planet_crime_mult = 0.03
+		mult = value:EOE_pokeball_adaptability_pop_ratio
+	}
+	triggered_planet_modifier = {	#性别比例均衡化：犯罪度按"定向进化"布口占比折算
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_Gender_Balance
+			}
+		}
+		planet_crime_mult = -0.05
+		mult = value:EOE_directed_evolution_pop_ratio
 	}
 }
